@@ -1,0 +1,17 @@
+# mailslurp.Model.SendEmailOptions
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Bcc** | **List&lt;string&gt;** | Optional list of bcc destination email addresses | [optional] 
+**Body** | **string** | Contents of email | [optional] 
+**Cc** | **List&lt;string&gt;** | Optional list of cc destination email addresses | [optional] 
+**Charset** | **string** | Optional charset | [optional] 
+**From** | **string** | Optional from address. If not set source inbox address will be used | [optional] 
+**Html** | **bool?** |  | [optional] 
+**ReplyTo** | **string** | Optional replyTo header | [optional] 
+**Subject** | **string** | Optional email subject line | [optional] 
+**To** | **List&lt;string&gt;** | List of destination email addresses. Even single recipients must be in array form. | 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
