@@ -7,6 +7,7 @@ Method | HTTP request | Description
 [**CreateNewEmailAddress**](CommonOperationsApi.md#createnewemailaddress) | **POST** /newEmailAddress | Create new email address
 [**SendEmailSimple**](CommonOperationsApi.md#sendemailsimple) | **POST** /sendEmail | Send an email from a random email address
 [**WaitForLatestEmail**](CommonOperationsApi.md#waitforlatestemail) | **GET** /fetchLatestEmail | Fetch inbox&#39;s latest email or if empty wait for email to arrive
+[**WaitForNthEmail**](CommonOperationsApi.md#waitfornthemail) | **GET** /waitForNthEmail | Wait for or fetch the email with a given index in the inbox specified
 
 
 <a name="createnewemailaddress"></a>
@@ -188,6 +189,72 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **inboxEmailAddress** | **string**| Email address of the inbox we are fetching emails from | [optional] 
  **inboxId** | [**Guid?**](Guid?.md)| Id of the inbox we are fetching emails from | [optional] 
+
+### Return type
+
+[**Email**](Email.md)
+
+### Authorization
+
+[API_KEY](../README.md#API_KEY)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="waitfornthemail"></a>
+# **WaitForNthEmail**
+> Email WaitForNthEmail (Guid? inboxId = null, int? index = null)
+
+Wait for or fetch the email with a given index in the inbox specified
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using mailslurp.Api;
+using mailslurp.Client;
+using mailslurp.Model;
+
+namespace Example
+{
+    public class WaitForNthEmailExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: API_KEY
+            Configuration.Default.AddApiKey("x-api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("x-api-key", "Bearer");
+
+            var apiInstance = new CommonOperationsApi();
+            var inboxId = new Guid?(); // Guid? | Id of the inbox we are fetching emails from (optional) 
+            var index = 56;  // int? | Zero based index of the email to wait for (optional) 
+
+            try
+            {
+                // Wait for or fetch the email with a given index in the inbox specified
+                Email result = apiInstance.WaitForNthEmail(inboxId, index);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CommonOperationsApi.WaitForNthEmail: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **inboxId** | [**Guid?**](Guid?.md)| Id of the inbox we are fetching emails from | [optional] 
+ **index** | **int?**| Zero based index of the email to wait for | [optional] 
 
 ### Return type
 

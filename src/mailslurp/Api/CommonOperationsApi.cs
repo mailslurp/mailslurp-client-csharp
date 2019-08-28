@@ -87,6 +87,29 @@ namespace mailslurp.Api
         /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
         /// <returns>ApiResponse of Email</returns>
         ApiResponse<Email> WaitForLatestEmailWithHttpInfo (string inboxEmailAddress = null, Guid? inboxId = null);
+        /// <summary>
+        /// Wait for or fetch the email with a given index in the inbox specified
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="index">Zero based index of the email to wait for (optional)</param>
+        /// <returns>Email</returns>
+        Email WaitForNthEmail (Guid? inboxId = null, int? index = null);
+
+        /// <summary>
+        /// Wait for or fetch the email with a given index in the inbox specified
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="index">Zero based index of the email to wait for (optional)</param>
+        /// <returns>ApiResponse of Email</returns>
+        ApiResponse<Email> WaitForNthEmailWithHttpInfo (Guid? inboxId = null, int? index = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -152,6 +175,29 @@ namespace mailslurp.Api
         /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
         /// <returns>Task of ApiResponse (Email)</returns>
         System.Threading.Tasks.Task<ApiResponse<Email>> WaitForLatestEmailAsyncWithHttpInfo (string inboxEmailAddress = null, Guid? inboxId = null);
+        /// <summary>
+        /// Wait for or fetch the email with a given index in the inbox specified
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="index">Zero based index of the email to wait for (optional)</param>
+        /// <returns>Task of Email</returns>
+        System.Threading.Tasks.Task<Email> WaitForNthEmailAsync (Guid? inboxId = null, int? index = null);
+
+        /// <summary>
+        /// Wait for or fetch the email with a given index in the inbox specified
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="index">Zero based index of the email to wait for (optional)</param>
+        /// <returns>Task of ApiResponse (Email)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Email>> WaitForNthEmailAsyncWithHttpInfo (Guid? inboxId = null, int? index = null);
         #endregion Asynchronous Operations
     }
 
@@ -684,6 +730,149 @@ namespace mailslurp.Api
             if (ExceptionFactory != null)
             {
                 Exception exception = ExceptionFactory("WaitForLatestEmail", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Email>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Email) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Email)));
+        }
+
+        /// <summary>
+        /// Wait for or fetch the email with a given index in the inbox specified 
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="index">Zero based index of the email to wait for (optional)</param>
+        /// <returns>Email</returns>
+        public Email WaitForNthEmail (Guid? inboxId = null, int? index = null)
+        {
+             ApiResponse<Email> localVarResponse = WaitForNthEmailWithHttpInfo(inboxId, index);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Wait for or fetch the email with a given index in the inbox specified 
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="index">Zero based index of the email to wait for (optional)</param>
+        /// <returns>ApiResponse of Email</returns>
+        public ApiResponse< Email > WaitForNthEmailWithHttpInfo (Guid? inboxId = null, int? index = null)
+        {
+
+            var localVarPath = "/waitForNthEmail";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (inboxId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "inboxId", inboxId)); // query parameter
+            if (index != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "index", index)); // query parameter
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("WaitForNthEmail", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Email>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Email) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Email)));
+        }
+
+        /// <summary>
+        /// Wait for or fetch the email with a given index in the inbox specified 
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="index">Zero based index of the email to wait for (optional)</param>
+        /// <returns>Task of Email</returns>
+        public async System.Threading.Tasks.Task<Email> WaitForNthEmailAsync (Guid? inboxId = null, int? index = null)
+        {
+             ApiResponse<Email> localVarResponse = await WaitForNthEmailAsyncWithHttpInfo(inboxId, index);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Wait for or fetch the email with a given index in the inbox specified 
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="index">Zero based index of the email to wait for (optional)</param>
+        /// <returns>Task of ApiResponse (Email)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Email>> WaitForNthEmailAsyncWithHttpInfo (Guid? inboxId = null, int? index = null)
+        {
+
+            var localVarPath = "/waitForNthEmail";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (inboxId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "inboxId", inboxId)); // query parameter
+            if (index != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "index", index)); // query parameter
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("WaitForNthEmail", localVarResponse);
                 if (exception != null) throw exception;
             }
 
