@@ -23,54 +23,54 @@ using OpenAPIDateConverter = mailslurp.Client.OpenAPIDateConverter;
 namespace mailslurp.Model
 {
     /// <summary>
-    /// BasicAuthOptions
+    /// Preview of an email message. For full message call the message endpoint with a given message id.
     /// </summary>
     [DataContract]
-    public partial class BasicAuthOptions :  IEquatable<BasicAuthOptions>
+    public partial class EmailPreview :  IEquatable<EmailPreview>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="BasicAuthOptions" /> class.
+        /// Initializes a new instance of the <see cref="EmailPreview" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected BasicAuthOptions() { }
+        protected EmailPreview() { }
         /// <summary>
-        /// Initializes a new instance of the <see cref="BasicAuthOptions" /> class.
+        /// Initializes a new instance of the <see cref="EmailPreview" /> class.
         /// </summary>
-        /// <param name="username">username (required).</param>
-        /// <param name="password">password (required).</param>
-        public BasicAuthOptions(string username = default(string), string password = default(string))
+        /// <param name="created">created (required).</param>
+        /// <param name="id">id (required).</param>
+        public EmailPreview(DateTime? created = default(DateTime?), Guid? id = default(Guid?))
         {
-            // to ensure "username" is required (not null)
-            if (username == null)
+            // to ensure "created" is required (not null)
+            if (created == null)
             {
-                throw new InvalidDataException("username is a required property for BasicAuthOptions and cannot be null");
+                throw new InvalidDataException("created is a required property for EmailPreview and cannot be null");
             }
             else
             {
-                this.Username = username;
+                this.Created = created;
             }
-            // to ensure "password" is required (not null)
-            if (password == null)
+            // to ensure "id" is required (not null)
+            if (id == null)
             {
-                throw new InvalidDataException("password is a required property for BasicAuthOptions and cannot be null");
+                throw new InvalidDataException("id is a required property for EmailPreview and cannot be null");
             }
             else
             {
-                this.Password = password;
+                this.Id = id;
             }
         }
         
         /// <summary>
-        /// Gets or Sets Username
+        /// Gets or Sets Created
         /// </summary>
-        [DataMember(Name="username", EmitDefaultValue=false)]
-        public string Username { get; set; }
+        [DataMember(Name="created", EmitDefaultValue=false)]
+        public DateTime? Created { get; set; }
 
         /// <summary>
-        /// Gets or Sets Password
+        /// Gets or Sets Id
         /// </summary>
-        [DataMember(Name="password", EmitDefaultValue=false)]
-        public string Password { get; set; }
+        [DataMember(Name="id", EmitDefaultValue=false)]
+        public Guid? Id { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -79,9 +79,9 @@ namespace mailslurp.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class BasicAuthOptions {\n");
-            sb.Append("  Username: ").Append(Username).Append("\n");
-            sb.Append("  Password: ").Append(Password).Append("\n");
+            sb.Append("class EmailPreview {\n");
+            sb.Append("  Created: ").Append(Created).Append("\n");
+            sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -102,29 +102,29 @@ namespace mailslurp.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as BasicAuthOptions);
+            return this.Equals(input as EmailPreview);
         }
 
         /// <summary>
-        /// Returns true if BasicAuthOptions instances are equal
+        /// Returns true if EmailPreview instances are equal
         /// </summary>
-        /// <param name="input">Instance of BasicAuthOptions to be compared</param>
+        /// <param name="input">Instance of EmailPreview to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(BasicAuthOptions input)
+        public bool Equals(EmailPreview input)
         {
             if (input == null)
                 return false;
 
             return 
                 (
-                    this.Username == input.Username ||
-                    (this.Username != null &&
-                    this.Username.Equals(input.Username))
+                    this.Created == input.Created ||
+                    (this.Created != null &&
+                    this.Created.Equals(input.Created))
                 ) && 
                 (
-                    this.Password == input.Password ||
-                    (this.Password != null &&
-                    this.Password.Equals(input.Password))
+                    this.Id == input.Id ||
+                    (this.Id != null &&
+                    this.Id.Equals(input.Id))
                 );
         }
 
@@ -137,10 +137,10 @@ namespace mailslurp.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.Username != null)
-                    hashCode = hashCode * 59 + this.Username.GetHashCode();
-                if (this.Password != null)
-                    hashCode = hashCode * 59 + this.Password.GetHashCode();
+                if (this.Created != null)
+                    hashCode = hashCode * 59 + this.Created.GetHashCode();
+                if (this.Id != null)
+                    hashCode = hashCode * 59 + this.Id.GetHashCode();
                 return hashCode;
             }
         }

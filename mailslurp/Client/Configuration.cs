@@ -29,7 +29,7 @@ namespace mailslurp.Client
         /// Version of the package.
         /// </summary>
         /// <value>Version of the package.</value>
-        public const string Version = "4.5.0";
+        public const string Version = "4.4.0";
 
         /// <summary>
         /// Identifier for ISO 8601 DateTime Format
@@ -110,7 +110,7 @@ namespace mailslurp.Client
         /// </summary>
         public Configuration()
         {
-            UserAgent = "OpenAPI-Generator/4.5.0/csharp";
+            UserAgent = "OpenAPI-Generator/4.4.0/csharp";
             BasePath = "https://api.mailslurp.com";
             DefaultHeader = new ConcurrentDictionary<string, string>();
             ApiKey = new ConcurrentDictionary<string, string>();
@@ -183,7 +183,7 @@ namespace mailslurp.Client
             string tempFolderPath = null,
             string dateTimeFormat = null,
             int timeout = 100000,
-            string userAgent = "OpenAPI-Generator/4.5.0/csharp"
+            string userAgent = "OpenAPI-Generator/4.4.0/csharp"
             // ReSharper restore UnusedParameter.Local
             )
         {
@@ -415,7 +415,7 @@ namespace mailslurp.Client
             String report = "C# SDK (mailslurp) Debug Report:\n";
             report += "    OS: " + System.Runtime.InteropServices.RuntimeInformation.OSDescription + "\n";
             report += "    Version of the API: 0.0.1-alpha\n";
-            report += "    SDK Package Version: 4.5.0\n";
+            report += "    SDK Package Version: 4.4.0\n";
 
             return report;
         }

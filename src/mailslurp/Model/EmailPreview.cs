@@ -12,14 +12,12 @@ using System;
 using System.Linq;
 using System.IO;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Runtime.Serialization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
-using System.ComponentModel.DataAnnotations;
 using OpenAPIDateConverter = mailslurp.Client.OpenAPIDateConverter;
 
 namespace mailslurp.Model
@@ -28,7 +26,7 @@ namespace mailslurp.Model
     /// Preview of an email message. For full message call the message endpoint with a given message id.
     /// </summary>
     [DataContract]
-    public partial class EmailPreview :  IEquatable<EmailPreview>, IValidatableObject
+    public partial class EmailPreview :  IEquatable<EmailPreview>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="EmailPreview" /> class.
@@ -38,9 +36,13 @@ namespace mailslurp.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="EmailPreview" /> class.
         /// </summary>
+        /// <param name="bcc">bcc.</param>
+        /// <param name="cc">cc.</param>
         /// <param name="created">created (required).</param>
         /// <param name="id">id (required).</param>
-        public EmailPreview(DateTime? created = default(DateTime?), Guid? id = default(Guid?))
+        /// <param name="subject">subject.</param>
+        /// <param name="to">to (required).</param>
+        public EmailPreview(List<string> bcc = default(List<string>), List<string> cc = default(List<string>), DateTime? created = default(DateTime?), Guid? id = default(Guid?), string subject = default(string), List<string> to = default(List<string>))
         {
             // to ensure "created" is required (not null)
             if (created == null)
@@ -60,8 +62,32 @@ namespace mailslurp.Model
             {
                 this.Id = id;
             }
+            // to ensure "to" is required (not null)
+            if (to == null)
+            {
+                throw new InvalidDataException("to is a required property for EmailPreview and cannot be null");
+            }
+            else
+            {
+                this.To = to;
+            }
+            this.Bcc = bcc;
+            this.Cc = cc;
+            this.Subject = subject;
         }
         
+        /// <summary>
+        /// Gets or Sets Bcc
+        /// </summary>
+        [DataMember(Name="bcc", EmitDefaultValue=false)]
+        public List<string> Bcc { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Cc
+        /// </summary>
+        [DataMember(Name="cc", EmitDefaultValue=false)]
+        public List<string> Cc { get; set; }
+
         /// <summary>
         /// Gets or Sets Created
         /// </summary>
@@ -75,6 +101,18 @@ namespace mailslurp.Model
         public Guid? Id { get; set; }
 
         /// <summary>
+        /// Gets or Sets Subject
+        /// </summary>
+        [DataMember(Name="subject", EmitDefaultValue=false)]
+        public string Subject { get; set; }
+
+        /// <summary>
+        /// Gets or Sets To
+        /// </summary>
+        [DataMember(Name="to", EmitDefaultValue=false)]
+        public List<string> To { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -82,8 +120,12 @@ namespace mailslurp.Model
         {
             var sb = new StringBuilder();
             sb.Append("class EmailPreview {\n");
+            sb.Append("  Bcc: ").Append(Bcc).Append("\n");
+            sb.Append("  Cc: ").Append(Cc).Append("\n");
             sb.Append("  Created: ").Append(Created).Append("\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
+            sb.Append("  Subject: ").Append(Subject).Append("\n");
+            sb.Append("  To: ").Append(To).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -119,6 +161,16 @@ namespace mailslurp.Model
 
             return 
                 (
+                    this.Bcc == input.Bcc ||
+                    this.Bcc != null &&
+                    this.Bcc.SequenceEqual(input.Bcc)
+                ) && 
+                (
+                    this.Cc == input.Cc ||
+                    this.Cc != null &&
+                    this.Cc.SequenceEqual(input.Cc)
+                ) && 
+                (
                     this.Created == input.Created ||
                     (this.Created != null &&
                     this.Created.Equals(input.Created))
@@ -127,6 +179,16 @@ namespace mailslurp.Model
                     this.Id == input.Id ||
                     (this.Id != null &&
                     this.Id.Equals(input.Id))
+                ) && 
+                (
+                    this.Subject == input.Subject ||
+                    (this.Subject != null &&
+                    this.Subject.Equals(input.Subject))
+                ) && 
+                (
+                    this.To == input.To ||
+                    this.To != null &&
+                    this.To.SequenceEqual(input.To)
                 );
         }
 
@@ -139,22 +201,20 @@ namespace mailslurp.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.Bcc != null)
+                    hashCode = hashCode * 59 + this.Bcc.GetHashCode();
+                if (this.Cc != null)
+                    hashCode = hashCode * 59 + this.Cc.GetHashCode();
                 if (this.Created != null)
                     hashCode = hashCode * 59 + this.Created.GetHashCode();
                 if (this.Id != null)
                     hashCode = hashCode * 59 + this.Id.GetHashCode();
+                if (this.Subject != null)
+                    hashCode = hashCode * 59 + this.Subject.GetHashCode();
+                if (this.To != null)
+                    hashCode = hashCode * 59 + this.To.GetHashCode();
                 return hashCode;
             }
-        }
-
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
         }
     }
 

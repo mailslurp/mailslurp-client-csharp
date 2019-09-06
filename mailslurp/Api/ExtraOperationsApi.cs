@@ -138,7 +138,7 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="emailId">emailId</param>
         /// <returns></returns>
-        void DeleteEmail1 (Guid? emailId);
+        void DeleteEmail (Guid? emailId);
 
         /// <summary>
         /// Delete Email
@@ -149,7 +149,7 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="emailId">emailId</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteEmail1WithHttpInfo (Guid? emailId);
+        ApiResponse<Object> DeleteEmailWithHttpInfo (Guid? emailId);
         /// <summary>
         /// Delete Inbox / Email Address
         /// </summary>
@@ -488,7 +488,7 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="emailId">emailId</param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteEmail1Async (Guid? emailId);
+        System.Threading.Tasks.Task DeleteEmailAsync (Guid? emailId);
 
         /// <summary>
         /// Delete Email
@@ -499,7 +499,7 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="emailId">emailId</param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteEmail1AsyncWithHttpInfo (Guid? emailId);
+        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteEmailAsyncWithHttpInfo (Guid? emailId);
         /// <summary>
         /// Delete Inbox / Email Address
         /// </summary>
@@ -1594,9 +1594,9 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="emailId">emailId</param>
         /// <returns></returns>
-        public void DeleteEmail1 (Guid? emailId)
+        public void DeleteEmail (Guid? emailId)
         {
-             DeleteEmail1WithHttpInfo(emailId);
+             DeleteEmailWithHttpInfo(emailId);
         }
 
         /// <summary>
@@ -1605,11 +1605,11 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="emailId">emailId</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteEmail1WithHttpInfo (Guid? emailId)
+        public ApiResponse<Object> DeleteEmailWithHttpInfo (Guid? emailId)
         {
             // verify the required parameter 'emailId' is set
             if (emailId == null)
-                throw new ApiException(400, "Missing required parameter 'emailId' when calling ExtraOperationsApi->DeleteEmail1");
+                throw new ApiException(400, "Missing required parameter 'emailId' when calling ExtraOperationsApi->DeleteEmail");
 
             var localVarPath = "./emails/{emailId}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1648,7 +1648,7 @@ namespace mailslurp.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("DeleteEmail1", localVarResponse);
+                Exception exception = ExceptionFactory("DeleteEmail", localVarResponse);
                 if (exception != null) throw exception;
             }
 
@@ -1663,9 +1663,9 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="emailId">emailId</param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteEmail1Async (Guid? emailId)
+        public async System.Threading.Tasks.Task DeleteEmailAsync (Guid? emailId)
         {
-             await DeleteEmail1AsyncWithHttpInfo(emailId);
+             await DeleteEmailAsyncWithHttpInfo(emailId);
 
         }
 
@@ -1675,11 +1675,11 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="emailId">emailId</param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteEmail1AsyncWithHttpInfo (Guid? emailId)
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteEmailAsyncWithHttpInfo (Guid? emailId)
         {
             // verify the required parameter 'emailId' is set
             if (emailId == null)
-                throw new ApiException(400, "Missing required parameter 'emailId' when calling ExtraOperationsApi->DeleteEmail1");
+                throw new ApiException(400, "Missing required parameter 'emailId' when calling ExtraOperationsApi->DeleteEmail");
 
             var localVarPath = "./emails/{emailId}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1718,7 +1718,7 @@ namespace mailslurp.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("DeleteEmail1", localVarResponse);
+                Exception exception = ExceptionFactory("DeleteEmail", localVarResponse);
                 if (exception != null) throw exception;
             }
 

@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**BulkSendEmails**](ExtraOperationsApi.md#bulksendemails) | **POST** /bulk/send | Bulk Send Emails
 [**CreateInbox**](ExtraOperationsApi.md#createinbox) | **POST** /inboxes | Create an Inbox (email address)
 [**CreateWebhook**](ExtraOperationsApi.md#createwebhook) | **POST** /inboxes/{inboxId}/webhooks | Attach a WebHook URL to an inbox
-[**DeleteEmail**](ExtraOperationsApi.md#deleteemail) | **DELETE** /emails/{emailId} | Delete Email
+[**DeleteEmail1**](ExtraOperationsApi.md#deleteemail1) | **DELETE** /emails/{emailId} | Delete Email
 [**DeleteInbox**](ExtraOperationsApi.md#deleteinbox) | **DELETE** /inboxes/{inboxId} | Delete Inbox / Email Address
 [**DeleteWebhook**](ExtraOperationsApi.md#deletewebhook) | **DELETE** /inboxes/{inboxId}/webhooks/{webhookId} | Delete and disable a WebHook for an Inbox
 [**DownloadAttachment**](ExtraOperationsApi.md#downloadattachment) | **GET** /emails/{emailId}/attachments/{attachmentId} | Get email attachment
@@ -348,9 +348,9 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="deleteemail"></a>
-# **DeleteEmail**
-> void DeleteEmail (Guid? emailId)
+<a name="deleteemail1"></a>
+# **DeleteEmail1**
+> void DeleteEmail1 (Guid? emailId)
 
 Delete Email
 
@@ -366,7 +366,7 @@ using mailslurp.Model;
 
 namespace Example
 {
-    public class DeleteEmailExample
+    public class DeleteEmail1Example
     {
         public void main()
         {
@@ -381,11 +381,11 @@ namespace Example
             try
             {
                 // Delete Email
-                apiInstance.DeleteEmail(emailId);
+                apiInstance.DeleteEmail1(emailId);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ExtraOperationsApi.DeleteEmail: " + e.Message );
+                Debug.Print("Exception when calling ExtraOperationsApi.DeleteEmail1: " + e.Message );
             }
         }
     }

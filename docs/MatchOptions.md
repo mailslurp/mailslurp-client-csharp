@@ -1,14 +1,9 @@
-# mailslurp.Model.EmailPreview
+# mailslurp.Model.MatchOptions
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Bcc** | **List&lt;string&gt;** |  | [optional] 
-**Cc** | **List&lt;string&gt;** |  | [optional] 
-**Created** | **DateTime?** |  | 
-**Id** | **Guid?** |  | 
-**Subject** | **string** |  | [optional] 
-**To** | **List&lt;string&gt;** |  | 
+**Matches** | [**List&lt;MatchOption&gt;**](MatchOption.md) | 1 or more match options. Options are additive so if one does not match the email is excluded from results | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
