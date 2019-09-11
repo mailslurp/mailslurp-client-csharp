@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**BulkSendEmails**](ExtraOperationsApi.md#bulksendemails) | **POST** /bulk/send | Bulk Send Emails
 [**CreateInbox**](ExtraOperationsApi.md#createinbox) | **POST** /inboxes | Create an Inbox (email address)
 [**CreateWebhook**](ExtraOperationsApi.md#createwebhook) | **POST** /inboxes/{inboxId}/webhooks | Attach a WebHook URL to an inbox
-[**DeleteEmail**](ExtraOperationsApi.md#deleteemail) | **DELETE** /emails/{emailId} | Delete Email
+[**DeleteEmail1**](ExtraOperationsApi.md#deleteemail1) | **DELETE** /emails/{emailId} | Delete Email
 [**DeleteInbox**](ExtraOperationsApi.md#deleteinbox) | **DELETE** /inboxes/{inboxId} | Delete Inbox / Email Address
 [**DeleteWebhook**](ExtraOperationsApi.md#deletewebhook) | **DELETE** /inboxes/{inboxId}/webhooks/{webhookId} | Delete and disable a WebHook for an Inbox
 [**DownloadAttachment**](ExtraOperationsApi.md#downloadattachment) | **GET** /emails/{emailId}/attachments/{attachmentId} | Get email attachment
@@ -20,6 +20,8 @@ Method | HTTP request | Description
 [**GetRawEmailContents**](ExtraOperationsApi.md#getrawemailcontents) | **GET** /emails/{emailId}/raw | Get Raw Email Content
 [**GetWebhooks**](ExtraOperationsApi.md#getwebhooks) | **GET** /inboxes/{inboxId}/webhooks | Get all WebHooks for an Inbox
 [**SendEmail**](ExtraOperationsApi.md#sendemail) | **POST** /inboxes/{inboxId} | Send Email
+[**UploadAttachment**](ExtraOperationsApi.md#uploadattachment) | **POST** /attachments | Upload an attachment for sending
+[**UploadMultipartForm**](ExtraOperationsApi.md#uploadmultipartform) | **POST** /attachments/multipart | Upload an attachment for sending using Multipart Form
 
 
 <a name="bulkcreateinboxes"></a>
@@ -348,9 +350,9 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="deleteemail"></a>
-# **DeleteEmail**
-> void DeleteEmail (Guid? emailId)
+<a name="deleteemail1"></a>
+# **DeleteEmail1**
+> void DeleteEmail1 (Guid? emailId)
 
 Delete Email
 
@@ -366,7 +368,7 @@ using mailslurp.Model;
 
 namespace Example
 {
-    public class DeleteEmailExample
+    public class DeleteEmail1Example
     {
         public void main()
         {
@@ -381,11 +383,11 @@ namespace Example
             try
             {
                 // Delete Email
-                apiInstance.DeleteEmail(emailId);
+                apiInstance.DeleteEmail1(emailId);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ExtraOperationsApi.DeleteEmail: " + e.Message );
+                Debug.Print("Exception when calling ExtraOperationsApi.DeleteEmail1: " + e.Message );
             }
         }
     }
@@ -1072,6 +1074,142 @@ void (empty response body)
 
  - **Content-Type**: application/json
  - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="uploadattachment"></a>
+# **UploadAttachment**
+> string UploadAttachment (UploadAttachmentOptions uploadAttachmentOptions)
+
+Upload an attachment for sending
+
+When sending emails with attachments first upload each attachment with this endpoint. Record the returned attachment IDs. Then use these attachment IDs in the SendEmailOptions when sending an email. This means that attachments can easily be reused.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using mailslurp.Api;
+using mailslurp.Client;
+using mailslurp.Model;
+
+namespace Example
+{
+    public class UploadAttachmentExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: API_KEY
+            Configuration.Default.AddApiKey("x-api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("x-api-key", "Bearer");
+
+            var apiInstance = new ExtraOperationsApi();
+            var uploadAttachmentOptions = new UploadAttachmentOptions(); // UploadAttachmentOptions | uploadOptions
+
+            try
+            {
+                // Upload an attachment for sending
+                string result = apiInstance.UploadAttachment(uploadAttachmentOptions);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExtraOperationsApi.UploadAttachment: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **uploadAttachmentOptions** | [**UploadAttachmentOptions**](UploadAttachmentOptions.md)| uploadOptions | 
+
+### Return type
+
+**string**
+
+### Authorization
+
+[API_KEY](../README.md#API_KEY)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="uploadmultipartform"></a>
+# **UploadMultipartForm**
+> string UploadMultipartForm (System.IO.Stream file, string contentType = null, string filename = null)
+
+Upload an attachment for sending using Multipart Form
+
+When sending emails with attachments first upload each attachment with this endpoint. Record the returned attachment IDs. Then use these attachment IDs in the SendEmailOptions when sending an email. This means that attachments can easily be reused.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using mailslurp.Api;
+using mailslurp.Client;
+using mailslurp.Model;
+
+namespace Example
+{
+    public class UploadMultipartFormExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: API_KEY
+            Configuration.Default.AddApiKey("x-api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("x-api-key", "Bearer");
+
+            var apiInstance = new ExtraOperationsApi();
+            var file = BINARY_DATA_HERE;  // System.IO.Stream | file
+            var contentType = contentType_example;  // string | contentType (optional) 
+            var filename = filename_example;  // string | filename (optional) 
+
+            try
+            {
+                // Upload an attachment for sending using Multipart Form
+                string result = apiInstance.UploadMultipartForm(file, contentType, filename);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExtraOperationsApi.UploadMultipartForm: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **file** | **System.IO.Stream**| file | 
+ **contentType** | **string**| contentType | [optional] 
+ **filename** | **string**| filename | [optional] 
+
+### Return type
+
+**string**
+
+### Authorization
+
+[API_KEY](../README.md#API_KEY)
+
+### HTTP request headers
+
+ - **Content-Type**: multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

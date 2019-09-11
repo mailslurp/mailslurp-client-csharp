@@ -3,6 +3,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Attachments** | **List&lt;string&gt;** | Optional list of attachment IDs to send with this email | [optional] 
 **Bcc** | **List&lt;string&gt;** | Optional list of bcc destination email addresses | [optional] 
 **Body** | **string** | Contents of email | [optional] 
 **Cc** | **List&lt;string&gt;** | Optional list of cc destination email addresses | [optional] 

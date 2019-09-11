@@ -44,6 +44,27 @@ namespace mailslurp.Api
         /// <returns>ApiResponse of Inbox</returns>
         ApiResponse<Inbox> CreateNewEmailAddressWithHttpInfo ();
         /// <summary>
+        /// Delete an email
+        /// </summary>
+        /// <remarks>
+        /// Deletes an email
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="emailId">emailId</param>
+        /// <returns></returns>
+        void DeleteEmail (Guid? emailId);
+
+        /// <summary>
+        /// Delete an email
+        /// </summary>
+        /// <remarks>
+        /// Deletes an email
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="emailId">emailId</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> DeleteEmailWithHttpInfo (Guid? emailId);
+        /// <summary>
         /// Delete email address and its emails
         /// </summary>
         /// <remarks>
@@ -64,6 +85,27 @@ namespace mailslurp.Api
         /// <param name="inboxId">inboxId</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteEmailAddressWithHttpInfo (Guid? inboxId);
+        /// <summary>
+        /// Delete all emails in an inbox
+        /// </summary>
+        /// <remarks>
+        /// Deletes all emails
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="inboxId">inboxId</param>
+        /// <returns></returns>
+        void EmptyInbox (Guid? inboxId);
+
+        /// <summary>
+        /// Delete all emails in an inbox
+        /// </summary>
+        /// <remarks>
+        /// Deletes all emails
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="inboxId">inboxId</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> EmptyInboxWithHttpInfo (Guid? inboxId);
         /// <summary>
         /// Send an email from a random email address
         /// </summary>
@@ -86,16 +128,41 @@ namespace mailslurp.Api
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> SendEmailSimpleWithHttpInfo (SendEmailOptions sendEmailOptions);
         /// <summary>
+        /// Wait for and return count number of emails 
+        /// </summary>
+        /// <remarks>
+        /// Will only wait if count is greater that the found emails in given inbox.If you need to wait for an email for a non-empty inbox see the other receive methods.
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="count">Number of emails to wait for. Must be greater that 1 (optional)</param>
+        /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
+        /// <returns>List&lt;EmailPreview&gt;</returns>
+        List<EmailPreview> WaitForEmailCount (int? count = null, Guid? inboxId = null, long? timeout = null);
+
+        /// <summary>
+        /// Wait for and return count number of emails 
+        /// </summary>
+        /// <remarks>
+        /// Will only wait if count is greater that the found emails in given inbox.If you need to wait for an email for a non-empty inbox see the other receive methods.
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="count">Number of emails to wait for. Must be greater that 1 (optional)</param>
+        /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
+        /// <returns>ApiResponse of List&lt;EmailPreview&gt;</returns>
+        ApiResponse<List<EmailPreview>> WaitForEmailCountWithHttpInfo (int? count = null, Guid? inboxId = null, long? timeout = null);
+        /// <summary>
         /// Fetch inbox&#39;s latest email or if empty wait for email to arrive
         /// </summary>
         /// <remarks>
         /// Will return either the last received email or wait for an email to arrive and return that. If you need to wait for an email for a non-empty inbox see the other receive methods.
         /// </remarks>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inboxEmailAddress">Email address of the inbox we are fetching emails from (optional)</param>
         /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
         /// <returns>Email</returns>
-        Email WaitForLatestEmail (string inboxEmailAddress = null, Guid? inboxId = null);
+        Email WaitForLatestEmail (Guid? inboxId = null, long? timeout = null);
 
         /// <summary>
         /// Fetch inbox&#39;s latest email or if empty wait for email to arrive
@@ -104,10 +171,37 @@ namespace mailslurp.Api
         /// Will return either the last received email or wait for an email to arrive and return that. If you need to wait for an email for a non-empty inbox see the other receive methods.
         /// </remarks>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inboxEmailAddress">Email address of the inbox we are fetching emails from (optional)</param>
         /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
         /// <returns>ApiResponse of Email</returns>
-        ApiResponse<Email> WaitForLatestEmailWithHttpInfo (string inboxEmailAddress = null, Guid? inboxId = null);
+        ApiResponse<Email> WaitForLatestEmailWithHttpInfo (Guid? inboxId = null, long? timeout = null);
+        /// <summary>
+        /// Wait or return list of emails that match simple matching patterns
+        /// </summary>
+        /// <remarks>
+        /// Results must also meet provided count. Match options allow simple CONTAINS or EQUALS filtering on SUBJECT, TO, BCC, CC, and FROM.
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="matchOptions">matchOptions</param>
+        /// <param name="count">Number of emails to wait for. Must be greater that 1 (optional)</param>
+        /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
+        /// <returns>List&lt;EmailPreview&gt;</returns>
+        List<EmailPreview> WaitForMatchingEmail (MatchOptions matchOptions, int? count = null, Guid? inboxId = null, long? timeout = null);
+
+        /// <summary>
+        /// Wait or return list of emails that match simple matching patterns
+        /// </summary>
+        /// <remarks>
+        /// Results must also meet provided count. Match options allow simple CONTAINS or EQUALS filtering on SUBJECT, TO, BCC, CC, and FROM.
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="matchOptions">matchOptions</param>
+        /// <param name="count">Number of emails to wait for. Must be greater that 1 (optional)</param>
+        /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
+        /// <returns>ApiResponse of List&lt;EmailPreview&gt;</returns>
+        ApiResponse<List<EmailPreview>> WaitForMatchingEmailWithHttpInfo (MatchOptions matchOptions, int? count = null, Guid? inboxId = null, long? timeout = null);
         /// <summary>
         /// Wait for or fetch the email with a given index in the inbox specified
         /// </summary>
@@ -117,8 +211,9 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
         /// <param name="index">Zero based index of the email to wait for (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
         /// <returns>Email</returns>
-        Email WaitForNthEmail (Guid? inboxId = null, int? index = null);
+        Email WaitForNthEmail (Guid? inboxId = null, int? index = null, long? timeout = null);
 
         /// <summary>
         /// Wait for or fetch the email with a given index in the inbox specified
@@ -129,8 +224,9 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
         /// <param name="index">Zero based index of the email to wait for (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
         /// <returns>ApiResponse of Email</returns>
-        ApiResponse<Email> WaitForNthEmailWithHttpInfo (Guid? inboxId = null, int? index = null);
+        ApiResponse<Email> WaitForNthEmailWithHttpInfo (Guid? inboxId = null, int? index = null, long? timeout = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -153,6 +249,27 @@ namespace mailslurp.Api
         /// <returns>Task of ApiResponse (Inbox)</returns>
         System.Threading.Tasks.Task<ApiResponse<Inbox>> CreateNewEmailAddressAsyncWithHttpInfo ();
         /// <summary>
+        /// Delete an email
+        /// </summary>
+        /// <remarks>
+        /// Deletes an email
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="emailId">emailId</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task DeleteEmailAsync (Guid? emailId);
+
+        /// <summary>
+        /// Delete an email
+        /// </summary>
+        /// <remarks>
+        /// Deletes an email
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="emailId">emailId</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteEmailAsyncWithHttpInfo (Guid? emailId);
+        /// <summary>
         /// Delete email address and its emails
         /// </summary>
         /// <remarks>
@@ -173,6 +290,27 @@ namespace mailslurp.Api
         /// <param name="inboxId">inboxId</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteEmailAddressAsyncWithHttpInfo (Guid? inboxId);
+        /// <summary>
+        /// Delete all emails in an inbox
+        /// </summary>
+        /// <remarks>
+        /// Deletes all emails
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="inboxId">inboxId</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task EmptyInboxAsync (Guid? inboxId);
+
+        /// <summary>
+        /// Delete all emails in an inbox
+        /// </summary>
+        /// <remarks>
+        /// Deletes all emails
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="inboxId">inboxId</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> EmptyInboxAsyncWithHttpInfo (Guid? inboxId);
         /// <summary>
         /// Send an email from a random email address
         /// </summary>
@@ -195,16 +333,41 @@ namespace mailslurp.Api
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> SendEmailSimpleAsyncWithHttpInfo (SendEmailOptions sendEmailOptions);
         /// <summary>
+        /// Wait for and return count number of emails 
+        /// </summary>
+        /// <remarks>
+        /// Will only wait if count is greater that the found emails in given inbox.If you need to wait for an email for a non-empty inbox see the other receive methods.
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="count">Number of emails to wait for. Must be greater that 1 (optional)</param>
+        /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
+        /// <returns>Task of List&lt;EmailPreview&gt;</returns>
+        System.Threading.Tasks.Task<List<EmailPreview>> WaitForEmailCountAsync (int? count = null, Guid? inboxId = null, long? timeout = null);
+
+        /// <summary>
+        /// Wait for and return count number of emails 
+        /// </summary>
+        /// <remarks>
+        /// Will only wait if count is greater that the found emails in given inbox.If you need to wait for an email for a non-empty inbox see the other receive methods.
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="count">Number of emails to wait for. Must be greater that 1 (optional)</param>
+        /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
+        /// <returns>Task of ApiResponse (List&lt;EmailPreview&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<EmailPreview>>> WaitForEmailCountAsyncWithHttpInfo (int? count = null, Guid? inboxId = null, long? timeout = null);
+        /// <summary>
         /// Fetch inbox&#39;s latest email or if empty wait for email to arrive
         /// </summary>
         /// <remarks>
         /// Will return either the last received email or wait for an email to arrive and return that. If you need to wait for an email for a non-empty inbox see the other receive methods.
         /// </remarks>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inboxEmailAddress">Email address of the inbox we are fetching emails from (optional)</param>
         /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
         /// <returns>Task of Email</returns>
-        System.Threading.Tasks.Task<Email> WaitForLatestEmailAsync (string inboxEmailAddress = null, Guid? inboxId = null);
+        System.Threading.Tasks.Task<Email> WaitForLatestEmailAsync (Guid? inboxId = null, long? timeout = null);
 
         /// <summary>
         /// Fetch inbox&#39;s latest email or if empty wait for email to arrive
@@ -213,10 +376,37 @@ namespace mailslurp.Api
         /// Will return either the last received email or wait for an email to arrive and return that. If you need to wait for an email for a non-empty inbox see the other receive methods.
         /// </remarks>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inboxEmailAddress">Email address of the inbox we are fetching emails from (optional)</param>
         /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
         /// <returns>Task of ApiResponse (Email)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Email>> WaitForLatestEmailAsyncWithHttpInfo (string inboxEmailAddress = null, Guid? inboxId = null);
+        System.Threading.Tasks.Task<ApiResponse<Email>> WaitForLatestEmailAsyncWithHttpInfo (Guid? inboxId = null, long? timeout = null);
+        /// <summary>
+        /// Wait or return list of emails that match simple matching patterns
+        /// </summary>
+        /// <remarks>
+        /// Results must also meet provided count. Match options allow simple CONTAINS or EQUALS filtering on SUBJECT, TO, BCC, CC, and FROM.
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="matchOptions">matchOptions</param>
+        /// <param name="count">Number of emails to wait for. Must be greater that 1 (optional)</param>
+        /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
+        /// <returns>Task of List&lt;EmailPreview&gt;</returns>
+        System.Threading.Tasks.Task<List<EmailPreview>> WaitForMatchingEmailAsync (MatchOptions matchOptions, int? count = null, Guid? inboxId = null, long? timeout = null);
+
+        /// <summary>
+        /// Wait or return list of emails that match simple matching patterns
+        /// </summary>
+        /// <remarks>
+        /// Results must also meet provided count. Match options allow simple CONTAINS or EQUALS filtering on SUBJECT, TO, BCC, CC, and FROM.
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="matchOptions">matchOptions</param>
+        /// <param name="count">Number of emails to wait for. Must be greater that 1 (optional)</param>
+        /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
+        /// <returns>Task of ApiResponse (List&lt;EmailPreview&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<EmailPreview>>> WaitForMatchingEmailAsyncWithHttpInfo (MatchOptions matchOptions, int? count = null, Guid? inboxId = null, long? timeout = null);
         /// <summary>
         /// Wait for or fetch the email with a given index in the inbox specified
         /// </summary>
@@ -226,8 +416,9 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
         /// <param name="index">Zero based index of the email to wait for (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
         /// <returns>Task of Email</returns>
-        System.Threading.Tasks.Task<Email> WaitForNthEmailAsync (Guid? inboxId = null, int? index = null);
+        System.Threading.Tasks.Task<Email> WaitForNthEmailAsync (Guid? inboxId = null, int? index = null, long? timeout = null);
 
         /// <summary>
         /// Wait for or fetch the email with a given index in the inbox specified
@@ -238,8 +429,9 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
         /// <param name="index">Zero based index of the email to wait for (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
         /// <returns>Task of ApiResponse (Email)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Email>> WaitForNthEmailAsyncWithHttpInfo (Guid? inboxId = null, int? index = null);
+        System.Threading.Tasks.Task<ApiResponse<Email>> WaitForNthEmailAsyncWithHttpInfo (Guid? inboxId = null, int? index = null, long? timeout = null);
         #endregion Asynchronous Operations
     }
 
@@ -483,6 +675,145 @@ namespace mailslurp.Api
         }
 
         /// <summary>
+        /// Delete an email Deletes an email
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="emailId">emailId</param>
+        /// <returns></returns>
+        public void DeleteEmail (Guid? emailId)
+        {
+             DeleteEmailWithHttpInfo(emailId);
+        }
+
+        /// <summary>
+        /// Delete an email Deletes an email
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="emailId">emailId</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> DeleteEmailWithHttpInfo (Guid? emailId)
+        {
+            // verify the required parameter 'emailId' is set
+            if (emailId == null)
+                throw new ApiException(400, "Missing required parameter 'emailId' when calling CommonOperationsApi->DeleteEmail");
+
+            var localVarPath = "./deleteEmail";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (emailId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "emailId", emailId)); // query parameter
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DeleteEmail", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        /// Delete an email Deletes an email
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="emailId">emailId</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task DeleteEmailAsync (Guid? emailId)
+        {
+             await DeleteEmailAsyncWithHttpInfo(emailId);
+
+        }
+
+        /// <summary>
+        /// Delete an email Deletes an email
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="emailId">emailId</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteEmailAsyncWithHttpInfo (Guid? emailId)
+        {
+            // verify the required parameter 'emailId' is set
+            if (emailId == null)
+                throw new ApiException(400, "Missing required parameter 'emailId' when calling CommonOperationsApi->DeleteEmail");
+
+            var localVarPath = "./deleteEmail";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (emailId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "emailId", emailId)); // query parameter
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DeleteEmail", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
         /// Delete email address and its emails Deletes an inbox
         /// </summary>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
@@ -613,6 +944,145 @@ namespace mailslurp.Api
             if (ExceptionFactory != null)
             {
                 Exception exception = ExceptionFactory("DeleteEmailAddress", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        /// Delete all emails in an inbox Deletes all emails
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="inboxId">inboxId</param>
+        /// <returns></returns>
+        public void EmptyInbox (Guid? inboxId)
+        {
+             EmptyInboxWithHttpInfo(inboxId);
+        }
+
+        /// <summary>
+        /// Delete all emails in an inbox Deletes all emails
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="inboxId">inboxId</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> EmptyInboxWithHttpInfo (Guid? inboxId)
+        {
+            // verify the required parameter 'inboxId' is set
+            if (inboxId == null)
+                throw new ApiException(400, "Missing required parameter 'inboxId' when calling CommonOperationsApi->EmptyInbox");
+
+            var localVarPath = "./emptyInbox";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (inboxId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "inboxId", inboxId)); // query parameter
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("EmptyInbox", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        /// Delete all emails in an inbox Deletes all emails
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="inboxId">inboxId</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task EmptyInboxAsync (Guid? inboxId)
+        {
+             await EmptyInboxAsyncWithHttpInfo(inboxId);
+
+        }
+
+        /// <summary>
+        /// Delete all emails in an inbox Deletes all emails
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="inboxId">inboxId</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> EmptyInboxAsyncWithHttpInfo (Guid? inboxId)
+        {
+            // verify the required parameter 'inboxId' is set
+            if (inboxId == null)
+                throw new ApiException(400, "Missing required parameter 'inboxId' when calling CommonOperationsApi->EmptyInbox");
+
+            var localVarPath = "./emptyInbox";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (inboxId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "inboxId", inboxId)); // query parameter
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("EmptyInbox", localVarResponse);
                 if (exception != null) throw exception;
             }
 
@@ -777,29 +1247,31 @@ namespace mailslurp.Api
         }
 
         /// <summary>
-        /// Fetch inbox&#39;s latest email or if empty wait for email to arrive Will return either the last received email or wait for an email to arrive and return that. If you need to wait for an email for a non-empty inbox see the other receive methods.
+        /// Wait for and return count number of emails  Will only wait if count is greater that the found emails in given inbox.If you need to wait for an email for a non-empty inbox see the other receive methods.
         /// </summary>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inboxEmailAddress">Email address of the inbox we are fetching emails from (optional)</param>
+        /// <param name="count">Number of emails to wait for. Must be greater that 1 (optional)</param>
         /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
-        /// <returns>Email</returns>
-        public Email WaitForLatestEmail (string inboxEmailAddress = null, Guid? inboxId = null)
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
+        /// <returns>List&lt;EmailPreview&gt;</returns>
+        public List<EmailPreview> WaitForEmailCount (int? count = null, Guid? inboxId = null, long? timeout = null)
         {
-             ApiResponse<Email> localVarResponse = WaitForLatestEmailWithHttpInfo(inboxEmailAddress, inboxId);
+             ApiResponse<List<EmailPreview>> localVarResponse = WaitForEmailCountWithHttpInfo(count, inboxId, timeout);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Fetch inbox&#39;s latest email or if empty wait for email to arrive Will return either the last received email or wait for an email to arrive and return that. If you need to wait for an email for a non-empty inbox see the other receive methods.
+        /// Wait for and return count number of emails  Will only wait if count is greater that the found emails in given inbox.If you need to wait for an email for a non-empty inbox see the other receive methods.
         /// </summary>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inboxEmailAddress">Email address of the inbox we are fetching emails from (optional)</param>
+        /// <param name="count">Number of emails to wait for. Must be greater that 1 (optional)</param>
         /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
-        /// <returns>ApiResponse of Email</returns>
-        public ApiResponse< Email > WaitForLatestEmailWithHttpInfo (string inboxEmailAddress = null, Guid? inboxId = null)
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
+        /// <returns>ApiResponse of List&lt;EmailPreview&gt;</returns>
+        public ApiResponse< List<EmailPreview> > WaitForEmailCountWithHttpInfo (int? count = null, Guid? inboxId = null, long? timeout = null)
         {
 
-            var localVarPath = "./fetchLatestEmail";
+            var localVarPath = "./waitForEmailCount";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -820,8 +1292,155 @@ namespace mailslurp.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (inboxEmailAddress != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "inboxEmailAddress", inboxEmailAddress)); // query parameter
+            if (count != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "count", count)); // query parameter
             if (inboxId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "inboxId", inboxId)); // query parameter
+            if (timeout != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "timeout", timeout)); // query parameter
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("WaitForEmailCount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<EmailPreview>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                (List<EmailPreview>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<EmailPreview>)));
+        }
+
+        /// <summary>
+        /// Wait for and return count number of emails  Will only wait if count is greater that the found emails in given inbox.If you need to wait for an email for a non-empty inbox see the other receive methods.
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="count">Number of emails to wait for. Must be greater that 1 (optional)</param>
+        /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
+        /// <returns>Task of List&lt;EmailPreview&gt;</returns>
+        public async System.Threading.Tasks.Task<List<EmailPreview>> WaitForEmailCountAsync (int? count = null, Guid? inboxId = null, long? timeout = null)
+        {
+             ApiResponse<List<EmailPreview>> localVarResponse = await WaitForEmailCountAsyncWithHttpInfo(count, inboxId, timeout);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Wait for and return count number of emails  Will only wait if count is greater that the found emails in given inbox.If you need to wait for an email for a non-empty inbox see the other receive methods.
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="count">Number of emails to wait for. Must be greater that 1 (optional)</param>
+        /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
+        /// <returns>Task of ApiResponse (List&lt;EmailPreview&gt;)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<List<EmailPreview>>> WaitForEmailCountAsyncWithHttpInfo (int? count = null, Guid? inboxId = null, long? timeout = null)
+        {
+
+            var localVarPath = "./waitForEmailCount";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (count != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "count", count)); // query parameter
+            if (inboxId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "inboxId", inboxId)); // query parameter
+            if (timeout != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "timeout", timeout)); // query parameter
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("WaitForEmailCount", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<EmailPreview>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                (List<EmailPreview>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<EmailPreview>)));
+        }
+
+        /// <summary>
+        /// Fetch inbox&#39;s latest email or if empty wait for email to arrive Will return either the last received email or wait for an email to arrive and return that. If you need to wait for an email for a non-empty inbox see the other receive methods.
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
+        /// <returns>Email</returns>
+        public Email WaitForLatestEmail (Guid? inboxId = null, long? timeout = null)
+        {
+             ApiResponse<Email> localVarResponse = WaitForLatestEmailWithHttpInfo(inboxId, timeout);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Fetch inbox&#39;s latest email or if empty wait for email to arrive Will return either the last received email or wait for an email to arrive and return that. If you need to wait for an email for a non-empty inbox see the other receive methods.
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
+        /// <returns>ApiResponse of Email</returns>
+        public ApiResponse< Email > WaitForLatestEmailWithHttpInfo (Guid? inboxId = null, long? timeout = null)
+        {
+
+            var localVarPath = "./waitForLatestEmail";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (inboxId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "inboxId", inboxId)); // query parameter
+            if (timeout != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "timeout", timeout)); // query parameter
 
             // authentication (API_KEY) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
@@ -851,12 +1470,12 @@ namespace mailslurp.Api
         /// Fetch inbox&#39;s latest email or if empty wait for email to arrive Will return either the last received email or wait for an email to arrive and return that. If you need to wait for an email for a non-empty inbox see the other receive methods.
         /// </summary>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inboxEmailAddress">Email address of the inbox we are fetching emails from (optional)</param>
         /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
         /// <returns>Task of Email</returns>
-        public async System.Threading.Tasks.Task<Email> WaitForLatestEmailAsync (string inboxEmailAddress = null, Guid? inboxId = null)
+        public async System.Threading.Tasks.Task<Email> WaitForLatestEmailAsync (Guid? inboxId = null, long? timeout = null)
         {
-             ApiResponse<Email> localVarResponse = await WaitForLatestEmailAsyncWithHttpInfo(inboxEmailAddress, inboxId);
+             ApiResponse<Email> localVarResponse = await WaitForLatestEmailAsyncWithHttpInfo(inboxId, timeout);
              return localVarResponse.Data;
 
         }
@@ -865,13 +1484,13 @@ namespace mailslurp.Api
         /// Fetch inbox&#39;s latest email or if empty wait for email to arrive Will return either the last received email or wait for an email to arrive and return that. If you need to wait for an email for a non-empty inbox see the other receive methods.
         /// </summary>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inboxEmailAddress">Email address of the inbox we are fetching emails from (optional)</param>
         /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
         /// <returns>Task of ApiResponse (Email)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Email>> WaitForLatestEmailAsyncWithHttpInfo (string inboxEmailAddress = null, Guid? inboxId = null)
+        public async System.Threading.Tasks.Task<ApiResponse<Email>> WaitForLatestEmailAsyncWithHttpInfo (Guid? inboxId = null, long? timeout = null)
         {
 
-            var localVarPath = "./fetchLatestEmail";
+            var localVarPath = "./waitForLatestEmail";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -892,8 +1511,8 @@ namespace mailslurp.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (inboxEmailAddress != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "inboxEmailAddress", inboxEmailAddress)); // query parameter
             if (inboxId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "inboxId", inboxId)); // query parameter
+            if (timeout != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "timeout", timeout)); // query parameter
 
             // authentication (API_KEY) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
@@ -920,15 +1539,193 @@ namespace mailslurp.Api
         }
 
         /// <summary>
+        /// Wait or return list of emails that match simple matching patterns Results must also meet provided count. Match options allow simple CONTAINS or EQUALS filtering on SUBJECT, TO, BCC, CC, and FROM.
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="matchOptions">matchOptions</param>
+        /// <param name="count">Number of emails to wait for. Must be greater that 1 (optional)</param>
+        /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
+        /// <returns>List&lt;EmailPreview&gt;</returns>
+        public List<EmailPreview> WaitForMatchingEmail (MatchOptions matchOptions, int? count = null, Guid? inboxId = null, long? timeout = null)
+        {
+             ApiResponse<List<EmailPreview>> localVarResponse = WaitForMatchingEmailWithHttpInfo(matchOptions, count, inboxId, timeout);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Wait or return list of emails that match simple matching patterns Results must also meet provided count. Match options allow simple CONTAINS or EQUALS filtering on SUBJECT, TO, BCC, CC, and FROM.
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="matchOptions">matchOptions</param>
+        /// <param name="count">Number of emails to wait for. Must be greater that 1 (optional)</param>
+        /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
+        /// <returns>ApiResponse of List&lt;EmailPreview&gt;</returns>
+        public ApiResponse< List<EmailPreview> > WaitForMatchingEmailWithHttpInfo (MatchOptions matchOptions, int? count = null, Guid? inboxId = null, long? timeout = null)
+        {
+            // verify the required parameter 'matchOptions' is set
+            if (matchOptions == null)
+                throw new ApiException(400, "Missing required parameter 'matchOptions' when calling CommonOperationsApi->WaitForMatchingEmail");
+
+            var localVarPath = "./waitForMatchingEmails";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (count != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "count", count)); // query parameter
+            if (inboxId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "inboxId", inboxId)); // query parameter
+            if (timeout != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "timeout", timeout)); // query parameter
+            if (matchOptions != null && matchOptions.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(matchOptions); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = matchOptions; // byte array
+            }
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("WaitForMatchingEmail", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<EmailPreview>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                (List<EmailPreview>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<EmailPreview>)));
+        }
+
+        /// <summary>
+        /// Wait or return list of emails that match simple matching patterns Results must also meet provided count. Match options allow simple CONTAINS or EQUALS filtering on SUBJECT, TO, BCC, CC, and FROM.
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="matchOptions">matchOptions</param>
+        /// <param name="count">Number of emails to wait for. Must be greater that 1 (optional)</param>
+        /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
+        /// <returns>Task of List&lt;EmailPreview&gt;</returns>
+        public async System.Threading.Tasks.Task<List<EmailPreview>> WaitForMatchingEmailAsync (MatchOptions matchOptions, int? count = null, Guid? inboxId = null, long? timeout = null)
+        {
+             ApiResponse<List<EmailPreview>> localVarResponse = await WaitForMatchingEmailAsyncWithHttpInfo(matchOptions, count, inboxId, timeout);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Wait or return list of emails that match simple matching patterns Results must also meet provided count. Match options allow simple CONTAINS or EQUALS filtering on SUBJECT, TO, BCC, CC, and FROM.
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="matchOptions">matchOptions</param>
+        /// <param name="count">Number of emails to wait for. Must be greater that 1 (optional)</param>
+        /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
+        /// <returns>Task of ApiResponse (List&lt;EmailPreview&gt;)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<List<EmailPreview>>> WaitForMatchingEmailAsyncWithHttpInfo (MatchOptions matchOptions, int? count = null, Guid? inboxId = null, long? timeout = null)
+        {
+            // verify the required parameter 'matchOptions' is set
+            if (matchOptions == null)
+                throw new ApiException(400, "Missing required parameter 'matchOptions' when calling CommonOperationsApi->WaitForMatchingEmail");
+
+            var localVarPath = "./waitForMatchingEmails";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (count != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "count", count)); // query parameter
+            if (inboxId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "inboxId", inboxId)); // query parameter
+            if (timeout != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "timeout", timeout)); // query parameter
+            if (matchOptions != null && matchOptions.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(matchOptions); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = matchOptions; // byte array
+            }
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("WaitForMatchingEmail", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<EmailPreview>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                (List<EmailPreview>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<EmailPreview>)));
+        }
+
+        /// <summary>
         /// Wait for or fetch the email with a given index in the inbox specified 
         /// </summary>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
         /// <param name="index">Zero based index of the email to wait for (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
         /// <returns>Email</returns>
-        public Email WaitForNthEmail (Guid? inboxId = null, int? index = null)
+        public Email WaitForNthEmail (Guid? inboxId = null, int? index = null, long? timeout = null)
         {
-             ApiResponse<Email> localVarResponse = WaitForNthEmailWithHttpInfo(inboxId, index);
+             ApiResponse<Email> localVarResponse = WaitForNthEmailWithHttpInfo(inboxId, index, timeout);
              return localVarResponse.Data;
         }
 
@@ -938,8 +1735,9 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
         /// <param name="index">Zero based index of the email to wait for (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
         /// <returns>ApiResponse of Email</returns>
-        public ApiResponse< Email > WaitForNthEmailWithHttpInfo (Guid? inboxId = null, int? index = null)
+        public ApiResponse< Email > WaitForNthEmailWithHttpInfo (Guid? inboxId = null, int? index = null, long? timeout = null)
         {
 
             var localVarPath = "./waitForNthEmail";
@@ -965,6 +1763,7 @@ namespace mailslurp.Api
 
             if (inboxId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "inboxId", inboxId)); // query parameter
             if (index != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "index", index)); // query parameter
+            if (timeout != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "timeout", timeout)); // query parameter
 
             // authentication (API_KEY) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
@@ -996,10 +1795,11 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
         /// <param name="index">Zero based index of the email to wait for (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
         /// <returns>Task of Email</returns>
-        public async System.Threading.Tasks.Task<Email> WaitForNthEmailAsync (Guid? inboxId = null, int? index = null)
+        public async System.Threading.Tasks.Task<Email> WaitForNthEmailAsync (Guid? inboxId = null, int? index = null, long? timeout = null)
         {
-             ApiResponse<Email> localVarResponse = await WaitForNthEmailAsyncWithHttpInfo(inboxId, index);
+             ApiResponse<Email> localVarResponse = await WaitForNthEmailAsyncWithHttpInfo(inboxId, index, timeout);
              return localVarResponse.Data;
 
         }
@@ -1010,8 +1810,9 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="inboxId">Id of the inbox we are fetching emails from (optional)</param>
         /// <param name="index">Zero based index of the email to wait for (optional)</param>
+        /// <param name="timeout">Max milliseconds to wait (optional)</param>
         /// <returns>Task of ApiResponse (Email)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Email>> WaitForNthEmailAsyncWithHttpInfo (Guid? inboxId = null, int? index = null)
+        public async System.Threading.Tasks.Task<ApiResponse<Email>> WaitForNthEmailAsyncWithHttpInfo (Guid? inboxId = null, int? index = null, long? timeout = null)
         {
 
             var localVarPath = "./waitForNthEmail";
@@ -1037,6 +1838,7 @@ namespace mailslurp.Api
 
             if (inboxId != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "inboxId", inboxId)); // query parameter
             if (index != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "index", index)); // query parameter
+            if (timeout != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "timeout", timeout)); // query parameter
 
             // authentication (API_KEY) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))

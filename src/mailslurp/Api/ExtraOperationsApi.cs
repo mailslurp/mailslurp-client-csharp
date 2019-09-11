@@ -138,7 +138,7 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="emailId">emailId</param>
         /// <returns></returns>
-        void DeleteEmail (Guid? emailId);
+        void DeleteEmail1 (Guid? emailId);
 
         /// <summary>
         /// Delete Email
@@ -149,7 +149,7 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="emailId">emailId</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteEmailWithHttpInfo (Guid? emailId);
+        ApiResponse<Object> DeleteEmail1WithHttpInfo (Guid? emailId);
         /// <summary>
         /// Delete Inbox / Email Address
         /// </summary>
@@ -372,6 +372,52 @@ namespace mailslurp.Api
         /// <param name="sendEmailOptions">sendEmailOptions</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> SendEmailWithHttpInfo (Guid? inboxId, SendEmailOptions sendEmailOptions);
+        /// <summary>
+        /// Upload an attachment for sending
+        /// </summary>
+        /// <remarks>
+        /// When sending emails with attachments first upload each attachment with this endpoint. Record the returned attachment IDs. Then use these attachment IDs in the SendEmailOptions when sending an email. This means that attachments can easily be reused.
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="uploadAttachmentOptions">uploadOptions</param>
+        /// <returns>string</returns>
+        string UploadAttachment (UploadAttachmentOptions uploadAttachmentOptions);
+
+        /// <summary>
+        /// Upload an attachment for sending
+        /// </summary>
+        /// <remarks>
+        /// When sending emails with attachments first upload each attachment with this endpoint. Record the returned attachment IDs. Then use these attachment IDs in the SendEmailOptions when sending an email. This means that attachments can easily be reused.
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="uploadAttachmentOptions">uploadOptions</param>
+        /// <returns>ApiResponse of string</returns>
+        ApiResponse<string> UploadAttachmentWithHttpInfo (UploadAttachmentOptions uploadAttachmentOptions);
+        /// <summary>
+        /// Upload an attachment for sending using Multipart Form
+        /// </summary>
+        /// <remarks>
+        /// When sending emails with attachments first upload each attachment with this endpoint. Record the returned attachment IDs. Then use these attachment IDs in the SendEmailOptions when sending an email. This means that attachments can easily be reused.
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">file</param>
+        /// <param name="contentType">contentType (optional)</param>
+        /// <param name="filename">filename (optional)</param>
+        /// <returns>string</returns>
+        string UploadMultipartForm (System.IO.Stream file, string contentType = null, string filename = null);
+
+        /// <summary>
+        /// Upload an attachment for sending using Multipart Form
+        /// </summary>
+        /// <remarks>
+        /// When sending emails with attachments first upload each attachment with this endpoint. Record the returned attachment IDs. Then use these attachment IDs in the SendEmailOptions when sending an email. This means that attachments can easily be reused.
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">file</param>
+        /// <param name="contentType">contentType (optional)</param>
+        /// <param name="filename">filename (optional)</param>
+        /// <returns>ApiResponse of string</returns>
+        ApiResponse<string> UploadMultipartFormWithHttpInfo (System.IO.Stream file, string contentType = null, string filename = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -488,7 +534,7 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="emailId">emailId</param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteEmailAsync (Guid? emailId);
+        System.Threading.Tasks.Task DeleteEmail1Async (Guid? emailId);
 
         /// <summary>
         /// Delete Email
@@ -499,7 +545,7 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="emailId">emailId</param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteEmailAsyncWithHttpInfo (Guid? emailId);
+        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteEmail1AsyncWithHttpInfo (Guid? emailId);
         /// <summary>
         /// Delete Inbox / Email Address
         /// </summary>
@@ -722,6 +768,52 @@ namespace mailslurp.Api
         /// <param name="sendEmailOptions">sendEmailOptions</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> SendEmailAsyncWithHttpInfo (Guid? inboxId, SendEmailOptions sendEmailOptions);
+        /// <summary>
+        /// Upload an attachment for sending
+        /// </summary>
+        /// <remarks>
+        /// When sending emails with attachments first upload each attachment with this endpoint. Record the returned attachment IDs. Then use these attachment IDs in the SendEmailOptions when sending an email. This means that attachments can easily be reused.
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="uploadAttachmentOptions">uploadOptions</param>
+        /// <returns>Task of string</returns>
+        System.Threading.Tasks.Task<string> UploadAttachmentAsync (UploadAttachmentOptions uploadAttachmentOptions);
+
+        /// <summary>
+        /// Upload an attachment for sending
+        /// </summary>
+        /// <remarks>
+        /// When sending emails with attachments first upload each attachment with this endpoint. Record the returned attachment IDs. Then use these attachment IDs in the SendEmailOptions when sending an email. This means that attachments can easily be reused.
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="uploadAttachmentOptions">uploadOptions</param>
+        /// <returns>Task of ApiResponse (string)</returns>
+        System.Threading.Tasks.Task<ApiResponse<string>> UploadAttachmentAsyncWithHttpInfo (UploadAttachmentOptions uploadAttachmentOptions);
+        /// <summary>
+        /// Upload an attachment for sending using Multipart Form
+        /// </summary>
+        /// <remarks>
+        /// When sending emails with attachments first upload each attachment with this endpoint. Record the returned attachment IDs. Then use these attachment IDs in the SendEmailOptions when sending an email. This means that attachments can easily be reused.
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">file</param>
+        /// <param name="contentType">contentType (optional)</param>
+        /// <param name="filename">filename (optional)</param>
+        /// <returns>Task of string</returns>
+        System.Threading.Tasks.Task<string> UploadMultipartFormAsync (System.IO.Stream file, string contentType = null, string filename = null);
+
+        /// <summary>
+        /// Upload an attachment for sending using Multipart Form
+        /// </summary>
+        /// <remarks>
+        /// When sending emails with attachments first upload each attachment with this endpoint. Record the returned attachment IDs. Then use these attachment IDs in the SendEmailOptions when sending an email. This means that attachments can easily be reused.
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">file</param>
+        /// <param name="contentType">contentType (optional)</param>
+        /// <param name="filename">filename (optional)</param>
+        /// <returns>Task of ApiResponse (string)</returns>
+        System.Threading.Tasks.Task<ApiResponse<string>> UploadMultipartFormAsyncWithHttpInfo (System.IO.Stream file, string contentType = null, string filename = null);
         #endregion Asynchronous Operations
     }
 
@@ -1594,9 +1686,9 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="emailId">emailId</param>
         /// <returns></returns>
-        public void DeleteEmail (Guid? emailId)
+        public void DeleteEmail1 (Guid? emailId)
         {
-             DeleteEmailWithHttpInfo(emailId);
+             DeleteEmail1WithHttpInfo(emailId);
         }
 
         /// <summary>
@@ -1605,11 +1697,11 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="emailId">emailId</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteEmailWithHttpInfo (Guid? emailId)
+        public ApiResponse<Object> DeleteEmail1WithHttpInfo (Guid? emailId)
         {
             // verify the required parameter 'emailId' is set
             if (emailId == null)
-                throw new ApiException(400, "Missing required parameter 'emailId' when calling ExtraOperationsApi->DeleteEmail");
+                throw new ApiException(400, "Missing required parameter 'emailId' when calling ExtraOperationsApi->DeleteEmail1");
 
             var localVarPath = "./emails/{emailId}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1648,7 +1740,7 @@ namespace mailslurp.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("DeleteEmail", localVarResponse);
+                Exception exception = ExceptionFactory("DeleteEmail1", localVarResponse);
                 if (exception != null) throw exception;
             }
 
@@ -1663,9 +1755,9 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="emailId">emailId</param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteEmailAsync (Guid? emailId)
+        public async System.Threading.Tasks.Task DeleteEmail1Async (Guid? emailId)
         {
-             await DeleteEmailAsyncWithHttpInfo(emailId);
+             await DeleteEmail1AsyncWithHttpInfo(emailId);
 
         }
 
@@ -1675,11 +1767,11 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="emailId">emailId</param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteEmailAsyncWithHttpInfo (Guid? emailId)
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteEmail1AsyncWithHttpInfo (Guid? emailId)
         {
             // verify the required parameter 'emailId' is set
             if (emailId == null)
-                throw new ApiException(400, "Missing required parameter 'emailId' when calling ExtraOperationsApi->DeleteEmail");
+                throw new ApiException(400, "Missing required parameter 'emailId' when calling ExtraOperationsApi->DeleteEmail1");
 
             var localVarPath = "./emails/{emailId}";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1718,7 +1810,7 @@ namespace mailslurp.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("DeleteEmail", localVarResponse);
+                Exception exception = ExceptionFactory("DeleteEmail1", localVarResponse);
                 if (exception != null) throw exception;
             }
 
@@ -3203,6 +3295,322 @@ namespace mailslurp.Api
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
                 null);
+        }
+
+        /// <summary>
+        /// Upload an attachment for sending When sending emails with attachments first upload each attachment with this endpoint. Record the returned attachment IDs. Then use these attachment IDs in the SendEmailOptions when sending an email. This means that attachments can easily be reused.
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="uploadAttachmentOptions">uploadOptions</param>
+        /// <returns>string</returns>
+        public string UploadAttachment (UploadAttachmentOptions uploadAttachmentOptions)
+        {
+             ApiResponse<string> localVarResponse = UploadAttachmentWithHttpInfo(uploadAttachmentOptions);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Upload an attachment for sending When sending emails with attachments first upload each attachment with this endpoint. Record the returned attachment IDs. Then use these attachment IDs in the SendEmailOptions when sending an email. This means that attachments can easily be reused.
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="uploadAttachmentOptions">uploadOptions</param>
+        /// <returns>ApiResponse of string</returns>
+        public ApiResponse< string > UploadAttachmentWithHttpInfo (UploadAttachmentOptions uploadAttachmentOptions)
+        {
+            // verify the required parameter 'uploadAttachmentOptions' is set
+            if (uploadAttachmentOptions == null)
+                throw new ApiException(400, "Missing required parameter 'uploadAttachmentOptions' when calling ExtraOperationsApi->UploadAttachment");
+
+            var localVarPath = "./attachments";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (uploadAttachmentOptions != null && uploadAttachmentOptions.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(uploadAttachmentOptions); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = uploadAttachmentOptions; // byte array
+            }
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("UploadAttachment", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<string>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                (string) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(string)));
+        }
+
+        /// <summary>
+        /// Upload an attachment for sending When sending emails with attachments first upload each attachment with this endpoint. Record the returned attachment IDs. Then use these attachment IDs in the SendEmailOptions when sending an email. This means that attachments can easily be reused.
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="uploadAttachmentOptions">uploadOptions</param>
+        /// <returns>Task of string</returns>
+        public async System.Threading.Tasks.Task<string> UploadAttachmentAsync (UploadAttachmentOptions uploadAttachmentOptions)
+        {
+             ApiResponse<string> localVarResponse = await UploadAttachmentAsyncWithHttpInfo(uploadAttachmentOptions);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Upload an attachment for sending When sending emails with attachments first upload each attachment with this endpoint. Record the returned attachment IDs. Then use these attachment IDs in the SendEmailOptions when sending an email. This means that attachments can easily be reused.
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="uploadAttachmentOptions">uploadOptions</param>
+        /// <returns>Task of ApiResponse (string)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<string>> UploadAttachmentAsyncWithHttpInfo (UploadAttachmentOptions uploadAttachmentOptions)
+        {
+            // verify the required parameter 'uploadAttachmentOptions' is set
+            if (uploadAttachmentOptions == null)
+                throw new ApiException(400, "Missing required parameter 'uploadAttachmentOptions' when calling ExtraOperationsApi->UploadAttachment");
+
+            var localVarPath = "./attachments";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (uploadAttachmentOptions != null && uploadAttachmentOptions.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(uploadAttachmentOptions); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = uploadAttachmentOptions; // byte array
+            }
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("UploadAttachment", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<string>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                (string) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(string)));
+        }
+
+        /// <summary>
+        /// Upload an attachment for sending using Multipart Form When sending emails with attachments first upload each attachment with this endpoint. Record the returned attachment IDs. Then use these attachment IDs in the SendEmailOptions when sending an email. This means that attachments can easily be reused.
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">file</param>
+        /// <param name="contentType">contentType (optional)</param>
+        /// <param name="filename">filename (optional)</param>
+        /// <returns>string</returns>
+        public string UploadMultipartForm (System.IO.Stream file, string contentType = null, string filename = null)
+        {
+             ApiResponse<string> localVarResponse = UploadMultipartFormWithHttpInfo(file, contentType, filename);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Upload an attachment for sending using Multipart Form When sending emails with attachments first upload each attachment with this endpoint. Record the returned attachment IDs. Then use these attachment IDs in the SendEmailOptions when sending an email. This means that attachments can easily be reused.
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">file</param>
+        /// <param name="contentType">contentType (optional)</param>
+        /// <param name="filename">filename (optional)</param>
+        /// <returns>ApiResponse of string</returns>
+        public ApiResponse< string > UploadMultipartFormWithHttpInfo (System.IO.Stream file, string contentType = null, string filename = null)
+        {
+            // verify the required parameter 'file' is set
+            if (file == null)
+                throw new ApiException(400, "Missing required parameter 'file' when calling ExtraOperationsApi->UploadMultipartForm");
+
+            var localVarPath = "./attachments/multipart";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "multipart/form-data"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (contentType != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "contentType", contentType)); // query parameter
+            if (filename != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "filename", filename)); // query parameter
+            if (file != null) localVarFileParams.Add("file", this.Configuration.ApiClient.ParameterToFile("file", file));
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("UploadMultipartForm", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<string>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                (string) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(string)));
+        }
+
+        /// <summary>
+        /// Upload an attachment for sending using Multipart Form When sending emails with attachments first upload each attachment with this endpoint. Record the returned attachment IDs. Then use these attachment IDs in the SendEmailOptions when sending an email. This means that attachments can easily be reused.
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">file</param>
+        /// <param name="contentType">contentType (optional)</param>
+        /// <param name="filename">filename (optional)</param>
+        /// <returns>Task of string</returns>
+        public async System.Threading.Tasks.Task<string> UploadMultipartFormAsync (System.IO.Stream file, string contentType = null, string filename = null)
+        {
+             ApiResponse<string> localVarResponse = await UploadMultipartFormAsyncWithHttpInfo(file, contentType, filename);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Upload an attachment for sending using Multipart Form When sending emails with attachments first upload each attachment with this endpoint. Record the returned attachment IDs. Then use these attachment IDs in the SendEmailOptions when sending an email. This means that attachments can easily be reused.
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="file">file</param>
+        /// <param name="contentType">contentType (optional)</param>
+        /// <param name="filename">filename (optional)</param>
+        /// <returns>Task of ApiResponse (string)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<string>> UploadMultipartFormAsyncWithHttpInfo (System.IO.Stream file, string contentType = null, string filename = null)
+        {
+            // verify the required parameter 'file' is set
+            if (file == null)
+                throw new ApiException(400, "Missing required parameter 'file' when calling ExtraOperationsApi->UploadMultipartForm");
+
+            var localVarPath = "./attachments/multipart";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "multipart/form-data"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (contentType != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "contentType", contentType)); // query parameter
+            if (filename != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "filename", filename)); // query parameter
+            if (file != null) localVarFileParams.Add("file", this.Configuration.ApiClient.ParameterToFile("file", file));
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("UploadMultipartForm", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<string>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                (string) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(string)));
         }
 
     }

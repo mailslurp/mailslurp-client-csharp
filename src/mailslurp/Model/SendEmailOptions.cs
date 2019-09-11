@@ -36,6 +36,7 @@ namespace mailslurp.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="SendEmailOptions" /> class.
         /// </summary>
+        /// <param name="attachments">Optional list of attachment IDs to send with this email.</param>
         /// <param name="bcc">Optional list of bcc destination email addresses.</param>
         /// <param name="body">Contents of email.</param>
         /// <param name="cc">Optional list of cc destination email addresses.</param>
@@ -45,7 +46,7 @@ namespace mailslurp.Model
         /// <param name="replyTo">Optional replyTo header.</param>
         /// <param name="subject">Optional email subject line.</param>
         /// <param name="to">List of destination email addresses. Even single recipients must be in array form. (required).</param>
-        public SendEmailOptions(List<string> bcc = default(List<string>), string body = default(string), List<string> cc = default(List<string>), string charset = default(string), string from = default(string), bool? html = default(bool?), string replyTo = default(string), string subject = default(string), List<string> to = default(List<string>))
+        public SendEmailOptions(List<string> attachments = default(List<string>), List<string> bcc = default(List<string>), string body = default(string), List<string> cc = default(List<string>), string charset = default(string), string from = default(string), bool? html = default(bool?), string replyTo = default(string), string subject = default(string), List<string> to = default(List<string>))
         {
             // to ensure "to" is required (not null)
             if (to == null)
@@ -56,6 +57,7 @@ namespace mailslurp.Model
             {
                 this.To = to;
             }
+            this.Attachments = attachments;
             this.Bcc = bcc;
             this.Body = body;
             this.Cc = cc;
@@ -66,6 +68,13 @@ namespace mailslurp.Model
             this.Subject = subject;
         }
         
+        /// <summary>
+        /// Optional list of attachment IDs to send with this email
+        /// </summary>
+        /// <value>Optional list of attachment IDs to send with this email</value>
+        [DataMember(Name="attachments", EmitDefaultValue=false)]
+        public List<string> Attachments { get; set; }
+
         /// <summary>
         /// Optional list of bcc destination email addresses
         /// </summary>
@@ -136,6 +145,7 @@ namespace mailslurp.Model
         {
             var sb = new StringBuilder();
             sb.Append("class SendEmailOptions {\n");
+            sb.Append("  Attachments: ").Append(Attachments).Append("\n");
             sb.Append("  Bcc: ").Append(Bcc).Append("\n");
             sb.Append("  Body: ").Append(Body).Append("\n");
             sb.Append("  Cc: ").Append(Cc).Append("\n");
@@ -179,6 +189,11 @@ namespace mailslurp.Model
                 return false;
 
             return 
+                (
+                    this.Attachments == input.Attachments ||
+                    this.Attachments != null &&
+                    this.Attachments.SequenceEqual(input.Attachments)
+                ) && 
                 (
                     this.Bcc == input.Bcc ||
                     this.Bcc != null &&
@@ -235,6 +250,8 @@ namespace mailslurp.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.Attachments != null)
+                    hashCode = hashCode * 59 + this.Attachments.GetHashCode();
                 if (this.Bcc != null)
                     hashCode = hashCode * 59 + this.Bcc.GetHashCode();
                 if (this.Body != null)
