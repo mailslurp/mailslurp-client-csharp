@@ -1079,7 +1079,7 @@ void (empty response body)
 
 <a name="uploadattachment"></a>
 # **UploadAttachment**
-> string UploadAttachment (UploadAttachmentOptions uploadAttachmentOptions)
+> List<string> UploadAttachment (UploadAttachmentOptions uploadAttachmentOptions)
 
 Upload an attachment for sending
 
@@ -1110,7 +1110,7 @@ namespace Example
             try
             {
                 // Upload an attachment for sending
-                string result = apiInstance.UploadAttachment(uploadAttachmentOptions);
+                List&lt;string&gt; result = apiInstance.UploadAttachment(uploadAttachmentOptions);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1130,7 +1130,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**string**
+**List<string>**
 
 ### Authorization
 
@@ -1145,7 +1145,7 @@ Name | Type | Description  | Notes
 
 <a name="uploadmultipartform"></a>
 # **UploadMultipartForm**
-> string UploadMultipartForm (System.IO.Stream file, string contentType = null, string filename = null)
+> List<string> UploadMultipartForm (System.IO.Stream file, string contentType = null, string filename = null)
 
 Upload an attachment for sending using Multipart Form
 
@@ -1178,7 +1178,7 @@ namespace Example
             try
             {
                 // Upload an attachment for sending using Multipart Form
-                string result = apiInstance.UploadMultipartForm(file, contentType, filename);
+                List&lt;string&gt; result = apiInstance.UploadMultipartForm(file, contentType, filename);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1200,7 +1200,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**string**
+**List<string>**
 
 ### Authorization
 

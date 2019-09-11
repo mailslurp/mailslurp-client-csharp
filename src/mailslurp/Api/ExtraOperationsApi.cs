@@ -380,8 +380,8 @@ namespace mailslurp.Api
         /// </remarks>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="uploadAttachmentOptions">uploadOptions</param>
-        /// <returns>string</returns>
-        string UploadAttachment (UploadAttachmentOptions uploadAttachmentOptions);
+        /// <returns>List&lt;string&gt;</returns>
+        List<string> UploadAttachment (UploadAttachmentOptions uploadAttachmentOptions);
 
         /// <summary>
         /// Upload an attachment for sending
@@ -391,8 +391,8 @@ namespace mailslurp.Api
         /// </remarks>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="uploadAttachmentOptions">uploadOptions</param>
-        /// <returns>ApiResponse of string</returns>
-        ApiResponse<string> UploadAttachmentWithHttpInfo (UploadAttachmentOptions uploadAttachmentOptions);
+        /// <returns>ApiResponse of List&lt;string&gt;</returns>
+        ApiResponse<List<string>> UploadAttachmentWithHttpInfo (UploadAttachmentOptions uploadAttachmentOptions);
         /// <summary>
         /// Upload an attachment for sending using Multipart Form
         /// </summary>
@@ -403,8 +403,8 @@ namespace mailslurp.Api
         /// <param name="file">file</param>
         /// <param name="contentType">contentType (optional)</param>
         /// <param name="filename">filename (optional)</param>
-        /// <returns>string</returns>
-        string UploadMultipartForm (System.IO.Stream file, string contentType = null, string filename = null);
+        /// <returns>List&lt;string&gt;</returns>
+        List<string> UploadMultipartForm (System.IO.Stream file, string contentType = null, string filename = null);
 
         /// <summary>
         /// Upload an attachment for sending using Multipart Form
@@ -416,8 +416,8 @@ namespace mailslurp.Api
         /// <param name="file">file</param>
         /// <param name="contentType">contentType (optional)</param>
         /// <param name="filename">filename (optional)</param>
-        /// <returns>ApiResponse of string</returns>
-        ApiResponse<string> UploadMultipartFormWithHttpInfo (System.IO.Stream file, string contentType = null, string filename = null);
+        /// <returns>ApiResponse of List&lt;string&gt;</returns>
+        ApiResponse<List<string>> UploadMultipartFormWithHttpInfo (System.IO.Stream file, string contentType = null, string filename = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -776,8 +776,8 @@ namespace mailslurp.Api
         /// </remarks>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="uploadAttachmentOptions">uploadOptions</param>
-        /// <returns>Task of string</returns>
-        System.Threading.Tasks.Task<string> UploadAttachmentAsync (UploadAttachmentOptions uploadAttachmentOptions);
+        /// <returns>Task of List&lt;string&gt;</returns>
+        System.Threading.Tasks.Task<List<string>> UploadAttachmentAsync (UploadAttachmentOptions uploadAttachmentOptions);
 
         /// <summary>
         /// Upload an attachment for sending
@@ -787,8 +787,8 @@ namespace mailslurp.Api
         /// </remarks>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="uploadAttachmentOptions">uploadOptions</param>
-        /// <returns>Task of ApiResponse (string)</returns>
-        System.Threading.Tasks.Task<ApiResponse<string>> UploadAttachmentAsyncWithHttpInfo (UploadAttachmentOptions uploadAttachmentOptions);
+        /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<string>>> UploadAttachmentAsyncWithHttpInfo (UploadAttachmentOptions uploadAttachmentOptions);
         /// <summary>
         /// Upload an attachment for sending using Multipart Form
         /// </summary>
@@ -799,8 +799,8 @@ namespace mailslurp.Api
         /// <param name="file">file</param>
         /// <param name="contentType">contentType (optional)</param>
         /// <param name="filename">filename (optional)</param>
-        /// <returns>Task of string</returns>
-        System.Threading.Tasks.Task<string> UploadMultipartFormAsync (System.IO.Stream file, string contentType = null, string filename = null);
+        /// <returns>Task of List&lt;string&gt;</returns>
+        System.Threading.Tasks.Task<List<string>> UploadMultipartFormAsync (System.IO.Stream file, string contentType = null, string filename = null);
 
         /// <summary>
         /// Upload an attachment for sending using Multipart Form
@@ -812,8 +812,8 @@ namespace mailslurp.Api
         /// <param name="file">file</param>
         /// <param name="contentType">contentType (optional)</param>
         /// <param name="filename">filename (optional)</param>
-        /// <returns>Task of ApiResponse (string)</returns>
-        System.Threading.Tasks.Task<ApiResponse<string>> UploadMultipartFormAsyncWithHttpInfo (System.IO.Stream file, string contentType = null, string filename = null);
+        /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<string>>> UploadMultipartFormAsyncWithHttpInfo (System.IO.Stream file, string contentType = null, string filename = null);
         #endregion Asynchronous Operations
     }
 
@@ -3302,10 +3302,10 @@ namespace mailslurp.Api
         /// </summary>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="uploadAttachmentOptions">uploadOptions</param>
-        /// <returns>string</returns>
-        public string UploadAttachment (UploadAttachmentOptions uploadAttachmentOptions)
+        /// <returns>List&lt;string&gt;</returns>
+        public List<string> UploadAttachment (UploadAttachmentOptions uploadAttachmentOptions)
         {
-             ApiResponse<string> localVarResponse = UploadAttachmentWithHttpInfo(uploadAttachmentOptions);
+             ApiResponse<List<string>> localVarResponse = UploadAttachmentWithHttpInfo(uploadAttachmentOptions);
              return localVarResponse.Data;
         }
 
@@ -3314,8 +3314,8 @@ namespace mailslurp.Api
         /// </summary>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="uploadAttachmentOptions">uploadOptions</param>
-        /// <returns>ApiResponse of string</returns>
-        public ApiResponse< string > UploadAttachmentWithHttpInfo (UploadAttachmentOptions uploadAttachmentOptions)
+        /// <returns>ApiResponse of List&lt;string&gt;</returns>
+        public ApiResponse< List<string> > UploadAttachmentWithHttpInfo (UploadAttachmentOptions uploadAttachmentOptions)
         {
             // verify the required parameter 'uploadAttachmentOptions' is set
             if (uploadAttachmentOptions == null)
@@ -3371,9 +3371,9 @@ namespace mailslurp.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<string>(localVarStatusCode,
+            return new ApiResponse<List<string>>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
-                (string) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(string)));
+                (List<string>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<string>)));
         }
 
         /// <summary>
@@ -3381,10 +3381,10 @@ namespace mailslurp.Api
         /// </summary>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="uploadAttachmentOptions">uploadOptions</param>
-        /// <returns>Task of string</returns>
-        public async System.Threading.Tasks.Task<string> UploadAttachmentAsync (UploadAttachmentOptions uploadAttachmentOptions)
+        /// <returns>Task of List&lt;string&gt;</returns>
+        public async System.Threading.Tasks.Task<List<string>> UploadAttachmentAsync (UploadAttachmentOptions uploadAttachmentOptions)
         {
-             ApiResponse<string> localVarResponse = await UploadAttachmentAsyncWithHttpInfo(uploadAttachmentOptions);
+             ApiResponse<List<string>> localVarResponse = await UploadAttachmentAsyncWithHttpInfo(uploadAttachmentOptions);
              return localVarResponse.Data;
 
         }
@@ -3394,8 +3394,8 @@ namespace mailslurp.Api
         /// </summary>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="uploadAttachmentOptions">uploadOptions</param>
-        /// <returns>Task of ApiResponse (string)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<string>> UploadAttachmentAsyncWithHttpInfo (UploadAttachmentOptions uploadAttachmentOptions)
+        /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> UploadAttachmentAsyncWithHttpInfo (UploadAttachmentOptions uploadAttachmentOptions)
         {
             // verify the required parameter 'uploadAttachmentOptions' is set
             if (uploadAttachmentOptions == null)
@@ -3451,9 +3451,9 @@ namespace mailslurp.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<string>(localVarStatusCode,
+            return new ApiResponse<List<string>>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
-                (string) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(string)));
+                (List<string>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<string>)));
         }
 
         /// <summary>
@@ -3463,10 +3463,10 @@ namespace mailslurp.Api
         /// <param name="file">file</param>
         /// <param name="contentType">contentType (optional)</param>
         /// <param name="filename">filename (optional)</param>
-        /// <returns>string</returns>
-        public string UploadMultipartForm (System.IO.Stream file, string contentType = null, string filename = null)
+        /// <returns>List&lt;string&gt;</returns>
+        public List<string> UploadMultipartForm (System.IO.Stream file, string contentType = null, string filename = null)
         {
-             ApiResponse<string> localVarResponse = UploadMultipartFormWithHttpInfo(file, contentType, filename);
+             ApiResponse<List<string>> localVarResponse = UploadMultipartFormWithHttpInfo(file, contentType, filename);
              return localVarResponse.Data;
         }
 
@@ -3477,8 +3477,8 @@ namespace mailslurp.Api
         /// <param name="file">file</param>
         /// <param name="contentType">contentType (optional)</param>
         /// <param name="filename">filename (optional)</param>
-        /// <returns>ApiResponse of string</returns>
-        public ApiResponse< string > UploadMultipartFormWithHttpInfo (System.IO.Stream file, string contentType = null, string filename = null)
+        /// <returns>ApiResponse of List&lt;string&gt;</returns>
+        public ApiResponse< List<string> > UploadMultipartFormWithHttpInfo (System.IO.Stream file, string contentType = null, string filename = null)
         {
             // verify the required parameter 'file' is set
             if (file == null)
@@ -3529,9 +3529,9 @@ namespace mailslurp.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<string>(localVarStatusCode,
+            return new ApiResponse<List<string>>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
-                (string) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(string)));
+                (List<string>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<string>)));
         }
 
         /// <summary>
@@ -3541,10 +3541,10 @@ namespace mailslurp.Api
         /// <param name="file">file</param>
         /// <param name="contentType">contentType (optional)</param>
         /// <param name="filename">filename (optional)</param>
-        /// <returns>Task of string</returns>
-        public async System.Threading.Tasks.Task<string> UploadMultipartFormAsync (System.IO.Stream file, string contentType = null, string filename = null)
+        /// <returns>Task of List&lt;string&gt;</returns>
+        public async System.Threading.Tasks.Task<List<string>> UploadMultipartFormAsync (System.IO.Stream file, string contentType = null, string filename = null)
         {
-             ApiResponse<string> localVarResponse = await UploadMultipartFormAsyncWithHttpInfo(file, contentType, filename);
+             ApiResponse<List<string>> localVarResponse = await UploadMultipartFormAsyncWithHttpInfo(file, contentType, filename);
              return localVarResponse.Data;
 
         }
@@ -3556,8 +3556,8 @@ namespace mailslurp.Api
         /// <param name="file">file</param>
         /// <param name="contentType">contentType (optional)</param>
         /// <param name="filename">filename (optional)</param>
-        /// <returns>Task of ApiResponse (string)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<string>> UploadMultipartFormAsyncWithHttpInfo (System.IO.Stream file, string contentType = null, string filename = null)
+        /// <returns>Task of ApiResponse (List&lt;string&gt;)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<List<string>>> UploadMultipartFormAsyncWithHttpInfo (System.IO.Stream file, string contentType = null, string filename = null)
         {
             // verify the required parameter 'file' is set
             if (file == null)
@@ -3608,9 +3608,9 @@ namespace mailslurp.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<string>(localVarStatusCode,
+            return new ApiResponse<List<string>>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
-                (string) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(string)));
+                (List<string>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<string>)));
         }
 
     }
