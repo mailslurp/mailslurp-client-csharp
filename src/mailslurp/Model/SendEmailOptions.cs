@@ -36,17 +36,18 @@ namespace mailslurp.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="SendEmailOptions" /> class.
         /// </summary>
-        /// <param name="attachments">Optional list of attachment IDs to send with this email.</param>
+        /// <param name="attachments">Optional list of attachment IDs to send with this email. You must first upload each attachment separately in order to obtain attachment IDs.</param>
         /// <param name="bcc">Optional list of bcc destination email addresses.</param>
-        /// <param name="body">Contents of email.</param>
+        /// <param name="body">Contents of email. If HTML set isHTML to true. You can use moustache templates here if you provide a templateVariables option.</param>
         /// <param name="cc">Optional list of cc destination email addresses.</param>
         /// <param name="charset">Optional charset.</param>
         /// <param name="from">Optional from address. If not set source inbox address will be used.</param>
         /// <param name="html">html.</param>
         /// <param name="replyTo">Optional replyTo header.</param>
         /// <param name="subject">Optional email subject line.</param>
+        /// <param name="templateVariables">Optional map of template variables. Will replace moustache syntax variables in subject or body with the associated values.</param>
         /// <param name="to">List of destination email addresses. Even single recipients must be in array form. (required).</param>
-        public SendEmailOptions(List<string> attachments = default(List<string>), List<string> bcc = default(List<string>), string body = default(string), List<string> cc = default(List<string>), string charset = default(string), string from = default(string), bool? html = default(bool?), string replyTo = default(string), string subject = default(string), List<string> to = default(List<string>))
+        public SendEmailOptions(List<string> attachments = default(List<string>), List<string> bcc = default(List<string>), string body = default(string), List<string> cc = default(List<string>), string charset = default(string), string from = default(string), bool? html = default(bool?), string replyTo = default(string), string subject = default(string), Object templateVariables = default(Object), List<string> to = default(List<string>))
         {
             // to ensure "to" is required (not null)
             if (to == null)
@@ -66,12 +67,13 @@ namespace mailslurp.Model
             this.Html = html;
             this.ReplyTo = replyTo;
             this.Subject = subject;
+            this.TemplateVariables = templateVariables;
         }
         
         /// <summary>
-        /// Optional list of attachment IDs to send with this email
+        /// Optional list of attachment IDs to send with this email. You must first upload each attachment separately in order to obtain attachment IDs
         /// </summary>
-        /// <value>Optional list of attachment IDs to send with this email</value>
+        /// <value>Optional list of attachment IDs to send with this email. You must first upload each attachment separately in order to obtain attachment IDs</value>
         [DataMember(Name="attachments", EmitDefaultValue=false)]
         public List<string> Attachments { get; set; }
 
@@ -83,9 +85,9 @@ namespace mailslurp.Model
         public List<string> Bcc { get; set; }
 
         /// <summary>
-        /// Contents of email
+        /// Contents of email. If HTML set isHTML to true. You can use moustache templates here if you provide a templateVariables option
         /// </summary>
-        /// <value>Contents of email</value>
+        /// <value>Contents of email. If HTML set isHTML to true. You can use moustache templates here if you provide a templateVariables option</value>
         [DataMember(Name="body", EmitDefaultValue=false)]
         public string Body { get; set; }
 
@@ -131,6 +133,13 @@ namespace mailslurp.Model
         public string Subject { get; set; }
 
         /// <summary>
+        /// Optional map of template variables. Will replace moustache syntax variables in subject or body with the associated values
+        /// </summary>
+        /// <value>Optional map of template variables. Will replace moustache syntax variables in subject or body with the associated values</value>
+        [DataMember(Name="templateVariables", EmitDefaultValue=false)]
+        public Object TemplateVariables { get; set; }
+
+        /// <summary>
         /// List of destination email addresses. Even single recipients must be in array form.
         /// </summary>
         /// <value>List of destination email addresses. Even single recipients must be in array form.</value>
@@ -154,6 +163,7 @@ namespace mailslurp.Model
             sb.Append("  Html: ").Append(Html).Append("\n");
             sb.Append("  ReplyTo: ").Append(ReplyTo).Append("\n");
             sb.Append("  Subject: ").Append(Subject).Append("\n");
+            sb.Append("  TemplateVariables: ").Append(TemplateVariables).Append("\n");
             sb.Append("  To: ").Append(To).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -235,6 +245,11 @@ namespace mailslurp.Model
                     this.Subject.Equals(input.Subject))
                 ) && 
                 (
+                    this.TemplateVariables == input.TemplateVariables ||
+                    this.TemplateVariables != null &&
+                    this.TemplateVariables.SequenceEqual(input.TemplateVariables)
+                ) && 
+                (
                     this.To == input.To ||
                     this.To != null &&
                     this.To.SequenceEqual(input.To)
@@ -268,6 +283,8 @@ namespace mailslurp.Model
                     hashCode = hashCode * 59 + this.ReplyTo.GetHashCode();
                 if (this.Subject != null)
                     hashCode = hashCode * 59 + this.Subject.GetHashCode();
+                if (this.TemplateVariables != null)
+                    hashCode = hashCode * 59 + this.TemplateVariables.GetHashCode();
                 if (this.To != null)
                     hashCode = hashCode * 59 + this.To.GetHashCode();
                 return hashCode;

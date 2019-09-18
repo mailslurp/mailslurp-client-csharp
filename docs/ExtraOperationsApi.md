@@ -13,6 +13,7 @@ Method | HTTP request | Description
 [**DeleteInbox**](ExtraOperationsApi.md#deleteinbox) | **DELETE** /inboxes/{inboxId} | Delete Inbox / Email Address
 [**DeleteWebhook**](ExtraOperationsApi.md#deletewebhook) | **DELETE** /inboxes/{inboxId}/webhooks/{webhookId} | Delete and disable a WebHook for an Inbox
 [**DownloadAttachment**](ExtraOperationsApi.md#downloadattachment) | **GET** /emails/{emailId}/attachments/{attachmentId} | Get email attachment
+[**ForwardEmail**](ExtraOperationsApi.md#forwardemail) | **POST** /emails/{emailId}/forward | Forward Email
 [**GetEmail**](ExtraOperationsApi.md#getemail) | **GET** /emails/{emailId} | Get Email Content
 [**GetEmails**](ExtraOperationsApi.md#getemails) | **GET** /inboxes/{inboxId}/emails | List Emails in an Inbox / EmailAddress
 [**GetInbox**](ExtraOperationsApi.md#getinbox) | **GET** /inboxes/{inboxId} | Get Inbox / EmailAddress
@@ -608,6 +609,73 @@ void (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="forwardemail"></a>
+# **ForwardEmail**
+> void ForwardEmail (Guid? emailId, ForwardEmailOptions forwardEmailOptions)
+
+Forward Email
+
+Forward email content to given recipients
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using mailslurp.Api;
+using mailslurp.Client;
+using mailslurp.Model;
+
+namespace Example
+{
+    public class ForwardEmailExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: API_KEY
+            Configuration.Default.AddApiKey("x-api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("x-api-key", "Bearer");
+
+            var apiInstance = new ExtraOperationsApi();
+            var emailId = new Guid?(); // Guid? | emailId
+            var forwardEmailOptions = new ForwardEmailOptions(); // ForwardEmailOptions | forwardEmailOptions
+
+            try
+            {
+                // Forward Email
+                apiInstance.ForwardEmail(emailId, forwardEmailOptions);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExtraOperationsApi.ForwardEmail: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **emailId** | [**Guid?**](Guid?.md)| emailId | 
+ **forwardEmailOptions** | [**ForwardEmailOptions**](ForwardEmailOptions.md)| forwardEmailOptions | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[API_KEY](../README.md#API_KEY)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: Not defined
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

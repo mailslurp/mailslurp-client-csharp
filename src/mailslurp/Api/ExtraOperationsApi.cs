@@ -218,6 +218,29 @@ namespace mailslurp.Api
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DownloadAttachmentWithHttpInfo (string attachmentId, Guid? emailId);
         /// <summary>
+        /// Forward Email
+        /// </summary>
+        /// <remarks>
+        /// Forward email content to given recipients
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="emailId">emailId</param>
+        /// <param name="forwardEmailOptions">forwardEmailOptions</param>
+        /// <returns></returns>
+        void ForwardEmail (Guid? emailId, ForwardEmailOptions forwardEmailOptions);
+
+        /// <summary>
+        /// Forward Email
+        /// </summary>
+        /// <remarks>
+        /// Forward email content to given recipients
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="emailId">emailId</param>
+        /// <param name="forwardEmailOptions">forwardEmailOptions</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> ForwardEmailWithHttpInfo (Guid? emailId, ForwardEmailOptions forwardEmailOptions);
+        /// <summary>
         /// Get Email Content
         /// </summary>
         /// <remarks>
@@ -613,6 +636,29 @@ namespace mailslurp.Api
         /// <param name="emailId">emailId</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DownloadAttachmentAsyncWithHttpInfo (string attachmentId, Guid? emailId);
+        /// <summary>
+        /// Forward Email
+        /// </summary>
+        /// <remarks>
+        /// Forward email content to given recipients
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="emailId">emailId</param>
+        /// <param name="forwardEmailOptions">forwardEmailOptions</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task ForwardEmailAsync (Guid? emailId, ForwardEmailOptions forwardEmailOptions);
+
+        /// <summary>
+        /// Forward Email
+        /// </summary>
+        /// <remarks>
+        /// Forward email content to given recipients
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="emailId">emailId</param>
+        /// <param name="forwardEmailOptions">forwardEmailOptions</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> ForwardEmailAsyncWithHttpInfo (Guid? emailId, ForwardEmailOptions forwardEmailOptions);
         /// <summary>
         /// Get Email Content
         /// </summary>
@@ -2252,6 +2298,173 @@ namespace mailslurp.Api
             if (ExceptionFactory != null)
             {
                 Exception exception = ExceptionFactory("DownloadAttachment", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        /// Forward Email Forward email content to given recipients
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="emailId">emailId</param>
+        /// <param name="forwardEmailOptions">forwardEmailOptions</param>
+        /// <returns></returns>
+        public void ForwardEmail (Guid? emailId, ForwardEmailOptions forwardEmailOptions)
+        {
+             ForwardEmailWithHttpInfo(emailId, forwardEmailOptions);
+        }
+
+        /// <summary>
+        /// Forward Email Forward email content to given recipients
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="emailId">emailId</param>
+        /// <param name="forwardEmailOptions">forwardEmailOptions</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> ForwardEmailWithHttpInfo (Guid? emailId, ForwardEmailOptions forwardEmailOptions)
+        {
+            // verify the required parameter 'emailId' is set
+            if (emailId == null)
+                throw new ApiException(400, "Missing required parameter 'emailId' when calling ExtraOperationsApi->ForwardEmail");
+            // verify the required parameter 'forwardEmailOptions' is set
+            if (forwardEmailOptions == null)
+                throw new ApiException(400, "Missing required parameter 'forwardEmailOptions' when calling ExtraOperationsApi->ForwardEmail");
+
+            var localVarPath = "./emails/{emailId}/forward";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (emailId != null) localVarPathParams.Add("emailId", this.Configuration.ApiClient.ParameterToString(emailId)); // path parameter
+            if (forwardEmailOptions != null && forwardEmailOptions.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(forwardEmailOptions); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = forwardEmailOptions; // byte array
+            }
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ForwardEmail", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        /// Forward Email Forward email content to given recipients
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="emailId">emailId</param>
+        /// <param name="forwardEmailOptions">forwardEmailOptions</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task ForwardEmailAsync (Guid? emailId, ForwardEmailOptions forwardEmailOptions)
+        {
+             await ForwardEmailAsyncWithHttpInfo(emailId, forwardEmailOptions);
+
+        }
+
+        /// <summary>
+        /// Forward Email Forward email content to given recipients
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="emailId">emailId</param>
+        /// <param name="forwardEmailOptions">forwardEmailOptions</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> ForwardEmailAsyncWithHttpInfo (Guid? emailId, ForwardEmailOptions forwardEmailOptions)
+        {
+            // verify the required parameter 'emailId' is set
+            if (emailId == null)
+                throw new ApiException(400, "Missing required parameter 'emailId' when calling ExtraOperationsApi->ForwardEmail");
+            // verify the required parameter 'forwardEmailOptions' is set
+            if (forwardEmailOptions == null)
+                throw new ApiException(400, "Missing required parameter 'forwardEmailOptions' when calling ExtraOperationsApi->ForwardEmail");
+
+            var localVarPath = "./emails/{emailId}/forward";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (emailId != null) localVarPathParams.Add("emailId", this.Configuration.ApiClient.ParameterToString(emailId)); // path parameter
+            if (forwardEmailOptions != null && forwardEmailOptions.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(forwardEmailOptions); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = forwardEmailOptions; // byte array
+            }
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("ForwardEmail", localVarResponse);
                 if (exception != null) throw exception;
             }
 
