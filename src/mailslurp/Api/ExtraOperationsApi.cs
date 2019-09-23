@@ -88,24 +88,47 @@ namespace mailslurp.Api
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> BulkSendEmailsWithHttpInfo (BulkSendEmailOptions bulkSendEmailOptions);
         /// <summary>
+        /// Create Domain
+        /// </summary>
+        /// <remarks>
+        /// Link a domain that you own with MailSlurp so you can create inboxes with it. Returns DNS records used for validation. You must add these verification records to your host provider&#39;s DNS setup to verify the domain.
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="createDomainOptions">domainOptions</param>
+        /// <returns>DomainPlusVerificationRecordsAndStatus</returns>
+        DomainPlusVerificationRecordsAndStatus CreateDomain (CreateDomainOptions createDomainOptions);
+
+        /// <summary>
+        /// Create Domain
+        /// </summary>
+        /// <remarks>
+        /// Link a domain that you own with MailSlurp so you can create inboxes with it. Returns DNS records used for validation. You must add these verification records to your host provider&#39;s DNS setup to verify the domain.
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="createDomainOptions">domainOptions</param>
+        /// <returns>ApiResponse of DomainPlusVerificationRecordsAndStatus</returns>
+        ApiResponse<DomainPlusVerificationRecordsAndStatus> CreateDomainWithHttpInfo (CreateDomainOptions createDomainOptions);
+        /// <summary>
         /// Create an Inbox (email address)
         /// </summary>
         /// <remarks>
-        /// Create a new inbox and ephemeral email address to send and receive from. This is a necessary step before sending or receiving emails. The response contains the inbox&#39;s ID and its associated email address. It is recommended that you create a new inbox during each test method so that it is unique and empty
+        /// Create a new inbox and with a ranmdomized email address to send and receive from. Pass emailAddress parameter if you wish to use a specific email address. Creating an inbox is required before sending or receiving emails. If writing tests it is recommended that you create a new inbox during each test method so that it is unique and empty. 
         /// </remarks>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="emailAddress">Optional email address including domain you wish inbox to use (eg: test123@mydomain.com). Only supports domains that you have registered and verified with MailSlurp using dashboard or &#x60;createDomain&#x60; method. (optional)</param>
         /// <returns>Inbox</returns>
-        Inbox CreateInbox ();
+        Inbox CreateInbox (string emailAddress = null);
 
         /// <summary>
         /// Create an Inbox (email address)
         /// </summary>
         /// <remarks>
-        /// Create a new inbox and ephemeral email address to send and receive from. This is a necessary step before sending or receiving emails. The response contains the inbox&#39;s ID and its associated email address. It is recommended that you create a new inbox during each test method so that it is unique and empty
+        /// Create a new inbox and with a ranmdomized email address to send and receive from. Pass emailAddress parameter if you wish to use a specific email address. Creating an inbox is required before sending or receiving emails. If writing tests it is recommended that you create a new inbox during each test method so that it is unique and empty. 
         /// </remarks>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="emailAddress">Optional email address including domain you wish inbox to use (eg: test123@mydomain.com). Only supports domains that you have registered and verified with MailSlurp using dashboard or &#x60;createDomain&#x60; method. (optional)</param>
         /// <returns>ApiResponse of Inbox</returns>
-        ApiResponse<Inbox> CreateInboxWithHttpInfo ();
+        ApiResponse<Inbox> CreateInboxWithHttpInfo (string emailAddress = null);
         /// <summary>
         /// Attach a WebHook URL to an inbox
         /// </summary>
@@ -129,6 +152,27 @@ namespace mailslurp.Api
         /// <param name="createWebhookOptions">webhookOptions</param>
         /// <returns>ApiResponse of Webhook</returns>
         ApiResponse<Webhook> CreateWebhookWithHttpInfo (Guid? inboxId, CreateWebhookOptions createWebhookOptions);
+        /// <summary>
+        /// Delete a domain
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">id</param>
+        /// <returns></returns>
+        void DeleteDomain (Guid? id);
+
+        /// <summary>
+        /// Delete a domain
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">id</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> DeleteDomainWithHttpInfo (Guid? id);
         /// <summary>
         /// Delete Email
         /// </summary>
@@ -240,6 +284,46 @@ namespace mailslurp.Api
         /// <param name="forwardEmailOptions">forwardEmailOptions</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> ForwardEmailWithHttpInfo (Guid? emailId, ForwardEmailOptions forwardEmailOptions);
+        /// <summary>
+        /// Get a domain
+        /// </summary>
+        /// <remarks>
+        /// Returns domain verification status and tokens
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">id</param>
+        /// <returns>DomainPlusVerificationRecordsAndStatus</returns>
+        DomainPlusVerificationRecordsAndStatus GetDomain (Guid? id);
+
+        /// <summary>
+        /// Get a domain
+        /// </summary>
+        /// <remarks>
+        /// Returns domain verification status and tokens
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">id</param>
+        /// <returns>ApiResponse of DomainPlusVerificationRecordsAndStatus</returns>
+        ApiResponse<DomainPlusVerificationRecordsAndStatus> GetDomainWithHttpInfo (Guid? id);
+        /// <summary>
+        /// Get domains
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>List&lt;DomainPreview&gt;</returns>
+        List<DomainPreview> GetDomains ();
+
+        /// <summary>
+        /// Get domains
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>ApiResponse of List&lt;DomainPreview&gt;</returns>
+        ApiResponse<List<DomainPreview>> GetDomainsWithHttpInfo ();
         /// <summary>
         /// Get Email Content
         /// </summary>
@@ -507,24 +591,47 @@ namespace mailslurp.Api
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> BulkSendEmailsAsyncWithHttpInfo (BulkSendEmailOptions bulkSendEmailOptions);
         /// <summary>
+        /// Create Domain
+        /// </summary>
+        /// <remarks>
+        /// Link a domain that you own with MailSlurp so you can create inboxes with it. Returns DNS records used for validation. You must add these verification records to your host provider&#39;s DNS setup to verify the domain.
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="createDomainOptions">domainOptions</param>
+        /// <returns>Task of DomainPlusVerificationRecordsAndStatus</returns>
+        System.Threading.Tasks.Task<DomainPlusVerificationRecordsAndStatus> CreateDomainAsync (CreateDomainOptions createDomainOptions);
+
+        /// <summary>
+        /// Create Domain
+        /// </summary>
+        /// <remarks>
+        /// Link a domain that you own with MailSlurp so you can create inboxes with it. Returns DNS records used for validation. You must add these verification records to your host provider&#39;s DNS setup to verify the domain.
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="createDomainOptions">domainOptions</param>
+        /// <returns>Task of ApiResponse (DomainPlusVerificationRecordsAndStatus)</returns>
+        System.Threading.Tasks.Task<ApiResponse<DomainPlusVerificationRecordsAndStatus>> CreateDomainAsyncWithHttpInfo (CreateDomainOptions createDomainOptions);
+        /// <summary>
         /// Create an Inbox (email address)
         /// </summary>
         /// <remarks>
-        /// Create a new inbox and ephemeral email address to send and receive from. This is a necessary step before sending or receiving emails. The response contains the inbox&#39;s ID and its associated email address. It is recommended that you create a new inbox during each test method so that it is unique and empty
+        /// Create a new inbox and with a ranmdomized email address to send and receive from. Pass emailAddress parameter if you wish to use a specific email address. Creating an inbox is required before sending or receiving emails. If writing tests it is recommended that you create a new inbox during each test method so that it is unique and empty. 
         /// </remarks>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="emailAddress">Optional email address including domain you wish inbox to use (eg: test123@mydomain.com). Only supports domains that you have registered and verified with MailSlurp using dashboard or &#x60;createDomain&#x60; method. (optional)</param>
         /// <returns>Task of Inbox</returns>
-        System.Threading.Tasks.Task<Inbox> CreateInboxAsync ();
+        System.Threading.Tasks.Task<Inbox> CreateInboxAsync (string emailAddress = null);
 
         /// <summary>
         /// Create an Inbox (email address)
         /// </summary>
         /// <remarks>
-        /// Create a new inbox and ephemeral email address to send and receive from. This is a necessary step before sending or receiving emails. The response contains the inbox&#39;s ID and its associated email address. It is recommended that you create a new inbox during each test method so that it is unique and empty
+        /// Create a new inbox and with a ranmdomized email address to send and receive from. Pass emailAddress parameter if you wish to use a specific email address. Creating an inbox is required before sending or receiving emails. If writing tests it is recommended that you create a new inbox during each test method so that it is unique and empty. 
         /// </remarks>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="emailAddress">Optional email address including domain you wish inbox to use (eg: test123@mydomain.com). Only supports domains that you have registered and verified with MailSlurp using dashboard or &#x60;createDomain&#x60; method. (optional)</param>
         /// <returns>Task of ApiResponse (Inbox)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Inbox>> CreateInboxAsyncWithHttpInfo ();
+        System.Threading.Tasks.Task<ApiResponse<Inbox>> CreateInboxAsyncWithHttpInfo (string emailAddress = null);
         /// <summary>
         /// Attach a WebHook URL to an inbox
         /// </summary>
@@ -548,6 +655,27 @@ namespace mailslurp.Api
         /// <param name="createWebhookOptions">webhookOptions</param>
         /// <returns>Task of ApiResponse (Webhook)</returns>
         System.Threading.Tasks.Task<ApiResponse<Webhook>> CreateWebhookAsyncWithHttpInfo (Guid? inboxId, CreateWebhookOptions createWebhookOptions);
+        /// <summary>
+        /// Delete a domain
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">id</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task DeleteDomainAsync (Guid? id);
+
+        /// <summary>
+        /// Delete a domain
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">id</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteDomainAsyncWithHttpInfo (Guid? id);
         /// <summary>
         /// Delete Email
         /// </summary>
@@ -659,6 +787,46 @@ namespace mailslurp.Api
         /// <param name="forwardEmailOptions">forwardEmailOptions</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> ForwardEmailAsyncWithHttpInfo (Guid? emailId, ForwardEmailOptions forwardEmailOptions);
+        /// <summary>
+        /// Get a domain
+        /// </summary>
+        /// <remarks>
+        /// Returns domain verification status and tokens
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">id</param>
+        /// <returns>Task of DomainPlusVerificationRecordsAndStatus</returns>
+        System.Threading.Tasks.Task<DomainPlusVerificationRecordsAndStatus> GetDomainAsync (Guid? id);
+
+        /// <summary>
+        /// Get a domain
+        /// </summary>
+        /// <remarks>
+        /// Returns domain verification status and tokens
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">id</param>
+        /// <returns>Task of ApiResponse (DomainPlusVerificationRecordsAndStatus)</returns>
+        System.Threading.Tasks.Task<ApiResponse<DomainPlusVerificationRecordsAndStatus>> GetDomainAsyncWithHttpInfo (Guid? id);
+        /// <summary>
+        /// Get domains
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>Task of List&lt;DomainPreview&gt;</returns>
+        System.Threading.Tasks.Task<List<DomainPreview>> GetDomainsAsync ();
+
+        /// <summary>
+        /// Get domains
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>Task of ApiResponse (List&lt;DomainPreview&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<DomainPreview>>> GetDomainsAsyncWithHttpInfo ();
         /// <summary>
         /// Get Email Content
         /// </summary>
@@ -1425,22 +1593,183 @@ namespace mailslurp.Api
         }
 
         /// <summary>
-        /// Create an Inbox (email address) Create a new inbox and ephemeral email address to send and receive from. This is a necessary step before sending or receiving emails. The response contains the inbox&#39;s ID and its associated email address. It is recommended that you create a new inbox during each test method so that it is unique and empty
+        /// Create Domain Link a domain that you own with MailSlurp so you can create inboxes with it. Returns DNS records used for validation. You must add these verification records to your host provider&#39;s DNS setup to verify the domain.
         /// </summary>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Inbox</returns>
-        public Inbox CreateInbox ()
+        /// <param name="createDomainOptions">domainOptions</param>
+        /// <returns>DomainPlusVerificationRecordsAndStatus</returns>
+        public DomainPlusVerificationRecordsAndStatus CreateDomain (CreateDomainOptions createDomainOptions)
         {
-             ApiResponse<Inbox> localVarResponse = CreateInboxWithHttpInfo();
+             ApiResponse<DomainPlusVerificationRecordsAndStatus> localVarResponse = CreateDomainWithHttpInfo(createDomainOptions);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Create an Inbox (email address) Create a new inbox and ephemeral email address to send and receive from. This is a necessary step before sending or receiving emails. The response contains the inbox&#39;s ID and its associated email address. It is recommended that you create a new inbox during each test method so that it is unique and empty
+        /// Create Domain Link a domain that you own with MailSlurp so you can create inboxes with it. Returns DNS records used for validation. You must add these verification records to your host provider&#39;s DNS setup to verify the domain.
         /// </summary>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="createDomainOptions">domainOptions</param>
+        /// <returns>ApiResponse of DomainPlusVerificationRecordsAndStatus</returns>
+        public ApiResponse< DomainPlusVerificationRecordsAndStatus > CreateDomainWithHttpInfo (CreateDomainOptions createDomainOptions)
+        {
+            // verify the required parameter 'createDomainOptions' is set
+            if (createDomainOptions == null)
+                throw new ApiException(400, "Missing required parameter 'createDomainOptions' when calling ExtraOperationsApi->CreateDomain");
+
+            var localVarPath = "./domains";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (createDomainOptions != null && createDomainOptions.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(createDomainOptions); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = createDomainOptions; // byte array
+            }
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CreateDomain", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<DomainPlusVerificationRecordsAndStatus>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                (DomainPlusVerificationRecordsAndStatus) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(DomainPlusVerificationRecordsAndStatus)));
+        }
+
+        /// <summary>
+        /// Create Domain Link a domain that you own with MailSlurp so you can create inboxes with it. Returns DNS records used for validation. You must add these verification records to your host provider&#39;s DNS setup to verify the domain.
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="createDomainOptions">domainOptions</param>
+        /// <returns>Task of DomainPlusVerificationRecordsAndStatus</returns>
+        public async System.Threading.Tasks.Task<DomainPlusVerificationRecordsAndStatus> CreateDomainAsync (CreateDomainOptions createDomainOptions)
+        {
+             ApiResponse<DomainPlusVerificationRecordsAndStatus> localVarResponse = await CreateDomainAsyncWithHttpInfo(createDomainOptions);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Create Domain Link a domain that you own with MailSlurp so you can create inboxes with it. Returns DNS records used for validation. You must add these verification records to your host provider&#39;s DNS setup to verify the domain.
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="createDomainOptions">domainOptions</param>
+        /// <returns>Task of ApiResponse (DomainPlusVerificationRecordsAndStatus)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<DomainPlusVerificationRecordsAndStatus>> CreateDomainAsyncWithHttpInfo (CreateDomainOptions createDomainOptions)
+        {
+            // verify the required parameter 'createDomainOptions' is set
+            if (createDomainOptions == null)
+                throw new ApiException(400, "Missing required parameter 'createDomainOptions' when calling ExtraOperationsApi->CreateDomain");
+
+            var localVarPath = "./domains";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (createDomainOptions != null && createDomainOptions.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = this.Configuration.ApiClient.Serialize(createDomainOptions); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = createDomainOptions; // byte array
+            }
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("CreateDomain", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<DomainPlusVerificationRecordsAndStatus>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                (DomainPlusVerificationRecordsAndStatus) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(DomainPlusVerificationRecordsAndStatus)));
+        }
+
+        /// <summary>
+        /// Create an Inbox (email address) Create a new inbox and with a ranmdomized email address to send and receive from. Pass emailAddress parameter if you wish to use a specific email address. Creating an inbox is required before sending or receiving emails. If writing tests it is recommended that you create a new inbox during each test method so that it is unique and empty. 
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="emailAddress">Optional email address including domain you wish inbox to use (eg: test123@mydomain.com). Only supports domains that you have registered and verified with MailSlurp using dashboard or &#x60;createDomain&#x60; method. (optional)</param>
+        /// <returns>Inbox</returns>
+        public Inbox CreateInbox (string emailAddress = null)
+        {
+             ApiResponse<Inbox> localVarResponse = CreateInboxWithHttpInfo(emailAddress);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Create an Inbox (email address) Create a new inbox and with a ranmdomized email address to send and receive from. Pass emailAddress parameter if you wish to use a specific email address. Creating an inbox is required before sending or receiving emails. If writing tests it is recommended that you create a new inbox during each test method so that it is unique and empty. 
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="emailAddress">Optional email address including domain you wish inbox to use (eg: test123@mydomain.com). Only supports domains that you have registered and verified with MailSlurp using dashboard or &#x60;createDomain&#x60; method. (optional)</param>
         /// <returns>ApiResponse of Inbox</returns>
-        public ApiResponse< Inbox > CreateInboxWithHttpInfo ()
+        public ApiResponse< Inbox > CreateInboxWithHttpInfo (string emailAddress = null)
         {
 
             var localVarPath = "./inboxes";
@@ -1464,6 +1793,7 @@ namespace mailslurp.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (emailAddress != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "emailAddress", emailAddress)); // query parameter
 
             // authentication (API_KEY) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
@@ -1490,23 +1820,25 @@ namespace mailslurp.Api
         }
 
         /// <summary>
-        /// Create an Inbox (email address) Create a new inbox and ephemeral email address to send and receive from. This is a necessary step before sending or receiving emails. The response contains the inbox&#39;s ID and its associated email address. It is recommended that you create a new inbox during each test method so that it is unique and empty
+        /// Create an Inbox (email address) Create a new inbox and with a ranmdomized email address to send and receive from. Pass emailAddress parameter if you wish to use a specific email address. Creating an inbox is required before sending or receiving emails. If writing tests it is recommended that you create a new inbox during each test method so that it is unique and empty. 
         /// </summary>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="emailAddress">Optional email address including domain you wish inbox to use (eg: test123@mydomain.com). Only supports domains that you have registered and verified with MailSlurp using dashboard or &#x60;createDomain&#x60; method. (optional)</param>
         /// <returns>Task of Inbox</returns>
-        public async System.Threading.Tasks.Task<Inbox> CreateInboxAsync ()
+        public async System.Threading.Tasks.Task<Inbox> CreateInboxAsync (string emailAddress = null)
         {
-             ApiResponse<Inbox> localVarResponse = await CreateInboxAsyncWithHttpInfo();
+             ApiResponse<Inbox> localVarResponse = await CreateInboxAsyncWithHttpInfo(emailAddress);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Create an Inbox (email address) Create a new inbox and ephemeral email address to send and receive from. This is a necessary step before sending or receiving emails. The response contains the inbox&#39;s ID and its associated email address. It is recommended that you create a new inbox during each test method so that it is unique and empty
+        /// Create an Inbox (email address) Create a new inbox and with a ranmdomized email address to send and receive from. Pass emailAddress parameter if you wish to use a specific email address. Creating an inbox is required before sending or receiving emails. If writing tests it is recommended that you create a new inbox during each test method so that it is unique and empty. 
         /// </summary>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="emailAddress">Optional email address including domain you wish inbox to use (eg: test123@mydomain.com). Only supports domains that you have registered and verified with MailSlurp using dashboard or &#x60;createDomain&#x60; method. (optional)</param>
         /// <returns>Task of ApiResponse (Inbox)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Inbox>> CreateInboxAsyncWithHttpInfo ()
+        public async System.Threading.Tasks.Task<ApiResponse<Inbox>> CreateInboxAsyncWithHttpInfo (string emailAddress = null)
         {
 
             var localVarPath = "./inboxes";
@@ -1530,6 +1862,7 @@ namespace mailslurp.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (emailAddress != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "emailAddress", emailAddress)); // query parameter
 
             // authentication (API_KEY) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
@@ -1724,6 +2057,145 @@ namespace mailslurp.Api
             return new ApiResponse<Webhook>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
                 (Webhook) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(Webhook)));
+        }
+
+        /// <summary>
+        /// Delete a domain 
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">id</param>
+        /// <returns></returns>
+        public void DeleteDomain (Guid? id)
+        {
+             DeleteDomainWithHttpInfo(id);
+        }
+
+        /// <summary>
+        /// Delete a domain 
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">id</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public ApiResponse<Object> DeleteDomainWithHttpInfo (Guid? id)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling ExtraOperationsApi->DeleteDomain");
+
+            var localVarPath = "./domains/{id}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (id != null) localVarPathParams.Add("id", this.Configuration.ApiClient.ParameterToString(id)); // path parameter
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DeleteDomain", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                null);
+        }
+
+        /// <summary>
+        /// Delete a domain 
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">id</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task DeleteDomainAsync (Guid? id)
+        {
+             await DeleteDomainAsyncWithHttpInfo(id);
+
+        }
+
+        /// <summary>
+        /// Delete a domain 
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">id</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteDomainAsyncWithHttpInfo (Guid? id)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling ExtraOperationsApi->DeleteDomain");
+
+            var localVarPath = "./domains/{id}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (id != null) localVarPathParams.Add("id", this.Configuration.ApiClient.ParameterToString(id)); // path parameter
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("DeleteDomain", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<Object>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                null);
         }
 
         /// <summary>
@@ -2471,6 +2943,280 @@ namespace mailslurp.Api
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
                 null);
+        }
+
+        /// <summary>
+        /// Get a domain Returns domain verification status and tokens
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">id</param>
+        /// <returns>DomainPlusVerificationRecordsAndStatus</returns>
+        public DomainPlusVerificationRecordsAndStatus GetDomain (Guid? id)
+        {
+             ApiResponse<DomainPlusVerificationRecordsAndStatus> localVarResponse = GetDomainWithHttpInfo(id);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Get a domain Returns domain verification status and tokens
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">id</param>
+        /// <returns>ApiResponse of DomainPlusVerificationRecordsAndStatus</returns>
+        public ApiResponse< DomainPlusVerificationRecordsAndStatus > GetDomainWithHttpInfo (Guid? id)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling ExtraOperationsApi->GetDomain");
+
+            var localVarPath = "./domains/{id}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (id != null) localVarPathParams.Add("id", this.Configuration.ApiClient.ParameterToString(id)); // path parameter
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetDomain", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<DomainPlusVerificationRecordsAndStatus>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                (DomainPlusVerificationRecordsAndStatus) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(DomainPlusVerificationRecordsAndStatus)));
+        }
+
+        /// <summary>
+        /// Get a domain Returns domain verification status and tokens
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">id</param>
+        /// <returns>Task of DomainPlusVerificationRecordsAndStatus</returns>
+        public async System.Threading.Tasks.Task<DomainPlusVerificationRecordsAndStatus> GetDomainAsync (Guid? id)
+        {
+             ApiResponse<DomainPlusVerificationRecordsAndStatus> localVarResponse = await GetDomainAsyncWithHttpInfo(id);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Get a domain Returns domain verification status and tokens
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="id">id</param>
+        /// <returns>Task of ApiResponse (DomainPlusVerificationRecordsAndStatus)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<DomainPlusVerificationRecordsAndStatus>> GetDomainAsyncWithHttpInfo (Guid? id)
+        {
+            // verify the required parameter 'id' is set
+            if (id == null)
+                throw new ApiException(400, "Missing required parameter 'id' when calling ExtraOperationsApi->GetDomain");
+
+            var localVarPath = "./domains/{id}";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (id != null) localVarPathParams.Add("id", this.Configuration.ApiClient.ParameterToString(id)); // path parameter
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetDomain", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<DomainPlusVerificationRecordsAndStatus>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                (DomainPlusVerificationRecordsAndStatus) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(DomainPlusVerificationRecordsAndStatus)));
+        }
+
+        /// <summary>
+        /// Get domains 
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>List&lt;DomainPreview&gt;</returns>
+        public List<DomainPreview> GetDomains ()
+        {
+             ApiResponse<List<DomainPreview>> localVarResponse = GetDomainsWithHttpInfo();
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Get domains 
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>ApiResponse of List&lt;DomainPreview&gt;</returns>
+        public ApiResponse< List<DomainPreview> > GetDomainsWithHttpInfo ()
+        {
+
+            var localVarPath = "./domains";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetDomains", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<DomainPreview>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                (List<DomainPreview>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<DomainPreview>)));
+        }
+
+        /// <summary>
+        /// Get domains 
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>Task of List&lt;DomainPreview&gt;</returns>
+        public async System.Threading.Tasks.Task<List<DomainPreview>> GetDomainsAsync ()
+        {
+             ApiResponse<List<DomainPreview>> localVarResponse = await GetDomainsAsyncWithHttpInfo();
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Get domains 
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>Task of ApiResponse (List&lt;DomainPreview&gt;)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<List<DomainPreview>>> GetDomainsAsyncWithHttpInfo ()
+        {
+
+            var localVarPath = "./domains";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetDomains", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<List<DomainPreview>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                (List<DomainPreview>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<DomainPreview>)));
         }
 
         /// <summary>

@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **Bcc** | **List&lt;string&gt;** |  | [optional] 
 **Cc** | **List&lt;string&gt;** |  | [optional] 
 **Created** | **DateTime?** |  | 
-**Id** | **Guid?** |  | 
+**Id** | **Guid?** | ID of the Email. | [optional] 
 **Subject** | **string** |  | [optional] 
 **To** | **List&lt;string&gt;** |  | 
 

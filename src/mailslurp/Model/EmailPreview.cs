@@ -23,7 +23,7 @@ using OpenAPIDateConverter = mailslurp.Client.OpenAPIDateConverter;
 namespace mailslurp.Model
 {
     /// <summary>
-    /// Preview of an email message. For full message call the message endpoint with a given message id.
+    /// Preview of an email message. For full message call the email endpoints with the provided email id.
     /// </summary>
     [DataContract]
     public partial class EmailPreview :  IEquatable<EmailPreview>
@@ -39,7 +39,7 @@ namespace mailslurp.Model
         /// <param name="bcc">bcc.</param>
         /// <param name="cc">cc.</param>
         /// <param name="created">created (required).</param>
-        /// <param name="id">id (required).</param>
+        /// <param name="id">ID of the Email..</param>
         /// <param name="subject">subject.</param>
         /// <param name="to">to (required).</param>
         public EmailPreview(List<string> bcc = default(List<string>), List<string> cc = default(List<string>), DateTime? created = default(DateTime?), Guid? id = default(Guid?), string subject = default(string), List<string> to = default(List<string>))
@@ -53,15 +53,6 @@ namespace mailslurp.Model
             {
                 this.Created = created;
             }
-            // to ensure "id" is required (not null)
-            if (id == null)
-            {
-                throw new InvalidDataException("id is a required property for EmailPreview and cannot be null");
-            }
-            else
-            {
-                this.Id = id;
-            }
             // to ensure "to" is required (not null)
             if (to == null)
             {
@@ -73,6 +64,7 @@ namespace mailslurp.Model
             }
             this.Bcc = bcc;
             this.Cc = cc;
+            this.Id = id;
             this.Subject = subject;
         }
         
@@ -95,8 +87,9 @@ namespace mailslurp.Model
         public DateTime? Created { get; set; }
 
         /// <summary>
-        /// Gets or Sets Id
+        /// ID of the Email.
         /// </summary>
+        /// <value>ID of the Email.</value>
         [DataMember(Name="id", EmitDefaultValue=false)]
         public Guid? Id { get; set; }
 
