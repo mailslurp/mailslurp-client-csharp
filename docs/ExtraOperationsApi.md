@@ -20,6 +20,7 @@ Method | HTTP request | Description
 [**GetDomains**](ExtraOperationsApi.md#getdomains) | **GET** /domains | Get domains
 [**GetEmail**](ExtraOperationsApi.md#getemail) | **GET** /emails/{emailId} | Get Email Content
 [**GetEmails**](ExtraOperationsApi.md#getemails) | **GET** /inboxes/{inboxId}/emails | List Emails in an Inbox / EmailAddress
+[**GetEmailsPaginated**](ExtraOperationsApi.md#getemailspaginated) | **GET** /emails | Get all emails
 [**GetInbox**](ExtraOperationsApi.md#getinbox) | **GET** /inboxes/{inboxId} | Get Inbox / EmailAddress
 [**GetInboxes**](ExtraOperationsApi.md#getinboxes) | **GET** /inboxes | List Inboxes / Email Addresses
 [**GetRawEmailContents**](ExtraOperationsApi.md#getrawemailcontents) | **GET** /emails/{emailId}/raw | Get Raw Email Content
@@ -685,7 +686,7 @@ void (empty response body)
 
 <a name="downloadattachment"></a>
 # **DownloadAttachment**
-> void DownloadAttachment (string attachmentId, Guid? emailId)
+> void DownloadAttachment (string attachmentId, Guid? emailId, string apiKey = null)
 
 Get email attachment
 
@@ -713,11 +714,12 @@ namespace Example
             var apiInstance = new ExtraOperationsApi();
             var attachmentId = attachmentId_example;  // string | attachmentId
             var emailId = new Guid?(); // Guid? | emailId
+            var apiKey = apiKey_example;  // string | Can pass apiKey in url for this request if you wish to download the file in a browser (optional) 
 
             try
             {
                 // Get email attachment
-                apiInstance.DownloadAttachment(attachmentId, emailId);
+                apiInstance.DownloadAttachment(attachmentId, emailId, apiKey);
             }
             catch (Exception e)
             {
@@ -734,6 +736,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **attachmentId** | **string**| attachmentId | 
  **emailId** | [**Guid?**](Guid?.md)| emailId | 
+ **apiKey** | **string**| Can pass apiKey in url for this request if you wish to download the file in a browser | [optional] 
 
 ### Return type
 
@@ -1083,6 +1086,74 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getemailspaginated"></a>
+# **GetEmailsPaginated**
+> PageEmailProjection GetEmailsPaginated (int? page = null, int? size = null)
+
+Get all emails
+
+Responses are paginated
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using mailslurp.Api;
+using mailslurp.Client;
+using mailslurp.Model;
+
+namespace Example
+{
+    public class GetEmailsPaginatedExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: API_KEY
+            Configuration.Default.AddApiKey("x-api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("x-api-key", "Bearer");
+
+            var apiInstance = new ExtraOperationsApi();
+            var page = 56;  // int? | Optional page index in email list pagination (optional)  (default to 0)
+            var size = 56;  // int? | Optional page size in email list pagination (optional)  (default to 20)
+
+            try
+            {
+                // Get all emails
+                PageEmailProjection result = apiInstance.GetEmailsPaginated(page, size);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExtraOperationsApi.GetEmailsPaginated: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **int?**| Optional page index in email list pagination | [optional] [default to 0]
+ **size** | **int?**| Optional page size in email list pagination | [optional] [default to 20]
+
+### Return type
+
+[**PageEmailProjection**](PageEmailProjection.md)
+
+### Authorization
+
+[API_KEY](../README.md#API_KEY)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getinbox"></a>
 # **GetInbox**
 > Inbox GetInbox (Guid? inboxId)
@@ -1273,7 +1344,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

@@ -247,8 +247,9 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="attachmentId">attachmentId</param>
         /// <param name="emailId">emailId</param>
+        /// <param name="apiKey">Can pass apiKey in url for this request if you wish to download the file in a browser (optional)</param>
         /// <returns></returns>
-        void DownloadAttachment (string attachmentId, Guid? emailId);
+        void DownloadAttachment (string attachmentId, Guid? emailId, string apiKey = null);
 
         /// <summary>
         /// Get email attachment
@@ -259,8 +260,9 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="attachmentId">attachmentId</param>
         /// <param name="emailId">emailId</param>
+        /// <param name="apiKey">Can pass apiKey in url for this request if you wish to download the file in a browser (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DownloadAttachmentWithHttpInfo (string attachmentId, Guid? emailId);
+        ApiResponse<Object> DownloadAttachmentWithHttpInfo (string attachmentId, Guid? emailId, string apiKey = null);
         /// <summary>
         /// Forward Email
         /// </summary>
@@ -374,6 +376,29 @@ namespace mailslurp.Api
         /// <param name="since">Exclude emails received before this ISO 8601 date time (optional)</param>
         /// <returns>ApiResponse of List&lt;EmailPreview&gt;</returns>
         ApiResponse<List<EmailPreview>> GetEmailsWithHttpInfo (Guid? inboxId, int? limit = null, long? minCount = null, long? retryTimeout = null, DateTime? since = null);
+        /// <summary>
+        /// Get all emails
+        /// </summary>
+        /// <remarks>
+        /// Responses are paginated
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="page">Optional page index in email list pagination (optional, default to 0)</param>
+        /// <param name="size">Optional page size in email list pagination (optional, default to 20)</param>
+        /// <returns>PageEmailProjection</returns>
+        PageEmailProjection GetEmailsPaginated (int? page = null, int? size = null);
+
+        /// <summary>
+        /// Get all emails
+        /// </summary>
+        /// <remarks>
+        /// Responses are paginated
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="page">Optional page index in email list pagination (optional, default to 0)</param>
+        /// <param name="size">Optional page size in email list pagination (optional, default to 20)</param>
+        /// <returns>ApiResponse of PageEmailProjection</returns>
+        ApiResponse<PageEmailProjection> GetEmailsPaginatedWithHttpInfo (int? page = null, int? size = null);
         /// <summary>
         /// Get Inbox / EmailAddress
         /// </summary>
@@ -750,8 +775,9 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="attachmentId">attachmentId</param>
         /// <param name="emailId">emailId</param>
+        /// <param name="apiKey">Can pass apiKey in url for this request if you wish to download the file in a browser (optional)</param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DownloadAttachmentAsync (string attachmentId, Guid? emailId);
+        System.Threading.Tasks.Task DownloadAttachmentAsync (string attachmentId, Guid? emailId, string apiKey = null);
 
         /// <summary>
         /// Get email attachment
@@ -762,8 +788,9 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="attachmentId">attachmentId</param>
         /// <param name="emailId">emailId</param>
+        /// <param name="apiKey">Can pass apiKey in url for this request if you wish to download the file in a browser (optional)</param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DownloadAttachmentAsyncWithHttpInfo (string attachmentId, Guid? emailId);
+        System.Threading.Tasks.Task<ApiResponse<Object>> DownloadAttachmentAsyncWithHttpInfo (string attachmentId, Guid? emailId, string apiKey = null);
         /// <summary>
         /// Forward Email
         /// </summary>
@@ -877,6 +904,29 @@ namespace mailslurp.Api
         /// <param name="since">Exclude emails received before this ISO 8601 date time (optional)</param>
         /// <returns>Task of ApiResponse (List&lt;EmailPreview&gt;)</returns>
         System.Threading.Tasks.Task<ApiResponse<List<EmailPreview>>> GetEmailsAsyncWithHttpInfo (Guid? inboxId, int? limit = null, long? minCount = null, long? retryTimeout = null, DateTime? since = null);
+        /// <summary>
+        /// Get all emails
+        /// </summary>
+        /// <remarks>
+        /// Responses are paginated
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="page">Optional page index in email list pagination (optional, default to 0)</param>
+        /// <param name="size">Optional page size in email list pagination (optional, default to 20)</param>
+        /// <returns>Task of PageEmailProjection</returns>
+        System.Threading.Tasks.Task<PageEmailProjection> GetEmailsPaginatedAsync (int? page = null, int? size = null);
+
+        /// <summary>
+        /// Get all emails
+        /// </summary>
+        /// <remarks>
+        /// Responses are paginated
+        /// </remarks>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="page">Optional page index in email list pagination (optional, default to 0)</param>
+        /// <param name="size">Optional page size in email list pagination (optional, default to 20)</param>
+        /// <returns>Task of ApiResponse (PageEmailProjection)</returns>
+        System.Threading.Tasks.Task<ApiResponse<PageEmailProjection>> GetEmailsPaginatedAsyncWithHttpInfo (int? page = null, int? size = null);
         /// <summary>
         /// Get Inbox / EmailAddress
         /// </summary>
@@ -2633,10 +2683,11 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="attachmentId">attachmentId</param>
         /// <param name="emailId">emailId</param>
+        /// <param name="apiKey">Can pass apiKey in url for this request if you wish to download the file in a browser (optional)</param>
         /// <returns></returns>
-        public void DownloadAttachment (string attachmentId, Guid? emailId)
+        public void DownloadAttachment (string attachmentId, Guid? emailId, string apiKey = null)
         {
-             DownloadAttachmentWithHttpInfo(attachmentId, emailId);
+             DownloadAttachmentWithHttpInfo(attachmentId, emailId, apiKey);
         }
 
         /// <summary>
@@ -2645,8 +2696,9 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="attachmentId">attachmentId</param>
         /// <param name="emailId">emailId</param>
+        /// <param name="apiKey">Can pass apiKey in url for this request if you wish to download the file in a browser (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DownloadAttachmentWithHttpInfo (string attachmentId, Guid? emailId)
+        public ApiResponse<Object> DownloadAttachmentWithHttpInfo (string attachmentId, Guid? emailId, string apiKey = null)
         {
             // verify the required parameter 'attachmentId' is set
             if (attachmentId == null)
@@ -2677,6 +2729,7 @@ namespace mailslurp.Api
 
             if (attachmentId != null) localVarPathParams.Add("attachmentId", this.Configuration.ApiClient.ParameterToString(attachmentId)); // path parameter
             if (emailId != null) localVarPathParams.Add("emailId", this.Configuration.ApiClient.ParameterToString(emailId)); // path parameter
+            if (apiKey != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "apiKey", apiKey)); // query parameter
 
             // authentication (API_KEY) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
@@ -2708,10 +2761,11 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="attachmentId">attachmentId</param>
         /// <param name="emailId">emailId</param>
+        /// <param name="apiKey">Can pass apiKey in url for this request if you wish to download the file in a browser (optional)</param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DownloadAttachmentAsync (string attachmentId, Guid? emailId)
+        public async System.Threading.Tasks.Task DownloadAttachmentAsync (string attachmentId, Guid? emailId, string apiKey = null)
         {
-             await DownloadAttachmentAsyncWithHttpInfo(attachmentId, emailId);
+             await DownloadAttachmentAsyncWithHttpInfo(attachmentId, emailId, apiKey);
 
         }
 
@@ -2721,8 +2775,9 @@ namespace mailslurp.Api
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="attachmentId">attachmentId</param>
         /// <param name="emailId">emailId</param>
+        /// <param name="apiKey">Can pass apiKey in url for this request if you wish to download the file in a browser (optional)</param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DownloadAttachmentAsyncWithHttpInfo (string attachmentId, Guid? emailId)
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> DownloadAttachmentAsyncWithHttpInfo (string attachmentId, Guid? emailId, string apiKey = null)
         {
             // verify the required parameter 'attachmentId' is set
             if (attachmentId == null)
@@ -2753,6 +2808,7 @@ namespace mailslurp.Api
 
             if (attachmentId != null) localVarPathParams.Add("attachmentId", this.Configuration.ApiClient.ParameterToString(attachmentId)); // path parameter
             if (emailId != null) localVarPathParams.Add("emailId", this.Configuration.ApiClient.ParameterToString(emailId)); // path parameter
+            if (apiKey != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "apiKey", apiKey)); // query parameter
 
             // authentication (API_KEY) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
@@ -3530,6 +3586,149 @@ namespace mailslurp.Api
         }
 
         /// <summary>
+        /// Get all emails Responses are paginated
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="page">Optional page index in email list pagination (optional, default to 0)</param>
+        /// <param name="size">Optional page size in email list pagination (optional, default to 20)</param>
+        /// <returns>PageEmailProjection</returns>
+        public PageEmailProjection GetEmailsPaginated (int? page = null, int? size = null)
+        {
+             ApiResponse<PageEmailProjection> localVarResponse = GetEmailsPaginatedWithHttpInfo(page, size);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Get all emails Responses are paginated
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="page">Optional page index in email list pagination (optional, default to 0)</param>
+        /// <param name="size">Optional page size in email list pagination (optional, default to 20)</param>
+        /// <returns>ApiResponse of PageEmailProjection</returns>
+        public ApiResponse< PageEmailProjection > GetEmailsPaginatedWithHttpInfo (int? page = null, int? size = null)
+        {
+
+            var localVarPath = "./emails";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (page != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "page", page)); // query parameter
+            if (size != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "size", size)); // query parameter
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetEmailsPaginated", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<PageEmailProjection>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                (PageEmailProjection) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(PageEmailProjection)));
+        }
+
+        /// <summary>
+        /// Get all emails Responses are paginated
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="page">Optional page index in email list pagination (optional, default to 0)</param>
+        /// <param name="size">Optional page size in email list pagination (optional, default to 20)</param>
+        /// <returns>Task of PageEmailProjection</returns>
+        public async System.Threading.Tasks.Task<PageEmailProjection> GetEmailsPaginatedAsync (int? page = null, int? size = null)
+        {
+             ApiResponse<PageEmailProjection> localVarResponse = await GetEmailsPaginatedAsyncWithHttpInfo(page, size);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Get all emails Responses are paginated
+        /// </summary>
+        /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="page">Optional page index in email list pagination (optional, default to 0)</param>
+        /// <param name="size">Optional page size in email list pagination (optional, default to 20)</param>
+        /// <returns>Task of ApiResponse (PageEmailProjection)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<PageEmailProjection>> GetEmailsPaginatedAsyncWithHttpInfo (int? page = null, int? size = null)
+        {
+
+            var localVarPath = "./emails";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (page != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "page", page)); // query parameter
+            if (size != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "size", size)); // query parameter
+
+            // authentication (API_KEY) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("x-api-key")))
+            {
+                localVarHeaderParams["x-api-key"] = this.Configuration.GetApiKeyWithPrefix("x-api-key");
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetEmailsPaginated", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<PageEmailProjection>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Key, x => x.Value.ToString()),
+                (PageEmailProjection) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(PageEmailProjection)));
+        }
+
+        /// <summary>
         /// Get Inbox / EmailAddress Returns an inbox&#39;s properties, including its email address and ID.
         /// </summary>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
@@ -3842,7 +4041,7 @@ namespace mailslurp.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
+                "text/plain"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -3914,7 +4113,7 @@ namespace mailslurp.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
+                "text/plain"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)

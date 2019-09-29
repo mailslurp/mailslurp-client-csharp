@@ -31,63 +31,18 @@ namespace mailslurp.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="EmailAnalysis" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected EmailAnalysis() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="EmailAnalysis" /> class.
-        /// </summary>
-        /// <param name="dkimVerdict">dkimVerdict (required).</param>
-        /// <param name="dmarcVerdict">dmarcVerdict (required).</param>
-        /// <param name="spamVerdict">spamVerdict (required).</param>
-        /// <param name="spfVerdict">spfVerdict (required).</param>
-        /// <param name="virusVerdict">virusVerdict (required).</param>
+        /// <param name="dkimVerdict">dkimVerdict.</param>
+        /// <param name="dmarcVerdict">dmarcVerdict.</param>
+        /// <param name="spamVerdict">spamVerdict.</param>
+        /// <param name="spfVerdict">spfVerdict.</param>
+        /// <param name="virusVerdict">virusVerdict.</param>
         public EmailAnalysis(string dkimVerdict = default(string), string dmarcVerdict = default(string), string spamVerdict = default(string), string spfVerdict = default(string), string virusVerdict = default(string))
         {
-            // to ensure "dkimVerdict" is required (not null)
-            if (dkimVerdict == null)
-            {
-                throw new InvalidDataException("dkimVerdict is a required property for EmailAnalysis and cannot be null");
-            }
-            else
-            {
-                this.DkimVerdict = dkimVerdict;
-            }
-            // to ensure "dmarcVerdict" is required (not null)
-            if (dmarcVerdict == null)
-            {
-                throw new InvalidDataException("dmarcVerdict is a required property for EmailAnalysis and cannot be null");
-            }
-            else
-            {
-                this.DmarcVerdict = dmarcVerdict;
-            }
-            // to ensure "spamVerdict" is required (not null)
-            if (spamVerdict == null)
-            {
-                throw new InvalidDataException("spamVerdict is a required property for EmailAnalysis and cannot be null");
-            }
-            else
-            {
-                this.SpamVerdict = spamVerdict;
-            }
-            // to ensure "spfVerdict" is required (not null)
-            if (spfVerdict == null)
-            {
-                throw new InvalidDataException("spfVerdict is a required property for EmailAnalysis and cannot be null");
-            }
-            else
-            {
-                this.SpfVerdict = spfVerdict;
-            }
-            // to ensure "virusVerdict" is required (not null)
-            if (virusVerdict == null)
-            {
-                throw new InvalidDataException("virusVerdict is a required property for EmailAnalysis and cannot be null");
-            }
-            else
-            {
-                this.VirusVerdict = virusVerdict;
-            }
+            this.DkimVerdict = dkimVerdict;
+            this.DmarcVerdict = dmarcVerdict;
+            this.SpamVerdict = spamVerdict;
+            this.SpfVerdict = spfVerdict;
+            this.VirusVerdict = virusVerdict;
         }
         
         /// <summary>

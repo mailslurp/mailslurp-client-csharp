@@ -36,10 +36,20 @@ namespace mailslurp.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="DomainPreview" /> class.
         /// </summary>
+        /// <param name="createdAt">createdAt (required).</param>
         /// <param name="domain">domain (required).</param>
         /// <param name="id">id (required).</param>
-        public DomainPreview(string domain = default(string), Guid? id = default(Guid?))
+        public DomainPreview(DateTime? createdAt = default(DateTime?), string domain = default(string), Guid? id = default(Guid?))
         {
+            // to ensure "createdAt" is required (not null)
+            if (createdAt == null)
+            {
+                throw new InvalidDataException("createdAt is a required property for DomainPreview and cannot be null");
+            }
+            else
+            {
+                this.CreatedAt = createdAt;
+            }
             // to ensure "domain" is required (not null)
             if (domain == null)
             {
@@ -61,6 +71,12 @@ namespace mailslurp.Model
         }
         
         /// <summary>
+        /// Gets or Sets CreatedAt
+        /// </summary>
+        [DataMember(Name="createdAt", EmitDefaultValue=false)]
+        public DateTime? CreatedAt { get; set; }
+
+        /// <summary>
         /// Gets or Sets Domain
         /// </summary>
         [DataMember(Name="domain", EmitDefaultValue=false)]
@@ -80,6 +96,7 @@ namespace mailslurp.Model
         {
             var sb = new StringBuilder();
             sb.Append("class DomainPreview {\n");
+            sb.Append("  CreatedAt: ").Append(CreatedAt).Append("\n");
             sb.Append("  Domain: ").Append(Domain).Append("\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("}\n");
@@ -117,6 +134,11 @@ namespace mailslurp.Model
 
             return 
                 (
+                    this.CreatedAt == input.CreatedAt ||
+                    (this.CreatedAt != null &&
+                    this.CreatedAt.Equals(input.CreatedAt))
+                ) && 
+                (
                     this.Domain == input.Domain ||
                     (this.Domain != null &&
                     this.Domain.Equals(input.Domain))
@@ -137,6 +159,8 @@ namespace mailslurp.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.CreatedAt != null)
+                    hashCode = hashCode * 59 + this.CreatedAt.GetHashCode();
                 if (this.Domain != null)
                     hashCode = hashCode * 59 + this.Domain.GetHashCode();
                 if (this.Id != null)

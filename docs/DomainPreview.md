@@ -3,6 +3,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**CreatedAt** | **DateTime?** |  | 
 **Domain** | **string** |  | 
 **Id** | **Guid?** |  | 
 

@@ -23,50 +23,49 @@ using OpenAPIDateConverter = mailslurp.Client.OpenAPIDateConverter;
 namespace mailslurp.Model
 {
     /// <summary>
-    /// Preview of an email message. For full message call the email endpoints with the provided email id.
+    /// EmailProjection
     /// </summary>
     [DataContract]
-    public partial class EmailPreview :  IEquatable<EmailPreview>
+    public partial class EmailProjection :  IEquatable<EmailProjection>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="EmailPreview" /> class.
+        /// Initializes a new instance of the <see cref="EmailProjection" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected EmailPreview() { }
+        protected EmailProjection() { }
         /// <summary>
-        /// Initializes a new instance of the <see cref="EmailPreview" /> class.
+        /// Initializes a new instance of the <see cref="EmailProjection" /> class.
         /// </summary>
         /// <param name="bcc">bcc.</param>
         /// <param name="cc">cc.</param>
-        /// <param name="created">created (required).</param>
         /// <param name="createdAt">createdAt (required).</param>
-        /// <param name="id">ID of the Email..</param>
+        /// <param name="id">id (required).</param>
         /// <param name="subject">subject.</param>
         /// <param name="to">to (required).</param>
-        public EmailPreview(List<string> bcc = default(List<string>), List<string> cc = default(List<string>), DateTime? created = default(DateTime?), DateTime? createdAt = default(DateTime?), Guid? id = default(Guid?), string subject = default(string), List<string> to = default(List<string>))
+        public EmailProjection(List<string> bcc = default(List<string>), List<string> cc = default(List<string>), DateTime? createdAt = default(DateTime?), Guid? id = default(Guid?), string subject = default(string), List<string> to = default(List<string>))
         {
-            // to ensure "created" is required (not null)
-            if (created == null)
-            {
-                throw new InvalidDataException("created is a required property for EmailPreview and cannot be null");
-            }
-            else
-            {
-                this.Created = created;
-            }
             // to ensure "createdAt" is required (not null)
             if (createdAt == null)
             {
-                throw new InvalidDataException("createdAt is a required property for EmailPreview and cannot be null");
+                throw new InvalidDataException("createdAt is a required property for EmailProjection and cannot be null");
             }
             else
             {
                 this.CreatedAt = createdAt;
             }
+            // to ensure "id" is required (not null)
+            if (id == null)
+            {
+                throw new InvalidDataException("id is a required property for EmailProjection and cannot be null");
+            }
+            else
+            {
+                this.Id = id;
+            }
             // to ensure "to" is required (not null)
             if (to == null)
             {
-                throw new InvalidDataException("to is a required property for EmailPreview and cannot be null");
+                throw new InvalidDataException("to is a required property for EmailProjection and cannot be null");
             }
             else
             {
@@ -74,7 +73,6 @@ namespace mailslurp.Model
             }
             this.Bcc = bcc;
             this.Cc = cc;
-            this.Id = id;
             this.Subject = subject;
         }
         
@@ -91,21 +89,14 @@ namespace mailslurp.Model
         public List<string> Cc { get; set; }
 
         /// <summary>
-        /// Gets or Sets Created
-        /// </summary>
-        [DataMember(Name="created", EmitDefaultValue=false)]
-        public DateTime? Created { get; set; }
-
-        /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
         [DataMember(Name="createdAt", EmitDefaultValue=false)]
         public DateTime? CreatedAt { get; set; }
 
         /// <summary>
-        /// ID of the Email.
+        /// Gets or Sets Id
         /// </summary>
-        /// <value>ID of the Email.</value>
         [DataMember(Name="id", EmitDefaultValue=false)]
         public Guid? Id { get; set; }
 
@@ -128,10 +119,9 @@ namespace mailslurp.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class EmailPreview {\n");
+            sb.Append("class EmailProjection {\n");
             sb.Append("  Bcc: ").Append(Bcc).Append("\n");
             sb.Append("  Cc: ").Append(Cc).Append("\n");
-            sb.Append("  Created: ").Append(Created).Append("\n");
             sb.Append("  CreatedAt: ").Append(CreatedAt).Append("\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  Subject: ").Append(Subject).Append("\n");
@@ -156,15 +146,15 @@ namespace mailslurp.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as EmailPreview);
+            return this.Equals(input as EmailProjection);
         }
 
         /// <summary>
-        /// Returns true if EmailPreview instances are equal
+        /// Returns true if EmailProjection instances are equal
         /// </summary>
-        /// <param name="input">Instance of EmailPreview to be compared</param>
+        /// <param name="input">Instance of EmailProjection to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(EmailPreview input)
+        public bool Equals(EmailProjection input)
         {
             if (input == null)
                 return false;
@@ -179,11 +169,6 @@ namespace mailslurp.Model
                     this.Cc == input.Cc ||
                     this.Cc != null &&
                     this.Cc.SequenceEqual(input.Cc)
-                ) && 
-                (
-                    this.Created == input.Created ||
-                    (this.Created != null &&
-                    this.Created.Equals(input.Created))
                 ) && 
                 (
                     this.CreatedAt == input.CreatedAt ||
@@ -220,8 +205,6 @@ namespace mailslurp.Model
                     hashCode = hashCode * 59 + this.Bcc.GetHashCode();
                 if (this.Cc != null)
                     hashCode = hashCode * 59 + this.Cc.GetHashCode();
-                if (this.Created != null)
-                    hashCode = hashCode * 59 + this.Created.GetHashCode();
                 if (this.CreatedAt != null)
                     hashCode = hashCode * 59 + this.CreatedAt.GetHashCode();
                 if (this.Id != null)
