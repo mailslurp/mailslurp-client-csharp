@@ -1,7 +1,7 @@
 /* 
  * MailSlurp API
  *
- * For documentation see [developer guide](https://www.mailslurp.com/developers). [Create an account](https://app.mailslurp.com) in the MailSlurp Dashboard to [view your API Key](https://app). For all bugs, feature requests, or help please [see support](https://www.mailslurp.com/support/).
+ * For full documentation and a list of available SDK clients please see the [developer guide](https://www.mailslurp.com/developers). [Create an account](https://app.mailslurp.com) in the MailSlurp Dashboard to [view your API Key](https://app.mailslurp.com). For all bugs, feature requests, or help please [see support](https://www.mailslurp.com/support/). 
  *
  * OpenAPI spec version: 0.0.1-alpha
  * Contact: contact@mailslurp.dev
@@ -41,9 +41,11 @@ namespace mailslurp.Model
         /// <param name="bcc">bcc.</param>
         /// <param name="body">body.</param>
         /// <param name="cc">cc.</param>
+        /// <param name="charset">charset.</param>
         /// <param name="createdAt">createdAt (required).</param>
         /// <param name="from">from.</param>
         /// <param name="headers">headers.</param>
+        /// <param name="html">html.</param>
         /// <param name="id">id (required).</param>
         /// <param name="inboxId">inboxId (required).</param>
         /// <param name="rawUrl">rawUrl.</param>
@@ -51,7 +53,7 @@ namespace mailslurp.Model
         /// <param name="to">to (required).</param>
         /// <param name="updatedAt">updatedAt (required).</param>
         /// <param name="userId">userId (required).</param>
-        public Email(EmailAnalysis analysis = default(EmailAnalysis), List<string> attachments = default(List<string>), List<string> bcc = default(List<string>), string body = default(string), List<string> cc = default(List<string>), DateTime? createdAt = default(DateTime?), string from = default(string), Dictionary<string, string> headers = default(Dictionary<string, string>), Guid? id = default(Guid?), Guid? inboxId = default(Guid?), string rawUrl = default(string), string subject = default(string), List<string> to = default(List<string>), DateTime? updatedAt = default(DateTime?), Guid? userId = default(Guid?))
+        public Email(EmailAnalysis analysis = default(EmailAnalysis), List<string> attachments = default(List<string>), List<string> bcc = default(List<string>), string body = default(string), List<string> cc = default(List<string>), string charset = default(string), DateTime? createdAt = default(DateTime?), string from = default(string), Dictionary<string, string> headers = default(Dictionary<string, string>), bool? html = default(bool?), Guid? id = default(Guid?), Guid? inboxId = default(Guid?), string rawUrl = default(string), string subject = default(string), List<string> to = default(List<string>), DateTime? updatedAt = default(DateTime?), Guid? userId = default(Guid?))
         {
             // to ensure "createdAt" is required (not null)
             if (createdAt == null)
@@ -112,8 +114,10 @@ namespace mailslurp.Model
             this.Bcc = bcc;
             this.Body = body;
             this.Cc = cc;
+            this.Charset = charset;
             this.From = from;
             this.Headers = headers;
+            this.Html = html;
             this.RawUrl = rawUrl;
             this.Subject = subject;
         }
@@ -149,6 +153,12 @@ namespace mailslurp.Model
         public List<string> Cc { get; set; }
 
         /// <summary>
+        /// Gets or Sets Charset
+        /// </summary>
+        [DataMember(Name="charset", EmitDefaultValue=false)]
+        public string Charset { get; set; }
+
+        /// <summary>
         /// Gets or Sets CreatedAt
         /// </summary>
         [DataMember(Name="createdAt", EmitDefaultValue=false)]
@@ -165,6 +175,12 @@ namespace mailslurp.Model
         /// </summary>
         [DataMember(Name="headers", EmitDefaultValue=false)]
         public Dictionary<string, string> Headers { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Html
+        /// </summary>
+        [DataMember(Name="html", EmitDefaultValue=false)]
+        public bool? Html { get; set; }
 
         /// <summary>
         /// Gets or Sets Id
@@ -221,9 +237,11 @@ namespace mailslurp.Model
             sb.Append("  Bcc: ").Append(Bcc).Append("\n");
             sb.Append("  Body: ").Append(Body).Append("\n");
             sb.Append("  Cc: ").Append(Cc).Append("\n");
+            sb.Append("  Charset: ").Append(Charset).Append("\n");
             sb.Append("  CreatedAt: ").Append(CreatedAt).Append("\n");
             sb.Append("  From: ").Append(From).Append("\n");
             sb.Append("  Headers: ").Append(Headers).Append("\n");
+            sb.Append("  Html: ").Append(Html).Append("\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  InboxId: ").Append(InboxId).Append("\n");
             sb.Append("  RawUrl: ").Append(RawUrl).Append("\n");
@@ -291,6 +309,11 @@ namespace mailslurp.Model
                     this.Cc.SequenceEqual(input.Cc)
                 ) && 
                 (
+                    this.Charset == input.Charset ||
+                    (this.Charset != null &&
+                    this.Charset.Equals(input.Charset))
+                ) && 
+                (
                     this.CreatedAt == input.CreatedAt ||
                     (this.CreatedAt != null &&
                     this.CreatedAt.Equals(input.CreatedAt))
@@ -304,6 +327,11 @@ namespace mailslurp.Model
                     this.Headers == input.Headers ||
                     this.Headers != null &&
                     this.Headers.SequenceEqual(input.Headers)
+                ) && 
+                (
+                    this.Html == input.Html ||
+                    (this.Html != null &&
+                    this.Html.Equals(input.Html))
                 ) && 
                 (
                     this.Id == input.Id ||
@@ -361,12 +389,16 @@ namespace mailslurp.Model
                     hashCode = hashCode * 59 + this.Body.GetHashCode();
                 if (this.Cc != null)
                     hashCode = hashCode * 59 + this.Cc.GetHashCode();
+                if (this.Charset != null)
+                    hashCode = hashCode * 59 + this.Charset.GetHashCode();
                 if (this.CreatedAt != null)
                     hashCode = hashCode * 59 + this.CreatedAt.GetHashCode();
                 if (this.From != null)
                     hashCode = hashCode * 59 + this.From.GetHashCode();
                 if (this.Headers != null)
                     hashCode = hashCode * 59 + this.Headers.GetHashCode();
+                if (this.Html != null)
+                    hashCode = hashCode * 59 + this.Html.GetHashCode();
                 if (this.Id != null)
                     hashCode = hashCode * 59 + this.Id.GetHashCode();
                 if (this.InboxId != null)

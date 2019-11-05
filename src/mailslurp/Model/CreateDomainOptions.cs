@@ -23,26 +23,26 @@ using OpenAPIDateConverter = mailslurp.Client.OpenAPIDateConverter;
 namespace mailslurp.Model
 {
     /// <summary>
-    /// Optional filter for matching emails based on fields
+    /// Options for creating a domain to use with MailSlurp. You must have ownership access to this domain in order to verify it.
     /// </summary>
     [DataContract]
-    public partial class MatchOptions :  IEquatable<MatchOptions>
+    public partial class CreateDomainOptions :  IEquatable<CreateDomainOptions>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="MatchOptions" /> class.
+        /// Initializes a new instance of the <see cref="CreateDomainOptions" /> class.
         /// </summary>
-        /// <param name="matches">1 or more match options. Options are additive so if one does not match the email is excluded from results.</param>
-        public MatchOptions(List<MatchOption> matches = default(List<MatchOption>))
+        /// <param name="domain">The top level domain you wish to use with MailSlurp.</param>
+        public CreateDomainOptions(string domain = default(string))
         {
-            this.Matches = matches;
+            this.Domain = domain;
         }
         
         /// <summary>
-        /// 1 or more match options. Options are additive so if one does not match the email is excluded from results
+        /// The top level domain you wish to use with MailSlurp
         /// </summary>
-        /// <value>1 or more match options. Options are additive so if one does not match the email is excluded from results</value>
-        [DataMember(Name="matches", EmitDefaultValue=false)]
-        public List<MatchOption> Matches { get; set; }
+        /// <value>The top level domain you wish to use with MailSlurp</value>
+        [DataMember(Name="domain", EmitDefaultValue=false)]
+        public string Domain { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -51,8 +51,8 @@ namespace mailslurp.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class MatchOptions {\n");
-            sb.Append("  Matches: ").Append(Matches).Append("\n");
+            sb.Append("class CreateDomainOptions {\n");
+            sb.Append("  Domain: ").Append(Domain).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -73,24 +73,24 @@ namespace mailslurp.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as MatchOptions);
+            return this.Equals(input as CreateDomainOptions);
         }
 
         /// <summary>
-        /// Returns true if MatchOptions instances are equal
+        /// Returns true if CreateDomainOptions instances are equal
         /// </summary>
-        /// <param name="input">Instance of MatchOptions to be compared</param>
+        /// <param name="input">Instance of CreateDomainOptions to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(MatchOptions input)
+        public bool Equals(CreateDomainOptions input)
         {
             if (input == null)
                 return false;
 
             return 
                 (
-                    this.Matches == input.Matches ||
-                    this.Matches != null &&
-                    this.Matches.SequenceEqual(input.Matches)
+                    this.Domain == input.Domain ||
+                    (this.Domain != null &&
+                    this.Domain.Equals(input.Domain))
                 );
         }
 
@@ -103,8 +103,8 @@ namespace mailslurp.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.Matches != null)
-                    hashCode = hashCode * 59 + this.Matches.GetHashCode();
+                if (this.Domain != null)
+                    hashCode = hashCode * 59 + this.Domain.GetHashCode();
                 return hashCode;
             }
         }

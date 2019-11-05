@@ -8,9 +8,11 @@ Name | Type | Description | Notes
 **Bcc** | **List&lt;string&gt;** |  | [optional] 
 **Body** | **string** |  | [optional] 
 **Cc** | **List&lt;string&gt;** |  | [optional] 
+**Charset** | **string** |  | [optional] 
 **CreatedAt** | **DateTime?** |  | 
 **From** | **string** |  | [optional] 
 **Headers** | **Dictionary&lt;string, string&gt;** |  | [optional] 
+**Html** | **bool?** |  | [optional] 
 **Id** | **Guid?** |  | 
 **InboxId** | **Guid?** |  | 
 **RawUrl** | **string** |  | [optional] 

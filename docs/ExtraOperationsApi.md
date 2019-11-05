@@ -7,19 +7,27 @@ Method | HTTP request | Description
 [**BulkCreateInboxes**](ExtraOperationsApi.md#bulkcreateinboxes) | **POST** /bulk/inboxes | Bulk create Inboxes (email addresses)
 [**BulkDeleteInboxes**](ExtraOperationsApi.md#bulkdeleteinboxes) | **DELETE** /bulk/inboxes | Bulk Delete Inboxes
 [**BulkSendEmails**](ExtraOperationsApi.md#bulksendemails) | **POST** /bulk/send | Bulk Send Emails
+[**CreateDomain**](ExtraOperationsApi.md#createdomain) | **POST** /domains | Create Domain
 [**CreateInbox**](ExtraOperationsApi.md#createinbox) | **POST** /inboxes | Create an Inbox (email address)
 [**CreateWebhook**](ExtraOperationsApi.md#createwebhook) | **POST** /inboxes/{inboxId}/webhooks | Attach a WebHook URL to an inbox
+[**DeleteDomain**](ExtraOperationsApi.md#deletedomain) | **DELETE** /domains/{id} | Delete a domain
 [**DeleteEmail1**](ExtraOperationsApi.md#deleteemail1) | **DELETE** /emails/{emailId} | Delete Email
 [**DeleteInbox**](ExtraOperationsApi.md#deleteinbox) | **DELETE** /inboxes/{inboxId} | Delete Inbox / Email Address
 [**DeleteWebhook**](ExtraOperationsApi.md#deletewebhook) | **DELETE** /inboxes/{inboxId}/webhooks/{webhookId} | Delete and disable a WebHook for an Inbox
 [**DownloadAttachment**](ExtraOperationsApi.md#downloadattachment) | **GET** /emails/{emailId}/attachments/{attachmentId} | Get email attachment
+[**ForwardEmail**](ExtraOperationsApi.md#forwardemail) | **POST** /emails/{emailId}/forward | Forward Email
+[**GetDomain**](ExtraOperationsApi.md#getdomain) | **GET** /domains/{id} | Get a domain
+[**GetDomains**](ExtraOperationsApi.md#getdomains) | **GET** /domains | Get domains
 [**GetEmail**](ExtraOperationsApi.md#getemail) | **GET** /emails/{emailId} | Get Email Content
 [**GetEmails**](ExtraOperationsApi.md#getemails) | **GET** /inboxes/{inboxId}/emails | List Emails in an Inbox / EmailAddress
+[**GetEmailsPaginated**](ExtraOperationsApi.md#getemailspaginated) | **GET** /emails | Get all emails
 [**GetInbox**](ExtraOperationsApi.md#getinbox) | **GET** /inboxes/{inboxId} | Get Inbox / EmailAddress
 [**GetInboxes**](ExtraOperationsApi.md#getinboxes) | **GET** /inboxes | List Inboxes / Email Addresses
 [**GetRawEmailContents**](ExtraOperationsApi.md#getrawemailcontents) | **GET** /emails/{emailId}/raw | Get Raw Email Content
 [**GetWebhooks**](ExtraOperationsApi.md#getwebhooks) | **GET** /inboxes/{inboxId}/webhooks | Get all WebHooks for an Inbox
 [**SendEmail**](ExtraOperationsApi.md#sendemail) | **POST** /inboxes/{inboxId} | Send Email
+[**UploadAttachment**](ExtraOperationsApi.md#uploadattachment) | **POST** /attachments | Upload an attachment for sending
+[**UploadMultipartForm**](ExtraOperationsApi.md#uploadmultipartform) | **POST** /attachments/multipart | Upload an attachment for sending using Multipart Form
 
 
 <a name="bulkcreateinboxes"></a>
@@ -218,13 +226,79 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="createdomain"></a>
+# **CreateDomain**
+> DomainPlusVerificationRecordsAndStatus CreateDomain (CreateDomainOptions createDomainOptions)
+
+Create Domain
+
+Link a domain that you own with MailSlurp so you can create inboxes with it. Returns DNS records used for validation. You must add these verification records to your host provider's DNS setup to verify the domain.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using mailslurp.Api;
+using mailslurp.Client;
+using mailslurp.Model;
+
+namespace Example
+{
+    public class CreateDomainExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: API_KEY
+            Configuration.Default.AddApiKey("x-api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("x-api-key", "Bearer");
+
+            var apiInstance = new ExtraOperationsApi();
+            var createDomainOptions = new CreateDomainOptions(); // CreateDomainOptions | domainOptions
+
+            try
+            {
+                // Create Domain
+                DomainPlusVerificationRecordsAndStatus result = apiInstance.CreateDomain(createDomainOptions);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExtraOperationsApi.CreateDomain: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **createDomainOptions** | [**CreateDomainOptions**](CreateDomainOptions.md)| domainOptions | 
+
+### Return type
+
+[**DomainPlusVerificationRecordsAndStatus**](DomainPlusVerificationRecordsAndStatus.md)
+
+### Authorization
+
+[API_KEY](../README.md#API_KEY)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="createinbox"></a>
 # **CreateInbox**
-> Inbox CreateInbox ()
+> Inbox CreateInbox (string emailAddress = null)
 
 Create an Inbox (email address)
 
-Create a new inbox and ephemeral email address to send and receive from. This is a necessary step before sending or receiving emails. The response contains the inbox's ID and its associated email address. It is recommended that you create a new inbox during each test method so that it is unique and empty
+Create a new inbox and with a ranmdomized email address to send and receive from. Pass emailAddress parameter if you wish to use a specific email address. Creating an inbox is required before sending or receiving emails. If writing tests it is recommended that you create a new inbox during each test method so that it is unique and empty. 
 
 ### Example
 ```csharp
@@ -246,11 +320,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("x-api-key", "Bearer");
 
             var apiInstance = new ExtraOperationsApi();
+            var emailAddress = emailAddress_example;  // string | Optional email address including domain you wish inbox to use (eg: test123@mydomain.com). Only supports domains that you have registered and verified with MailSlurp using dashboard or `createDomain` method. (optional) 
 
             try
             {
                 // Create an Inbox (email address)
-                Inbox result = apiInstance.CreateInbox();
+                Inbox result = apiInstance.CreateInbox(emailAddress);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -263,7 +338,10 @@ namespace Example
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **emailAddress** | **string**| Optional email address including domain you wish inbox to use (eg: test123@mydomain.com). Only supports domains that you have registered and verified with MailSlurp using dashboard or &#x60;createDomain&#x60; method. | [optional] 
 
 ### Return type
 
@@ -309,7 +387,7 @@ namespace Example
 
             var apiInstance = new ExtraOperationsApi();
             var inboxId = new Guid?(); // Guid? | inboxId
-            var createWebhookOptions = new CreateWebhookOptions(); // CreateWebhookOptions | options
+            var createWebhookOptions = new CreateWebhookOptions(); // CreateWebhookOptions | webhookOptions
 
             try
             {
@@ -331,7 +409,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **inboxId** | [**Guid?**](Guid?.md)| inboxId | 
- **createWebhookOptions** | [**CreateWebhookOptions**](CreateWebhookOptions.md)| options | 
+ **createWebhookOptions** | [**CreateWebhookOptions**](CreateWebhookOptions.md)| webhookOptions | 
 
 ### Return type
 
@@ -345,6 +423,69 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="deletedomain"></a>
+# **DeleteDomain**
+> void DeleteDomain (Guid? id)
+
+Delete a domain
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using mailslurp.Api;
+using mailslurp.Client;
+using mailslurp.Model;
+
+namespace Example
+{
+    public class DeleteDomainExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: API_KEY
+            Configuration.Default.AddApiKey("x-api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("x-api-key", "Bearer");
+
+            var apiInstance = new ExtraOperationsApi();
+            var id = new Guid?(); // Guid? | id
+
+            try
+            {
+                // Delete a domain
+                apiInstance.DeleteDomain(id);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExtraOperationsApi.DeleteDomain: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | [**Guid?**](Guid?.md)| id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[API_KEY](../README.md#API_KEY)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -545,7 +686,7 @@ void (empty response body)
 
 <a name="downloadattachment"></a>
 # **DownloadAttachment**
-> void DownloadAttachment (string attachmentId, Guid? emailId)
+> void DownloadAttachment (string attachmentId, Guid? emailId, string apiKey = null)
 
 Get email attachment
 
@@ -573,11 +714,12 @@ namespace Example
             var apiInstance = new ExtraOperationsApi();
             var attachmentId = attachmentId_example;  // string | attachmentId
             var emailId = new Guid?(); // Guid? | emailId
+            var apiKey = apiKey_example;  // string | Can pass apiKey in url for this request if you wish to download the file in a browser (optional) 
 
             try
             {
                 // Get email attachment
-                apiInstance.DownloadAttachment(attachmentId, emailId);
+                apiInstance.DownloadAttachment(attachmentId, emailId, apiKey);
             }
             catch (Exception e)
             {
@@ -594,6 +736,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **attachmentId** | **string**| attachmentId | 
  **emailId** | [**Guid?**](Guid?.md)| emailId | 
+ **apiKey** | **string**| Can pass apiKey in url for this request if you wish to download the file in a browser | [optional] 
 
 ### Return type
 
@@ -607,6 +750,199 @@ void (empty response body)
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="forwardemail"></a>
+# **ForwardEmail**
+> void ForwardEmail (Guid? emailId, ForwardEmailOptions forwardEmailOptions)
+
+Forward Email
+
+Forward email content to given recipients
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using mailslurp.Api;
+using mailslurp.Client;
+using mailslurp.Model;
+
+namespace Example
+{
+    public class ForwardEmailExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: API_KEY
+            Configuration.Default.AddApiKey("x-api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("x-api-key", "Bearer");
+
+            var apiInstance = new ExtraOperationsApi();
+            var emailId = new Guid?(); // Guid? | emailId
+            var forwardEmailOptions = new ForwardEmailOptions(); // ForwardEmailOptions | forwardEmailOptions
+
+            try
+            {
+                // Forward Email
+                apiInstance.ForwardEmail(emailId, forwardEmailOptions);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExtraOperationsApi.ForwardEmail: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **emailId** | [**Guid?**](Guid?.md)| emailId | 
+ **forwardEmailOptions** | [**ForwardEmailOptions**](ForwardEmailOptions.md)| forwardEmailOptions | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[API_KEY](../README.md#API_KEY)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getdomain"></a>
+# **GetDomain**
+> DomainPlusVerificationRecordsAndStatus GetDomain (Guid? id)
+
+Get a domain
+
+Returns domain verification status and tokens
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using mailslurp.Api;
+using mailslurp.Client;
+using mailslurp.Model;
+
+namespace Example
+{
+    public class GetDomainExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: API_KEY
+            Configuration.Default.AddApiKey("x-api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("x-api-key", "Bearer");
+
+            var apiInstance = new ExtraOperationsApi();
+            var id = new Guid?(); // Guid? | id
+
+            try
+            {
+                // Get a domain
+                DomainPlusVerificationRecordsAndStatus result = apiInstance.GetDomain(id);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExtraOperationsApi.GetDomain: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | [**Guid?**](Guid?.md)| id | 
+
+### Return type
+
+[**DomainPlusVerificationRecordsAndStatus**](DomainPlusVerificationRecordsAndStatus.md)
+
+### Authorization
+
+[API_KEY](../README.md#API_KEY)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getdomains"></a>
+# **GetDomains**
+> List<DomainPreview> GetDomains ()
+
+Get domains
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using mailslurp.Api;
+using mailslurp.Client;
+using mailslurp.Model;
+
+namespace Example
+{
+    public class GetDomainsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: API_KEY
+            Configuration.Default.AddApiKey("x-api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("x-api-key", "Bearer");
+
+            var apiInstance = new ExtraOperationsApi();
+
+            try
+            {
+                // Get domains
+                List&lt;DomainPreview&gt; result = apiInstance.GetDomains();
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExtraOperationsApi.GetDomains: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**List<DomainPreview>**](DomainPreview.md)
+
+### Authorization
+
+[API_KEY](../README.md#API_KEY)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -738,6 +1074,74 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**List<EmailPreview>**](EmailPreview.md)
+
+### Authorization
+
+[API_KEY](../README.md#API_KEY)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getemailspaginated"></a>
+# **GetEmailsPaginated**
+> PageEmailProjection GetEmailsPaginated (int? page = null, int? size = null)
+
+Get all emails
+
+Responses are paginated
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using mailslurp.Api;
+using mailslurp.Client;
+using mailslurp.Model;
+
+namespace Example
+{
+    public class GetEmailsPaginatedExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: API_KEY
+            Configuration.Default.AddApiKey("x-api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("x-api-key", "Bearer");
+
+            var apiInstance = new ExtraOperationsApi();
+            var page = 56;  // int? | Optional page index in email list pagination (optional)  (default to 0)
+            var size = 56;  // int? | Optional page size in email list pagination (optional)  (default to 20)
+
+            try
+            {
+                // Get all emails
+                PageEmailProjection result = apiInstance.GetEmailsPaginated(page, size);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExtraOperationsApi.GetEmailsPaginated: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **int?**| Optional page index in email list pagination | [optional] [default to 0]
+ **size** | **int?**| Optional page size in email list pagination | [optional] [default to 20]
+
+### Return type
+
+[**PageEmailProjection**](PageEmailProjection.md)
 
 ### Authorization
 
@@ -940,7 +1344,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -1072,6 +1476,142 @@ void (empty response body)
 
  - **Content-Type**: application/json
  - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="uploadattachment"></a>
+# **UploadAttachment**
+> List<string> UploadAttachment (UploadAttachmentOptions uploadAttachmentOptions)
+
+Upload an attachment for sending
+
+When sending emails with attachments first upload each attachment with this endpoint. Record the returned attachment IDs. Then use these attachment IDs in the SendEmailOptions when sending an email. This means that attachments can easily be reused.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using mailslurp.Api;
+using mailslurp.Client;
+using mailslurp.Model;
+
+namespace Example
+{
+    public class UploadAttachmentExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: API_KEY
+            Configuration.Default.AddApiKey("x-api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("x-api-key", "Bearer");
+
+            var apiInstance = new ExtraOperationsApi();
+            var uploadAttachmentOptions = new UploadAttachmentOptions(); // UploadAttachmentOptions | uploadOptions
+
+            try
+            {
+                // Upload an attachment for sending
+                List&lt;string&gt; result = apiInstance.UploadAttachment(uploadAttachmentOptions);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExtraOperationsApi.UploadAttachment: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **uploadAttachmentOptions** | [**UploadAttachmentOptions**](UploadAttachmentOptions.md)| uploadOptions | 
+
+### Return type
+
+**List<string>**
+
+### Authorization
+
+[API_KEY](../README.md#API_KEY)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="uploadmultipartform"></a>
+# **UploadMultipartForm**
+> List<string> UploadMultipartForm (System.IO.Stream file, string contentType = null, string filename = null)
+
+Upload an attachment for sending using Multipart Form
+
+When sending emails with attachments first upload each attachment with this endpoint. Record the returned attachment IDs. Then use these attachment IDs in the SendEmailOptions when sending an email. This means that attachments can easily be reused.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using mailslurp.Api;
+using mailslurp.Client;
+using mailslurp.Model;
+
+namespace Example
+{
+    public class UploadMultipartFormExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: API_KEY
+            Configuration.Default.AddApiKey("x-api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("x-api-key", "Bearer");
+
+            var apiInstance = new ExtraOperationsApi();
+            var file = BINARY_DATA_HERE;  // System.IO.Stream | file
+            var contentType = contentType_example;  // string | contentType (optional) 
+            var filename = filename_example;  // string | filename (optional) 
+
+            try
+            {
+                // Upload an attachment for sending using Multipart Form
+                List&lt;string&gt; result = apiInstance.UploadMultipartForm(file, contentType, filename);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExtraOperationsApi.UploadMultipartForm: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **file** | **System.IO.Stream**| file | 
+ **contentType** | **string**| contentType | [optional] 
+ **filename** | **string**| filename | [optional] 
+
+### Return type
+
+**List<string>**
+
+### Authorization
+
+[API_KEY](../README.md#API_KEY)
+
+### HTTP request headers
+
+ - **Content-Type**: multipart/form-data
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

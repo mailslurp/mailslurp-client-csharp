@@ -1,15 +1,15 @@
-# mailslurp.Model.EmailPreview
+# mailslurp.Model.DomainPlusVerificationRecordsAndStatus
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Bcc** | **List&lt;string&gt;** |  | [optional] 
-**Cc** | **List&lt;string&gt;** |  | [optional] 
-**Created** | **DateTime?** |  | 
 **CreatedAt** | **DateTime?** |  | 
-**Id** | **Guid?** | ID of the Email. | [optional] 
-**Subject** | **string** |  | [optional] 
-**To** | **List&lt;string&gt;** |  | 
+**Domain** | **string** |  | 
+**Id** | **Guid?** |  | 
+**UpdatedAt** | **DateTime?** |  | 
+**UserId** | **Guid?** |  | 
+**VerificationToken** | **string** |  | 
+**Verified** | **bool?** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

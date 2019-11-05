@@ -23,57 +23,70 @@ using OpenAPIDateConverter = mailslurp.Client.OpenAPIDateConverter;
 namespace mailslurp.Model
 {
     /// <summary>
-    /// Representation of a webhook for an inbox.
+    /// EmailProjection
     /// </summary>
     [DataContract]
-    public partial class Webhook :  IEquatable<Webhook>
+    public partial class EmailProjection :  IEquatable<EmailProjection>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="Webhook" /> class.
+        /// Initializes a new instance of the <see cref="EmailProjection" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected Webhook() { }
+        protected EmailProjection() { }
         /// <summary>
-        /// Initializes a new instance of the <see cref="Webhook" /> class.
+        /// Initializes a new instance of the <see cref="EmailProjection" /> class.
         /// </summary>
-        /// <param name="basicAuth">Does Webhook expect basic authentication.</param>
+        /// <param name="bcc">bcc.</param>
+        /// <param name="cc">cc.</param>
         /// <param name="createdAt">createdAt (required).</param>
-        /// <param name="id">ID of the Webhook.</param>
-        /// <param name="inboxId">The inbox that the Webhook will be triggered by.</param>
-        /// <param name="name">name.</param>
-        /// <param name="updatedAt">updatedAt (required).</param>
-        public Webhook(bool? basicAuth = default(bool?), DateTime? createdAt = default(DateTime?), Guid? id = default(Guid?), Guid? inboxId = default(Guid?), string name = default(string), DateTime? updatedAt = default(DateTime?))
+        /// <param name="id">id (required).</param>
+        /// <param name="subject">subject.</param>
+        /// <param name="to">to (required).</param>
+        public EmailProjection(List<string> bcc = default(List<string>), List<string> cc = default(List<string>), DateTime? createdAt = default(DateTime?), Guid? id = default(Guid?), string subject = default(string), List<string> to = default(List<string>))
         {
             // to ensure "createdAt" is required (not null)
             if (createdAt == null)
             {
-                throw new InvalidDataException("createdAt is a required property for Webhook and cannot be null");
+                throw new InvalidDataException("createdAt is a required property for EmailProjection and cannot be null");
             }
             else
             {
                 this.CreatedAt = createdAt;
             }
-            // to ensure "updatedAt" is required (not null)
-            if (updatedAt == null)
+            // to ensure "id" is required (not null)
+            if (id == null)
             {
-                throw new InvalidDataException("updatedAt is a required property for Webhook and cannot be null");
+                throw new InvalidDataException("id is a required property for EmailProjection and cannot be null");
             }
             else
             {
-                this.UpdatedAt = updatedAt;
+                this.Id = id;
             }
-            this.BasicAuth = basicAuth;
-            this.Id = id;
-            this.InboxId = inboxId;
-            this.Name = name;
+            // to ensure "to" is required (not null)
+            if (to == null)
+            {
+                throw new InvalidDataException("to is a required property for EmailProjection and cannot be null");
+            }
+            else
+            {
+                this.To = to;
+            }
+            this.Bcc = bcc;
+            this.Cc = cc;
+            this.Subject = subject;
         }
         
         /// <summary>
-        /// Does Webhook expect basic authentication
+        /// Gets or Sets Bcc
         /// </summary>
-        /// <value>Does Webhook expect basic authentication</value>
-        [DataMember(Name="basicAuth", EmitDefaultValue=false)]
-        public bool? BasicAuth { get; set; }
+        [DataMember(Name="bcc", EmitDefaultValue=false)]
+        public List<string> Bcc { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Cc
+        /// </summary>
+        [DataMember(Name="cc", EmitDefaultValue=false)]
+        public List<string> Cc { get; set; }
 
         /// <summary>
         /// Gets or Sets CreatedAt
@@ -82,30 +95,22 @@ namespace mailslurp.Model
         public DateTime? CreatedAt { get; set; }
 
         /// <summary>
-        /// ID of the Webhook
+        /// Gets or Sets Id
         /// </summary>
-        /// <value>ID of the Webhook</value>
         [DataMember(Name="id", EmitDefaultValue=false)]
         public Guid? Id { get; set; }
 
         /// <summary>
-        /// The inbox that the Webhook will be triggered by
+        /// Gets or Sets Subject
         /// </summary>
-        /// <value>The inbox that the Webhook will be triggered by</value>
-        [DataMember(Name="inboxId", EmitDefaultValue=false)]
-        public Guid? InboxId { get; set; }
+        [DataMember(Name="subject", EmitDefaultValue=false)]
+        public string Subject { get; set; }
 
         /// <summary>
-        /// Gets or Sets Name
+        /// Gets or Sets To
         /// </summary>
-        [DataMember(Name="name", EmitDefaultValue=false)]
-        public string Name { get; set; }
-
-        /// <summary>
-        /// Gets or Sets UpdatedAt
-        /// </summary>
-        [DataMember(Name="updatedAt", EmitDefaultValue=false)]
-        public DateTime? UpdatedAt { get; set; }
+        [DataMember(Name="to", EmitDefaultValue=false)]
+        public List<string> To { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -114,13 +119,13 @@ namespace mailslurp.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class Webhook {\n");
-            sb.Append("  BasicAuth: ").Append(BasicAuth).Append("\n");
+            sb.Append("class EmailProjection {\n");
+            sb.Append("  Bcc: ").Append(Bcc).Append("\n");
+            sb.Append("  Cc: ").Append(Cc).Append("\n");
             sb.Append("  CreatedAt: ").Append(CreatedAt).Append("\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
-            sb.Append("  InboxId: ").Append(InboxId).Append("\n");
-            sb.Append("  Name: ").Append(Name).Append("\n");
-            sb.Append("  UpdatedAt: ").Append(UpdatedAt).Append("\n");
+            sb.Append("  Subject: ").Append(Subject).Append("\n");
+            sb.Append("  To: ").Append(To).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -141,24 +146,29 @@ namespace mailslurp.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as Webhook);
+            return this.Equals(input as EmailProjection);
         }
 
         /// <summary>
-        /// Returns true if Webhook instances are equal
+        /// Returns true if EmailProjection instances are equal
         /// </summary>
-        /// <param name="input">Instance of Webhook to be compared</param>
+        /// <param name="input">Instance of EmailProjection to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(Webhook input)
+        public bool Equals(EmailProjection input)
         {
             if (input == null)
                 return false;
 
             return 
                 (
-                    this.BasicAuth == input.BasicAuth ||
-                    (this.BasicAuth != null &&
-                    this.BasicAuth.Equals(input.BasicAuth))
+                    this.Bcc == input.Bcc ||
+                    this.Bcc != null &&
+                    this.Bcc.SequenceEqual(input.Bcc)
+                ) && 
+                (
+                    this.Cc == input.Cc ||
+                    this.Cc != null &&
+                    this.Cc.SequenceEqual(input.Cc)
                 ) && 
                 (
                     this.CreatedAt == input.CreatedAt ||
@@ -171,19 +181,14 @@ namespace mailslurp.Model
                     this.Id.Equals(input.Id))
                 ) && 
                 (
-                    this.InboxId == input.InboxId ||
-                    (this.InboxId != null &&
-                    this.InboxId.Equals(input.InboxId))
+                    this.Subject == input.Subject ||
+                    (this.Subject != null &&
+                    this.Subject.Equals(input.Subject))
                 ) && 
                 (
-                    this.Name == input.Name ||
-                    (this.Name != null &&
-                    this.Name.Equals(input.Name))
-                ) && 
-                (
-                    this.UpdatedAt == input.UpdatedAt ||
-                    (this.UpdatedAt != null &&
-                    this.UpdatedAt.Equals(input.UpdatedAt))
+                    this.To == input.To ||
+                    this.To != null &&
+                    this.To.SequenceEqual(input.To)
                 );
         }
 
@@ -196,18 +201,18 @@ namespace mailslurp.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.BasicAuth != null)
-                    hashCode = hashCode * 59 + this.BasicAuth.GetHashCode();
+                if (this.Bcc != null)
+                    hashCode = hashCode * 59 + this.Bcc.GetHashCode();
+                if (this.Cc != null)
+                    hashCode = hashCode * 59 + this.Cc.GetHashCode();
                 if (this.CreatedAt != null)
                     hashCode = hashCode * 59 + this.CreatedAt.GetHashCode();
                 if (this.Id != null)
                     hashCode = hashCode * 59 + this.Id.GetHashCode();
-                if (this.InboxId != null)
-                    hashCode = hashCode * 59 + this.InboxId.GetHashCode();
-                if (this.Name != null)
-                    hashCode = hashCode * 59 + this.Name.GetHashCode();
-                if (this.UpdatedAt != null)
-                    hashCode = hashCode * 59 + this.UpdatedAt.GetHashCode();
+                if (this.Subject != null)
+                    hashCode = hashCode * 59 + this.Subject.GetHashCode();
+                if (this.To != null)
+                    hashCode = hashCode * 59 + this.To.GetHashCode();
                 return hashCode;
             }
         }

@@ -1,7 +1,7 @@
 /* 
  * MailSlurp API
  *
- * For documentation see [developer guide](https://www.mailslurp.com/developers). [Create an account](https://app.mailslurp.com) in the MailSlurp Dashboard to [view your API Key](https://app). For all bugs, feature requests, or help please [see support](https://www.mailslurp.com/support/).
+ * For full documentation and a list of available SDK clients please see the [developer guide](https://www.mailslurp.com/developers). [Create an account](https://app.mailslurp.com) in the MailSlurp Dashboard to [view your API Key](https://app.mailslurp.com). For all bugs, feature requests, or help please [see support](https://www.mailslurp.com/support/). 
  *
  * OpenAPI spec version: 0.0.1-alpha
  * Contact: contact@mailslurp.dev
@@ -23,7 +23,7 @@ using OpenAPIDateConverter = mailslurp.Client.OpenAPIDateConverter;
 namespace mailslurp.Model
 {
     /// <summary>
-    /// Preview of an email message. For full message call the message endpoint with a given message id.
+    /// Preview of an email message. For full message call the email endpoints with the provided email id.
     /// </summary>
     [DataContract]
     public partial class EmailPreview :  IEquatable<EmailPreview>
@@ -39,10 +39,11 @@ namespace mailslurp.Model
         /// <param name="bcc">bcc.</param>
         /// <param name="cc">cc.</param>
         /// <param name="created">created (required).</param>
-        /// <param name="id">id (required).</param>
+        /// <param name="createdAt">createdAt (required).</param>
+        /// <param name="id">ID of the Email..</param>
         /// <param name="subject">subject.</param>
         /// <param name="to">to (required).</param>
-        public EmailPreview(List<string> bcc = default(List<string>), List<string> cc = default(List<string>), DateTime? created = default(DateTime?), Guid? id = default(Guid?), string subject = default(string), List<string> to = default(List<string>))
+        public EmailPreview(List<string> bcc = default(List<string>), List<string> cc = default(List<string>), DateTime? created = default(DateTime?), DateTime? createdAt = default(DateTime?), Guid? id = default(Guid?), string subject = default(string), List<string> to = default(List<string>))
         {
             // to ensure "created" is required (not null)
             if (created == null)
@@ -53,14 +54,14 @@ namespace mailslurp.Model
             {
                 this.Created = created;
             }
-            // to ensure "id" is required (not null)
-            if (id == null)
+            // to ensure "createdAt" is required (not null)
+            if (createdAt == null)
             {
-                throw new InvalidDataException("id is a required property for EmailPreview and cannot be null");
+                throw new InvalidDataException("createdAt is a required property for EmailPreview and cannot be null");
             }
             else
             {
-                this.Id = id;
+                this.CreatedAt = createdAt;
             }
             // to ensure "to" is required (not null)
             if (to == null)
@@ -73,6 +74,7 @@ namespace mailslurp.Model
             }
             this.Bcc = bcc;
             this.Cc = cc;
+            this.Id = id;
             this.Subject = subject;
         }
         
@@ -95,8 +97,15 @@ namespace mailslurp.Model
         public DateTime? Created { get; set; }
 
         /// <summary>
-        /// Gets or Sets Id
+        /// Gets or Sets CreatedAt
         /// </summary>
+        [DataMember(Name="createdAt", EmitDefaultValue=false)]
+        public DateTime? CreatedAt { get; set; }
+
+        /// <summary>
+        /// ID of the Email.
+        /// </summary>
+        /// <value>ID of the Email.</value>
         [DataMember(Name="id", EmitDefaultValue=false)]
         public Guid? Id { get; set; }
 
@@ -123,6 +132,7 @@ namespace mailslurp.Model
             sb.Append("  Bcc: ").Append(Bcc).Append("\n");
             sb.Append("  Cc: ").Append(Cc).Append("\n");
             sb.Append("  Created: ").Append(Created).Append("\n");
+            sb.Append("  CreatedAt: ").Append(CreatedAt).Append("\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  Subject: ").Append(Subject).Append("\n");
             sb.Append("  To: ").Append(To).Append("\n");
@@ -176,6 +186,11 @@ namespace mailslurp.Model
                     this.Created.Equals(input.Created))
                 ) && 
                 (
+                    this.CreatedAt == input.CreatedAt ||
+                    (this.CreatedAt != null &&
+                    this.CreatedAt.Equals(input.CreatedAt))
+                ) && 
+                (
                     this.Id == input.Id ||
                     (this.Id != null &&
                     this.Id.Equals(input.Id))
@@ -207,6 +222,8 @@ namespace mailslurp.Model
                     hashCode = hashCode * 59 + this.Cc.GetHashCode();
                 if (this.Created != null)
                     hashCode = hashCode * 59 + this.Created.GetHashCode();
+                if (this.CreatedAt != null)
+                    hashCode = hashCode * 59 + this.CreatedAt.GetHashCode();
                 if (this.Id != null)
                     hashCode = hashCode * 59 + this.Id.GetHashCode();
                 if (this.Subject != null)

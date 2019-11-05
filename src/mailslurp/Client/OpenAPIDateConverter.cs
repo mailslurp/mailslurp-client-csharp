@@ -1,7 +1,7 @@
 /* 
  * MailSlurp API
  *
- * For documentation see [developer guide](https://www.mailslurp.com/developers). [Create an account](https://app.mailslurp.com) in the MailSlurp Dashboard to [view your API Key](https://app). For all bugs, feature requests, or help please [see support](https://www.mailslurp.com/support/).
+ * For full documentation and a list of available SDK clients please see the [developer guide](https://www.mailslurp.com/developers). [Create an account](https://app.mailslurp.com) in the MailSlurp Dashboard to [view your API Key](https://app.mailslurp.com). For all bugs, feature requests, or help please [see support](https://www.mailslurp.com/support/). 
  *
  * OpenAPI spec version: 0.0.1-alpha
  * Contact: contact@mailslurp.dev

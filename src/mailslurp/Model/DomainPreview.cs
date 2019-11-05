@@ -23,38 +23,64 @@ using OpenAPIDateConverter = mailslurp.Client.OpenAPIDateConverter;
 namespace mailslurp.Model
 {
     /// <summary>
-    /// Representation of an inbox with an email address. Emails can be sent to or from this email address.
+    /// Preview object for domain entity
     /// </summary>
     [DataContract]
-    public partial class Inbox :  IEquatable<Inbox>
+    public partial class DomainPreview :  IEquatable<DomainPreview>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="Inbox" /> class.
+        /// Initializes a new instance of the <see cref="DomainPreview" /> class.
         /// </summary>
-        /// <param name="created">created.</param>
-        /// <param name="emailAddress">The inbox&#39;s email address. Send an email to this address and the inbox will receive it.</param>
-        /// <param name="id">id.</param>
-        /// <param name="userId">userId.</param>
-        public Inbox(DateTime? created = default(DateTime?), string emailAddress = default(string), Guid? id = default(Guid?), Guid? userId = default(Guid?))
+        [JsonConstructorAttribute]
+        protected DomainPreview() { }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DomainPreview" /> class.
+        /// </summary>
+        /// <param name="createdAt">createdAt (required).</param>
+        /// <param name="domain">domain (required).</param>
+        /// <param name="id">id (required).</param>
+        public DomainPreview(DateTime? createdAt = default(DateTime?), string domain = default(string), Guid? id = default(Guid?))
         {
-            this.Created = created;
-            this.EmailAddress = emailAddress;
-            this.Id = id;
-            this.UserId = userId;
+            // to ensure "createdAt" is required (not null)
+            if (createdAt == null)
+            {
+                throw new InvalidDataException("createdAt is a required property for DomainPreview and cannot be null");
+            }
+            else
+            {
+                this.CreatedAt = createdAt;
+            }
+            // to ensure "domain" is required (not null)
+            if (domain == null)
+            {
+                throw new InvalidDataException("domain is a required property for DomainPreview and cannot be null");
+            }
+            else
+            {
+                this.Domain = domain;
+            }
+            // to ensure "id" is required (not null)
+            if (id == null)
+            {
+                throw new InvalidDataException("id is a required property for DomainPreview and cannot be null");
+            }
+            else
+            {
+                this.Id = id;
+            }
         }
         
         /// <summary>
-        /// Gets or Sets Created
+        /// Gets or Sets CreatedAt
         /// </summary>
-        [DataMember(Name="created", EmitDefaultValue=false)]
-        public DateTime? Created { get; set; }
+        [DataMember(Name="createdAt", EmitDefaultValue=false)]
+        public DateTime? CreatedAt { get; set; }
 
         /// <summary>
-        /// The inbox&#39;s email address. Send an email to this address and the inbox will receive it
+        /// Gets or Sets Domain
         /// </summary>
-        /// <value>The inbox&#39;s email address. Send an email to this address and the inbox will receive it</value>
-        [DataMember(Name="emailAddress", EmitDefaultValue=false)]
-        public string EmailAddress { get; set; }
+        [DataMember(Name="domain", EmitDefaultValue=false)]
+        public string Domain { get; set; }
 
         /// <summary>
         /// Gets or Sets Id
@@ -63,23 +89,16 @@ namespace mailslurp.Model
         public Guid? Id { get; set; }
 
         /// <summary>
-        /// Gets or Sets UserId
-        /// </summary>
-        [DataMember(Name="userId", EmitDefaultValue=false)]
-        public Guid? UserId { get; set; }
-
-        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class Inbox {\n");
-            sb.Append("  Created: ").Append(Created).Append("\n");
-            sb.Append("  EmailAddress: ").Append(EmailAddress).Append("\n");
+            sb.Append("class DomainPreview {\n");
+            sb.Append("  CreatedAt: ").Append(CreatedAt).Append("\n");
+            sb.Append("  Domain: ").Append(Domain).Append("\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
-            sb.Append("  UserId: ").Append(UserId).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -100,39 +119,34 @@ namespace mailslurp.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as Inbox);
+            return this.Equals(input as DomainPreview);
         }
 
         /// <summary>
-        /// Returns true if Inbox instances are equal
+        /// Returns true if DomainPreview instances are equal
         /// </summary>
-        /// <param name="input">Instance of Inbox to be compared</param>
+        /// <param name="input">Instance of DomainPreview to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(Inbox input)
+        public bool Equals(DomainPreview input)
         {
             if (input == null)
                 return false;
 
             return 
                 (
-                    this.Created == input.Created ||
-                    (this.Created != null &&
-                    this.Created.Equals(input.Created))
+                    this.CreatedAt == input.CreatedAt ||
+                    (this.CreatedAt != null &&
+                    this.CreatedAt.Equals(input.CreatedAt))
                 ) && 
                 (
-                    this.EmailAddress == input.EmailAddress ||
-                    (this.EmailAddress != null &&
-                    this.EmailAddress.Equals(input.EmailAddress))
+                    this.Domain == input.Domain ||
+                    (this.Domain != null &&
+                    this.Domain.Equals(input.Domain))
                 ) && 
                 (
                     this.Id == input.Id ||
                     (this.Id != null &&
                     this.Id.Equals(input.Id))
-                ) && 
-                (
-                    this.UserId == input.UserId ||
-                    (this.UserId != null &&
-                    this.UserId.Equals(input.UserId))
                 );
         }
 
@@ -145,14 +159,12 @@ namespace mailslurp.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.Created != null)
-                    hashCode = hashCode * 59 + this.Created.GetHashCode();
-                if (this.EmailAddress != null)
-                    hashCode = hashCode * 59 + this.EmailAddress.GetHashCode();
+                if (this.CreatedAt != null)
+                    hashCode = hashCode * 59 + this.CreatedAt.GetHashCode();
+                if (this.Domain != null)
+                    hashCode = hashCode * 59 + this.Domain.GetHashCode();
                 if (this.Id != null)
                     hashCode = hashCode * 59 + this.Id.GetHashCode();
-                if (this.UserId != null)
-                    hashCode = hashCode * 59 + this.UserId.GetHashCode();
                 return hashCode;
             }
         }
