@@ -705,7 +705,7 @@ This endpoint does not need any parameter.
 
 ## SendEmail
 
-> void SendEmail (Guid inboxId, SendEmailOptions sendEmailOptions)
+> void SendEmail (Guid inboxId, SendEmailOptions sendEmailOptions = null)
 
 Send Email
 
@@ -733,8 +733,8 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("x-api-key", "Bearer");
 
             var apiInstance = new InboxControllerApi(Configuration.Default);
-            var inboxId = new Guid(); // Guid | inboxId
-            var sendEmailOptions = new SendEmailOptions(); // SendEmailOptions | sendEmailOptions
+            var inboxId = new Guid(); // Guid | ID of the inbox you want to send the email from
+            var sendEmailOptions = new SendEmailOptions(); // SendEmailOptions | Options for the email (optional) 
 
             try
             {
@@ -757,8 +757,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inboxId** | [**Guid**](Guid.md)| inboxId | 
- **sendEmailOptions** | [**SendEmailOptions**](SendEmailOptions.md)| sendEmailOptions | 
+ **inboxId** | [**Guid**](Guid.md)| ID of the inbox you want to send the email from | 
+ **sendEmailOptions** | [**SendEmailOptions**](SendEmailOptions.md)| Options for the email | [optional] 
 
 ### Return type
 

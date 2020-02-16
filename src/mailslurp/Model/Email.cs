@@ -1,7 +1,7 @@
 /* 
  * MailSlurp API
  *
- * ## Introduction  [MailSlurp](https://www.mailslurp.com) is an Email API for developers and QA testers. It let's users: - create emails addresses on demand - receive emails and attachments in code - send templated HTML emails  ## About  This page contains the REST API documentation for MailSlurp. All requests require API Key authentication passed as an `x-api-key` header.  Create an account to [get your free API Key](https://app.mailslurp.com/sign-up/).  ## Resources - 🔑 [Get API Key](https://app.mailslurp.com/sign-up/)                    - 🎓 [Developer Portal](https://www.mailslurp.com/docs/)           - 📦 [Library SDKs](https://www.mailslurp.com/docs/) - ✍️ [Code Examples](https://www.mailslurp.com/examples) - ⚠️ [Report an issue](https://drift.me/mailslurp)  ## Explore  
+ * MailSlurp is an API for sending and receiving emails from dynamically allocated email addresses. It's designed for developers and QA teams to test applications, process inbound emails, send templated notifications, attachments, and more.   ## Overview  #### Inboxes  Inboxes have real email addresses that can send and receive emails. You can create inboxes with specific email addresses (using custom domains). You can also use randomly assigned MailSlurp addresses as unique, disposable test addresses.   See the InboxController or [inbox and email address guide](https://www.mailslurp.com/guides/) for more information.  #### Receive Emails You can receive emails in a number of ways. You can fetch emails and attachments directly from an inbox. Or you can use `waitFor` endpoints to hold a connection open until an email is received that matches given criteria (such as subject or body content). You can also use webhooks to have emails from multiple inboxes forwarded to your server via HTTP POST.  InboxController methods with `waitFor` in the name have a long timeout period and instruct MailSlurp to wait until an expected email is received. You can set conditions on email counts, subject or body matches, and more.  Most receive methods only return an email ID and not the full email (to keep response sizes low). To fetch the full body or attachments for an email use the email's ID with EmailController endpoints.  See the InboxController or [receiving emails guide](https://www.mailslurp.com/guides/) for more information.  #### Send Emails You can send templated HTML emails in several ways. You must first create an inbox to send an email. An inbox can have a specific address or a randomly assigned one. You can send emails from an inbox using `to`, `cc`, and `bcc` recipient lists or with contacts and contact groups.   Emails can contain plain-text or HTML bodies. You can also use email templates that support [moustache](https://mustache.github.io/) template variables. You can send attachments by first posting files to the AttachmentController and then using the returned IDs in the `attachments` field of the send options.  See the InboxController or [sending emails guide](https://www.mailslurp.com/guides/) for more information.  ## Templates MailSlurp emails support templates. You can create templates in the dashboard or API that contain [moustache](https://mustache.github.io/) style variables: for instance `Hello {{name}}`. Then when sending emails you can pass a map of variables names and values to be used. Additionally, when sending emails with contact groups you can use properties of the contact in your templates like `{{firstName}}` and `{{lastName}}``.  ## Explore     
  *
  * The version of the OpenAPI document: 6.5.2
  * 
@@ -23,7 +23,7 @@ using OpenAPIDateConverter = mailslurp.Client.OpenAPIDateConverter;
 namespace mailslurp.Model
 {
     /// <summary>
-    /// Representation of an email
+    /// Representation of an email received by an inbox. Use the ID to access more properties of an email using the EmailController endpoints.
     /// </summary>
     [DataContract]
     public partial class Email :  IEquatable<Email>
@@ -31,103 +31,42 @@ namespace mailslurp.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="Email" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected Email() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="Email" /> class.
-        /// </summary>
         /// <param name="analysis">analysis.</param>
-        /// <param name="attachments">attachments.</param>
-        /// <param name="bcc">bcc.</param>
-        /// <param name="body">body.</param>
-        /// <param name="cc">cc.</param>
-        /// <param name="charset">charset.</param>
-        /// <param name="createdAt">createdAt (required).</param>
-        /// <param name="from">from.</param>
+        /// <param name="attachments">List of IDs of attachments found in the email. Use these IDs with the Inbox and Email Controllers to download attachments and attachment meta data such as filesize, name, extension..</param>
+        /// <param name="bcc">List of &#x60;BCC&#x60; recipients email was addressed to.</param>
+        /// <param name="body">The body of the email message.</param>
+        /// <param name="cc">List of &#x60;CC&#x60; recipients email was addressed to.</param>
+        /// <param name="charset">Detected character set of the email body such as UTF-8.</param>
+        /// <param name="createdAt">When was the email received by MailSlurp.</param>
+        /// <param name="from">Who was the email sent from.</param>
         /// <param name="headers">headers.</param>
-        /// <param name="id">id (required).</param>
-        /// <param name="inboxId">inboxId (required).</param>
-        /// <param name="isHTML">isHTML.</param>
-        /// <param name="rawUrl">rawUrl.</param>
+        /// <param name="id">ID of the email.</param>
+        /// <param name="inboxId">ID of the inbox that received the email.</param>
+        /// <param name="isHTML">Was HTML sent in the email body.</param>
         /// <param name="read">Has the email been viewed ever.</param>
-        /// <param name="subject">subject.</param>
-        /// <param name="to">to (required).</param>
-        /// <param name="updatedAt">updatedAt (required).</param>
-        /// <param name="userId">userId (required).</param>
-        public Email(EmailAnalysis analysis = default(EmailAnalysis), List<string> attachments = default(List<string>), List<string> bcc = default(List<string>), string body = default(string), List<string> cc = default(List<string>), string charset = default(string), DateTime createdAt = default(DateTime), string from = default(string), Dictionary<string, string> headers = default(Dictionary<string, string>), Guid id = default(Guid), Guid inboxId = default(Guid), bool isHTML = default(bool), string rawUrl = default(string), bool read = default(bool), string subject = default(string), List<string> to = default(List<string>), DateTime updatedAt = default(DateTime), Guid userId = default(Guid))
+        /// <param name="subject">The subject line of the email message.</param>
+        /// <param name="to">List of &#x60;To&#x60; recipients email was addressed to.</param>
+        /// <param name="updatedAt">When was the email last updated.</param>
+        /// <param name="userId">ID of user that email belongs.</param>
+        public Email(EmailAnalysis analysis = default(EmailAnalysis), List<string> attachments = default(List<string>), List<string> bcc = default(List<string>), string body = default(string), List<string> cc = default(List<string>), string charset = default(string), DateTime createdAt = default(DateTime), string from = default(string), Dictionary<string, string> headers = default(Dictionary<string, string>), Guid id = default(Guid), Guid inboxId = default(Guid), bool isHTML = default(bool), bool read = default(bool), string subject = default(string), List<string> to = default(List<string>), DateTime updatedAt = default(DateTime), Guid userId = default(Guid))
         {
-            // to ensure "createdAt" is required (not null)
-            if (createdAt == null)
-            {
-                throw new InvalidDataException("createdAt is a required property for Email and cannot be null");
-            }
-            else
-            {
-                this.CreatedAt = createdAt;
-            }
-            
-            // to ensure "id" is required (not null)
-            if (id == null)
-            {
-                throw new InvalidDataException("id is a required property for Email and cannot be null");
-            }
-            else
-            {
-                this.Id = id;
-            }
-            
-            // to ensure "inboxId" is required (not null)
-            if (inboxId == null)
-            {
-                throw new InvalidDataException("inboxId is a required property for Email and cannot be null");
-            }
-            else
-            {
-                this.InboxId = inboxId;
-            }
-            
-            // to ensure "to" is required (not null)
-            if (to == null)
-            {
-                throw new InvalidDataException("to is a required property for Email and cannot be null");
-            }
-            else
-            {
-                this.To = to;
-            }
-            
-            // to ensure "updatedAt" is required (not null)
-            if (updatedAt == null)
-            {
-                throw new InvalidDataException("updatedAt is a required property for Email and cannot be null");
-            }
-            else
-            {
-                this.UpdatedAt = updatedAt;
-            }
-            
-            // to ensure "userId" is required (not null)
-            if (userId == null)
-            {
-                throw new InvalidDataException("userId is a required property for Email and cannot be null");
-            }
-            else
-            {
-                this.UserId = userId;
-            }
-            
             this.Analysis = analysis;
             this.Attachments = attachments;
             this.Bcc = bcc;
             this.Body = body;
             this.Cc = cc;
             this.Charset = charset;
+            this.CreatedAt = createdAt;
             this.From = from;
             this.Headers = headers;
+            this.Id = id;
+            this.InboxId = inboxId;
             this.IsHTML = isHTML;
-            this.RawUrl = rawUrl;
             this.Read = read;
             this.Subject = subject;
+            this.To = to;
+            this.UpdatedAt = updatedAt;
+            this.UserId = userId;
         }
         
         /// <summary>
@@ -137,44 +76,51 @@ namespace mailslurp.Model
         public EmailAnalysis Analysis { get; set; }
 
         /// <summary>
-        /// Gets or Sets Attachments
+        /// List of IDs of attachments found in the email. Use these IDs with the Inbox and Email Controllers to download attachments and attachment meta data such as filesize, name, extension.
         /// </summary>
+        /// <value>List of IDs of attachments found in the email. Use these IDs with the Inbox and Email Controllers to download attachments and attachment meta data such as filesize, name, extension.</value>
         [DataMember(Name="attachments", EmitDefaultValue=false)]
         public List<string> Attachments { get; set; }
 
         /// <summary>
-        /// Gets or Sets Bcc
+        /// List of &#x60;BCC&#x60; recipients email was addressed to
         /// </summary>
+        /// <value>List of &#x60;BCC&#x60; recipients email was addressed to</value>
         [DataMember(Name="bcc", EmitDefaultValue=false)]
         public List<string> Bcc { get; set; }
 
         /// <summary>
-        /// Gets or Sets Body
+        /// The body of the email message
         /// </summary>
+        /// <value>The body of the email message</value>
         [DataMember(Name="body", EmitDefaultValue=false)]
         public string Body { get; set; }
 
         /// <summary>
-        /// Gets or Sets Cc
+        /// List of &#x60;CC&#x60; recipients email was addressed to
         /// </summary>
+        /// <value>List of &#x60;CC&#x60; recipients email was addressed to</value>
         [DataMember(Name="cc", EmitDefaultValue=false)]
         public List<string> Cc { get; set; }
 
         /// <summary>
-        /// Gets or Sets Charset
+        /// Detected character set of the email body such as UTF-8
         /// </summary>
+        /// <value>Detected character set of the email body such as UTF-8</value>
         [DataMember(Name="charset", EmitDefaultValue=false)]
         public string Charset { get; set; }
 
         /// <summary>
-        /// Gets or Sets CreatedAt
+        /// When was the email received by MailSlurp
         /// </summary>
+        /// <value>When was the email received by MailSlurp</value>
         [DataMember(Name="createdAt", EmitDefaultValue=false)]
         public DateTime CreatedAt { get; set; }
 
         /// <summary>
-        /// Gets or Sets From
+        /// Who was the email sent from
         /// </summary>
+        /// <value>Who was the email sent from</value>
         [DataMember(Name="from", EmitDefaultValue=false)]
         public string From { get; set; }
 
@@ -185,28 +131,25 @@ namespace mailslurp.Model
         public Dictionary<string, string> Headers { get; set; }
 
         /// <summary>
-        /// Gets or Sets Id
+        /// ID of the email
         /// </summary>
+        /// <value>ID of the email</value>
         [DataMember(Name="id", EmitDefaultValue=false)]
         public Guid Id { get; set; }
 
         /// <summary>
-        /// Gets or Sets InboxId
+        /// ID of the inbox that received the email
         /// </summary>
+        /// <value>ID of the inbox that received the email</value>
         [DataMember(Name="inboxId", EmitDefaultValue=false)]
         public Guid InboxId { get; set; }
 
         /// <summary>
-        /// Gets or Sets IsHTML
+        /// Was HTML sent in the email body
         /// </summary>
+        /// <value>Was HTML sent in the email body</value>
         [DataMember(Name="isHTML", EmitDefaultValue=false)]
         public bool IsHTML { get; set; }
-
-        /// <summary>
-        /// Gets or Sets RawUrl
-        /// </summary>
-        [DataMember(Name="rawUrl", EmitDefaultValue=false)]
-        public string RawUrl { get; set; }
 
         /// <summary>
         /// Has the email been viewed ever
@@ -216,26 +159,30 @@ namespace mailslurp.Model
         public bool Read { get; set; }
 
         /// <summary>
-        /// Gets or Sets Subject
+        /// The subject line of the email message
         /// </summary>
+        /// <value>The subject line of the email message</value>
         [DataMember(Name="subject", EmitDefaultValue=false)]
         public string Subject { get; set; }
 
         /// <summary>
-        /// Gets or Sets To
+        /// List of &#x60;To&#x60; recipients email was addressed to
         /// </summary>
+        /// <value>List of &#x60;To&#x60; recipients email was addressed to</value>
         [DataMember(Name="to", EmitDefaultValue=false)]
         public List<string> To { get; set; }
 
         /// <summary>
-        /// Gets or Sets UpdatedAt
+        /// When was the email last updated
         /// </summary>
+        /// <value>When was the email last updated</value>
         [DataMember(Name="updatedAt", EmitDefaultValue=false)]
         public DateTime UpdatedAt { get; set; }
 
         /// <summary>
-        /// Gets or Sets UserId
+        /// ID of user that email belongs
         /// </summary>
+        /// <value>ID of user that email belongs</value>
         [DataMember(Name="userId", EmitDefaultValue=false)]
         public Guid UserId { get; set; }
 
@@ -259,7 +206,6 @@ namespace mailslurp.Model
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  InboxId: ").Append(InboxId).Append("\n");
             sb.Append("  IsHTML: ").Append(IsHTML).Append("\n");
-            sb.Append("  RawUrl: ").Append(RawUrl).Append("\n");
             sb.Append("  Read: ").Append(Read).Append("\n");
             sb.Append("  Subject: ").Append(Subject).Append("\n");
             sb.Append("  To: ").Append(To).Append("\n");
@@ -364,11 +310,6 @@ namespace mailslurp.Model
                     this.IsHTML.Equals(input.IsHTML))
                 ) && 
                 (
-                    this.RawUrl == input.RawUrl ||
-                    (this.RawUrl != null &&
-                    this.RawUrl.Equals(input.RawUrl))
-                ) && 
-                (
                     this.Read == input.Read ||
                     (this.Read != null &&
                     this.Read.Equals(input.Read))
@@ -429,8 +370,6 @@ namespace mailslurp.Model
                     hashCode = hashCode * 59 + this.InboxId.GetHashCode();
                 if (this.IsHTML != null)
                     hashCode = hashCode * 59 + this.IsHTML.GetHashCode();
-                if (this.RawUrl != null)
-                    hashCode = hashCode * 59 + this.RawUrl.GetHashCode();
                 if (this.Read != null)
                     hashCode = hashCode * 59 + this.Read.GetHashCode();
                 if (this.Subject != null)

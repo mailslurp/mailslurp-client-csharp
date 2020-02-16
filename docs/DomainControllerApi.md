@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 ## CreateDomain
 
-> DomainPlusVerificationRecordsAndStatus CreateDomain (CreateDomainOptions domainOptions)
+> DomainDto CreateDomain (CreateDomainOptions domainOptions)
 
 Create Domain
 
@@ -46,7 +46,7 @@ namespace Example
             try
             {
                 // Create Domain
-                DomainPlusVerificationRecordsAndStatus result = apiInstance.CreateDomain(domainOptions);
+                DomainDto result = apiInstance.CreateDomain(domainOptions);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**DomainPlusVerificationRecordsAndStatus**](DomainPlusVerificationRecordsAndStatus.md)
+[**DomainDto**](DomainDto.md)
 
 ### Authorization
 
@@ -178,7 +178,7 @@ void (empty response body)
 
 ## GetDomain
 
-> DomainPlusVerificationRecordsAndStatus GetDomain (Guid id)
+> DomainDto GetDomain (Guid id)
 
 Get a domain
 
@@ -211,7 +211,7 @@ namespace Example
             try
             {
                 // Get a domain
-                DomainPlusVerificationRecordsAndStatus result = apiInstance.GetDomain(id);
+                DomainDto result = apiInstance.GetDomain(id);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -234,7 +234,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**DomainPlusVerificationRecordsAndStatus**](DomainPlusVerificationRecordsAndStatus.md)
+[**DomainDto**](DomainDto.md)
 
 ### Authorization
 

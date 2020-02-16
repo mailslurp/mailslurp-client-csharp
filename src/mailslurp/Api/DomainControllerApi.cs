@@ -1,7 +1,7 @@
 /* 
  * MailSlurp API
  *
- * ## Introduction  [MailSlurp](https://www.mailslurp.com) is an Email API for developers and QA testers. It let's users: - create emails addresses on demand - receive emails and attachments in code - send templated HTML emails  ## About  This page contains the REST API documentation for MailSlurp. All requests require API Key authentication passed as an `x-api-key` header.  Create an account to [get your free API Key](https://app.mailslurp.com/sign-up/).  ## Resources - 🔑 [Get API Key](https://app.mailslurp.com/sign-up/)                    - 🎓 [Developer Portal](https://www.mailslurp.com/docs/)           - 📦 [Library SDKs](https://www.mailslurp.com/docs/) - ✍️ [Code Examples](https://www.mailslurp.com/examples) - ⚠️ [Report an issue](https://drift.me/mailslurp)  ## Explore  
+ * MailSlurp is an API for sending and receiving emails from dynamically allocated email addresses. It's designed for developers and QA teams to test applications, process inbound emails, send templated notifications, attachments, and more.   ## Overview  #### Inboxes  Inboxes have real email addresses that can send and receive emails. You can create inboxes with specific email addresses (using custom domains). You can also use randomly assigned MailSlurp addresses as unique, disposable test addresses.   See the InboxController or [inbox and email address guide](https://www.mailslurp.com/guides/) for more information.  #### Receive Emails You can receive emails in a number of ways. You can fetch emails and attachments directly from an inbox. Or you can use `waitFor` endpoints to hold a connection open until an email is received that matches given criteria (such as subject or body content). You can also use webhooks to have emails from multiple inboxes forwarded to your server via HTTP POST.  InboxController methods with `waitFor` in the name have a long timeout period and instruct MailSlurp to wait until an expected email is received. You can set conditions on email counts, subject or body matches, and more.  Most receive methods only return an email ID and not the full email (to keep response sizes low). To fetch the full body or attachments for an email use the email's ID with EmailController endpoints.  See the InboxController or [receiving emails guide](https://www.mailslurp.com/guides/) for more information.  #### Send Emails You can send templated HTML emails in several ways. You must first create an inbox to send an email. An inbox can have a specific address or a randomly assigned one. You can send emails from an inbox using `to`, `cc`, and `bcc` recipient lists or with contacts and contact groups.   Emails can contain plain-text or HTML bodies. You can also use email templates that support [moustache](https://mustache.github.io/) template variables. You can send attachments by first posting files to the AttachmentController and then using the returned IDs in the `attachments` field of the send options.  See the InboxController or [sending emails guide](https://www.mailslurp.com/guides/) for more information.  ## Templates MailSlurp emails support templates. You can create templates in the dashboard or API that contain [moustache](https://mustache.github.io/) style variables: for instance `Hello {{name}}`. Then when sending emails you can pass a map of variables names and values to be used. Additionally, when sending emails with contact groups you can use properties of the contact in your templates like `{{firstName}}` and `{{lastName}}``.  ## Explore     
  *
  * The version of the OpenAPI document: 6.5.2
  * 
@@ -32,8 +32,8 @@ namespace mailslurp.Api
         /// </remarks>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="domainOptions">domainOptions</param>
-        /// <returns>DomainPlusVerificationRecordsAndStatus</returns>
-        DomainPlusVerificationRecordsAndStatus CreateDomain (CreateDomainOptions domainOptions);
+        /// <returns>DomainDto</returns>
+        DomainDto CreateDomain (CreateDomainOptions domainOptions);
 
         /// <summary>
         /// Create Domain
@@ -43,8 +43,8 @@ namespace mailslurp.Api
         /// </remarks>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="domainOptions">domainOptions</param>
-        /// <returns>ApiResponse of DomainPlusVerificationRecordsAndStatus</returns>
-        ApiResponse<DomainPlusVerificationRecordsAndStatus> CreateDomainWithHttpInfo (CreateDomainOptions domainOptions);
+        /// <returns>ApiResponse of DomainDto</returns>
+        ApiResponse<DomainDto> CreateDomainWithHttpInfo (CreateDomainOptions domainOptions);
         /// <summary>
         /// Delete a domain
         /// </summary>
@@ -74,8 +74,8 @@ namespace mailslurp.Api
         /// </remarks>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">id</param>
-        /// <returns>DomainPlusVerificationRecordsAndStatus</returns>
-        DomainPlusVerificationRecordsAndStatus GetDomain (Guid id);
+        /// <returns>DomainDto</returns>
+        DomainDto GetDomain (Guid id);
 
         /// <summary>
         /// Get a domain
@@ -85,8 +85,8 @@ namespace mailslurp.Api
         /// </remarks>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">id</param>
-        /// <returns>ApiResponse of DomainPlusVerificationRecordsAndStatus</returns>
-        ApiResponse<DomainPlusVerificationRecordsAndStatus> GetDomainWithHttpInfo (Guid id);
+        /// <returns>ApiResponse of DomainDto</returns>
+        ApiResponse<DomainDto> GetDomainWithHttpInfo (Guid id);
         /// <summary>
         /// Get domains
         /// </summary>
@@ -116,8 +116,8 @@ namespace mailslurp.Api
         /// </remarks>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="domainOptions">domainOptions</param>
-        /// <returns>Task of DomainPlusVerificationRecordsAndStatus</returns>
-        System.Threading.Tasks.Task<DomainPlusVerificationRecordsAndStatus> CreateDomainAsync (CreateDomainOptions domainOptions);
+        /// <returns>Task of DomainDto</returns>
+        System.Threading.Tasks.Task<DomainDto> CreateDomainAsync (CreateDomainOptions domainOptions);
 
         /// <summary>
         /// Create Domain
@@ -127,8 +127,8 @@ namespace mailslurp.Api
         /// </remarks>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="domainOptions">domainOptions</param>
-        /// <returns>Task of ApiResponse (DomainPlusVerificationRecordsAndStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DomainPlusVerificationRecordsAndStatus>> CreateDomainAsyncWithHttpInfo (CreateDomainOptions domainOptions);
+        /// <returns>Task of ApiResponse (DomainDto)</returns>
+        System.Threading.Tasks.Task<ApiResponse<DomainDto>> CreateDomainAsyncWithHttpInfo (CreateDomainOptions domainOptions);
         /// <summary>
         /// Delete a domain
         /// </summary>
@@ -158,8 +158,8 @@ namespace mailslurp.Api
         /// </remarks>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">id</param>
-        /// <returns>Task of DomainPlusVerificationRecordsAndStatus</returns>
-        System.Threading.Tasks.Task<DomainPlusVerificationRecordsAndStatus> GetDomainAsync (Guid id);
+        /// <returns>Task of DomainDto</returns>
+        System.Threading.Tasks.Task<DomainDto> GetDomainAsync (Guid id);
 
         /// <summary>
         /// Get a domain
@@ -169,8 +169,8 @@ namespace mailslurp.Api
         /// </remarks>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">id</param>
-        /// <returns>Task of ApiResponse (DomainPlusVerificationRecordsAndStatus)</returns>
-        System.Threading.Tasks.Task<ApiResponse<DomainPlusVerificationRecordsAndStatus>> GetDomainAsyncWithHttpInfo (Guid id);
+        /// <returns>Task of ApiResponse (DomainDto)</returns>
+        System.Threading.Tasks.Task<ApiResponse<DomainDto>> GetDomainAsyncWithHttpInfo (Guid id);
         /// <summary>
         /// Get domains
         /// </summary>
@@ -306,10 +306,10 @@ namespace mailslurp.Api
         /// </summary>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="domainOptions">domainOptions</param>
-        /// <returns>DomainPlusVerificationRecordsAndStatus</returns>
-        public DomainPlusVerificationRecordsAndStatus CreateDomain (CreateDomainOptions domainOptions)
+        /// <returns>DomainDto</returns>
+        public DomainDto CreateDomain (CreateDomainOptions domainOptions)
         {
-             ApiResponse<DomainPlusVerificationRecordsAndStatus> localVarResponse = CreateDomainWithHttpInfo(domainOptions);
+             ApiResponse<DomainDto> localVarResponse = CreateDomainWithHttpInfo(domainOptions);
              return localVarResponse.Data;
         }
 
@@ -318,8 +318,8 @@ namespace mailslurp.Api
         /// </summary>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="domainOptions">domainOptions</param>
-        /// <returns>ApiResponse of DomainPlusVerificationRecordsAndStatus</returns>
-        public ApiResponse<DomainPlusVerificationRecordsAndStatus> CreateDomainWithHttpInfo (CreateDomainOptions domainOptions)
+        /// <returns>ApiResponse of DomainDto</returns>
+        public ApiResponse<DomainDto> CreateDomainWithHttpInfo (CreateDomainOptions domainOptions)
         {
             // verify the required parameter 'domainOptions' is set
             if (domainOptions == null)
@@ -375,9 +375,9 @@ namespace mailslurp.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<DomainPlusVerificationRecordsAndStatus>(localVarStatusCode,
+            return new ApiResponse<DomainDto>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Key, x => string.Join(",", x.Value)),
-                (DomainPlusVerificationRecordsAndStatus) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(DomainPlusVerificationRecordsAndStatus)));
+                (DomainDto) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(DomainDto)));
         }
 
         /// <summary>
@@ -385,10 +385,10 @@ namespace mailslurp.Api
         /// </summary>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="domainOptions">domainOptions</param>
-        /// <returns>Task of DomainPlusVerificationRecordsAndStatus</returns>
-        public async System.Threading.Tasks.Task<DomainPlusVerificationRecordsAndStatus> CreateDomainAsync (CreateDomainOptions domainOptions)
+        /// <returns>Task of DomainDto</returns>
+        public async System.Threading.Tasks.Task<DomainDto> CreateDomainAsync (CreateDomainOptions domainOptions)
         {
-             ApiResponse<DomainPlusVerificationRecordsAndStatus> localVarResponse = await CreateDomainAsyncWithHttpInfo(domainOptions);
+             ApiResponse<DomainDto> localVarResponse = await CreateDomainAsyncWithHttpInfo(domainOptions);
              return localVarResponse.Data;
 
         }
@@ -398,8 +398,8 @@ namespace mailslurp.Api
         /// </summary>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="domainOptions">domainOptions</param>
-        /// <returns>Task of ApiResponse (DomainPlusVerificationRecordsAndStatus)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<DomainPlusVerificationRecordsAndStatus>> CreateDomainAsyncWithHttpInfo (CreateDomainOptions domainOptions)
+        /// <returns>Task of ApiResponse (DomainDto)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<DomainDto>> CreateDomainAsyncWithHttpInfo (CreateDomainOptions domainOptions)
         {
             // verify the required parameter 'domainOptions' is set
             if (domainOptions == null)
@@ -455,9 +455,9 @@ namespace mailslurp.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<DomainPlusVerificationRecordsAndStatus>(localVarStatusCode,
+            return new ApiResponse<DomainDto>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Key, x => string.Join(",", x.Value)),
-                (DomainPlusVerificationRecordsAndStatus) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(DomainPlusVerificationRecordsAndStatus)));
+                (DomainDto) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(DomainDto)));
         }
 
         /// <summary>
@@ -604,10 +604,10 @@ namespace mailslurp.Api
         /// </summary>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">id</param>
-        /// <returns>DomainPlusVerificationRecordsAndStatus</returns>
-        public DomainPlusVerificationRecordsAndStatus GetDomain (Guid id)
+        /// <returns>DomainDto</returns>
+        public DomainDto GetDomain (Guid id)
         {
-             ApiResponse<DomainPlusVerificationRecordsAndStatus> localVarResponse = GetDomainWithHttpInfo(id);
+             ApiResponse<DomainDto> localVarResponse = GetDomainWithHttpInfo(id);
              return localVarResponse.Data;
         }
 
@@ -616,8 +616,8 @@ namespace mailslurp.Api
         /// </summary>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">id</param>
-        /// <returns>ApiResponse of DomainPlusVerificationRecordsAndStatus</returns>
-        public ApiResponse<DomainPlusVerificationRecordsAndStatus> GetDomainWithHttpInfo (Guid id)
+        /// <returns>ApiResponse of DomainDto</returns>
+        public ApiResponse<DomainDto> GetDomainWithHttpInfo (Guid id)
         {
             // verify the required parameter 'id' is set
             if (id == null)
@@ -665,9 +665,9 @@ namespace mailslurp.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<DomainPlusVerificationRecordsAndStatus>(localVarStatusCode,
+            return new ApiResponse<DomainDto>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Key, x => string.Join(",", x.Value)),
-                (DomainPlusVerificationRecordsAndStatus) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(DomainPlusVerificationRecordsAndStatus)));
+                (DomainDto) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(DomainDto)));
         }
 
         /// <summary>
@@ -675,10 +675,10 @@ namespace mailslurp.Api
         /// </summary>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">id</param>
-        /// <returns>Task of DomainPlusVerificationRecordsAndStatus</returns>
-        public async System.Threading.Tasks.Task<DomainPlusVerificationRecordsAndStatus> GetDomainAsync (Guid id)
+        /// <returns>Task of DomainDto</returns>
+        public async System.Threading.Tasks.Task<DomainDto> GetDomainAsync (Guid id)
         {
-             ApiResponse<DomainPlusVerificationRecordsAndStatus> localVarResponse = await GetDomainAsyncWithHttpInfo(id);
+             ApiResponse<DomainDto> localVarResponse = await GetDomainAsyncWithHttpInfo(id);
              return localVarResponse.Data;
 
         }
@@ -688,8 +688,8 @@ namespace mailslurp.Api
         /// </summary>
         /// <exception cref="mailslurp.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="id">id</param>
-        /// <returns>Task of ApiResponse (DomainPlusVerificationRecordsAndStatus)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<DomainPlusVerificationRecordsAndStatus>> GetDomainAsyncWithHttpInfo (Guid id)
+        /// <returns>Task of ApiResponse (DomainDto)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<DomainDto>> GetDomainAsyncWithHttpInfo (Guid id)
         {
             // verify the required parameter 'id' is set
             if (id == null)
@@ -737,9 +737,9 @@ namespace mailslurp.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<DomainPlusVerificationRecordsAndStatus>(localVarStatusCode,
+            return new ApiResponse<DomainDto>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Key, x => string.Join(",", x.Value)),
-                (DomainPlusVerificationRecordsAndStatus) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(DomainPlusVerificationRecordsAndStatus)));
+                (DomainDto) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(DomainDto)));
         }
 
         /// <summary>

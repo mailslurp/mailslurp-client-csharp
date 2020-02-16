@@ -5,15 +5,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Attachments** | **List&lt;string&gt;** |  | [optional] 
-**Bcc** | **List&lt;string&gt;** |  | [optional] 
-**Cc** | **List&lt;string&gt;** |  | [optional] 
-**Created** | **DateTime** |  | 
-**CreatedAt** | **DateTime** |  | 
-**Id** | **Guid** | ID of the Email. | [optional] 
-**Read** | **bool** |  | [optional] 
-**Subject** | **string** |  | [optional] 
-**To** | **List&lt;string&gt;** |  | 
+**Attachments** | **List&lt;string&gt;** | List of IDs of attachments found in the email. Use these IDs with the Inbox and Email Controllers to download attachments and attachment meta data such as filesize, name, extension. | [optional] 
+**Bcc** | **List&lt;string&gt;** | List of &#x60;BCC&#x60; recipients email was addressed to | [optional] 
+**Cc** | **List&lt;string&gt;** | List of &#x60;CC&#x60; recipients email was addressed to | [optional] 
+**CreatedAt** | **DateTime** | When was the email received by MailSlurp | [optional] 
+**Id** | **Guid** | ID of the email | [optional] 
+**Read** | **bool** | Has the email been viewed ever | [optional] 
+**Subject** | **string** | The subject line of the email message | [optional] 
+**To** | **List&lt;string&gt;** | List of &#x60;To&#x60; recipients email was addressed to | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

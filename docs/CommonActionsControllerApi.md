@@ -552,7 +552,7 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("x-api-key", "Bearer");
 
             var apiInstance = new CommonActionsControllerApi(Configuration.Default);
-            var inboxId = new Guid(); // Guid | Id of the inbox we are fetching emails from (optional) 
+            var inboxId = new Guid(); // Guid | Id of the inbox you are fetching emails from (optional) 
             var index = 56;  // int | Zero based index of the email to wait for (optional) 
             var timeout = 789;  // long | Max milliseconds to wait (optional) 
             var unreadOnly = true;  // bool | Optional filter for unread only (optional)  (default to false)
@@ -579,7 +579,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inboxId** | [**Guid**](Guid.md)| Id of the inbox we are fetching emails from | [optional] 
+ **inboxId** | [**Guid**](Guid.md)| Id of the inbox you are fetching emails from | [optional] 
  **index** | **int**| Zero based index of the email to wait for | [optional] 
  **timeout** | **long**| Max milliseconds to wait | [optional] 
  **unreadOnly** | **bool**| Optional filter for unread only | [optional] [default to false]

@@ -16,8 +16,6 @@ Method | HTTP request | Description
 
 Bulk create Inboxes (email addresses)
 
-Enterprise Plan Required
-
 ### Example
 
 ```csharp
@@ -99,8 +97,6 @@ Name | Type | Description  | Notes
 
 Bulk Delete Inboxes
 
-Enterprise Plan Required
-
 ### Example
 
 ```csharp
@@ -179,8 +175,6 @@ void (empty response body)
 > void BulkSendEmails (BulkSendEmailOptions bulkSendEmailOptions)
 
 Bulk Send Emails
-
-Enterprise Plan Required
 
 ### Example
 

@@ -1,7 +1,7 @@
 /* 
  * MailSlurp API
  *
- * ## Introduction  [MailSlurp](https://www.mailslurp.com) is an Email API for developers and QA testers. It let's users: - create emails addresses on demand - receive emails and attachments in code - send templated HTML emails  ## About  This page contains the REST API documentation for MailSlurp. All requests require API Key authentication passed as an `x-api-key` header.  Create an account to [get your free API Key](https://app.mailslurp.com/sign-up/).  ## Resources - 🔑 [Get API Key](https://app.mailslurp.com/sign-up/)                    - 🎓 [Developer Portal](https://www.mailslurp.com/docs/)           - 📦 [Library SDKs](https://www.mailslurp.com/docs/) - ✍️ [Code Examples](https://www.mailslurp.com/examples) - ⚠️ [Report an issue](https://drift.me/mailslurp)  ## Explore  
+ * MailSlurp is an API for sending and receiving emails from dynamically allocated email addresses. It's designed for developers and QA teams to test applications, process inbound emails, send templated notifications, attachments, and more.   ## Overview  #### Inboxes  Inboxes have real email addresses that can send and receive emails. You can create inboxes with specific email addresses (using custom domains). You can also use randomly assigned MailSlurp addresses as unique, disposable test addresses.   See the InboxController or [inbox and email address guide](https://www.mailslurp.com/guides/) for more information.  #### Receive Emails You can receive emails in a number of ways. You can fetch emails and attachments directly from an inbox. Or you can use `waitFor` endpoints to hold a connection open until an email is received that matches given criteria (such as subject or body content). You can also use webhooks to have emails from multiple inboxes forwarded to your server via HTTP POST.  InboxController methods with `waitFor` in the name have a long timeout period and instruct MailSlurp to wait until an expected email is received. You can set conditions on email counts, subject or body matches, and more.  Most receive methods only return an email ID and not the full email (to keep response sizes low). To fetch the full body or attachments for an email use the email's ID with EmailController endpoints.  See the InboxController or [receiving emails guide](https://www.mailslurp.com/guides/) for more information.  #### Send Emails You can send templated HTML emails in several ways. You must first create an inbox to send an email. An inbox can have a specific address or a randomly assigned one. You can send emails from an inbox using `to`, `cc`, and `bcc` recipient lists or with contacts and contact groups.   Emails can contain plain-text or HTML bodies. You can also use email templates that support [moustache](https://mustache.github.io/) template variables. You can send attachments by first posting files to the AttachmentController and then using the returned IDs in the `attachments` field of the send options.  See the InboxController or [sending emails guide](https://www.mailslurp.com/guides/) for more information.  ## Templates MailSlurp emails support templates. You can create templates in the dashboard or API that contain [moustache](https://mustache.github.io/) style variables: for instance `Hello {{name}}`. Then when sending emails you can pass a map of variables names and values to be used. Additionally, when sending emails with contact groups you can use properties of the contact in your templates like `{{firstName}}` and `{{lastName}}``.  ## Explore     
  *
  * The version of the OpenAPI document: 6.5.2
  * 
@@ -23,29 +23,51 @@ using OpenAPIDateConverter = mailslurp.Client.OpenAPIDateConverter;
 namespace mailslurp.Model
 {
     /// <summary>
-    /// Options for sending an email message from an inbox. Must supply either list of &#x60;to&#x60; email addresses or &#x60;toGroups&#x60; list of Contact Group IDs.
+    /// Options for sending an email message from an inbox. You must provide one of: &#x60;to&#x60;, &#x60;toGroup&#x60;, or &#x60;toContacts&#x60; to send an email. All other parameters are optional.
     /// </summary>
     [DataContract]
     public partial class SendEmailOptions :  IEquatable<SendEmailOptions>
     {
         /// <summary>
+        /// Optional strategy to use when sending the email
+        /// </summary>
+        /// <value>Optional strategy to use when sending the email</value>
+        [JsonConverter(typeof(StringEnumConverter))]
+        public enum SendStrategyEnum
+        {
+            /// <summary>
+            /// Enum SINGLEMESSAGE for value: SINGLE_MESSAGE
+            /// </summary>
+            [EnumMember(Value = "SINGLE_MESSAGE")]
+            SINGLEMESSAGE = 1
+
+        }
+
+        /// <summary>
+        /// Optional strategy to use when sending the email
+        /// </summary>
+        /// <value>Optional strategy to use when sending the email</value>
+        [DataMember(Name="sendStrategy", EmitDefaultValue=false)]
+        public SendStrategyEnum? SendStrategy { get; set; }
+        /// <summary>
         /// Initializes a new instance of the <see cref="SendEmailOptions" /> class.
         /// </summary>
-        /// <param name="attachments">Optional list of attachment IDs to send with this email. You must first upload each attachment separately in order to obtain attachment IDs.</param>
+        /// <param name="attachments">Optional list of attachment IDs to send with this email. You must first upload each attachment separately in order to obtain attachment IDs. This way you can reuse attachments with different emails once uploaded..</param>
         /// <param name="bcc">Optional list of bcc destination email addresses.</param>
-        /// <param name="body">Contents of email. If body contains HTML then set &#x60;isHTML&#x60; to true. You can use moustache template syntax in the body in conjunction with &#x60;toGroup&#x60; contact variables or &#x60;templateVariables&#x60; data..</param>
+        /// <param name="body">Optional contents of email. If body contains HTML then set &#x60;isHTML&#x60; to true to ensure that email clients render it correctly. You can use moustache template syntax in the email body in conjunction with &#x60;toGroup&#x60; contact variables or &#x60;templateVariables&#x60; data. If you need more templating control consider creating a template and using the &#x60;template&#x60; property instead of the body..</param>
         /// <param name="cc">Optional list of cc destination email addresses.</param>
         /// <param name="charset">Optional charset.</param>
-        /// <param name="from">Optional from address. If not set source inbox address will be used.</param>
-        /// <param name="isHTML">Optional HTML flag. If true the &#x60;content-type&#x60; of the email will be &#x60;text/html&#x60;.</param>
+        /// <param name="from">Optional from address. If not set the source inbox address will be used for this field. Beware of potential spam penalties when setting this field to an address not used by the inbox. For custom email addresses use a custom domain..</param>
+        /// <param name="isHTML">Optional HTML flag. If true the &#x60;content-type&#x60; of the email will be &#x60;text/html&#x60;. Set to true when sending HTML to ensure proper rending on email clients.</param>
         /// <param name="replyTo">Optional replyTo header.</param>
+        /// <param name="sendStrategy">Optional strategy to use when sending the email.</param>
         /// <param name="subject">Optional email subject line.</param>
-        /// <param name="template">Optional template ID to use for body. Will override body if provided.</param>
-        /// <param name="templateVariables">Optional map of template variables. Will replace moustache syntax variables in subject and body or template with the associated values.</param>
-        /// <param name="to">List of destination email addresses. Even single recipients must be in array form. Max 100 recipients..</param>
-        /// <param name="toContacts">Optional list of contact IDs to send email to.</param>
-        /// <param name="toGroup">Optional contact group ID to send email to.</param>
-        public SendEmailOptions(List<string> attachments = default(List<string>), List<string> bcc = default(List<string>), string body = default(string), List<string> cc = default(List<string>), string charset = default(string), string from = default(string), bool isHTML = default(bool), string replyTo = default(string), string subject = default(string), Guid template = default(Guid), Object templateVariables = default(Object), List<string> to = default(List<string>), List<Guid> toContacts = default(List<Guid>), Guid toGroup = default(Guid))
+        /// <param name="template">Optional template ID to use for body. Will override body if provided. When using a template make sure you pass the corresponding map of &#x60;templateVariables&#x60;. You can find which variables are needed by fetching the template itself or viewing it in the dashboard..</param>
+        /// <param name="templateVariables">Optional map of template variables. Will replace moustache syntax variables in subject and body or template with the associated values if found..</param>
+        /// <param name="to">List of destination email addresses. Even single recipients must be in array form. Maximum recipients per email depends on your plan. If you need to send many emails try using contacts or contact groups or use a non standard sendStrategy to ensure that spam filters are not triggered (many recipients in one email can affect your spam rating)..</param>
+        /// <param name="toContacts">Optional list of contact IDs to send email to. Manage your contacts via the API or dashboard. When contacts are used the email is sent to each contact separately so they will not see other recipients..</param>
+        /// <param name="toGroup">Optional contact group ID to send email to. You can create contacts and contact groups in the API or dashboard and use them for email campaigns. When contact groups are used the email is sent to each contact separately so they will not see other recipients.</param>
+        public SendEmailOptions(List<string> attachments = default(List<string>), List<string> bcc = default(List<string>), string body = default(string), List<string> cc = default(List<string>), string charset = default(string), string from = default(string), bool isHTML = default(bool), string replyTo = default(string), SendStrategyEnum? sendStrategy = default(SendStrategyEnum?), string subject = default(string), Guid template = default(Guid), Object templateVariables = default(Object), List<string> to = default(List<string>), List<Guid> toContacts = default(List<Guid>), Guid toGroup = default(Guid))
         {
             this.Attachments = attachments;
             this.Bcc = bcc;
@@ -55,6 +77,7 @@ namespace mailslurp.Model
             this.From = from;
             this.IsHTML = isHTML;
             this.ReplyTo = replyTo;
+            this.SendStrategy = sendStrategy;
             this.Subject = subject;
             this.Template = template;
             this.TemplateVariables = templateVariables;
@@ -64,9 +87,9 @@ namespace mailslurp.Model
         }
         
         /// <summary>
-        /// Optional list of attachment IDs to send with this email. You must first upload each attachment separately in order to obtain attachment IDs
+        /// Optional list of attachment IDs to send with this email. You must first upload each attachment separately in order to obtain attachment IDs. This way you can reuse attachments with different emails once uploaded.
         /// </summary>
-        /// <value>Optional list of attachment IDs to send with this email. You must first upload each attachment separately in order to obtain attachment IDs</value>
+        /// <value>Optional list of attachment IDs to send with this email. You must first upload each attachment separately in order to obtain attachment IDs. This way you can reuse attachments with different emails once uploaded.</value>
         [DataMember(Name="attachments", EmitDefaultValue=false)]
         public List<string> Attachments { get; set; }
 
@@ -78,9 +101,9 @@ namespace mailslurp.Model
         public List<string> Bcc { get; set; }
 
         /// <summary>
-        /// Contents of email. If body contains HTML then set &#x60;isHTML&#x60; to true. You can use moustache template syntax in the body in conjunction with &#x60;toGroup&#x60; contact variables or &#x60;templateVariables&#x60; data.
+        /// Optional contents of email. If body contains HTML then set &#x60;isHTML&#x60; to true to ensure that email clients render it correctly. You can use moustache template syntax in the email body in conjunction with &#x60;toGroup&#x60; contact variables or &#x60;templateVariables&#x60; data. If you need more templating control consider creating a template and using the &#x60;template&#x60; property instead of the body.
         /// </summary>
-        /// <value>Contents of email. If body contains HTML then set &#x60;isHTML&#x60; to true. You can use moustache template syntax in the body in conjunction with &#x60;toGroup&#x60; contact variables or &#x60;templateVariables&#x60; data.</value>
+        /// <value>Optional contents of email. If body contains HTML then set &#x60;isHTML&#x60; to true to ensure that email clients render it correctly. You can use moustache template syntax in the email body in conjunction with &#x60;toGroup&#x60; contact variables or &#x60;templateVariables&#x60; data. If you need more templating control consider creating a template and using the &#x60;template&#x60; property instead of the body.</value>
         [DataMember(Name="body", EmitDefaultValue=false)]
         public string Body { get; set; }
 
@@ -99,16 +122,16 @@ namespace mailslurp.Model
         public string Charset { get; set; }
 
         /// <summary>
-        /// Optional from address. If not set source inbox address will be used
+        /// Optional from address. If not set the source inbox address will be used for this field. Beware of potential spam penalties when setting this field to an address not used by the inbox. For custom email addresses use a custom domain.
         /// </summary>
-        /// <value>Optional from address. If not set source inbox address will be used</value>
+        /// <value>Optional from address. If not set the source inbox address will be used for this field. Beware of potential spam penalties when setting this field to an address not used by the inbox. For custom email addresses use a custom domain.</value>
         [DataMember(Name="from", EmitDefaultValue=false)]
         public string From { get; set; }
 
         /// <summary>
-        /// Optional HTML flag. If true the &#x60;content-type&#x60; of the email will be &#x60;text/html&#x60;
+        /// Optional HTML flag. If true the &#x60;content-type&#x60; of the email will be &#x60;text/html&#x60;. Set to true when sending HTML to ensure proper rending on email clients
         /// </summary>
-        /// <value>Optional HTML flag. If true the &#x60;content-type&#x60; of the email will be &#x60;text/html&#x60;</value>
+        /// <value>Optional HTML flag. If true the &#x60;content-type&#x60; of the email will be &#x60;text/html&#x60;. Set to true when sending HTML to ensure proper rending on email clients</value>
         [DataMember(Name="isHTML", EmitDefaultValue=false)]
         public bool IsHTML { get; set; }
 
@@ -119,6 +142,7 @@ namespace mailslurp.Model
         [DataMember(Name="replyTo", EmitDefaultValue=false)]
         public string ReplyTo { get; set; }
 
+
         /// <summary>
         /// Optional email subject line
         /// </summary>
@@ -127,37 +151,37 @@ namespace mailslurp.Model
         public string Subject { get; set; }
 
         /// <summary>
-        /// Optional template ID to use for body. Will override body if provided
+        /// Optional template ID to use for body. Will override body if provided. When using a template make sure you pass the corresponding map of &#x60;templateVariables&#x60;. You can find which variables are needed by fetching the template itself or viewing it in the dashboard.
         /// </summary>
-        /// <value>Optional template ID to use for body. Will override body if provided</value>
+        /// <value>Optional template ID to use for body. Will override body if provided. When using a template make sure you pass the corresponding map of &#x60;templateVariables&#x60;. You can find which variables are needed by fetching the template itself or viewing it in the dashboard.</value>
         [DataMember(Name="template", EmitDefaultValue=false)]
         public Guid Template { get; set; }
 
         /// <summary>
-        /// Optional map of template variables. Will replace moustache syntax variables in subject and body or template with the associated values
+        /// Optional map of template variables. Will replace moustache syntax variables in subject and body or template with the associated values if found.
         /// </summary>
-        /// <value>Optional map of template variables. Will replace moustache syntax variables in subject and body or template with the associated values</value>
+        /// <value>Optional map of template variables. Will replace moustache syntax variables in subject and body or template with the associated values if found.</value>
         [DataMember(Name="templateVariables", EmitDefaultValue=false)]
         public Object TemplateVariables { get; set; }
 
         /// <summary>
-        /// List of destination email addresses. Even single recipients must be in array form. Max 100 recipients.
+        /// List of destination email addresses. Even single recipients must be in array form. Maximum recipients per email depends on your plan. If you need to send many emails try using contacts or contact groups or use a non standard sendStrategy to ensure that spam filters are not triggered (many recipients in one email can affect your spam rating).
         /// </summary>
-        /// <value>List of destination email addresses. Even single recipients must be in array form. Max 100 recipients.</value>
+        /// <value>List of destination email addresses. Even single recipients must be in array form. Maximum recipients per email depends on your plan. If you need to send many emails try using contacts or contact groups or use a non standard sendStrategy to ensure that spam filters are not triggered (many recipients in one email can affect your spam rating).</value>
         [DataMember(Name="to", EmitDefaultValue=false)]
         public List<string> To { get; set; }
 
         /// <summary>
-        /// Optional list of contact IDs to send email to
+        /// Optional list of contact IDs to send email to. Manage your contacts via the API or dashboard. When contacts are used the email is sent to each contact separately so they will not see other recipients.
         /// </summary>
-        /// <value>Optional list of contact IDs to send email to</value>
+        /// <value>Optional list of contact IDs to send email to. Manage your contacts via the API or dashboard. When contacts are used the email is sent to each contact separately so they will not see other recipients.</value>
         [DataMember(Name="toContacts", EmitDefaultValue=false)]
         public List<Guid> ToContacts { get; set; }
 
         /// <summary>
-        /// Optional contact group ID to send email to
+        /// Optional contact group ID to send email to. You can create contacts and contact groups in the API or dashboard and use them for email campaigns. When contact groups are used the email is sent to each contact separately so they will not see other recipients
         /// </summary>
-        /// <value>Optional contact group ID to send email to</value>
+        /// <value>Optional contact group ID to send email to. You can create contacts and contact groups in the API or dashboard and use them for email campaigns. When contact groups are used the email is sent to each contact separately so they will not see other recipients</value>
         [DataMember(Name="toGroup", EmitDefaultValue=false)]
         public Guid ToGroup { get; set; }
 
@@ -177,6 +201,7 @@ namespace mailslurp.Model
             sb.Append("  From: ").Append(From).Append("\n");
             sb.Append("  IsHTML: ").Append(IsHTML).Append("\n");
             sb.Append("  ReplyTo: ").Append(ReplyTo).Append("\n");
+            sb.Append("  SendStrategy: ").Append(SendStrategy).Append("\n");
             sb.Append("  Subject: ").Append(Subject).Append("\n");
             sb.Append("  Template: ").Append(Template).Append("\n");
             sb.Append("  TemplateVariables: ").Append(TemplateVariables).Append("\n");
@@ -261,6 +286,11 @@ namespace mailslurp.Model
                     this.ReplyTo.Equals(input.ReplyTo))
                 ) && 
                 (
+                    this.SendStrategy == input.SendStrategy ||
+                    (this.SendStrategy != null &&
+                    this.SendStrategy.Equals(input.SendStrategy))
+                ) && 
+                (
                     this.Subject == input.Subject ||
                     (this.Subject != null &&
                     this.Subject.Equals(input.Subject))
@@ -319,6 +349,8 @@ namespace mailslurp.Model
                     hashCode = hashCode * 59 + this.IsHTML.GetHashCode();
                 if (this.ReplyTo != null)
                     hashCode = hashCode * 59 + this.ReplyTo.GetHashCode();
+                if (this.SendStrategy != null)
+                    hashCode = hashCode * 59 + this.SendStrategy.GetHashCode();
                 if (this.Subject != null)
                     hashCode = hashCode * 59 + this.Subject.GetHashCode();
                 if (this.Template != null)

@@ -6,7 +6,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Base64Contents** | **string** | Base64 encoded string of file contents | [optional] 
-**ContentType** | **string** | Optional contentType for file. For instance application/pdf | [optional] 
+**ContentType** | **string** | Optional contentType for file. For instance &#x60;application/pdf&#x60; | [optional] 
 **Filename** | **string** | Optional filename to save upload with | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

@@ -23,78 +23,98 @@ using OpenAPIDateConverter = mailslurp.Client.OpenAPIDateConverter;
 namespace mailslurp.Model
 {
     /// <summary>
-    /// Representation of a webhook
+    /// Domain plus verification records and status
     /// </summary>
     [DataContract]
-    public partial class WebhookProjection :  IEquatable<WebhookProjection>
+    public partial class DomainDto :  IEquatable<DomainDto>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="WebhookProjection" /> class.
+        /// Initializes a new instance of the <see cref="DomainDto" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected WebhookProjection() { }
+        protected DomainDto() { }
         /// <summary>
-        /// Initializes a new instance of the <see cref="WebhookProjection" /> class.
+        /// Initializes a new instance of the <see cref="DomainDto" /> class.
         /// </summary>
         /// <param name="createdAt">createdAt (required).</param>
+        /// <param name="domain">domain (required).</param>
         /// <param name="id">id (required).</param>
-        /// <param name="inboxId">inboxId (required).</param>
-        /// <param name="name">name.</param>
+        /// <param name="isVerified">isVerified (required).</param>
         /// <param name="updatedAt">updatedAt (required).</param>
-        /// <param name="url">url (required).</param>
-        public WebhookProjection(DateTime createdAt = default(DateTime), Guid id = default(Guid), Guid inboxId = default(Guid), string name = default(string), DateTime updatedAt = default(DateTime), string url = default(string))
+        /// <param name="userId">userId (required).</param>
+        /// <param name="verificationToken">verificationToken (required).</param>
+        public DomainDto(DateTime createdAt = default(DateTime), string domain = default(string), Guid id = default(Guid), bool isVerified = default(bool), DateTime updatedAt = default(DateTime), Guid userId = default(Guid), string verificationToken = default(string))
         {
             // to ensure "createdAt" is required (not null)
             if (createdAt == null)
             {
-                throw new InvalidDataException("createdAt is a required property for WebhookProjection and cannot be null");
+                throw new InvalidDataException("createdAt is a required property for DomainDto and cannot be null");
             }
             else
             {
                 this.CreatedAt = createdAt;
             }
             
+            // to ensure "domain" is required (not null)
+            if (domain == null)
+            {
+                throw new InvalidDataException("domain is a required property for DomainDto and cannot be null");
+            }
+            else
+            {
+                this.Domain = domain;
+            }
+            
             // to ensure "id" is required (not null)
             if (id == null)
             {
-                throw new InvalidDataException("id is a required property for WebhookProjection and cannot be null");
+                throw new InvalidDataException("id is a required property for DomainDto and cannot be null");
             }
             else
             {
                 this.Id = id;
             }
             
-            // to ensure "inboxId" is required (not null)
-            if (inboxId == null)
+            // to ensure "isVerified" is required (not null)
+            if (isVerified == null)
             {
-                throw new InvalidDataException("inboxId is a required property for WebhookProjection and cannot be null");
+                throw new InvalidDataException("isVerified is a required property for DomainDto and cannot be null");
             }
             else
             {
-                this.InboxId = inboxId;
+                this.IsVerified = isVerified;
             }
             
             // to ensure "updatedAt" is required (not null)
             if (updatedAt == null)
             {
-                throw new InvalidDataException("updatedAt is a required property for WebhookProjection and cannot be null");
+                throw new InvalidDataException("updatedAt is a required property for DomainDto and cannot be null");
             }
             else
             {
                 this.UpdatedAt = updatedAt;
             }
             
-            // to ensure "url" is required (not null)
-            if (url == null)
+            // to ensure "userId" is required (not null)
+            if (userId == null)
             {
-                throw new InvalidDataException("url is a required property for WebhookProjection and cannot be null");
+                throw new InvalidDataException("userId is a required property for DomainDto and cannot be null");
             }
             else
             {
-                this.Url = url;
+                this.UserId = userId;
             }
             
-            this.Name = name;
+            // to ensure "verificationToken" is required (not null)
+            if (verificationToken == null)
+            {
+                throw new InvalidDataException("verificationToken is a required property for DomainDto and cannot be null");
+            }
+            else
+            {
+                this.VerificationToken = verificationToken;
+            }
+            
         }
         
         /// <summary>
@@ -104,22 +124,22 @@ namespace mailslurp.Model
         public DateTime CreatedAt { get; set; }
 
         /// <summary>
+        /// Gets or Sets Domain
+        /// </summary>
+        [DataMember(Name="domain", EmitDefaultValue=false)]
+        public string Domain { get; set; }
+
+        /// <summary>
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
         public Guid Id { get; set; }
 
         /// <summary>
-        /// Gets or Sets InboxId
+        /// Gets or Sets IsVerified
         /// </summary>
-        [DataMember(Name="inboxId", EmitDefaultValue=false)]
-        public Guid InboxId { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Name
-        /// </summary>
-        [DataMember(Name="name", EmitDefaultValue=false)]
-        public string Name { get; set; }
+        [DataMember(Name="isVerified", EmitDefaultValue=false)]
+        public bool IsVerified { get; set; }
 
         /// <summary>
         /// Gets or Sets UpdatedAt
@@ -128,10 +148,16 @@ namespace mailslurp.Model
         public DateTime UpdatedAt { get; set; }
 
         /// <summary>
-        /// Gets or Sets Url
+        /// Gets or Sets UserId
         /// </summary>
-        [DataMember(Name="url", EmitDefaultValue=false)]
-        public string Url { get; set; }
+        [DataMember(Name="userId", EmitDefaultValue=false)]
+        public Guid UserId { get; set; }
+
+        /// <summary>
+        /// Gets or Sets VerificationToken
+        /// </summary>
+        [DataMember(Name="verificationToken", EmitDefaultValue=false)]
+        public string VerificationToken { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -140,13 +166,14 @@ namespace mailslurp.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class WebhookProjection {\n");
+            sb.Append("class DomainDto {\n");
             sb.Append("  CreatedAt: ").Append(CreatedAt).Append("\n");
+            sb.Append("  Domain: ").Append(Domain).Append("\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
-            sb.Append("  InboxId: ").Append(InboxId).Append("\n");
-            sb.Append("  Name: ").Append(Name).Append("\n");
+            sb.Append("  IsVerified: ").Append(IsVerified).Append("\n");
             sb.Append("  UpdatedAt: ").Append(UpdatedAt).Append("\n");
-            sb.Append("  Url: ").Append(Url).Append("\n");
+            sb.Append("  UserId: ").Append(UserId).Append("\n");
+            sb.Append("  VerificationToken: ").Append(VerificationToken).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -167,15 +194,15 @@ namespace mailslurp.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as WebhookProjection);
+            return this.Equals(input as DomainDto);
         }
 
         /// <summary>
-        /// Returns true if WebhookProjection instances are equal
+        /// Returns true if DomainDto instances are equal
         /// </summary>
-        /// <param name="input">Instance of WebhookProjection to be compared</param>
+        /// <param name="input">Instance of DomainDto to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(WebhookProjection input)
+        public bool Equals(DomainDto input)
         {
             if (input == null)
                 return false;
@@ -187,19 +214,19 @@ namespace mailslurp.Model
                     this.CreatedAt.Equals(input.CreatedAt))
                 ) && 
                 (
+                    this.Domain == input.Domain ||
+                    (this.Domain != null &&
+                    this.Domain.Equals(input.Domain))
+                ) && 
+                (
                     this.Id == input.Id ||
                     (this.Id != null &&
                     this.Id.Equals(input.Id))
                 ) && 
                 (
-                    this.InboxId == input.InboxId ||
-                    (this.InboxId != null &&
-                    this.InboxId.Equals(input.InboxId))
-                ) && 
-                (
-                    this.Name == input.Name ||
-                    (this.Name != null &&
-                    this.Name.Equals(input.Name))
+                    this.IsVerified == input.IsVerified ||
+                    (this.IsVerified != null &&
+                    this.IsVerified.Equals(input.IsVerified))
                 ) && 
                 (
                     this.UpdatedAt == input.UpdatedAt ||
@@ -207,9 +234,14 @@ namespace mailslurp.Model
                     this.UpdatedAt.Equals(input.UpdatedAt))
                 ) && 
                 (
-                    this.Url == input.Url ||
-                    (this.Url != null &&
-                    this.Url.Equals(input.Url))
+                    this.UserId == input.UserId ||
+                    (this.UserId != null &&
+                    this.UserId.Equals(input.UserId))
+                ) && 
+                (
+                    this.VerificationToken == input.VerificationToken ||
+                    (this.VerificationToken != null &&
+                    this.VerificationToken.Equals(input.VerificationToken))
                 );
         }
 
@@ -224,16 +256,18 @@ namespace mailslurp.Model
                 int hashCode = 41;
                 if (this.CreatedAt != null)
                     hashCode = hashCode * 59 + this.CreatedAt.GetHashCode();
+                if (this.Domain != null)
+                    hashCode = hashCode * 59 + this.Domain.GetHashCode();
                 if (this.Id != null)
                     hashCode = hashCode * 59 + this.Id.GetHashCode();
-                if (this.InboxId != null)
-                    hashCode = hashCode * 59 + this.InboxId.GetHashCode();
-                if (this.Name != null)
-                    hashCode = hashCode * 59 + this.Name.GetHashCode();
+                if (this.IsVerified != null)
+                    hashCode = hashCode * 59 + this.IsVerified.GetHashCode();
                 if (this.UpdatedAt != null)
                     hashCode = hashCode * 59 + this.UpdatedAt.GetHashCode();
-                if (this.Url != null)
-                    hashCode = hashCode * 59 + this.Url.GetHashCode();
+                if (this.UserId != null)
+                    hashCode = hashCode * 59 + this.UserId.GetHashCode();
+                if (this.VerificationToken != null)
+                    hashCode = hashCode * 59 + this.VerificationToken.GetHashCode();
                 return hashCode;
             }
         }
