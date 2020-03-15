@@ -23,56 +23,34 @@ using OpenAPIDateConverter = mailslurp.Client.OpenAPIDateConverter;
 namespace mailslurp.Model
 {
     /// <summary>
-    /// Representation of an inbox with an email address. Emails can be sent to or from this email address.
+    /// Options for updating inbox properties
     /// </summary>
     [DataContract]
-    public partial class Inbox :  IEquatable<Inbox>
+    public partial class UpdateInboxOptions :  IEquatable<UpdateInboxOptions>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="Inbox" /> class.
+        /// Initializes a new instance of the <see cref="UpdateInboxOptions" /> class.
         /// </summary>
-        /// <param name="createdAt">When was the inbox created.</param>
         /// <param name="description">Optional description of an inbox for labelling purposes.</param>
-        /// <param name="emailAddress">The inbox&#39;s email address. Send an email to this address and the inbox will receive and store it for you. To retrieve the email use the Inbox and Email Controller endpoints..</param>
         /// <param name="expiresAt">When, if ever, will the inbox expire and be deleted. If null then this inbox is permanent and the emails in it won&#39;t be deleted..</param>
         /// <param name="favourite">Is the inbox favourited.</param>
-        /// <param name="id">ID of the inbox.</param>
         /// <param name="name">Optional name of the inbox. Displayed in the dashboard for easier search.</param>
         /// <param name="tags">Tags that inbox has been tagged with.</param>
-        /// <param name="userId">ID of user that inbox belongs to.</param>
-        public Inbox(DateTime createdAt = default(DateTime), string description = default(string), string emailAddress = default(string), DateTime expiresAt = default(DateTime), bool favourite = default(bool), Guid id = default(Guid), string name = default(string), List<string> tags = default(List<string>), Guid userId = default(Guid))
+        public UpdateInboxOptions(string description = default(string), DateTime expiresAt = default(DateTime), bool favourite = default(bool), string name = default(string), List<string> tags = default(List<string>))
         {
-            this.CreatedAt = createdAt;
             this.Description = description;
-            this.EmailAddress = emailAddress;
             this.ExpiresAt = expiresAt;
             this.Favourite = favourite;
-            this.Id = id;
             this.Name = name;
             this.Tags = tags;
-            this.UserId = userId;
         }
         
-        /// <summary>
-        /// When was the inbox created
-        /// </summary>
-        /// <value>When was the inbox created</value>
-        [DataMember(Name="createdAt", EmitDefaultValue=false)]
-        public DateTime CreatedAt { get; set; }
-
         /// <summary>
         /// Optional description of an inbox for labelling purposes
         /// </summary>
         /// <value>Optional description of an inbox for labelling purposes</value>
         [DataMember(Name="description", EmitDefaultValue=false)]
         public string Description { get; set; }
-
-        /// <summary>
-        /// The inbox&#39;s email address. Send an email to this address and the inbox will receive and store it for you. To retrieve the email use the Inbox and Email Controller endpoints.
-        /// </summary>
-        /// <value>The inbox&#39;s email address. Send an email to this address and the inbox will receive and store it for you. To retrieve the email use the Inbox and Email Controller endpoints.</value>
-        [DataMember(Name="emailAddress", EmitDefaultValue=false)]
-        public string EmailAddress { get; set; }
 
         /// <summary>
         /// When, if ever, will the inbox expire and be deleted. If null then this inbox is permanent and the emails in it won&#39;t be deleted.
@@ -89,13 +67,6 @@ namespace mailslurp.Model
         public bool Favourite { get; set; }
 
         /// <summary>
-        /// ID of the inbox
-        /// </summary>
-        /// <value>ID of the inbox</value>
-        [DataMember(Name="id", EmitDefaultValue=false)]
-        public Guid Id { get; set; }
-
-        /// <summary>
         /// Optional name of the inbox. Displayed in the dashboard for easier search
         /// </summary>
         /// <value>Optional name of the inbox. Displayed in the dashboard for easier search</value>
@@ -110,29 +81,18 @@ namespace mailslurp.Model
         public List<string> Tags { get; set; }
 
         /// <summary>
-        /// ID of user that inbox belongs to
-        /// </summary>
-        /// <value>ID of user that inbox belongs to</value>
-        [DataMember(Name="userId", EmitDefaultValue=false)]
-        public Guid UserId { get; set; }
-
-        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class Inbox {\n");
-            sb.Append("  CreatedAt: ").Append(CreatedAt).Append("\n");
+            sb.Append("class UpdateInboxOptions {\n");
             sb.Append("  Description: ").Append(Description).Append("\n");
-            sb.Append("  EmailAddress: ").Append(EmailAddress).Append("\n");
             sb.Append("  ExpiresAt: ").Append(ExpiresAt).Append("\n");
             sb.Append("  Favourite: ").Append(Favourite).Append("\n");
-            sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  Name: ").Append(Name).Append("\n");
             sb.Append("  Tags: ").Append(Tags).Append("\n");
-            sb.Append("  UserId: ").Append(UserId).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -153,34 +113,24 @@ namespace mailslurp.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as Inbox);
+            return this.Equals(input as UpdateInboxOptions);
         }
 
         /// <summary>
-        /// Returns true if Inbox instances are equal
+        /// Returns true if UpdateInboxOptions instances are equal
         /// </summary>
-        /// <param name="input">Instance of Inbox to be compared</param>
+        /// <param name="input">Instance of UpdateInboxOptions to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(Inbox input)
+        public bool Equals(UpdateInboxOptions input)
         {
             if (input == null)
                 return false;
 
             return 
                 (
-                    this.CreatedAt == input.CreatedAt ||
-                    (this.CreatedAt != null &&
-                    this.CreatedAt.Equals(input.CreatedAt))
-                ) && 
-                (
                     this.Description == input.Description ||
                     (this.Description != null &&
                     this.Description.Equals(input.Description))
-                ) && 
-                (
-                    this.EmailAddress == input.EmailAddress ||
-                    (this.EmailAddress != null &&
-                    this.EmailAddress.Equals(input.EmailAddress))
                 ) && 
                 (
                     this.ExpiresAt == input.ExpiresAt ||
@@ -193,11 +143,6 @@ namespace mailslurp.Model
                     this.Favourite.Equals(input.Favourite))
                 ) && 
                 (
-                    this.Id == input.Id ||
-                    (this.Id != null &&
-                    this.Id.Equals(input.Id))
-                ) && 
-                (
                     this.Name == input.Name ||
                     (this.Name != null &&
                     this.Name.Equals(input.Name))
@@ -207,11 +152,6 @@ namespace mailslurp.Model
                     this.Tags != null &&
                     input.Tags != null &&
                     this.Tags.SequenceEqual(input.Tags)
-                ) && 
-                (
-                    this.UserId == input.UserId ||
-                    (this.UserId != null &&
-                    this.UserId.Equals(input.UserId))
                 );
         }
 
@@ -224,24 +164,16 @@ namespace mailslurp.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.CreatedAt != null)
-                    hashCode = hashCode * 59 + this.CreatedAt.GetHashCode();
                 if (this.Description != null)
                     hashCode = hashCode * 59 + this.Description.GetHashCode();
-                if (this.EmailAddress != null)
-                    hashCode = hashCode * 59 + this.EmailAddress.GetHashCode();
                 if (this.ExpiresAt != null)
                     hashCode = hashCode * 59 + this.ExpiresAt.GetHashCode();
                 if (this.Favourite != null)
                     hashCode = hashCode * 59 + this.Favourite.GetHashCode();
-                if (this.Id != null)
-                    hashCode = hashCode * 59 + this.Id.GetHashCode();
                 if (this.Name != null)
                     hashCode = hashCode * 59 + this.Name.GetHashCode();
                 if (this.Tags != null)
                     hashCode = hashCode * 59 + this.Tags.GetHashCode();
-                if (this.UserId != null)
-                    hashCode = hashCode * 59 + this.UserId.GetHashCode();
                 return hashCode;
             }
         }

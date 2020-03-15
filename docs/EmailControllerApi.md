@@ -5,14 +5,17 @@ All URIs are relative to *https://api.mailslurp.com*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**DeleteAllEmails**](EmailControllerApi.md#deleteallemails) | **DELETE** /emails | Delete all emails
-[**DeleteEmail**](EmailControllerApi.md#deleteemail) | **DELETE** /emails/{emailId} | Delete Email
-[**DownloadAttachment**](EmailControllerApi.md#downloadattachment) | **GET** /emails/{emailId}/attachments/{attachmentId} | Get email attachment
-[**ForwardEmail**](EmailControllerApi.md#forwardemail) | **POST** /emails/{emailId}/forward | Forward Email
+[**DeleteEmail**](EmailControllerApi.md#deleteemail) | **DELETE** /emails/{emailId} | Delete an email
+[**DownloadAttachment**](EmailControllerApi.md#downloadattachment) | **GET** /emails/{emailId}/attachments/{attachmentId} | Get email attachment bytes
+[**ForwardEmail**](EmailControllerApi.md#forwardemail) | **POST** /emails/{emailId}/forward | Forward email
 [**GetAttachmentMetaData**](EmailControllerApi.md#getattachmentmetadata) | **GET** /emails/{emailId}/attachments/{attachmentId}/metadata | Get email attachment metadata
 [**GetAttachments**](EmailControllerApi.md#getattachments) | **GET** /emails/{emailId}/attachments | Get all email attachment metadata
-[**GetEmail**](EmailControllerApi.md#getemail) | **GET** /emails/{emailId} | Get Email Content
+[**GetEmail**](EmailControllerApi.md#getemail) | **GET** /emails/{emailId} | Get email content
+[**GetEmailHTML**](EmailControllerApi.md#getemailhtml) | **GET** /emails/{emailId}/html | Get email content as HTML
 [**GetEmailsPaginated**](EmailControllerApi.md#getemailspaginated) | **GET** /emails | Get all emails
-[**GetRawEmailContents**](EmailControllerApi.md#getrawemailcontents) | **GET** /emails/{emailId}/raw | Get Raw Email Content
+[**GetRawEmailContents**](EmailControllerApi.md#getrawemailcontents) | **GET** /emails/{emailId}/raw | Get raw email string
+[**GetRawEmailJson**](EmailControllerApi.md#getrawemailjson) | **GET** /emails/{emailId}/raw/json | Get raw email in JSON
+[**GetUnreadEmailCount**](EmailControllerApi.md#getunreademailcount) | **GET** /emails/unreadCount | Get unread email count
 [**ValidateEmail**](EmailControllerApi.md#validateemail) | **POST** /emails/{emailId}/validate | Validate email
 
 
@@ -23,7 +26,7 @@ Method | HTTP request | Description
 
 Delete all emails
 
-Deletes all emails
+Deletes all emails in your account. Be careful as emails cannot be recovered
 
 ### Example
 
@@ -98,9 +101,9 @@ void (empty response body)
 
 > void DeleteEmail (Guid emailId)
 
-Delete Email
+Delete an email
 
-Deletes an email and removes it from the inbox
+Deletes an email and removes it from the inbox. Deleted emails cannot be recovered.
 
 ### Example
 
@@ -128,7 +131,7 @@ namespace Example
 
             try
             {
-                // Delete Email
+                // Delete an email
                 apiInstance.DeleteEmail(emailId);
             }
             catch (ApiException e)
@@ -179,9 +182,9 @@ void (empty response body)
 
 > byte[] DownloadAttachment (string attachmentId, Guid emailId, string apiKey = null)
 
-Get email attachment
+Get email attachment bytes
 
-Returns the specified attachment for a given email as a byte stream (file download). Get the attachmentId from the email response.
+Returns the specified attachment for a given email as a byte stream (file download). You can find attachment ids in email responses endpoint responses. The response type is application/octet-stream.
 
 ### Example
 
@@ -211,7 +214,7 @@ namespace Example
 
             try
             {
-                // Get email attachment
+                // Get email attachment bytes
                 byte[] result = apiInstance.DownloadAttachment(attachmentId, emailId, apiKey);
                 Debug.WriteLine(result);
             }
@@ -266,9 +269,9 @@ Name | Type | Description  | Notes
 
 > void ForwardEmail (Guid emailId, ForwardEmailOptions forwardEmailOptions)
 
-Forward Email
+Forward email
 
-Forward email content to given recipients
+Forward an existing email to new recipients.
 
 ### Example
 
@@ -297,7 +300,7 @@ namespace Example
 
             try
             {
-                // Forward Email
+                // Forward email
                 apiInstance.ForwardEmail(emailId, forwardEmailOptions);
             }
             catch (ApiException e)
@@ -516,11 +519,11 @@ Name | Type | Description  | Notes
 
 ## GetEmail
 
-> Email GetEmail (Guid emailId)
+> Email GetEmail (Guid emailId, bool decode = null)
 
-Get Email Content
+Get email content
 
-Returns a email summary object with headers and content. To retrieve the raw unparsed email use the getRawMessage endpoint
+Returns a email summary object with headers and content. To retrieve the raw unparsed email use the getRawEmail endpoints
 
 ### Example
 
@@ -545,11 +548,12 @@ namespace Example
 
             var apiInstance = new EmailControllerApi(Configuration.Default);
             var emailId = new Guid(); // Guid | emailId
+            var decode = true;  // bool | Decode email body quoted-printable encoding to plain text. SMTP servers often encode text using quoted-printable format (for instance `=D7`). This can be a pain for testing (optional)  (default to false)
 
             try
             {
-                // Get Email Content
-                Email result = apiInstance.GetEmail(emailId);
+                // Get email content
+                Email result = apiInstance.GetEmail(emailId, decode);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -569,6 +573,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **emailId** | [**Guid**](Guid.md)| emailId | 
+ **decode** | **bool**| Decode email body quoted-printable encoding to plain text. SMTP servers often encode text using quoted-printable format (for instance &#x60;&#x3D;D7&#x60;). This can be a pain for testing | [optional] [default to false]
 
 ### Return type
 
@@ -597,13 +602,98 @@ Name | Type | Description  | Notes
 [[Back to README]](../README.md)
 
 
+## GetEmailHTML
+
+> string GetEmailHTML (Guid emailId, bool decode = null)
+
+Get email content as HTML
+
+Retrieve email content as HTML response for viewing in browsers. Decodes quoted-printable entities and converts charset to UTF-8. Pass your API KEY as a request parameter when viewing in a browser: `?apiKey=xxx`
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using mailslurp.Api;
+using mailslurp.Client;
+using mailslurp.Model;
+
+namespace Example
+{
+    public class GetEmailHTMLExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api.mailslurp.com";
+            // Configure API key authorization: API_KEY
+            Configuration.Default.AddApiKey("x-api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("x-api-key", "Bearer");
+
+            var apiInstance = new EmailControllerApi(Configuration.Default);
+            var emailId = new Guid(); // Guid | emailId
+            var decode = true;  // bool | decode (optional)  (default to false)
+
+            try
+            {
+                // Get email content as HTML
+                string result = apiInstance.GetEmailHTML(emailId, decode);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling EmailControllerApi.GetEmailHTML: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **emailId** | [**Guid**](Guid.md)| emailId | 
+ **decode** | **bool**| decode | [optional] [default to false]
+
+### Return type
+
+**string**
+
+### Authorization
+
+[API_KEY](../README.md#API_KEY)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: text/html
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | OK |  -  |
+| **401** | Unauthorized |  -  |
+| **403** | Forbidden |  -  |
+| **404** | Not Found |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## GetEmailsPaginated
 
 > PageEmailProjection GetEmailsPaginated (List<Guid> inboxId = null, int page = null, int size = null, string sort = null, bool unreadOnly = null)
 
 Get all emails
 
-Responses are paginated
+By default returns all emails across all inboxes sorted by ascending created at date. Responses are paginated. You can restrict results to a list of inbox IDs. You can also filter out read messages
 
 ### Example
 
@@ -627,11 +717,11 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("x-api-key", "Bearer");
 
             var apiInstance = new EmailControllerApi(Configuration.Default);
-            var inboxId = new List<Guid>(); // List<Guid> | Optional inbox ids to filter by. Can be repeated (optional) 
+            var inboxId = new List<Guid>(); // List<Guid> | Optional inbox ids to filter by. Can be repeated. By default will use all inboxes belonging to your account. (optional) 
             var page = 56;  // int | Optional page index in email list pagination (optional)  (default to 0)
             var size = 56;  // int | Optional page size in email list pagination (optional)  (default to 20)
             var sort = sort_example;  // string | Optional createdAt sort direction ASC or DESC (optional)  (default to ASC)
-            var unreadOnly = true;  // bool | Optional filter for unread emails only (optional)  (default to false)
+            var unreadOnly = true;  // bool | Optional filter for unread emails only. All emails are considered unread until they are viewed in the dashboard or requested directly (optional)  (default to false)
 
             try
             {
@@ -655,11 +745,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inboxId** | [**List&lt;Guid&gt;**](Guid.md)| Optional inbox ids to filter by. Can be repeated | [optional] 
+ **inboxId** | [**List&lt;Guid&gt;**](Guid.md)| Optional inbox ids to filter by. Can be repeated. By default will use all inboxes belonging to your account. | [optional] 
  **page** | **int**| Optional page index in email list pagination | [optional] [default to 0]
  **size** | **int**| Optional page size in email list pagination | [optional] [default to 20]
  **sort** | **string**| Optional createdAt sort direction ASC or DESC | [optional] [default to ASC]
- **unreadOnly** | **bool**| Optional filter for unread emails only | [optional] [default to false]
+ **unreadOnly** | **bool**| Optional filter for unread emails only. All emails are considered unread until they are viewed in the dashboard or requested directly | [optional] [default to false]
 
 ### Return type
 
@@ -692,9 +782,9 @@ Name | Type | Description  | Notes
 
 > string GetRawEmailContents (Guid emailId)
 
-Get Raw Email Content
+Get raw email string
 
-Returns a raw, unparsed and unprocessed email
+Returns a raw, unparsed, and unprocessed email. If your client has issues processing the response it is likely due to the response content-type which is text/plain. If you need a JSON response content-type use the getRawEmailJson endpoint
 
 ### Example
 
@@ -722,7 +812,7 @@ namespace Example
 
             try
             {
-                // Get Raw Email Content
+                // Get raw email string
                 string result = apiInstance.GetRawEmailContents(emailId);
                 Debug.WriteLine(result);
             }
@@ -760,6 +850,168 @@ Name | Type | Description  | Notes
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
+| **200** | text/plain raw email |  -  |
+| **401** | Unauthorized |  -  |
+| **403** | Forbidden |  -  |
+| **404** | Not Found |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## GetRawEmailJson
+
+> RawEmailJson GetRawEmailJson (Guid emailId)
+
+Get raw email in JSON
+
+Returns a raw, unparsed, and unprocessed email wrapped in a JSON response object for easier handling when compared with the getRawEmail text/plain response
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using mailslurp.Api;
+using mailslurp.Client;
+using mailslurp.Model;
+
+namespace Example
+{
+    public class GetRawEmailJsonExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api.mailslurp.com";
+            // Configure API key authorization: API_KEY
+            Configuration.Default.AddApiKey("x-api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("x-api-key", "Bearer");
+
+            var apiInstance = new EmailControllerApi(Configuration.Default);
+            var emailId = new Guid(); // Guid | emailId
+
+            try
+            {
+                // Get raw email in JSON
+                RawEmailJson result = apiInstance.GetRawEmailJson(emailId);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling EmailControllerApi.GetRawEmailJson: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **emailId** | [**Guid**](Guid.md)| emailId | 
+
+### Return type
+
+[**RawEmailJson**](RawEmailJson.md)
+
+### Authorization
+
+[API_KEY](../README.md#API_KEY)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | OK |  -  |
+| **401** | Unauthorized |  -  |
+| **403** | Forbidden |  -  |
+| **404** | Not Found |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## GetUnreadEmailCount
+
+> UnreadCount GetUnreadEmailCount ()
+
+Get unread email count
+
+Get number of emails unread
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using mailslurp.Api;
+using mailslurp.Client;
+using mailslurp.Model;
+
+namespace Example
+{
+    public class GetUnreadEmailCountExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api.mailslurp.com";
+            // Configure API key authorization: API_KEY
+            Configuration.Default.AddApiKey("x-api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("x-api-key", "Bearer");
+
+            var apiInstance = new EmailControllerApi(Configuration.Default);
+
+            try
+            {
+                // Get unread email count
+                UnreadCount result = apiInstance.GetUnreadEmailCount();
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling EmailControllerApi.GetUnreadEmailCount: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+[**UnreadCount**](UnreadCount.md)
+
+### Authorization
+
+[API_KEY](../README.md#API_KEY)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
 | **200** | OK |  -  |
 | **401** | Unauthorized |  -  |
 | **403** | Forbidden |  -  |
@@ -777,7 +1029,7 @@ Name | Type | Description  | Notes
 
 Validate email
 
-Validate HTML content of email
+Validate the HTML content of email if HTML is found. Considered valid if no HTML.
 
 ### Example
 

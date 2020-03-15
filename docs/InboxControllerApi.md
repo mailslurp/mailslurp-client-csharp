@@ -6,14 +6,15 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**CreateInbox**](InboxControllerApi.md#createinbox) | **POST** /inboxes | Create an Inbox (email address)
 [**DeleteAllInboxes**](InboxControllerApi.md#deleteallinboxes) | **DELETE** /inboxes | Delete all inboxes
-[**DeleteInbox**](InboxControllerApi.md#deleteinbox) | **DELETE** /inboxes/{inboxId} | Delete Inbox / Email Address
+[**DeleteInbox**](InboxControllerApi.md#deleteinbox) | **DELETE** /inboxes/{inboxId} | Delete inbox
 [**GetAllInboxes**](InboxControllerApi.md#getallinboxes) | **GET** /inboxes/paginated | List Inboxes Paginated
 [**GetEmails**](InboxControllerApi.md#getemails) | **GET** /inboxes/{inboxId}/emails | Get emails in an Inbox
-[**GetInbox**](InboxControllerApi.md#getinbox) | **GET** /inboxes/{inboxId} | Get Inbox / EmailAddress
+[**GetInbox**](InboxControllerApi.md#getinbox) | **GET** /inboxes/{inboxId} | Get Inbox
 [**GetInboxEmailsPaginated**](InboxControllerApi.md#getinboxemailspaginated) | **GET** /inboxes/{inboxId}/emails/paginated | Get inbox emails paginated
 [**GetInboxes**](InboxControllerApi.md#getinboxes) | **GET** /inboxes | List Inboxes / Email Addresses
 [**SendEmail**](InboxControllerApi.md#sendemail) | **POST** /inboxes/{inboxId} | Send Email
 [**SetInboxFavourited**](InboxControllerApi.md#setinboxfavourited) | **PUT** /inboxes/{inboxId}/favourite | Set inbox favourited state
+[**UpdateInbox**](InboxControllerApi.md#updateinbox) | **PATCH** /inboxes/{inboxId} | Update Inbox
 
 
 
@@ -23,7 +24,7 @@ Method | HTTP request | Description
 
 Create an Inbox (email address)
 
-Create a new inbox and with a ranmdomized email address to send and receive from. Pass emailAddress parameter if you wish to use a specific email address. Creating an inbox is required before sending or receiving emails. If writing tests it is recommended that you create a new inbox during each test method so that it is unique and empty. 
+Create a new inbox and with a randomized email address to send and receive from. Pass emailAddress parameter if you wish to use a specific email address. Creating an inbox is required before sending or receiving emails. If writing tests it is recommended that you create a new inbox during each test method so that it is unique and empty. 
 
 ### Example
 
@@ -116,7 +117,7 @@ Name | Type | Description  | Notes
 
 Delete all inboxes
 
-Permanently delete all inboxes and associated email addresses and all emails within the given inboxes
+Permanently delete all inboxes and associated email addresses. This will also delete all emails within the inboxes. Be careful as inboxes cannot be recovered once deleted. Note: deleting inboxes will not impact your usage limits. Monthly inbox creation limits are based on how many inboxes were created in the last 30 days, not how many inboxes you currently have.
 
 ### Example
 
@@ -191,9 +192,9 @@ void (empty response body)
 
 > void DeleteInbox (Guid inboxId)
 
-Delete Inbox / Email Address
+Delete inbox
 
-Permanently delete an inbox and associated email address and all emails within the given inboxes
+Permanently delete an inbox and associated email address aswell as all emails within the given inbox. This action cannot be undone. Note: deleting an inbox will not affect your account usage. Monthly inbox usage is based on how many inboxes you create within 30 days, not how many exist at time of request.
 
 ### Example
 
@@ -221,7 +222,7 @@ namespace Example
 
             try
             {
-                // Delete Inbox / Email Address
+                // Delete inbox
                 apiInstance.DeleteInbox(inboxId);
             }
             catch (ApiException e)
@@ -456,7 +457,7 @@ Name | Type | Description  | Notes
 
 > Inbox GetInbox (Guid inboxId)
 
-Get Inbox / EmailAddress
+Get Inbox
 
 Returns an inbox's properties, including its email address and ID.
 
@@ -486,7 +487,7 @@ namespace Example
 
             try
             {
-                // Get Inbox / EmailAddress
+                // Get Inbox
                 Inbox result = apiInstance.GetInbox(inboxId);
                 Debug.WriteLine(result);
             }
@@ -709,7 +710,7 @@ This endpoint does not need any parameter.
 
 Send Email
 
-Send an email from the inbox's email address. Specify the email recipients and contents in the request body. See the `SendEmailOptions` for more information. Note the `inboxId` refers to the inbox's id NOT its email address
+Send an email from an inbox's email address.  The request body should contain the `SendEmailOptions` that include recipients, attachments, body etc. See `SendEmailOptions` for all available properties. Note the `inboxId` refers to the inbox's id not the inbox's email address. See https://www.mailslurp.com/guides/ for more information on how to send emails.
 
 ### Example
 
@@ -866,6 +867,91 @@ Name | Type | Description  | Notes
 | **401** | Unauthorized |  -  |
 | **403** | Forbidden |  -  |
 | **404** | Not Found |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## UpdateInbox
+
+> Inbox UpdateInbox (Guid inboxId, UpdateInboxOptions updateInboxOptions)
+
+Update Inbox
+
+Update editable fields on an inbox
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using mailslurp.Api;
+using mailslurp.Client;
+using mailslurp.Model;
+
+namespace Example
+{
+    public class UpdateInboxExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api.mailslurp.com";
+            // Configure API key authorization: API_KEY
+            Configuration.Default.AddApiKey("x-api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("x-api-key", "Bearer");
+
+            var apiInstance = new InboxControllerApi(Configuration.Default);
+            var inboxId = new Guid(); // Guid | inboxId
+            var updateInboxOptions = new UpdateInboxOptions(); // UpdateInboxOptions | updateInboxOptions
+
+            try
+            {
+                // Update Inbox
+                Inbox result = apiInstance.UpdateInbox(inboxId, updateInboxOptions);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling InboxControllerApi.UpdateInbox: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **inboxId** | [**Guid**](Guid.md)| inboxId | 
+ **updateInboxOptions** | [**UpdateInboxOptions**](UpdateInboxOptions.md)| updateInboxOptions | 
+
+### Return type
+
+[**Inbox**](Inbox.md)
+
+### Authorization
+
+[API_KEY](../README.md#API_KEY)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | OK |  -  |
+| **204** | No Content |  -  |
+| **401** | Unauthorized |  -  |
+| **403** | Forbidden |  -  |
 
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

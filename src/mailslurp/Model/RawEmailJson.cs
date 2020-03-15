@@ -23,56 +23,39 @@ using OpenAPIDateConverter = mailslurp.Client.OpenAPIDateConverter;
 namespace mailslurp.Model
 {
     /// <summary>
-    /// GroupContactsDto
+    /// RawEmailJson
     /// </summary>
     [DataContract]
-    public partial class GroupContactsDto :  IEquatable<GroupContactsDto>
+    public partial class RawEmailJson :  IEquatable<RawEmailJson>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="GroupContactsDto" /> class.
+        /// Initializes a new instance of the <see cref="RawEmailJson" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected GroupContactsDto() { }
+        protected RawEmailJson() { }
         /// <summary>
-        /// Initializes a new instance of the <see cref="GroupContactsDto" /> class.
+        /// Initializes a new instance of the <see cref="RawEmailJson" /> class.
         /// </summary>
-        /// <param name="contacts">contacts (required).</param>
-        /// <param name="group">group (required).</param>
-        public GroupContactsDto(List<ContactDto> contacts = default(List<ContactDto>), GroupDto group = default(GroupDto))
+        /// <param name="content">content (required).</param>
+        public RawEmailJson(string content = default(string))
         {
-            // to ensure "contacts" is required (not null)
-            if (contacts == null)
+            // to ensure "content" is required (not null)
+            if (content == null)
             {
-                throw new InvalidDataException("contacts is a required property for GroupContactsDto and cannot be null");
+                throw new InvalidDataException("content is a required property for RawEmailJson and cannot be null");
             }
             else
             {
-                this.Contacts = contacts;
-            }
-            
-            // to ensure "group" is required (not null)
-            if (group == null)
-            {
-                throw new InvalidDataException("group is a required property for GroupContactsDto and cannot be null");
-            }
-            else
-            {
-                this.Group = group;
+                this.Content = content;
             }
             
         }
         
         /// <summary>
-        /// Gets or Sets Contacts
+        /// Gets or Sets Content
         /// </summary>
-        [DataMember(Name="contacts", EmitDefaultValue=false)]
-        public List<ContactDto> Contacts { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Group
-        /// </summary>
-        [DataMember(Name="group", EmitDefaultValue=false)]
-        public GroupDto Group { get; set; }
+        [DataMember(Name="content", EmitDefaultValue=false)]
+        public string Content { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -81,9 +64,8 @@ namespace mailslurp.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class GroupContactsDto {\n");
-            sb.Append("  Contacts: ").Append(Contacts).Append("\n");
-            sb.Append("  Group: ").Append(Group).Append("\n");
+            sb.Append("class RawEmailJson {\n");
+            sb.Append("  Content: ").Append(Content).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -104,30 +86,24 @@ namespace mailslurp.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as GroupContactsDto);
+            return this.Equals(input as RawEmailJson);
         }
 
         /// <summary>
-        /// Returns true if GroupContactsDto instances are equal
+        /// Returns true if RawEmailJson instances are equal
         /// </summary>
-        /// <param name="input">Instance of GroupContactsDto to be compared</param>
+        /// <param name="input">Instance of RawEmailJson to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(GroupContactsDto input)
+        public bool Equals(RawEmailJson input)
         {
             if (input == null)
                 return false;
 
             return 
                 (
-                    this.Contacts == input.Contacts ||
-                    this.Contacts != null &&
-                    input.Contacts != null &&
-                    this.Contacts.SequenceEqual(input.Contacts)
-                ) && 
-                (
-                    this.Group == input.Group ||
-                    (this.Group != null &&
-                    this.Group.Equals(input.Group))
+                    this.Content == input.Content ||
+                    (this.Content != null &&
+                    this.Content.Equals(input.Content))
                 );
         }
 
@@ -140,10 +116,8 @@ namespace mailslurp.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.Contacts != null)
-                    hashCode = hashCode * 59 + this.Contacts.GetHashCode();
-                if (this.Group != null)
-                    hashCode = hashCode * 59 + this.Group.GetHashCode();
+                if (this.Content != null)
+                    hashCode = hashCode * 59 + this.Content.GetHashCode();
                 return hashCode;
             }
         }
