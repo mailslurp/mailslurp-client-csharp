@@ -6,7 +6,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **InboxIds** | **List&lt;Guid&gt;** | Inboxes to send the email from | [optional] 
-**SendEmailOptions** | [**SendEmailOptions**](SendEmailOptions.md) |  | 
+**SendEmailOptions** | [**SendEmailOptions**](SendEmailOptions.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

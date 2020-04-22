@@ -94,7 +94,7 @@ Name | Type | Description  | Notes
 
 ## UploadMultipartForm
 
-> List&lt;string&gt; UploadMultipartForm (System.IO.Stream file, string contentType = null, string filename = null)
+> List&lt;string&gt; UploadMultipartForm (System.IO.Stream file, string contentType = null, string filename = null, string xFilename = null)
 
 Upload an attachment for sending using Multipart Form
 
@@ -125,11 +125,12 @@ namespace Example
             var file = BINARY_DATA_HERE;  // System.IO.Stream | file
             var contentType = contentType_example;  // string | contentType (optional) 
             var filename = filename_example;  // string | filename (optional) 
+            var xFilename = xFilename_example;  // string | x-filename (optional) 
 
             try
             {
                 // Upload an attachment for sending using Multipart Form
-                List<string> result = apiInstance.UploadMultipartForm(file, contentType, filename);
+                List<string> result = apiInstance.UploadMultipartForm(file, contentType, filename, xFilename);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -151,6 +152,7 @@ Name | Type | Description  | Notes
  **file** | **System.IO.Stream**| file | 
  **contentType** | **string**| contentType | [optional] 
  **filename** | **string**| filename | [optional] 
+ **xFilename** | **string**| x-filename | [optional] 
 
 ### Return type
 

@@ -11,6 +11,7 @@ Method | HTTP request | Description
 [**GetEmails**](InboxControllerApi.md#getemails) | **GET** /inboxes/{inboxId}/emails | Get emails in an Inbox
 [**GetInbox**](InboxControllerApi.md#getinbox) | **GET** /inboxes/{inboxId} | Get Inbox
 [**GetInboxEmailsPaginated**](InboxControllerApi.md#getinboxemailspaginated) | **GET** /inboxes/{inboxId}/emails/paginated | Get inbox emails paginated
+[**GetInboxTags**](InboxControllerApi.md#getinboxtags) | **GET** /inboxes/tags | Get inbox tags
 [**GetInboxes**](InboxControllerApi.md#getinboxes) | **GET** /inboxes | List Inboxes / Email Addresses
 [**SendEmail**](InboxControllerApi.md#sendemail) | **POST** /inboxes/{inboxId} | Send Email
 [**SetInboxFavourited**](InboxControllerApi.md#setinboxfavourited) | **PUT** /inboxes/{inboxId}/favourite | Set inbox favourited state
@@ -271,7 +272,7 @@ void (empty response body)
 
 ## GetAllInboxes
 
-> PageInboxProjection GetAllInboxes (bool favourite = null, int page = null, string search = null, int size = null, string sort = null)
+> PageInboxProjection GetAllInboxes (bool favourite = null, int page = null, string search = null, int size = null, string sort = null, string tag = null)
 
 List Inboxes Paginated
 
@@ -304,11 +305,12 @@ namespace Example
             var search = search_example;  // string | Optionally filter by search words partial matching ID, tags, name, and email address (optional) 
             var size = 56;  // int | Optional page size in inbox list pagination (optional)  (default to 20)
             var sort = sort_example;  // string | Optional createdAt sort direction ASC or DESC (optional)  (default to ASC)
+            var tag = tag_example;  // string | Optionally filter by tags (optional) 
 
             try
             {
                 // List Inboxes Paginated
-                PageInboxProjection result = apiInstance.GetAllInboxes(favourite, page, search, size, sort);
+                PageInboxProjection result = apiInstance.GetAllInboxes(favourite, page, search, size, sort, tag);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -332,6 +334,7 @@ Name | Type | Description  | Notes
  **search** | **string**| Optionally filter by search words partial matching ID, tags, name, and email address | [optional] 
  **size** | **int**| Optional page size in inbox list pagination | [optional] [default to 20]
  **sort** | **string**| Optional createdAt sort direction ASC or DESC | [optional] [default to ASC]
+ **tag** | **string**| Optionally filter by tags | [optional] 
 
 ### Return type
 
@@ -601,6 +604,85 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**PageEmailPreview**](PageEmailPreview.md)
+
+### Authorization
+
+[API_KEY](../README.md#API_KEY)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | OK |  -  |
+| **401** | Unauthorized |  -  |
+| **403** | Forbidden |  -  |
+| **404** | Not Found |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## GetInboxTags
+
+> List&lt;string&gt; GetInboxTags ()
+
+Get inbox tags
+
+Get all inbox tags
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using mailslurp.Api;
+using mailslurp.Client;
+using mailslurp.Model;
+
+namespace Example
+{
+    public class GetInboxTagsExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "https://api.mailslurp.com";
+            // Configure API key authorization: API_KEY
+            Configuration.Default.AddApiKey("x-api-key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("x-api-key", "Bearer");
+
+            var apiInstance = new InboxControllerApi(Configuration.Default);
+
+            try
+            {
+                // Get inbox tags
+                List<string> result = apiInstance.GetInboxTags();
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling InboxControllerApi.GetInboxTags: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+**List<string>**
 
 ### Authorization
 

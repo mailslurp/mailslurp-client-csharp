@@ -191,7 +191,7 @@ Name | Type | Description  | Notes
 
 Fetch inbox's latest email or if empty wait for an email to arrive
 
-Will return either the last received email or wait for an email to arrive and return that. If you need to wait for an email for a non-empty inbox see the other receive methods such as waitForNthEmail or waitForEmailCount.
+Will return either the last received email or wait for an email to arrive and return that. If you need to wait for an email for a non-empty inbox set `unreadOnly=true` or see the other receive methods such as `waitForNthEmail` or `waitForEmailCount`.
 
 ### Example
 
@@ -217,7 +217,7 @@ namespace Example
             var apiInstance = new WaitForControllerApi(Configuration.Default);
             var inboxId = new Guid(); // Guid | Id of the inbox we are fetching emails from (optional) 
             var timeout = 789;  // long | Max milliseconds to wait (optional) 
-            var unreadOnly = true;  // bool | Optional filter for unread only (optional)  (default to false)
+            var unreadOnly = true;  // bool | Optional filter for unread only. (optional)  (default to false)
 
             try
             {
@@ -243,7 +243,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **inboxId** | [**Guid**](Guid.md)| Id of the inbox we are fetching emails from | [optional] 
  **timeout** | **long**| Max milliseconds to wait | [optional] 
- **unreadOnly** | **bool**| Optional filter for unread only | [optional] [default to false]
+ **unreadOnly** | **bool**| Optional filter for unread only. | [optional] [default to false]
 
 ### Return type
 

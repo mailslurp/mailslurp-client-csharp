@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**EmailId** | **Guid** |  | 
-**Html** | [**HTMLValidationResult**](HTMLValidationResult.md) |  | 
+**EmailId** | **Guid** | ID of the email validated | [optional] 
+**Html** | [**HTMLValidationResult**](HTMLValidationResult.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
