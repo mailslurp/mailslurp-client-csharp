@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>mailslurp</AssemblyName>
+    <PackageId>mailslurp</PackageId>
+    <OutputType>Library</OutputType>
+    <Authors>MailSlurp</Authors>
+    <Company>MailSlurp</Company>
+    <AssemblyTitle>MailSlurp Library</AssemblyTitle>
+    <Description>The official MailSlurp Email API SDK. See mailslurp.com/docs/csharp for more information.</Description>
+    <Copyright>No Copyright</Copyright>
+    <RootNamespace>mailslurp</RootNamespace>
+    <Version>11.7.307</Version>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\mailslurp.xml</DocumentationFile>
+    <RepositoryUrl>https://github.com/mailslurp/mailslurp-client-csharp.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes>Minor update</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JsonSubTypes" Version="1.5.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="RestSharp" Version="106.10.1" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="README.md">
+      <Pack>true</Pack>
+      <PackagePath>README.md</PackagePath>
+    </Content>
+  </ItemGroup>
+</Project>
