@@ -38,6 +38,7 @@ namespace mailslurp.Client
     {
         private readonly IReadableConfiguration _configuration;
         private static readonly string _contentType = "application/json";
+
         private readonly JsonSerializerSettings _serializerSettings = new JsonSerializerSettings
         {
             // OpenAPI generated types generally hide default constructors.
@@ -70,7 +71,7 @@ namespace mailslurp.Client
 
         public T Deserialize<T>(IRestResponse response)
         {
-            var result = (T) Deserialize(response, typeof(T));
+            var result = (T)Deserialize(response, typeof(T));
             return result;
         }
 
@@ -102,19 +103,22 @@ namespace mailslurp.Client
                         var match = regex.Match(header.ToString());
                         if (match.Success)
                         {
-                            string fileName = filePath + ClientUtils.SanitizeFilename(match.Groups[1].Value.Replace("\"", "").Replace("'", ""));
+                            string fileName = filePath +
+                                              ClientUtils.SanitizeFilename(match.Groups[1].Value.Replace("\"", "")
+                                                  .Replace("'", ""));
                             File.WriteAllBytes(fileName, response.RawBytes);
                             return new FileStream(fileName, FileMode.Open);
                         }
                     }
                 }
+
                 var stream = new MemoryStream(response.RawBytes);
                 return stream;
             }
 
             if (type.Name.StartsWith("System.Nullable`1[[System.DateTime")) // return a datetime object
             {
-                return DateTime.Parse(response.Content,  null, System.Globalization.DateTimeStyles.RoundtripKind);
+                return DateTime.Parse(response.Content, null, System.Globalization.DateTimeStyles.RoundtripKind);
             }
 
             if (type == typeof(String) || type.Name.StartsWith("System.Nullable")) // return primitive type
@@ -143,6 +147,7 @@ namespace mailslurp.Client
             set { throw new InvalidOperationException("Not allowed to set content type."); }
         }
     }
+
     /// <summary>
     /// Provides a default implementation of an Api client (both synchronous and asynchronous implementatios),
     /// encapsulating general REST accessor use cases.
@@ -245,7 +250,7 @@ namespace mailslurp.Client
             if (path == null) throw new ArgumentNullException("path");
             if (options == null) throw new ArgumentNullException("options");
             if (configuration == null) throw new ArgumentNullException("configuration");
-            
+
             RestRequest request = new RestRequest(Method(method))
             {
                 Resource = path,
@@ -259,7 +264,7 @@ namespace mailslurp.Client
                     request.AddParameter(pathParam.Key, pathParam.Value, ParameterType.UrlSegment);
                 }
             }
-            
+
             if (options.QueryParameters != null)
             {
                 foreach (var queryParam in options.QueryParameters)
@@ -328,7 +333,8 @@ namespace mailslurp.Client
                     var bytes = ClientUtils.ReadAsBytes(fileParam.Value);
                     var fileStream = fileParam.Value as FileStream;
                     if (fileStream != null)
-                        request.Files.Add(FileParameter.Create(fileParam.Key, bytes, System.IO.Path.GetFileName(fileStream.Name)));
+                        request.Files.Add(FileParameter.Create(fileParam.Key, bytes,
+                            System.IO.Path.GetFileName(fileStream.Name)));
                     else
                         request.Files.Add(FileParameter.Create(fileParam.Key, bytes, "no_file_name_provided"));
                 }
@@ -341,7 +347,7 @@ namespace mailslurp.Client
                     request.AddCookie(cookie.Name, cookie.Value);
                 }
             }
-            
+
             return request;
         }
 
@@ -350,12 +356,13 @@ namespace mailslurp.Client
             T result = response.Data;
             string rawContent = response.Content;
 
-            var transformed = new ApiResponse<T>(response.StatusCode, new Multimap<string, string>(), result, rawContent)
-            {
-                ErrorText = response.ErrorMessage,
-                Cookies = new List<Cookie>()
-            };
-            
+            var transformed =
+                new ApiResponse<T>(response.StatusCode, new Multimap<string, string>(), result, rawContent)
+                {
+                    ErrorText = response.ErrorMessage,
+                    Cookies = new List<Cookie>()
+                };
+
             if (response.Headers != null)
             {
                 foreach (var responseHeader in response.Headers)
@@ -370,11 +377,11 @@ namespace mailslurp.Client
                 {
                     transformed.Cookies.Add(
                         new Cookie(
-                            responseCookies.Name, 
-                            responseCookies.Value, 
-                            responseCookies.Path, 
+                            responseCookies.Name,
+                            responseCookies.Value,
+                            responseCookies.Path,
                             responseCookies.Domain)
-                        );
+                    );
                 }
             }
 
@@ -384,19 +391,7 @@ namespace mailslurp.Client
         private ApiResponse<T> Exec<T>(RestRequest req, IReadableConfiguration configuration)
         {
             RestClient client = new RestClient(_baseUrl);
-
-            client.ClearHandlers();
-            var existingDeserializer = req.JsonSerializer as IDeserializer;
-            if (existingDeserializer != null)
-            {
-                client.AddHandler(() => existingDeserializer, "application/json", "text/json", "text/x-json", "text/javascript", "*+json");
-            }
-            else
-            {
-                client.AddHandler(() => new CustomJsonCodec(configuration), "application/json", "text/json", "text/x-json", "text/javascript", "*+json");
-            }
-
-            client.AddHandler(() => new XmlDeserializer(), "application/xml", "text/xml", "*+xml", "*");
+            AddContentHandler(client, req, configuration);
 
             client.Timeout = configuration.Timeout;
 
@@ -424,7 +419,7 @@ namespace mailslurp.Client
 
             if (response.Cookies != null && response.Cookies.Count > 0)
             {
-                if(result.Cookies == null) result.Cookies = new List<Cookie>();
+                if (result.Cookies == null) result.Cookies = new List<Cookie>();
                 foreach (var restResponseCookie in response.Cookies)
                 {
                     var cookie = new Cookie(
@@ -448,25 +443,40 @@ namespace mailslurp.Client
                     result.Cookies.Add(cookie);
                 }
             }
+
             return result;
+        }
+
+        private static void AddContentHandler(IRestClient client, IRestRequest request,
+            IReadableConfiguration configuration)
+        {
+            client.ClearHandlers();
+
+            var jsonContentTypes = new[]
+            {
+                "application/json", "text/json", "text/x-json", "text/javascript", "*+json"
+            };
+
+            var deserializerFactory = request.JsonSerializer is IDeserializer serializer
+                ? (Func<IDeserializer>)(() => serializer)
+                : () => new CustomJsonCodec(configuration);
+
+            foreach (var contentType in jsonContentTypes)
+                client.AddHandler(contentType, deserializerFactory);
+
+            var xmlContentTypes = new[]
+            {
+                "application/xml", "text/xml", "*+xml", "*"
+            };
+
+            foreach (var contentType in xmlContentTypes)
+                client.AddHandler(contentType, () => new XmlDeserializer());
         }
 
         private async Task<ApiResponse<T>> ExecAsync<T>(RestRequest req, IReadableConfiguration configuration)
         {
             RestClient client = new RestClient(_baseUrl);
-
-            client.ClearHandlers();
-            var existingDeserializer = req.JsonSerializer as IDeserializer;
-            if (existingDeserializer != null)
-            {
-                client.AddHandler(() => existingDeserializer, "application/json", "text/json", "text/x-json", "text/javascript", "*+json");
-            }
-            else
-            {
-                client.AddHandler(() => new CustomJsonCodec(configuration), "application/json", "text/json", "text/x-json", "text/javascript", "*+json");
-            }
-
-            client.AddHandler(() => new XmlDeserializer(), "application/xml", "text/xml", "*+xml", "*");
+            AddContentHandler(client, req, configuration);
 
             client.Timeout = configuration.Timeout;
 
@@ -494,7 +504,7 @@ namespace mailslurp.Client
 
             if (response.Cookies != null && response.Cookies.Count > 0)
             {
-                if(result.Cookies == null) result.Cookies = new List<Cookie>();
+                if (result.Cookies == null) result.Cookies = new List<Cookie>();
                 foreach (var restResponseCookie in response.Cookies)
                 {
                     var cookie = new Cookie(
@@ -518,10 +528,12 @@ namespace mailslurp.Client
                     result.Cookies.Add(cookie);
                 }
             }
+
             return result;
         }
 
         #region IAsynchronousClient
+
         /// <summary>
         /// Make a HTTP GET request (async).
         /// </summary>
@@ -530,7 +542,8 @@ namespace mailslurp.Client
         /// <param name="configuration">A per-request configuration object. It is assumed that any merge with
         /// GlobalConfiguration has been done before calling this method.</param>
         /// <returns>A Task containing ApiResponse</returns>
-        public Task<ApiResponse<T>> GetAsync<T>(string path, RequestOptions options, IReadableConfiguration configuration = null)
+        public Task<ApiResponse<T>> GetAsync<T>(string path, RequestOptions options,
+            IReadableConfiguration configuration = null)
         {
             var config = configuration ?? GlobalConfiguration.Instance;
             return ExecAsync<T>(NewRequest(HttpMethod.Get, path, options, config), config);
@@ -544,7 +557,8 @@ namespace mailslurp.Client
         /// <param name="configuration">A per-request configuration object. It is assumed that any merge with
         /// GlobalConfiguration has been done before calling this method.</param>
         /// <returns>A Task containing ApiResponse</returns>
-        public Task<ApiResponse<T>> PostAsync<T>(string path, RequestOptions options, IReadableConfiguration configuration = null)
+        public Task<ApiResponse<T>> PostAsync<T>(string path, RequestOptions options,
+            IReadableConfiguration configuration = null)
         {
             var config = configuration ?? GlobalConfiguration.Instance;
             return ExecAsync<T>(NewRequest(HttpMethod.Post, path, options, config), config);
@@ -558,7 +572,8 @@ namespace mailslurp.Client
         /// <param name="configuration">A per-request configuration object. It is assumed that any merge with
         /// GlobalConfiguration has been done before calling this method.</param>
         /// <returns>A Task containing ApiResponse</returns>
-        public Task<ApiResponse<T>> PutAsync<T>(string path, RequestOptions options, IReadableConfiguration configuration = null)
+        public Task<ApiResponse<T>> PutAsync<T>(string path, RequestOptions options,
+            IReadableConfiguration configuration = null)
         {
             var config = configuration ?? GlobalConfiguration.Instance;
             return ExecAsync<T>(NewRequest(HttpMethod.Put, path, options, config), config);
@@ -572,7 +587,8 @@ namespace mailslurp.Client
         /// <param name="configuration">A per-request configuration object. It is assumed that any merge with
         /// GlobalConfiguration has been done before calling this method.</param>
         /// <returns>A Task containing ApiResponse</returns>
-        public Task<ApiResponse<T>> DeleteAsync<T>(string path, RequestOptions options, IReadableConfiguration configuration = null)
+        public Task<ApiResponse<T>> DeleteAsync<T>(string path, RequestOptions options,
+            IReadableConfiguration configuration = null)
         {
             var config = configuration ?? GlobalConfiguration.Instance;
             return ExecAsync<T>(NewRequest(HttpMethod.Delete, path, options, config), config);
@@ -586,7 +602,8 @@ namespace mailslurp.Client
         /// <param name="configuration">A per-request configuration object. It is assumed that any merge with
         /// GlobalConfiguration has been done before calling this method.</param>
         /// <returns>A Task containing ApiResponse</returns>
-        public Task<ApiResponse<T>> HeadAsync<T>(string path, RequestOptions options, IReadableConfiguration configuration = null)
+        public Task<ApiResponse<T>> HeadAsync<T>(string path, RequestOptions options,
+            IReadableConfiguration configuration = null)
         {
             var config = configuration ?? GlobalConfiguration.Instance;
             return ExecAsync<T>(NewRequest(HttpMethod.Head, path, options, config), config);
@@ -600,7 +617,8 @@ namespace mailslurp.Client
         /// <param name="configuration">A per-request configuration object. It is assumed that any merge with
         /// GlobalConfiguration has been done before calling this method.</param>
         /// <returns>A Task containing ApiResponse</returns>
-        public Task<ApiResponse<T>> OptionsAsync<T>(string path, RequestOptions options, IReadableConfiguration configuration = null)
+        public Task<ApiResponse<T>> OptionsAsync<T>(string path, RequestOptions options,
+            IReadableConfiguration configuration = null)
         {
             var config = configuration ?? GlobalConfiguration.Instance;
             return ExecAsync<T>(NewRequest(HttpMethod.Options, path, options, config), config);
@@ -614,14 +632,17 @@ namespace mailslurp.Client
         /// <param name="configuration">A per-request configuration object. It is assumed that any merge with
         /// GlobalConfiguration has been done before calling this method.</param>
         /// <returns>A Task containing ApiResponse</returns>
-        public Task<ApiResponse<T>> PatchAsync<T>(string path, RequestOptions options, IReadableConfiguration configuration = null)
+        public Task<ApiResponse<T>> PatchAsync<T>(string path, RequestOptions options,
+            IReadableConfiguration configuration = null)
         {
             var config = configuration ?? GlobalConfiguration.Instance;
             return ExecAsync<T>(NewRequest(HttpMethod.Patch, path, options, config), config);
         }
+
         #endregion IAsynchronousClient
 
         #region ISynchronousClient
+
         /// <summary>
         /// Make a HTTP GET request (synchronous).
         /// </summary>
@@ -672,7 +693,8 @@ namespace mailslurp.Client
         /// <param name="configuration">A per-request configuration object. It is assumed that any merge with
         /// GlobalConfiguration has been done before calling this method.</param>
         /// <returns>A Task containing ApiResponse</returns>
-        public ApiResponse<T> Delete<T>(string path, RequestOptions options, IReadableConfiguration configuration = null)
+        public ApiResponse<T> Delete<T>(string path, RequestOptions options,
+            IReadableConfiguration configuration = null)
         {
             var config = configuration ?? GlobalConfiguration.Instance;
             return Exec<T>(NewRequest(HttpMethod.Delete, path, options, config), config);
@@ -700,7 +722,8 @@ namespace mailslurp.Client
         /// <param name="configuration">A per-request configuration object. It is assumed that any merge with
         /// GlobalConfiguration has been done before calling this method.</param>
         /// <returns>A Task containing ApiResponse</returns>
-        public ApiResponse<T> Options<T>(string path, RequestOptions options, IReadableConfiguration configuration = null)
+        public ApiResponse<T> Options<T>(string path, RequestOptions options,
+            IReadableConfiguration configuration = null)
         {
             var config = configuration ?? GlobalConfiguration.Instance;
             return Exec<T>(NewRequest(HttpMethod.Options, path, options, config), config);
@@ -719,6 +742,7 @@ namespace mailslurp.Client
             var config = configuration ?? GlobalConfiguration.Instance;
             return Exec<T>(NewRequest(HttpMethod.Patch, path, options, config), config);
         }
+
         #endregion ISynchronousClient
     }
 }
