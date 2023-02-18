@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo><!-- setting GenerateAssemblyInfo to false causes this bug https://github.com/dotnet/project-system/issues/3934 -->
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>mailslurp</AssemblyName>
+    <PackageId>mailslurp</PackageId>
+    <OutputType>Library</OutputType>
+    <Authors>MailSlurp</Authors>
+    <Company>MailSlurp</Company>
+    <AssemblyTitle>MailSlurp Library</AssemblyTitle>
+    <Description>The official MailSlurp Email API SDK. See mailslurp.com/docs/csharp for more information.</Description>
+    <Copyright>No Copyright</Copyright>
+    <RootNamespace>mailslurp</RootNamespace>
+    <Version>15.16.18</Version>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\mailslurp.xml</DocumentationFile>
+    <RepositoryUrl>https://github.com/mailslurp/mailslurp-client-csharp.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes>Minor update</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JsonSubTypes" Version="1.9.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="RestSharp" Version="108.0.2" />
+    <PackageReference Include="Polly" Version="7.2.3" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="README.md">
+      <Pack>true</Pack>
+      <PackagePath>README.md</PackagePath>
+    </Content>
+  </ItemGroup>
+</Project>
