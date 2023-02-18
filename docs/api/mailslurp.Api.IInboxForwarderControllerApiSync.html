@@ -1,0 +1,1701 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IInboxForwarderControllerApiSync
+ | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IInboxForwarderControllerApiSync
+ | MailSlurp ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync">
+
+
+  <h1 id="mailslurp_Api_IInboxForwarderControllerApiSync" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync" class="text-break">Interface IInboxForwarderControllerApiSync
+</h1>
+  <div class="markdown level0 summary"><p>Represents a collection of functions to interact with the API endpoints</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_Configuration">IApiAccessor.Configuration</a>
+    </div>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_GetBasePath">IApiAccessor.GetBasePath()</a>
+    </div>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_ExceptionFactory">IApiAccessor.ExceptionFactory</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">mailslurp</span>.<a class="xref" href="mailslurp.Api.html">Api</a></h6>
+  <h6><strong>Assembly</strong>: mailslurp.dll</h6>
+  <h5 id="mailslurp_Api_IInboxForwarderControllerApiSync_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IInboxForwarderControllerApiSync : IApiAccessor</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/InboxForwarderControllerApi.cs#lines-41">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IInboxForwarderControllerApiSync_CreateNewInboxForwarder_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.CreateNewInboxForwarder*"></a>
+  <h4 id="mailslurp_Api_IInboxForwarderControllerApiSync_CreateNewInboxForwarder_System_Guid_mailslurp_Model_CreateInboxForwarderOptions_System_Int32_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.CreateNewInboxForwarder(System.Guid,mailslurp.Model.CreateInboxForwarderOptions,System.Int32)">CreateNewInboxForwarder(Guid, CreateInboxForwarderOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create an inbox forwarder</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">InboxForwarderDto CreateNewInboxForwarder(Guid inboxId, CreateInboxForwarderOptions createInboxForwarderOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox id to attach forwarder to</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateInboxForwarderOptions.html">CreateInboxForwarderOptions</a></td>
+        <td><span class="parametername">createInboxForwarderOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxForwarderDto.html">InboxForwarderDto</a></td>
+        <td><p>InboxForwarderDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IInboxForwarderControllerApiSync_CreateNewInboxForwarder_System_Guid_mailslurp_Model_CreateInboxForwarderOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Create a new inbox rule for forwarding, blocking, and allowing emails when sending and receiving</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/InboxForwarderControllerApi.cs#lines-54">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IInboxForwarderControllerApiSync_CreateNewInboxForwarderWithHttpInfo_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.CreateNewInboxForwarderWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IInboxForwarderControllerApiSync_CreateNewInboxForwarderWithHttpInfo_System_Guid_mailslurp_Model_CreateInboxForwarderOptions_System_Int32_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.CreateNewInboxForwarderWithHttpInfo(System.Guid,mailslurp.Model.CreateInboxForwarderOptions,System.Int32)">CreateNewInboxForwarderWithHttpInfo(Guid, CreateInboxForwarderOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create an inbox forwarder</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;InboxForwarderDto&gt; CreateNewInboxForwarderWithHttpInfo(Guid inboxId, CreateInboxForwarderOptions createInboxForwarderOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox id to attach forwarder to</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateInboxForwarderOptions.html">CreateInboxForwarderOptions</a></td>
+        <td><span class="parametername">createInboxForwarderOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.InboxForwarderDto.html">InboxForwarderDto</a>&gt;</td>
+        <td><p>ApiResponse of InboxForwarderDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IInboxForwarderControllerApiSync_CreateNewInboxForwarderWithHttpInfo_System_Guid_mailslurp_Model_CreateInboxForwarderOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Create a new inbox rule for forwarding, blocking, and allowing emails when sending and receiving</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/InboxForwarderControllerApi.cs#lines-65">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IInboxForwarderControllerApiSync_DeleteInboxForwarder_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.DeleteInboxForwarder*"></a>
+  <h4 id="mailslurp_Api_IInboxForwarderControllerApiSync_DeleteInboxForwarder_System_Guid_System_Int32_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.DeleteInboxForwarder(System.Guid,System.Int32)">DeleteInboxForwarder(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Delete an inbox forwarder</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteInboxForwarder(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of inbox forwarder</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IInboxForwarderControllerApiSync_DeleteInboxForwarder_System_Guid_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Delete inbox forwarder</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/InboxForwarderControllerApi.cs#lines-88">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IInboxForwarderControllerApiSync_DeleteInboxForwarders_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.DeleteInboxForwarders*"></a>
+  <h4 id="mailslurp_Api_IInboxForwarderControllerApiSync_DeleteInboxForwarders_System_Nullable_System_Guid__System_Int32_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.DeleteInboxForwarders(System.Nullable{System.Guid},System.Int32)">DeleteInboxForwarders(Guid?, int)</h4>
+  <div class="markdown level1 summary"><p>Delete inbox forwarders</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteInboxForwarders(Guid? inboxId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inbox id to attach forwarder to (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IInboxForwarderControllerApiSync_DeleteInboxForwarders_System_Nullable_System_Guid__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Delete inbox forwarders. Accepts optional inboxId filter.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/InboxForwarderControllerApi.cs#lines-100">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IInboxForwarderControllerApiSync_DeleteInboxForwardersWithHttpInfo_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.DeleteInboxForwardersWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IInboxForwarderControllerApiSync_DeleteInboxForwardersWithHttpInfo_System_Nullable_System_Guid__System_Int32_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.DeleteInboxForwardersWithHttpInfo(System.Nullable{System.Guid},System.Int32)">DeleteInboxForwardersWithHttpInfo(Guid?, int)</h4>
+  <div class="markdown level1 summary"><p>Delete inbox forwarders</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;object&gt; DeleteInboxForwardersWithHttpInfo(Guid? inboxId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inbox id to attach forwarder to (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</td>
+        <td><p>ApiResponse of Object(void)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IInboxForwarderControllerApiSync_DeleteInboxForwardersWithHttpInfo_System_Nullable_System_Guid__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Delete inbox forwarders. Accepts optional inboxId filter.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/InboxForwarderControllerApi.cs#lines-77">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IInboxForwarderControllerApiSync_DeleteInboxForwarderWithHttpInfo_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.DeleteInboxForwarderWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IInboxForwarderControllerApiSync_DeleteInboxForwarderWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.DeleteInboxForwarderWithHttpInfo(System.Guid,System.Int32)">DeleteInboxForwarderWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Delete an inbox forwarder</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;object&gt; DeleteInboxForwarderWithHttpInfo(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of inbox forwarder</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</td>
+        <td><p>ApiResponse of Object(void)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IInboxForwarderControllerApiSync_DeleteInboxForwarderWithHttpInfo_System_Guid_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Delete inbox forwarder</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/InboxForwarderControllerApi.cs#lines-111">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IInboxForwarderControllerApiSync_GetInboxForwarder_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.GetInboxForwarder*"></a>
+  <h4 id="mailslurp_Api_IInboxForwarderControllerApiSync_GetInboxForwarder_System_Guid_System_Int32_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.GetInboxForwarder(System.Guid,System.Int32)">GetInboxForwarder(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get an inbox forwarder</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">InboxForwarderDto GetInboxForwarder(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of inbox forwarder</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxForwarderDto.html">InboxForwarderDto</a></td>
+        <td><p>InboxForwarderDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IInboxForwarderControllerApiSync_GetInboxForwarder_System_Guid_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get inbox ruleset</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/InboxForwarderControllerApi.cs#lines-137">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IInboxForwarderControllerApiSync_GetInboxForwarderEvents_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.GetInboxForwarderEvents*"></a>
+  <h4 id="mailslurp_Api_IInboxForwarderControllerApiSync_GetInboxForwarderEvents_System_Guid_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.GetInboxForwarderEvents(System.Guid,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Int32)">GetInboxForwarderEvents(Guid, int?, int?, string, int)</h4>
+  <div class="markdown level1 summary"><p>Get an inbox forwarder event list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PageInboxForwarderEvents GetInboxForwarderEvents(Guid id, int? page = null, int? size = null, string sort = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of inbox forwarder</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index in inbox forwarder event list pagination (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size in inbox forwarder event list pagination (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.PageInboxForwarderEvents.html">PageInboxForwarderEvents</a></td>
+        <td><p>PageInboxForwarderEvents</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IInboxForwarderControllerApiSync_GetInboxForwarderEvents_System_Guid_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get inbox ruleset events</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/InboxForwarderControllerApi.cs#lines-152">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IInboxForwarderControllerApiSync_GetInboxForwarderEventsWithHttpInfo_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.GetInboxForwarderEventsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IInboxForwarderControllerApiSync_GetInboxForwarderEventsWithHttpInfo_System_Guid_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.GetInboxForwarderEventsWithHttpInfo(System.Guid,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Int32)">GetInboxForwarderEventsWithHttpInfo(Guid, int?, int?, string, int)</h4>
+  <div class="markdown level1 summary"><p>Get an inbox forwarder event list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;PageInboxForwarderEvents&gt; GetInboxForwarderEventsWithHttpInfo(Guid id, int? page = null, int? size = null, string sort = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of inbox forwarder</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index in inbox forwarder event list pagination (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size in inbox forwarder event list pagination (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.PageInboxForwarderEvents.html">PageInboxForwarderEvents</a>&gt;</td>
+        <td><p>ApiResponse of PageInboxForwarderEvents</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IInboxForwarderControllerApiSync_GetInboxForwarderEventsWithHttpInfo_System_Guid_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get inbox ruleset events</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/InboxForwarderControllerApi.cs#lines-169">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IInboxForwarderControllerApiSync_GetInboxForwarders_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.GetInboxForwarders*"></a>
+  <h4 id="mailslurp_Api_IInboxForwarderControllerApiSync_GetInboxForwarders_System_Nullable_System_Guid__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.GetInboxForwarders(System.Nullable{System.Guid},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32)">GetInboxForwarders(Guid?, int?, int?, string, string, DateTime?, DateTime?, int)</h4>
+  <div class="markdown level1 summary"><p>List inbox forwarders</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PageInboxForwarderDto GetInboxForwarders(Guid? inboxId = null, int? page = null, int? size = null, string sort = null, string searchFilter = null, DateTime? since = null, DateTime? before = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inbox id to get forwarders from (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index in inbox forwarder list pagination (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size in inbox forwarder list pagination (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">searchFilter</span></td>
+        <td><p>Optional search filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.PageInboxForwarderDto.html">PageInboxForwarderDto</a></td>
+        <td><p>PageInboxForwarderDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IInboxForwarderControllerApiSync_GetInboxForwarders_System_Nullable_System_Guid__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>List all forwarders attached to an inbox</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/InboxForwarderControllerApi.cs#lines-187">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IInboxForwarderControllerApiSync_GetInboxForwardersWithHttpInfo_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.GetInboxForwardersWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IInboxForwarderControllerApiSync_GetInboxForwardersWithHttpInfo_System_Nullable_System_Guid__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.GetInboxForwardersWithHttpInfo(System.Nullable{System.Guid},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32)">GetInboxForwardersWithHttpInfo(Guid?, int?, int?, string, string, DateTime?, DateTime?, int)</h4>
+  <div class="markdown level1 summary"><p>List inbox forwarders</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;PageInboxForwarderDto&gt; GetInboxForwardersWithHttpInfo(Guid? inboxId = null, int? page = null, int? size = null, string sort = null, string searchFilter = null, DateTime? since = null, DateTime? before = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inbox id to get forwarders from (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index in inbox forwarder list pagination (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size in inbox forwarder list pagination (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">searchFilter</span></td>
+        <td><p>Optional search filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.PageInboxForwarderDto.html">PageInboxForwarderDto</a>&gt;</td>
+        <td><p>ApiResponse of PageInboxForwarderDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IInboxForwarderControllerApiSync_GetInboxForwardersWithHttpInfo_System_Nullable_System_Guid__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>List all forwarders attached to an inbox</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/InboxForwarderControllerApi.cs#lines-123">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IInboxForwarderControllerApiSync_GetInboxForwarderWithHttpInfo_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.GetInboxForwarderWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IInboxForwarderControllerApiSync_GetInboxForwarderWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.GetInboxForwarderWithHttpInfo(System.Guid,System.Int32)">GetInboxForwarderWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get an inbox forwarder</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;InboxForwarderDto&gt; GetInboxForwarderWithHttpInfo(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of inbox forwarder</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.InboxForwarderDto.html">InboxForwarderDto</a>&gt;</td>
+        <td><p>ApiResponse of InboxForwarderDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IInboxForwarderControllerApiSync_GetInboxForwarderWithHttpInfo_System_Guid_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get inbox ruleset</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/InboxForwarderControllerApi.cs#lines-199">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IInboxForwarderControllerApiSync_TestInboxForwarder_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.TestInboxForwarder*"></a>
+  <h4 id="mailslurp_Api_IInboxForwarderControllerApiSync_TestInboxForwarder_System_Guid_mailslurp_Model_InboxForwarderTestOptions_System_Int32_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.TestInboxForwarder(System.Guid,mailslurp.Model.InboxForwarderTestOptions,System.Int32)">TestInboxForwarder(Guid, InboxForwarderTestOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Test an inbox forwarder</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">InboxForwarderTestResult TestInboxForwarder(Guid id, InboxForwarderTestOptions inboxForwarderTestOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of inbox forwarder</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxForwarderTestOptions.html">InboxForwarderTestOptions</a></td>
+        <td><span class="parametername">inboxForwarderTestOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxForwarderTestResult.html">InboxForwarderTestResult</a></td>
+        <td><p>InboxForwarderTestResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IInboxForwarderControllerApiSync_TestInboxForwarder_System_Guid_mailslurp_Model_InboxForwarderTestOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Test an inbox forwarder</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/InboxForwarderControllerApi.cs#lines-224">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IInboxForwarderControllerApiSync_TestInboxForwardersForInbox_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.TestInboxForwardersForInbox*"></a>
+  <h4 id="mailslurp_Api_IInboxForwarderControllerApiSync_TestInboxForwardersForInbox_System_Guid_mailslurp_Model_InboxForwarderTestOptions_System_Int32_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.TestInboxForwardersForInbox(System.Guid,mailslurp.Model.InboxForwarderTestOptions,System.Int32)">TestInboxForwardersForInbox(Guid, InboxForwarderTestOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Test inbox forwarders for inbox</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">InboxForwarderTestResult TestInboxForwardersForInbox(Guid inboxId, InboxForwarderTestOptions inboxForwarderTestOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>ID of inbox</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxForwarderTestOptions.html">InboxForwarderTestOptions</a></td>
+        <td><span class="parametername">inboxForwarderTestOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxForwarderTestResult.html">InboxForwarderTestResult</a></td>
+        <td><p>InboxForwarderTestResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IInboxForwarderControllerApiSync_TestInboxForwardersForInbox_System_Guid_mailslurp_Model_InboxForwarderTestOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Test inbox forwarders for inbox</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/InboxForwarderControllerApi.cs#lines-237">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IInboxForwarderControllerApiSync_TestInboxForwardersForInboxWithHttpInfo_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.TestInboxForwardersForInboxWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IInboxForwarderControllerApiSync_TestInboxForwardersForInboxWithHttpInfo_System_Guid_mailslurp_Model_InboxForwarderTestOptions_System_Int32_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.TestInboxForwardersForInboxWithHttpInfo(System.Guid,mailslurp.Model.InboxForwarderTestOptions,System.Int32)">TestInboxForwardersForInboxWithHttpInfo(Guid, InboxForwarderTestOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Test inbox forwarders for inbox</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;InboxForwarderTestResult&gt; TestInboxForwardersForInboxWithHttpInfo(Guid inboxId, InboxForwarderTestOptions inboxForwarderTestOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>ID of inbox</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxForwarderTestOptions.html">InboxForwarderTestOptions</a></td>
+        <td><span class="parametername">inboxForwarderTestOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.InboxForwarderTestResult.html">InboxForwarderTestResult</a>&gt;</td>
+        <td><p>ApiResponse of InboxForwarderTestResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IInboxForwarderControllerApiSync_TestInboxForwardersForInboxWithHttpInfo_System_Guid_mailslurp_Model_InboxForwarderTestOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Test inbox forwarders for inbox</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/InboxForwarderControllerApi.cs#lines-212">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IInboxForwarderControllerApiSync_TestInboxForwarderWithHttpInfo_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.TestInboxForwarderWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IInboxForwarderControllerApiSync_TestInboxForwarderWithHttpInfo_System_Guid_mailslurp_Model_InboxForwarderTestOptions_System_Int32_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.TestInboxForwarderWithHttpInfo(System.Guid,mailslurp.Model.InboxForwarderTestOptions,System.Int32)">TestInboxForwarderWithHttpInfo(Guid, InboxForwarderTestOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Test an inbox forwarder</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;InboxForwarderTestResult&gt; TestInboxForwarderWithHttpInfo(Guid id, InboxForwarderTestOptions inboxForwarderTestOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of inbox forwarder</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxForwarderTestOptions.html">InboxForwarderTestOptions</a></td>
+        <td><span class="parametername">inboxForwarderTestOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.InboxForwarderTestResult.html">InboxForwarderTestResult</a>&gt;</td>
+        <td><p>ApiResponse of InboxForwarderTestResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IInboxForwarderControllerApiSync_TestInboxForwarderWithHttpInfo_System_Guid_mailslurp_Model_InboxForwarderTestOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Test an inbox forwarder</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/InboxForwarderControllerApi.cs#lines-248">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IInboxForwarderControllerApiSync_TestNewInboxForwarder_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.TestNewInboxForwarder*"></a>
+  <h4 id="mailslurp_Api_IInboxForwarderControllerApiSync_TestNewInboxForwarder_mailslurp_Model_TestNewInboxForwarderOptions_System_Int32_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.TestNewInboxForwarder(mailslurp.Model.TestNewInboxForwarderOptions,System.Int32)">TestNewInboxForwarder(TestNewInboxForwarderOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Test new inbox forwarder</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">InboxForwarderTestResult TestNewInboxForwarder(TestNewInboxForwarderOptions testNewInboxForwarderOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.TestNewInboxForwarderOptions.html">TestNewInboxForwarderOptions</a></td>
+        <td><span class="parametername">testNewInboxForwarderOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxForwarderTestResult.html">InboxForwarderTestResult</a></td>
+        <td><p>InboxForwarderTestResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IInboxForwarderControllerApiSync_TestNewInboxForwarder_mailslurp_Model_TestNewInboxForwarderOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Test new inbox forwarder</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/InboxForwarderControllerApi.cs#lines-260">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IInboxForwarderControllerApiSync_TestNewInboxForwarderWithHttpInfo_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.TestNewInboxForwarderWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IInboxForwarderControllerApiSync_TestNewInboxForwarderWithHttpInfo_mailslurp_Model_TestNewInboxForwarderOptions_System_Int32_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.TestNewInboxForwarderWithHttpInfo(mailslurp.Model.TestNewInboxForwarderOptions,System.Int32)">TestNewInboxForwarderWithHttpInfo(TestNewInboxForwarderOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Test new inbox forwarder</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;InboxForwarderTestResult&gt; TestNewInboxForwarderWithHttpInfo(TestNewInboxForwarderOptions testNewInboxForwarderOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.TestNewInboxForwarderOptions.html">TestNewInboxForwarderOptions</a></td>
+        <td><span class="parametername">testNewInboxForwarderOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.InboxForwarderTestResult.html">InboxForwarderTestResult</a>&gt;</td>
+        <td><p>ApiResponse of InboxForwarderTestResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IInboxForwarderControllerApiSync_TestNewInboxForwarderWithHttpInfo_mailslurp_Model_TestNewInboxForwarderOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Test new inbox forwarder</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/InboxForwarderControllerApi.cs#lines-272">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IInboxForwarderControllerApiSync_UpdateInboxForwarder_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.UpdateInboxForwarder*"></a>
+  <h4 id="mailslurp_Api_IInboxForwarderControllerApiSync_UpdateInboxForwarder_System_Guid_mailslurp_Model_CreateInboxForwarderOptions_System_Int32_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.UpdateInboxForwarder(System.Guid,mailslurp.Model.CreateInboxForwarderOptions,System.Int32)">UpdateInboxForwarder(Guid, CreateInboxForwarderOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Update an inbox forwarder</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">InboxForwarderDto UpdateInboxForwarder(Guid id, CreateInboxForwarderOptions createInboxForwarderOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of inbox forwarder</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateInboxForwarderOptions.html">CreateInboxForwarderOptions</a></td>
+        <td><span class="parametername">createInboxForwarderOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxForwarderDto.html">InboxForwarderDto</a></td>
+        <td><p>InboxForwarderDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IInboxForwarderControllerApiSync_UpdateInboxForwarder_System_Guid_mailslurp_Model_CreateInboxForwarderOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Update inbox ruleset</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/InboxForwarderControllerApi.cs#lines-285">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IInboxForwarderControllerApiSync_UpdateInboxForwarderWithHttpInfo_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.UpdateInboxForwarderWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IInboxForwarderControllerApiSync_UpdateInboxForwarderWithHttpInfo_System_Guid_mailslurp_Model_CreateInboxForwarderOptions_System_Int32_" data-uid="mailslurp.Api.IInboxForwarderControllerApiSync.UpdateInboxForwarderWithHttpInfo(System.Guid,mailslurp.Model.CreateInboxForwarderOptions,System.Int32)">UpdateInboxForwarderWithHttpInfo(Guid, CreateInboxForwarderOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Update an inbox forwarder</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;InboxForwarderDto&gt; UpdateInboxForwarderWithHttpInfo(Guid id, CreateInboxForwarderOptions createInboxForwarderOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of inbox forwarder</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateInboxForwarderOptions.html">CreateInboxForwarderOptions</a></td>
+        <td><span class="parametername">createInboxForwarderOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.InboxForwarderDto.html">InboxForwarderDto</a>&gt;</td>
+        <td><p>ApiResponse of InboxForwarderDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IInboxForwarderControllerApiSync_UpdateInboxForwarderWithHttpInfo_System_Guid_mailslurp_Model_CreateInboxForwarderOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Update inbox ruleset</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/InboxForwarderControllerApi.cs#lines-27" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
