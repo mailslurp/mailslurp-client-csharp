@@ -1,0 +1,463 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>MailSlurp C# Client | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="MailSlurp C# Client | MailSlurp ">
+    
+      <link rel="shortcut icon" href="favicon.ico">
+      <link rel="stylesheet" href="styles/docfx.vendor.css">
+      <link rel="stylesheet" href="styles/docfx.css">
+      <link rel="stylesheet" href="styles/main.css">
+      <meta property="docfx:navrel" content="toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="mailslurp-c-client">MailSlurp C# Client</h1>
+
+<blockquote>
+<p>Create real email addresses on demand. Send and receive emails and attachments from code and tests using CSharp (C# DotNet Core).</p>
+</blockquote>
+<p>MailSlurp is an email API service that lets you create real email addresses in code. You can then send and receive emails and attachments in C# applications and tests.</p>
+<pre><code class="lang-csharp">// create client
+var config = new Configuration();
+config.ApiKey.Add(&quot;x-api-key&quot;, ApiKey);
+
+// create inboxes
+var inboxControllerApi = new InboxControllerApi(config);
+var inbox1 = inboxControllerApi.CreateInbox();
+var inbox2 = inboxControllerApi.CreateInbox();
+
+// send email
+inboxControllerApi.SendEmail(inbox1.Id, new SendEmailOptions(
+    to: new List&lt;string&gt; { inbox2.EmailAddress },
+    subject: &quot;Test CSharp&quot;,
+    body: &quot;&lt;span&gt;Hello&lt;/span&gt;&quot;,
+    isHTML: true
+));
+
+// receive email with wait controller
+var email = new WaitForControllerApi(config).WaitForLatestEmail(inbox2.Id, 60000, true);
+StringAssert.Contains(email.Body, &quot;Hello&quot;);
+
+// list emails in inbox
+var emails = inboxControllerApi.GetInboxEmailsPaginated(inbox2.Id);
+Assert.AreEqual(emails.TotalElements, 1);
+</code></pre>
+<h2 id="quick-links">Quick links</h2>
+<ul>
+<li><a href="https://csharp.mailslurp.com">Method Documentation</a></li>
+<li><a href="https://www.nuget.org/packages/mailslurp/">NuGet Package</a></li>
+<li><a href="https://github.com/mailslurp/examples">Code Examples</a></li>
+<li><a href="https://github.com/mailslurp/mailslurp-client-csharp">Github Source</a></li>
+<li><a href="https://www.mailslurp.com/smtp/csharp-send-email-smtp/">CSharp SMTP access</a></li>
+</ul>
+<h3 id="tutorials">Tutorials</h3>
+<ul>
+<li><a href="https://www.mailslurp.com/examples/specflow-test-email-accounts/">SpecFlow email integration test</a></li>
+<li><a href="https://www.mailslurp.com/examples/test-emails-selenium-dotnet-csharp/">Selenium DotNet email tutorial</a></li>
+</ul>
+<h2 id="get-started">Get started</h2>
+<p>This section describes how to get up and running with the CSharp client. The client targets <code>DotNet-Core 2.1</code> and greater. If you need a different target see the .NET Standard targets below or consider calling the <a href="https://docs.mailslurp.com/api/">REST API</a>.</p>
+<ul>
+<li><a href="https://github.com/mailslurp/mailslurp-client-csharp">.NET Core 2.1</a></li>
+<li><a href="https://github.com/mailslurp/mailslurp-client-csharp-netstandard-2x">.NET Standard 2.1</a></li>
+</ul>
+<p>See the method documentation for a <a href="https://github.com/mailslurp/mailslurp-client-csharp">list of all functions</a></p>
+<h3 id="create-api-key">Create API Key</h3>
+<p>First you'll need an API Key. <a href="https://app.mailslurp.com">Create a free account</a> and copy the key from your dashboard.</p>
+<h3 id="install-nuget-package">Install NuGet Package</h3>
+<p>MailSlurp's CSharp library is <a href="https://www.nuget.org/packages/mailslurp/">hosted on NuGet</a>.</p>
+<p><img src="https://www.mailslurp.com/assets/dotnet-add-mailslurp.png" alt="dotnet add mailslurp"></p>
+<h4 id="with-net-cli">With .NET CLI</h4>
+<pre><code class="lang-bash">dotnet add package mailslurp
+dotnet restore
+</code></pre>
+<h3 id="package-manager">Package Manager</h3>
+<pre><code class="lang-bash">Install-Package mailslurp
+</code></pre>
+<h2 id="configure-client">Configure client</h2>
+<p>Once your MailSlurp package is installed you can configure a client with your API Key.</p>
+<pre><code class="lang-csharp">using mailslurp.Api;
+using mailslurp.Client;
+using mailslurp.Model;
+
+var config = new Configuration();
+config.ApiKey.Add(&quot;x-api-key&quot;, &quot;your_api_key_here&quot;);
+</code></pre>
+<h3 id="create-controllers">Create controllers</h3>
+<p>You can call API controllers using the corresponding ControllerApi classes.</p>
+<pre><code class="lang-csharp">// create an inbox controller to control inboxes
+var apiInstance = new InboxControllerApi(config);
+</code></pre>
+<h3 id="common-controllers">Common controllers</h3>
+<ul>
+<li><a href="https://csharp.mailslurp.com/api/mailslurp.Api.EmailControllerApi.html">EmailController</a> read and send emails</li>
+<li><a href="https://csharp.mailslurp.com/api/mailslurp.Api.InboxControllerApi.html">InboxController</a> create email addresses</li>
+<li><a href="https://csharp.mailslurp.com/api/mailslurp.Api.WaitForControllerApi.html">WaitForController</a> wait for emails to arrive</li>
+<li><a href="https://csharp.mailslurp.com/api/mailslurp.Api.WebhookControllerApi.html">WebhookController</a> manage http server webhooks</li>
+</ul>
+<h2 id="common-uses">Common uses</h2>
+<p>MailSlurp has many functions. Here are some common uses:</p>
+<h3 id="create-an-inbox">Create an inbox</h3>
+<p>Inboxes have an ID and a real email address. You can create them using the <a href="https://csharp.mailslurp.com/api/mailslurp.Api.InboxControllerApi.html">InboxController</a>. For more information see the <a href="https://www.mailslurp.com/guides/creating-inboxes/">creating inboxes guide</a>.</p>
+<pre><code class="lang-csharp">var apiInstance = new InboxControllerApi(config);
+var inbox = apiInstance.CreateInbox();
+
+Assert.NotNull(inbox);
+Assert.Contains(&quot;@mailslurp.com&quot;, inbox.EmailAddress);
+</code></pre>
+<h4 id="inbox-types">Inbox types</h4>
+<p>Inboxes can be either <code>SMTP</code> or <code>HTTP</code> type. Set the inbox type using the <code>inboxType</code> property. SMTP inboxes are handled by a custom mailserver and support a wide range of clients while HTTP inboxes use Amazon SES and don't support some older clients like Outlook. SMTP inboxes are recommended for public facing email addresses while HTTP inboxes are best for application testing. Please see the guide on <a href="https://www.mailslurp.com/guides/smtp-vs-http-email-inboxes/">types of inboxes</a> for more information.</p>
+<h3 id="send-and-receive-using-smtp-client">Send and receive using SMTP Client</h3>
+<p>MailSlurp provides SMTP and IMAP servers for all SMTP inboxes. Each account has unique username and password for IMAP and SMTP.</p>
+<table>
+<thead>
+<tr>
+<th>Protocol</th>
+<th>Host</th>
+<th>Port</th>
+<th>TLS</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SMTP</td>
+<td>mailslurp.mx</td>
+<td>2587</td>
+<td>true</td>
+<td>SMTP server</td>
+</tr>
+<tr>
+<td>SMTP</td>
+<td>mx.mailslurp.com</td>
+<td>2525</td>
+<td>false</td>
+<td>SMTP server</td>
+</tr>
+<tr>
+<td>IMAP</td>
+<td>mailslurp.click</td>
+<td>1143</td>
+<td>false</td>
+<td>IMAP server</td>
+</tr>
+</tbody>
+</table>
+<p>If you wish to send or receive using SMTP in CSharp simply create an SMTP type inbox and use the <code>GetImapSmtpAccess</code> method on the inbox controller to obtain SMTP host, port, username and password for your client. Set SSL to false:</p>
+<pre><code class="lang-csharp">using System;
+using System.Net;
+using System.Net.Mail;
+using mailslurp.Api;
+using mailslurp.Client;
+using mailslurp.Model;
+using Xunit;
+
+namespace SmtpService.Tests
+{
+    public class UnitTest1
+    {
+        [Fact]
+        public void CanSendEmailWithMailSlurpSmtp()
+        {
+            var apiKey = Environment.GetEnvironmentVariable(&quot;API_KEY&quot;)
+                         ?? throw new ArgumentNullException(&quot;Missing API_KEY environment variable containing MailSlurp key&quot;);
+
+            // configure client
+            var config = new Configuration();
+            config.ApiKey.Add(&quot;x-api-key&quot;, apiKey);
+            var inboxController = new InboxControllerApi(config);
+
+            // create an smtp inbox
+            var inbox = inboxController.CreateInboxWithOptions(new CreateInboxDto(
+                inboxType: CreateInboxDto.InboxTypeEnum.SMTPINBOX
+            ));
+            Assert.Contains(&quot;@mailslurp.mx&quot;, inbox.EmailAddress);
+
+            // get smtp host, port, password, username etc
+            var imapSmtpAccessDetails = inboxController.GetImapSmtpAccess();
+            var smtpClient = new SmtpClient(imapSmtpAccessDetails.SmtpServerHost)
+            {
+                Port = imapSmtpAccessDetails.SmtpServerPort,
+                Credentials = new NetworkCredential(userName: imapSmtpAccessDetails.SmtpUsername, password: imapSmtpAccessDetails.SmtpPassword),
+                // disable ssl recommended
+                EnableSsl = false
+            };
+            
+            // send email to inbox
+            smtpClient.Send(from: &quot;test@external.com&quot;, recipients: inbox.EmailAddress, subject: &quot;This inbound&quot;, body: &quot;Hello&quot;);
+            
+            // wait for email to arrive
+            var waitController = new WaitForControllerApi(config);
+            waitController.WaitForLatestEmail(inboxId: inbox.Id, timeout: 30_000);
+        }
+    }
+}
+</code></pre>
+<h3 id="can-list-inboxes">Can list inboxes</h3>
+<p>Inboxes are listed in paginated format:</p>
+<pre><code class="lang-csharp">[TestMethod]
+public void Can_List_Inboxes()
+{
+    
+    // create an inbox controller
+    var inboxControllerApi = new InboxControllerApi(_config);
+    var pageInboxes = inboxControllerApi.GetAllInboxes(page:0, size:20);
+    
+    // result pagination options
+    Assert.IsTrue(pageInboxes.Number == 0);
+    
+    // contents contains the results
+    foreach (var inboxProjection in pageInboxes.Content)
+    {
+        Assert.IsNotNull(inboxProjection.Id);
+    }
+}
+</code></pre>
+<p>See the <a href="https://csharp.mailslurp.com/api/mailslurp.Api.InboxControllerApi.html">InboxController docs</a> for help.</p>
+<h3 id="verify-email-address">Verify email address</h3>
+<p>Validate email recipients to maintain a good sender reputation and reduce bounces.</p>
+<pre><code class="lang-csharp">Log(&quot;Can validate email address&quot;);
+var emails = new List&lt;string&gt;
+{
+    &quot;contact@mailslurp.dev&quot;,
+    &quot;bad@mailslurp.dev&quot;
+};
+var emailVerificationControllerApi = new EmailVerificationControllerApi(config);
+var validateEmailAddressListResult = emailVerificationControllerApi.ValidateEmailAddressList(new ValidateEmailAddressListOptions(emails));
+Assert(validateEmailAddressListResult.InvalidEmailAddresses.Contains(&quot;bad@mailslurp.dev&quot;), &quot;Has invalid&quot;);
+Assert(validateEmailAddressListResult.ValidEmailAddresses.Contains(&quot;contact@mailslurp.dev&quot;), &quot;Has valid&quot;);
+</code></pre>
+<h3 id="send-emails">Send emails</h3>
+<p>You can send an email by first creating an inbox. Then use the inbox ID to send an email from it.</p>
+<pre><code class="lang-csharp">var sendEmailOptions = new SendEmailOptions()
+{
+    To = new List‹string›() {&quot;test@example.com&quot;},
+    Subject = &quot;Hello&quot;,
+    Body = &quot;&lt;h1&gt;MailSlurp supports HTML&lt;/h1&gt;&quot;,
+};
+apiInstance.SendEmail(inbox.Id, sendEmailOptions);
+</code></pre>
+<p>See the <a href="https://csharp.mailslurp.com/api/mailslurp.Model.SendEmailOptions.html">SendEmailOptions</a> for sending options.</p>
+<h3 id="receive-emails">Receive emails</h3>
+<p>You can fetch and read emails that already exist using the <a href="https://csharp.mailslurp.com/api/mailslurp.Api.EmailControllerApi.html">EmailControllerApi</a>. To wait for expected emails to arrive use the <a href="https://csharp.mailslurp.com/api/mailslurp.Api.WaitForControllerApi.html">WaitForControllerApi</a> to wait for conditions to be met.</p>
+<p>You can receive emails using <code>waitFor</code> methods on the <a href="https://csharp.mailslurp.com/api/mailslurp.Api.WaitForControllerApi.html">WaitForControllerApi</a> class.</p>
+<pre><code class="lang-csharp">var Timeout = 30000L; // max milliseconds to wait
+var UnreadOnly = true; // only count unread emails
+
+var waitForInstance = new WaitForControllerApi(config);
+var email = waitForInstance.WaitForLatestEmail(inbox.Id, Timeout, UnreadOnly);
+
+Assert.NotNull(email);
+Assert.Equal(&quot;Hello&quot;, email.Subject);
+Assert.Contains(&quot;Your code is: &quot;, email.Body);
+</code></pre>
+<p>You can extract content from email bodies using RegExps:</p>
+<pre><code class="lang-csharp">// imagine that email body is `Your code is: 123` and you want to get the number
+var rx = new Regex(@&quot;Your code is: ([0-9]{3})&quot;, RegexOptions.Compiled);
+var match = rx.Match(email.Body);
+var code = match.Groups[1].Value;
+
+Assert.Equal(&quot;123&quot;, code);
+</code></pre>
+<p>If you are having trouble receiving emails please see the <a href="https://www.mailslurp.com/guides/receiving-emails/">email receiving guide</a> or the <a href="https://www.mailslurp.com/support/inbox-not-receiving-emails/">inbox not receiving support page</a>.</p>
+<h3 id="attachments">Attachments</h3>
+<p>To send attachments first upload them using the <a href="https://csharp.mailslurp.com/api/mailslurp.Api.AttachmentControllerApi.html">AttachmentControllerApi</a>.</p>
+<pre><code class="lang-csharp">private List&lt;string&gt; _uploadAttachment()
+{
+    var attachmentControllerApi = new AttachmentControllerApi(_config);
+    // read a file in byte array
+    byte[] bytesOfAttachment = {0};
+    // encode the bytes as base64 encoded string
+    string base64EncodedFile = Convert.ToBase64String(bytesOfAttachment, 0, bytesOfAttachment.Length);
+    // specify file name and content-type
+    var uploadOptions = new UploadAttachmentOptions(filename:&quot;test.txt&quot;, contentType:&quot;text/plain&quot;, base64Contents: base64EncodedFile);
+    // use the returned list of ids for subsequent sending (can return multiple ids depending on size of files).
+    return attachmentControllerApi.UploadAttachment(uploadOptions);
+}
+</code></pre>
+<p>Then use the returned attachment IDs in the <a href="https://csharp.mailslurp.com/api/mailslurp.Model.SendEmailOptions.html">SendEmailOptions</a> of your email send call.</p>
+<pre><code class="lang-csharp">[TestMethod]
+public void Can_Receive_Email_Contents_And_Attachments()
+{
+    
+    // create two inboxes and send an email between them
+    var inboxControllerApi = new InboxControllerApi(_config);
+    var inbox1 = inboxControllerApi.CreateInbox();
+    var inbox2 = inboxControllerApi.CreateInbox();
+    
+    // send email with attachment from inbox 1 to inbox 2
+    var sendEmailOptions = new SendEmailOptions(
+        // send to inbox 2
+        to: new List&lt;string&gt; {inbox2.EmailAddress},
+        subject: &quot;Hello inbox 2&quot;,
+        body: &quot;Here is your attachment&quot;,
+        isHTML: true,
+        attachments: _uploadAttachment()
+    );
+    inboxControllerApi.SendEmail(inbox1.Id, sendEmailOptions);
+    
+    // now wait for email to arrive in inbox 2
+    var waitForControllerApi = new WaitForControllerApi(_config);
+    var email = waitForControllerApi.WaitForLatestEmail(inboxId: inbox2.Id, timeout: 30000, unreadOnly: true);
+    
+    // validate received email
+    StringAssert.Contains(email.Body, &quot;Here is your attachment&quot;);
+    StringAssert.Contains(email.Subject, &quot;Hello inbox 2&quot;);
+    Assert.IsTrue(email.Attachments.Count &gt; 0);
+    
+    // fetch attachment
+    var emailControllerApi = new EmailControllerApi(_config);
+    var downloadAttachmentDto = emailControllerApi.DownloadAttachmentBase64(attachmentId: email.Attachments.First(), emailId: email.Id);
+
+    StringAssert.Contains(downloadAttachmentDto.ContentType, &quot;text/plain&quot;);
+    Assert.IsNotNull(downloadAttachmentDto.SizeBytes);
+    Assert.IsNotNull(downloadAttachmentDto.Base64FileContents); // convert to bytes if you wish to parse or save file
+}
+</code></pre>
+<h3 id="get-sent-emails">Get sent emails</h3>
+<pre><code class="lang-csharp">[TestMethod]
+public void Can_Get_Sent_Emails()
+{
+    
+    var sentEmailsControllerApi = new SentEmailsControllerApi(_config);
+    var inboxControllerApi = new InboxControllerApi(_config);
+    
+    var inbox = inboxControllerApi.CreateInbox();
+    var sentEmails = sentEmailsControllerApi.GetSentEmails(inboxId:inbox.Id, page:0, size: 20);
+    
+    Assert.IsNotNull(sentEmails.Content);
+    Assert.IsNotNull(sentEmails.TotalPages);
+    Assert.AreEqual(sentEmails.Pageable.PageNumber, 0);
+    Assert.AreEqual(sentEmails.Pageable.PageSize, 20);
+}
+</code></pre>
+<h3 id="extract-email-content">Extract email content</h3>
+<p>You can extract content using pattern matching with the <a href="https://csharp.mailslurp.com/api/mailslurp.Api.WaitForControllerApi.html">WaitForController</a></p>
+<pre><code class="lang-csharp">[TestMethod]
+public void Can_Extract_Codes()
+{
+    
+    // create an inbox
+    var inboxControllerApi = new InboxControllerApi(_config);
+    var inbox = inboxControllerApi.CreateInbox();
+    
+    // send a code to the inbox
+    var sendEmailOptions = new SendEmailOptions(
+        to: new List&lt;string&gt;() {inbox.EmailAddress},
+        subject: &quot;Welcome email&quot;,
+        body: &quot;Hello. Your code is X-456&quot;
+    );
+    inboxControllerApi.SendEmail(inbox.Id, sendEmailOptions);
+    
+    // wait for the email to arrive
+    var waitForController = new WaitForControllerApi(_config);
+    var emailController = new EmailControllerApi(_config);
+    var email = waitForController.WaitForLatestEmail(inboxId:inbox.Id, timeout: 30000, unreadOnly: true);
+    StringAssert.Contains(email.Body, &quot;Hello&quot;);
+    
+    // extract the code
+    var matchOptions = new ContentMatchOptions(pattern:&quot;Your code is ([A-Z]-[0-9]{3})&quot;);
+    var matchResults = emailController.GetEmailContentMatch(email.Id, matchOptions);
+    Assert.AreEqual(matchResults.Matches[1], &quot;X-456&quot;);
+}
+</code></pre>
+<h2 id="sdk-documentation">SDK Documentation</h2>
+<p>See the GitHub source code for more <a href="https://csharp.mailslurp.com/">Method Documentation</a>.</p>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/README.md#lines-1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

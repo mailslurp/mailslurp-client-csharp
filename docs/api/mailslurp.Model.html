@@ -1,0 +1,946 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Namespace mailslurp.Model
+ | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Namespace mailslurp.Model
+ | MailSlurp ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Model">
+
+  <h1 id="mailslurp_Model" data-uid="mailslurp.Model" class="text-break">Namespace mailslurp.Model
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+</h3>
+      <h4><a class="xref" href="mailslurp.Model.AbstractOpenAPISchema.html">AbstractOpenAPISchema</a></h4>
+      <section><p>Abstract base class for oneOf, anyOf schemas in the OpenAPI specification</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.AbstractWebhookPayload.html">AbstractWebhookPayload</a></h4>
+      <section><p>Abstract webhook payload. Use the correct payload type for your webhook event type in order to access all the specific properties for that event. See the <code>NEW_EMAIL</code>,<code>NEW_CONTACT</code>, <code>NEW_ATTACHMENT</code> and <code>EMAIL_OPENED</code> payloads for the properties available for those events.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.AliasDto.html">AliasDto</a></h4>
+      <section><p>Email alias representation</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.AliasProjection.html">AliasProjection</a></h4>
+      <section><p>Representation of a alias</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.AttachmentEntity.html">AttachmentEntity</a></h4>
+      <section><p>AttachmentEntity</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.AttachmentMetaData.html">AttachmentMetaData</a></h4>
+      <section><p>Meta data associated with an attachment. Attachments are stored as byte blobs so the meta data is stored separately.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.AttachmentProjection.html">AttachmentProjection</a></h4>
+      <section><p>Email attachment data</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.BasicAuthOptions.html">BasicAuthOptions</a></h4>
+      <section><p>Basic Authentication options for webhooks. Will be used is present when calling webhook endpoints.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.BouncedEmailDto.html">BouncedEmailDto</a></h4>
+      <section><p>Bounced email</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.BouncedRecipientDto.html">BouncedRecipientDto</a></h4>
+      <section><p>Bounced recipient</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.BounceProjection.html">BounceProjection</a></h4>
+      <section><p>Bounced email event</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.BounceRecipientProjection.html">BounceRecipientProjection</a></h4>
+      <section><p>Bounced recipient</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.BulkSendEmailOptions.html">BulkSendEmailOptions</a></h4>
+      <section><p>Options for bulk sending an email from multiple addresses. See regular <code>sendEmail</code> methods for more information.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.Complaint.html">Complaint</a></h4>
+      <section><p>Complaint</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ConditionOption.html">ConditionOption</a></h4>
+      <section><p>Options for matching emails in an inbox based on a condition such as <code>HAS_ATTACHMENTS=TRUE</code></p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ContactDto.html">ContactDto</a></h4>
+      <section><p>Contact object. For saving a user in contact book.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ContactProjection.html">ContactProjection</a></h4>
+      <section><p>Email contact for address book</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ContentMatchOptions.html">ContentMatchOptions</a></h4>
+      <section><p>Options for matching content using regex patterns based on Java Pattern syntax</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.CountDto.html">CountDto</a></h4>
+      <section><p>Number of elements</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.CreateAliasOptions.html">CreateAliasOptions</a></h4>
+      <section><p>Create email alias options. Email aliases can be used to mask real email addresses behind an ID. You can also attach an inbox to an alias so that any email received by the inbox email address if forwarded to the alias email address.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.CreateContactOptions.html">CreateContactOptions</a></h4>
+      <section><p>Options for creating an email contact in address book</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.CreateDomainOptions.html">CreateDomainOptions</a></h4>
+      <section><p>Options for creating a domain to use with MailSlurp. You must have ownership access to this domain in order to verify it. Domains will not function correctly until the domain has been verified. See <a href="https://www.mailslurp.com/guides/custom-domains">https://www.mailslurp.com/guides/custom-domains</a> for help. Domains can be either <code>HTTP</code> or <code>SMTP</code> type. The type of domain determines which inboxes can be used with it. <code>SMTP</code> inboxes use a mail server running <code>mx.mailslurp.com</code> while <code>HTTP</code> inboxes are handled by AWS SES.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.CreateEmergencyAddressOptions.html">CreateEmergencyAddressOptions</a></h4>
+      <section><p>CreateEmergencyAddressOptions</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.CreateGroupOptions.html">CreateGroupOptions</a></h4>
+      <section><p>Create contact group options</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.CreateInboxDto.html">CreateInboxDto</a></h4>
+      <section><p>Options for creating an inbox. An inbox has a real email address that can send and receive emails. Inboxes can be permanent or expire at a given time. Inboxes are either <code>SMTP</code> or <code>HTTP</code> mailboxes. <code>SMTP</code> inboxes are processed by a mail server running at <code>mailslurp.mx</code> while <code>HTTP</code> inboxes are processed by AWS SES backed mailservers. An inbox email address is randomly assigned by default ending in either <code>mailslurp.com</code> or (if <code>useDomainPool</code> is enabled) ending in a similar domain such as <code>mailslurp.xyz</code> (selected at random). To specify an address use a custom domain: either pass the <code>emailAddress</code> options with <code>&amp;lt;your-recipient&gt;@&amp;lt;your-domain&gt;</code>. To create a randomized address for your domain set the <code>domainName</code> to the domain you have verified or pass the <code>domainId</code>. Virtual inboxes prevent outbound sending and instead trap mail.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.CreateInboxForwarderOptions.html">CreateInboxForwarderOptions</a></h4>
+      <section><p>Options for creating an inbox forwarder</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.CreateInboxReplierOptions.html">CreateInboxReplierOptions</a></h4>
+      <section><p>Options for creating an inbox replier. Repliers can be attached to inboxes and send automated responses when an inbound email matches given criteria.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.CreateInboxRulesetOptions.html">CreateInboxRulesetOptions</a></h4>
+      <section><p>Options for creating inbox rulesets. Inbox rulesets can be used to block, allow, filter, or forward emails when sending or receiving using the inbox.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.CreateTemplateOptions.html">CreateTemplateOptions</a></h4>
+      <section><p>Create template options</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.CreateTrackingPixelOptions.html">CreateTrackingPixelOptions</a></h4>
+      <section><p>Options for creating a tracking pixel for email open tracking</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.CreateWebhookOptions.html">CreateWebhookOptions</a></h4>
+      <section><p>Options for creating a webhook. Webhooks can be attached to inboxes and MailSlurp will POST a webhook payload to the URL specified whenever the webhook's event is triggered. Webhooks are great for processing many inbound emails and responding to other events at scale. Customize the payload sent to your endpoint by setting the <code>requestBodyTemplate</code> property to a string with moustache style variables. Property names from the standard payload model for the given event are available as variables.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.DeliveryStatusDto.html">DeliveryStatusDto</a></h4>
+      <section><p>DeliveryStatusDto</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.DescribeDomainOptions.html">DescribeDomainOptions</a></h4>
+      <section><p>Domain record description</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.DescribeMailServerDomainResult.html">DescribeMailServerDomainResult</a></h4>
+      <section><p>Name Server lookup result</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.DNSLookupOptions.html">DNSLookupOptions</a></h4>
+      <section><p>Options for DNS query.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.DNSLookupResult.html">DNSLookupResult</a></h4>
+      <section><p>DNS lookup result. Includes record type, time to live, raw response, and name value for the name server response.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.DNSLookupResults.html">DNSLookupResults</a></h4>
+      <section><p>Results of query on domain name servers</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.DomainDto.html">DomainDto</a></h4>
+      <section><p>Domain plus verification records and status</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.DomainIssuesDto.html">DomainIssuesDto</a></h4>
+      <section><p>DomainIssuesDto</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.DomainNameRecord.html">DomainNameRecord</a></h4>
+      <section><p>DNS Record required for verification of a domain. Record vary depending on domain type.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.DomainPreview.html">DomainPreview</a></h4>
+      <section><p>Preview object for domain entity</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.DownloadAttachmentDto.html">DownloadAttachmentDto</a></h4>
+      <section><p>Content of attachment</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.Email.html">Email</a></h4>
+      <section><p>Email entity (also known as EmailDto). When an SMTP email message is received by MailSlurp it is parsed. The body and attachments are written to disk and the fields such as to, from, subject etc are stored in a database. The <code>body</code> contains the email content. If you want the original SMTP message see the <code>getRawEmail</code> endpoints. The attachments can be fetched using the AttachmentController</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.EmailAnalysis.html">EmailAnalysis</a></h4>
+      <section><p>Analysis result for email. Each verdict property is a string PASS|FAIL|GRAY or dynamic error message</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.EmailContentMatchResult.html">EmailContentMatchResult</a></h4>
+      <section><p>Matches for the given pattern</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.EmailHtmlDto.html">EmailHtmlDto</a></h4>
+      <section><p>EmailHtmlDto</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.EmailLinksResult.html">EmailLinksResult</a></h4>
+      <section><p>Links found in HTML</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.EmailPreview.html">EmailPreview</a></h4>
+      <section><p>Preview of an email message. For full message (including body and attachments) call the <code>getEmail</code> or other email endpoints with the provided email ID.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.EmailPreviewUrls.html">EmailPreviewUrls</a></h4>
+      <section><p>URLs for email body</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.EmailProjection.html">EmailProjection</a></h4>
+      <section><p>A compact representation of a full email. Used in list endpoints to keep response sizes low. Body and attachments are not included. To get all fields of the email use the <code>getEmail</code> method with the email projection's ID. See <code>EmailDto</code> for documentation on projection properties.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.EmailRecipients.html">EmailRecipients</a></h4>
+      <section><p>The <code>To</code>,<code>CC</code>,<code>BCC</code> recipients stored in object form with email address and name accessible.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.EmailTextLinesResult.html">EmailTextLinesResult</a></h4>
+      <section><p>Parsed text of an email</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.EmailValidationRequestDto.html">EmailValidationRequestDto</a></h4>
+      <section><p>Email validation request</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.EmailVerificationResult.html">EmailVerificationResult</a></h4>
+      <section><p>Email verification result. Valid means email address exists according to response from mail server running at the domain and port given.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.EmergencyAddress.html">EmergencyAddress</a></h4>
+      <section><p>EmergencyAddress</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.EmergencyAddressDto.html">EmergencyAddressDto</a></h4>
+      <section><p>EmergencyAddressDto</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.EmptyResponseDto.html">EmptyResponseDto</a></h4>
+      <section><p>EmptyResponseDto</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ExpirationDefaults.html">ExpirationDefaults</a></h4>
+      <section><p>Expiration defaults for your account</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ExpiredInboxDto.html">ExpiredInboxDto</a></h4>
+      <section><p>Expired inbox</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ExpiredInboxRecordProjection.html">ExpiredInboxRecordProjection</a></h4>
+      <section><p>Record of inbox expiration</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ExportLink.html">ExportLink</a></h4>
+      <section><p>Export download link</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ExportOptions.html">ExportOptions</a></h4>
+      <section><p>Options for exporting user data</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.FilterBouncedRecipientsOptions.html">FilterBouncedRecipientsOptions</a></h4>
+      <section><p>Options for filtering bounced email recipients</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.FilterBouncedRecipientsResult.html">FilterBouncedRecipientsResult</a></h4>
+      <section><p>Remaining recipients that were filtered to remove bounced recipients</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.FlushExpiredInboxesResult.html">FlushExpiredInboxesResult</a></h4>
+      <section><p>Result from calling expire on any inboxes that have applicable expiration dates given current time.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ForwardEmailOptions.html">ForwardEmailOptions</a></h4>
+      <section><p>Options for forwarding an email</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.GravatarUrl.html">GravatarUrl</a></h4>
+      <section><p>User image</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.GroupContactsDto.html">GroupContactsDto</a></h4>
+      <section><p>Describes contacts attached to a contact group</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.GroupDto.html">GroupDto</a></h4>
+      <section><p>Contact group data</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.GroupProjection.html">GroupProjection</a></h4>
+      <section><p>Data for contact group</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.HTMLValidationResult.html">HTMLValidationResult</a></h4>
+      <section><p>HTML Validation Results</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ImapFlagOperationOptions.html">ImapFlagOperationOptions</a></h4>
+      <section><p>IMAP operation flags</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ImapSmtpAccessDetails.html">ImapSmtpAccessDetails</a></h4>
+      <section><p>Access details for inbox using SMTP or IMAP</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.InboxByEmailAddressResult.html">InboxByEmailAddressResult</a></h4>
+      <section><p>Result of search for inbox by email address</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.InboxByNameResult.html">InboxByNameResult</a></h4>
+      <section><p>Result of search for inbox by name</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.InboxDto.html">InboxDto</a></h4>
+      <section><p>Representation of a MailSlurp inbox. An inbox has an ID and a real email address. Emails can be sent to or from this email address. Inboxes are either <code>SMTP</code> or <code>HTTP</code> mailboxes. The default, <code>HTTP</code> inboxes, use AWS SES to process emails and are best suited as test email accounts and do not support IMAP or POP3. <code>SMTP</code> inboxes use a custom mail server at <code>mx.mailslurp.com</code> and support SMTP login, IMAP and POP3. Use the <code>EmailController</code> or the <code>InboxController</code> methods to send and receive emails and attachments. Inboxes may have a description, name, and tags for display purposes. You can also favourite an inbox for easier searching.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.InboxExistsDto.html">InboxExistsDto</a></h4>
+      <section><p>Result of email exists query</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.InboxForwarderDto.html">InboxForwarderDto</a></h4>
+      <section><p>Inbox forwarder. Describes how an inbox will forward matching emails to designated recipients.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.InboxForwarderEventProjection.html">InboxForwarderEventProjection</a></h4>
+      <section><p>Inbox forwarder event</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.InboxForwarderTestOptions.html">InboxForwarderTestOptions</a></h4>
+      <section><p>Options for testing an inbox forwarder against a value</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.InboxForwarderTestResult.html">InboxForwarderTestResult</a></h4>
+      <section><p>Results of inbox forwarder test</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.InboxIdItem.html">InboxIdItem</a></h4>
+      <section><p>Inbox ID and email address pair</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.InboxIdsResult.html">InboxIdsResult</a></h4>
+      <section><p>List of inbox IDs and email addresses</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.InboxPreview.html">InboxPreview</a></h4>
+      <section><p>Inbox data preview element.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.InboxReplierDto.html">InboxReplierDto</a></h4>
+      <section><p>Inbox replier. Will automatically reply to inbound emails that match given field for an inbox.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.InboxReplierEventProjection.html">InboxReplierEventProjection</a></h4>
+      <section><p>Inbox replier event</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.InboxRulesetDto.html">InboxRulesetDto</a></h4>
+      <section><p>Rules for inbox</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.InboxRulesetTestOptions.html">InboxRulesetTestOptions</a></h4>
+      <section><p>Test options for inbox ruleset</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.InboxRulesetTestResult.html">InboxRulesetTestResult</a></h4>
+      <section><p>Result of test of inbox ruleset</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.IPAddressResult.html">IPAddressResult</a></h4>
+      <section><p>IP Address look up result for a given domain / hostname</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.JSONSchemaDto.html">JSONSchemaDto</a></h4>
+      <section><p>JSONSchema for payload</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ListUnsubscribeRecipientProjection.html">ListUnsubscribeRecipientProjection</a></h4>
+      <section><p>List unsubscribe recipient</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.MatchOption.html">MatchOption</a></h4>
+      <section><p>Options for matching emails in an inbox. Each match option object contains a <code>field</code>, <code>should</code> and <code>value</code> property. Together they form logical conditions such as <code>SUBJECT</code> should <code>CONTAIN</code> value.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.MatchOptions.html">MatchOptions</a></h4>
+      <section><p>Optional filter for matching emails based on fields. For instance filter results to only include emails whose <code>SUBJECT</code> value does <code>CONTAIN</code> given match value. An example payload would be <code>{ matches: [{ field: &amp;apos;SUBJECT&amp;apos;, should: &amp;apos;CONTAIN&amp;apos;, value: &amp;apos;Welcome&amp;apos; }] }</code>. You can also pass conditions such as <code>HAS_ATTACHMENT</code>. If you wish to extract regex matches inside the email content see the <code>getEmailContentMatch</code> method in the EmailController.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.MissedEmailDto.html">MissedEmailDto</a></h4>
+      <section><p>Missed email</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.MissedEmailProjection.html">MissedEmailProjection</a></h4>
+      <section><p>Missed email data</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.NameServerRecord.html">NameServerRecord</a></h4>
+      <section><p>Name Server Record</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.OrganizationInboxProjection.html">OrganizationInboxProjection</a></h4>
+      <section><p>Organization team inbox</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageableObject.html">PageableObject</a></h4>
+      <section><p>PageableObject</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageAlias.html">PageAlias</a></h4>
+      <section><p>Paginated email alias results. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageAttachmentEntity.html">PageAttachmentEntity</a></h4>
+      <section><p>Paginated attachment entity results. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageBouncedEmail.html">PageBouncedEmail</a></h4>
+      <section><p>Paginated bounced email. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageBouncedRecipients.html">PageBouncedRecipients</a></h4>
+      <section><p>Paginated bounced recipients. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageComplaint.html">PageComplaint</a></h4>
+      <section><p>Paginated complaint email. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageContactProjection.html">PageContactProjection</a></h4>
+      <section><p>Paginated contact results. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageDeliveryStatus.html">PageDeliveryStatus</a></h4>
+      <section><p>Paginated delivery status results. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageEmailPreview.html">PageEmailPreview</a></h4>
+      <section><p>Paginated email preview results. EmailProjections and EmailPreviews are essentially the same but have legacy naming issues. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls. For emails there are several methods for fetching message bodies and attachments.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageEmailProjection.html">PageEmailProjection</a></h4>
+      <section><p>Paginated email projection results. EmailProjections and EmailPreviews are essentially the same but have legacy naming issues. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full email entity use the projection ID with individual method calls. For emails there are several methods for fetching message bodies and attachments.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageEmailValidationRequest.html">PageEmailValidationRequest</a></h4>
+      <section><p>Paginated email validation request records. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageExpiredInboxRecordProjection.html">PageExpiredInboxRecordProjection</a></h4>
+      <section><p>Paginated expired inbox results. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageGroupProjection.html">PageGroupProjection</a></h4>
+      <section><p>Paginated missed email results. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageInboxForwarderDto.html">PageInboxForwarderDto</a></h4>
+      <section><p>Paginated inbox forwarder results. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageInboxForwarderEvents.html">PageInboxForwarderEvents</a></h4>
+      <section><p>Paginated inbox forwarder events. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageInboxProjection.html">PageInboxProjection</a></h4>
+      <section><p>Paginated inbox results. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageInboxReplierDto.html">PageInboxReplierDto</a></h4>
+      <section><p>Paginated inbox replier results. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageInboxReplierEvents.html">PageInboxReplierEvents</a></h4>
+      <section><p>Paginated inbox replier events. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageInboxRulesetDto.html">PageInboxRulesetDto</a></h4>
+      <section><p>Paginated inbox ruleset results. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageListUnsubscribeRecipients.html">PageListUnsubscribeRecipients</a></h4>
+      <section><p>Paginated list unsubscribe recipients. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageMissedEmailProjection.html">PageMissedEmailProjection</a></h4>
+      <section><p>Paginated MissedEmail results. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageOrganizationInboxProjection.html">PageOrganizationInboxProjection</a></h4>
+      <section><p>Paginated organization inbox results. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PagePhoneNumberProjection.html">PagePhoneNumberProjection</a></h4>
+      <section><p>Paginated phone numbers. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageScheduledJobs.html">PageScheduledJobs</a></h4>
+      <section><p>Paginated scheduled jobs results. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageSentEmailProjection.html">PageSentEmailProjection</a></h4>
+      <section><p>Paginated sent email results. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full sent email entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageSentEmailWithQueueProjection.html">PageSentEmailWithQueueProjection</a></h4>
+      <section><p>Paginated sent email results for emails sent with queue. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full sent email entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageSmsProjection.html">PageSmsProjection</a></h4>
+      <section><p>Paginated SMS messages. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageTemplateProjection.html">PageTemplateProjection</a></h4>
+      <section><p>Paginated email template results. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageThreadProjection.html">PageThreadProjection</a></h4>
+      <section><p>Paginated email projection results. EmailProjections and EmailPreviews are essentially the same but have legacy naming issues. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full email entity use the projection ID with individual method calls. For emails there are several methods for fetching message bodies and attachments.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageTrackingPixelProjection.html">PageTrackingPixelProjection</a></h4>
+      <section><p>Paginated TrackingPixel results. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageUnknownMissedEmailProjection.html">PageUnknownMissedEmailProjection</a></h4>
+      <section><p>Paginated unknown MissedEmail results. Unknown missed emails are emails that were sent to MailSlurp /Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageWebhookProjection.html">PageWebhookProjection</a></h4>
+      <section><p>Paginated webhook entity. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PageWebhookResult.html">PageWebhookResult</a></h4>
+      <section><p>Paginated webhook results. Page index starts at zero. Projection results may omit larger entity fields. For fetching a full entity use the projection ID with individual method calls.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PhoneNumberDto.html">PhoneNumberDto</a></h4>
+      <section><p>PhoneNumberDto</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PhoneNumberProjection.html">PhoneNumberProjection</a></h4>
+      <section><p>Phone number projection</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PhonePlanDto.html">PhonePlanDto</a></h4>
+      <section><p>PhonePlanDto</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.RawEmailJson.html">RawEmailJson</a></h4>
+      <section><p>Content in raw format</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.Recipient.html">Recipient</a></h4>
+      <section><p>Email recipient</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ReplyToAliasEmailOptions.html">ReplyToAliasEmailOptions</a></h4>
+      <section><p>Options for replying to an alias email using the alias inbox</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ReplyToEmailOptions.html">ReplyToEmailOptions</a></h4>
+      <section><p>Options for replying to email with API</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ScheduledJob.html">ScheduledJob</a></h4>
+      <section><p>ScheduledJob</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ScheduledJobDto.html">ScheduledJobDto</a></h4>
+      <section><p>ScheduledJobDto</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.SendEmailOptions.html">SendEmailOptions</a></h4>
+      <section><p>Options for the email to be sent</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.Sender.html">Sender</a></h4>
+      <section><p>Sender object containing from email address and from personal name if provided in address</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.SendSMTPEnvelopeOptions.html">SendSMTPEnvelopeOptions</a></h4>
+      <section><p>Options for the email envelope</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.SendWithQueueResult.html">SendWithQueueResult</a></h4>
+      <section><p>Collection of items</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.SentEmailDto.html">SentEmailDto</a></h4>
+      <section><p>Sent email details</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.SentEmailProjection.html">SentEmailProjection</a></h4>
+      <section><p>Collection of items</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.SetInboxFavouritedOptions.html">SetInboxFavouritedOptions</a></h4>
+      <section><p>Options for setting inbox favourite state</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.SimpleSendEmailOptions.html">SimpleSendEmailOptions</a></h4>
+      <section><p>Simplified send email options</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.SmsDto.html">SmsDto</a></h4>
+      <section><p>SmsDto</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.SmsMatchOption.html">SmsMatchOption</a></h4>
+      <section><p>Options for matching SMS messages in a phone number. Each match option object contains a <code>field</code>, <code>should</code> and <code>value</code> property. Together they form logical conditions such as <code>BODY</code> should <code>CONTAIN</code> value.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.SmsPreview.html">SmsPreview</a></h4>
+      <section><p>SmsPreview</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.SmsProjection.html">SmsProjection</a></h4>
+      <section><p>SMS projection</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.Sort.html">Sort</a></h4>
+      <section><p>Sort</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.TemplateDto.html">TemplateDto</a></h4>
+      <section><p>Email template</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.TemplatePreview.html">TemplatePreview</a></h4>
+      <section><p>TemplatePreview</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.TemplateProjection.html">TemplateProjection</a></h4>
+      <section><p>Email template data</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.TemplateVariable.html">TemplateVariable</a></h4>
+      <section><p>Variable for use with email template</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.TestNewInboxForwarderOptions.html">TestNewInboxForwarderOptions</a></h4>
+      <section><p>Options for testing new inbox forwarder rules</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.TestNewInboxRulesetOptions.html">TestNewInboxRulesetOptions</a></h4>
+      <section><p>Test inbox ruleset options</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.TestPhoneNumberOptions.html">TestPhoneNumberOptions</a></h4>
+      <section><p>TestPhoneNumberOptions</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ThreadProjection.html">ThreadProjection</a></h4>
+      <section><p>A thread is a message thread created for a message received by an alias</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.TrackingPixelDto.html">TrackingPixelDto</a></h4>
+      <section><p>Tracking pixel</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.TrackingPixelProjection.html">TrackingPixelProjection</a></h4>
+      <section><p>Tracking pixel data</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.UnknownMissedEmailProjection.html">UnknownMissedEmailProjection</a></h4>
+      <section><p>Unknown missed email projection</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.UnreadCount.html">UnreadCount</a></h4>
+      <section><p>Number of unread emails</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.UnseenErrorCountDto.html">UnseenErrorCountDto</a></h4>
+      <section><p>Number of unseen errors</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.UpdateAliasOptions.html">UpdateAliasOptions</a></h4>
+      <section><p>Update an email alias</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.UpdateDomainOptions.html">UpdateDomainOptions</a></h4>
+      <section><p>Options for creating a domain to use with MailSlurp. You must have ownership access to this domain in order to verify it. Domains will not functionally currently until the domain has been verified. See <a href="https://www.mailslurp.com/guides/custom-domains">https://www.mailslurp.com/guides/custom-domains</a> for help.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.UpdateGroupContacts.html">UpdateGroupContacts</a></h4>
+      <section><p>Update group contacts options. Pass a list of contact ids to replace existing group contacts.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.UpdateInboxOptions.html">UpdateInboxOptions</a></h4>
+      <section><p>Options for updating inbox properties</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.UpdateInboxReplierOptions.html">UpdateInboxReplierOptions</a></h4>
+      <section><p>Options for updating an inbox replier</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.UploadAttachmentBytesRequest.html">UploadAttachmentBytesRequest</a></h4>
+      <section><p>Byte array request body</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.UploadAttachmentOptions.html">UploadAttachmentOptions</a></h4>
+      <section><p>Options for uploading files for attachments. When sending emails with the API that require attachments first upload each attachment. Then use the returned attachment ID in your <code>SendEmailOptions</code> when sending an email. This way you can use attachments multiple times once they have been uploaded.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.UploadMultipartFormRequest.html">UploadMultipartFormRequest</a></h4>
+      <section><p>UploadMultipartFormRequest</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.UserInfoDto.html">UserInfoDto</a></h4>
+      <section><p>UserInfoDto</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ValidateEmailAddressListOptions.html">ValidateEmailAddressListOptions</a></h4>
+      <section><p>Options for validating a list of email addresses</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ValidateEmailAddressListResult.html">ValidateEmailAddressListResult</a></h4>
+      <section><p>Result of validating a list of email addresses</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ValidationDto.html">ValidationDto</a></h4>
+      <section><p>Response object for email validation operation</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ValidationMessage.html">ValidationMessage</a></h4>
+      <section><p>Optional warnings resulting from HTML validation</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.VerifyEmailAddressOptions.html">VerifyEmailAddressOptions</a></h4>
+      <section><p>Options for verifying that an email address exists at a remote mail server.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.VerifyWebhookSignatureOptions.html">VerifyWebhookSignatureOptions</a></h4>
+      <section><p>VerifyWebhookSignatureOptions</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.VerifyWebhookSignatureResults.html">VerifyWebhookSignatureResults</a></h4>
+      <section><p>VerifyWebhookSignatureResults</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WaitForConditions.html">WaitForConditions</a></h4>
+      <section><p>Conditions to apply to emails that you are waiting for</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WaitForSingleSmsOptions.html">WaitForSingleSmsOptions</a></h4>
+      <section><p>WaitForSingleSmsOptions</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WaitForSmsConditions.html">WaitForSmsConditions</a></h4>
+      <section><p>Conditions to apply to emails that you are waiting for</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookBouncePayload.html">WebhookBouncePayload</a></h4>
+      <section><p>BOUNCE webhook payload. Sent to your webhook url endpoint via HTTP POST when an email bounced or was rejected by a recipient. Save the recipients to a ban list on your server and avoid emailing them again. It is recommended you also listen to the BOUNCE_RECIPIENT payload.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookBounceRecipientPayload.html">WebhookBounceRecipientPayload</a></h4>
+      <section><p>BOUNCE_RECIPIENT webhook payload. Sent to your webhook url endpoint via HTTP POST when an email caused a bounce to occur for a recipient. Save the recipient to a ban list of your server and avoid email them again.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookDeliveryStatusPayload.html">WebhookDeliveryStatusPayload</a></h4>
+      <section><p>DELIVERY_STATUS webhook payload. Sent to your webhook url endpoint via HTTP POST when an email delivery status is created. This could be a successful delivery or a delivery failure.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookDto.html">WebhookDto</a></h4>
+      <section><p>Representation of a webhook for an inbox. The URL specified will be using by MailSlurp whenever an email is received by the attached inbox. A webhook entity should have a URL that points to your server. Your server should accept HTTP/S POST requests and return a success 200. MailSlurp will retry your webhooks if they fail. See <a href="https://csharp.api.mailslurp.com/schemas/webhook-payload">https://csharp.api.mailslurp.com/schemas/webhook-payload</a> for the payload schema.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookEmailOpenedPayload.html">WebhookEmailOpenedPayload</a></h4>
+      <section><p>EMAIL_OPENED webhook payload. Sent to your webhook url endpoint via HTTP POST when an email containing a tracking pixel is opened and the pixel image is loaded by a reader.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookEmailReadPayload.html">WebhookEmailReadPayload</a></h4>
+      <section><p>EMAIL_READ webhook payload. Sent to your webhook url endpoint via HTTP POST when an email is read. This happens when an email is requested in full from the API or a user views the email in the dashboard.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookHeaderNameValue.html">WebhookHeaderNameValue</a></h4>
+      <section><p>Name value pair for webhook header</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookHeaders.html">WebhookHeaders</a></h4>
+      <section><p>Webhook HTTP headers to include with each request from MailSlurp to your server</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookNewAttachmentPayload.html">WebhookNewAttachmentPayload</a></h4>
+      <section><p>NEW_ATTACHMENT webhook payload. Sent to your webhook url endpoint via HTTP POST when an email is received by the inbox that your webhook is attached to that contains an attachment. You can use the attachmentId to download the attachment.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookNewContactPayload.html">WebhookNewContactPayload</a></h4>
+      <section><p>NEW_CONTACT webhook payload. Sent to your webhook url endpoint via HTTP POST when an email is received by the inbox that your webhook is attached to that contains a recipient that has not been saved as a contact.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookNewEmailPayload.html">WebhookNewEmailPayload</a></h4>
+      <section><p>NEW_EMAIL webhook payload. Sent to your webhook url endpoint via HTTP POST when an email is received by the inbox that your webhook is attached to. Use the email ID to fetch the full email body or attachments.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookNewSmsPayload.html">WebhookNewSmsPayload</a></h4>
+      <section><p>NEW_SMS webhook payload. Sent to your webhook url endpoint via HTTP POST when an sms is received by the phone number that your webhook is attached to. Use the SMS ID to fetch the full SMS details.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookProjection.html">WebhookProjection</a></h4>
+      <section><p>Representation of a webhook</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookRedriveResult.html">WebhookRedriveResult</a></h4>
+      <section><p>Result of retrying webhook</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookResultDto.html">WebhookResultDto</a></h4>
+      <section><p>Result of a webhook notification</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookTestRequest.html">WebhookTestRequest</a></h4>
+      <section><p>Result of webhook test request</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookTestResponse.html">WebhookTestResponse</a></h4>
+      <section><p>Response from webhook test request</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookTestResult.html">WebhookTestResult</a></h4>
+      <section><p>Results of testing a webhook</p>
+</section>
+    <h3 id="enums">Enums
+</h3>
+      <h4><a class="xref" href="mailslurp.Model.AbstractWebhookPayload.EventNameEnum.html">AbstractWebhookPayload.EventNameEnum</a></h4>
+      <section><p>Defines EventName</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ConditionOption.ConditionEnum.html">ConditionOption.ConditionEnum</a></h4>
+      <section><p>Condition of an email object that can be used to filter results</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ConditionOption.ValueEnum.html">ConditionOption.ValueEnum</a></h4>
+      <section><p>Expected condition value</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.CreateDomainOptions.DomainTypeEnum.html">CreateDomainOptions.DomainTypeEnum</a></h4>
+      <section><p>Type of domain. Dictates type of inbox that can be created with domain. HTTP means inboxes are processed using SES while SMTP inboxes use a custom SMTP mail server. SMTP does not support sending so use HTTP for sending emails.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.CreateEmergencyAddressOptions.IsoCountryCodeEnum.html">CreateEmergencyAddressOptions.IsoCountryCodeEnum</a></h4>
+      <section><p>Defines IsoCountryCode</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.CreateInboxDto.InboxTypeEnum.html">CreateInboxDto.InboxTypeEnum</a></h4>
+      <section><p>Type of inbox. HTTP inboxes are faster and better for most cases. SMTP inboxes are more suited for public facing inbound messages (but cannot send).</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.CreateInboxForwarderOptions.FieldEnum.html">CreateInboxForwarderOptions.FieldEnum</a></h4>
+      <section><p>Field to match against to trigger inbox forwarding for inbound email</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.CreateInboxReplierOptions.FieldEnum.html">CreateInboxReplierOptions.FieldEnum</a></h4>
+      <section><p>Field to match against to trigger inbox replier for inbound email</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.CreateInboxRulesetOptions.ActionEnum.html">CreateInboxRulesetOptions.ActionEnum</a></h4>
+      <section><p>Action to be taken when the ruleset matches an email for the given scope. For example: <code>BLOCK</code> action with target <code>*</code> and scope <code>SENDING_EMAILS</code> blocks sending to all recipients. Note <code>ALLOW</code> takes precedent over <code>BLOCK</code>. <code>FILTER_REMOVE</code> is like block but will remove offending email addresses during a send or receive event instead of blocking the action.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.CreateInboxRulesetOptions.ScopeEnum.html">CreateInboxRulesetOptions.ScopeEnum</a></h4>
+      <section><p>What type of emails actions to apply ruleset to. Either <code>SENDING_EMAILS</code> or <code>RECEIVING_EMAILS</code> will apply action and target to any sending or receiving of emails respectively.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.CreateWebhookOptions.EventNameEnum.html">CreateWebhookOptions.EventNameEnum</a></h4>
+      <section><p>Optional webhook event name. Default is <code>EMAIL_RECEIVED</code> and is triggered when an email is received by the inbox associated with the webhook. Payload differ according to the webhook event name.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.DNSLookupOptions.RecordTypesEnum.html">DNSLookupOptions.RecordTypesEnum</a></h4>
+      <section><p>Domain Name Server Record Types</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.DNSLookupResult.RecordTypeEnum.html">DNSLookupResult.RecordTypeEnum</a></h4>
+      <section><p>Domain Name Server Record Types</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.DomainDto.DomainTypeEnum.html">DomainDto.DomainTypeEnum</a></h4>
+      <section><p>Type of domain. Dictates type of inbox that can be created with domain. HTTP means inboxes are processed using SES while SMTP inboxes use a custom SMTP mail server. SMTP does not support sending so use HTTP for sending emails.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.DomainNameRecord.LabelEnum.html">DomainNameRecord.LabelEnum</a></h4>
+      <section><p>Domain Name Server Record Label</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.DomainNameRecord.RecordTypeEnum.html">DomainNameRecord.RecordTypeEnum</a></h4>
+      <section><p>Domain Name Server Record Types</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.DomainPreview.DomainTypeEnum.html">DomainPreview.DomainTypeEnum</a></h4>
+      <section><p>Type of domain. Dictates type of inbox that can be created with domain. HTTP means inboxes are processed using SES while SMTP inboxes use a custom SMTP mail server. SMTP does not support sending so use HTTP for sending emails.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.EmergencyAddress.PhoneCountryEnum.html">EmergencyAddress.PhoneCountryEnum</a></h4>
+      <section><p>Defines PhoneCountry</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.EmergencyAddressDto.PhoneCountryEnum.html">EmergencyAddressDto.PhoneCountryEnum</a></h4>
+      <section><p>Defines PhoneCountry</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ExportOptions.OutputFormatEnum.html">ExportOptions.OutputFormatEnum</a></h4>
+      <section><p>Defines OutputFormat</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ImapFlagOperationOptions.FlagOperationEnum.html">ImapFlagOperationOptions.FlagOperationEnum</a></h4>
+      <section><p>Defines FlagOperation</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.InboxDto.InboxTypeEnum.html">InboxDto.InboxTypeEnum</a></h4>
+      <section><p>Type of inbox. HTTP inboxes are faster and better for most cases. SMTP inboxes are more suited for public facing inbound messages (but cannot send).</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.InboxForwarderDto.FieldEnum.html">InboxForwarderDto.FieldEnum</a></h4>
+      <section><p>Which field to match against</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.InboxForwarderEventProjection.StatusEnum.html">InboxForwarderEventProjection.StatusEnum</a></h4>
+      <section><p>Defines Status</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.InboxPreview.InboxTypeEnum.html">InboxPreview.InboxTypeEnum</a></h4>
+      <section><p>Type of inbox. HTTP inboxes are faster and better for most cases. SMTP inboxes are more suited for public facing inbound messages (but cannot send).</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.InboxReplierDto.FieldEnum.html">InboxReplierDto.FieldEnum</a></h4>
+      <section><p>Defines Field</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.InboxReplierEventProjection.StatusEnum.html">InboxReplierEventProjection.StatusEnum</a></h4>
+      <section><p>Defines Status</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.InboxRulesetDto.ActionEnum.html">InboxRulesetDto.ActionEnum</a></h4>
+      <section><p>Defines Action</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.InboxRulesetDto.HandlerEnum.html">InboxRulesetDto.HandlerEnum</a></h4>
+      <section><p>Defines Handler</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.InboxRulesetDto.ScopeEnum.html">InboxRulesetDto.ScopeEnum</a></h4>
+      <section><p>Defines Scope</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.MatchOption.FieldEnum.html">MatchOption.FieldEnum</a></h4>
+      <section><p>Fields of an email object that can be used to filter results</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.MatchOption.ShouldEnum.html">MatchOption.ShouldEnum</a></h4>
+      <section><p>How the value of the email field specified should be compared to the value given in the match options.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.OrganizationInboxProjection.InboxTypeEnum.html">OrganizationInboxProjection.InboxTypeEnum</a></h4>
+      <section><p>Type of inbox. HTTP inboxes are faster and better for most cases. SMTP inboxes are more suited for public facing inbound messages (but cannot send).</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PhoneNumberDto.PhoneCountryEnum.html">PhoneNumberDto.PhoneCountryEnum</a></h4>
+      <section><p>Defines PhoneCountry</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PhoneNumberProjection.PhoneCountryEnum.html">PhoneNumberProjection.PhoneCountryEnum</a></h4>
+      <section><p>Defines PhoneCountry</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.PhonePlanDto.PhoneCountryEnum.html">PhonePlanDto.PhoneCountryEnum</a></h4>
+      <section><p>Defines PhoneCountry</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ReplyToAliasEmailOptions.SendStrategyEnum.html">ReplyToAliasEmailOptions.SendStrategyEnum</a></h4>
+      <section><p>How an email should be sent based on its recipients</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ReplyToEmailOptions.SendStrategyEnum.html">ReplyToEmailOptions.SendStrategyEnum</a></h4>
+      <section><p>How an email should be sent based on its recipients</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ScheduledJob.StatusEnum.html">ScheduledJob.StatusEnum</a></h4>
+      <section><p>Defines Status</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.ScheduledJobDto.StatusEnum.html">ScheduledJobDto.StatusEnum</a></h4>
+      <section><p>Defines Status</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.SendEmailOptions.SendStrategyEnum.html">SendEmailOptions.SendStrategyEnum</a></h4>
+      <section><p>How an email should be sent based on its recipients</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.SendEmailOptions.ValidateEmailAddressesEnum.html">SendEmailOptions.ValidateEmailAddressesEnum</a></h4>
+      <section><p>Validate recipient email addresses before sending</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.SmsMatchOption.FieldEnum.html">SmsMatchOption.FieldEnum</a></h4>
+      <section><p>Fields of an SMS object that can be used to filter results</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.SmsMatchOption.ShouldEnum.html">SmsMatchOption.ShouldEnum</a></h4>
+      <section><p>How the value of the email field specified should be compared to the value given in the match options.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.TemplateVariable.VariableTypeEnum.html">TemplateVariable.VariableTypeEnum</a></h4>
+      <section><p>The type of variable</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.UpdateInboxReplierOptions.FieldEnum.html">UpdateInboxReplierOptions.FieldEnum</a></h4>
+      <section><p>Field to match against to trigger inbox replier for inbound email</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.UserInfoDto.AccountStateEnum.html">UserInfoDto.AccountStateEnum</a></h4>
+      <section><p>Defines AccountState</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.UserInfoDto.AccountTypeEnum.html">UserInfoDto.AccountTypeEnum</a></h4>
+      <section><p>Defines AccountType</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.UserInfoDto.SubscriptionTypeEnum.html">UserInfoDto.SubscriptionTypeEnum</a></h4>
+      <section><p>Defines SubscriptionType</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WaitForConditions.CountTypeEnum.html">WaitForConditions.CountTypeEnum</a></h4>
+      <section><p>How result size should be compared with the expected size. Exactly or at-least matching result?</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WaitForConditions.SortDirectionEnum.html">WaitForConditions.SortDirectionEnum</a></h4>
+      <section><p>Direction to sort matching emails by created time</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WaitForSingleSmsOptions.SortDirectionEnum.html">WaitForSingleSmsOptions.SortDirectionEnum</a></h4>
+      <section><p>Defines SortDirection</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WaitForSmsConditions.CountTypeEnum.html">WaitForSmsConditions.CountTypeEnum</a></h4>
+      <section><p>How result size should be compared with the expected size. Exactly or at-least matching result?</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WaitForSmsConditions.SortDirectionEnum.html">WaitForSmsConditions.SortDirectionEnum</a></h4>
+      <section><p>Direction to sort matching SMSs by created time</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookBouncePayload.EventNameEnum.html">WebhookBouncePayload.EventNameEnum</a></h4>
+      <section><p>Name of the event type webhook is being triggered for.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookBounceRecipientPayload.EventNameEnum.html">WebhookBounceRecipientPayload.EventNameEnum</a></h4>
+      <section><p>Name of the event type webhook is being triggered for.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookDeliveryStatusPayload.EventNameEnum.html">WebhookDeliveryStatusPayload.EventNameEnum</a></h4>
+      <section><p>Name of the event type webhook is being triggered for.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookDto.EventNameEnum.html">WebhookDto.EventNameEnum</a></h4>
+      <section><p>Webhook trigger event name</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookDto.MethodEnum.html">WebhookDto.MethodEnum</a></h4>
+      <section><p>HTTP method that your server endpoint must listen for</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookEmailOpenedPayload.EventNameEnum.html">WebhookEmailOpenedPayload.EventNameEnum</a></h4>
+      <section><p>Name of the event type webhook is being triggered for.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookEmailReadPayload.EventNameEnum.html">WebhookEmailReadPayload.EventNameEnum</a></h4>
+      <section><p>Name of the event type webhook is being triggered for.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookNewAttachmentPayload.EventNameEnum.html">WebhookNewAttachmentPayload.EventNameEnum</a></h4>
+      <section><p>Name of the event type webhook is being triggered for.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookNewContactPayload.EventNameEnum.html">WebhookNewContactPayload.EventNameEnum</a></h4>
+      <section><p>Name of the event type webhook is being triggered for.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookNewEmailPayload.EventNameEnum.html">WebhookNewEmailPayload.EventNameEnum</a></h4>
+      <section><p>Name of the event type webhook is being triggered for.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookNewSmsPayload.EventNameEnum.html">WebhookNewSmsPayload.EventNameEnum</a></h4>
+      <section><p>Name of the event type webhook is being triggered for.</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookProjection.EventNameEnum.html">WebhookProjection.EventNameEnum</a></h4>
+      <section><p>Defines EventName</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookResultDto.HttpMethodEnum.html">WebhookResultDto.HttpMethodEnum</a></h4>
+      <section><p>Defines HttpMethod</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookResultDto.ResultTypeEnum.html">WebhookResultDto.ResultTypeEnum</a></h4>
+      <section><p>Defines ResultType</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookResultDto.WebhookEventEnum.html">WebhookResultDto.WebhookEventEnum</a></h4>
+      <section><p>Defines WebhookEvent</p>
+</section>
+      <h4><a class="xref" href="mailslurp.Model.WebhookTestRequest.MethodEnum.html">WebhookTestRequest.MethodEnum</a></h4>
+      <section><p>Defines Method</p>
+</section>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
