@@ -1,0 +1,4809 @@
+{
+  "homepages": [],
+  "source_base_path": "/tmp/workspace/output/csharp",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "j1VFtDcMuq3x85GhMXD/QknVFVZPgcYijtz5QSYP2V8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SECURITY.md",
+      "output": {
+        ".html": {
+          "relative_path": "SECURITY.html",
+          "hash": "XtxvCHUL4XHxgxhZi/VLtCdtVhSUlCqyrss7KHedmoE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SUPPORT.md",
+      "output": {
+        ".html": {
+          "relative_path": "SUPPORT.html",
+          "hash": "OzvsudfbY38HluhfeUIukHlTNZQNowRKSYYmP+AdKGM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.AliasControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.AliasControllerApi.html",
+          "hash": "lJjcGMzCmJBTWaXcwrJHlG7WgWiZ0pQuEzNYZXTQiws="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.AttachmentControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.AttachmentControllerApi.html",
+          "hash": "pPpW7gwxqgrKqq4G6ueB6CiEDqQjtH9UXAe/qGm6FK0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.BounceControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.BounceControllerApi.html",
+          "hash": "YNpjXhfOi0FZ5RxNdbccsNdocGrHfjduhKKQ3+kaMwk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.BulkActionsControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.BulkActionsControllerApi.html",
+          "hash": "QDKr88fogphgu+6sSq7ylk1DlrQBCFomqqM54O8D9WI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.CommonActionsControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.CommonActionsControllerApi.html",
+          "hash": "67BKO6nzp6UAESldgeOoAP/+5lq3VvhcLbu9VIcsqxw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.ConnectorControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.ConnectorControllerApi.html",
+          "hash": "fpHonkZSlZ+rh5e7ZOBhkDwObKqIvyrqoaoc24p5bnM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.ContactControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.ContactControllerApi.html",
+          "hash": "XZ+3gbIP8JWQJ9Vm9zzlhG7aPWddvkZq4wQqLtLyWY8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.DomainControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.DomainControllerApi.html",
+          "hash": "ZLee2WevxcNlxIAAzV9U/yVebkGY//Kgxm3pQQOedMs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.EmailControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.EmailControllerApi.html",
+          "hash": "CKML+21TOa1NJWZ41dNQbdiH6vii8YHSxlKQ3zrvo1M="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.EmailVerificationControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.EmailVerificationControllerApi.html",
+          "hash": "aWvKAoXcDqkutmVbBeBfUZrQDa4KKKptoo6RblaRwC4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.ExpiredControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.ExpiredControllerApi.html",
+          "hash": "F7Ap7CpOTAGHIl0ZAANqxEwIzsfpPqugiZETJ8kP9yk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.ExportControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.ExportControllerApi.html",
+          "hash": "XxZw8MmDqt/GbFEPedZ3zwEGnVmgj91bR0b3DiC44Ng="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.FormControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.FormControllerApi.html",
+          "hash": "3d1I0fLA4LhBMTdHzrKockAlelcZZIe++FP434TwH/U="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.GroupControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.GroupControllerApi.html",
+          "hash": "EnPOa9ssXRgRMILHHBETKu//QLvdpK4o8rh8+Tnglzk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IAliasControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IAliasControllerApi.html",
+          "hash": "4QdXS/JvxuXZXCj9FqgYK/tIFiChCDmpeMsXlxv/aP4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IAliasControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IAliasControllerApiAsync.html",
+          "hash": "aEF6a2T1c7aY+j7sV8fsQrgYMVWORC7ARPXzXpZfZKw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IAliasControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IAliasControllerApiSync.html",
+          "hash": "IpLtAXk/q2RVLqjjpxkmXtXgfGRIzMgo4e6GX8AQc3Q="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IAttachmentControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IAttachmentControllerApi.html",
+          "hash": "xyY5z4yRusdti5cD+sKjeMVmv6srk98aCH1SLVRDfCU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IAttachmentControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IAttachmentControllerApiAsync.html",
+          "hash": "1Dfqy2Ylt+3QYKs7CWzomfrva8T9I0QyvsKwnF3npIo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IAttachmentControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IAttachmentControllerApiSync.html",
+          "hash": "4MbCqMq0Qowrwohl5YVD81zR3Jq4PsDGcb4W2eK3uAk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IBounceControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IBounceControllerApi.html",
+          "hash": "g4WtwEKgWR7Q9mL/lEY8m/ZhyZeYQ3xjSE5KYZvVZ+k="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IBounceControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IBounceControllerApiAsync.html",
+          "hash": "g6O0lMznCd+dmpdhu/LzAAr4GF6v+7fEPga0r4IhnkY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IBounceControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IBounceControllerApiSync.html",
+          "hash": "iWlSQrcKWtVQEMUlKf89uXY+IeY1YSlEnM4uT4FFVUk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IBulkActionsControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IBulkActionsControllerApi.html",
+          "hash": "dT28Tlo8E75NcePkcgwQJa+v8Wm/C5x5YgnO56vCtY8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IBulkActionsControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IBulkActionsControllerApiAsync.html",
+          "hash": "Dx8wQBMOB7h6dU9iHv9zRf1zhMXa7UfkvlGzqweFOX8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IBulkActionsControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IBulkActionsControllerApiSync.html",
+          "hash": "M4BDA65NxxRslsZSQP+KScRTPwxP3EYy8Iq412sKdiU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.ICommonActionsControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.ICommonActionsControllerApi.html",
+          "hash": "60D4mMhDkdBd08MqCDPVjbmg5vE2mCaA25oTbwcYN9E="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.ICommonActionsControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.ICommonActionsControllerApiAsync.html",
+          "hash": "ik7fYMgqmiFtHgausB6kZCO4RscmnDjh1P7GUhbUjhk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.ICommonActionsControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.ICommonActionsControllerApiSync.html",
+          "hash": "S8WZIbtZepXAexVzWN9XOwiPn4r7vmbXM8BVIZHGJv4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IConnectorControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IConnectorControllerApi.html",
+          "hash": "IyeICunQiw5m0CPUX000x4ppbFf0+qUtFa3DvOhoUi8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IConnectorControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IConnectorControllerApiAsync.html",
+          "hash": "OCoia/WDPL7RGo3n+RpkASrPpqlqoMARorTkvklIiWs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IConnectorControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IConnectorControllerApiSync.html",
+          "hash": "lrr8WjPNt02S+rm0YEDwo34YsNNug638y090fGdnThA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IContactControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IContactControllerApi.html",
+          "hash": "TzDcmyhPVm3jVof5WOILBOcETM3b0S+pkWrC5Lk9S9U="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IContactControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IContactControllerApiAsync.html",
+          "hash": "JFmxcZLBYwpT/WI6FJ2C2C76vzillVioNlguuvGj2No="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IContactControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IContactControllerApiSync.html",
+          "hash": "MEbLL/1DYPXkdNU6IJNfX1SHpkDiluC4v2ocFyh+sWE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IDomainControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IDomainControllerApi.html",
+          "hash": "gJnjomLIa+ThR5qNWgtl8v+2NTv8opRCFemftiqOA5c="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IDomainControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IDomainControllerApiAsync.html",
+          "hash": "h8TaRHRin2e0DgEtlAEYT1bIObjiFza/5jWYVbRU8NU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IDomainControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IDomainControllerApiSync.html",
+          "hash": "KxwfpQrKRQ1RxBhwGycBRcfpxkwitv5HyBHDQKBGZZ8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IEmailControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IEmailControllerApi.html",
+          "hash": "ayfNTiC7P9t/rNpe4+GkISWh7Y95e9KvJZ+K8vDicW8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IEmailControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IEmailControllerApiAsync.html",
+          "hash": "gAt3ScdYVf388AAciDKgOMzsnlYlEgkHD3i52pfikZE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IEmailControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IEmailControllerApiSync.html",
+          "hash": "eSAflAt1Xo4y9Xku3xQHMaIbyJPqyhBgfF3NQmCt4nI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IEmailVerificationControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IEmailVerificationControllerApi.html",
+          "hash": "VBWOPSY8zsXJgWDGu9c1uUPOX5NZFK3UhV7i35Liy9A="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IEmailVerificationControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IEmailVerificationControllerApiAsync.html",
+          "hash": "Ri3H3F72GJTNonV/nlFZJjNSImlDotwaKi7axZUy2c4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IEmailVerificationControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IEmailVerificationControllerApiSync.html",
+          "hash": "ycCcxh+kvYrHCCfgkNwH2jdajZ6MnycdKAuOP47oP5g="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IExpiredControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IExpiredControllerApi.html",
+          "hash": "gJSCtOGjhLGNQmgbbDc9FBpKlVwtyY+5ZH9C+vIDRXA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IExpiredControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IExpiredControllerApiAsync.html",
+          "hash": "RnfzaMP59KjCCCXKfGqJG8vY9/RRdwUQZjOJ8HjO5N4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IExpiredControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IExpiredControllerApiSync.html",
+          "hash": "OEt2Y98HaTaqKSJLL4EVvnqYt7pwrtUGbBkSufd1hL4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IExportControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IExportControllerApi.html",
+          "hash": "uCGFDGvQwX1V1UQTLaMaWwUV0p0dDMPpCIl2kCIaIQg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IExportControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IExportControllerApiAsync.html",
+          "hash": "V36V6GV3YKtW+Ha5MiNE3mtZG44F848h/BldFea/z9Y="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IExportControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IExportControllerApiSync.html",
+          "hash": "2pRxho6y/n5L0IUIOdQgdHdZ8ACi9jDkDOOTUno+WhA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IFormControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IFormControllerApi.html",
+          "hash": "+Ykz/1zbrRpdGl+t9cXpiuVo6lxnOSs89cBE8gmYpSk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IFormControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IFormControllerApiAsync.html",
+          "hash": "1DLfRYLeq7DEqNKXqmA0BtoFSWoKGQAJqgoiLhikKx4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IFormControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IFormControllerApiSync.html",
+          "hash": "0db7rg+baIzTgK9fBeczoIsefWCCq0C4fQfdhU87s/w="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IGroupControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IGroupControllerApi.html",
+          "hash": "VZSs8gsCselj13guSc1whi3p8DyfPYjBr7eWwSdaIvM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IGroupControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IGroupControllerApiAsync.html",
+          "hash": "o1Dqn5kxl884S4DcC5ipuJ0if5YD4MUYfD+ZKwMETjY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IGroupControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IGroupControllerApiSync.html",
+          "hash": "YV2ghq0+Eblb7OtqVoOEYb1L5zU1klh0/nkC0GelinM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IInboxControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IInboxControllerApi.html",
+          "hash": "kFsrvZmifoXIktbcCWFBnjoN/bQC0I/Qku4CDha4OFM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IInboxControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IInboxControllerApiAsync.html",
+          "hash": "9gXy6C25k63RVPWqSunnFRHZxsZMUlS584Qc8ugSl2Y="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IInboxControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IInboxControllerApiSync.html",
+          "hash": "2XXC9+MNmki+J7Kql8h5YLx+yJe4zEGuFIqT2htG8bc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IInboxForwarderControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IInboxForwarderControllerApi.html",
+          "hash": "kjBywf6+RUfW/OuO3hMjIK0XSRWNfWPJiHKCkhz/1jY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IInboxForwarderControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IInboxForwarderControllerApiAsync.html",
+          "hash": "34rBHfZXZj8uMwqUNsfmLhOzgOsMc0zxVdqjcaZvNvs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IInboxForwarderControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IInboxForwarderControllerApiSync.html",
+          "hash": "ppQ3ZHqMC/zv2P4ysE+9EtW9cU3Zq0EXIATlD9jdYqU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IInboxReplierControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IInboxReplierControllerApi.html",
+          "hash": "3BVeAFHyuHd9Hij4+VQWPuNjRG2jcp9xTumjQNUzTr4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IInboxReplierControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IInboxReplierControllerApiAsync.html",
+          "hash": "89UEQVNKaxFOLxA/wfEoE7tlgmOEErM0JsEnWft/hNU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IInboxReplierControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IInboxReplierControllerApiSync.html",
+          "hash": "Mj1TgkW+8j65Qz8djbEK2kGMlcxVqJ6KgZxInJH22Qk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IInboxRulesetControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IInboxRulesetControllerApi.html",
+          "hash": "M7sZGH2yo3Hx26R2pWOcjy9jqdXSL16IRq4eX7F8jZo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IInboxRulesetControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IInboxRulesetControllerApiAsync.html",
+          "hash": "TTVYfqfly2vBlC64wjDEGeKwXm6IEgw2l6GfohXF9cw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IInboxRulesetControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IInboxRulesetControllerApiSync.html",
+          "hash": "Q2njWCijB8/n7M9nQmy4m8PKJvUc16flTd+HgYRtZ0w="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IMailServerControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IMailServerControllerApi.html",
+          "hash": "Zg6fP2DRs8nxS4SsoV25CV/Xufhlmi5+yDfCTckwHRA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IMailServerControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IMailServerControllerApiAsync.html",
+          "hash": "h9ARCJ//75E2GUzIsNqPrQHR0wSnBfG/8FMIhsyfHYk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IMailServerControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IMailServerControllerApiSync.html",
+          "hash": "JQrwNtyvkA7EJHBHc7vkWKHi4WgMSGmcM9MV/bw8xSA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IMissedEmailControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IMissedEmailControllerApi.html",
+          "hash": "Yoyae47jFNvSC6RseBCfYF/Dz+eh2eUyG0cPDrYbKhk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IMissedEmailControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IMissedEmailControllerApiAsync.html",
+          "hash": "V9xlCjZmTrXbqUJjbB5NOoi5ZQZ90Y/irkuaeiCkJEo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IMissedEmailControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IMissedEmailControllerApiSync.html",
+          "hash": "Yw5v0vzq0iqwuMTlPemZs02NJkuGrOJgGSvdpCr2XdQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IPhoneControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IPhoneControllerApi.html",
+          "hash": "lv6pF+ElcEXjQHozNAyM9J33l9mqSGIyA1liL+tNUJk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IPhoneControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IPhoneControllerApiAsync.html",
+          "hash": "tVW8eqRCSmI7LzwqqCDiRUg29sdY7+NewOiwCPFqbH4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IPhoneControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IPhoneControllerApiSync.html",
+          "hash": "XQtGdMaDut20govKS8VazWoOnkanzxco9q2iEHz7jAE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.ISentEmailsControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.ISentEmailsControllerApi.html",
+          "hash": "4CUEHA4P5sREvhqM3yiGyxJa3oH3PVDN9qQWKBtsZTg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.ISentEmailsControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.ISentEmailsControllerApiAsync.html",
+          "hash": "OsyUGMrLPPcokpzV1h6vWxtFy+beFVkKLenWwYjstWk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.ISentEmailsControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.ISentEmailsControllerApiSync.html",
+          "hash": "X1hueGsyxBMVWIvKP8CgVo+Xevplr/gRBlLKuW1nN4k="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.ISmsControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.ISmsControllerApi.html",
+          "hash": "ArCFHa9SCf76dVqIjbl495tmbiZCNqUFQAiQMKlxoLE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.ISmsControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.ISmsControllerApiAsync.html",
+          "hash": "LzIn0gJov0+xxwvvx0EvMonwJVCfy7A28kqZjsH0xCw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.ISmsControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.ISmsControllerApiSync.html",
+          "hash": "oxD4AaM9vazqCFB9ltR+zjNPhSKVRK9giKlym33J/yE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.ITemplateControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.ITemplateControllerApi.html",
+          "hash": "vJA9s+bdGOyb5kaNLKmdmM2Lp/D10tr2mjBdm9NdcaU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.ITemplateControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.ITemplateControllerApiAsync.html",
+          "hash": "tIy9tWBfnOJzuq9wqBZAGwKprDQmCStjouTCYHWSooo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.ITemplateControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.ITemplateControllerApiSync.html",
+          "hash": "YeCa+2+RVx6pPbD6A8baed1wPffymMTLnybKPwyW+p4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.ITrackingControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.ITrackingControllerApi.html",
+          "hash": "/SIgpXKELqkNKvAOu4Z0TsLQK+MJdKlGUMt9teQx3uM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.ITrackingControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.ITrackingControllerApiAsync.html",
+          "hash": "3hOUkqODD1k/ZHi1oKtQeKg3ewLIfUykXd7A3+KY1aM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.ITrackingControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.ITrackingControllerApiSync.html",
+          "hash": "uMtgb+Ed0z3YyGL8w7gWQpKQJLu1A81Cd66rcMSc4eM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IUserControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IUserControllerApi.html",
+          "hash": "760ihbK5TWu/wAM80elHHXaaGcOdKTa4QAtX+hYrKnI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IUserControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IUserControllerApiAsync.html",
+          "hash": "xPoXZGmzkrY+6RwUmUY1dSfWTzqsO+LClvgq38TuuNg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IUserControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IUserControllerApiSync.html",
+          "hash": "MuQp5J5ob5SNLkCM3dbSUD5ma+lYQuOj+mZocFadmZQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IWaitForControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IWaitForControllerApi.html",
+          "hash": "Edx258r1tc2+KVgw0Nqca8bsdDzd1zxErdgz1U7YDgs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IWaitForControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IWaitForControllerApiAsync.html",
+          "hash": "7IIFej1jSE6k2NhpmnaaijQhxDfxxjKqP4QmNvvnyF0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IWaitForControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IWaitForControllerApiSync.html",
+          "hash": "vSvI8ehgy5nqdWd2jywwgxuzEHwB0Sekl/KYhXAmr8k="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IWebhookControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IWebhookControllerApi.html",
+          "hash": "zIryb1Sv5qWeXmi3EmWbqinJj4fgiaNTLRv3rVYL8SI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IWebhookControllerApiAsync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IWebhookControllerApiAsync.html",
+          "hash": "sfHO8LhkW71oGhXW8IiSw6wcnrmg8tp+sX8twmDZYQ4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.IWebhookControllerApiSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.IWebhookControllerApiSync.html",
+          "hash": "cFP0FfS0769Fwiey0+DU+TKyeOn0U5FZ8ceCzKaP6QQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.InboxControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.InboxControllerApi.html",
+          "hash": "4uVQlZnNejBZIiq42y3hKSlGqQPXs/N0QsJZBcorMvE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.InboxForwarderControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.InboxForwarderControllerApi.html",
+          "hash": "ew8t6W4eHEKxRKPMPi8pTKvoOBySPFg6xOcyY/wyAcE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.InboxReplierControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.InboxReplierControllerApi.html",
+          "hash": "dMFD+JgRDh7UigrEMsvJBC5/IRa+AYZfECVXOHXD+NQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.InboxRulesetControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.InboxRulesetControllerApi.html",
+          "hash": "d+uf+rEXRbhWFQyjPFZ9RNFqQfaF3lFR7+4oEEJToV8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.MailServerControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.MailServerControllerApi.html",
+          "hash": "HtmJoM9PFiamJWVSlc2ua0xoGVOMgschWBTgRI9sLp8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.MissedEmailControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.MissedEmailControllerApi.html",
+          "hash": "dMTPWLIsHucMeM6KiMz2SezBHcHeUeiwDPiq8YyWgWU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.PhoneControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.PhoneControllerApi.html",
+          "hash": "IZR9GvGH4pUO4uYZSyzd5zreSHeDb0vJ11s0KQvQMRs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.SentEmailsControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.SentEmailsControllerApi.html",
+          "hash": "bJxr/FkVrw1KSKO3mkWsw+AoM5PAefBRcOgp1dBhUlQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.SmsControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.SmsControllerApi.html",
+          "hash": "FqWtPUaPSo92wU30Pb3t86u0ukNK0O7+3Vj2gKeg/p4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.TemplateControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.TemplateControllerApi.html",
+          "hash": "9438iZShGi0j1tNL7eo8lSFzch+zM4hdiwKEs/rDrcc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.TrackingControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.TrackingControllerApi.html",
+          "hash": "Mww9D+OBQfkN/KZMQXA3Z0FrtcwqBe7gVoozFZFKYn8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.UserControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.UserControllerApi.html",
+          "hash": "vAJwF4+Yr5yhRSzARl93zbw1iqdz620nH6FBeBkP8So="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.WaitForControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.WaitForControllerApi.html",
+          "hash": "krIQCiCH2B+4jEXTZsFvddK7i3Fdtea/VDrmNeCavD8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.WebhookControllerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.WebhookControllerApi.html",
+          "hash": "CLAk7NJSx30dT2fNEjWzEpt/KpZdB07XPdtZroqaAEA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Api.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Api.html",
+          "hash": "UXXiwgn3Xaom5JRlmdn6+Icke7T/IovBemH70otF9ks="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Client.ApiClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Client.ApiClient.html",
+          "hash": "a3X4fgtoEa58qeyz11U1Rdf3qst1XYFn1FI5Lfq1MJA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Client.ApiException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Client.ApiException.html",
+          "hash": "l8gVbsKbKeViPIe03BtLLns40utJ9NeeVhlN3UzspJI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Client.ApiResponse-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Client.ApiResponse-1.html",
+          "hash": "X3nYP5bWwv4WbvggprZqcPMVVAC+AO8vV8Cw32qi5l4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Client.ClientUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Client.ClientUtils.html",
+          "hash": "z7DsH2BLiAoW7L41UXnv0i+SnAhKGdfxFbz6hXnCPsY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Client.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Client.Configuration.html",
+          "hash": "2PeR5e96HAWtBWi9uysDLTcC7X9Dh3Z627laZdBcEt8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Client.ExceptionFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Client.ExceptionFactory.html",
+          "hash": "TUPIez9JbWNdC8NushhBZkuy/17HB/KFkiALt7nqp/c="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Client.GlobalConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Client.GlobalConfiguration.html",
+          "hash": "//F8V9NCapY4oQQOZo9EPcEE9289b/ZlbtehedlxSxE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Client.HttpMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Client.HttpMethod.html",
+          "hash": "7NE5G2UvZfYk6EjSL7m1iyM9LQd8FVneNoG7RiRkBmI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Client.IApiAccessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Client.IApiAccessor.html",
+          "hash": "YTmY6sy77dYIy44XIy1PZmNnsz/BSg1F4WHq+pEBghA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Client.IApiResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Client.IApiResponse.html",
+          "hash": "x8AExOjtZXPqWaP9paUoyYDVHjzf9bOrSJ/rcGuaxgI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Client.IAsynchronousClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Client.IAsynchronousClient.html",
+          "hash": "MKBadY23LgQ5ya3RdmV4e38LKmuFgooweOpWxLjMK/A="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Client.IReadableConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Client.IReadableConfiguration.html",
+          "hash": "dQRZUb474Zys8INyUqs1GQ+Mvw6ftUxQI+m5H1IFCww="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Client.ISynchronousClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Client.ISynchronousClient.html",
+          "hash": "TtF022elRmmuH2YplH5gviKubAwRhrcKkPXlkevkta4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Client.Multimap-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Client.Multimap-2.html",
+          "hash": "OL///2W3d3PCEPkgOe8E7gD9Bf7ZIApROSg7n7hpAF8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Client.OpenAPIDateConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Client.OpenAPIDateConverter.html",
+          "hash": "nu5XsCLIq4KhB/P6ykIaWBSXbKJGvaKUZ0eF3Q8+hi4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Client.RequestOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Client.RequestOptions.html",
+          "hash": "Goc97sbQaOTvsgZ8IWPWAowOL8+WIYkHjg1PZ0jRnwk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Client.RetryConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Client.RetryConfiguration.html",
+          "hash": "mSrv8n/i7+6Z2u6yv9sjmOThCnTdLD+ZpQUlaxUnN7k="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Client.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Client.html",
+          "hash": "dGAGqfIedMB6Uad+kawD57hGuFDUvCo08vo6+fd16lw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.AbstractOpenAPISchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.AbstractOpenAPISchema.html",
+          "hash": "WVwS6gZWk34o6HiQqtHhYlQJbfeUHw0hJ0e3846l8oY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.AbstractWebhookPayload.EventNameEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.AbstractWebhookPayload.EventNameEnum.html",
+          "hash": "4+I5nzz6QeaUG+1VlnAQhqUJHCZFvqTltNO/pBhTOJM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.AbstractWebhookPayload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.AbstractWebhookPayload.html",
+          "hash": "mCKB8JiJXLaB1tVtwromClevvi+7cvwZ/8yxnMUz8co="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.AliasDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.AliasDto.html",
+          "hash": "YZ0mWGTNNGzox/30QizuDvJhiQrZnvUmGMOYpYGtnr0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.AliasProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.AliasProjection.html",
+          "hash": "xjuHaLVi3GVWAZuUO5/CdmW3hObuZdlB7bY/LyyH6NY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.AttachmentEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.AttachmentEntity.html",
+          "hash": "XxxZRuMev6Ji8d29iKUOJzMRpinVzXzoYUAzpL5fsgI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.AttachmentMetaData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.AttachmentMetaData.html",
+          "hash": "husQ5gCzrOvypZzvZMv/ZyWsjFlVPQeAd2ENvfkb7N4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.AttachmentProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.AttachmentProjection.html",
+          "hash": "9CmULni6w1KFrYnBTGalO3WTqGzhJ/KKvfUV23yfgoM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.BasicAuthOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.BasicAuthOptions.html",
+          "hash": "tB7K8ChwpRioizUhRZ3WFzDDzAUS2oekho5/RvGk8hY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.BounceProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.BounceProjection.html",
+          "hash": "tH5NF+8Gvzezs8AEe5MpkoD7py1Xla2O61bgHFtmsQo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.BounceRecipientProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.BounceRecipientProjection.html",
+          "hash": "sw8ZUeI7lZAaLWOpym2xO0qUu9rPr0ZpVdTm3UVy/PU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.BouncedEmailDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.BouncedEmailDto.html",
+          "hash": "b8QRyD2049RP8pXY/HMfq0BXTvLPeCM2ZbHKAqB+tUs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.BouncedRecipientDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.BouncedRecipientDto.html",
+          "hash": "kr9lRaRKmXJ/xSoTFAdTTuSvY7xSW8x7IS5WrkV97W8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.BulkSendEmailOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.BulkSendEmailOptions.html",
+          "hash": "hvMtonNwt3CaX7l88yqUBqA6yeLufwzlo3Z2gbl16TQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.Complaint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.Complaint.html",
+          "hash": "Qfeht/JIwuX0uq6dwgDtQirIkZ6AgDlenrv24n9MX2o="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ConditionOption.ConditionEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ConditionOption.ConditionEnum.html",
+          "hash": "KKWuGStvhhwN7RljMu0MGpP6nAqXubp7nlbzHIqAJLI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ConditionOption.ValueEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ConditionOption.ValueEnum.html",
+          "hash": "2xdE03PLhZbGdSRF3ZA9cP8OPYIWFVh0IqSmjASXLwk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ConditionOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ConditionOption.html",
+          "hash": "jHg3bE0eap8Hb0ZqeiLhixRyXaM3dILLJGNHRb8fdQ8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ConnectorDto.ConnectorAuthTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ConnectorDto.ConnectorAuthTypeEnum.html",
+          "hash": "bj9n5R4rqli1G+ZhV64aNCKBzrjf2Wu392Juv4fg6Tg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ConnectorDto.ConnectorTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ConnectorDto.ConnectorTypeEnum.html",
+          "hash": "237z2CkMZadq3qHv/kzyt54/RYl8APZxaEhofIeyoNs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ConnectorDto.SyncScheduleTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ConnectorDto.SyncScheduleTypeEnum.html",
+          "hash": "afmwgzWsQ9HgpLnwOROiyHKya7MzDFU6VL2e5xh/mH4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ConnectorDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ConnectorDto.html",
+          "hash": "wYZ2tiHeJzBsIRjJypwPRI+9y3enCu5JN0ZLI8ADr60="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ConnectorProjection.ConnectorTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ConnectorProjection.ConnectorTypeEnum.html",
+          "hash": "kELLmTno9rJ+hgML8Oxb2fcOm8EjZteQpj9dD/5sAyI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ConnectorProjection.SyncScheduleTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ConnectorProjection.SyncScheduleTypeEnum.html",
+          "hash": "HyCjnpNF3tx7USoMhzyjZL0VWyO1VnTbRsuKTJhhY+s="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ConnectorProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ConnectorProjection.html",
+          "hash": "/mwYpn5a3i0HtDpdNzdN3Kj6to4xqW/Yq+LxdrvCYKc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ConnectorSyncEventDto.SyncStatusEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ConnectorSyncEventDto.SyncStatusEnum.html",
+          "hash": "0Fg6SgmdgJO+ykiybU2Auag0/8BIXiDbV6DBanT7AMs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ConnectorSyncEventDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ConnectorSyncEventDto.html",
+          "hash": "rIhvNTGfbR2WXzZem7HqNOe8lt2dO54U0DI4iri8ITc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ConnectorSyncEventProjection.SyncStatusEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ConnectorSyncEventProjection.SyncStatusEnum.html",
+          "hash": "5E0ZjCov4E7Txu4eZ+e4n7BP0ZZucq4eTw97rGE/Q/Y="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ConnectorSyncEventProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ConnectorSyncEventProjection.html",
+          "hash": "o71VYCIh9fi1v8cudAjWBhDB5rs6of9/vonglULQbKY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ConnectorSyncRequestResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ConnectorSyncRequestResult.html",
+          "hash": "ZJ5ccHzU8zkOevrC/mXdjod1GYDPLJAs7fWfgIuYP74="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ConnectorSyncRequestResultException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ConnectorSyncRequestResultException.html",
+          "hash": "vELtv92TfL5QgKVpf6LC3ICIwiFKaad5zks/ui6wLHc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ConnectorSyncRequestResultExceptionCause.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ConnectorSyncRequestResultExceptionCause.html",
+          "hash": "Zy5/tnIxiRYP4Zs4eU0bLtnus+F+7aE+dM9GQSc6ACM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ConnectorSyncRequestResultExceptionCauseStackTraceInner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ConnectorSyncRequestResultExceptionCauseStackTraceInner.html",
+          "hash": "ORAYcvCVqEt6uGJx5jTnRWYmur1TBKy50/U9HwCkQgk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ConnectorSyncRequestResultExceptionCauseSuppressedInner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ConnectorSyncRequestResultExceptionCauseSuppressedInner.html",
+          "hash": "u796JEkK/cjrvXAkUQBX9dr7si6xLhc3D4Xn95AgpGk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ConnectorSyncResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ConnectorSyncResult.html",
+          "hash": "t2u5+qRbHdJIHTM+PhAyeAObBWQlXl7Nes+NViIHDm4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ContactDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ContactDto.html",
+          "hash": "SPLJUg2d4tke3kVsaDEzPOYevPWv7DrFWXVnqr0vjQU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ContactProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ContactProjection.html",
+          "hash": "EzTXy9MefkGhVXF4pP1s6mezr42A9fpTCofP22yxdv8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ContentMatchOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ContentMatchOptions.html",
+          "hash": "MuZaXmg+nq2gaMARYxMSggC/hD3f8Ga0DdR9laM2A+E="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CountDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CountDto.html",
+          "hash": "olcJ7r+F6IAl3YYrfwRqSh6+Gk16LTLraI5CXL9MOnE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CreateAliasOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CreateAliasOptions.html",
+          "hash": "I998TsMxjEE/7q88oMDPJ2dtt14Z4DH2B0N6E0K4ggo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CreateConnectorImapOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CreateConnectorImapOptions.html",
+          "hash": "beJP+zs3nhkrtjKZP/uxGzT81Oq/jR/rTgQE9qkaAvw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CreateConnectorOptions.ConnectorAuthTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CreateConnectorOptions.ConnectorAuthTypeEnum.html",
+          "hash": "MQtzO1myCcODMvhDQOX9/UocXc3aOp75fDrqS7lULEI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CreateConnectorOptions.ConnectorTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CreateConnectorOptions.ConnectorTypeEnum.html",
+          "hash": "rRSn719ayYDUFDdG7GBNFY6rVQDfxkEtPb219o2iWFY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CreateConnectorOptions.SyncScheduleTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CreateConnectorOptions.SyncScheduleTypeEnum.html",
+          "hash": "YACfllCYjn38ZP/kqCC7cGGyC6KRPGKoAUmRXO60DrQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CreateConnectorOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CreateConnectorOptions.html",
+          "hash": "GGCT6j/jE3759olbCPbu63rS++ppUgw4koHEz+5kAdk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CreateContactOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CreateContactOptions.html",
+          "hash": "ZQFiJKvhnQD43QNitfAt/7+a15fRg05AbfXmoStoqlo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CreateDomainOptions.DomainTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CreateDomainOptions.DomainTypeEnum.html",
+          "hash": "Jry/7d9t0CfZFnllPkhLPOwDrNzEPF5Gbbwt4q8A58w="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CreateDomainOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CreateDomainOptions.html",
+          "hash": "vrs5M2DrvskN/bu0jOD8NXexVH1CKraqFNWAyfzbvq4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CreateEmergencyAddressOptions.IsoCountryCodeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CreateEmergencyAddressOptions.IsoCountryCodeEnum.html",
+          "hash": "LZci+8XXrrQnHBj0MvJZtgqKxLLLnrPsxSJWBjfIXpk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CreateEmergencyAddressOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CreateEmergencyAddressOptions.html",
+          "hash": "mivb6OWqFr/wGCoJ3H+DuIAKo2lIDP8+hM8B9GkGEQU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CreateGroupOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CreateGroupOptions.html",
+          "hash": "pLsnT2BPrHsHjHN7Z6RSo4uQbOvglRJPNkHhOpll7Fw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CreateInboxDto.InboxTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CreateInboxDto.InboxTypeEnum.html",
+          "hash": "7lD76GxmzpE6IiN6TJxOWPYorS4DWJQc66SZH0745Cw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CreateInboxDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CreateInboxDto.html",
+          "hash": "oPyJ3LoqW1Yhf+JNgP+n5aV2uOfNuiNNThQl+UnPriY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CreateInboxForwarderOptions.FieldEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CreateInboxForwarderOptions.FieldEnum.html",
+          "hash": "2udrUKTe3vE/0TB2nV66UATipcszjOvTuUtqqn7VsHM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CreateInboxForwarderOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CreateInboxForwarderOptions.html",
+          "hash": "723lZKU2eDClEI6xo3ki7S+hIFZwtjYMT2OlcshxZrs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CreateInboxReplierOptions.FieldEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CreateInboxReplierOptions.FieldEnum.html",
+          "hash": "PjBrybRfD8t4QRHKCPSmCHQgivxC3y1VYaIfPvEgnPg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CreateInboxReplierOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CreateInboxReplierOptions.html",
+          "hash": "nPWLP80Gr8WyOQoX5e6QQzz1kzoGBJc4xPO4Y7fIDLQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CreateInboxRulesetOptions.ActionEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CreateInboxRulesetOptions.ActionEnum.html",
+          "hash": "+bA+1WoyGvTFv6FRgSO6J5WW/4cBbmdKqy0OA+nVVUY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CreateInboxRulesetOptions.ScopeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CreateInboxRulesetOptions.ScopeEnum.html",
+          "hash": "uG9whJDtWQbVWhzkWvTTiSgdonMOTYrR+YOXScQoZMo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CreateInboxRulesetOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CreateInboxRulesetOptions.html",
+          "hash": "tgZ2Pv4xtfih9fAiSUD5tMfAzf2p05EsB7dj3s+J9Ts="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CreateTemplateOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CreateTemplateOptions.html",
+          "hash": "iaPvqliqHDY4vWfhBYyDpCuZHiyXgFkEEwBU7J59Org="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CreateTrackingPixelOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CreateTrackingPixelOptions.html",
+          "hash": "sLOtJ+1Te5R7/cnDS+jksOy5WmU9e/phxuRPOaDkj0A="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CreateWebhookOptions.EventNameEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CreateWebhookOptions.EventNameEnum.html",
+          "hash": "CraeC2A1atB4adLqwajxUuvDGuK+ngPPAp5I8TKH3F8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.CreateWebhookOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.CreateWebhookOptions.html",
+          "hash": "oz0hEgDdGAJf6KjgwvHSzER4HzF+6XTefp1HNeHr+i4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.DNSLookupOptions.RecordTypesEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.DNSLookupOptions.RecordTypesEnum.html",
+          "hash": "fzuZBm14mDlabihMg1MBMzv8DYWoeS2wBz1aWOymDqE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.DNSLookupOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.DNSLookupOptions.html",
+          "hash": "+IsMUDx3Xh1m4wrhWFcDfQHJeKov+NDUMrlmJD8Yap0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.DNSLookupResult.RecordTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.DNSLookupResult.RecordTypeEnum.html",
+          "hash": "WuIBN+z4wWTeQ12Z2xcZuM6zaxCUiESPZWlf3AYD11Q="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.DNSLookupResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.DNSLookupResult.html",
+          "hash": "q84nR6ebON9aOHAVNGrw3HEKhtsAlo0+wVNiu+gwEnE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.DNSLookupResults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.DNSLookupResults.html",
+          "hash": "YW3PtIJSvLYiaRlfIDrp/JALYHv3ZDYjzCEd7SUQQRg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.DeliveryStatusDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.DeliveryStatusDto.html",
+          "hash": "baxsOUlab3DWvURR4hvhSbDnDcdT2Wh9nFWCHRx+reE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.DescribeDomainOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.DescribeDomainOptions.html",
+          "hash": "411oJgGzcU5iw3Zd4rdPFZWGMLeEVrRc2I4RC4tYUbE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.DescribeMailServerDomainResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.DescribeMailServerDomainResult.html",
+          "hash": "Y/dhX0SRUBa+Aozc6BbMRD/UzgWoU4H8rc1/geYNMfA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.DomainDto.DomainTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.DomainDto.DomainTypeEnum.html",
+          "hash": "wO+oDLyb58g81dbjgvxD3L4J8HVg0wiZVA2YR2oXwMU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.DomainDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.DomainDto.html",
+          "hash": "HyUtDcERSH9oYA3fJpPlCMSq1ATEkHHLKa6LXgBSUuw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.DomainIssuesDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.DomainIssuesDto.html",
+          "hash": "T/u5WqRlz9JGdQAttUeP8l6DS2FzEzg/r4xskdKYRV4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.DomainNameRecord.LabelEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.DomainNameRecord.LabelEnum.html",
+          "hash": "j4v4hR3dtKmXLcqYnEQEUNvhOrToW2qWkl0/dZvxGeU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.DomainNameRecord.RecordTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.DomainNameRecord.RecordTypeEnum.html",
+          "hash": "w0P7pgowl9Bqu+ecDQn0enpKllysEa4goHZTT34dlEk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.DomainNameRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.DomainNameRecord.html",
+          "hash": "ZQwy8HQtb7O/b1o8wmzi+I9XE/itXU/vOLiRpLGA+K8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.DomainPreview.DomainTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.DomainPreview.DomainTypeEnum.html",
+          "hash": "G+U/RMc7b+UmrP8EN6RhvgMs0r1iol6wK1BSXykucVQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.DomainPreview.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.DomainPreview.html",
+          "hash": "1Swsq1uyBqJGRD+ZeEgp5NrayVzr96MXhP1EcU7U7tI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.DownloadAttachmentDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.DownloadAttachmentDto.html",
+          "hash": "5G0ASeTXpBLZQn4NUieogbduneGeJDZP89FXypp9P9I="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.Email.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.Email.html",
+          "hash": "zuoPBTKSAVaSftm9IrbIqATWBRU5MCb7FTrH6LxrfGs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.EmailAnalysis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.EmailAnalysis.html",
+          "hash": "LxYgCcsSPJbVmIZqO57s0IxwGJrdmFeQUpVRKO2XGWQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.EmailContentMatchResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.EmailContentMatchResult.html",
+          "hash": "iSy7MgCybOycHzDjip6vEE/a54vXxUZ+azUk8v6OIHw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.EmailHtmlDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.EmailHtmlDto.html",
+          "hash": "nyd7hS1dLVLAYE+M7RM9ifDtz4ohU0YhUR9qp16+rI4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.EmailLinksResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.EmailLinksResult.html",
+          "hash": "NvptAl3V3+QVHL5yS6R+QeQpLusTIP9U5Y1T+bovtyQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.EmailPreview.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.EmailPreview.html",
+          "hash": "Eip3f6ceRDmcJqduK/jwT1MY7w135qVa1iLh0IAWCjc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.EmailPreviewUrls.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.EmailPreviewUrls.html",
+          "hash": "TC7jXvG+Ow8UXvAXerwRwy+UmeZmbgm359TqaADglv0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.EmailProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.EmailProjection.html",
+          "hash": "2C26ZaHozZDbrb7jG+JdecN8xdWoxMjPDuuR/vuKOy0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.EmailRecipients.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.EmailRecipients.html",
+          "hash": "pe8joEBlkD6cFIUHEdER9ByiLYUGLux1ANB1WF1Vi0Y="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.EmailTextLinesResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.EmailTextLinesResult.html",
+          "hash": "cgSeRzP3a8sjQg9gxXrBhvabE5UHfzb8nLN8tIO4P5s="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.EmailValidationRequestDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.EmailValidationRequestDto.html",
+          "hash": "nm3awURpzl/2iUpbd/9fM6r4uyOEmzIyTrDsz35Bp6E="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.EmailVerificationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.EmailVerificationResult.html",
+          "hash": "U8jEx3Q7UtNQ0WUXPKunRdE/OvZBJL9GmSVqvoLuzrk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.EmergencyAddress.PhoneCountryEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.EmergencyAddress.PhoneCountryEnum.html",
+          "hash": "dfpCUP5XsL7bzx3jaCoeYJdjCqdlm2r3iAx/5MKOAX4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.EmergencyAddress.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.EmergencyAddress.html",
+          "hash": "qwK8OlxNKimI90lw7SqeZ5bhO3WFDCT1+iENyrfECT0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.EmergencyAddressDto.PhoneCountryEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.EmergencyAddressDto.PhoneCountryEnum.html",
+          "hash": "rmo1akOuH6cjDpbFa2ji+wYCqKAuXJgyYARAXc3IdV4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.EmergencyAddressDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.EmergencyAddressDto.html",
+          "hash": "Bn65TSf2FJqiIkm4EOy17t7q8TQXnrRMwx5NgALU/lE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.EmptyResponseDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.EmptyResponseDto.html",
+          "hash": "0PjfjtFbgVMvpqlxEocVbVzG4IdSG6mSz5Th3ZvCfa4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ExpirationDefaults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ExpirationDefaults.html",
+          "hash": "bmT7ym41b/+UUR4TR7PjVSi9V0EJdsWShc7/Fc5oMIY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ExpiredInboxDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ExpiredInboxDto.html",
+          "hash": "5JOh63hnsHICj6VZaPq9qBUX1PxKi5P1kCJp0YvqY/s="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ExpiredInboxRecordProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ExpiredInboxRecordProjection.html",
+          "hash": "YfN9f0q6nYd/fvBgU3Rd9/MUI/u8E2HGkM5QzPHS1Ck="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ExportLink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ExportLink.html",
+          "hash": "Z/26M7zHn+aHttL+NhdsPkzNke78TRyaOxFyXxzo7II="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ExportOptions.OutputFormatEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ExportOptions.OutputFormatEnum.html",
+          "hash": "x8xuGdEpYqQ9E4lmqQ2vhz5WfBNz8HU9kEyInYtc/nw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ExportOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ExportOptions.html",
+          "hash": "wSexTDOn066t8VefjWzuVWnEMWe+y8iQF3z0yC2UE+E="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.FilterBouncedRecipientsOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.FilterBouncedRecipientsOptions.html",
+          "hash": "a2yd7dmI95RsexPJ36+IzKPtn8I435QV9lbE5iOujfI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.FilterBouncedRecipientsResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.FilterBouncedRecipientsResult.html",
+          "hash": "JR0egz7uv08kIXFx9i8EAfyn1bPnTwhb90roJSuCSIg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.FlushExpiredInboxesResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.FlushExpiredInboxesResult.html",
+          "hash": "3ue3JD3UxcUXfJY8HkVRnc43y6Dj+nYZ9AswEGEv2i4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ForwardEmailOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ForwardEmailOptions.html",
+          "hash": "bS4BDQLM2vSdD37YqajCtSCbSbbFR0x1+T3Xl37Dxfg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.GravatarUrl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.GravatarUrl.html",
+          "hash": "iTdepPnHOeOOGf/hU5IWKiiRNfpbJ8eQkUCAF5ctPLc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.GroupContactsDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.GroupContactsDto.html",
+          "hash": "+Bz6ijJrFxDjChC6u6gghbDkNVCwcr1enAUImXnjOag="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.GroupDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.GroupDto.html",
+          "hash": "m/wWVc+kHgpZlnEpn++/SAXk2Pffp3hV7M1y7jSEz1c="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.GroupProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.GroupProjection.html",
+          "hash": "QZdysVzBPd0NrLDQj5aq2GqS+zc+PsX9Vn6Fx4QNpS4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.HTMLValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.HTMLValidationResult.html",
+          "hash": "8t3M61iGqRDZti1NZJDAPvAwZR67HQIJfWygFL1iA7o="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.IPAddressResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.IPAddressResult.html",
+          "hash": "YIHiiw57hf676FmVScY7nsS2t/NuyWjkpklGnIRq9qA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ImapFlagOperationOptions.FlagOperationEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ImapFlagOperationOptions.FlagOperationEnum.html",
+          "hash": "01xxcIKi4u3v15//TpawINXnAY3OfCnA+ImhEXXCtZ4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ImapFlagOperationOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ImapFlagOperationOptions.html",
+          "hash": "wPiSH2rH8hD4idQS4KjHwvfHtcOYx+wl77s51pDeJ/I="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ImapSmtpAccessDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ImapSmtpAccessDetails.html",
+          "hash": "2uw/En6dc8ZpsinXjhhFWN1A0//aI5+ueBoAPiQK/Tg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.InboxByEmailAddressResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.InboxByEmailAddressResult.html",
+          "hash": "drnpcWnp7E00SaP4SFi3voneGPawhwHLQGcnnMa1Vak="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.InboxByNameResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.InboxByNameResult.html",
+          "hash": "TVZY7jg36Sp7JrXOzHaL0BZVNMFfSaR4//sQ1bzVgPc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.InboxDto.InboxTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.InboxDto.InboxTypeEnum.html",
+          "hash": "INC+u0hZLpmehus0OJoyfw7BXf1e02HFadvmerjmtTY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.InboxDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.InboxDto.html",
+          "hash": "Z8bvL9QrD10WcX1MhE/QrS3Qf/eA06MnW6GtboNguJs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.InboxExistsDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.InboxExistsDto.html",
+          "hash": "dCx2PBsCX4KxU6GaLN2cue5dRmJXTE/SB8RaRVLm9Lc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.InboxForwarderDto.FieldEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.InboxForwarderDto.FieldEnum.html",
+          "hash": "PgXPW1oei9XzdPhtK5r9UUJv/mkaK+s83p4UXc9j1BI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.InboxForwarderDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.InboxForwarderDto.html",
+          "hash": "OuDoWRsY2Myop+/f+PRd17GRqwGlJjWFkdX1V8IfBT8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.InboxForwarderEventProjection.StatusEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.InboxForwarderEventProjection.StatusEnum.html",
+          "hash": "R60W+aCf8r5Emr7YpRdaFP7eA4YdRgrCNu6hJ9CAsms="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.InboxForwarderEventProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.InboxForwarderEventProjection.html",
+          "hash": "B7EuMqZRj6CBvLibQ9GAPnVfgaiSrvs1d4AkU+KEPaQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.InboxForwarderTestOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.InboxForwarderTestOptions.html",
+          "hash": "M/fjpNNlp2zEwRaUTi902rSpScl9P4KBMMeIn9VN2Tw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.InboxForwarderTestResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.InboxForwarderTestResult.html",
+          "hash": "ZwyRr19RxnEVuse9h2A4AYvTKm3Xn47rpvcKLGp/280="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.InboxIdItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.InboxIdItem.html",
+          "hash": "Qh/5mZFFMlWEJ6nVbuoN9dKTyhWukYeu8okvTrzkzew="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.InboxIdsResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.InboxIdsResult.html",
+          "hash": "MOpQdzkpq0MLRBJ9UBi9C38DWxzqkGqXiM2jb+Tfeqc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.InboxPreview.InboxTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.InboxPreview.InboxTypeEnum.html",
+          "hash": "mNwFHPHuUZHCKxh11no+YakD/sXwX0Il0/cKZDZv8RQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.InboxPreview.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.InboxPreview.html",
+          "hash": "iLRwCZTIU9WLhumCZ687677PIB51hfT5juFPgyFAszw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.InboxReplierDto.FieldEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.InboxReplierDto.FieldEnum.html",
+          "hash": "e0ux+LDm8Mf2S7O74bNYKoK4mfPMKWc+KEbsRzCrhMo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.InboxReplierDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.InboxReplierDto.html",
+          "hash": "63aEOcdYWOI/paWp6S7mO1XccE7eQk+le6KvzLvrePs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.InboxReplierEventProjection.StatusEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.InboxReplierEventProjection.StatusEnum.html",
+          "hash": "2wU2U8J8Xcv3HVztM6pAU71Yp6wgwCJwZsi9yl2/5gU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.InboxReplierEventProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.InboxReplierEventProjection.html",
+          "hash": "C182/RR9PiD3471Hg3upq5siIiGrzj7p50YBeQZFNiQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.InboxRulesetDto.ActionEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.InboxRulesetDto.ActionEnum.html",
+          "hash": "mYCaCMTkTy906zMmhGUpdo2LRJL2WntyU4qRguX6Euo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.InboxRulesetDto.HandlerEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.InboxRulesetDto.HandlerEnum.html",
+          "hash": "VxrCjNzCv7ohh3sdy0fsZZ7LGXRVjxNPRpDzRLkeKqY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.InboxRulesetDto.ScopeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.InboxRulesetDto.ScopeEnum.html",
+          "hash": "Govk4dk9+PJRJ959DBYot6of5dq2hpRzlfSOoj9hzzM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.InboxRulesetDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.InboxRulesetDto.html",
+          "hash": "7YvbQRadDWxg1ws9UH74ZxyOefiHZsWIXL0Nbu2qYFg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.InboxRulesetTestOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.InboxRulesetTestOptions.html",
+          "hash": "gmdqAy3IbnPmdBiXSbdDcLJP+9pFk9RKIWDpYA//5qY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.InboxRulesetTestResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.InboxRulesetTestResult.html",
+          "hash": "+GhjJUWPZBYryf5ZtnIVMbhACEbAkHlwC1WIraO88MA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.JSONSchemaDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.JSONSchemaDto.html",
+          "hash": "Fk4GRXunJ3JSUlg9TKOOl5kn6uHVgKlm2+P1QHd/jfw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ListUnsubscribeRecipientProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ListUnsubscribeRecipientProjection.html",
+          "hash": "fcDQDlmbhbnIajzz2CG+L5K7P3ltdeYLqYZQ0ppm1OU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.MatchOption.FieldEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.MatchOption.FieldEnum.html",
+          "hash": "cppmHi78xaAPUvQdDHHovrrcWRaLDYfqZOufuVlohMQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.MatchOption.ShouldEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.MatchOption.ShouldEnum.html",
+          "hash": "P2+XxBJLyqVEnN6LZgkViigBqRrpqm70aZChomh7ltI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.MatchOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.MatchOption.html",
+          "hash": "HMhU15eGb5Xy0vqteFY8l/bguEne8zPKj0EBXF3ls4o="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.MatchOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.MatchOptions.html",
+          "hash": "rjKusf5EEIQ+kMJzaKqom1FlmzR8/LW9PA81tuF7md0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.MissedEmailDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.MissedEmailDto.html",
+          "hash": "0/9RNBvGxUszcBvx1Eqtm4i95Y9v4Br0/mfA7fM/uxk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.MissedEmailProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.MissedEmailProjection.html",
+          "hash": "2zm9f9NzpUZLWy7YqrEhddefztNzqyO5kwGeGGoamIw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.NameServerRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.NameServerRecord.html",
+          "hash": "ZCtcLZh5QdUgwrPDGWakTwYS+4VCEnaiLY69V6moT2A="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.OrganizationInboxProjection.InboxTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.OrganizationInboxProjection.InboxTypeEnum.html",
+          "hash": "jEM+yHMMwf68jonWJiYF+1gtp0ZHO8KvxY2EungwMkE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.OrganizationInboxProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.OrganizationInboxProjection.html",
+          "hash": "y3CbE3yWNjhZLToHt/hwbItMxvM5jk1ecL8IEWl7FqU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageAlias.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageAlias.html",
+          "hash": "J4j0cFmR0bbanvHKFI4+6QEJEEPVa9WvdBTOirs5icc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageAttachmentEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageAttachmentEntity.html",
+          "hash": "kW9EfEXTFiZds/vLy1lnXWxD0R+RFplyA7ukthuUsOE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageBouncedEmail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageBouncedEmail.html",
+          "hash": "PUP9rRNEHDKumyMpYKoFUNUJdphM548a/UM6LwQc2oo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageBouncedRecipients.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageBouncedRecipients.html",
+          "hash": "++EJVpiK6bQzuMqPewDRVPY6T0bsVHyOvkOgqfhTpV8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageComplaint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageComplaint.html",
+          "hash": "xsmQB5N5VxZz5vdUzjUGsE1uc2nArlP9zqD8H3gXHg4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageConnector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageConnector.html",
+          "hash": "IGi8rpQl3H0yQkAu6YNC+aCv4jyNPemyrIrnZF/v58I="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageConnectorSyncEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageConnectorSyncEvents.html",
+          "hash": "fv5l5h9J+oPrbX+QAf6o6Z/4il7Zq7mR5PceTtqMNN4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageContactProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageContactProjection.html",
+          "hash": "xw2UpsTVPSPPXKgrVCf4Oc0Wm/Sncu8lsNi+ggRCOrs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageDeliveryStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageDeliveryStatus.html",
+          "hash": "MzRG368fL2YZn5zUeOsqa9WfdjLR3ZWjiOfXoEF+c9Q="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageEmailPreview.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageEmailPreview.html",
+          "hash": "+HXgALVtVD30Lh29Mnn7ckL6thgwFOADCA8cWNPagXE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageEmailProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageEmailProjection.html",
+          "hash": "SkHR46u1w5tJX2nQCBVRzzerMNYDO7d/pEqIWuzvOCs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageEmailValidationRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageEmailValidationRequest.html",
+          "hash": "de6TZLSjkK1rNbbIaODFoHIFQjySmvYwmJlWynzTLVg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageExpiredInboxRecordProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageExpiredInboxRecordProjection.html",
+          "hash": "u4a6c8ioCvQkZ1ERzJjl1rZ4u3HFhPT1YSxLG4t24sE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageGroupProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageGroupProjection.html",
+          "hash": "71amwy5o4WG+m4H7DL3ZG2HPqNZ2II+qmaXKFHl0pf4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageInboxForwarderDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageInboxForwarderDto.html",
+          "hash": "2k9w6nDkyIY6Ao3w0MZwbNgC9PlLpyOgeoUxwV+3J0Q="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageInboxForwarderEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageInboxForwarderEvents.html",
+          "hash": "Ou0clI1XcoKgRAdakt7hshlxfewmCzBGwoNLezYZEyM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageInboxProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageInboxProjection.html",
+          "hash": "ID9hG9KoWkSzVFolX2/HoqvWgMcZKkvQZhBPLCedWk4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageInboxReplierDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageInboxReplierDto.html",
+          "hash": "Jy/bhSzUpMKOzv/GdEEB4sLprStEp2xEa45lRS9Ycxo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageInboxReplierEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageInboxReplierEvents.html",
+          "hash": "GOS16wZQZnnmpl7Yy5WnupCl7GVxzCy4vN217LWHf4w="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageInboxRulesetDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageInboxRulesetDto.html",
+          "hash": "3Q77sm936p/sYXyudNQQyr58zMNhL1AiO2uG3bTdl+w="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageListUnsubscribeRecipients.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageListUnsubscribeRecipients.html",
+          "hash": "AjkLYAAFPFbcvehJ+aiQOM9vh6U5/oSnqPNRnsYCE5E="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageMissedEmailProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageMissedEmailProjection.html",
+          "hash": "CZkaxpBgT6/f4WlTN8ZwAtiNzlUOlfq9AkxOXcqrFp0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageOrganizationInboxProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageOrganizationInboxProjection.html",
+          "hash": "tWHPtN8u89cf6O/4TDiOePMl9IwyeE2sAGbIwEA3spE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PagePhoneNumberProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PagePhoneNumberProjection.html",
+          "hash": "Qx6IRjwspxBqihkdgPnBonlrmtZ6jT2kOULnCmUgX10="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageScheduledJobs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageScheduledJobs.html",
+          "hash": "qFa+TY6Z69fqYv17LAUQnlQgMkK+DSz1XNqB3Xi+LhE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageSentEmailProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageSentEmailProjection.html",
+          "hash": "HlIxdRf7jfG/P1N0fRnANwF4fwvkRrOBU5cng3ZaHSk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageSentEmailWithQueueProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageSentEmailWithQueueProjection.html",
+          "hash": "KLBGIrRdxKlvPiB2h5demCoEOyC2lmVsuiRuZx6oB8A="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageSmsProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageSmsProjection.html",
+          "hash": "SZ9gUh9z5Qaz6xfzOkcDIZWaGmX8ofNRc314/pNxirw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageTemplateProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageTemplateProjection.html",
+          "hash": "zriESbJdXhK+AGzraYtMdSBCsVyOD59FgiTzJnWsGSc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageThreadProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageThreadProjection.html",
+          "hash": "NXQSgf41l2YRUTBFXYX8UQATwQRQmwfgIX5x9g7cm58="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageTrackingPixelProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageTrackingPixelProjection.html",
+          "hash": "AaehIul7phshMmJEEr9a5pPbY8Yh+LRoUOJyvSvEhFo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageUnknownMissedEmailProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageUnknownMissedEmailProjection.html",
+          "hash": "tgrKaOoitFyIDKhqYfX3O1LNSej5rN+TQtuNMVoclvk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageWebhookProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageWebhookProjection.html",
+          "hash": "Qmn3N7dObGceW2zWlk8fN+AC2d7Z8xd657iDTaMdi6s="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageWebhookResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageWebhookResult.html",
+          "hash": "tbNpt0MYXu1sj3KLVfjR1ZD51XOTkuL0rDYiV8YPMVs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PageableObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PageableObject.html",
+          "hash": "YQ2xlhMH0a3JQ1XHvc331lr8f8Fs6c6VvuRCT+Qi0mo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PhoneNumberDto.PhoneCountryEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PhoneNumberDto.PhoneCountryEnum.html",
+          "hash": "sP4Cf1ewVX8V0Q1miVcorWPaUsFKniJxDjozsxIrLQI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PhoneNumberDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PhoneNumberDto.html",
+          "hash": "oy1oUj7y0RKbwbm8ITUM6gRGVWTYIu97gHz84DlPip4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PhoneNumberProjection.PhoneCountryEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PhoneNumberProjection.PhoneCountryEnum.html",
+          "hash": "YEeN81RtzIYtDv4XdCaXgz/XJCwau9Fo9SvsBc6ZsBA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PhoneNumberProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PhoneNumberProjection.html",
+          "hash": "Dp5SE9IaV3+5GYquWsNJVKXdbZU6Gkbix1IrG2zqR2c="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PhonePlanDto.PhoneCountryEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PhonePlanDto.PhoneCountryEnum.html",
+          "hash": "sNM3lXZQqdR6RRF9EMKLSn0l1+aQMcibyQi2aahNkt4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.PhonePlanDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.PhonePlanDto.html",
+          "hash": "2gthgOQ+Lm+iAy+KLQU1aCh6YqdI2/ALL1IdOKJ161s="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.RawEmailJson.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.RawEmailJson.html",
+          "hash": "uiStbftltLhiv4FdRMixEN5DuWUSNAFydhqSJk4noHg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.Recipient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.Recipient.html",
+          "hash": "7leomLT6CmVH82JUCKw3r8m0Ty4jCFQpEpSwtyHTIXw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ReplyToAliasEmailOptions.SendStrategyEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ReplyToAliasEmailOptions.SendStrategyEnum.html",
+          "hash": "fgjANvzCXkxQ72gSXR0YQbqAZMo7CRpR4OF9fIBkdxE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ReplyToAliasEmailOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ReplyToAliasEmailOptions.html",
+          "hash": "0grdQ5nCVGTNNPWbS7do4nWxBd4iZzZ2vDeUj6icLW4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ReplyToEmailOptions.SendStrategyEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ReplyToEmailOptions.SendStrategyEnum.html",
+          "hash": "5ey2IWEyGumeW4giqUEAH90K4BeL4megza2DPiSPQR8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ReplyToEmailOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ReplyToEmailOptions.html",
+          "hash": "8RAoLErFzz2g4hDgX/am8A9WAb/prHOLAzrKNm6h7ps="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ScheduledJob.StatusEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ScheduledJob.StatusEnum.html",
+          "hash": "rWAb50zhZmEYFwkOGRwyJKLFjnQGxsOx3DE/YROvdzI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ScheduledJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ScheduledJob.html",
+          "hash": "SubJuDrRcy0KjKW0uQMoJiOjioe/DLwz7bn8jay2yxk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ScheduledJobDto.StatusEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ScheduledJobDto.StatusEnum.html",
+          "hash": "SzVwE+J+mUAoRJcS3IttuiSHjNLuXd/hz9f4Mym8Xj0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ScheduledJobDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ScheduledJobDto.html",
+          "hash": "Wa8wLKC2Y/IjjwaCIDKhFIX7zSsFlhVbabD2puNAKKA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.SendEmailOptions.SendStrategyEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.SendEmailOptions.SendStrategyEnum.html",
+          "hash": "VoX//gQSe0YjxkrNeGZr5z/7uyga2bTxDyHXLawhOtM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.SendEmailOptions.ValidateEmailAddressesEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.SendEmailOptions.ValidateEmailAddressesEnum.html",
+          "hash": "YdGn7YgwJ2/GRz9MVlq2Y0zyI0r2gvN0z8Iq0uQ6ggA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.SendEmailOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.SendEmailOptions.html",
+          "hash": "7IWo1/tdfSQuaWN2pyf07poJHTvL9rd4ibtBYfjW/1M="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.SendSMTPEnvelopeOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.SendSMTPEnvelopeOptions.html",
+          "hash": "2qK7TeA3ue0PptPHYS6uc3lUuK1voLhqxBuhuhqy8bE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.SendWithQueueResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.SendWithQueueResult.html",
+          "hash": "k9+GFGXQ2DMde1pMVRodp9SXQnUTdghF8u0OaTkZIM8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.Sender.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.Sender.html",
+          "hash": "Y9uxYpJ7SxfPnWGhWBpFTd3aBtIGv7KWEESqWtThMvM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.SentEmailDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.SentEmailDto.html",
+          "hash": "FnBldext4AvbU7P+Sl6rTKdAF6Zuk69dX9I4Vxh/8/g="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.SentEmailProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.SentEmailProjection.html",
+          "hash": "XWCM7H3BpUOP3KlEtVrv5umkag9I57EtP8wrWmXL2nM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.SetInboxFavouritedOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.SetInboxFavouritedOptions.html",
+          "hash": "8aPzVYxX0YFHVWx4dziCbYeLP8Wb7F+T7Cj/8jSvX1M="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.SimpleSendEmailOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.SimpleSendEmailOptions.html",
+          "hash": "cD5mmIA4uXsitzlONTFcbsCeUMQXH13zBlhVy7zGq98="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.SmsDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.SmsDto.html",
+          "hash": "F7cNLbSCipWPmqiTm9hu97J2opUJO9qvFl1nOiuxQqg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.SmsMatchOption.FieldEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.SmsMatchOption.FieldEnum.html",
+          "hash": "orPJYEsGCrUh0poi5cQH2hne1e8ovIxKECp5MkI5FMc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.SmsMatchOption.ShouldEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.SmsMatchOption.ShouldEnum.html",
+          "hash": "mXXzU5hX3sD5shzsNmsSTZg66nADHbewrDrTh0Ivfg0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.SmsMatchOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.SmsMatchOption.html",
+          "hash": "rqHIgoiBEesDCf9H9JDSx42r+bpaILnZQ9ptxE/z0TM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.SmsPreview.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.SmsPreview.html",
+          "hash": "CQhcn4C6KQZdrflcNasbFnnE1y/nBFPPVY3o5tC1gVI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.SmsProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.SmsProjection.html",
+          "hash": "dtUgsh6Puep7Qy9sjYtCacFFg6LukYZYsrug0gNPA4o="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.Sort.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.Sort.html",
+          "hash": "30zXcZhxNmhohIfgwAaf/MeI28zunuY39W68u0qPc3I="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.TemplateDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.TemplateDto.html",
+          "hash": "ThZJqhIwybz4vkSe8AKQCEANRa0uN2CmJg4UvO+PyEw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.TemplatePreview.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.TemplatePreview.html",
+          "hash": "Qw5E3KeXaGUzQvqpSiKbdVf8EUyWFrsj4pF/VPOUNlA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.TemplateProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.TemplateProjection.html",
+          "hash": "NRqQuYG6AkpIrRS1FnY/jWivtdFjP46qFGUlj9Z9N2M="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.TemplateVariable.VariableTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.TemplateVariable.VariableTypeEnum.html",
+          "hash": "gBT8rLUIa7kvVy02Za1eaU51+n+i56xfmlNNAKRzQ88="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.TemplateVariable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.TemplateVariable.html",
+          "hash": "75jX2G9CmJPQoiCfs6hOC7XmgaBIuTgdQtUZ87WWv1k="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.TestNewInboxForwarderOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.TestNewInboxForwarderOptions.html",
+          "hash": "fGdRQ/yNGOdQUEwe69p6LQFAyLNzszho5OdKFgVZeGY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.TestNewInboxRulesetOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.TestNewInboxRulesetOptions.html",
+          "hash": "yKhoPpIxZsjFi0dQvurz0ZOx4s216t+yAYyO5dPyY+s="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.TestPhoneNumberOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.TestPhoneNumberOptions.html",
+          "hash": "ediRjkGTCvbhccbvjqcvm+GPSrv4XpxMPoJx3P2j/Rk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ThreadProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ThreadProjection.html",
+          "hash": "U2q5ugNp1IggM8VS90AfWcFj/nNuFk575G/4OzSp4RA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.TrackingPixelDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.TrackingPixelDto.html",
+          "hash": "NDacvFmxXJ18g4WpAUWBUZIJcsEbMzY6D7YVhbb7p/Q="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.TrackingPixelProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.TrackingPixelProjection.html",
+          "hash": "SU0KFc8+Livpo9UjZxcJPQW+ULSRxE+yCXFr08hrx9w="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.UnknownMissedEmailProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.UnknownMissedEmailProjection.html",
+          "hash": "I7JUqXPiZv9mXpXj5F13E39WICUToUX0Pz6kFQOrydE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.UnreadCount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.UnreadCount.html",
+          "hash": "w8w0gFLqHxSVlGKk5174xT49ktRwTagp5DyFaAkruHw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.UnseenErrorCountDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.UnseenErrorCountDto.html",
+          "hash": "bgB3XhtDt925ahd5YIEupscka046kARxEXcQZyPF4pU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.UpdateAliasOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.UpdateAliasOptions.html",
+          "hash": "+cv5+jw/2resnbdMeHstsrf1XXZ4hEO1447Iow/9K84="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.UpdateDomainOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.UpdateDomainOptions.html",
+          "hash": "hIlavQgD6DO5NBfY0NOvCPvfpURZ6ULkLbvoylQF7vw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.UpdateGroupContacts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.UpdateGroupContacts.html",
+          "hash": "4Ok8CLN3K6O3iOKaDJfSNuYc46A8NV+erzCzeHxh1dI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.UpdateInboxOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.UpdateInboxOptions.html",
+          "hash": "f1j9zZ69A6psP23H5JlodgKxkbyzz9bWDs82cIilcp8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.UpdateInboxReplierOptions.FieldEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.UpdateInboxReplierOptions.FieldEnum.html",
+          "hash": "UJPhGUvad4YmxqXaEeKmwe39ojeSCiXd+moVSP/mjnY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.UpdateInboxReplierOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.UpdateInboxReplierOptions.html",
+          "hash": "ku5sdV8QfYiMHZ+LRv0x6Ontp4YWIgnOJjprcftpSTs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.UploadAttachmentBytesRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.UploadAttachmentBytesRequest.html",
+          "hash": "jXxYPsejmJE8N6xr455SChoGD+VyFhabZlK3XCIs28U="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.UploadAttachmentOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.UploadAttachmentOptions.html",
+          "hash": "vznJ2A3uBX/NvbV/C1+pvlnnuD/Lb7nxGjRrGlyABYQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.UploadMultipartFormRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.UploadMultipartFormRequest.html",
+          "hash": "Ic4liFxbCiM1ME8NPudOVv3ZW/AetoD4x3Zyj+P5Xw8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.UserInfoDto.AccountStateEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.UserInfoDto.AccountStateEnum.html",
+          "hash": "U5lFEkLwSXgvMqs86E0xf7c+io3HRBCopFvcEyB00QY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.UserInfoDto.AccountTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.UserInfoDto.AccountTypeEnum.html",
+          "hash": "XxsKPPjzzFZRQ0kBDAQrPZiatq+ML7fFmzs3n+8FOtg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.UserInfoDto.SubscriptionTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.UserInfoDto.SubscriptionTypeEnum.html",
+          "hash": "a513xdvN5gDNZPAKDYCCIvEbVdIQ7f0BbLQQnmZ/Ts0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.UserInfoDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.UserInfoDto.html",
+          "hash": "IzSKaOjYQK5udzuMa4soEwBlzSRNoDVuvx6f5mA4aaQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ValidateEmailAddressListOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ValidateEmailAddressListOptions.html",
+          "hash": "T7RGxNs4uX6Xe2qhKclCQPmR0mFz4d5mQJj3byfgj0o="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ValidateEmailAddressListResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ValidateEmailAddressListResult.html",
+          "hash": "E/itY9OB9Y3pkWl4KUA8plHfMjp6XIzmdWVO3Ff+hPI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ValidationDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ValidationDto.html",
+          "hash": "FoYUpcBoO4coReLBI+Fyps8Ejifwje9RJ5aXV0aDkMk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.ValidationMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.ValidationMessage.html",
+          "hash": "Dlc+iiKss2dCPS8loDxo9Igf010gbsgUsfsx3Nm86GY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.VerifyEmailAddressOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.VerifyEmailAddressOptions.html",
+          "hash": "iMthCbSCQ+Ih0vLMWRQ8FA2fij7r7YAl3ody44eQxo0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.VerifyWebhookSignatureOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.VerifyWebhookSignatureOptions.html",
+          "hash": "NjU4TmkjFgZNQO+YxcLmtNiqNoe5tdhSxtttIHZYhT0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.VerifyWebhookSignatureResults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.VerifyWebhookSignatureResults.html",
+          "hash": "hZeeMhzCFXxvwv09p1H4nUw5BHkU5w56f+MFepSlsvs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WaitForConditions.CountTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WaitForConditions.CountTypeEnum.html",
+          "hash": "RdRkl8hwOFoj8HEj7l3U5PSBxrK0WHJNCWynjpNA1Zg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WaitForConditions.SortDirectionEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WaitForConditions.SortDirectionEnum.html",
+          "hash": "NL5W0rIfutlfF04IufRghOXykffGHHs38RPU3D13eKg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WaitForConditions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WaitForConditions.html",
+          "hash": "A0ok88PKIxkYqMyDrNmlQCeEzOsqTKthaRpG63LF04o="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WaitForSingleSmsOptions.SortDirectionEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WaitForSingleSmsOptions.SortDirectionEnum.html",
+          "hash": "O2VgP2BSS9JlYWjebjqVhy+4nwOi4CaoFdzDhz3WlUM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WaitForSingleSmsOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WaitForSingleSmsOptions.html",
+          "hash": "FTIhxhyBR12Ui0IQHfMTU6uMH5OK+TT+scF1Cjp5mJI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WaitForSmsConditions.CountTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WaitForSmsConditions.CountTypeEnum.html",
+          "hash": "pSQ+BN537RnTOcca9EStyMiMWv0qvCBui+m14nn5Zgo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WaitForSmsConditions.SortDirectionEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WaitForSmsConditions.SortDirectionEnum.html",
+          "hash": "mmm6U14FoLFqasT8TokiMKOQPZm9rvsPFFoYw6Y6BzA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WaitForSmsConditions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WaitForSmsConditions.html",
+          "hash": "Q2ZoOdICkoTyykNh7YlkAS09uV+HG8Klv/Hz+6aPYEQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookBouncePayload.EventNameEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookBouncePayload.EventNameEnum.html",
+          "hash": "09OpGhm/9YVf/KtvHuHa09aOrcclWQWeCe3WK1byTX8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookBouncePayload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookBouncePayload.html",
+          "hash": "G11U1xqiAUxCr/Yil/M0CckInGseUMnPBw3Tmb4ymz8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookBounceRecipientPayload.EventNameEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookBounceRecipientPayload.EventNameEnum.html",
+          "hash": "FZWf0o0eNucqJ5Dzw7HCblXOkIBNCb52KZpKeui/8kM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookBounceRecipientPayload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookBounceRecipientPayload.html",
+          "hash": "KDhgwo7uxP7oiIJDvHpSoS4G62qpxO/gSukAGZ8is2c="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookDeliveryStatusPayload.EventNameEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookDeliveryStatusPayload.EventNameEnum.html",
+          "hash": "PFaxi8YbEBBhDjww6/z6a7OAV33c/JXaBiDpIvDBb9o="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookDeliveryStatusPayload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookDeliveryStatusPayload.html",
+          "hash": "KqupTATwps2yK6hBwxhhoLyY3UFCd9zYtrF8YxnuXg0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookDto.EventNameEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookDto.EventNameEnum.html",
+          "hash": "PLttbvFX1Au/H3yRKO9JYM1di6ZTnSwZU7BHqPMvEZU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookDto.MethodEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookDto.MethodEnum.html",
+          "hash": "Cla1twwyNiHnnYEoTc1AaZMYWMrxWeXVGVWmTuTlS14="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookDto.html",
+          "hash": "NOOqe2dIluiwxE9KPXuCMDhXyv7L6I/8aQ6P9+bsGsQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookEmailOpenedPayload.EventNameEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookEmailOpenedPayload.EventNameEnum.html",
+          "hash": "VXsLKR7xPS8sJ5bjE+/wY7lGZ9mGQ969KRVapPM3YcQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookEmailOpenedPayload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookEmailOpenedPayload.html",
+          "hash": "Qz34kUHSIjnqW2AFXzbWr0ldGQ+U3LMA5eK4P9mH5MU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookEmailReadPayload.EventNameEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookEmailReadPayload.EventNameEnum.html",
+          "hash": "zMJZ6YuFEIor0CFaeDQYKbP7lJwwEjQNC2pJFB3zogI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookEmailReadPayload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookEmailReadPayload.html",
+          "hash": "cqU0FNNTGYkjTNkhd/gPTqYtxSWJm0repAuEb2I4PT0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookHeaderNameValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookHeaderNameValue.html",
+          "hash": "kE2Fdvq2A5+G+nZ4rEhlKg9bpX+Zh2m6eLVlHwFiEp4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookHeaders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookHeaders.html",
+          "hash": "CSBiUfc2t62gX1QGXO8GKPx5w0J+ZYT6G8NYtB9EATo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookNewAttachmentPayload.EventNameEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookNewAttachmentPayload.EventNameEnum.html",
+          "hash": "nbfLl203leuM4ib/GxisfUKvcsMnqbeoqJLuL/li+cs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookNewAttachmentPayload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookNewAttachmentPayload.html",
+          "hash": "QYFwVYGMN4psWrb5mll6X+qoRCdF/jYy3q2hz2alvio="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookNewContactPayload.EventNameEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookNewContactPayload.EventNameEnum.html",
+          "hash": "nOwaKYV0HzsbSb2tOKzgI2wLLmEmYDhWa4R2WcgsgR4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookNewContactPayload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookNewContactPayload.html",
+          "hash": "5gHBPOyUwaKC9dpdUfqVvNcx2yy0YKgsaer/zHw4WhA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookNewEmailPayload.EventNameEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookNewEmailPayload.EventNameEnum.html",
+          "hash": "V/7Pccer+uRYTf+IbQUOXwSfw4tbbSvvhrpnrdOla/E="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookNewEmailPayload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookNewEmailPayload.html",
+          "hash": "vmdwjkFe7kZvQclpuAGzwsDVrrBZ5S4sHMMbpxtGKAc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookNewSmsPayload.EventNameEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookNewSmsPayload.EventNameEnum.html",
+          "hash": "l54idH/+C7LXr1/aWpYWO6TpgXpWIhIXW2DUL1o2AHo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookNewSmsPayload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookNewSmsPayload.html",
+          "hash": "1x4xOODpvjszxvK9hElSxG7MHz8y8rIaPLNLmt5ABTo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookProjection.EventNameEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookProjection.EventNameEnum.html",
+          "hash": "IE2uAM2RODFJ/jT0ufuMzvNtr7nVGPjU7vbfHCg+vcw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookProjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookProjection.html",
+          "hash": "96uggzfxiY3M0O7W5+r7sODOurGLe7RtZVVTJ2fttBA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookRedriveResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookRedriveResult.html",
+          "hash": "5Pf2Tu+dPw5kn4aLSQvwqa995KAJtJKdZrQ22fQstB4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookResultDto.HttpMethodEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookResultDto.HttpMethodEnum.html",
+          "hash": "VqAV5Cd8yetf+wAUYXbMvOdlHuh9zy+QNF+/9luBLKg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookResultDto.ResultTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookResultDto.ResultTypeEnum.html",
+          "hash": "v2XxJjkOH7vxfWrbZpZegyPaLTBBPNMqTgE3IIXoFRo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookResultDto.WebhookEventEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookResultDto.WebhookEventEnum.html",
+          "hash": "XRH5A3r64qh2IU1fKTFiqWT1I0Em9dXeC1enymflLws="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookResultDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookResultDto.html",
+          "hash": "+2t6z15KGc3AguYlRQUxB7nb+mR+T+pR3LQg/QDhtSg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookTestRequest.MethodEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookTestRequest.MethodEnum.html",
+          "hash": "TkcYTHh0+Rf/caxH78g8Q6Xim/T9NxKSFY4cjYW56+8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookTestRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookTestRequest.html",
+          "hash": "PEDvRZBnRNFJz6DgXy8ejC3JyEK+4Gv228+ca9p+bNM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookTestResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookTestResponse.html",
+          "hash": "YaQ3rSCtm/Kos04GUg6YOxEc1pkc5f2e0VCpO5SVwy0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.WebhookTestResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.WebhookTestResult.html",
+          "hash": "ewiOC16UYlUVnYk9TqH/MoLoY5YqoRz9UYoBJWIpyIQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/mailslurp.Model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/mailslurp.Model.html",
+          "hash": "pW9jTV96sRkxeT7AKvcIb0mpzVJO9/YasxIaM14KoOM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "LplE69etUCZ7ax+kU/0AuNGEVLJSCkg9KKfAsR5oNeU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "J0LAAVe4SQ+ia0hyEELUKukLRpZ0+gtES9l9KVc8qoI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "mOZ/4D2tZgJKuZgzDnsyJ61LpJCud4/6eABtOb7f1AY="
+        }
+      },
+      "version": ""
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
