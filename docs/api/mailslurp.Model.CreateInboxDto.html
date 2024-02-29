@@ -1,0 +1,971 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class CreateInboxDto
+ | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class CreateInboxDto
+ | MailSlurp ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Model.CreateInboxDto">
+
+
+  <h1 id="mailslurp_Model_CreateInboxDto" data-uid="mailslurp.Model.CreateInboxDto" class="text-break">Class CreateInboxDto
+</h1>
+  <div class="markdown level0 summary"><p>Options for creating an inbox. An inbox has a real email address that can send and receive emails. Inboxes can be permanent or expire at a given time. Inboxes are either <code>SMTP</code> or <code>HTTP</code> mailboxes. <code>SMTP</code> inboxes are processed by a mail server running at <code>mailslurp.mx</code> while <code>HTTP</code> inboxes are processed by AWS SES backed mailservers. An inbox email address is randomly assigned by default ending in either <code>mailslurp.com</code> or (if <code>useDomainPool</code> is enabled) ending in a similar domain such as <code>mailslurp.xyz</code> (selected at random). To specify an address use a custom domain: either pass the <code>emailAddress</code> options with <code>&amp;lt;your-recipient&gt;@&amp;lt;your-domain&gt;</code>. To create a randomized address for your domain set the <code>domainName</code> to the domain you have verified or pass the <code>domainId</code>. Virtual inboxes prevent outbound sending and instead trap mail.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">CreateInboxDto</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="mailslurp.Model.CreateInboxDto.html">CreateInboxDto</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.ivalidatableobject">IValidatableObject</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">object.GetType()</a>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">object.ReferenceEquals(object, object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">mailslurp</span>.<a class="xref" href="mailslurp.Model.html">Model</a></h6>
+  <h6><strong>Assembly</strong>: mailslurp.dll</h6>
+  <h5 id="mailslurp_Model_CreateInboxDto_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataContract(Name = &quot;CreateInboxDto&quot;)]
+public class CreateInboxDto : IEquatable&lt;CreateInboxDto&gt;, IValidatableObject</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/CreateInboxDto.cs#lines-81">View Source</a>
+  </span>
+  <a id="mailslurp_Model_CreateInboxDto__ctor_" data-uid="mailslurp.Model.CreateInboxDto.#ctor*"></a>
+  <h4 id="mailslurp_Model_CreateInboxDto__ctor_System_String_System_String_System_Nullable_System_Guid__System_String_System_String_System_Nullable_System_Boolean__System_Collections_Generic_List_System_String__System_Nullable_System_DateTime__System_Nullable_System_Boolean__System_Nullable_System_Int64__System_Nullable_System_Boolean__System_Nullable_mailslurp_Model_CreateInboxDto_InboxTypeEnum__System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_String_" data-uid="mailslurp.Model.CreateInboxDto.#ctor(System.String,System.String,System.Nullable{System.Guid},System.String,System.String,System.Nullable{System.Boolean},System.Collections.Generic.List{System.String},System.Nullable{System.DateTime},System.Nullable{System.Boolean},System.Nullable{System.Int64},System.Nullable{System.Boolean},System.Nullable{mailslurp.Model.CreateInboxDto.InboxTypeEnum},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String)">CreateInboxDto(string, string, Guid?, string, string, bool?, List&lt;string&gt;, DateTime?, bool?, long?, bool?, InboxTypeEnum?, bool?, bool?, string)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Model.CreateInboxDto.html">CreateInboxDto</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CreateInboxDto(string emailAddress = null, string domainName = null, Guid? domainId = null, string name = null, string description = null, bool? useDomainPool = null, List&lt;string&gt; tags = null, DateTime? expiresAt = null, bool? favourite = null, long? expiresIn = null, bool? allowTeamAccess = null, CreateInboxDto.InboxTypeEnum? inboxType = null, bool? virtualInbox = null, bool? useShortAddress = null, string prefix = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">emailAddress</span></td>
+        <td><p>A custom email address to use with the inbox. Defaults to null. When null MailSlurp will assign a random email address to the inbox such as <code>123@mailslurp.com</code>. If you use the <code>useDomainPool</code> option when the email address is null it will generate an email address with a more varied domain ending such as <code>123@mailslurp.info</code> or <code>123@mailslurp.biz</code>. When a custom email address is provided the address is split into a domain and the domain is queried against your user. If you have created the domain in the MailSlurp dashboard and verified it you can use any email address that ends with the domain. Note domain types must match the inbox type - so <code>SMTP</code> inboxes will only work with <code>SMTP</code> type domains. Avoid <code>SMTP</code> inboxes if you need to send emails as they can only receive. Send an email to this address and the inbox will receive and store it for you. To retrieve the email use the Inbox and Email Controller endpoints with the inbox ID..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">domainName</span></td>
+        <td><p>FQDN domain name for the domain you have verified. Will be appended with a randomly assigned recipient name. Use the <code>emailAddress</code> option instead to specify the full custom inbox..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">domainId</span></td>
+        <td><p>ID of custom domain to use for email address..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Optional name of the inbox. Displayed in the dashboard for easier search and used as the sender name when sending emails..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">description</span></td>
+        <td><p>Optional description of the inbox for labelling purposes. Is shown in the dashboard and can be used with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">useDomainPool</span></td>
+        <td><p>Use the MailSlurp domain name pool with this inbox when creating the email address. Defaults to null. If enabled the inbox will be an email address with a domain randomly chosen from a list of the MailSlurp domains. This is useful when the default <code>@mailslurp.com</code> email addresses used with inboxes are blocked or considered spam by a provider or receiving service. When domain pool is enabled an email address will be generated ending in <code>@mailslurp.{world,info,xyz,...}</code> . This means a TLD is randomly selecting from a list of <code>.biz</code>, <code>.info</code>, <code>.xyz</code> etc to add variance to the generated email addresses. When null or false MailSlurp uses the default behavior of <code>@mailslurp.com</code> or custom email address provided by the emailAddress field. Note this feature is only available for <code>HTTP</code> inbox types..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">tags</span></td>
+        <td><p>Tags that inbox has been tagged with. Tags can be added to inboxes to group different inboxes within an account. You can also search for inboxes by tag in the dashboard UI..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">expiresAt</span></td>
+        <td><p>Optional inbox expiration date. If null then this inbox is permanent and the emails in it won't be deleted. If an expiration date is provided or is required by your plan the inbox will be closed when the expiration time is reached. Expired inboxes still contain their emails but can no longer send or receive emails. An ExpiredInboxRecord is created when an inbox and the email address and inbox ID are recorded. The expiresAt property is a timestamp string in ISO DateTime Format yyyy-MM-dd'T'HH:mm:ss.SSSXXX..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">favourite</span></td>
+        <td><p>Is the inbox a favorite. Marking an inbox as a favorite is typically done in the dashboard for quick access or filtering.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">expiresIn</span></td>
+        <td><p>Number of milliseconds that inbox should exist for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">allowTeamAccess</span></td>
+        <td><p>DEPRECATED (team access is always true). Grant team access to this inbox and the emails that belong to it for team members of your organization..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateInboxDto.html">CreateInboxDto</a>.<a class="xref" href="mailslurp.Model.CreateInboxDto.InboxTypeEnum.html">InboxTypeEnum</a>?</td>
+        <td><span class="parametername">inboxType</span></td>
+        <td><p>Type of inbox. HTTP inboxes are faster and better for most cases. SMTP inboxes are more suited for public facing inbound messages (but cannot send)..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">virtualInbox</span></td>
+        <td><p>Virtual inbox prevents any outbound emails from being sent. It creates sent email records but will never send real emails to recipients. Great for testing and faking email sending..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">useShortAddress</span></td>
+        <td><p>Use a shorter email address under 31 characters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">prefix</span></td>
+        <td><p>Prefix to add before the email address for easier labelling or identification..</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/CreateInboxDto.cs#lines-174">View Source</a>
+  </span>
+  <a id="mailslurp_Model_CreateInboxDto_AllowTeamAccess_" data-uid="mailslurp.Model.CreateInboxDto.AllowTeamAccess*"></a>
+  <h4 id="mailslurp_Model_CreateInboxDto_AllowTeamAccess" data-uid="mailslurp.Model.CreateInboxDto.AllowTeamAccess">AllowTeamAccess</h4>
+  <div class="markdown level1 summary"><p>DEPRECATED (team access is always true). Grant team access to this inbox and the emails that belong to it for team members of your organization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;allowTeamAccess&quot;, EmitDefaultValue = true)]
+public bool? AllowTeamAccess { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><p>DEPRECATED (team access is always true). Grant team access to this inbox and the emails that belong to it for team members of your organization.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/CreateInboxDto.cs#lines-132">View Source</a>
+  </span>
+  <a id="mailslurp_Model_CreateInboxDto_Description_" data-uid="mailslurp.Model.CreateInboxDto.Description*"></a>
+  <h4 id="mailslurp_Model_CreateInboxDto_Description" data-uid="mailslurp.Model.CreateInboxDto.Description">Description</h4>
+  <div class="markdown level1 summary"><p>Optional description of the inbox for labelling purposes. Is shown in the dashboard and can be used with</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;description&quot;, EmitDefaultValue = true)]
+public string Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Optional description of the inbox for labelling purposes. Is shown in the dashboard and can be used with</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/CreateInboxDto.cs#lines-118">View Source</a>
+  </span>
+  <a id="mailslurp_Model_CreateInboxDto_DomainId_" data-uid="mailslurp.Model.CreateInboxDto.DomainId*"></a>
+  <h4 id="mailslurp_Model_CreateInboxDto_DomainId" data-uid="mailslurp.Model.CreateInboxDto.DomainId">DomainId</h4>
+  <div class="markdown level1 summary"><p>ID of custom domain to use for email address.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;domainId&quot;, EmitDefaultValue = true)]
+public Guid? DomainId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><p>ID of custom domain to use for email address.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/CreateInboxDto.cs#lines-111">View Source</a>
+  </span>
+  <a id="mailslurp_Model_CreateInboxDto_DomainName_" data-uid="mailslurp.Model.CreateInboxDto.DomainName*"></a>
+  <h4 id="mailslurp_Model_CreateInboxDto_DomainName" data-uid="mailslurp.Model.CreateInboxDto.DomainName">DomainName</h4>
+  <div class="markdown level1 summary"><p>FQDN domain name for the domain you have verified. Will be appended with a randomly assigned recipient name. Use the <code>emailAddress</code> option instead to specify the full custom inbox.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;domainName&quot;, EmitDefaultValue = true)]
+public string DomainName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>FQDN domain name for the domain you have verified. Will be appended with a randomly assigned recipient name. Use the <code>emailAddress</code> option instead to specify the full custom inbox.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/CreateInboxDto.cs#lines-104">View Source</a>
+  </span>
+  <a id="mailslurp_Model_CreateInboxDto_EmailAddress_" data-uid="mailslurp.Model.CreateInboxDto.EmailAddress*"></a>
+  <h4 id="mailslurp_Model_CreateInboxDto_EmailAddress" data-uid="mailslurp.Model.CreateInboxDto.EmailAddress">EmailAddress</h4>
+  <div class="markdown level1 summary"><p>A custom email address to use with the inbox. Defaults to null. When null MailSlurp will assign a random email address to the inbox such as <code>123@mailslurp.com</code>. If you use the <code>useDomainPool</code> option when the email address is null it will generate an email address with a more varied domain ending such as <code>123@mailslurp.info</code> or <code>123@mailslurp.biz</code>. When a custom email address is provided the address is split into a domain and the domain is queried against your user. If you have created the domain in the MailSlurp dashboard and verified it you can use any email address that ends with the domain. Note domain types must match the inbox type - so <code>SMTP</code> inboxes will only work with <code>SMTP</code> type domains. Avoid <code>SMTP</code> inboxes if you need to send emails as they can only receive. Send an email to this address and the inbox will receive and store it for you. To retrieve the email use the Inbox and Email Controller endpoints with the inbox ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;emailAddress&quot;, EmitDefaultValue = true)]
+public string EmailAddress { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>A custom email address to use with the inbox. Defaults to null. When null MailSlurp will assign a random email address to the inbox such as <code>123@mailslurp.com</code>. If you use the <code>useDomainPool</code> option when the email address is null it will generate an email address with a more varied domain ending such as <code>123@mailslurp.info</code> or <code>123@mailslurp.biz</code>. When a custom email address is provided the address is split into a domain and the domain is queried against your user. If you have created the domain in the MailSlurp dashboard and verified it you can use any email address that ends with the domain. Note domain types must match the inbox type - so <code>SMTP</code> inboxes will only work with <code>SMTP</code> type domains. Avoid <code>SMTP</code> inboxes if you need to send emails as they can only receive. Send an email to this address and the inbox will receive and store it for you. To retrieve the email use the Inbox and Email Controller endpoints with the inbox ID.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/CreateInboxDto.cs#lines-153">View Source</a>
+  </span>
+  <a id="mailslurp_Model_CreateInboxDto_ExpiresAt_" data-uid="mailslurp.Model.CreateInboxDto.ExpiresAt*"></a>
+  <h4 id="mailslurp_Model_CreateInboxDto_ExpiresAt" data-uid="mailslurp.Model.CreateInboxDto.ExpiresAt">ExpiresAt</h4>
+  <div class="markdown level1 summary"><p>Optional inbox expiration date. If null then this inbox is permanent and the emails in it won't be deleted. If an expiration date is provided or is required by your plan the inbox will be closed when the expiration time is reached. Expired inboxes still contain their emails but can no longer send or receive emails. An ExpiredInboxRecord is created when an inbox and the email address and inbox ID are recorded. The expiresAt property is a timestamp string in ISO DateTime Format yyyy-MM-dd'T'HH:mm:ss.SSSXXX.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;expiresAt&quot;, EmitDefaultValue = true)]
+public DateTime? ExpiresAt { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><p>Optional inbox expiration date. If null then this inbox is permanent and the emails in it won't be deleted. If an expiration date is provided or is required by your plan the inbox will be closed when the expiration time is reached. Expired inboxes still contain their emails but can no longer send or receive emails. An ExpiredInboxRecord is created when an inbox and the email address and inbox ID are recorded. The expiresAt property is a timestamp string in ISO DateTime Format yyyy-MM-dd'T'HH:mm:ss.SSSXXX.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/CreateInboxDto.cs#lines-167">View Source</a>
+  </span>
+  <a id="mailslurp_Model_CreateInboxDto_ExpiresIn_" data-uid="mailslurp.Model.CreateInboxDto.ExpiresIn*"></a>
+  <h4 id="mailslurp_Model_CreateInboxDto_ExpiresIn" data-uid="mailslurp.Model.CreateInboxDto.ExpiresIn">ExpiresIn</h4>
+  <div class="markdown level1 summary"><p>Number of milliseconds that inbox should exist for</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;expiresIn&quot;, EmitDefaultValue = true)]
+public long? ExpiresIn { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><p>Number of milliseconds that inbox should exist for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/CreateInboxDto.cs#lines-160">View Source</a>
+  </span>
+  <a id="mailslurp_Model_CreateInboxDto_Favourite_" data-uid="mailslurp.Model.CreateInboxDto.Favourite*"></a>
+  <h4 id="mailslurp_Model_CreateInboxDto_Favourite" data-uid="mailslurp.Model.CreateInboxDto.Favourite">Favourite</h4>
+  <div class="markdown level1 summary"><p>Is the inbox a favorite. Marking an inbox as a favorite is typically done in the dashboard for quick access or filtering</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;favourite&quot;, EmitDefaultValue = true)]
+public bool? Favourite { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><p>Is the inbox a favorite. Marking an inbox as a favorite is typically done in the dashboard for quick access or filtering</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/CreateInboxDto.cs#lines-61">View Source</a>
+  </span>
+  <a id="mailslurp_Model_CreateInboxDto_InboxType_" data-uid="mailslurp.Model.CreateInboxDto.InboxType*"></a>
+  <h4 id="mailslurp_Model_CreateInboxDto_InboxType" data-uid="mailslurp.Model.CreateInboxDto.InboxType">InboxType</h4>
+  <div class="markdown level1 summary"><p>Type of inbox. HTTP inboxes are faster and better for most cases. SMTP inboxes are more suited for public facing inbound messages (but cannot send).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;inboxType&quot;, EmitDefaultValue = true)]
+public CreateInboxDto.InboxTypeEnum? InboxType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateInboxDto.html">CreateInboxDto</a>.<a class="xref" href="mailslurp.Model.CreateInboxDto.InboxTypeEnum.html">InboxTypeEnum</a>?</td>
+        <td><p>Type of inbox. HTTP inboxes are faster and better for most cases. SMTP inboxes are more suited for public facing inbound messages (but cannot send).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/CreateInboxDto.cs#lines-125">View Source</a>
+  </span>
+  <a id="mailslurp_Model_CreateInboxDto_Name_" data-uid="mailslurp.Model.CreateInboxDto.Name*"></a>
+  <h4 id="mailslurp_Model_CreateInboxDto_Name" data-uid="mailslurp.Model.CreateInboxDto.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Optional name of the inbox. Displayed in the dashboard for easier search and used as the sender name when sending emails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;name&quot;, EmitDefaultValue = true)]
+public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Optional name of the inbox. Displayed in the dashboard for easier search and used as the sender name when sending emails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/CreateInboxDto.cs#lines-195">View Source</a>
+  </span>
+  <a id="mailslurp_Model_CreateInboxDto_Prefix_" data-uid="mailslurp.Model.CreateInboxDto.Prefix*"></a>
+  <h4 id="mailslurp_Model_CreateInboxDto_Prefix" data-uid="mailslurp.Model.CreateInboxDto.Prefix">Prefix</h4>
+  <div class="markdown level1 summary"><p>Prefix to add before the email address for easier labelling or identification.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;prefix&quot;, EmitDefaultValue = true)]
+public string Prefix { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Prefix to add before the email address for easier labelling or identification.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/CreateInboxDto.cs#lines-146">View Source</a>
+  </span>
+  <a id="mailslurp_Model_CreateInboxDto_Tags_" data-uid="mailslurp.Model.CreateInboxDto.Tags*"></a>
+  <h4 id="mailslurp_Model_CreateInboxDto_Tags" data-uid="mailslurp.Model.CreateInboxDto.Tags">Tags</h4>
+  <div class="markdown level1 summary"><p>Tags that inbox has been tagged with. Tags can be added to inboxes to group different inboxes within an account. You can also search for inboxes by tag in the dashboard UI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;tags&quot;, EmitDefaultValue = true)]
+public List&lt;string&gt; Tags { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><p>Tags that inbox has been tagged with. Tags can be added to inboxes to group different inboxes within an account. You can also search for inboxes by tag in the dashboard UI.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/CreateInboxDto.cs#lines-139">View Source</a>
+  </span>
+  <a id="mailslurp_Model_CreateInboxDto_UseDomainPool_" data-uid="mailslurp.Model.CreateInboxDto.UseDomainPool*"></a>
+  <h4 id="mailslurp_Model_CreateInboxDto_UseDomainPool" data-uid="mailslurp.Model.CreateInboxDto.UseDomainPool">UseDomainPool</h4>
+  <div class="markdown level1 summary"><p>Use the MailSlurp domain name pool with this inbox when creating the email address. Defaults to null. If enabled the inbox will be an email address with a domain randomly chosen from a list of the MailSlurp domains. This is useful when the default <code>@mailslurp.com</code> email addresses used with inboxes are blocked or considered spam by a provider or receiving service. When domain pool is enabled an email address will be generated ending in <code>@mailslurp.{world,info,xyz,...}</code> . This means a TLD is randomly selecting from a list of <code>.biz</code>, <code>.info</code>, <code>.xyz</code> etc to add variance to the generated email addresses. When null or false MailSlurp uses the default behavior of <code>@mailslurp.com</code> or custom email address provided by the emailAddress field. Note this feature is only available for <code>HTTP</code> inbox types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;useDomainPool&quot;, EmitDefaultValue = true)]
+public bool? UseDomainPool { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><p>Use the MailSlurp domain name pool with this inbox when creating the email address. Defaults to null. If enabled the inbox will be an email address with a domain randomly chosen from a list of the MailSlurp domains. This is useful when the default <code>@mailslurp.com</code> email addresses used with inboxes are blocked or considered spam by a provider or receiving service. When domain pool is enabled an email address will be generated ending in <code>@mailslurp.{world,info,xyz,...}</code> . This means a TLD is randomly selecting from a list of <code>.biz</code>, <code>.info</code>, <code>.xyz</code> etc to add variance to the generated email addresses. When null or false MailSlurp uses the default behavior of <code>@mailslurp.com</code> or custom email address provided by the emailAddress field. Note this feature is only available for <code>HTTP</code> inbox types.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/CreateInboxDto.cs#lines-188">View Source</a>
+  </span>
+  <a id="mailslurp_Model_CreateInboxDto_UseShortAddress_" data-uid="mailslurp.Model.CreateInboxDto.UseShortAddress*"></a>
+  <h4 id="mailslurp_Model_CreateInboxDto_UseShortAddress" data-uid="mailslurp.Model.CreateInboxDto.UseShortAddress">UseShortAddress</h4>
+  <div class="markdown level1 summary"><p>Use a shorter email address under 31 characters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;useShortAddress&quot;, EmitDefaultValue = true)]
+public bool? UseShortAddress { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><p>Use a shorter email address under 31 characters</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/CreateInboxDto.cs#lines-181">View Source</a>
+  </span>
+  <a id="mailslurp_Model_CreateInboxDto_VirtualInbox_" data-uid="mailslurp.Model.CreateInboxDto.VirtualInbox*"></a>
+  <h4 id="mailslurp_Model_CreateInboxDto_VirtualInbox" data-uid="mailslurp.Model.CreateInboxDto.VirtualInbox">VirtualInbox</h4>
+  <div class="markdown level1 summary"><p>Virtual inbox prevents any outbound emails from being sent. It creates sent email records but will never send real emails to recipients. Great for testing and faking email sending.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;virtualInbox&quot;, EmitDefaultValue = true)]
+public bool? VirtualInbox { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><p>Virtual inbox prevents any outbound emails from being sent. It creates sent email records but will never send real emails to recipients. Great for testing and faking email sending.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/CreateInboxDto.cs#lines-249">View Source</a>
+  </span>
+  <a id="mailslurp_Model_CreateInboxDto_Equals_" data-uid="mailslurp.Model.CreateInboxDto.Equals*"></a>
+  <h4 id="mailslurp_Model_CreateInboxDto_Equals_mailslurp_Model_CreateInboxDto_" data-uid="mailslurp.Model.CreateInboxDto.Equals(mailslurp.Model.CreateInboxDto)">Equals(CreateInboxDto)</h4>
+  <div class="markdown level1 summary"><p>Returns true if CreateInboxDto instances are equal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(CreateInboxDto input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateInboxDto.html">CreateInboxDto</a></td>
+        <td><span class="parametername">input</span></td>
+        <td><p>Instance of CreateInboxDto to be compared</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>Boolean</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/CreateInboxDto.cs#lines-239">View Source</a>
+  </span>
+  <a id="mailslurp_Model_CreateInboxDto_Equals_" data-uid="mailslurp.Model.CreateInboxDto.Equals*"></a>
+  <h4 id="mailslurp_Model_CreateInboxDto_Equals_System_Object_" data-uid="mailslurp.Model.CreateInboxDto.Equals(System.Object)">Equals(object)</h4>
+  <div class="markdown level1 summary"><p>Returns true if objects are equal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">input</span></td>
+        <td><p>Object to be compared</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>Boolean</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a></div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/CreateInboxDto.cs#lines-337">View Source</a>
+  </span>
+  <a id="mailslurp_Model_CreateInboxDto_GetHashCode_" data-uid="mailslurp.Model.CreateInboxDto.GetHashCode*"></a>
+  <h4 id="mailslurp_Model_CreateInboxDto_GetHashCode" data-uid="mailslurp.Model.CreateInboxDto.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Gets the hash code</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>Hash code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a></div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/CreateInboxDto.cs#lines-229">View Source</a>
+  </span>
+  <a id="mailslurp_Model_CreateInboxDto_ToJson_" data-uid="mailslurp.Model.CreateInboxDto.ToJson*"></a>
+  <h4 id="mailslurp_Model_CreateInboxDto_ToJson" data-uid="mailslurp.Model.CreateInboxDto.ToJson">ToJson()</h4>
+  <div class="markdown level1 summary"><p>Returns the JSON string presentation of the object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ToJson()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>JSON string presentation of the object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/CreateInboxDto.cs#lines-202">View Source</a>
+  </span>
+  <a id="mailslurp_Model_CreateInboxDto_ToString_" data-uid="mailslurp.Model.CreateInboxDto.ToString*"></a>
+  <h4 id="mailslurp_Model_CreateInboxDto_ToString" data-uid="mailslurp.Model.CreateInboxDto.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns the string presentation of the object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>String presentation of the object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a></div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/CreateInboxDto.cs#lines-408">View Source</a>
+  </span>
+  <a id="mailslurp_Model_CreateInboxDto_Validate_" data-uid="mailslurp.Model.CreateInboxDto.Validate*"></a>
+  <h4 id="mailslurp_Model_CreateInboxDto_Validate_System_ComponentModel_DataAnnotations_ValidationContext_" data-uid="mailslurp.Model.CreateInboxDto.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">Validate(ValidationContext)</h4>
+  <div class="markdown level1 summary"><p>To validate all properties of the instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ValidationResult&gt; Validate(ValidationContext validationContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.validationcontext">ValidationContext</a></td>
+        <td><span class="parametername">validationContext</span></td>
+        <td><p>Validation context</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.validationresult">ValidationResult</a>&gt;</td>
+        <td><p>Validation Result</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">System.IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.ivalidatableobject">System.ComponentModel.DataAnnotations.IValidatableObject</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/CreateInboxDto.cs#lines-32" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
