@@ -1,0 +1,1777 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IToolsControllerApiSync
+ | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IToolsControllerApiSync
+ | MailSlurp ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Api.IToolsControllerApiSync">
+
+
+  <h1 id="mailslurp_Api_IToolsControllerApiSync" data-uid="mailslurp.Api.IToolsControllerApiSync" class="text-break">Interface IToolsControllerApiSync
+</h1>
+  <div class="markdown level0 summary"><p>Represents a collection of functions to interact with the API endpoints</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_Configuration">IApiAccessor.Configuration</a>
+    </div>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_GetBasePath">IApiAccessor.GetBasePath()</a>
+    </div>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_ExceptionFactory">IApiAccessor.ExceptionFactory</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">mailslurp</span>.<a class="xref" href="mailslurp.Api.html">Api</a></h6>
+  <h6><strong>Assembly</strong>: mailslurp.dll</h6>
+  <h5 id="mailslurp_Api_IToolsControllerApiSync_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IToolsControllerApiSync : IApiAccessor</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-37">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IToolsControllerApiSync_CheckEmailFeaturesClientSupport_" data-uid="mailslurp.Api.IToolsControllerApiSync.CheckEmailFeaturesClientSupport*"></a>
+  <h4 id="mailslurp_Api_IToolsControllerApiSync_CheckEmailFeaturesClientSupport_mailslurp_Model_CheckEmailFeaturesClientSupportOptions_System_Int32_" data-uid="mailslurp.Api.IToolsControllerApiSync.CheckEmailFeaturesClientSupport(mailslurp.Model.CheckEmailFeaturesClientSupportOptions,System.Int32)">CheckEmailFeaturesClientSupport(CheckEmailFeaturesClientSupportOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Check email client support for email HTML and CSS features</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CheckEmailFeaturesClientSupportResults CheckEmailFeaturesClientSupport(CheckEmailFeaturesClientSupportOptions checkEmailFeaturesClientSupportOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CheckEmailFeaturesClientSupportOptions.html">CheckEmailFeaturesClientSupportOptions</a></td>
+        <td><span class="parametername">checkEmailFeaturesClientSupportOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CheckEmailFeaturesClientSupportResults.html">CheckEmailFeaturesClientSupportResults</a></td>
+        <td><p>CheckEmailFeaturesClientSupportResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-49">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IToolsControllerApiSync_CheckEmailFeaturesClientSupportWithHttpInfo_" data-uid="mailslurp.Api.IToolsControllerApiSync.CheckEmailFeaturesClientSupportWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IToolsControllerApiSync_CheckEmailFeaturesClientSupportWithHttpInfo_mailslurp_Model_CheckEmailFeaturesClientSupportOptions_System_Int32_" data-uid="mailslurp.Api.IToolsControllerApiSync.CheckEmailFeaturesClientSupportWithHttpInfo(mailslurp.Model.CheckEmailFeaturesClientSupportOptions,System.Int32)">CheckEmailFeaturesClientSupportWithHttpInfo(CheckEmailFeaturesClientSupportOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Check email client support for email HTML and CSS features</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;CheckEmailFeaturesClientSupportResults&gt; CheckEmailFeaturesClientSupportWithHttpInfo(CheckEmailFeaturesClientSupportOptions checkEmailFeaturesClientSupportOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CheckEmailFeaturesClientSupportOptions.html">CheckEmailFeaturesClientSupportOptions</a></td>
+        <td><span class="parametername">checkEmailFeaturesClientSupportOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.CheckEmailFeaturesClientSupportResults.html">CheckEmailFeaturesClientSupportResults</a>&gt;</td>
+        <td><p>ApiResponse of CheckEmailFeaturesClientSupportResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-56">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IToolsControllerApiSync_CreateNewFakeEmailAddress_" data-uid="mailslurp.Api.IToolsControllerApiSync.CreateNewFakeEmailAddress*"></a>
+  <h4 id="mailslurp_Api_IToolsControllerApiSync_CreateNewFakeEmailAddress_System_Int32_" data-uid="mailslurp.Api.IToolsControllerApiSync.CreateNewFakeEmailAddress(System.Int32)">CreateNewFakeEmailAddress(int)</h4>
+  <div class="markdown level1 summary"><p>Create a new email address using the fake email domains</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">NewFakeEmailAddressResult CreateNewFakeEmailAddress(int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.NewFakeEmailAddressResult.html">NewFakeEmailAddressResult</a></td>
+        <td><p>NewFakeEmailAddressResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-67">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IToolsControllerApiSync_CreateNewFakeEmailAddressWithHttpInfo_" data-uid="mailslurp.Api.IToolsControllerApiSync.CreateNewFakeEmailAddressWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IToolsControllerApiSync_CreateNewFakeEmailAddressWithHttpInfo_System_Int32_" data-uid="mailslurp.Api.IToolsControllerApiSync.CreateNewFakeEmailAddressWithHttpInfo(System.Int32)">CreateNewFakeEmailAddressWithHttpInfo(int)</h4>
+  <div class="markdown level1 summary"><p>Create a new email address using the fake email domains</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;NewFakeEmailAddressResult&gt; CreateNewFakeEmailAddressWithHttpInfo(int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.NewFakeEmailAddressResult.html">NewFakeEmailAddressResult</a>&gt;</td>
+        <td><p>ApiResponse of NewFakeEmailAddressResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-75">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IToolsControllerApiSync_GenerateBimiRecord_" data-uid="mailslurp.Api.IToolsControllerApiSync.GenerateBimiRecord*"></a>
+  <h4 id="mailslurp_Api_IToolsControllerApiSync_GenerateBimiRecord_mailslurp_Model_GenerateBimiRecordOptions_System_Int32_" data-uid="mailslurp.Api.IToolsControllerApiSync.GenerateBimiRecord(mailslurp.Model.GenerateBimiRecordOptions,System.Int32)">GenerateBimiRecord(GenerateBimiRecordOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a BIMI record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">GenerateBimiRecordResults GenerateBimiRecord(GenerateBimiRecordOptions generateBimiRecordOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateBimiRecordOptions.html">GenerateBimiRecordOptions</a></td>
+        <td><span class="parametername">generateBimiRecordOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateBimiRecordResults.html">GenerateBimiRecordResults</a></td>
+        <td><p>GenerateBimiRecordResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-87">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IToolsControllerApiSync_GenerateBimiRecordWithHttpInfo_" data-uid="mailslurp.Api.IToolsControllerApiSync.GenerateBimiRecordWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IToolsControllerApiSync_GenerateBimiRecordWithHttpInfo_mailslurp_Model_GenerateBimiRecordOptions_System_Int32_" data-uid="mailslurp.Api.IToolsControllerApiSync.GenerateBimiRecordWithHttpInfo(mailslurp.Model.GenerateBimiRecordOptions,System.Int32)">GenerateBimiRecordWithHttpInfo(GenerateBimiRecordOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a BIMI record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;GenerateBimiRecordResults&gt; GenerateBimiRecordWithHttpInfo(GenerateBimiRecordOptions generateBimiRecordOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateBimiRecordOptions.html">GenerateBimiRecordOptions</a></td>
+        <td><span class="parametername">generateBimiRecordOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.GenerateBimiRecordResults.html">GenerateBimiRecordResults</a>&gt;</td>
+        <td><p>ApiResponse of GenerateBimiRecordResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-95">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IToolsControllerApiSync_GenerateDmarcRecord_" data-uid="mailslurp.Api.IToolsControllerApiSync.GenerateDmarcRecord*"></a>
+  <h4 id="mailslurp_Api_IToolsControllerApiSync_GenerateDmarcRecord_mailslurp_Model_GenerateDmarcRecordOptions_System_Int32_" data-uid="mailslurp.Api.IToolsControllerApiSync.GenerateDmarcRecord(mailslurp.Model.GenerateDmarcRecordOptions,System.Int32)">GenerateDmarcRecord(GenerateDmarcRecordOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a DMARC record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">GenerateDmarcRecordResults GenerateDmarcRecord(GenerateDmarcRecordOptions generateDmarcRecordOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateDmarcRecordOptions.html">GenerateDmarcRecordOptions</a></td>
+        <td><span class="parametername">generateDmarcRecordOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateDmarcRecordResults.html">GenerateDmarcRecordResults</a></td>
+        <td><p>GenerateDmarcRecordResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-107">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IToolsControllerApiSync_GenerateDmarcRecordWithHttpInfo_" data-uid="mailslurp.Api.IToolsControllerApiSync.GenerateDmarcRecordWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IToolsControllerApiSync_GenerateDmarcRecordWithHttpInfo_mailslurp_Model_GenerateDmarcRecordOptions_System_Int32_" data-uid="mailslurp.Api.IToolsControllerApiSync.GenerateDmarcRecordWithHttpInfo(mailslurp.Model.GenerateDmarcRecordOptions,System.Int32)">GenerateDmarcRecordWithHttpInfo(GenerateDmarcRecordOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a DMARC record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;GenerateDmarcRecordResults&gt; GenerateDmarcRecordWithHttpInfo(GenerateDmarcRecordOptions generateDmarcRecordOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateDmarcRecordOptions.html">GenerateDmarcRecordOptions</a></td>
+        <td><span class="parametername">generateDmarcRecordOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.GenerateDmarcRecordResults.html">GenerateDmarcRecordResults</a>&gt;</td>
+        <td><p>ApiResponse of GenerateDmarcRecordResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-115">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IToolsControllerApiSync_GenerateMtaStsRecord_" data-uid="mailslurp.Api.IToolsControllerApiSync.GenerateMtaStsRecord*"></a>
+  <h4 id="mailslurp_Api_IToolsControllerApiSync_GenerateMtaStsRecord_mailslurp_Model_GenerateMtaStsRecordOptions_System_Int32_" data-uid="mailslurp.Api.IToolsControllerApiSync.GenerateMtaStsRecord(mailslurp.Model.GenerateMtaStsRecordOptions,System.Int32)">GenerateMtaStsRecord(GenerateMtaStsRecordOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a TLS reporting record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">GenerateMtaStsRecordResults GenerateMtaStsRecord(GenerateMtaStsRecordOptions generateMtaStsRecordOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateMtaStsRecordOptions.html">GenerateMtaStsRecordOptions</a></td>
+        <td><span class="parametername">generateMtaStsRecordOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateMtaStsRecordResults.html">GenerateMtaStsRecordResults</a></td>
+        <td><p>GenerateMtaStsRecordResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-127">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IToolsControllerApiSync_GenerateMtaStsRecordWithHttpInfo_" data-uid="mailslurp.Api.IToolsControllerApiSync.GenerateMtaStsRecordWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IToolsControllerApiSync_GenerateMtaStsRecordWithHttpInfo_mailslurp_Model_GenerateMtaStsRecordOptions_System_Int32_" data-uid="mailslurp.Api.IToolsControllerApiSync.GenerateMtaStsRecordWithHttpInfo(mailslurp.Model.GenerateMtaStsRecordOptions,System.Int32)">GenerateMtaStsRecordWithHttpInfo(GenerateMtaStsRecordOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a TLS reporting record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;GenerateMtaStsRecordResults&gt; GenerateMtaStsRecordWithHttpInfo(GenerateMtaStsRecordOptions generateMtaStsRecordOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateMtaStsRecordOptions.html">GenerateMtaStsRecordOptions</a></td>
+        <td><span class="parametername">generateMtaStsRecordOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.GenerateMtaStsRecordResults.html">GenerateMtaStsRecordResults</a>&gt;</td>
+        <td><p>ApiResponse of GenerateMtaStsRecordResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-135">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IToolsControllerApiSync_GenerateTlsReportingRecord_" data-uid="mailslurp.Api.IToolsControllerApiSync.GenerateTlsReportingRecord*"></a>
+  <h4 id="mailslurp_Api_IToolsControllerApiSync_GenerateTlsReportingRecord_mailslurp_Model_GenerateTlsReportingRecordOptions_System_Int32_" data-uid="mailslurp.Api.IToolsControllerApiSync.GenerateTlsReportingRecord(mailslurp.Model.GenerateTlsReportingRecordOptions,System.Int32)">GenerateTlsReportingRecord(GenerateTlsReportingRecordOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a TLS reporting record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">GenerateTlsReportingRecordResults GenerateTlsReportingRecord(GenerateTlsReportingRecordOptions generateTlsReportingRecordOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateTlsReportingRecordOptions.html">GenerateTlsReportingRecordOptions</a></td>
+        <td><span class="parametername">generateTlsReportingRecordOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateTlsReportingRecordResults.html">GenerateTlsReportingRecordResults</a></td>
+        <td><p>GenerateTlsReportingRecordResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-147">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IToolsControllerApiSync_GenerateTlsReportingRecordWithHttpInfo_" data-uid="mailslurp.Api.IToolsControllerApiSync.GenerateTlsReportingRecordWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IToolsControllerApiSync_GenerateTlsReportingRecordWithHttpInfo_mailslurp_Model_GenerateTlsReportingRecordOptions_System_Int32_" data-uid="mailslurp.Api.IToolsControllerApiSync.GenerateTlsReportingRecordWithHttpInfo(mailslurp.Model.GenerateTlsReportingRecordOptions,System.Int32)">GenerateTlsReportingRecordWithHttpInfo(GenerateTlsReportingRecordOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a TLS reporting record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;GenerateTlsReportingRecordResults&gt; GenerateTlsReportingRecordWithHttpInfo(GenerateTlsReportingRecordOptions generateTlsReportingRecordOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateTlsReportingRecordOptions.html">GenerateTlsReportingRecordOptions</a></td>
+        <td><span class="parametername">generateTlsReportingRecordOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.GenerateTlsReportingRecordResults.html">GenerateTlsReportingRecordResults</a>&gt;</td>
+        <td><p>ApiResponse of GenerateTlsReportingRecordResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-155">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IToolsControllerApiSync_GetFakeEmailById_" data-uid="mailslurp.Api.IToolsControllerApiSync.GetFakeEmailById*"></a>
+  <h4 id="mailslurp_Api_IToolsControllerApiSync_GetFakeEmailById_System_Guid_System_Int32_" data-uid="mailslurp.Api.IToolsControllerApiSync.GetFakeEmailById(System.Guid,System.Int32)">GetFakeEmailById(Guid, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FakeEmailResult GetFakeEmailById(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.FakeEmailResult.html">FakeEmailResult</a></td>
+        <td><p>FakeEmailResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-167">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IToolsControllerApiSync_GetFakeEmailByIdWithHttpInfo_" data-uid="mailslurp.Api.IToolsControllerApiSync.GetFakeEmailByIdWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IToolsControllerApiSync_GetFakeEmailByIdWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.IToolsControllerApiSync.GetFakeEmailByIdWithHttpInfo(System.Guid,System.Int32)">GetFakeEmailByIdWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;FakeEmailResult&gt; GetFakeEmailByIdWithHttpInfo(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.FakeEmailResult.html">FakeEmailResult</a>&gt;</td>
+        <td><p>ApiResponse of FakeEmailResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-176">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IToolsControllerApiSync_GetFakeEmailsForAddress_" data-uid="mailslurp.Api.IToolsControllerApiSync.GetFakeEmailsForAddress*"></a>
+  <h4 id="mailslurp_Api_IToolsControllerApiSync_GetFakeEmailsForAddress_System_String_System_Nullable_System_Int32__System_Int32_" data-uid="mailslurp.Api.IToolsControllerApiSync.GetFakeEmailsForAddress(System.String,System.Nullable{System.Int32},System.Int32)">GetFakeEmailsForAddress(string, int?, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;FakeEmailPreview&gt; GetFakeEmailsForAddress(string emailAddress, int? page = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">emailAddress</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<a class="xref" href="mailslurp.Model.FakeEmailPreview.html">FakeEmailPreview</a>&gt;</td>
+        <td><p>List&lt;FakeEmailPreview&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-189">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IToolsControllerApiSync_GetFakeEmailsForAddressWithHttpInfo_" data-uid="mailslurp.Api.IToolsControllerApiSync.GetFakeEmailsForAddressWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IToolsControllerApiSync_GetFakeEmailsForAddressWithHttpInfo_System_String_System_Nullable_System_Int32__System_Int32_" data-uid="mailslurp.Api.IToolsControllerApiSync.GetFakeEmailsForAddressWithHttpInfo(System.String,System.Nullable{System.Int32},System.Int32)">GetFakeEmailsForAddressWithHttpInfo(string, int?, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;List&lt;FakeEmailPreview&gt;&gt; GetFakeEmailsForAddressWithHttpInfo(string emailAddress, int? page = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">emailAddress</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<a class="xref" href="mailslurp.Model.FakeEmailPreview.html">FakeEmailPreview</a>&gt;&gt;</td>
+        <td><p>ApiResponse of List&lt;FakeEmailPreview&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-197">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IToolsControllerApiSync_LookupBimiDomain_" data-uid="mailslurp.Api.IToolsControllerApiSync.LookupBimiDomain*"></a>
+  <h4 id="mailslurp_Api_IToolsControllerApiSync_LookupBimiDomain_mailslurp_Model_LookupBimiDomainOptions_System_Int32_" data-uid="mailslurp.Api.IToolsControllerApiSync.LookupBimiDomain(mailslurp.Model.LookupBimiDomainOptions,System.Int32)">LookupBimiDomain(LookupBimiDomainOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Lookup a BIMI record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">LookupBimiDomainResults LookupBimiDomain(LookupBimiDomainOptions lookupBimiDomainOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupBimiDomainOptions.html">LookupBimiDomainOptions</a></td>
+        <td><span class="parametername">lookupBimiDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupBimiDomainResults.html">LookupBimiDomainResults</a></td>
+        <td><p>LookupBimiDomainResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-209">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IToolsControllerApiSync_LookupBimiDomainWithHttpInfo_" data-uid="mailslurp.Api.IToolsControllerApiSync.LookupBimiDomainWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IToolsControllerApiSync_LookupBimiDomainWithHttpInfo_mailslurp_Model_LookupBimiDomainOptions_System_Int32_" data-uid="mailslurp.Api.IToolsControllerApiSync.LookupBimiDomainWithHttpInfo(mailslurp.Model.LookupBimiDomainOptions,System.Int32)">LookupBimiDomainWithHttpInfo(LookupBimiDomainOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Lookup a BIMI record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;LookupBimiDomainResults&gt; LookupBimiDomainWithHttpInfo(LookupBimiDomainOptions lookupBimiDomainOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupBimiDomainOptions.html">LookupBimiDomainOptions</a></td>
+        <td><span class="parametername">lookupBimiDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.LookupBimiDomainResults.html">LookupBimiDomainResults</a>&gt;</td>
+        <td><p>ApiResponse of LookupBimiDomainResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-217">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IToolsControllerApiSync_LookupDmarcDomain_" data-uid="mailslurp.Api.IToolsControllerApiSync.LookupDmarcDomain*"></a>
+  <h4 id="mailslurp_Api_IToolsControllerApiSync_LookupDmarcDomain_mailslurp_Model_LookupDmarcDomainOptions_System_Int32_" data-uid="mailslurp.Api.IToolsControllerApiSync.LookupDmarcDomain(mailslurp.Model.LookupDmarcDomainOptions,System.Int32)">LookupDmarcDomain(LookupDmarcDomainOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Lookup a DMARC record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">LookupDmarcDomainResults LookupDmarcDomain(LookupDmarcDomainOptions lookupDmarcDomainOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupDmarcDomainOptions.html">LookupDmarcDomainOptions</a></td>
+        <td><span class="parametername">lookupDmarcDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupDmarcDomainResults.html">LookupDmarcDomainResults</a></td>
+        <td><p>LookupDmarcDomainResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-229">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IToolsControllerApiSync_LookupDmarcDomainWithHttpInfo_" data-uid="mailslurp.Api.IToolsControllerApiSync.LookupDmarcDomainWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IToolsControllerApiSync_LookupDmarcDomainWithHttpInfo_mailslurp_Model_LookupDmarcDomainOptions_System_Int32_" data-uid="mailslurp.Api.IToolsControllerApiSync.LookupDmarcDomainWithHttpInfo(mailslurp.Model.LookupDmarcDomainOptions,System.Int32)">LookupDmarcDomainWithHttpInfo(LookupDmarcDomainOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Lookup a DMARC record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;LookupDmarcDomainResults&gt; LookupDmarcDomainWithHttpInfo(LookupDmarcDomainOptions lookupDmarcDomainOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupDmarcDomainOptions.html">LookupDmarcDomainOptions</a></td>
+        <td><span class="parametername">lookupDmarcDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.LookupDmarcDomainResults.html">LookupDmarcDomainResults</a>&gt;</td>
+        <td><p>ApiResponse of LookupDmarcDomainResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-237">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IToolsControllerApiSync_LookupMtaStsDomain_" data-uid="mailslurp.Api.IToolsControllerApiSync.LookupMtaStsDomain*"></a>
+  <h4 id="mailslurp_Api_IToolsControllerApiSync_LookupMtaStsDomain_mailslurp_Model_LookupMtaStsDomainOptions_System_Int32_" data-uid="mailslurp.Api.IToolsControllerApiSync.LookupMtaStsDomain(mailslurp.Model.LookupMtaStsDomainOptions,System.Int32)">LookupMtaStsDomain(LookupMtaStsDomainOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Lookup a MTA-STS domain policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">LookupMtaStsDomainResults LookupMtaStsDomain(LookupMtaStsDomainOptions lookupMtaStsDomainOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupMtaStsDomainOptions.html">LookupMtaStsDomainOptions</a></td>
+        <td><span class="parametername">lookupMtaStsDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupMtaStsDomainResults.html">LookupMtaStsDomainResults</a></td>
+        <td><p>LookupMtaStsDomainResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-249">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IToolsControllerApiSync_LookupMtaStsDomainWithHttpInfo_" data-uid="mailslurp.Api.IToolsControllerApiSync.LookupMtaStsDomainWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IToolsControllerApiSync_LookupMtaStsDomainWithHttpInfo_mailslurp_Model_LookupMtaStsDomainOptions_System_Int32_" data-uid="mailslurp.Api.IToolsControllerApiSync.LookupMtaStsDomainWithHttpInfo(mailslurp.Model.LookupMtaStsDomainOptions,System.Int32)">LookupMtaStsDomainWithHttpInfo(LookupMtaStsDomainOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Lookup a MTA-STS domain policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;LookupMtaStsDomainResults&gt; LookupMtaStsDomainWithHttpInfo(LookupMtaStsDomainOptions lookupMtaStsDomainOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupMtaStsDomainOptions.html">LookupMtaStsDomainOptions</a></td>
+        <td><span class="parametername">lookupMtaStsDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.LookupMtaStsDomainResults.html">LookupMtaStsDomainResults</a>&gt;</td>
+        <td><p>ApiResponse of LookupMtaStsDomainResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-257">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IToolsControllerApiSync_LookupTlsReportingDomain_" data-uid="mailslurp.Api.IToolsControllerApiSync.LookupTlsReportingDomain*"></a>
+  <h4 id="mailslurp_Api_IToolsControllerApiSync_LookupTlsReportingDomain_mailslurp_Model_LookupTlsReportingDomainOptions_System_Int32_" data-uid="mailslurp.Api.IToolsControllerApiSync.LookupTlsReportingDomain(mailslurp.Model.LookupTlsReportingDomainOptions,System.Int32)">LookupTlsReportingDomain(LookupTlsReportingDomainOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Lookup a TLS reporting domain policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">LookupTlsReportingDomainResults LookupTlsReportingDomain(LookupTlsReportingDomainOptions lookupTlsReportingDomainOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupTlsReportingDomainOptions.html">LookupTlsReportingDomainOptions</a></td>
+        <td><span class="parametername">lookupTlsReportingDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupTlsReportingDomainResults.html">LookupTlsReportingDomainResults</a></td>
+        <td><p>LookupTlsReportingDomainResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-269">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IToolsControllerApiSync_LookupTlsReportingDomainWithHttpInfo_" data-uid="mailslurp.Api.IToolsControllerApiSync.LookupTlsReportingDomainWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IToolsControllerApiSync_LookupTlsReportingDomainWithHttpInfo_mailslurp_Model_LookupTlsReportingDomainOptions_System_Int32_" data-uid="mailslurp.Api.IToolsControllerApiSync.LookupTlsReportingDomainWithHttpInfo(mailslurp.Model.LookupTlsReportingDomainOptions,System.Int32)">LookupTlsReportingDomainWithHttpInfo(LookupTlsReportingDomainOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Lookup a TLS reporting domain policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;LookupTlsReportingDomainResults&gt; LookupTlsReportingDomainWithHttpInfo(LookupTlsReportingDomainOptions lookupTlsReportingDomainOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupTlsReportingDomainOptions.html">LookupTlsReportingDomainOptions</a></td>
+        <td><span class="parametername">lookupTlsReportingDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.LookupTlsReportingDomainResults.html">LookupTlsReportingDomainResults</a>&gt;</td>
+        <td><p>ApiResponse of LookupTlsReportingDomainResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-27" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
