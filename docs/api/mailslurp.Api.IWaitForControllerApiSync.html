@@ -1,0 +1,1709 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IWaitForControllerApiSync
+ | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IWaitForControllerApiSync
+ | MailSlurp ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Api.IWaitForControllerApiSync">
+
+
+  <h1 id="mailslurp_Api_IWaitForControllerApiSync" data-uid="mailslurp.Api.IWaitForControllerApiSync" class="text-break">Interface IWaitForControllerApiSync
+</h1>
+  <div class="markdown level0 summary"><p>Represents a collection of functions to interact with the API endpoints</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_Configuration">IApiAccessor.Configuration</a>
+    </div>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_GetBasePath">IApiAccessor.GetBasePath()</a>
+    </div>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_ExceptionFactory">IApiAccessor.ExceptionFactory</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">mailslurp</span>.<a class="xref" href="mailslurp.Api.html">Api</a></h6>
+  <h6><strong>Assembly</strong>: mailslurp.dll</h6>
+  <h5 id="mailslurp_Api_IWaitForControllerApiSync_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IWaitForControllerApiSync : IApiAccessor</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/WaitForControllerApi.cs#lines-40">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IWaitForControllerApiSync_WaitFor_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitFor*"></a>
+  <h4 id="mailslurp_Api_IWaitForControllerApiSync_WaitFor_mailslurp_Model_WaitForConditions_System_Int32_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitFor(mailslurp.Model.WaitForConditions,System.Int32)">WaitFor(WaitForConditions, int)</h4>
+  <div class="markdown level1 summary"><p>Wait for an email to match the provided filter conditions such as subject contains keyword.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;EmailPreview&gt; WaitFor(WaitForConditions waitForConditions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.WaitForConditions.html">WaitForConditions</a></td>
+        <td><span class="parametername">waitForConditions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<a class="xref" href="mailslurp.Model.EmailPreview.html">EmailPreview</a>&gt;</td>
+        <td><p>List&lt;EmailPreview&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IWaitForControllerApiSync_WaitFor_mailslurp_Model_WaitForConditions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Generic waitFor method that will wait until an inbox meets given conditions or return immediately if already met</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/WaitForControllerApi.cs#lines-70">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IWaitForControllerApiSync_WaitForEmailCount_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForEmailCount*"></a>
+  <h4 id="mailslurp_Api_IWaitForControllerApiSync_WaitForEmailCount_System_Guid_System_Int32_System_Nullable_System_Int64__System_Nullable_System_Boolean__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int64__System_Int32_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForEmailCount(System.Guid,System.Int32,System.Nullable{System.Int64},System.Nullable{System.Boolean},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Nullable{System.Int64},System.Int32)">WaitForEmailCount(Guid, int, long?, bool?, DateTime?, DateTime?, string, long?, int)</h4>
+  <div class="markdown level1 summary"><p>Wait for and return count number of emails. Hold connection until inbox count matches expected or timeout occurs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;EmailPreview&gt; WaitForEmailCount(Guid inboxId, int count, long? timeout = null, bool? unreadOnly = null, DateTime? before = null, DateTime? since = null, string sort = null, long? delay = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Id of the inbox we are fetching emails from</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Number of emails to wait for. Must be greater that 1</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>Max milliseconds to wait (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span>?</td>
+        <td><span class="parametername">unreadOnly</span></td>
+        <td><p>Optional filter for unread only (optional, default to false)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter for emails that were received before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter for emails that were received after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Sort direction (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">delay</span></td>
+        <td><p>Max milliseconds delay between calls (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<a class="xref" href="mailslurp.Model.EmailPreview.html">EmailPreview</a>&gt;</td>
+        <td><p>List&lt;EmailPreview&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IWaitForControllerApiSync_WaitForEmailCount_System_Guid_System_Int32_System_Nullable_System_Int64__System_Nullable_System_Boolean__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int64__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If inbox contains count or more emails at time of request then return count worth of emails. If not wait until the count is reached and return those or return an error if timeout is exceeded.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/WaitForControllerApi.cs#lines-89">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IWaitForControllerApiSync_WaitForEmailCountWithHttpInfo_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForEmailCountWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IWaitForControllerApiSync_WaitForEmailCountWithHttpInfo_System_Guid_System_Int32_System_Nullable_System_Int64__System_Nullable_System_Boolean__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int64__System_Int32_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForEmailCountWithHttpInfo(System.Guid,System.Int32,System.Nullable{System.Int64},System.Nullable{System.Boolean},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Nullable{System.Int64},System.Int32)">WaitForEmailCountWithHttpInfo(Guid, int, long?, bool?, DateTime?, DateTime?, string, long?, int)</h4>
+  <div class="markdown level1 summary"><p>Wait for and return count number of emails. Hold connection until inbox count matches expected or timeout occurs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;List&lt;EmailPreview&gt;&gt; WaitForEmailCountWithHttpInfo(Guid inboxId, int count, long? timeout = null, bool? unreadOnly = null, DateTime? before = null, DateTime? since = null, string sort = null, long? delay = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Id of the inbox we are fetching emails from</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Number of emails to wait for. Must be greater that 1</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>Max milliseconds to wait (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span>?</td>
+        <td><span class="parametername">unreadOnly</span></td>
+        <td><p>Optional filter for unread only (optional, default to false)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter for emails that were received before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter for emails that were received after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Sort direction (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">delay</span></td>
+        <td><p>Max milliseconds delay between calls (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<a class="xref" href="mailslurp.Model.EmailPreview.html">EmailPreview</a>&gt;&gt;</td>
+        <td><p>ApiResponse of List&lt;EmailPreview&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IWaitForControllerApiSync_WaitForEmailCountWithHttpInfo_System_Guid_System_Int32_System_Nullable_System_Int64__System_Nullable_System_Boolean__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int64__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If inbox contains count or more emails at time of request then return count worth of emails. If not wait until the count is reached and return those or return an error if timeout is exceeded.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/WaitForControllerApi.cs#lines-106">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IWaitForControllerApiSync_WaitForLatestEmail_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForLatestEmail*"></a>
+  <h4 id="mailslurp_Api_IWaitForControllerApiSync_WaitForLatestEmail_System_Nullable_System_Guid__System_Nullable_System_Int64__System_Nullable_System_Boolean__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int64__System_Int32_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForLatestEmail(System.Nullable{System.Guid},System.Nullable{System.Int64},System.Nullable{System.Boolean},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Nullable{System.Int64},System.Int32)">WaitForLatestEmail(Guid?, long?, bool?, DateTime?, DateTime?, string, long?, int)</h4>
+  <div class="markdown level1 summary"><p>Fetch inbox's latest email or if empty wait for an email to arrive</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Email WaitForLatestEmail(Guid? inboxId = null, long? timeout = null, bool? unreadOnly = null, DateTime? before = null, DateTime? since = null, string sort = null, long? delay = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Id of the inbox we are fetching emails from (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>Max milliseconds to wait (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span>?</td>
+        <td><span class="parametername">unreadOnly</span></td>
+        <td><p>Optional filter for unread only. (optional, default to false)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter for emails that were before after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter for emails that were received after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Sort direction (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">delay</span></td>
+        <td><p>Max milliseconds delay between calls (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.Email.html">Email</a></td>
+        <td><p>Email</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IWaitForControllerApiSync_WaitForLatestEmail_System_Nullable_System_Guid__System_Nullable_System_Int64__System_Nullable_System_Boolean__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int64__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Will return either the last received email or wait for an email to arrive and return that. If you need to wait for an email for a non-empty inbox set <code>unreadOnly=true</code> or see the other receive methods such as <code>waitForNthEmail</code> or <code>waitForEmailCount</code>.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/WaitForControllerApi.cs#lines-124">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IWaitForControllerApiSync_WaitForLatestEmailWithHttpInfo_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForLatestEmailWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IWaitForControllerApiSync_WaitForLatestEmailWithHttpInfo_System_Nullable_System_Guid__System_Nullable_System_Int64__System_Nullable_System_Boolean__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int64__System_Int32_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForLatestEmailWithHttpInfo(System.Nullable{System.Guid},System.Nullable{System.Int64},System.Nullable{System.Boolean},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Nullable{System.Int64},System.Int32)">WaitForLatestEmailWithHttpInfo(Guid?, long?, bool?, DateTime?, DateTime?, string, long?, int)</h4>
+  <div class="markdown level1 summary"><p>Fetch inbox's latest email or if empty wait for an email to arrive</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;Email&gt; WaitForLatestEmailWithHttpInfo(Guid? inboxId = null, long? timeout = null, bool? unreadOnly = null, DateTime? before = null, DateTime? since = null, string sort = null, long? delay = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Id of the inbox we are fetching emails from (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>Max milliseconds to wait (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span>?</td>
+        <td><span class="parametername">unreadOnly</span></td>
+        <td><p>Optional filter for unread only. (optional, default to false)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter for emails that were before after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter for emails that were received after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Sort direction (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">delay</span></td>
+        <td><p>Max milliseconds delay between calls (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.Email.html">Email</a>&gt;</td>
+        <td><p>ApiResponse of Email</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IWaitForControllerApiSync_WaitForLatestEmailWithHttpInfo_System_Nullable_System_Guid__System_Nullable_System_Int64__System_Nullable_System_Boolean__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int64__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Will return either the last received email or wait for an email to arrive and return that. If you need to wait for an email for a non-empty inbox set <code>unreadOnly=true</code> or see the other receive methods such as <code>waitForNthEmail</code> or <code>waitForEmailCount</code>.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/WaitForControllerApi.cs#lines-135">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IWaitForControllerApiSync_WaitForLatestSms_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForLatestSms*"></a>
+  <h4 id="mailslurp_Api_IWaitForControllerApiSync_WaitForLatestSms_mailslurp_Model_WaitForSingleSmsOptions_System_Int32_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForLatestSms(mailslurp.Model.WaitForSingleSmsOptions,System.Int32)">WaitForLatestSms(WaitForSingleSmsOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Wait for the latest SMS message to match the provided filter conditions such as body contains keyword.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">SmsDto WaitForLatestSms(WaitForSingleSmsOptions waitForSingleSmsOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.WaitForSingleSmsOptions.html">WaitForSingleSmsOptions</a></td>
+        <td><span class="parametername">waitForSingleSmsOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.SmsDto.html">SmsDto</a></td>
+        <td><p>SmsDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IWaitForControllerApiSync_WaitForLatestSms_mailslurp_Model_WaitForSingleSmsOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Wait until a phone number meets given conditions or return immediately if already met</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/WaitForControllerApi.cs#lines-147">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IWaitForControllerApiSync_WaitForLatestSmsWithHttpInfo_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForLatestSmsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IWaitForControllerApiSync_WaitForLatestSmsWithHttpInfo_mailslurp_Model_WaitForSingleSmsOptions_System_Int32_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForLatestSmsWithHttpInfo(mailslurp.Model.WaitForSingleSmsOptions,System.Int32)">WaitForLatestSmsWithHttpInfo(WaitForSingleSmsOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Wait for the latest SMS message to match the provided filter conditions such as body contains keyword.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;SmsDto&gt; WaitForLatestSmsWithHttpInfo(WaitForSingleSmsOptions waitForSingleSmsOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.WaitForSingleSmsOptions.html">WaitForSingleSmsOptions</a></td>
+        <td><span class="parametername">waitForSingleSmsOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.SmsDto.html">SmsDto</a>&gt;</td>
+        <td><p>ApiResponse of SmsDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IWaitForControllerApiSync_WaitForLatestSmsWithHttpInfo_mailslurp_Model_WaitForSingleSmsOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Wait until a phone number meets given conditions or return immediately if already met</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/WaitForControllerApi.cs#lines-166">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IWaitForControllerApiSync_WaitForMatchingEmails_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForMatchingEmails*"></a>
+  <h4 id="mailslurp_Api_IWaitForControllerApiSync_WaitForMatchingEmails_System_Guid_System_Int32_mailslurp_Model_MatchOptions_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int64__System_Nullable_System_Int64__System_Nullable_System_Boolean__System_Int32_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForMatchingEmails(System.Guid,System.Int32,mailslurp.Model.MatchOptions,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Boolean},System.Int32)">WaitForMatchingEmails(Guid, int, MatchOptions, DateTime?, DateTime?, string, long?, long?, bool?, int)</h4>
+  <div class="markdown level1 summary"><p>Wait or return list of emails that match simple matching patterns</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;EmailPreview&gt; WaitForMatchingEmails(Guid inboxId, int count, MatchOptions matchOptions, DateTime? before = null, DateTime? since = null, string sort = null, long? delay = null, long? timeout = null, bool? unreadOnly = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Id of the inbox we are fetching emails from</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Number of emails to wait for. Must be greater or equal to 1</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.MatchOptions.html">MatchOptions</a></td>
+        <td><span class="parametername">matchOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter for emails that were received before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter for emails that were received after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Sort direction (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">delay</span></td>
+        <td><p>Max milliseconds delay between calls (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>Max milliseconds to wait (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span>?</td>
+        <td><span class="parametername">unreadOnly</span></td>
+        <td><p>Optional filter for unread only (optional, default to false)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<a class="xref" href="mailslurp.Model.EmailPreview.html">EmailPreview</a>&gt;</td>
+        <td><p>List&lt;EmailPreview&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IWaitForControllerApiSync_WaitForMatchingEmails_System_Guid_System_Int32_mailslurp_Model_MatchOptions_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int64__System_Nullable_System_Int64__System_Nullable_System_Boolean__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Perform a search of emails in an inbox with the given patterns. If results match expected count then return or else retry the search until results are found or timeout is reached. Match options allow simple CONTAINS or EQUALS filtering on SUBJECT, TO, BCC, CC, and FROM. See the <code>MatchOptions</code> object for options. An example payload is <code>{ matches: [{field: &amp;apos;SUBJECT&amp;apos;,should:&amp;apos;CONTAIN&amp;apos;,value:&amp;apos;needle&amp;apos;}] }</code>. You can use an array of matches and they will be applied sequentially to filter out emails. If you want to perform matches and extractions of content using Regex patterns see the EmailController <code>getEmailContentMatch</code> method.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/WaitForControllerApi.cs#lines-186">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IWaitForControllerApiSync_WaitForMatchingEmailsWithHttpInfo_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForMatchingEmailsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IWaitForControllerApiSync_WaitForMatchingEmailsWithHttpInfo_System_Guid_System_Int32_mailslurp_Model_MatchOptions_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int64__System_Nullable_System_Int64__System_Nullable_System_Boolean__System_Int32_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForMatchingEmailsWithHttpInfo(System.Guid,System.Int32,mailslurp.Model.MatchOptions,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Boolean},System.Int32)">WaitForMatchingEmailsWithHttpInfo(Guid, int, MatchOptions, DateTime?, DateTime?, string, long?, long?, bool?, int)</h4>
+  <div class="markdown level1 summary"><p>Wait or return list of emails that match simple matching patterns</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;List&lt;EmailPreview&gt;&gt; WaitForMatchingEmailsWithHttpInfo(Guid inboxId, int count, MatchOptions matchOptions, DateTime? before = null, DateTime? since = null, string sort = null, long? delay = null, long? timeout = null, bool? unreadOnly = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Id of the inbox we are fetching emails from</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Number of emails to wait for. Must be greater or equal to 1</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.MatchOptions.html">MatchOptions</a></td>
+        <td><span class="parametername">matchOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter for emails that were received before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter for emails that were received after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Sort direction (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">delay</span></td>
+        <td><p>Max milliseconds delay between calls (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>Max milliseconds to wait (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span>?</td>
+        <td><span class="parametername">unreadOnly</span></td>
+        <td><p>Optional filter for unread only (optional, default to false)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<a class="xref" href="mailslurp.Model.EmailPreview.html">EmailPreview</a>&gt;&gt;</td>
+        <td><p>ApiResponse of List&lt;EmailPreview&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IWaitForControllerApiSync_WaitForMatchingEmailsWithHttpInfo_System_Guid_System_Int32_mailslurp_Model_MatchOptions_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int64__System_Nullable_System_Int64__System_Nullable_System_Boolean__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Perform a search of emails in an inbox with the given patterns. If results match expected count then return or else retry the search until results are found or timeout is reached. Match options allow simple CONTAINS or EQUALS filtering on SUBJECT, TO, BCC, CC, and FROM. See the <code>MatchOptions</code> object for options. An example payload is <code>{ matches: [{field: &amp;apos;SUBJECT&amp;apos;,should:&amp;apos;CONTAIN&amp;apos;,value:&amp;apos;needle&amp;apos;}] }</code>. You can use an array of matches and they will be applied sequentially to filter out emails. If you want to perform matches and extractions of content using Regex patterns see the EmailController <code>getEmailContentMatch</code> method.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/WaitForControllerApi.cs#lines-204">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IWaitForControllerApiSync_WaitForMatchingFirstEmail_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForMatchingFirstEmail*"></a>
+  <h4 id="mailslurp_Api_IWaitForControllerApiSync_WaitForMatchingFirstEmail_System_Guid_mailslurp_Model_MatchOptions_System_Nullable_System_Int64__System_Nullable_System_Boolean__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int64__System_Int32_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForMatchingFirstEmail(System.Guid,mailslurp.Model.MatchOptions,System.Nullable{System.Int64},System.Nullable{System.Boolean},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Nullable{System.Int64},System.Int32)">WaitForMatchingFirstEmail(Guid, MatchOptions, long?, bool?, DateTime?, DateTime?, string, long?, int)</h4>
+  <div class="markdown level1 summary"><p>Wait for or return the first email that matches provided MatchOptions array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Email WaitForMatchingFirstEmail(Guid inboxId, MatchOptions matchOptions, long? timeout = null, bool? unreadOnly = null, DateTime? since = null, DateTime? before = null, string sort = null, long? delay = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Id of the inbox we are matching an email for</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.MatchOptions.html">MatchOptions</a></td>
+        <td><span class="parametername">matchOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>Max milliseconds to wait (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span>?</td>
+        <td><span class="parametername">unreadOnly</span></td>
+        <td><p>Optional filter for unread only (optional, default to false)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter for emails that were received after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter for emails that were received before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Sort direction (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">delay</span></td>
+        <td><p>Max milliseconds delay between calls (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.Email.html">Email</a></td>
+        <td><p>Email</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IWaitForControllerApiSync_WaitForMatchingFirstEmail_System_Guid_mailslurp_Model_MatchOptions_System_Nullable_System_Int64__System_Nullable_System_Boolean__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int64__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Perform a search of emails in an inbox with the given patterns. If a result if found then return or else retry the search until a result is found or timeout is reached. Match options allow simple CONTAINS or EQUALS filtering on SUBJECT, TO, BCC, CC, and FROM. See the <code>MatchOptions</code> object for options. An example payload is <code>{ matches: [{field: &amp;apos;SUBJECT&amp;apos;,should:&amp;apos;CONTAIN&amp;apos;,value:&amp;apos;needle&amp;apos;}] }</code>. You can use an array of matches and they will be applied sequentially to filter out emails. If you want to perform matches and extractions of content using Regex patterns see the EmailController <code>getEmailContentMatch</code> method.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/WaitForControllerApi.cs#lines-223">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IWaitForControllerApiSync_WaitForMatchingFirstEmailWithHttpInfo_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForMatchingFirstEmailWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IWaitForControllerApiSync_WaitForMatchingFirstEmailWithHttpInfo_System_Guid_mailslurp_Model_MatchOptions_System_Nullable_System_Int64__System_Nullable_System_Boolean__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int64__System_Int32_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForMatchingFirstEmailWithHttpInfo(System.Guid,mailslurp.Model.MatchOptions,System.Nullable{System.Int64},System.Nullable{System.Boolean},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Nullable{System.Int64},System.Int32)">WaitForMatchingFirstEmailWithHttpInfo(Guid, MatchOptions, long?, bool?, DateTime?, DateTime?, string, long?, int)</h4>
+  <div class="markdown level1 summary"><p>Wait for or return the first email that matches provided MatchOptions array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;Email&gt; WaitForMatchingFirstEmailWithHttpInfo(Guid inboxId, MatchOptions matchOptions, long? timeout = null, bool? unreadOnly = null, DateTime? since = null, DateTime? before = null, string sort = null, long? delay = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Id of the inbox we are matching an email for</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.MatchOptions.html">MatchOptions</a></td>
+        <td><span class="parametername">matchOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>Max milliseconds to wait (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span>?</td>
+        <td><span class="parametername">unreadOnly</span></td>
+        <td><p>Optional filter for unread only (optional, default to false)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter for emails that were received after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter for emails that were received before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Sort direction (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">delay</span></td>
+        <td><p>Max milliseconds delay between calls (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.Email.html">Email</a>&gt;</td>
+        <td><p>ApiResponse of Email</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IWaitForControllerApiSync_WaitForMatchingFirstEmailWithHttpInfo_System_Guid_mailslurp_Model_MatchOptions_System_Nullable_System_Int64__System_Nullable_System_Boolean__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int64__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Perform a search of emails in an inbox with the given patterns. If a result if found then return or else retry the search until a result is found or timeout is reached. Match options allow simple CONTAINS or EQUALS filtering on SUBJECT, TO, BCC, CC, and FROM. See the <code>MatchOptions</code> object for options. An example payload is <code>{ matches: [{field: &amp;apos;SUBJECT&amp;apos;,should:&amp;apos;CONTAIN&amp;apos;,value:&amp;apos;needle&amp;apos;}] }</code>. You can use an array of matches and they will be applied sequentially to filter out emails. If you want to perform matches and extractions of content using Regex patterns see the EmailController <code>getEmailContentMatch</code> method.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/WaitForControllerApi.cs#lines-241">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IWaitForControllerApiSync_WaitForNthEmail_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForNthEmail*"></a>
+  <h4 id="mailslurp_Api_IWaitForControllerApiSync_WaitForNthEmail_System_Nullable_System_Guid__System_Nullable_System_Int32__System_Nullable_System_Int64__System_Nullable_System_Boolean__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int64__System_Int32_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForNthEmail(System.Nullable{System.Guid},System.Nullable{System.Int32},System.Nullable{System.Int64},System.Nullable{System.Boolean},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Nullable{System.Int64},System.Int32)">WaitForNthEmail(Guid?, int?, long?, bool?, DateTime?, DateTime?, string, long?, int)</h4>
+  <div class="markdown level1 summary"><p>Wait for or fetch the email with a given index in the inbox specified. If index doesn't exist waits for it to exist or timeout to occur.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Email WaitForNthEmail(Guid? inboxId = null, int? index = null, long? timeout = null, bool? unreadOnly = null, DateTime? since = null, DateTime? before = null, string sort = null, long? delay = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Id of the inbox you are fetching emails from (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Zero based index of the email to wait for. If an inbox has 1 email already and you want to wait for the 2nd email pass index=1 (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>Max milliseconds to wait for the nth email if not already present (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span>?</td>
+        <td><span class="parametername">unreadOnly</span></td>
+        <td><p>Optional filter for unread only (optional, default to false)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter for emails that were received after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter for emails that were received before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Sort direction (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">delay</span></td>
+        <td><p>Max milliseconds delay between calls (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.Email.html">Email</a></td>
+        <td><p>Email</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IWaitForControllerApiSync_WaitForNthEmail_System_Nullable_System_Guid__System_Nullable_System_Int32__System_Nullable_System_Int64__System_Nullable_System_Boolean__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int64__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If nth email is already present in inbox then return it. If not hold the connection open until timeout expires or the nth email is received and returned.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/WaitForControllerApi.cs#lines-260">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IWaitForControllerApiSync_WaitForNthEmailWithHttpInfo_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForNthEmailWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IWaitForControllerApiSync_WaitForNthEmailWithHttpInfo_System_Nullable_System_Guid__System_Nullable_System_Int32__System_Nullable_System_Int64__System_Nullable_System_Boolean__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int64__System_Int32_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForNthEmailWithHttpInfo(System.Nullable{System.Guid},System.Nullable{System.Int32},System.Nullable{System.Int64},System.Nullable{System.Boolean},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Nullable{System.Int64},System.Int32)">WaitForNthEmailWithHttpInfo(Guid?, int?, long?, bool?, DateTime?, DateTime?, string, long?, int)</h4>
+  <div class="markdown level1 summary"><p>Wait for or fetch the email with a given index in the inbox specified. If index doesn't exist waits for it to exist or timeout to occur.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;Email&gt; WaitForNthEmailWithHttpInfo(Guid? inboxId = null, int? index = null, long? timeout = null, bool? unreadOnly = null, DateTime? since = null, DateTime? before = null, string sort = null, long? delay = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Id of the inbox you are fetching emails from (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span>?</td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Zero based index of the email to wait for. If an inbox has 1 email already and you want to wait for the 2nd email pass index=1 (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>Max milliseconds to wait for the nth email if not already present (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span>?</td>
+        <td><span class="parametername">unreadOnly</span></td>
+        <td><p>Optional filter for unread only (optional, default to false)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter for emails that were received after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter for emails that were received before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Sort direction (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">delay</span></td>
+        <td><p>Max milliseconds delay between calls (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.Email.html">Email</a>&gt;</td>
+        <td><p>ApiResponse of Email</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IWaitForControllerApiSync_WaitForNthEmailWithHttpInfo_System_Nullable_System_Guid__System_Nullable_System_Int32__System_Nullable_System_Int64__System_Nullable_System_Boolean__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int64__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If nth email is already present in inbox then return it. If not hold the connection open until timeout expires or the nth email is received and returned.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/WaitForControllerApi.cs#lines-271">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IWaitForControllerApiSync_WaitForSms_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForSms*"></a>
+  <h4 id="mailslurp_Api_IWaitForControllerApiSync_WaitForSms_mailslurp_Model_WaitForSmsConditions_System_Int32_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForSms(mailslurp.Model.WaitForSmsConditions,System.Int32)">WaitForSms(WaitForSmsConditions, int)</h4>
+  <div class="markdown level1 summary"><p>Wait for an SMS message to match the provided filter conditions such as body contains keyword.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;SmsPreview&gt; WaitForSms(WaitForSmsConditions waitForSmsConditions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.WaitForSmsConditions.html">WaitForSmsConditions</a></td>
+        <td><span class="parametername">waitForSmsConditions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<a class="xref" href="mailslurp.Model.SmsPreview.html">SmsPreview</a>&gt;</td>
+        <td><p>List&lt;SmsPreview&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IWaitForControllerApiSync_WaitForSms_mailslurp_Model_WaitForSmsConditions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Generic waitFor method that will wait until a phone number meets given conditions or return immediately if already met</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/WaitForControllerApi.cs#lines-283">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IWaitForControllerApiSync_WaitForSmsWithHttpInfo_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForSmsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IWaitForControllerApiSync_WaitForSmsWithHttpInfo_mailslurp_Model_WaitForSmsConditions_System_Int32_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForSmsWithHttpInfo(mailslurp.Model.WaitForSmsConditions,System.Int32)">WaitForSmsWithHttpInfo(WaitForSmsConditions, int)</h4>
+  <div class="markdown level1 summary"><p>Wait for an SMS message to match the provided filter conditions such as body contains keyword.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;List&lt;SmsPreview&gt;&gt; WaitForSmsWithHttpInfo(WaitForSmsConditions waitForSmsConditions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.WaitForSmsConditions.html">WaitForSmsConditions</a></td>
+        <td><span class="parametername">waitForSmsConditions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<a class="xref" href="mailslurp.Model.SmsPreview.html">SmsPreview</a>&gt;&gt;</td>
+        <td><p>ApiResponse of List&lt;SmsPreview&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IWaitForControllerApiSync_WaitForSmsWithHttpInfo_mailslurp_Model_WaitForSmsConditions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Generic waitFor method that will wait until a phone number meets given conditions or return immediately if already met</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/WaitForControllerApi.cs#lines-52">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IWaitForControllerApiSync_WaitForWithHttpInfo_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IWaitForControllerApiSync_WaitForWithHttpInfo_mailslurp_Model_WaitForConditions_System_Int32_" data-uid="mailslurp.Api.IWaitForControllerApiSync.WaitForWithHttpInfo(mailslurp.Model.WaitForConditions,System.Int32)">WaitForWithHttpInfo(WaitForConditions, int)</h4>
+  <div class="markdown level1 summary"><p>Wait for an email to match the provided filter conditions such as subject contains keyword.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;List&lt;EmailPreview&gt;&gt; WaitForWithHttpInfo(WaitForConditions waitForConditions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.WaitForConditions.html">WaitForConditions</a></td>
+        <td><span class="parametername">waitForConditions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<a class="xref" href="mailslurp.Model.EmailPreview.html">EmailPreview</a>&gt;&gt;</td>
+        <td><p>ApiResponse of List&lt;EmailPreview&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IWaitForControllerApiSync_WaitForWithHttpInfo_mailslurp_Model_WaitForConditions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Generic waitFor method that will wait until an inbox meets given conditions or return immediately if already met</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/WaitForControllerApi.cs#lines-27" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
