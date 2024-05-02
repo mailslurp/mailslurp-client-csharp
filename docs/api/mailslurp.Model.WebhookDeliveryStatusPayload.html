@@ -1,0 +1,1021 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class WebhookDeliveryStatusPayload
+ | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class WebhookDeliveryStatusPayload
+ | MailSlurp ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload">
+
+
+  <h1 id="mailslurp_Model_WebhookDeliveryStatusPayload" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload" class="text-break">Class WebhookDeliveryStatusPayload
+</h1>
+  <div class="markdown level0 summary"><p>DELIVERY_STATUS webhook payload. Sent to your webhook url endpoint via HTTP POST when an email delivery status is created. This could be a successful delivery or a delivery failure.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">WebhookDeliveryStatusPayload</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="mailslurp.Model.WebhookDeliveryStatusPayload.html">WebhookDeliveryStatusPayload</a>&gt;</div>
+    <div><span class="xref">System.ComponentModel.DataAnnotations.IValidatableObject</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">mailslurp</span>.<a class="xref" href="mailslurp.Model.html">Model</a></h6>
+  <h6><strong>Assembly</strong>: mailslurp.dll</h6>
+  <h5 id="mailslurp_Model_WebhookDeliveryStatusPayload_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataContract(Name = &quot;WebhookDeliveryStatusPayload&quot;)]
+public class WebhookDeliveryStatusPayload : IEquatable&lt;WebhookDeliveryStatusPayload&gt;, IValidatableObject</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookDeliveryStatusPayload.cs#lines-114">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookDeliveryStatusPayload__ctor_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.#ctor*"></a>
+  <h4 id="mailslurp_Model_WebhookDeliveryStatusPayload__ctor" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.#ctor">WebhookDeliveryStatusPayload()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Model.WebhookDeliveryStatusPayload.html">WebhookDeliveryStatusPayload</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonConstructor]
+protected WebhookDeliveryStatusPayload()</code></pre>
+  </div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookDeliveryStatusPayload.cs#lines-135">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookDeliveryStatusPayload__ctor_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.#ctor*"></a>
+  <h4 id="mailslurp_Model_WebhookDeliveryStatusPayload__ctor_System_String_System_Guid_mailslurp_Model_WebhookDeliveryStatusPayload_EventNameEnum_System_String_System_Guid_System_Guid_System_Nullable_System_Guid__System_String_System_Nullable_System_Guid__System_String_System_Collections_Generic_List_System_String__System_String_System_Nullable_System_Int32__System_Nullable_System_Int64__System_Nullable_System_DateTime__System_String_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.#ctor(System.String,System.Guid,mailslurp.Model.WebhookDeliveryStatusPayload.EventNameEnum,System.String,System.Guid,System.Guid,System.Nullable{System.Guid},System.String,System.Nullable{System.Guid},System.String,System.Collections.Generic.List{System.String},System.String,System.Nullable{System.Int32},System.Nullable{System.Int64},System.Nullable{System.DateTime},System.String)">WebhookDeliveryStatusPayload(string, Guid, EventNameEnum, string, Guid, Guid, Guid?, string, Guid?, string, List&lt;string&gt;, string, int?, long?, DateTime?, string)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Model.WebhookDeliveryStatusPayload.html">WebhookDeliveryStatusPayload</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WebhookDeliveryStatusPayload(string messageId = null, Guid webhookId = default, WebhookDeliveryStatusPayload.EventNameEnum eventName = (WebhookDeliveryStatusPayload.EventNameEnum)0, string webhookName = null, Guid id = default, Guid userId = default, Guid? sentId = null, string remoteMtaIp = null, Guid? inboxId = null, string reportingMta = null, List&lt;string&gt; recipients = null, string smtpResponse = null, int? smtpStatusCode = null, long? processingTimeMillis = null, DateTime? received = null, string subject = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">messageId</span></td>
+        <td><p>Idempotent message ID. Store this ID locally or in a database to prevent message duplication. (required).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">webhookId</span></td>
+        <td><p>ID of webhook entity being triggered (required).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.WebhookDeliveryStatusPayload.html">WebhookDeliveryStatusPayload</a>.<a class="xref" href="mailslurp.Model.WebhookDeliveryStatusPayload.EventNameEnum.html">EventNameEnum</a></td>
+        <td><span class="parametername">eventName</span></td>
+        <td><p>Name of the event type webhook is being triggered for. (required).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">webhookName</span></td>
+        <td><p>Name of the webhook being triggered.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of delivery status (required).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>User ID of event (required).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">sentId</span></td>
+        <td><p>ID of sent email.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">remoteMtaIp</span></td>
+        <td><p>IP address of the remote Mail Transfer Agent.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Id of the inbox.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">reportingMta</span></td>
+        <td><p>Mail Transfer Agent reporting delivery status.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">recipients</span></td>
+        <td><p>Recipients for delivery.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">smtpResponse</span></td>
+        <td><p>SMTP server response message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">smtpStatusCode</span></td>
+        <td><p>SMTP server status.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">processingTimeMillis</span></td>
+        <td><p>Time in milliseconds for delivery processing.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">received</span></td>
+        <td><p>Time event was received.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">subject</span></td>
+        <td><p>Email subject.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookDeliveryStatusPayload.cs#lines-109">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookDeliveryStatusPayload_EventName_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.EventName*"></a>
+  <h4 id="mailslurp_Model_WebhookDeliveryStatusPayload_EventName" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.EventName">EventName</h4>
+  <div class="markdown level1 summary"><p>Name of the event type webhook is being triggered for.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;eventName&quot;, IsRequired = true, EmitDefaultValue = true)]
+public WebhookDeliveryStatusPayload.EventNameEnum EventName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.WebhookDeliveryStatusPayload.html">WebhookDeliveryStatusPayload</a>.<a class="xref" href="mailslurp.Model.WebhookDeliveryStatusPayload.EventNameEnum.html">EventNameEnum</a></td>
+        <td><p>Name of the event type webhook is being triggered for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookDeliveryStatusPayload.cs#lines-185">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookDeliveryStatusPayload_Id_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.Id*"></a>
+  <h4 id="mailslurp_Model_WebhookDeliveryStatusPayload_Id" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.Id">Id</h4>
+  <div class="markdown level1 summary"><p>ID of delivery status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;id&quot;, IsRequired = true, EmitDefaultValue = true)]
+public Guid Id { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><p>ID of delivery status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookDeliveryStatusPayload.cs#lines-213">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookDeliveryStatusPayload_InboxId_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.InboxId*"></a>
+  <h4 id="mailslurp_Model_WebhookDeliveryStatusPayload_InboxId" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.InboxId">InboxId</h4>
+  <div class="markdown level1 summary"><p>Id of the inbox</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;inboxId&quot;, EmitDefaultValue = true)]
+public Guid? InboxId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><p>Id of the inbox</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookDeliveryStatusPayload.cs#lines-164">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookDeliveryStatusPayload_MessageId_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.MessageId*"></a>
+  <h4 id="mailslurp_Model_WebhookDeliveryStatusPayload_MessageId" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.MessageId">MessageId</h4>
+  <div class="markdown level1 summary"><p>Idempotent message ID. Store this ID locally or in a database to prevent message duplication.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;messageId&quot;, IsRequired = true, EmitDefaultValue = true)]
+public string MessageId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Idempotent message ID. Store this ID locally or in a database to prevent message duplication.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookDeliveryStatusPayload.cs#lines-248">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookDeliveryStatusPayload_ProcessingTimeMillis_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.ProcessingTimeMillis*"></a>
+  <h4 id="mailslurp_Model_WebhookDeliveryStatusPayload_ProcessingTimeMillis" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.ProcessingTimeMillis">ProcessingTimeMillis</h4>
+  <div class="markdown level1 summary"><p>Time in milliseconds for delivery processing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;processingTimeMillis&quot;, EmitDefaultValue = true)]
+public long? ProcessingTimeMillis { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><p>Time in milliseconds for delivery processing</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookDeliveryStatusPayload.cs#lines-255">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookDeliveryStatusPayload_Received_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.Received*"></a>
+  <h4 id="mailslurp_Model_WebhookDeliveryStatusPayload_Received" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.Received">Received</h4>
+  <div class="markdown level1 summary"><p>Time event was received</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;received&quot;, EmitDefaultValue = true)]
+public DateTime? Received { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><p>Time event was received</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookDeliveryStatusPayload.cs#lines-227">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookDeliveryStatusPayload_Recipients_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.Recipients*"></a>
+  <h4 id="mailslurp_Model_WebhookDeliveryStatusPayload_Recipients" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.Recipients">Recipients</h4>
+  <div class="markdown level1 summary"><p>Recipients for delivery</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;recipients&quot;, EmitDefaultValue = true)]
+public List&lt;string&gt; Recipients { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><p>Recipients for delivery</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookDeliveryStatusPayload.cs#lines-206">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookDeliveryStatusPayload_RemoteMtaIp_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.RemoteMtaIp*"></a>
+  <h4 id="mailslurp_Model_WebhookDeliveryStatusPayload_RemoteMtaIp" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.RemoteMtaIp">RemoteMtaIp</h4>
+  <div class="markdown level1 summary"><p>IP address of the remote Mail Transfer Agent</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;remoteMtaIp&quot;, EmitDefaultValue = true)]
+public string RemoteMtaIp { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>IP address of the remote Mail Transfer Agent</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookDeliveryStatusPayload.cs#lines-220">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookDeliveryStatusPayload_ReportingMta_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.ReportingMta*"></a>
+  <h4 id="mailslurp_Model_WebhookDeliveryStatusPayload_ReportingMta" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.ReportingMta">ReportingMta</h4>
+  <div class="markdown level1 summary"><p>Mail Transfer Agent reporting delivery status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;reportingMta&quot;, EmitDefaultValue = true)]
+public string ReportingMta { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Mail Transfer Agent reporting delivery status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookDeliveryStatusPayload.cs#lines-199">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookDeliveryStatusPayload_SentId_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.SentId*"></a>
+  <h4 id="mailslurp_Model_WebhookDeliveryStatusPayload_SentId" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.SentId">SentId</h4>
+  <div class="markdown level1 summary"><p>ID of sent email</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;sentId&quot;, EmitDefaultValue = true)]
+public Guid? SentId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><p>ID of sent email</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookDeliveryStatusPayload.cs#lines-234">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookDeliveryStatusPayload_SmtpResponse_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.SmtpResponse*"></a>
+  <h4 id="mailslurp_Model_WebhookDeliveryStatusPayload_SmtpResponse" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.SmtpResponse">SmtpResponse</h4>
+  <div class="markdown level1 summary"><p>SMTP server response message</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;smtpResponse&quot;, EmitDefaultValue = true)]
+public string SmtpResponse { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>SMTP server response message</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookDeliveryStatusPayload.cs#lines-241">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookDeliveryStatusPayload_SmtpStatusCode_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.SmtpStatusCode*"></a>
+  <h4 id="mailslurp_Model_WebhookDeliveryStatusPayload_SmtpStatusCode" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.SmtpStatusCode">SmtpStatusCode</h4>
+  <div class="markdown level1 summary"><p>SMTP server status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;smtpStatusCode&quot;, EmitDefaultValue = true)]
+public int? SmtpStatusCode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><p>SMTP server status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookDeliveryStatusPayload.cs#lines-262">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookDeliveryStatusPayload_Subject_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.Subject*"></a>
+  <h4 id="mailslurp_Model_WebhookDeliveryStatusPayload_Subject" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.Subject">Subject</h4>
+  <div class="markdown level1 summary"><p>Email subject</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;subject&quot;, EmitDefaultValue = true)]
+public string Subject { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Email subject</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookDeliveryStatusPayload.cs#lines-192">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookDeliveryStatusPayload_UserId_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.UserId*"></a>
+  <h4 id="mailslurp_Model_WebhookDeliveryStatusPayload_UserId" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.UserId">UserId</h4>
+  <div class="markdown level1 summary"><p>User ID of event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;userId&quot;, IsRequired = true, EmitDefaultValue = true)]
+public Guid UserId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><p>User ID of event</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookDeliveryStatusPayload.cs#lines-171">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookDeliveryStatusPayload_WebhookId_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.WebhookId*"></a>
+  <h4 id="mailslurp_Model_WebhookDeliveryStatusPayload_WebhookId" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.WebhookId">WebhookId</h4>
+  <div class="markdown level1 summary"><p>ID of webhook entity being triggered</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;webhookId&quot;, IsRequired = true, EmitDefaultValue = true)]
+public Guid WebhookId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><p>ID of webhook entity being triggered</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookDeliveryStatusPayload.cs#lines-178">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookDeliveryStatusPayload_WebhookName_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.WebhookName*"></a>
+  <h4 id="mailslurp_Model_WebhookDeliveryStatusPayload_WebhookName" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.WebhookName">WebhookName</h4>
+  <div class="markdown level1 summary"><p>Name of the webhook being triggered</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;webhookName&quot;, EmitDefaultValue = true)]
+public string WebhookName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Name of the webhook being triggered</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookDeliveryStatusPayload.cs#lines-317">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookDeliveryStatusPayload_Equals_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.Equals*"></a>
+  <h4 id="mailslurp_Model_WebhookDeliveryStatusPayload_Equals_mailslurp_Model_WebhookDeliveryStatusPayload_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.Equals(mailslurp.Model.WebhookDeliveryStatusPayload)">Equals(WebhookDeliveryStatusPayload)</h4>
+  <div class="markdown level1 summary"><p>Returns true if WebhookDeliveryStatusPayload instances are equal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(WebhookDeliveryStatusPayload input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.WebhookDeliveryStatusPayload.html">WebhookDeliveryStatusPayload</a></td>
+        <td><span class="parametername">input</span></td>
+        <td><p>Instance of WebhookDeliveryStatusPayload to be compared</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Boolean</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookDeliveryStatusPayload.cs#lines-307">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookDeliveryStatusPayload_Equals_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.Equals*"></a>
+  <h4 id="mailslurp_Model_WebhookDeliveryStatusPayload_Equals_System_Object_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.Equals(System.Object)">Equals(object)</h4>
+  <div class="markdown level1 summary"><p>Returns true if objects are equal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">input</span></td>
+        <td><p>Object to be compared</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Boolean</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a></div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookDeliveryStatusPayload.cs#lines-410">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookDeliveryStatusPayload_GetHashCode_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.GetHashCode*"></a>
+  <h4 id="mailslurp_Model_WebhookDeliveryStatusPayload_GetHashCode" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Gets the hash code</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>Hash code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a></div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookDeliveryStatusPayload.cs#lines-297">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookDeliveryStatusPayload_ToJson_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.ToJson*"></a>
+  <h4 id="mailslurp_Model_WebhookDeliveryStatusPayload_ToJson" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.ToJson">ToJson()</h4>
+  <div class="markdown level1 summary"><p>Returns the JSON string presentation of the object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ToJson()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>JSON string presentation of the object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookDeliveryStatusPayload.cs#lines-269">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookDeliveryStatusPayload_ToString_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.ToString*"></a>
+  <h4 id="mailslurp_Model_WebhookDeliveryStatusPayload_ToString" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns the string presentation of the object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>String presentation of the object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a></div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookDeliveryStatusPayload.cs#lines-485">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookDeliveryStatusPayload_Validate_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.Validate*"></a>
+  <h4 id="mailslurp_Model_WebhookDeliveryStatusPayload_Validate_System_ComponentModel_DataAnnotations_ValidationContext_" data-uid="mailslurp.Model.WebhookDeliveryStatusPayload.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">Validate(ValidationContext)</h4>
+  <div class="markdown level1 summary"><p>To validate all properties of the instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ValidationResult&gt; Validate(ValidationContext validationContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.validationcontext">ValidationContext</a></td>
+        <td><span class="parametername">validationContext</span></td>
+        <td><p>Validation context</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.validationresult">ValidationResult</a>&gt;</td>
+        <td><p>Validation Result</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">System.IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.DataAnnotations.IValidatableObject</span>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookDeliveryStatusPayload.cs#lines-32" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
