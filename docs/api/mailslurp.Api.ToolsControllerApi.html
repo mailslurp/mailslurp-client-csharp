@@ -1,0 +1,3853 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ToolsControllerApi
+ | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ToolsControllerApi
+ | MailSlurp ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Api.ToolsControllerApi">
+
+
+  <h1 id="mailslurp_Api_ToolsControllerApi" data-uid="mailslurp.Api.ToolsControllerApi" class="text-break">Class ToolsControllerApi
+</h1>
+  <div class="markdown level0 summary"><p>Represents a collection of functions to interact with the API endpoints</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">ToolsControllerApi</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="mailslurp.Api.IToolsControllerApi.html">IToolsControllerApi</a></div>
+    <div><a class="xref" href="mailslurp.Api.IToolsControllerApiSync.html">IToolsControllerApiSync</a></div>
+    <div><a class="xref" href="mailslurp.Api.IToolsControllerApiAsync.html">IToolsControllerApiAsync</a></div>
+    <div><a class="xref" href="mailslurp.Client.IApiAccessor.html">IApiAccessor</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">mailslurp</span>.<a class="xref" href="mailslurp.Api.html">Api</a></h6>
+  <h6><strong>Assembly</strong>: mailslurp.dll</h6>
+  <h5 id="mailslurp_Api_ToolsControllerApi_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ToolsControllerApi : IToolsControllerApi, IToolsControllerApiSync, IToolsControllerApiAsync, IApiAccessor</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-601">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi__ctor_" data-uid="mailslurp.Api.ToolsControllerApi.#ctor*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi__ctor" data-uid="mailslurp.Api.ToolsControllerApi.#ctor">ToolsControllerApi()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Api.ToolsControllerApi.html">ToolsControllerApi</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ToolsControllerApi()</code></pre>
+  </div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-626">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi__ctor_" data-uid="mailslurp.Api.ToolsControllerApi.#ctor*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi__ctor_mailslurp_Client_Configuration_" data-uid="mailslurp.Api.ToolsControllerApi.#ctor(mailslurp.Client.Configuration)">ToolsControllerApi(Configuration)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Api.ToolsControllerApi.html">ToolsControllerApi</a> class
+using Configuration object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ToolsControllerApi(Configuration configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Configuration.html">Configuration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>An instance of Configuration</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-646">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi__ctor_" data-uid="mailslurp.Api.ToolsControllerApi.#ctor*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi__ctor_mailslurp_Client_ISynchronousClient_mailslurp_Client_IAsynchronousClient_mailslurp_Client_IReadableConfiguration_" data-uid="mailslurp.Api.ToolsControllerApi.#ctor(mailslurp.Client.ISynchronousClient,mailslurp.Client.IAsynchronousClient,mailslurp.Client.IReadableConfiguration)">ToolsControllerApi(ISynchronousClient, IAsynchronousClient, IReadableConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Api.ToolsControllerApi.html">ToolsControllerApi</a> class
+using a Configuration object and client instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ToolsControllerApi(ISynchronousClient client, IAsynchronousClient asyncClient, IReadableConfiguration configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ISynchronousClient.html">ISynchronousClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>The client interface for synchronous API access.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IAsynchronousClient.html">IAsynchronousClient</a></td>
+        <td><span class="parametername">asyncClient</span></td>
+        <td><p>The client interface for asynchronous API access.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>The configuration object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-609">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi__ctor_" data-uid="mailslurp.Api.ToolsControllerApi.#ctor*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi__ctor_System_String_" data-uid="mailslurp.Api.ToolsControllerApi.#ctor(System.String)">ToolsControllerApi(string)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Api.ToolsControllerApi.html">ToolsControllerApi</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ToolsControllerApi(string basePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">basePath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-661">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_AsynchronousClient_" data-uid="mailslurp.Api.ToolsControllerApi.AsynchronousClient*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_AsynchronousClient" data-uid="mailslurp.Api.ToolsControllerApi.AsynchronousClient">AsynchronousClient</h4>
+  <div class="markdown level1 summary"><p>The client for accessing this underlying API asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsynchronousClient AsynchronousClient { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IAsynchronousClient.html">IAsynchronousClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-666">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_Client_" data-uid="mailslurp.Api.ToolsControllerApi.Client*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_Client" data-uid="mailslurp.Api.ToolsControllerApi.Client">Client</h4>
+  <div class="markdown level1 summary"><p>The client for accessing this underlying API synchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISynchronousClient Client { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ISynchronousClient.html">ISynchronousClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-681">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_Configuration_" data-uid="mailslurp.Api.ToolsControllerApi.Configuration*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_Configuration" data-uid="mailslurp.Api.ToolsControllerApi.Configuration">Configuration</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the configuration object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadableConfiguration Configuration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><p>An instance of the Configuration</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-686">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_ExceptionFactory_" data-uid="mailslurp.Api.ToolsControllerApi.ExceptionFactory*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_ExceptionFactory" data-uid="mailslurp.Api.ToolsControllerApi.ExceptionFactory">ExceptionFactory</h4>
+  <div class="markdown level1 summary"><p>Provides a factory method hook for the creation of exceptions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExceptionFactory ExceptionFactory { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ExceptionFactory.html">ExceptionFactory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-706">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_CheckEmailFeaturesClientSupport_" data-uid="mailslurp.Api.ToolsControllerApi.CheckEmailFeaturesClientSupport*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_CheckEmailFeaturesClientSupport_mailslurp_Model_CheckEmailFeaturesClientSupportOptions_System_Int32_" data-uid="mailslurp.Api.ToolsControllerApi.CheckEmailFeaturesClientSupport(mailslurp.Model.CheckEmailFeaturesClientSupportOptions,System.Int32)">CheckEmailFeaturesClientSupport(CheckEmailFeaturesClientSupportOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Check email client support for email HTML and CSS features</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CheckEmailFeaturesClientSupportResults CheckEmailFeaturesClientSupport(CheckEmailFeaturesClientSupportOptions checkEmailFeaturesClientSupportOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CheckEmailFeaturesClientSupportOptions.html">CheckEmailFeaturesClientSupportOptions</a></td>
+        <td><span class="parametername">checkEmailFeaturesClientSupportOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CheckEmailFeaturesClientSupportResults.html">CheckEmailFeaturesClientSupportResults</a></td>
+        <td><p>CheckEmailFeaturesClientSupportResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-783">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_CheckEmailFeaturesClientSupportAsync_" data-uid="mailslurp.Api.ToolsControllerApi.CheckEmailFeaturesClientSupportAsync*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_CheckEmailFeaturesClientSupportAsync_mailslurp_Model_CheckEmailFeaturesClientSupportOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ToolsControllerApi.CheckEmailFeaturesClientSupportAsync(mailslurp.Model.CheckEmailFeaturesClientSupportOptions,System.Int32,System.Threading.CancellationToken)">CheckEmailFeaturesClientSupportAsync(CheckEmailFeaturesClientSupportOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Check email client support for email HTML and CSS features</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;CheckEmailFeaturesClientSupportResults&gt; CheckEmailFeaturesClientSupportAsync(CheckEmailFeaturesClientSupportOptions checkEmailFeaturesClientSupportOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CheckEmailFeaturesClientSupportOptions.html">CheckEmailFeaturesClientSupportOptions</a></td>
+        <td><span class="parametername">checkEmailFeaturesClientSupportOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.CheckEmailFeaturesClientSupportResults.html">CheckEmailFeaturesClientSupportResults</a>&gt;</td>
+        <td><p>Task of CheckEmailFeaturesClientSupportResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-719">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_CheckEmailFeaturesClientSupportWithHttpInfo_" data-uid="mailslurp.Api.ToolsControllerApi.CheckEmailFeaturesClientSupportWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_CheckEmailFeaturesClientSupportWithHttpInfo_mailslurp_Model_CheckEmailFeaturesClientSupportOptions_System_Int32_" data-uid="mailslurp.Api.ToolsControllerApi.CheckEmailFeaturesClientSupportWithHttpInfo(mailslurp.Model.CheckEmailFeaturesClientSupportOptions,System.Int32)">CheckEmailFeaturesClientSupportWithHttpInfo(CheckEmailFeaturesClientSupportOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Check email client support for email HTML and CSS features</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;CheckEmailFeaturesClientSupportResults&gt; CheckEmailFeaturesClientSupportWithHttpInfo(CheckEmailFeaturesClientSupportOptions checkEmailFeaturesClientSupportOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CheckEmailFeaturesClientSupportOptions.html">CheckEmailFeaturesClientSupportOptions</a></td>
+        <td><span class="parametername">checkEmailFeaturesClientSupportOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.CheckEmailFeaturesClientSupportResults.html">CheckEmailFeaturesClientSupportResults</a>&gt;</td>
+        <td><p>ApiResponse of CheckEmailFeaturesClientSupportResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-797">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_CheckEmailFeaturesClientSupportWithHttpInfoAsync_" data-uid="mailslurp.Api.ToolsControllerApi.CheckEmailFeaturesClientSupportWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_CheckEmailFeaturesClientSupportWithHttpInfoAsync_mailslurp_Model_CheckEmailFeaturesClientSupportOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ToolsControllerApi.CheckEmailFeaturesClientSupportWithHttpInfoAsync(mailslurp.Model.CheckEmailFeaturesClientSupportOptions,System.Int32,System.Threading.CancellationToken)">CheckEmailFeaturesClientSupportWithHttpInfoAsync(CheckEmailFeaturesClientSupportOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Check email client support for email HTML and CSS features</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;CheckEmailFeaturesClientSupportResults&gt;&gt; CheckEmailFeaturesClientSupportWithHttpInfoAsync(CheckEmailFeaturesClientSupportOptions checkEmailFeaturesClientSupportOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CheckEmailFeaturesClientSupportOptions.html">CheckEmailFeaturesClientSupportOptions</a></td>
+        <td><span class="parametername">checkEmailFeaturesClientSupportOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.CheckEmailFeaturesClientSupportResults.html">CheckEmailFeaturesClientSupportResults</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (CheckEmailFeaturesClientSupportResults)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-861">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_CreateNewFakeEmailAddress_" data-uid="mailslurp.Api.ToolsControllerApi.CreateNewFakeEmailAddress*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_CreateNewFakeEmailAddress_System_Int32_" data-uid="mailslurp.Api.ToolsControllerApi.CreateNewFakeEmailAddress(System.Int32)">CreateNewFakeEmailAddress(int)</h4>
+  <div class="markdown level1 summary"><p>Create a new email address using the fake email domains</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NewFakeEmailAddressResult CreateNewFakeEmailAddress(int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.NewFakeEmailAddressResult.html">NewFakeEmailAddressResult</a></td>
+        <td><p>NewFakeEmailAddressResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-928">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_CreateNewFakeEmailAddressAsync_" data-uid="mailslurp.Api.ToolsControllerApi.CreateNewFakeEmailAddressAsync*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_CreateNewFakeEmailAddressAsync_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ToolsControllerApi.CreateNewFakeEmailAddressAsync(System.Int32,System.Threading.CancellationToken)">CreateNewFakeEmailAddressAsync(int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create a new email address using the fake email domains</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;NewFakeEmailAddressResult&gt; CreateNewFakeEmailAddressAsync(int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.NewFakeEmailAddressResult.html">NewFakeEmailAddressResult</a>&gt;</td>
+        <td><p>Task of NewFakeEmailAddressResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-873">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_CreateNewFakeEmailAddressWithHttpInfo_" data-uid="mailslurp.Api.ToolsControllerApi.CreateNewFakeEmailAddressWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_CreateNewFakeEmailAddressWithHttpInfo_System_Int32_" data-uid="mailslurp.Api.ToolsControllerApi.CreateNewFakeEmailAddressWithHttpInfo(System.Int32)">CreateNewFakeEmailAddressWithHttpInfo(int)</h4>
+  <div class="markdown level1 summary"><p>Create a new email address using the fake email domains</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;NewFakeEmailAddressResult&gt; CreateNewFakeEmailAddressWithHttpInfo(int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.NewFakeEmailAddressResult.html">NewFakeEmailAddressResult</a>&gt;</td>
+        <td><p>ApiResponse of NewFakeEmailAddressResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-941">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_CreateNewFakeEmailAddressWithHttpInfoAsync_" data-uid="mailslurp.Api.ToolsControllerApi.CreateNewFakeEmailAddressWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_CreateNewFakeEmailAddressWithHttpInfoAsync_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ToolsControllerApi.CreateNewFakeEmailAddressWithHttpInfoAsync(System.Int32,System.Threading.CancellationToken)">CreateNewFakeEmailAddressWithHttpInfoAsync(int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create a new email address using the fake email domains</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;NewFakeEmailAddressResult&gt;&gt; CreateNewFakeEmailAddressWithHttpInfoAsync(int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.NewFakeEmailAddressResult.html">NewFakeEmailAddressResult</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (NewFakeEmailAddressResult)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-998">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_GenerateBimiRecord_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateBimiRecord*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_GenerateBimiRecord_mailslurp_Model_GenerateBimiRecordOptions_System_Int32_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateBimiRecord(mailslurp.Model.GenerateBimiRecordOptions,System.Int32)">GenerateBimiRecord(GenerateBimiRecordOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a BIMI record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GenerateBimiRecordResults GenerateBimiRecord(GenerateBimiRecordOptions generateBimiRecordOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateBimiRecordOptions.html">GenerateBimiRecordOptions</a></td>
+        <td><span class="parametername">generateBimiRecordOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateBimiRecordResults.html">GenerateBimiRecordResults</a></td>
+        <td><p>GenerateBimiRecordResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-1075">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_GenerateBimiRecordAsync_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateBimiRecordAsync*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_GenerateBimiRecordAsync_mailslurp_Model_GenerateBimiRecordOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateBimiRecordAsync(mailslurp.Model.GenerateBimiRecordOptions,System.Int32,System.Threading.CancellationToken)">GenerateBimiRecordAsync(GenerateBimiRecordOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create a BIMI record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GenerateBimiRecordResults&gt; GenerateBimiRecordAsync(GenerateBimiRecordOptions generateBimiRecordOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateBimiRecordOptions.html">GenerateBimiRecordOptions</a></td>
+        <td><span class="parametername">generateBimiRecordOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.GenerateBimiRecordResults.html">GenerateBimiRecordResults</a>&gt;</td>
+        <td><p>Task of GenerateBimiRecordResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-1011">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_GenerateBimiRecordWithHttpInfo_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateBimiRecordWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_GenerateBimiRecordWithHttpInfo_mailslurp_Model_GenerateBimiRecordOptions_System_Int32_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateBimiRecordWithHttpInfo(mailslurp.Model.GenerateBimiRecordOptions,System.Int32)">GenerateBimiRecordWithHttpInfo(GenerateBimiRecordOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a BIMI record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;GenerateBimiRecordResults&gt; GenerateBimiRecordWithHttpInfo(GenerateBimiRecordOptions generateBimiRecordOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateBimiRecordOptions.html">GenerateBimiRecordOptions</a></td>
+        <td><span class="parametername">generateBimiRecordOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.GenerateBimiRecordResults.html">GenerateBimiRecordResults</a>&gt;</td>
+        <td><p>ApiResponse of GenerateBimiRecordResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-1089">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_GenerateBimiRecordWithHttpInfoAsync_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateBimiRecordWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_GenerateBimiRecordWithHttpInfoAsync_mailslurp_Model_GenerateBimiRecordOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateBimiRecordWithHttpInfoAsync(mailslurp.Model.GenerateBimiRecordOptions,System.Int32,System.Threading.CancellationToken)">GenerateBimiRecordWithHttpInfoAsync(GenerateBimiRecordOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create a BIMI record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;GenerateBimiRecordResults&gt;&gt; GenerateBimiRecordWithHttpInfoAsync(GenerateBimiRecordOptions generateBimiRecordOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateBimiRecordOptions.html">GenerateBimiRecordOptions</a></td>
+        <td><span class="parametername">generateBimiRecordOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.GenerateBimiRecordResults.html">GenerateBimiRecordResults</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (GenerateBimiRecordResults)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-1154">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_GenerateDmarcRecord_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateDmarcRecord*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_GenerateDmarcRecord_mailslurp_Model_GenerateDmarcRecordOptions_System_Int32_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateDmarcRecord(mailslurp.Model.GenerateDmarcRecordOptions,System.Int32)">GenerateDmarcRecord(GenerateDmarcRecordOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a DMARC record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GenerateDmarcRecordResults GenerateDmarcRecord(GenerateDmarcRecordOptions generateDmarcRecordOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateDmarcRecordOptions.html">GenerateDmarcRecordOptions</a></td>
+        <td><span class="parametername">generateDmarcRecordOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateDmarcRecordResults.html">GenerateDmarcRecordResults</a></td>
+        <td><p>GenerateDmarcRecordResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-1231">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_GenerateDmarcRecordAsync_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateDmarcRecordAsync*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_GenerateDmarcRecordAsync_mailslurp_Model_GenerateDmarcRecordOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateDmarcRecordAsync(mailslurp.Model.GenerateDmarcRecordOptions,System.Int32,System.Threading.CancellationToken)">GenerateDmarcRecordAsync(GenerateDmarcRecordOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create a DMARC record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GenerateDmarcRecordResults&gt; GenerateDmarcRecordAsync(GenerateDmarcRecordOptions generateDmarcRecordOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateDmarcRecordOptions.html">GenerateDmarcRecordOptions</a></td>
+        <td><span class="parametername">generateDmarcRecordOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.GenerateDmarcRecordResults.html">GenerateDmarcRecordResults</a>&gt;</td>
+        <td><p>Task of GenerateDmarcRecordResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-1167">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_GenerateDmarcRecordWithHttpInfo_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateDmarcRecordWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_GenerateDmarcRecordWithHttpInfo_mailslurp_Model_GenerateDmarcRecordOptions_System_Int32_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateDmarcRecordWithHttpInfo(mailslurp.Model.GenerateDmarcRecordOptions,System.Int32)">GenerateDmarcRecordWithHttpInfo(GenerateDmarcRecordOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a DMARC record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;GenerateDmarcRecordResults&gt; GenerateDmarcRecordWithHttpInfo(GenerateDmarcRecordOptions generateDmarcRecordOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateDmarcRecordOptions.html">GenerateDmarcRecordOptions</a></td>
+        <td><span class="parametername">generateDmarcRecordOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.GenerateDmarcRecordResults.html">GenerateDmarcRecordResults</a>&gt;</td>
+        <td><p>ApiResponse of GenerateDmarcRecordResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-1245">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_GenerateDmarcRecordWithHttpInfoAsync_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateDmarcRecordWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_GenerateDmarcRecordWithHttpInfoAsync_mailslurp_Model_GenerateDmarcRecordOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateDmarcRecordWithHttpInfoAsync(mailslurp.Model.GenerateDmarcRecordOptions,System.Int32,System.Threading.CancellationToken)">GenerateDmarcRecordWithHttpInfoAsync(GenerateDmarcRecordOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create a DMARC record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;GenerateDmarcRecordResults&gt;&gt; GenerateDmarcRecordWithHttpInfoAsync(GenerateDmarcRecordOptions generateDmarcRecordOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateDmarcRecordOptions.html">GenerateDmarcRecordOptions</a></td>
+        <td><span class="parametername">generateDmarcRecordOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.GenerateDmarcRecordResults.html">GenerateDmarcRecordResults</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (GenerateDmarcRecordResults)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-1310">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_GenerateMtaStsRecord_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateMtaStsRecord*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_GenerateMtaStsRecord_mailslurp_Model_GenerateMtaStsRecordOptions_System_Int32_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateMtaStsRecord(mailslurp.Model.GenerateMtaStsRecordOptions,System.Int32)">GenerateMtaStsRecord(GenerateMtaStsRecordOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a TLS reporting record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GenerateMtaStsRecordResults GenerateMtaStsRecord(GenerateMtaStsRecordOptions generateMtaStsRecordOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateMtaStsRecordOptions.html">GenerateMtaStsRecordOptions</a></td>
+        <td><span class="parametername">generateMtaStsRecordOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateMtaStsRecordResults.html">GenerateMtaStsRecordResults</a></td>
+        <td><p>GenerateMtaStsRecordResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-1387">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_GenerateMtaStsRecordAsync_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateMtaStsRecordAsync*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_GenerateMtaStsRecordAsync_mailslurp_Model_GenerateMtaStsRecordOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateMtaStsRecordAsync(mailslurp.Model.GenerateMtaStsRecordOptions,System.Int32,System.Threading.CancellationToken)">GenerateMtaStsRecordAsync(GenerateMtaStsRecordOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create a TLS reporting record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GenerateMtaStsRecordResults&gt; GenerateMtaStsRecordAsync(GenerateMtaStsRecordOptions generateMtaStsRecordOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateMtaStsRecordOptions.html">GenerateMtaStsRecordOptions</a></td>
+        <td><span class="parametername">generateMtaStsRecordOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.GenerateMtaStsRecordResults.html">GenerateMtaStsRecordResults</a>&gt;</td>
+        <td><p>Task of GenerateMtaStsRecordResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-1323">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_GenerateMtaStsRecordWithHttpInfo_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateMtaStsRecordWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_GenerateMtaStsRecordWithHttpInfo_mailslurp_Model_GenerateMtaStsRecordOptions_System_Int32_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateMtaStsRecordWithHttpInfo(mailslurp.Model.GenerateMtaStsRecordOptions,System.Int32)">GenerateMtaStsRecordWithHttpInfo(GenerateMtaStsRecordOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a TLS reporting record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;GenerateMtaStsRecordResults&gt; GenerateMtaStsRecordWithHttpInfo(GenerateMtaStsRecordOptions generateMtaStsRecordOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateMtaStsRecordOptions.html">GenerateMtaStsRecordOptions</a></td>
+        <td><span class="parametername">generateMtaStsRecordOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.GenerateMtaStsRecordResults.html">GenerateMtaStsRecordResults</a>&gt;</td>
+        <td><p>ApiResponse of GenerateMtaStsRecordResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-1401">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_GenerateMtaStsRecordWithHttpInfoAsync_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateMtaStsRecordWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_GenerateMtaStsRecordWithHttpInfoAsync_mailslurp_Model_GenerateMtaStsRecordOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateMtaStsRecordWithHttpInfoAsync(mailslurp.Model.GenerateMtaStsRecordOptions,System.Int32,System.Threading.CancellationToken)">GenerateMtaStsRecordWithHttpInfoAsync(GenerateMtaStsRecordOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create a TLS reporting record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;GenerateMtaStsRecordResults&gt;&gt; GenerateMtaStsRecordWithHttpInfoAsync(GenerateMtaStsRecordOptions generateMtaStsRecordOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateMtaStsRecordOptions.html">GenerateMtaStsRecordOptions</a></td>
+        <td><span class="parametername">generateMtaStsRecordOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.GenerateMtaStsRecordResults.html">GenerateMtaStsRecordResults</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (GenerateMtaStsRecordResults)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-1466">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_GenerateTlsReportingRecord_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateTlsReportingRecord*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_GenerateTlsReportingRecord_mailslurp_Model_GenerateTlsReportingRecordOptions_System_Int32_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateTlsReportingRecord(mailslurp.Model.GenerateTlsReportingRecordOptions,System.Int32)">GenerateTlsReportingRecord(GenerateTlsReportingRecordOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a TLS reporting record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GenerateTlsReportingRecordResults GenerateTlsReportingRecord(GenerateTlsReportingRecordOptions generateTlsReportingRecordOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateTlsReportingRecordOptions.html">GenerateTlsReportingRecordOptions</a></td>
+        <td><span class="parametername">generateTlsReportingRecordOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateTlsReportingRecordResults.html">GenerateTlsReportingRecordResults</a></td>
+        <td><p>GenerateTlsReportingRecordResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-1543">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_GenerateTlsReportingRecordAsync_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateTlsReportingRecordAsync*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_GenerateTlsReportingRecordAsync_mailslurp_Model_GenerateTlsReportingRecordOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateTlsReportingRecordAsync(mailslurp.Model.GenerateTlsReportingRecordOptions,System.Int32,System.Threading.CancellationToken)">GenerateTlsReportingRecordAsync(GenerateTlsReportingRecordOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create a TLS reporting record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;GenerateTlsReportingRecordResults&gt; GenerateTlsReportingRecordAsync(GenerateTlsReportingRecordOptions generateTlsReportingRecordOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateTlsReportingRecordOptions.html">GenerateTlsReportingRecordOptions</a></td>
+        <td><span class="parametername">generateTlsReportingRecordOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.GenerateTlsReportingRecordResults.html">GenerateTlsReportingRecordResults</a>&gt;</td>
+        <td><p>Task of GenerateTlsReportingRecordResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-1479">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_GenerateTlsReportingRecordWithHttpInfo_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateTlsReportingRecordWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_GenerateTlsReportingRecordWithHttpInfo_mailslurp_Model_GenerateTlsReportingRecordOptions_System_Int32_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateTlsReportingRecordWithHttpInfo(mailslurp.Model.GenerateTlsReportingRecordOptions,System.Int32)">GenerateTlsReportingRecordWithHttpInfo(GenerateTlsReportingRecordOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a TLS reporting record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;GenerateTlsReportingRecordResults&gt; GenerateTlsReportingRecordWithHttpInfo(GenerateTlsReportingRecordOptions generateTlsReportingRecordOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateTlsReportingRecordOptions.html">GenerateTlsReportingRecordOptions</a></td>
+        <td><span class="parametername">generateTlsReportingRecordOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.GenerateTlsReportingRecordResults.html">GenerateTlsReportingRecordResults</a>&gt;</td>
+        <td><p>ApiResponse of GenerateTlsReportingRecordResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-1557">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_GenerateTlsReportingRecordWithHttpInfoAsync_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateTlsReportingRecordWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_GenerateTlsReportingRecordWithHttpInfoAsync_mailslurp_Model_GenerateTlsReportingRecordOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ToolsControllerApi.GenerateTlsReportingRecordWithHttpInfoAsync(mailslurp.Model.GenerateTlsReportingRecordOptions,System.Int32,System.Threading.CancellationToken)">GenerateTlsReportingRecordWithHttpInfoAsync(GenerateTlsReportingRecordOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create a TLS reporting record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;GenerateTlsReportingRecordResults&gt;&gt; GenerateTlsReportingRecordWithHttpInfoAsync(GenerateTlsReportingRecordOptions generateTlsReportingRecordOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateTlsReportingRecordOptions.html">GenerateTlsReportingRecordOptions</a></td>
+        <td><span class="parametername">generateTlsReportingRecordOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.GenerateTlsReportingRecordResults.html">GenerateTlsReportingRecordResults</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (GenerateTlsReportingRecordResults)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-672">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_GetBasePath_" data-uid="mailslurp.Api.ToolsControllerApi.GetBasePath*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_GetBasePath" data-uid="mailslurp.Api.ToolsControllerApi.GetBasePath">GetBasePath()</h4>
+  <div class="markdown level1 summary"><p>Gets the base path of the API client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetBasePath()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The base path</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-1622">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_GetFakeEmailById_" data-uid="mailslurp.Api.ToolsControllerApi.GetFakeEmailById*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_GetFakeEmailById_System_Guid_System_Int32_" data-uid="mailslurp.Api.ToolsControllerApi.GetFakeEmailById(System.Guid,System.Int32)">GetFakeEmailById(Guid, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FakeEmailResult GetFakeEmailById(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.FakeEmailResult.html">FakeEmailResult</a></td>
+        <td><p>FakeEmailResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-1692">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_GetFakeEmailByIdAsync_" data-uid="mailslurp.Api.ToolsControllerApi.GetFakeEmailByIdAsync*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_GetFakeEmailByIdAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ToolsControllerApi.GetFakeEmailByIdAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetFakeEmailByIdAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;FakeEmailResult&gt; GetFakeEmailByIdAsync(Guid id, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.FakeEmailResult.html">FakeEmailResult</a>&gt;</td>
+        <td><p>Task of FakeEmailResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-1635">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_GetFakeEmailByIdWithHttpInfo_" data-uid="mailslurp.Api.ToolsControllerApi.GetFakeEmailByIdWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_GetFakeEmailByIdWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.ToolsControllerApi.GetFakeEmailByIdWithHttpInfo(System.Guid,System.Int32)">GetFakeEmailByIdWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;FakeEmailResult&gt; GetFakeEmailByIdWithHttpInfo(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.FakeEmailResult.html">FakeEmailResult</a>&gt;</td>
+        <td><p>ApiResponse of FakeEmailResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-1706">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_GetFakeEmailByIdWithHttpInfoAsync_" data-uid="mailslurp.Api.ToolsControllerApi.GetFakeEmailByIdWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_GetFakeEmailByIdWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ToolsControllerApi.GetFakeEmailByIdWithHttpInfoAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetFakeEmailByIdWithHttpInfoAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;FakeEmailResult&gt;&gt; GetFakeEmailByIdWithHttpInfoAsync(Guid id, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.FakeEmailResult.html">FakeEmailResult</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (FakeEmailResult)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-1765">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_GetFakeEmailsForAddress_" data-uid="mailslurp.Api.ToolsControllerApi.GetFakeEmailsForAddress*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_GetFakeEmailsForAddress_System_String_System_Nullable_System_Int32__System_Int32_" data-uid="mailslurp.Api.ToolsControllerApi.GetFakeEmailsForAddress(System.String,System.Nullable{System.Int32},System.Int32)">GetFakeEmailsForAddress(string, int?, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;FakeEmailPreview&gt; GetFakeEmailsForAddress(string emailAddress, int? page = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">emailAddress</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="mailslurp.Model.FakeEmailPreview.html">FakeEmailPreview</a>&gt;</td>
+        <td><p>List&lt;FakeEmailPreview&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-1847">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_GetFakeEmailsForAddressAsync_" data-uid="mailslurp.Api.ToolsControllerApi.GetFakeEmailsForAddressAsync*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_GetFakeEmailsForAddressAsync_System_String_System_Nullable_System_Int32__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ToolsControllerApi.GetFakeEmailsForAddressAsync(System.String,System.Nullable{System.Int32},System.Int32,System.Threading.CancellationToken)">GetFakeEmailsForAddressAsync(string, int?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;FakeEmailPreview&gt;&gt; GetFakeEmailsForAddressAsync(string emailAddress, int? page = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">emailAddress</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="mailslurp.Model.FakeEmailPreview.html">FakeEmailPreview</a>&gt;&gt;</td>
+        <td><p>Task of List&lt;FakeEmailPreview&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-1779">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_GetFakeEmailsForAddressWithHttpInfo_" data-uid="mailslurp.Api.ToolsControllerApi.GetFakeEmailsForAddressWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_GetFakeEmailsForAddressWithHttpInfo_System_String_System_Nullable_System_Int32__System_Int32_" data-uid="mailslurp.Api.ToolsControllerApi.GetFakeEmailsForAddressWithHttpInfo(System.String,System.Nullable{System.Int32},System.Int32)">GetFakeEmailsForAddressWithHttpInfo(string, int?, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;List&lt;FakeEmailPreview&gt;&gt; GetFakeEmailsForAddressWithHttpInfo(string emailAddress, int? page = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">emailAddress</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="mailslurp.Model.FakeEmailPreview.html">FakeEmailPreview</a>&gt;&gt;</td>
+        <td><p>ApiResponse of List&lt;FakeEmailPreview&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-1862">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_GetFakeEmailsForAddressWithHttpInfoAsync_" data-uid="mailslurp.Api.ToolsControllerApi.GetFakeEmailsForAddressWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_GetFakeEmailsForAddressWithHttpInfoAsync_System_String_System_Nullable_System_Int32__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ToolsControllerApi.GetFakeEmailsForAddressWithHttpInfoAsync(System.String,System.Nullable{System.Int32},System.Int32,System.Threading.CancellationToken)">GetFakeEmailsForAddressWithHttpInfoAsync(string, int?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;List&lt;FakeEmailPreview&gt;&gt;&gt; GetFakeEmailsForAddressWithHttpInfoAsync(string emailAddress, int? page = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">emailAddress</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="mailslurp.Model.FakeEmailPreview.html">FakeEmailPreview</a>&gt;&gt;&gt;</td>
+        <td><p>Task of ApiResponse (List&lt;FakeEmailPreview&gt;)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-1930">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_LookupBimiDomain_" data-uid="mailslurp.Api.ToolsControllerApi.LookupBimiDomain*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_LookupBimiDomain_mailslurp_Model_LookupBimiDomainOptions_System_Int32_" data-uid="mailslurp.Api.ToolsControllerApi.LookupBimiDomain(mailslurp.Model.LookupBimiDomainOptions,System.Int32)">LookupBimiDomain(LookupBimiDomainOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Lookup a BIMI record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LookupBimiDomainResults LookupBimiDomain(LookupBimiDomainOptions lookupBimiDomainOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupBimiDomainOptions.html">LookupBimiDomainOptions</a></td>
+        <td><span class="parametername">lookupBimiDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupBimiDomainResults.html">LookupBimiDomainResults</a></td>
+        <td><p>LookupBimiDomainResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-2007">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_LookupBimiDomainAsync_" data-uid="mailslurp.Api.ToolsControllerApi.LookupBimiDomainAsync*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_LookupBimiDomainAsync_mailslurp_Model_LookupBimiDomainOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ToolsControllerApi.LookupBimiDomainAsync(mailslurp.Model.LookupBimiDomainOptions,System.Int32,System.Threading.CancellationToken)">LookupBimiDomainAsync(LookupBimiDomainOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Lookup a BIMI record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;LookupBimiDomainResults&gt; LookupBimiDomainAsync(LookupBimiDomainOptions lookupBimiDomainOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupBimiDomainOptions.html">LookupBimiDomainOptions</a></td>
+        <td><span class="parametername">lookupBimiDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.LookupBimiDomainResults.html">LookupBimiDomainResults</a>&gt;</td>
+        <td><p>Task of LookupBimiDomainResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-1943">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_LookupBimiDomainWithHttpInfo_" data-uid="mailslurp.Api.ToolsControllerApi.LookupBimiDomainWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_LookupBimiDomainWithHttpInfo_mailslurp_Model_LookupBimiDomainOptions_System_Int32_" data-uid="mailslurp.Api.ToolsControllerApi.LookupBimiDomainWithHttpInfo(mailslurp.Model.LookupBimiDomainOptions,System.Int32)">LookupBimiDomainWithHttpInfo(LookupBimiDomainOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Lookup a BIMI record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;LookupBimiDomainResults&gt; LookupBimiDomainWithHttpInfo(LookupBimiDomainOptions lookupBimiDomainOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupBimiDomainOptions.html">LookupBimiDomainOptions</a></td>
+        <td><span class="parametername">lookupBimiDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.LookupBimiDomainResults.html">LookupBimiDomainResults</a>&gt;</td>
+        <td><p>ApiResponse of LookupBimiDomainResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-2021">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_LookupBimiDomainWithHttpInfoAsync_" data-uid="mailslurp.Api.ToolsControllerApi.LookupBimiDomainWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_LookupBimiDomainWithHttpInfoAsync_mailslurp_Model_LookupBimiDomainOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ToolsControllerApi.LookupBimiDomainWithHttpInfoAsync(mailslurp.Model.LookupBimiDomainOptions,System.Int32,System.Threading.CancellationToken)">LookupBimiDomainWithHttpInfoAsync(LookupBimiDomainOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Lookup a BIMI record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;LookupBimiDomainResults&gt;&gt; LookupBimiDomainWithHttpInfoAsync(LookupBimiDomainOptions lookupBimiDomainOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupBimiDomainOptions.html">LookupBimiDomainOptions</a></td>
+        <td><span class="parametername">lookupBimiDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.LookupBimiDomainResults.html">LookupBimiDomainResults</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (LookupBimiDomainResults)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-2086">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_LookupDmarcDomain_" data-uid="mailslurp.Api.ToolsControllerApi.LookupDmarcDomain*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_LookupDmarcDomain_mailslurp_Model_LookupDmarcDomainOptions_System_Int32_" data-uid="mailslurp.Api.ToolsControllerApi.LookupDmarcDomain(mailslurp.Model.LookupDmarcDomainOptions,System.Int32)">LookupDmarcDomain(LookupDmarcDomainOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Lookup a DMARC record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LookupDmarcDomainResults LookupDmarcDomain(LookupDmarcDomainOptions lookupDmarcDomainOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupDmarcDomainOptions.html">LookupDmarcDomainOptions</a></td>
+        <td><span class="parametername">lookupDmarcDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupDmarcDomainResults.html">LookupDmarcDomainResults</a></td>
+        <td><p>LookupDmarcDomainResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-2163">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_LookupDmarcDomainAsync_" data-uid="mailslurp.Api.ToolsControllerApi.LookupDmarcDomainAsync*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_LookupDmarcDomainAsync_mailslurp_Model_LookupDmarcDomainOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ToolsControllerApi.LookupDmarcDomainAsync(mailslurp.Model.LookupDmarcDomainOptions,System.Int32,System.Threading.CancellationToken)">LookupDmarcDomainAsync(LookupDmarcDomainOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Lookup a DMARC record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;LookupDmarcDomainResults&gt; LookupDmarcDomainAsync(LookupDmarcDomainOptions lookupDmarcDomainOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupDmarcDomainOptions.html">LookupDmarcDomainOptions</a></td>
+        <td><span class="parametername">lookupDmarcDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.LookupDmarcDomainResults.html">LookupDmarcDomainResults</a>&gt;</td>
+        <td><p>Task of LookupDmarcDomainResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-2099">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_LookupDmarcDomainWithHttpInfo_" data-uid="mailslurp.Api.ToolsControllerApi.LookupDmarcDomainWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_LookupDmarcDomainWithHttpInfo_mailslurp_Model_LookupDmarcDomainOptions_System_Int32_" data-uid="mailslurp.Api.ToolsControllerApi.LookupDmarcDomainWithHttpInfo(mailslurp.Model.LookupDmarcDomainOptions,System.Int32)">LookupDmarcDomainWithHttpInfo(LookupDmarcDomainOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Lookup a DMARC record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;LookupDmarcDomainResults&gt; LookupDmarcDomainWithHttpInfo(LookupDmarcDomainOptions lookupDmarcDomainOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupDmarcDomainOptions.html">LookupDmarcDomainOptions</a></td>
+        <td><span class="parametername">lookupDmarcDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.LookupDmarcDomainResults.html">LookupDmarcDomainResults</a>&gt;</td>
+        <td><p>ApiResponse of LookupDmarcDomainResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-2177">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_LookupDmarcDomainWithHttpInfoAsync_" data-uid="mailslurp.Api.ToolsControllerApi.LookupDmarcDomainWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_LookupDmarcDomainWithHttpInfoAsync_mailslurp_Model_LookupDmarcDomainOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ToolsControllerApi.LookupDmarcDomainWithHttpInfoAsync(mailslurp.Model.LookupDmarcDomainOptions,System.Int32,System.Threading.CancellationToken)">LookupDmarcDomainWithHttpInfoAsync(LookupDmarcDomainOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Lookup a DMARC record policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;LookupDmarcDomainResults&gt;&gt; LookupDmarcDomainWithHttpInfoAsync(LookupDmarcDomainOptions lookupDmarcDomainOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupDmarcDomainOptions.html">LookupDmarcDomainOptions</a></td>
+        <td><span class="parametername">lookupDmarcDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.LookupDmarcDomainResults.html">LookupDmarcDomainResults</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (LookupDmarcDomainResults)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-2242">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_LookupMtaStsDomain_" data-uid="mailslurp.Api.ToolsControllerApi.LookupMtaStsDomain*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_LookupMtaStsDomain_mailslurp_Model_LookupMtaStsDomainOptions_System_Int32_" data-uid="mailslurp.Api.ToolsControllerApi.LookupMtaStsDomain(mailslurp.Model.LookupMtaStsDomainOptions,System.Int32)">LookupMtaStsDomain(LookupMtaStsDomainOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Lookup a MTA-STS domain policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LookupMtaStsDomainResults LookupMtaStsDomain(LookupMtaStsDomainOptions lookupMtaStsDomainOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupMtaStsDomainOptions.html">LookupMtaStsDomainOptions</a></td>
+        <td><span class="parametername">lookupMtaStsDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupMtaStsDomainResults.html">LookupMtaStsDomainResults</a></td>
+        <td><p>LookupMtaStsDomainResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-2319">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_LookupMtaStsDomainAsync_" data-uid="mailslurp.Api.ToolsControllerApi.LookupMtaStsDomainAsync*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_LookupMtaStsDomainAsync_mailslurp_Model_LookupMtaStsDomainOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ToolsControllerApi.LookupMtaStsDomainAsync(mailslurp.Model.LookupMtaStsDomainOptions,System.Int32,System.Threading.CancellationToken)">LookupMtaStsDomainAsync(LookupMtaStsDomainOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Lookup a MTA-STS domain policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;LookupMtaStsDomainResults&gt; LookupMtaStsDomainAsync(LookupMtaStsDomainOptions lookupMtaStsDomainOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupMtaStsDomainOptions.html">LookupMtaStsDomainOptions</a></td>
+        <td><span class="parametername">lookupMtaStsDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.LookupMtaStsDomainResults.html">LookupMtaStsDomainResults</a>&gt;</td>
+        <td><p>Task of LookupMtaStsDomainResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-2255">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_LookupMtaStsDomainWithHttpInfo_" data-uid="mailslurp.Api.ToolsControllerApi.LookupMtaStsDomainWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_LookupMtaStsDomainWithHttpInfo_mailslurp_Model_LookupMtaStsDomainOptions_System_Int32_" data-uid="mailslurp.Api.ToolsControllerApi.LookupMtaStsDomainWithHttpInfo(mailslurp.Model.LookupMtaStsDomainOptions,System.Int32)">LookupMtaStsDomainWithHttpInfo(LookupMtaStsDomainOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Lookup a MTA-STS domain policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;LookupMtaStsDomainResults&gt; LookupMtaStsDomainWithHttpInfo(LookupMtaStsDomainOptions lookupMtaStsDomainOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupMtaStsDomainOptions.html">LookupMtaStsDomainOptions</a></td>
+        <td><span class="parametername">lookupMtaStsDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.LookupMtaStsDomainResults.html">LookupMtaStsDomainResults</a>&gt;</td>
+        <td><p>ApiResponse of LookupMtaStsDomainResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-2333">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_LookupMtaStsDomainWithHttpInfoAsync_" data-uid="mailslurp.Api.ToolsControllerApi.LookupMtaStsDomainWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_LookupMtaStsDomainWithHttpInfoAsync_mailslurp_Model_LookupMtaStsDomainOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ToolsControllerApi.LookupMtaStsDomainWithHttpInfoAsync(mailslurp.Model.LookupMtaStsDomainOptions,System.Int32,System.Threading.CancellationToken)">LookupMtaStsDomainWithHttpInfoAsync(LookupMtaStsDomainOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Lookup a MTA-STS domain policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;LookupMtaStsDomainResults&gt;&gt; LookupMtaStsDomainWithHttpInfoAsync(LookupMtaStsDomainOptions lookupMtaStsDomainOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupMtaStsDomainOptions.html">LookupMtaStsDomainOptions</a></td>
+        <td><span class="parametername">lookupMtaStsDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.LookupMtaStsDomainResults.html">LookupMtaStsDomainResults</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (LookupMtaStsDomainResults)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-2398">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_LookupTlsReportingDomain_" data-uid="mailslurp.Api.ToolsControllerApi.LookupTlsReportingDomain*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_LookupTlsReportingDomain_mailslurp_Model_LookupTlsReportingDomainOptions_System_Int32_" data-uid="mailslurp.Api.ToolsControllerApi.LookupTlsReportingDomain(mailslurp.Model.LookupTlsReportingDomainOptions,System.Int32)">LookupTlsReportingDomain(LookupTlsReportingDomainOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Lookup a TLS reporting domain policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LookupTlsReportingDomainResults LookupTlsReportingDomain(LookupTlsReportingDomainOptions lookupTlsReportingDomainOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupTlsReportingDomainOptions.html">LookupTlsReportingDomainOptions</a></td>
+        <td><span class="parametername">lookupTlsReportingDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupTlsReportingDomainResults.html">LookupTlsReportingDomainResults</a></td>
+        <td><p>LookupTlsReportingDomainResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-2475">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_LookupTlsReportingDomainAsync_" data-uid="mailslurp.Api.ToolsControllerApi.LookupTlsReportingDomainAsync*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_LookupTlsReportingDomainAsync_mailslurp_Model_LookupTlsReportingDomainOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ToolsControllerApi.LookupTlsReportingDomainAsync(mailslurp.Model.LookupTlsReportingDomainOptions,System.Int32,System.Threading.CancellationToken)">LookupTlsReportingDomainAsync(LookupTlsReportingDomainOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Lookup a TLS reporting domain policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;LookupTlsReportingDomainResults&gt; LookupTlsReportingDomainAsync(LookupTlsReportingDomainOptions lookupTlsReportingDomainOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupTlsReportingDomainOptions.html">LookupTlsReportingDomainOptions</a></td>
+        <td><span class="parametername">lookupTlsReportingDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.LookupTlsReportingDomainResults.html">LookupTlsReportingDomainResults</a>&gt;</td>
+        <td><p>Task of LookupTlsReportingDomainResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-2411">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_LookupTlsReportingDomainWithHttpInfo_" data-uid="mailslurp.Api.ToolsControllerApi.LookupTlsReportingDomainWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_LookupTlsReportingDomainWithHttpInfo_mailslurp_Model_LookupTlsReportingDomainOptions_System_Int32_" data-uid="mailslurp.Api.ToolsControllerApi.LookupTlsReportingDomainWithHttpInfo(mailslurp.Model.LookupTlsReportingDomainOptions,System.Int32)">LookupTlsReportingDomainWithHttpInfo(LookupTlsReportingDomainOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Lookup a TLS reporting domain policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;LookupTlsReportingDomainResults&gt; LookupTlsReportingDomainWithHttpInfo(LookupTlsReportingDomainOptions lookupTlsReportingDomainOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupTlsReportingDomainOptions.html">LookupTlsReportingDomainOptions</a></td>
+        <td><span class="parametername">lookupTlsReportingDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.LookupTlsReportingDomainResults.html">LookupTlsReportingDomainResults</a>&gt;</td>
+        <td><p>ApiResponse of LookupTlsReportingDomainResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-2489">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ToolsControllerApi_LookupTlsReportingDomainWithHttpInfoAsync_" data-uid="mailslurp.Api.ToolsControllerApi.LookupTlsReportingDomainWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_ToolsControllerApi_LookupTlsReportingDomainWithHttpInfoAsync_mailslurp_Model_LookupTlsReportingDomainOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ToolsControllerApi.LookupTlsReportingDomainWithHttpInfoAsync(mailslurp.Model.LookupTlsReportingDomainOptions,System.Int32,System.Threading.CancellationToken)">LookupTlsReportingDomainWithHttpInfoAsync(LookupTlsReportingDomainOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Lookup a TLS reporting domain policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;LookupTlsReportingDomainResults&gt;&gt; LookupTlsReportingDomainWithHttpInfoAsync(LookupTlsReportingDomainOptions lookupTlsReportingDomainOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.LookupTlsReportingDomainOptions.html">LookupTlsReportingDomainOptions</a></td>
+        <td><span class="parametername">lookupTlsReportingDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.LookupTlsReportingDomainResults.html">LookupTlsReportingDomainResults</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (LookupTlsReportingDomainResults)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="mailslurp.Api.IToolsControllerApi.html">IToolsControllerApi</a>
+  </div>
+  <div>
+      <a class="xref" href="mailslurp.Api.IToolsControllerApiSync.html">IToolsControllerApiSync</a>
+  </div>
+  <div>
+      <a class="xref" href="mailslurp.Api.IToolsControllerApiAsync.html">IToolsControllerApiAsync</a>
+  </div>
+  <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html">IApiAccessor</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ToolsControllerApi.cs#lines-593" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
