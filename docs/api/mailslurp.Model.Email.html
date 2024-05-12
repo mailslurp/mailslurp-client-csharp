@@ -1,0 +1,1521 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Email
+ | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Email
+ | MailSlurp ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Model.Email">
+
+
+  <h1 id="mailslurp_Model_Email" data-uid="mailslurp.Model.Email" class="text-break">Class Email
+</h1>
+  <div class="markdown level0 summary"><p>Email entity (also known as EmailDto). When an SMTP email message is received by MailSlurp it is parsed. The body and attachments are written to disk and the fields such as to, from, subject etc are stored in a database. The <code>body</code> contains the email content. If you want the original SMTP message see the <code>getRawEmail</code> endpoints. The attachments can be fetched using the AttachmentController</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">Email</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="mailslurp.Model.Email.html">Email</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.ivalidatableobject">IValidatableObject</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">object.ReferenceEquals(object, object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">mailslurp</span>.<a class="xref" href="mailslurp.Model.html">Model</a></h6>
+  <h6><strong>Assembly</strong>: mailslurp.dll</h6>
+  <h5 id="mailslurp_Model_Email_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataContract(Name = &quot;Email&quot;)]
+public class Email : IEquatable&lt;Email&gt;, IValidatableObject</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-38">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email__ctor_" data-uid="mailslurp.Model.Email.#ctor*"></a>
+  <h4 id="mailslurp_Model_Email__ctor" data-uid="mailslurp.Model.Email.#ctor">Email()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Model.Email.html">Email</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonConstructor]
+protected Email()</code></pre>
+  </div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-73">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email__ctor_" data-uid="mailslurp.Model.Email.#ctor*"></a>
+  <h4 id="mailslurp_Model_Email__ctor_System_Guid_System_Guid_System_Guid_System_Nullable_System_Guid__System_Collections_Generic_List_System_String__System_String_mailslurp_Model_Sender_mailslurp_Model_EmailRecipients_System_String_System_Collections_Generic_List_System_String__System_Collections_Generic_List_System_String__System_Collections_Generic_Dictionary_System_String_System_String__System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Collections_Generic_List_System_String__System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Boolean__System_String_mailslurp_Model_EmailAnalysis_System_DateTime_System_DateTime_System_Boolean_System_Boolean_System_Nullable_System_Boolean__System_Collections_Generic_List_System_String__System_Boolean_System_Boolean_" data-uid="mailslurp.Model.Email.#ctor(System.Guid,System.Guid,System.Guid,System.Nullable{System.Guid},System.Collections.Generic.List{System.String},System.String,mailslurp.Model.Sender,mailslurp.Model.EmailRecipients,System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Collections.Generic.List{System.String},System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Boolean},System.String,mailslurp.Model.EmailAnalysis,System.DateTime,System.DateTime,System.Boolean,System.Boolean,System.Nullable{System.Boolean},System.Collections.Generic.List{System.String},System.Boolean,System.Boolean)">Email(Guid, Guid, Guid, Guid?, List&lt;string&gt;, string, Sender, EmailRecipients, string, List&lt;string&gt;, List&lt;string&gt;, Dictionary&lt;string, string&gt;, Dictionary&lt;string, List&lt;string&gt;&gt;, List&lt;string&gt;, string, string, string, string, string, bool?, string, EmailAnalysis, DateTime, DateTime, bool, bool, bool?, List&lt;string&gt;, bool, bool)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Model.Email.html">Email</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Email(Guid id = default, Guid userId = default, Guid inboxId = default, Guid? domainId = null, List&lt;string&gt; to = null, string from = null, Sender sender = null, EmailRecipients recipients = null, string replyTo = null, List&lt;string&gt; cc = null, List&lt;string&gt; bcc = null, Dictionary&lt;string, string&gt; headers = null, Dictionary&lt;string, List&lt;string&gt;&gt; headersMap = null, List&lt;string&gt; attachments = null, string subject = null, string body = null, string bodyExcerpt = null, string textExcerpt = null, string bodyMD5Hash = null, bool? isHTML = null, string charset = null, EmailAnalysis analysis = null, DateTime createdAt = default, DateTime updatedAt = default, bool read = false, bool teamAccess = false, bool? isXAmpHtml = null, List&lt;string&gt; bodyPartContentTypes = null, bool html = false, bool xampHtml = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of the email entity (required).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>ID of user that email belongs to (required).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>ID of the inbox that received the email (required).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Guid</span>?</td>
+        <td><span class="parametername">domainId</span></td>
+        <td><p>ID of the domain that received the email.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">to</span></td>
+        <td><p>List of <code>To</code> recipient email addresses that the email was addressed to. See recipients object for names. (required).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">from</span></td>
+        <td><p>Who the email was sent from. An email address - see fromName for the sender name..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.Sender.html">Sender</a></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>sender.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.EmailRecipients.html">EmailRecipients</a></td>
+        <td><span class="parametername">recipients</span></td>
+        <td><p>recipients.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">replyTo</span></td>
+        <td><p>The <code>replyTo</code> field on the received email message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">cc</span></td>
+        <td><p>List of <code>CC</code> recipients email addresses that the email was addressed to. See recipients object for names..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">bcc</span></td>
+        <td><p>List of <code>BCC</code> recipients email addresses that the email was addressed to. See recipients object for names..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">headers</span></td>
+        <td><p>Collection of SMTP headers attached to email.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</td>
+        <td><span class="parametername">headersMap</span></td>
+        <td><p>Multi-value map of SMTP headers attached to email.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">attachments</span></td>
+        <td><p>List of IDs of attachments found in the email. Use these IDs with the Inbox and Email Controllers to download attachments and attachment meta data such as filesize, name, extension..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">subject</span></td>
+        <td><p>The subject line of the email message as specified by SMTP subject header.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">body</span></td>
+        <td><p>The body of the email message as text parsed from the SMTP message body (does not include attachments). Fetch the raw content to access the SMTP message and use the attachments property to access attachments. The body is stored separately to the email entity so the body is not returned in paginated results only in full single email or wait requests..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">bodyExcerpt</span></td>
+        <td><p>An excerpt of the body of the email message for quick preview. Takes HTML content part if exists falls back to TEXT content part if not.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">textExcerpt</span></td>
+        <td><p>An excerpt of the body of the email message for quick preview. Takes TEXT content part if exists.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">bodyMD5Hash</span></td>
+        <td><p>A hash signature of the email message using MD5. Useful for comparing emails without fetching full body..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">isHTML</span></td>
+        <td><p>Is the email body content type HTML?.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">charset</span></td>
+        <td><p>Detected character set of the email body such as UTF-8.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.EmailAnalysis.html">EmailAnalysis</a></td>
+        <td><span class="parametername">analysis</span></td>
+        <td><p>analysis.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td><span class="parametername">createdAt</span></td>
+        <td><p>When was the email received by MailSlurp (required).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td><span class="parametername">updatedAt</span></td>
+        <td><p>When was the email last updated (required).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">read</span></td>
+        <td><p>Read flag. Has the email ever been viewed in the dashboard or fetched via the API with a hydrated body? If so the email is marked as read. Paginated results do not affect read status. Read status is different to email opened event as it depends on your own account accessing the email. Email opened is determined by tracking pixels sent to other uses if enable during sending. You can listened for both email read and email opened events using webhooks. (required).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">teamAccess</span></td>
+        <td><p>Can the email be accessed by organization team members (required).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">isXAmpHtml</span></td>
+        <td><p>Is the email body content type x-amp-html Amp4Email?.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">bodyPartContentTypes</span></td>
+        <td><p>A list of detected multipart mime message body part content types such as text/plain and text/html. Can be used with email bodyPart endpoints to fetch individual body parts..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">html</span></td>
+        <td><p>html.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">xampHtml</span></td>
+        <td><p>xampHtml.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-261">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_Analysis_" data-uid="mailslurp.Model.Email.Analysis*"></a>
+  <h4 id="mailslurp_Model_Email_Analysis" data-uid="mailslurp.Model.Email.Analysis">Analysis</h4>
+  <div class="markdown level1 summary"><p>Gets or Sets Analysis</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;analysis&quot;, EmitDefaultValue = true)]
+public EmailAnalysis Analysis { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.EmailAnalysis.html">EmailAnalysis</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-206">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_Attachments_" data-uid="mailslurp.Model.Email.Attachments*"></a>
+  <h4 id="mailslurp_Model_Email_Attachments" data-uid="mailslurp.Model.Email.Attachments">Attachments</h4>
+  <div class="markdown level1 summary"><p>List of IDs of attachments found in the email. Use these IDs with the Inbox and Email Controllers to download attachments and attachment meta data such as filesize, name, extension.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;attachments&quot;, EmitDefaultValue = true)]
+public List&lt;string&gt; Attachments { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><p>List of IDs of attachments found in the email. Use these IDs with the Inbox and Email Controllers to download attachments and attachment meta data such as filesize, name, extension.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-184">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_Bcc_" data-uid="mailslurp.Model.Email.Bcc*"></a>
+  <h4 id="mailslurp_Model_Email_Bcc" data-uid="mailslurp.Model.Email.Bcc">Bcc</h4>
+  <div class="markdown level1 summary"><p>List of <code>BCC</code> recipients email addresses that the email was addressed to. See recipients object for names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;bcc&quot;, EmitDefaultValue = true)]
+public List&lt;string&gt; Bcc { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><p>List of <code>BCC</code> recipients email addresses that the email was addressed to. See recipients object for names.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-220">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_Body_" data-uid="mailslurp.Model.Email.Body*"></a>
+  <h4 id="mailslurp_Model_Email_Body" data-uid="mailslurp.Model.Email.Body">Body</h4>
+  <div class="markdown level1 summary"><p>The body of the email message as text parsed from the SMTP message body (does not include attachments). Fetch the raw content to access the SMTP message and use the attachments property to access attachments. The body is stored separately to the email entity so the body is not returned in paginated results only in full single email or wait requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;body&quot;, EmitDefaultValue = true)]
+public string Body { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The body of the email message as text parsed from the SMTP message body (does not include attachments). Fetch the raw content to access the SMTP message and use the attachments property to access attachments. The body is stored separately to the email entity so the body is not returned in paginated results only in full single email or wait requests.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-227">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_BodyExcerpt_" data-uid="mailslurp.Model.Email.BodyExcerpt*"></a>
+  <h4 id="mailslurp_Model_Email_BodyExcerpt" data-uid="mailslurp.Model.Email.BodyExcerpt">BodyExcerpt</h4>
+  <div class="markdown level1 summary"><p>An excerpt of the body of the email message for quick preview. Takes HTML content part if exists falls back to TEXT content part if not</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;bodyExcerpt&quot;, EmitDefaultValue = true)]
+public string BodyExcerpt { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>An excerpt of the body of the email message for quick preview. Takes HTML content part if exists falls back to TEXT content part if not</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-241">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_BodyMD5Hash_" data-uid="mailslurp.Model.Email.BodyMD5Hash*"></a>
+  <h4 id="mailslurp_Model_Email_BodyMD5Hash" data-uid="mailslurp.Model.Email.BodyMD5Hash">BodyMD5Hash</h4>
+  <div class="markdown level1 summary"><p>A hash signature of the email message using MD5. Useful for comparing emails without fetching full body.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;bodyMD5Hash&quot;, EmitDefaultValue = true)]
+public string BodyMD5Hash { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>A hash signature of the email message using MD5. Useful for comparing emails without fetching full body.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-303">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_BodyPartContentTypes_" data-uid="mailslurp.Model.Email.BodyPartContentTypes*"></a>
+  <h4 id="mailslurp_Model_Email_BodyPartContentTypes" data-uid="mailslurp.Model.Email.BodyPartContentTypes">BodyPartContentTypes</h4>
+  <div class="markdown level1 summary"><p>A list of detected multipart mime message body part content types such as text/plain and text/html. Can be used with email bodyPart endpoints to fetch individual body parts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;bodyPartContentTypes&quot;, EmitDefaultValue = true)]
+public List&lt;string&gt; BodyPartContentTypes { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><p>A list of detected multipart mime message body part content types such as text/plain and text/html. Can be used with email bodyPart endpoints to fetch individual body parts.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-177">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_Cc_" data-uid="mailslurp.Model.Email.Cc*"></a>
+  <h4 id="mailslurp_Model_Email_Cc" data-uid="mailslurp.Model.Email.Cc">Cc</h4>
+  <div class="markdown level1 summary"><p>List of <code>CC</code> recipients email addresses that the email was addressed to. See recipients object for names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;cc&quot;, EmitDefaultValue = true)]
+public List&lt;string&gt; Cc { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><p>List of <code>CC</code> recipients email addresses that the email was addressed to. See recipients object for names.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-255">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_Charset_" data-uid="mailslurp.Model.Email.Charset*"></a>
+  <h4 id="mailslurp_Model_Email_Charset" data-uid="mailslurp.Model.Email.Charset">Charset</h4>
+  <div class="markdown level1 summary"><p>Detected character set of the email body such as UTF-8</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;charset&quot;, EmitDefaultValue = true)]
+public string Charset { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Detected character set of the email body such as UTF-8</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-268">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_CreatedAt_" data-uid="mailslurp.Model.Email.CreatedAt*"></a>
+  <h4 id="mailslurp_Model_Email_CreatedAt" data-uid="mailslurp.Model.Email.CreatedAt">CreatedAt</h4>
+  <div class="markdown level1 summary"><p>When was the email received by MailSlurp</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;createdAt&quot;, IsRequired = true, EmitDefaultValue = true)]
+public DateTime CreatedAt { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td><p>When was the email received by MailSlurp</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-137">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_DomainId_" data-uid="mailslurp.Model.Email.DomainId*"></a>
+  <h4 id="mailslurp_Model_Email_DomainId" data-uid="mailslurp.Model.Email.DomainId">DomainId</h4>
+  <div class="markdown level1 summary"><p>ID of the domain that received the email</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;domainId&quot;, EmitDefaultValue = true)]
+public Guid? DomainId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span>?</td>
+        <td><p>ID of the domain that received the email</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-151">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_From_" data-uid="mailslurp.Model.Email.From*"></a>
+  <h4 id="mailslurp_Model_Email_From" data-uid="mailslurp.Model.Email.From">From</h4>
+  <div class="markdown level1 summary"><p>Who the email was sent from. An email address - see fromName for the sender name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;from&quot;, EmitDefaultValue = true)]
+public string From { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Who the email was sent from. An email address - see fromName for the sender name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-191">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_Headers_" data-uid="mailslurp.Model.Email.Headers*"></a>
+  <h4 id="mailslurp_Model_Email_Headers" data-uid="mailslurp.Model.Email.Headers">Headers</h4>
+  <div class="markdown level1 summary"><p>Collection of SMTP headers attached to email</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;headers&quot;, EmitDefaultValue = true)]
+[Obsolete]
+public Dictionary&lt;string, string&gt; Headers { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><p>Collection of SMTP headers attached to email</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-199">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_HeadersMap_" data-uid="mailslurp.Model.Email.HeadersMap*"></a>
+  <h4 id="mailslurp_Model_Email_HeadersMap" data-uid="mailslurp.Model.Email.HeadersMap">HeadersMap</h4>
+  <div class="markdown level1 summary"><p>Multi-value map of SMTP headers attached to email</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;headersMap&quot;, EmitDefaultValue = true)]
+public Dictionary&lt;string, List&lt;string&gt;&gt; HeadersMap { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</td>
+        <td><p>Multi-value map of SMTP headers attached to email</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-309">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_Html_" data-uid="mailslurp.Model.Email.Html*"></a>
+  <h4 id="mailslurp_Model_Email_Html" data-uid="mailslurp.Model.Email.Html">Html</h4>
+  <div class="markdown level1 summary"><p>Gets or Sets Html</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;html&quot;, EmitDefaultValue = true)]
+public bool Html { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-116">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_Id_" data-uid="mailslurp.Model.Email.Id*"></a>
+  <h4 id="mailslurp_Model_Email_Id" data-uid="mailslurp.Model.Email.Id">Id</h4>
+  <div class="markdown level1 summary"><p>ID of the email entity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;id&quot;, IsRequired = true, EmitDefaultValue = true)]
+public Guid Id { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><p>ID of the email entity</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-130">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_InboxId_" data-uid="mailslurp.Model.Email.InboxId*"></a>
+  <h4 id="mailslurp_Model_Email_InboxId" data-uid="mailslurp.Model.Email.InboxId">InboxId</h4>
+  <div class="markdown level1 summary"><p>ID of the inbox that received the email</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;inboxId&quot;, IsRequired = true, EmitDefaultValue = true)]
+public Guid InboxId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><p>ID of the inbox that received the email</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-248">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_IsHTML_" data-uid="mailslurp.Model.Email.IsHTML*"></a>
+  <h4 id="mailslurp_Model_Email_IsHTML" data-uid="mailslurp.Model.Email.IsHTML">IsHTML</h4>
+  <div class="markdown level1 summary"><p>Is the email body content type HTML?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;isHTML&quot;, EmitDefaultValue = true)]
+public bool? IsHTML { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><p>Is the email body content type HTML?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-296">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_IsXAmpHtml_" data-uid="mailslurp.Model.Email.IsXAmpHtml*"></a>
+  <h4 id="mailslurp_Model_Email_IsXAmpHtml" data-uid="mailslurp.Model.Email.IsXAmpHtml">IsXAmpHtml</h4>
+  <div class="markdown level1 summary"><p>Is the email body content type x-amp-html Amp4Email?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;isXAmpHtml&quot;, EmitDefaultValue = true)]
+public bool? IsXAmpHtml { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><p>Is the email body content type x-amp-html Amp4Email?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-282">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_Read_" data-uid="mailslurp.Model.Email.Read*"></a>
+  <h4 id="mailslurp_Model_Email_Read" data-uid="mailslurp.Model.Email.Read">Read</h4>
+  <div class="markdown level1 summary"><p>Read flag. Has the email ever been viewed in the dashboard or fetched via the API with a hydrated body? If so the email is marked as read. Paginated results do not affect read status. Read status is different to email opened event as it depends on your own account accessing the email. Email opened is determined by tracking pixels sent to other uses if enable during sending. You can listened for both email read and email opened events using webhooks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;read&quot;, IsRequired = true, EmitDefaultValue = true)]
+public bool Read { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>Read flag. Has the email ever been viewed in the dashboard or fetched via the API with a hydrated body? If so the email is marked as read. Paginated results do not affect read status. Read status is different to email opened event as it depends on your own account accessing the email. Email opened is determined by tracking pixels sent to other uses if enable during sending. You can listened for both email read and email opened events using webhooks.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-163">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_Recipients_" data-uid="mailslurp.Model.Email.Recipients*"></a>
+  <h4 id="mailslurp_Model_Email_Recipients" data-uid="mailslurp.Model.Email.Recipients">Recipients</h4>
+  <div class="markdown level1 summary"><p>Gets or Sets Recipients</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;recipients&quot;, EmitDefaultValue = true)]
+public EmailRecipients Recipients { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.EmailRecipients.html">EmailRecipients</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-170">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_ReplyTo_" data-uid="mailslurp.Model.Email.ReplyTo*"></a>
+  <h4 id="mailslurp_Model_Email_ReplyTo" data-uid="mailslurp.Model.Email.ReplyTo">ReplyTo</h4>
+  <div class="markdown level1 summary"><p>The <code>replyTo</code> field on the received email message</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;replyTo&quot;, EmitDefaultValue = true)]
+public string ReplyTo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The <code>replyTo</code> field on the received email message</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-157">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_Sender_" data-uid="mailslurp.Model.Email.Sender*"></a>
+  <h4 id="mailslurp_Model_Email_Sender" data-uid="mailslurp.Model.Email.Sender">Sender</h4>
+  <div class="markdown level1 summary"><p>Gets or Sets Sender</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;sender&quot;, EmitDefaultValue = true)]
+public Sender Sender { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.Sender.html">Sender</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-213">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_Subject_" data-uid="mailslurp.Model.Email.Subject*"></a>
+  <h4 id="mailslurp_Model_Email_Subject" data-uid="mailslurp.Model.Email.Subject">Subject</h4>
+  <div class="markdown level1 summary"><p>The subject line of the email message as specified by SMTP subject header</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;subject&quot;, EmitDefaultValue = true)]
+public string Subject { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The subject line of the email message as specified by SMTP subject header</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-289">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_TeamAccess_" data-uid="mailslurp.Model.Email.TeamAccess*"></a>
+  <h4 id="mailslurp_Model_Email_TeamAccess" data-uid="mailslurp.Model.Email.TeamAccess">TeamAccess</h4>
+  <div class="markdown level1 summary"><p>Can the email be accessed by organization team members</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;teamAccess&quot;, IsRequired = true, EmitDefaultValue = true)]
+public bool TeamAccess { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>Can the email be accessed by organization team members</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-234">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_TextExcerpt_" data-uid="mailslurp.Model.Email.TextExcerpt*"></a>
+  <h4 id="mailslurp_Model_Email_TextExcerpt" data-uid="mailslurp.Model.Email.TextExcerpt">TextExcerpt</h4>
+  <div class="markdown level1 summary"><p>An excerpt of the body of the email message for quick preview. Takes TEXT content part if exists</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;textExcerpt&quot;, EmitDefaultValue = true)]
+public string TextExcerpt { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>An excerpt of the body of the email message for quick preview. Takes TEXT content part if exists</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-144">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_To_" data-uid="mailslurp.Model.Email.To*"></a>
+  <h4 id="mailslurp_Model_Email_To" data-uid="mailslurp.Model.Email.To">To</h4>
+  <div class="markdown level1 summary"><p>List of <code>To</code> recipient email addresses that the email was addressed to. See recipients object for names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;to&quot;, IsRequired = true, EmitDefaultValue = true)]
+public List&lt;string&gt; To { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><p>List of <code>To</code> recipient email addresses that the email was addressed to. See recipients object for names.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-275">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_UpdatedAt_" data-uid="mailslurp.Model.Email.UpdatedAt*"></a>
+  <h4 id="mailslurp_Model_Email_UpdatedAt" data-uid="mailslurp.Model.Email.UpdatedAt">UpdatedAt</h4>
+  <div class="markdown level1 summary"><p>When was the email last updated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;updatedAt&quot;, IsRequired = true, EmitDefaultValue = true)]
+public DateTime UpdatedAt { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td><p>When was the email last updated</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-123">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_UserId_" data-uid="mailslurp.Model.Email.UserId*"></a>
+  <h4 id="mailslurp_Model_Email_UserId" data-uid="mailslurp.Model.Email.UserId">UserId</h4>
+  <div class="markdown level1 summary"><p>ID of user that email belongs to</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;userId&quot;, IsRequired = true, EmitDefaultValue = true)]
+public Guid UserId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><p>ID of user that email belongs to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-315">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_XampHtml_" data-uid="mailslurp.Model.Email.XampHtml*"></a>
+  <h4 id="mailslurp_Model_Email_XampHtml" data-uid="mailslurp.Model.Email.XampHtml">XampHtml</h4>
+  <div class="markdown level1 summary"><p>Gets or Sets XampHtml</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;xampHtml&quot;, EmitDefaultValue = true)]
+public bool XampHtml { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-384">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_Equals_" data-uid="mailslurp.Model.Email.Equals*"></a>
+  <h4 id="mailslurp_Model_Email_Equals_mailslurp_Model_Email_" data-uid="mailslurp.Model.Email.Equals(mailslurp.Model.Email)">Equals(Email)</h4>
+  <div class="markdown level1 summary"><p>Returns true if Email instances are equal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Email input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.Email.html">Email</a></td>
+        <td><span class="parametername">input</span></td>
+        <td><p>Instance of Email to be compared</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>Boolean</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-374">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_Equals_" data-uid="mailslurp.Model.Email.Equals*"></a>
+  <h4 id="mailslurp_Model_Email_Equals_System_Object_" data-uid="mailslurp.Model.Email.Equals(System.Object)">Equals(object)</h4>
+  <div class="markdown level1 summary"><p>Returns true if objects are equal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">input</span></td>
+        <td><p>Object to be compared</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>Boolean</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">object.Equals(object)</span></div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-550">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_GetHashCode_" data-uid="mailslurp.Model.Email.GetHashCode*"></a>
+  <h4 id="mailslurp_Model_Email_GetHashCode" data-uid="mailslurp.Model.Email.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Gets the hash code</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>Hash code</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a></div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-364">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_ToJson_" data-uid="mailslurp.Model.Email.ToJson*"></a>
+  <h4 id="mailslurp_Model_Email_ToJson" data-uid="mailslurp.Model.Email.ToJson">ToJson()</h4>
+  <div class="markdown level1 summary"><p>Returns the JSON string presentation of the object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ToJson()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>JSON string presentation of the object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-322">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_ToString_" data-uid="mailslurp.Model.Email.ToString*"></a>
+  <h4 id="mailslurp_Model_Email_ToString" data-uid="mailslurp.Model.Email.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns the string presentation of the object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>String presentation of the object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a></div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-672">View Source</a>
+  </span>
+  <a id="mailslurp_Model_Email_Validate_" data-uid="mailslurp.Model.Email.Validate*"></a>
+  <h4 id="mailslurp_Model_Email_Validate_System_ComponentModel_DataAnnotations_ValidationContext_" data-uid="mailslurp.Model.Email.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">Validate(ValidationContext)</h4>
+  <div class="markdown level1 summary"><p>To validate all properties of the instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ValidationResult&gt; Validate(ValidationContext validationContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.validationcontext">ValidationContext</a></td>
+        <td><span class="parametername">validationContext</span></td>
+        <td><p>Validation context</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.validationresult">ValidationResult</a>&gt;</td>
+        <td><p>Validation Result</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">System.IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.ivalidatableobject">System.ComponentModel.DataAnnotations.IValidatableObject</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/Email.cs#lines-32" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
