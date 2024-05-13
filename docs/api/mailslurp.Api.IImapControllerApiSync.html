@@ -1,0 +1,1025 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IImapControllerApiSync
+ | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IImapControllerApiSync
+ | MailSlurp ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Api.IImapControllerApiSync">
+
+
+  <h1 id="mailslurp_Api_IImapControllerApiSync" data-uid="mailslurp.Api.IImapControllerApiSync" class="text-break">Interface IImapControllerApiSync
+</h1>
+  <div class="markdown level0 summary"><p>Represents a collection of functions to interact with the API endpoints</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_Configuration">IApiAccessor.Configuration</a>
+    </div>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_GetBasePath">IApiAccessor.GetBasePath()</a>
+    </div>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_ExceptionFactory">IApiAccessor.ExceptionFactory</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">mailslurp</span>.<a class="xref" href="mailslurp.Api.html">Api</a></h6>
+  <h6><strong>Assembly</strong>: mailslurp.dll</h6>
+  <h5 id="mailslurp_Api_IImapControllerApiSync_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IImapControllerApiSync : IApiAccessor</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-38">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApiSync_ImapServerFetch_" data-uid="mailslurp.Api.IImapControllerApiSync.ImapServerFetch*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApiSync_ImapServerFetch_System_Int64_System_Nullable_System_Guid__System_Int32_" data-uid="mailslurp.Api.IImapControllerApiSync.ImapServerFetch(System.Int64,System.Nullable{System.Guid},System.Int32)">ImapServerFetch(long, Guid?, int)</h4>
+  <div class="markdown level1 summary"><p>Fetch message in an inbox</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ImapServerFetchResult ImapServerFetch(long seqNum, Guid? inboxId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">seqNum</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox ID to search (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ImapServerFetchResult.html">ImapServerFetchResult</a></td>
+        <td><p>ImapServerFetchResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-51">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApiSync_ImapServerFetchWithHttpInfo_" data-uid="mailslurp.Api.IImapControllerApiSync.ImapServerFetchWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApiSync_ImapServerFetchWithHttpInfo_System_Int64_System_Nullable_System_Guid__System_Int32_" data-uid="mailslurp.Api.IImapControllerApiSync.ImapServerFetchWithHttpInfo(System.Int64,System.Nullable{System.Guid},System.Int32)">ImapServerFetchWithHttpInfo(long, Guid?, int)</h4>
+  <div class="markdown level1 summary"><p>Fetch message in an inbox</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;ImapServerFetchResult&gt; ImapServerFetchWithHttpInfo(long seqNum, Guid? inboxId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">seqNum</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox ID to search (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.ImapServerFetchResult.html">ImapServerFetchResult</a>&gt;</td>
+        <td><p>ApiResponse of ImapServerFetchResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-60">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApiSync_ImapServerGet_" data-uid="mailslurp.Api.IImapControllerApiSync.ImapServerGet*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApiSync_ImapServerGet_System_Guid_System_Nullable_System_Guid__System_Int32_" data-uid="mailslurp.Api.IImapControllerApiSync.ImapServerGet(System.Guid,System.Nullable{System.Guid},System.Int32)">ImapServerGet(Guid, Guid?, int)</h4>
+  <div class="markdown level1 summary"><p>Get a message by email ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ImapServerGetResult ImapServerGet(Guid emailId, Guid? inboxId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">emailId</span></td>
+        <td><p>Email ID to get</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox ID to search (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ImapServerGetResult.html">ImapServerGetResult</a></td>
+        <td><p>ImapServerGetResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-73">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApiSync_ImapServerGetWithHttpInfo_" data-uid="mailslurp.Api.IImapControllerApiSync.ImapServerGetWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApiSync_ImapServerGetWithHttpInfo_System_Guid_System_Nullable_System_Guid__System_Int32_" data-uid="mailslurp.Api.IImapControllerApiSync.ImapServerGetWithHttpInfo(System.Guid,System.Nullable{System.Guid},System.Int32)">ImapServerGetWithHttpInfo(Guid, Guid?, int)</h4>
+  <div class="markdown level1 summary"><p>Get a message by email ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;ImapServerGetResult&gt; ImapServerGetWithHttpInfo(Guid emailId, Guid? inboxId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">emailId</span></td>
+        <td><p>Email ID to get</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox ID to search (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.ImapServerGetResult.html">ImapServerGetResult</a>&gt;</td>
+        <td><p>ApiResponse of ImapServerGetResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-82">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApiSync_ImapServerList_" data-uid="mailslurp.Api.IImapControllerApiSync.ImapServerList*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApiSync_ImapServerList_mailslurp_Model_ImapServerListOptions_System_Nullable_System_Guid__System_Int32_" data-uid="mailslurp.Api.IImapControllerApiSync.ImapServerList(mailslurp.Model.ImapServerListOptions,System.Nullable{System.Guid},System.Int32)">ImapServerList(ImapServerListOptions, Guid?, int)</h4>
+  <div class="markdown level1 summary"><p>List messages in an inbox</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ImapServerListResult ImapServerList(ImapServerListOptions imapServerListOptions, Guid? inboxId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ImapServerListOptions.html">ImapServerListOptions</a></td>
+        <td><span class="parametername">imapServerListOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox ID to list (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ImapServerListResult.html">ImapServerListResult</a></td>
+        <td><p>ImapServerListResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-95">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApiSync_ImapServerListWithHttpInfo_" data-uid="mailslurp.Api.IImapControllerApiSync.ImapServerListWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApiSync_ImapServerListWithHttpInfo_mailslurp_Model_ImapServerListOptions_System_Nullable_System_Guid__System_Int32_" data-uid="mailslurp.Api.IImapControllerApiSync.ImapServerListWithHttpInfo(mailslurp.Model.ImapServerListOptions,System.Nullable{System.Guid},System.Int32)">ImapServerListWithHttpInfo(ImapServerListOptions, Guid?, int)</h4>
+  <div class="markdown level1 summary"><p>List messages in an inbox</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;ImapServerListResult&gt; ImapServerListWithHttpInfo(ImapServerListOptions imapServerListOptions, Guid? inboxId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ImapServerListOptions.html">ImapServerListOptions</a></td>
+        <td><span class="parametername">imapServerListOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox ID to list (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.ImapServerListResult.html">ImapServerListResult</a>&gt;</td>
+        <td><p>ApiResponse of ImapServerListResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-104">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApiSync_ImapServerSearch_" data-uid="mailslurp.Api.IImapControllerApiSync.ImapServerSearch*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApiSync_ImapServerSearch_mailslurp_Model_ImapServerSearchOptions_System_Nullable_System_Guid__System_Int32_" data-uid="mailslurp.Api.IImapControllerApiSync.ImapServerSearch(mailslurp.Model.ImapServerSearchOptions,System.Nullable{System.Guid},System.Int32)">ImapServerSearch(ImapServerSearchOptions, Guid?, int)</h4>
+  <div class="markdown level1 summary"><p>Search messages in an inbox</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ImapServerSearchResult ImapServerSearch(ImapServerSearchOptions imapServerSearchOptions, Guid? inboxId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ImapServerSearchOptions.html">ImapServerSearchOptions</a></td>
+        <td><span class="parametername">imapServerSearchOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox ID to search (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ImapServerSearchResult.html">ImapServerSearchResult</a></td>
+        <td><p>ImapServerSearchResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-117">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApiSync_ImapServerSearchWithHttpInfo_" data-uid="mailslurp.Api.IImapControllerApiSync.ImapServerSearchWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApiSync_ImapServerSearchWithHttpInfo_mailslurp_Model_ImapServerSearchOptions_System_Nullable_System_Guid__System_Int32_" data-uid="mailslurp.Api.IImapControllerApiSync.ImapServerSearchWithHttpInfo(mailslurp.Model.ImapServerSearchOptions,System.Nullable{System.Guid},System.Int32)">ImapServerSearchWithHttpInfo(ImapServerSearchOptions, Guid?, int)</h4>
+  <div class="markdown level1 summary"><p>Search messages in an inbox</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;ImapServerSearchResult&gt; ImapServerSearchWithHttpInfo(ImapServerSearchOptions imapServerSearchOptions, Guid? inboxId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ImapServerSearchOptions.html">ImapServerSearchOptions</a></td>
+        <td><span class="parametername">imapServerSearchOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox ID to search (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.ImapServerSearchResult.html">ImapServerSearchResult</a>&gt;</td>
+        <td><p>ApiResponse of ImapServerSearchResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-126">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApiSync_ImapServerStatus_" data-uid="mailslurp.Api.IImapControllerApiSync.ImapServerStatus*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApiSync_ImapServerStatus_mailslurp_Model_ImapServerStatusOptions_System_Nullable_System_Guid__System_Int32_" data-uid="mailslurp.Api.IImapControllerApiSync.ImapServerStatus(mailslurp.Model.ImapServerStatusOptions,System.Nullable{System.Guid},System.Int32)">ImapServerStatus(ImapServerStatusOptions, Guid?, int)</h4>
+  <div class="markdown level1 summary"><p>Get status for mailbox</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ImapServerStatusResult ImapServerStatus(ImapServerStatusOptions imapServerStatusOptions, Guid? inboxId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ImapServerStatusOptions.html">ImapServerStatusOptions</a></td>
+        <td><span class="parametername">imapServerStatusOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox ID to list (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ImapServerStatusResult.html">ImapServerStatusResult</a></td>
+        <td><p>ImapServerStatusResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-139">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApiSync_ImapServerStatusWithHttpInfo_" data-uid="mailslurp.Api.IImapControllerApiSync.ImapServerStatusWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApiSync_ImapServerStatusWithHttpInfo_mailslurp_Model_ImapServerStatusOptions_System_Nullable_System_Guid__System_Int32_" data-uid="mailslurp.Api.IImapControllerApiSync.ImapServerStatusWithHttpInfo(mailslurp.Model.ImapServerStatusOptions,System.Nullable{System.Guid},System.Int32)">ImapServerStatusWithHttpInfo(ImapServerStatusOptions, Guid?, int)</h4>
+  <div class="markdown level1 summary"><p>Get status for mailbox</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;ImapServerStatusResult&gt; ImapServerStatusWithHttpInfo(ImapServerStatusOptions imapServerStatusOptions, Guid? inboxId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ImapServerStatusOptions.html">ImapServerStatusOptions</a></td>
+        <td><span class="parametername">imapServerStatusOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox ID to list (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.ImapServerStatusResult.html">ImapServerStatusResult</a>&gt;</td>
+        <td><p>ApiResponse of ImapServerStatusResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-151">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApiSync_ImapServerUpdateFlags_" data-uid="mailslurp.Api.IImapControllerApiSync.ImapServerUpdateFlags*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApiSync_ImapServerUpdateFlags_mailslurp_Model_ImapUpdateFlagsOptions_System_Nullable_System_Guid__System_Int32_" data-uid="mailslurp.Api.IImapControllerApiSync.ImapServerUpdateFlags(mailslurp.Model.ImapUpdateFlagsOptions,System.Nullable{System.Guid},System.Int32)">ImapServerUpdateFlags(ImapUpdateFlagsOptions, Guid?, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ImapServerUpdateFlags(ImapUpdateFlagsOptions imapUpdateFlagsOptions, Guid? inboxId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ImapUpdateFlagsOptions.html">ImapUpdateFlagsOptions</a></td>
+        <td><span class="parametername">imapUpdateFlagsOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IImapControllerApiSync_ImapServerUpdateFlags_mailslurp_Model_ImapUpdateFlagsOptions_System_Nullable_System_Guid__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Update message flags</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-164">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApiSync_ImapServerUpdateFlagsWithHttpInfo_" data-uid="mailslurp.Api.IImapControllerApiSync.ImapServerUpdateFlagsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApiSync_ImapServerUpdateFlagsWithHttpInfo_mailslurp_Model_ImapUpdateFlagsOptions_System_Nullable_System_Guid__System_Int32_" data-uid="mailslurp.Api.IImapControllerApiSync.ImapServerUpdateFlagsWithHttpInfo(mailslurp.Model.ImapUpdateFlagsOptions,System.Nullable{System.Guid},System.Int32)">ImapServerUpdateFlagsWithHttpInfo(ImapUpdateFlagsOptions, Guid?, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;object&gt; ImapServerUpdateFlagsWithHttpInfo(ImapUpdateFlagsOptions imapUpdateFlagsOptions, Guid? inboxId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ImapUpdateFlagsOptions.html">ImapUpdateFlagsOptions</a></td>
+        <td><span class="parametername">imapUpdateFlagsOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</td>
+        <td><p>ApiResponse of Object(void)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IImapControllerApiSync_ImapServerUpdateFlagsWithHttpInfo_mailslurp_Model_ImapUpdateFlagsOptions_System_Nullable_System_Guid__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Update message flags</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-27" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
