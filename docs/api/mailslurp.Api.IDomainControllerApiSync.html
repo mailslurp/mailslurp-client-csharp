@@ -1,0 +1,1573 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IDomainControllerApiSync
+ | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IDomainControllerApiSync
+ | MailSlurp ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Api.IDomainControllerApiSync">
+
+
+  <h1 id="mailslurp_Api_IDomainControllerApiSync" data-uid="mailslurp.Api.IDomainControllerApiSync" class="text-break">Interface IDomainControllerApiSync
+</h1>
+  <div class="markdown level0 summary"><p>Represents a collection of functions to interact with the API endpoints</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_Configuration">IApiAccessor.Configuration</a>
+    </div>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_GetBasePath">IApiAccessor.GetBasePath()</a>
+    </div>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_ExceptionFactory">IApiAccessor.ExceptionFactory</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">mailslurp</span>.<a class="xref" href="mailslurp.Api.html">Api</a></h6>
+  <h6><strong>Assembly</strong>: mailslurp.dll</h6>
+  <h5 id="mailslurp_Api_IDomainControllerApiSync_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDomainControllerApiSync : IApiAccessor</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainControllerApi.cs#lines-40">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainControllerApiSync_AddDomainWildcardCatchAll_" data-uid="mailslurp.Api.IDomainControllerApiSync.AddDomainWildcardCatchAll*"></a>
+  <h4 id="mailslurp_Api_IDomainControllerApiSync_AddDomainWildcardCatchAll_System_Guid_System_Int32_" data-uid="mailslurp.Api.IDomainControllerApiSync.AddDomainWildcardCatchAll(System.Guid,System.Int32)">AddDomainWildcardCatchAll(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Add catch all wild card inbox to domain</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DomainDto AddDomainWildcardCatchAll(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.DomainDto.html">DomainDto</a></td>
+        <td><p>DomainDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDomainControllerApiSync_AddDomainWildcardCatchAll_System_Guid_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Add a catch all inbox to a domain so that any emails sent to it that cannot be matched will be sent to the catch all inbox generated</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainControllerApi.cs#lines-52">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainControllerApiSync_AddDomainWildcardCatchAllWithHttpInfo_" data-uid="mailslurp.Api.IDomainControllerApiSync.AddDomainWildcardCatchAllWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IDomainControllerApiSync_AddDomainWildcardCatchAllWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.IDomainControllerApiSync.AddDomainWildcardCatchAllWithHttpInfo(System.Guid,System.Int32)">AddDomainWildcardCatchAllWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Add catch all wild card inbox to domain</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;DomainDto&gt; AddDomainWildcardCatchAllWithHttpInfo(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DomainDto.html">DomainDto</a>&gt;</td>
+        <td><p>ApiResponse of DomainDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDomainControllerApiSync_AddDomainWildcardCatchAllWithHttpInfo_System_Guid_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Add a catch all inbox to a domain so that any emails sent to it that cannot be matched will be sent to the catch all inbox generated</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainControllerApi.cs#lines-63">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainControllerApiSync_CreateDomain_" data-uid="mailslurp.Api.IDomainControllerApiSync.CreateDomain*"></a>
+  <h4 id="mailslurp_Api_IDomainControllerApiSync_CreateDomain_mailslurp_Model_CreateDomainOptions_System_Int32_" data-uid="mailslurp.Api.IDomainControllerApiSync.CreateDomain(mailslurp.Model.CreateDomainOptions,System.Int32)">CreateDomain(CreateDomainOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create Domain</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DomainDto CreateDomain(CreateDomainOptions createDomainOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateDomainOptions.html">CreateDomainOptions</a></td>
+        <td><span class="parametername">createDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.DomainDto.html">DomainDto</a></td>
+        <td><p>DomainDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDomainControllerApiSync_CreateDomain_mailslurp_Model_CreateDomainOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Link a domain that you own with MailSlurp so you can create email addresses using it. Endpoint returns DNS records used for validation. You must add these verification records to your host provider's DNS setup to verify the domain.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainControllerApi.cs#lines-75">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainControllerApiSync_CreateDomainWithHttpInfo_" data-uid="mailslurp.Api.IDomainControllerApiSync.CreateDomainWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IDomainControllerApiSync_CreateDomainWithHttpInfo_mailslurp_Model_CreateDomainOptions_System_Int32_" data-uid="mailslurp.Api.IDomainControllerApiSync.CreateDomainWithHttpInfo(mailslurp.Model.CreateDomainOptions,System.Int32)">CreateDomainWithHttpInfo(CreateDomainOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create Domain</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;DomainDto&gt; CreateDomainWithHttpInfo(CreateDomainOptions createDomainOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateDomainOptions.html">CreateDomainOptions</a></td>
+        <td><span class="parametername">createDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DomainDto.html">DomainDto</a>&gt;</td>
+        <td><p>ApiResponse of DomainDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDomainControllerApiSync_CreateDomainWithHttpInfo_mailslurp_Model_CreateDomainOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Link a domain that you own with MailSlurp so you can create email addresses using it. Endpoint returns DNS records used for validation. You must add these verification records to your host provider's DNS setup to verify the domain.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainControllerApi.cs#lines-86">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainControllerApiSync_DeleteDomain_" data-uid="mailslurp.Api.IDomainControllerApiSync.DeleteDomain*"></a>
+  <h4 id="mailslurp_Api_IDomainControllerApiSync_DeleteDomain_System_Guid_System_Int32_" data-uid="mailslurp.Api.IDomainControllerApiSync.DeleteDomain(System.Guid,System.Int32)">DeleteDomain(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Delete a domain</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;string&gt; DeleteDomain(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">string</span>&gt;</td>
+        <td><p>List&lt;string&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDomainControllerApiSync_DeleteDomain_System_Guid_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Delete a domain. This will disable any existing inboxes that use this domain.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainControllerApi.cs#lines-98">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainControllerApiSync_DeleteDomainWithHttpInfo_" data-uid="mailslurp.Api.IDomainControllerApiSync.DeleteDomainWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IDomainControllerApiSync_DeleteDomainWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.IDomainControllerApiSync.DeleteDomainWithHttpInfo(System.Guid,System.Int32)">DeleteDomainWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Delete a domain</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;List&lt;string&gt;&gt; DeleteDomainWithHttpInfo(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">string</span>&gt;&gt;</td>
+        <td><p>ApiResponse of List&lt;string&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDomainControllerApiSync_DeleteDomainWithHttpInfo_System_Guid_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Delete a domain. This will disable any existing inboxes that use this domain.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainControllerApi.cs#lines-109">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainControllerApiSync_GetAvailableDomains_" data-uid="mailslurp.Api.IDomainControllerApiSync.GetAvailableDomains*"></a>
+  <h4 id="mailslurp_Api_IDomainControllerApiSync_GetAvailableDomains_System_String_System_Int32_" data-uid="mailslurp.Api.IDomainControllerApiSync.GetAvailableDomains(System.String,System.Int32)">GetAvailableDomains(string, int)</h4>
+  <div class="markdown level1 summary"><p>Get all usable domains</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DomainGroupsDto GetAvailableDomains(string inboxType = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">inboxType</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.DomainGroupsDto.html">DomainGroupsDto</a></td>
+        <td><p>DomainGroupsDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDomainControllerApiSync_GetAvailableDomains_System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>List all domains available for use with email address creation</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainControllerApi.cs#lines-121">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainControllerApiSync_GetAvailableDomainsWithHttpInfo_" data-uid="mailslurp.Api.IDomainControllerApiSync.GetAvailableDomainsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IDomainControllerApiSync_GetAvailableDomainsWithHttpInfo_System_String_System_Int32_" data-uid="mailslurp.Api.IDomainControllerApiSync.GetAvailableDomainsWithHttpInfo(System.String,System.Int32)">GetAvailableDomainsWithHttpInfo(string, int)</h4>
+  <div class="markdown level1 summary"><p>Get all usable domains</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;DomainGroupsDto&gt; GetAvailableDomainsWithHttpInfo(string inboxType = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">inboxType</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DomainGroupsDto.html">DomainGroupsDto</a>&gt;</td>
+        <td><p>ApiResponse of DomainGroupsDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDomainControllerApiSync_GetAvailableDomainsWithHttpInfo_System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>List all domains available for use with email address creation</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainControllerApi.cs#lines-133">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainControllerApiSync_GetDomain_" data-uid="mailslurp.Api.IDomainControllerApiSync.GetDomain*"></a>
+  <h4 id="mailslurp_Api_IDomainControllerApiSync_GetDomain_System_Guid_System_Nullable_System_Boolean__System_Int32_" data-uid="mailslurp.Api.IDomainControllerApiSync.GetDomain(System.Guid,System.Nullable{System.Boolean},System.Int32)">GetDomain(Guid, bool?, int)</h4>
+  <div class="markdown level1 summary"><p>Get a domain</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DomainDto GetDomain(Guid id, bool? checkForErrors = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">checkForErrors</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.DomainDto.html">DomainDto</a></td>
+        <td><p>DomainDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDomainControllerApiSync_GetDomain_System_Guid_System_Nullable_System_Boolean__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Returns domain verification status and tokens for a given domain</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainControllerApi.cs#lines-156">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainControllerApiSync_GetDomainIssues_" data-uid="mailslurp.Api.IDomainControllerApiSync.GetDomainIssues*"></a>
+  <h4 id="mailslurp_Api_IDomainControllerApiSync_GetDomainIssues_System_Int32_" data-uid="mailslurp.Api.IDomainControllerApiSync.GetDomainIssues(System.Int32)">GetDomainIssues(int)</h4>
+  <div class="markdown level1 summary"><p>Get domain issues</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DomainIssuesDto GetDomainIssues(int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.DomainIssuesDto.html">DomainIssuesDto</a></td>
+        <td><p>DomainIssuesDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDomainControllerApiSync_GetDomainIssues_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>List domain issues for domains you have created</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainControllerApi.cs#lines-167">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainControllerApiSync_GetDomainIssuesWithHttpInfo_" data-uid="mailslurp.Api.IDomainControllerApiSync.GetDomainIssuesWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IDomainControllerApiSync_GetDomainIssuesWithHttpInfo_System_Int32_" data-uid="mailslurp.Api.IDomainControllerApiSync.GetDomainIssuesWithHttpInfo(System.Int32)">GetDomainIssuesWithHttpInfo(int)</h4>
+  <div class="markdown level1 summary"><p>Get domain issues</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;DomainIssuesDto&gt; GetDomainIssuesWithHttpInfo(int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DomainIssuesDto.html">DomainIssuesDto</a>&gt;</td>
+        <td><p>ApiResponse of DomainIssuesDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDomainControllerApiSync_GetDomainIssuesWithHttpInfo_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>List domain issues for domains you have created</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainControllerApi.cs#lines-200">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainControllerApiSync_GetDomains_" data-uid="mailslurp.Api.IDomainControllerApiSync.GetDomains*"></a>
+  <h4 id="mailslurp_Api_IDomainControllerApiSync_GetDomains_System_Int32_" data-uid="mailslurp.Api.IDomainControllerApiSync.GetDomains(System.Int32)">GetDomains(int)</h4>
+  <div class="markdown level1 summary"><p>Get domains</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;DomainPreview&gt; GetDomains(int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="mailslurp.Model.DomainPreview.html">DomainPreview</a>&gt;</td>
+        <td><p>List&lt;DomainPreview&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDomainControllerApiSync_GetDomains_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>List all custom domains you have created</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainControllerApi.cs#lines-211">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainControllerApiSync_GetDomainsWithHttpInfo_" data-uid="mailslurp.Api.IDomainControllerApiSync.GetDomainsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IDomainControllerApiSync_GetDomainsWithHttpInfo_System_Int32_" data-uid="mailslurp.Api.IDomainControllerApiSync.GetDomainsWithHttpInfo(System.Int32)">GetDomainsWithHttpInfo(int)</h4>
+  <div class="markdown level1 summary"><p>Get domains</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;List&lt;DomainPreview&gt;&gt; GetDomainsWithHttpInfo(int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="mailslurp.Model.DomainPreview.html">DomainPreview</a>&gt;&gt;</td>
+        <td><p>ApiResponse of List&lt;DomainPreview&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDomainControllerApiSync_GetDomainsWithHttpInfo_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>List all custom domains you have created</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainControllerApi.cs#lines-178">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainControllerApiSync_GetDomainWildcardCatchAllInbox_" data-uid="mailslurp.Api.IDomainControllerApiSync.GetDomainWildcardCatchAllInbox*"></a>
+  <h4 id="mailslurp_Api_IDomainControllerApiSync_GetDomainWildcardCatchAllInbox_System_Guid_System_Int32_" data-uid="mailslurp.Api.IDomainControllerApiSync.GetDomainWildcardCatchAllInbox(System.Guid,System.Int32)">GetDomainWildcardCatchAllInbox(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get catch all wild card inbox for domain</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">InboxDto GetDomainWildcardCatchAllInbox(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxDto.html">InboxDto</a></td>
+        <td><p>InboxDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDomainControllerApiSync_GetDomainWildcardCatchAllInbox_System_Guid_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get the catch all inbox for a domain for missed emails</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainControllerApi.cs#lines-190">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainControllerApiSync_GetDomainWildcardCatchAllInboxWithHttpInfo_" data-uid="mailslurp.Api.IDomainControllerApiSync.GetDomainWildcardCatchAllInboxWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IDomainControllerApiSync_GetDomainWildcardCatchAllInboxWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.IDomainControllerApiSync.GetDomainWildcardCatchAllInboxWithHttpInfo(System.Guid,System.Int32)">GetDomainWildcardCatchAllInboxWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get catch all wild card inbox for domain</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;InboxDto&gt; GetDomainWildcardCatchAllInboxWithHttpInfo(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.InboxDto.html">InboxDto</a>&gt;</td>
+        <td><p>ApiResponse of InboxDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDomainControllerApiSync_GetDomainWildcardCatchAllInboxWithHttpInfo_System_Guid_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get the catch all inbox for a domain for missed emails</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainControllerApi.cs#lines-146">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainControllerApiSync_GetDomainWithHttpInfo_" data-uid="mailslurp.Api.IDomainControllerApiSync.GetDomainWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IDomainControllerApiSync_GetDomainWithHttpInfo_System_Guid_System_Nullable_System_Boolean__System_Int32_" data-uid="mailslurp.Api.IDomainControllerApiSync.GetDomainWithHttpInfo(System.Guid,System.Nullable{System.Boolean},System.Int32)">GetDomainWithHttpInfo(Guid, bool?, int)</h4>
+  <div class="markdown level1 summary"><p>Get a domain</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;DomainDto&gt; GetDomainWithHttpInfo(Guid id, bool? checkForErrors = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">checkForErrors</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DomainDto.html">DomainDto</a>&gt;</td>
+        <td><p>ApiResponse of DomainDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDomainControllerApiSync_GetDomainWithHttpInfo_System_Guid_System_Nullable_System_Boolean__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Returns domain verification status and tokens for a given domain</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainControllerApi.cs#lines-222">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainControllerApiSync_GetMailSlurpDomains_" data-uid="mailslurp.Api.IDomainControllerApiSync.GetMailSlurpDomains*"></a>
+  <h4 id="mailslurp_Api_IDomainControllerApiSync_GetMailSlurpDomains_System_String_System_Int32_" data-uid="mailslurp.Api.IDomainControllerApiSync.GetMailSlurpDomains(System.String,System.Int32)">GetMailSlurpDomains(string, int)</h4>
+  <div class="markdown level1 summary"><p>Get MailSlurp domains</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DomainGroupsDto GetMailSlurpDomains(string inboxType = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">inboxType</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.DomainGroupsDto.html">DomainGroupsDto</a></td>
+        <td><p>DomainGroupsDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDomainControllerApiSync_GetMailSlurpDomains_System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>List all MailSlurp domains used with non-custom email addresses</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainControllerApi.cs#lines-234">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainControllerApiSync_GetMailSlurpDomainsWithHttpInfo_" data-uid="mailslurp.Api.IDomainControllerApiSync.GetMailSlurpDomainsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IDomainControllerApiSync_GetMailSlurpDomainsWithHttpInfo_System_String_System_Int32_" data-uid="mailslurp.Api.IDomainControllerApiSync.GetMailSlurpDomainsWithHttpInfo(System.String,System.Int32)">GetMailSlurpDomainsWithHttpInfo(string, int)</h4>
+  <div class="markdown level1 summary"><p>Get MailSlurp domains</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;DomainGroupsDto&gt; GetMailSlurpDomainsWithHttpInfo(string inboxType = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">inboxType</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DomainGroupsDto.html">DomainGroupsDto</a>&gt;</td>
+        <td><p>ApiResponse of DomainGroupsDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDomainControllerApiSync_GetMailSlurpDomainsWithHttpInfo_System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>List all MailSlurp domains used with non-custom email addresses</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainControllerApi.cs#lines-246">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainControllerApiSync_UpdateDomain_" data-uid="mailslurp.Api.IDomainControllerApiSync.UpdateDomain*"></a>
+  <h4 id="mailslurp_Api_IDomainControllerApiSync_UpdateDomain_System_Guid_mailslurp_Model_UpdateDomainOptions_System_Int32_" data-uid="mailslurp.Api.IDomainControllerApiSync.UpdateDomain(System.Guid,mailslurp.Model.UpdateDomainOptions,System.Int32)">UpdateDomain(Guid, UpdateDomainOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Update a domain</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DomainDto UpdateDomain(Guid id, UpdateDomainOptions updateDomainOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.UpdateDomainOptions.html">UpdateDomainOptions</a></td>
+        <td><span class="parametername">updateDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.DomainDto.html">DomainDto</a></td>
+        <td><p>DomainDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDomainControllerApiSync_UpdateDomain_System_Guid_mailslurp_Model_UpdateDomainOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Update values on a domain. Note you cannot change the domain name as it is immutable. Recreate the domain if you need to alter this.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainControllerApi.cs#lines-259">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainControllerApiSync_UpdateDomainWithHttpInfo_" data-uid="mailslurp.Api.IDomainControllerApiSync.UpdateDomainWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IDomainControllerApiSync_UpdateDomainWithHttpInfo_System_Guid_mailslurp_Model_UpdateDomainOptions_System_Int32_" data-uid="mailslurp.Api.IDomainControllerApiSync.UpdateDomainWithHttpInfo(System.Guid,mailslurp.Model.UpdateDomainOptions,System.Int32)">UpdateDomainWithHttpInfo(Guid, UpdateDomainOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Update a domain</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;DomainDto&gt; UpdateDomainWithHttpInfo(Guid id, UpdateDomainOptions updateDomainOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.UpdateDomainOptions.html">UpdateDomainOptions</a></td>
+        <td><span class="parametername">updateDomainOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DomainDto.html">DomainDto</a>&gt;</td>
+        <td><p>ApiResponse of DomainDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDomainControllerApiSync_UpdateDomainWithHttpInfo_System_Guid_mailslurp_Model_UpdateDomainOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Update values on a domain. Note you cannot change the domain name as it is immutable. Recreate the domain if you need to alter this.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainControllerApi.cs#lines-27" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
