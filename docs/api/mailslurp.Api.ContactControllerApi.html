@@ -1,0 +1,2229 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ContactControllerApi
+ | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ContactControllerApi
+ | MailSlurp ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Api.ContactControllerApi">
+
+
+  <h1 id="mailslurp_Api_ContactControllerApi" data-uid="mailslurp.Api.ContactControllerApi" class="text-break">Class ContactControllerApi
+</h1>
+  <div class="markdown level0 summary"><p>Represents a collection of functions to interact with the API endpoints</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">ContactControllerApi</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="mailslurp.Api.IContactControllerApi.html">IContactControllerApi</a></div>
+    <div><a class="xref" href="mailslurp.Api.IContactControllerApiSync.html">IContactControllerApiSync</a></div>
+    <div><a class="xref" href="mailslurp.Api.IContactControllerApiAsync.html">IContactControllerApiAsync</a></div>
+    <div><a class="xref" href="mailslurp.Client.IApiAccessor.html">IApiAccessor</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">mailslurp</span>.<a class="xref" href="mailslurp.Api.html">Api</a></h6>
+  <h6><strong>Assembly</strong>: mailslurp.dll</h6>
+  <h5 id="mailslurp_Api_ContactControllerApi_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ContactControllerApi : IContactControllerApi, IContactControllerApiSync, IContactControllerApiAsync, IApiAccessor</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-351">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi__ctor_" data-uid="mailslurp.Api.ContactControllerApi.#ctor*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi__ctor" data-uid="mailslurp.Api.ContactControllerApi.#ctor">ContactControllerApi()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Api.ContactControllerApi.html">ContactControllerApi</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContactControllerApi()</code></pre>
+  </div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-376">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi__ctor_" data-uid="mailslurp.Api.ContactControllerApi.#ctor*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi__ctor_mailslurp_Client_Configuration_" data-uid="mailslurp.Api.ContactControllerApi.#ctor(mailslurp.Client.Configuration)">ContactControllerApi(Configuration)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Api.ContactControllerApi.html">ContactControllerApi</a> class
+using Configuration object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContactControllerApi(Configuration configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Configuration.html">Configuration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>An instance of Configuration</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-396">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi__ctor_" data-uid="mailslurp.Api.ContactControllerApi.#ctor*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi__ctor_mailslurp_Client_ISynchronousClient_mailslurp_Client_IAsynchronousClient_mailslurp_Client_IReadableConfiguration_" data-uid="mailslurp.Api.ContactControllerApi.#ctor(mailslurp.Client.ISynchronousClient,mailslurp.Client.IAsynchronousClient,mailslurp.Client.IReadableConfiguration)">ContactControllerApi(ISynchronousClient, IAsynchronousClient, IReadableConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Api.ContactControllerApi.html">ContactControllerApi</a> class
+using a Configuration object and client instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContactControllerApi(ISynchronousClient client, IAsynchronousClient asyncClient, IReadableConfiguration configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ISynchronousClient.html">ISynchronousClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>The client interface for synchronous API access.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IAsynchronousClient.html">IAsynchronousClient</a></td>
+        <td><span class="parametername">asyncClient</span></td>
+        <td><p>The client interface for asynchronous API access.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>The configuration object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-359">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi__ctor_" data-uid="mailslurp.Api.ContactControllerApi.#ctor*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi__ctor_System_String_" data-uid="mailslurp.Api.ContactControllerApi.#ctor(System.String)">ContactControllerApi(string)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Api.ContactControllerApi.html">ContactControllerApi</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContactControllerApi(string basePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">basePath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-411">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_AsynchronousClient_" data-uid="mailslurp.Api.ContactControllerApi.AsynchronousClient*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_AsynchronousClient" data-uid="mailslurp.Api.ContactControllerApi.AsynchronousClient">AsynchronousClient</h4>
+  <div class="markdown level1 summary"><p>The client for accessing this underlying API asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsynchronousClient AsynchronousClient { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IAsynchronousClient.html">IAsynchronousClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-416">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_Client_" data-uid="mailslurp.Api.ContactControllerApi.Client*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_Client" data-uid="mailslurp.Api.ContactControllerApi.Client">Client</h4>
+  <div class="markdown level1 summary"><p>The client for accessing this underlying API synchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISynchronousClient Client { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ISynchronousClient.html">ISynchronousClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-431">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_Configuration_" data-uid="mailslurp.Api.ContactControllerApi.Configuration*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_Configuration" data-uid="mailslurp.Api.ContactControllerApi.Configuration">Configuration</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the configuration object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadableConfiguration Configuration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><p>An instance of the Configuration</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-436">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_ExceptionFactory_" data-uid="mailslurp.Api.ContactControllerApi.ExceptionFactory*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_ExceptionFactory" data-uid="mailslurp.Api.ContactControllerApi.ExceptionFactory">ExceptionFactory</h4>
+  <div class="markdown level1 summary"><p>Provides a factory method hook for the creation of exceptions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExceptionFactory ExceptionFactory { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ExceptionFactory.html">ExceptionFactory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-456">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_CreateContact_" data-uid="mailslurp.Api.ContactControllerApi.CreateContact*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_CreateContact_mailslurp_Model_CreateContactOptions_System_Int32_" data-uid="mailslurp.Api.ContactControllerApi.CreateContact(mailslurp.Model.CreateContactOptions,System.Int32)">CreateContact(CreateContactOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a contact</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContactDto CreateContact(CreateContactOptions createContactOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateContactOptions.html">CreateContactOptions</a></td>
+        <td><span class="parametername">createContactOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ContactDto.html">ContactDto</a></td>
+        <td><p>ContactDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-533">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_CreateContactAsync_" data-uid="mailslurp.Api.ContactControllerApi.CreateContactAsync*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_CreateContactAsync_mailslurp_Model_CreateContactOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ContactControllerApi.CreateContactAsync(mailslurp.Model.CreateContactOptions,System.Int32,System.Threading.CancellationToken)">CreateContactAsync(CreateContactOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create a contact</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ContactDto&gt; CreateContactAsync(CreateContactOptions createContactOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateContactOptions.html">CreateContactOptions</a></td>
+        <td><span class="parametername">createContactOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Model.ContactDto.html">ContactDto</a>&gt;</td>
+        <td><p>Task of ContactDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-469">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_CreateContactWithHttpInfo_" data-uid="mailslurp.Api.ContactControllerApi.CreateContactWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_CreateContactWithHttpInfo_mailslurp_Model_CreateContactOptions_System_Int32_" data-uid="mailslurp.Api.ContactControllerApi.CreateContactWithHttpInfo(mailslurp.Model.CreateContactOptions,System.Int32)">CreateContactWithHttpInfo(CreateContactOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a contact</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;ContactDto&gt; CreateContactWithHttpInfo(CreateContactOptions createContactOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateContactOptions.html">CreateContactOptions</a></td>
+        <td><span class="parametername">createContactOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.ContactDto.html">ContactDto</a>&gt;</td>
+        <td><p>ApiResponse of ContactDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-547">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_CreateContactWithHttpInfoAsync_" data-uid="mailslurp.Api.ContactControllerApi.CreateContactWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_CreateContactWithHttpInfoAsync_mailslurp_Model_CreateContactOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ContactControllerApi.CreateContactWithHttpInfoAsync(mailslurp.Model.CreateContactOptions,System.Int32,System.Threading.CancellationToken)">CreateContactWithHttpInfoAsync(CreateContactOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create a contact</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;ContactDto&gt;&gt; CreateContactWithHttpInfoAsync(CreateContactOptions createContactOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateContactOptions.html">CreateContactOptions</a></td>
+        <td><span class="parametername">createContactOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.ContactDto.html">ContactDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (ContactDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-612">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_DeleteContact_" data-uid="mailslurp.Api.ContactControllerApi.DeleteContact*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_DeleteContact_System_Guid_System_Int32_" data-uid="mailslurp.Api.ContactControllerApi.DeleteContact(System.Guid,System.Int32)">DeleteContact(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Delete contact</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteContact(Guid contactId, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">contactId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-680">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_DeleteContactAsync_" data-uid="mailslurp.Api.ContactControllerApi.DeleteContactAsync*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_DeleteContactAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ContactControllerApi.DeleteContactAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">DeleteContactAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Delete contact</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteContactAsync(Guid contactId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">contactId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>Task of void</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-624">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_DeleteContactWithHttpInfo_" data-uid="mailslurp.Api.ContactControllerApi.DeleteContactWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_DeleteContactWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.ContactControllerApi.DeleteContactWithHttpInfo(System.Guid,System.Int32)">DeleteContactWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Delete contact</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;object&gt; DeleteContactWithHttpInfo(Guid contactId, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">contactId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</td>
+        <td><p>ApiResponse of Object(void)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-693">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_DeleteContactWithHttpInfoAsync_" data-uid="mailslurp.Api.ContactControllerApi.DeleteContactWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_DeleteContactWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ContactControllerApi.DeleteContactWithHttpInfoAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">DeleteContactWithHttpInfoAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Delete contact</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;object&gt;&gt; DeleteContactWithHttpInfoAsync(Guid contactId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">contactId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-755">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_GetAllContacts_" data-uid="mailslurp.Api.ContactControllerApi.GetAllContacts*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_GetAllContacts_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Int32_" data-uid="mailslurp.Api.ContactControllerApi.GetAllContacts(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Int32)">GetAllContacts(int?, int?, string, DateTime?, DateTime?, string, int)</h4>
+  <div class="markdown level1 summary"><p>Get all contacts</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PageContactProjection GetAllContacts(int? page = null, int? size = null, string sort = null, DateTime? since = null, DateTime? before = null, string search = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index in list pagination (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size in list pagination (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">search</span></td>
+        <td><p>Search terms (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.PageContactProjection.html">PageContactProjection</a></td>
+        <td><p>PageContactProjection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-858">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_GetAllContactsAsync_" data-uid="mailslurp.Api.ContactControllerApi.GetAllContactsAsync*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_GetAllContactsAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ContactControllerApi.GetAllContactsAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Int32,System.Threading.CancellationToken)">GetAllContactsAsync(int?, int?, string, DateTime?, DateTime?, string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get all contacts</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PageContactProjection&gt; GetAllContactsAsync(int? page = null, int? size = null, string sort = null, DateTime? since = null, DateTime? before = null, string search = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index in list pagination (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size in list pagination (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">search</span></td>
+        <td><p>Search terms (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Model.PageContactProjection.html">PageContactProjection</a>&gt;</td>
+        <td><p>Task of PageContactProjection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-773">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_GetAllContactsWithHttpInfo_" data-uid="mailslurp.Api.ContactControllerApi.GetAllContactsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_GetAllContactsWithHttpInfo_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Int32_" data-uid="mailslurp.Api.ContactControllerApi.GetAllContactsWithHttpInfo(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Int32)">GetAllContactsWithHttpInfo(int?, int?, string, DateTime?, DateTime?, string, int)</h4>
+  <div class="markdown level1 summary"><p>Get all contacts</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;PageContactProjection&gt; GetAllContactsWithHttpInfo(int? page = null, int? size = null, string sort = null, DateTime? since = null, DateTime? before = null, string search = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index in list pagination (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size in list pagination (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">search</span></td>
+        <td><p>Search terms (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.PageContactProjection.html">PageContactProjection</a>&gt;</td>
+        <td><p>ApiResponse of PageContactProjection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-877">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_GetAllContactsWithHttpInfoAsync_" data-uid="mailslurp.Api.ContactControllerApi.GetAllContactsWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_GetAllContactsWithHttpInfoAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ContactControllerApi.GetAllContactsWithHttpInfoAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Int32,System.Threading.CancellationToken)">GetAllContactsWithHttpInfoAsync(int?, int?, string, DateTime?, DateTime?, string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get all contacts</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;PageContactProjection&gt;&gt; GetAllContactsWithHttpInfoAsync(int? page = null, int? size = null, string sort = null, DateTime? since = null, DateTime? before = null, string search = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index in list pagination (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size in list pagination (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">search</span></td>
+        <td><p>Search terms (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.PageContactProjection.html">PageContactProjection</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (PageContactProjection)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-422">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_GetBasePath_" data-uid="mailslurp.Api.ContactControllerApi.GetBasePath*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_GetBasePath" data-uid="mailslurp.Api.ContactControllerApi.GetBasePath">GetBasePath()</h4>
+  <div class="markdown level1 summary"><p>Gets the base path of the API client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetBasePath()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The base path</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-958">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_GetContact_" data-uid="mailslurp.Api.ContactControllerApi.GetContact*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_GetContact_System_Guid_System_Int32_" data-uid="mailslurp.Api.ContactControllerApi.GetContact(System.Guid,System.Int32)">GetContact(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get contact</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContactDto GetContact(Guid contactId, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">contactId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ContactDto.html">ContactDto</a></td>
+        <td><p>ContactDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-1028">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_GetContactAsync_" data-uid="mailslurp.Api.ContactControllerApi.GetContactAsync*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_GetContactAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ContactControllerApi.GetContactAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetContactAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get contact</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ContactDto&gt; GetContactAsync(Guid contactId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">contactId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Model.ContactDto.html">ContactDto</a>&gt;</td>
+        <td><p>Task of ContactDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-1241">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_GetContacts_" data-uid="mailslurp.Api.ContactControllerApi.GetContacts*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_GetContacts_System_Int32_" data-uid="mailslurp.Api.ContactControllerApi.GetContacts(System.Int32)">GetContacts(int)</h4>
+  <div class="markdown level1 summary"><p>Get all contacts</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ContactProjection&gt; GetContacts(int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="mailslurp.Model.ContactProjection.html">ContactProjection</a>&gt;</td>
+        <td><p>List&lt;ContactProjection&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-1308">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_GetContactsAsync_" data-uid="mailslurp.Api.ContactControllerApi.GetContactsAsync*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_GetContactsAsync_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ContactControllerApi.GetContactsAsync(System.Int32,System.Threading.CancellationToken)">GetContactsAsync(int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get all contacts</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;ContactProjection&gt;&gt; GetContactsAsync(int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="mailslurp.Model.ContactProjection.html">ContactProjection</a>&gt;&gt;</td>
+        <td><p>Task of List&lt;ContactProjection&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-1253">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_GetContactsWithHttpInfo_" data-uid="mailslurp.Api.ContactControllerApi.GetContactsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_GetContactsWithHttpInfo_System_Int32_" data-uid="mailslurp.Api.ContactControllerApi.GetContactsWithHttpInfo(System.Int32)">GetContactsWithHttpInfo(int)</h4>
+  <div class="markdown level1 summary"><p>Get all contacts</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;List&lt;ContactProjection&gt;&gt; GetContactsWithHttpInfo(int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="mailslurp.Model.ContactProjection.html">ContactProjection</a>&gt;&gt;</td>
+        <td><p>ApiResponse of List&lt;ContactProjection&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-1321">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_GetContactsWithHttpInfoAsync_" data-uid="mailslurp.Api.ContactControllerApi.GetContactsWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_GetContactsWithHttpInfoAsync_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ContactControllerApi.GetContactsWithHttpInfoAsync(System.Int32,System.Threading.CancellationToken)">GetContactsWithHttpInfoAsync(int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get all contacts</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;List&lt;ContactProjection&gt;&gt;&gt; GetContactsWithHttpInfoAsync(int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="mailslurp.Model.ContactProjection.html">ContactProjection</a>&gt;&gt;&gt;</td>
+        <td><p>Task of ApiResponse (List&lt;ContactProjection&gt;)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-1100">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_GetContactVCard_" data-uid="mailslurp.Api.ContactControllerApi.GetContactVCard*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_GetContactVCard_System_Guid_System_Int32_" data-uid="mailslurp.Api.ContactControllerApi.GetContactVCard(System.Guid,System.Int32)">GetContactVCard(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get contact vCard vcf file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void GetContactVCard(Guid contactId, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">contactId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-1170">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_GetContactVCardAsync_" data-uid="mailslurp.Api.ContactControllerApi.GetContactVCardAsync*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_GetContactVCardAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ContactControllerApi.GetContactVCardAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetContactVCardAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get contact vCard vcf file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public Task GetContactVCardAsync(Guid contactId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">contactId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>Task of void</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-1113">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_GetContactVCardWithHttpInfo_" data-uid="mailslurp.Api.ContactControllerApi.GetContactVCardWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_GetContactVCardWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.ContactControllerApi.GetContactVCardWithHttpInfo(System.Guid,System.Int32)">GetContactVCardWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get contact vCard vcf file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public ApiResponse&lt;object&gt; GetContactVCardWithHttpInfo(Guid contactId, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">contactId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</td>
+        <td><p>ApiResponse of Object(void)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-1184">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_GetContactVCardWithHttpInfoAsync_" data-uid="mailslurp.Api.ContactControllerApi.GetContactVCardWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_GetContactVCardWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ContactControllerApi.GetContactVCardWithHttpInfoAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetContactVCardWithHttpInfoAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get contact vCard vcf file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public Task&lt;ApiResponse&lt;object&gt;&gt; GetContactVCardWithHttpInfoAsync(Guid contactId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">contactId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-971">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_GetContactWithHttpInfo_" data-uid="mailslurp.Api.ContactControllerApi.GetContactWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_GetContactWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.ContactControllerApi.GetContactWithHttpInfo(System.Guid,System.Int32)">GetContactWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get contact</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;ContactDto&gt; GetContactWithHttpInfo(Guid contactId, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">contactId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.ContactDto.html">ContactDto</a>&gt;</td>
+        <td><p>ApiResponse of ContactDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-1042">View Source</a>
+  </span>
+  <a id="mailslurp_Api_ContactControllerApi_GetContactWithHttpInfoAsync_" data-uid="mailslurp.Api.ContactControllerApi.GetContactWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_ContactControllerApi_GetContactWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.ContactControllerApi.GetContactWithHttpInfoAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetContactWithHttpInfoAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get contact</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;ContactDto&gt;&gt; GetContactWithHttpInfoAsync(Guid contactId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">contactId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.ContactDto.html">ContactDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (ContactDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="mailslurp.Api.IContactControllerApi.html">IContactControllerApi</a>
+  </div>
+  <div>
+      <a class="xref" href="mailslurp.Api.IContactControllerApiSync.html">IContactControllerApiSync</a>
+  </div>
+  <div>
+      <a class="xref" href="mailslurp.Api.IContactControllerApiAsync.html">IContactControllerApiAsync</a>
+  </div>
+  <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html">IApiAccessor</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ContactControllerApi.cs#lines-343" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

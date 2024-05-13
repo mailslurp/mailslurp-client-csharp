@@ -1,0 +1,3373 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class BounceControllerApi
+ | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class BounceControllerApi
+ | MailSlurp ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Api.BounceControllerApi">
+
+
+  <h1 id="mailslurp_Api_BounceControllerApi" data-uid="mailslurp.Api.BounceControllerApi" class="text-break">Class BounceControllerApi
+</h1>
+  <div class="markdown level0 summary"><p>Represents a collection of functions to interact with the API endpoints</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">BounceControllerApi</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="mailslurp.Api.IBounceControllerApi.html">IBounceControllerApi</a></div>
+    <div><a class="xref" href="mailslurp.Api.IBounceControllerApiSync.html">IBounceControllerApiSync</a></div>
+    <div><a class="xref" href="mailslurp.Api.IBounceControllerApiAsync.html">IBounceControllerApiAsync</a></div>
+    <div><a class="xref" href="mailslurp.Client.IApiAccessor.html">IApiAccessor</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">mailslurp</span>.<a class="xref" href="mailslurp.Api.html">Api</a></h6>
+  <h6><strong>Assembly</strong>: mailslurp.dll</h6>
+  <h5 id="mailslurp_Api_BounceControllerApi_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BounceControllerApi : IBounceControllerApi, IBounceControllerApiSync, IBounceControllerApiAsync, IApiAccessor</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-549">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi__ctor_" data-uid="mailslurp.Api.BounceControllerApi.#ctor*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi__ctor" data-uid="mailslurp.Api.BounceControllerApi.#ctor">BounceControllerApi()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Api.BounceControllerApi.html">BounceControllerApi</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BounceControllerApi()</code></pre>
+  </div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-574">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi__ctor_" data-uid="mailslurp.Api.BounceControllerApi.#ctor*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi__ctor_mailslurp_Client_Configuration_" data-uid="mailslurp.Api.BounceControllerApi.#ctor(mailslurp.Client.Configuration)">BounceControllerApi(Configuration)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Api.BounceControllerApi.html">BounceControllerApi</a> class
+using Configuration object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BounceControllerApi(Configuration configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Configuration.html">Configuration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>An instance of Configuration</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-594">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi__ctor_" data-uid="mailslurp.Api.BounceControllerApi.#ctor*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi__ctor_mailslurp_Client_ISynchronousClient_mailslurp_Client_IAsynchronousClient_mailslurp_Client_IReadableConfiguration_" data-uid="mailslurp.Api.BounceControllerApi.#ctor(mailslurp.Client.ISynchronousClient,mailslurp.Client.IAsynchronousClient,mailslurp.Client.IReadableConfiguration)">BounceControllerApi(ISynchronousClient, IAsynchronousClient, IReadableConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Api.BounceControllerApi.html">BounceControllerApi</a> class
+using a Configuration object and client instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BounceControllerApi(ISynchronousClient client, IAsynchronousClient asyncClient, IReadableConfiguration configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ISynchronousClient.html">ISynchronousClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>The client interface for synchronous API access.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IAsynchronousClient.html">IAsynchronousClient</a></td>
+        <td><span class="parametername">asyncClient</span></td>
+        <td><p>The client interface for asynchronous API access.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>The configuration object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-557">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi__ctor_" data-uid="mailslurp.Api.BounceControllerApi.#ctor*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi__ctor_System_String_" data-uid="mailslurp.Api.BounceControllerApi.#ctor(System.String)">BounceControllerApi(string)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Api.BounceControllerApi.html">BounceControllerApi</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BounceControllerApi(string basePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">basePath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-609">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_AsynchronousClient_" data-uid="mailslurp.Api.BounceControllerApi.AsynchronousClient*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_AsynchronousClient" data-uid="mailslurp.Api.BounceControllerApi.AsynchronousClient">AsynchronousClient</h4>
+  <div class="markdown level1 summary"><p>The client for accessing this underlying API asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsynchronousClient AsynchronousClient { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IAsynchronousClient.html">IAsynchronousClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-614">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_Client_" data-uid="mailslurp.Api.BounceControllerApi.Client*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_Client" data-uid="mailslurp.Api.BounceControllerApi.Client">Client</h4>
+  <div class="markdown level1 summary"><p>The client for accessing this underlying API synchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISynchronousClient Client { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ISynchronousClient.html">ISynchronousClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-629">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_Configuration_" data-uid="mailslurp.Api.BounceControllerApi.Configuration*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_Configuration" data-uid="mailslurp.Api.BounceControllerApi.Configuration">Configuration</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the configuration object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadableConfiguration Configuration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><p>An instance of the Configuration</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-634">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_ExceptionFactory_" data-uid="mailslurp.Api.BounceControllerApi.ExceptionFactory*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_ExceptionFactory" data-uid="mailslurp.Api.BounceControllerApi.ExceptionFactory">ExceptionFactory</h4>
+  <div class="markdown level1 summary"><p>Provides a factory method hook for the creation of exceptions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExceptionFactory ExceptionFactory { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ExceptionFactory.html">ExceptionFactory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-654">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_FilterBouncedRecipient_" data-uid="mailslurp.Api.BounceControllerApi.FilterBouncedRecipient*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_FilterBouncedRecipient_mailslurp_Model_FilterBouncedRecipientsOptions_System_Int32_" data-uid="mailslurp.Api.BounceControllerApi.FilterBouncedRecipient(mailslurp.Model.FilterBouncedRecipientsOptions,System.Int32)">FilterBouncedRecipient(FilterBouncedRecipientsOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Filter a list of email recipients and remove those who have bounced Prevent email sending errors by remove recipients who have resulted in past email bounces or complaints</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FilterBouncedRecipientsResult FilterBouncedRecipient(FilterBouncedRecipientsOptions filterBouncedRecipientsOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.FilterBouncedRecipientsOptions.html">FilterBouncedRecipientsOptions</a></td>
+        <td><span class="parametername">filterBouncedRecipientsOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.FilterBouncedRecipientsResult.html">FilterBouncedRecipientsResult</a></td>
+        <td><p>FilterBouncedRecipientsResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-731">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_FilterBouncedRecipientAsync_" data-uid="mailslurp.Api.BounceControllerApi.FilterBouncedRecipientAsync*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_FilterBouncedRecipientAsync_mailslurp_Model_FilterBouncedRecipientsOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.BounceControllerApi.FilterBouncedRecipientAsync(mailslurp.Model.FilterBouncedRecipientsOptions,System.Int32,System.Threading.CancellationToken)">FilterBouncedRecipientAsync(FilterBouncedRecipientsOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Filter a list of email recipients and remove those who have bounced Prevent email sending errors by remove recipients who have resulted in past email bounces or complaints</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;FilterBouncedRecipientsResult&gt; FilterBouncedRecipientAsync(FilterBouncedRecipientsOptions filterBouncedRecipientsOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.FilterBouncedRecipientsOptions.html">FilterBouncedRecipientsOptions</a></td>
+        <td><span class="parametername">filterBouncedRecipientsOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Model.FilterBouncedRecipientsResult.html">FilterBouncedRecipientsResult</a>&gt;</td>
+        <td><p>Task of FilterBouncedRecipientsResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-667">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_FilterBouncedRecipientWithHttpInfo_" data-uid="mailslurp.Api.BounceControllerApi.FilterBouncedRecipientWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_FilterBouncedRecipientWithHttpInfo_mailslurp_Model_FilterBouncedRecipientsOptions_System_Int32_" data-uid="mailslurp.Api.BounceControllerApi.FilterBouncedRecipientWithHttpInfo(mailslurp.Model.FilterBouncedRecipientsOptions,System.Int32)">FilterBouncedRecipientWithHttpInfo(FilterBouncedRecipientsOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Filter a list of email recipients and remove those who have bounced Prevent email sending errors by remove recipients who have resulted in past email bounces or complaints</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;FilterBouncedRecipientsResult&gt; FilterBouncedRecipientWithHttpInfo(FilterBouncedRecipientsOptions filterBouncedRecipientsOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.FilterBouncedRecipientsOptions.html">FilterBouncedRecipientsOptions</a></td>
+        <td><span class="parametername">filterBouncedRecipientsOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.FilterBouncedRecipientsResult.html">FilterBouncedRecipientsResult</a>&gt;</td>
+        <td><p>ApiResponse of FilterBouncedRecipientsResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-745">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_FilterBouncedRecipientWithHttpInfoAsync_" data-uid="mailslurp.Api.BounceControllerApi.FilterBouncedRecipientWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_FilterBouncedRecipientWithHttpInfoAsync_mailslurp_Model_FilterBouncedRecipientsOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.BounceControllerApi.FilterBouncedRecipientWithHttpInfoAsync(mailslurp.Model.FilterBouncedRecipientsOptions,System.Int32,System.Threading.CancellationToken)">FilterBouncedRecipientWithHttpInfoAsync(FilterBouncedRecipientsOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Filter a list of email recipients and remove those who have bounced Prevent email sending errors by remove recipients who have resulted in past email bounces or complaints</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;FilterBouncedRecipientsResult&gt;&gt; FilterBouncedRecipientWithHttpInfoAsync(FilterBouncedRecipientsOptions filterBouncedRecipientsOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.FilterBouncedRecipientsOptions.html">FilterBouncedRecipientsOptions</a></td>
+        <td><span class="parametername">filterBouncedRecipientsOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.FilterBouncedRecipientsResult.html">FilterBouncedRecipientsResult</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (FilterBouncedRecipientsResult)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-809">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetAccountBounceBlockStatus_" data-uid="mailslurp.Api.BounceControllerApi.GetAccountBounceBlockStatus*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetAccountBounceBlockStatus_System_Int32_" data-uid="mailslurp.Api.BounceControllerApi.GetAccountBounceBlockStatus(System.Int32)">GetAccountBounceBlockStatus(int)</h4>
+  <div class="markdown level1 summary"><p>Can account send email Check if account block status prevents sending</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccountBounceBlockDto GetAccountBounceBlockStatus(int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.AccountBounceBlockDto.html">AccountBounceBlockDto</a></td>
+        <td><p>AccountBounceBlockDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-876">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetAccountBounceBlockStatusAsync_" data-uid="mailslurp.Api.BounceControllerApi.GetAccountBounceBlockStatusAsync*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetAccountBounceBlockStatusAsync_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.BounceControllerApi.GetAccountBounceBlockStatusAsync(System.Int32,System.Threading.CancellationToken)">GetAccountBounceBlockStatusAsync(int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Can account send email Check if account block status prevents sending</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AccountBounceBlockDto&gt; GetAccountBounceBlockStatusAsync(int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Model.AccountBounceBlockDto.html">AccountBounceBlockDto</a>&gt;</td>
+        <td><p>Task of AccountBounceBlockDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-821">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetAccountBounceBlockStatusWithHttpInfo_" data-uid="mailslurp.Api.BounceControllerApi.GetAccountBounceBlockStatusWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetAccountBounceBlockStatusWithHttpInfo_System_Int32_" data-uid="mailslurp.Api.BounceControllerApi.GetAccountBounceBlockStatusWithHttpInfo(System.Int32)">GetAccountBounceBlockStatusWithHttpInfo(int)</h4>
+  <div class="markdown level1 summary"><p>Can account send email Check if account block status prevents sending</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;AccountBounceBlockDto&gt; GetAccountBounceBlockStatusWithHttpInfo(int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.AccountBounceBlockDto.html">AccountBounceBlockDto</a>&gt;</td>
+        <td><p>ApiResponse of AccountBounceBlockDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-889">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetAccountBounceBlockStatusWithHttpInfoAsync_" data-uid="mailslurp.Api.BounceControllerApi.GetAccountBounceBlockStatusWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetAccountBounceBlockStatusWithHttpInfoAsync_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.BounceControllerApi.GetAccountBounceBlockStatusWithHttpInfoAsync(System.Int32,System.Threading.CancellationToken)">GetAccountBounceBlockStatusWithHttpInfoAsync(int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Can account send email Check if account block status prevents sending</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;AccountBounceBlockDto&gt;&gt; GetAccountBounceBlockStatusWithHttpInfoAsync(int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.AccountBounceBlockDto.html">AccountBounceBlockDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (AccountBounceBlockDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-620">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetBasePath_" data-uid="mailslurp.Api.BounceControllerApi.GetBasePath*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetBasePath" data-uid="mailslurp.Api.BounceControllerApi.GetBasePath">GetBasePath()</h4>
+  <div class="markdown level1 summary"><p>Gets the base path of the API client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetBasePath()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The base path</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-946">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetBouncedEmail_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedEmail*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetBouncedEmail_System_Guid_System_Int32_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedEmail(System.Guid,System.Int32)">GetBouncedEmail(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get a bounced email. Bounced emails are email you have sent that were rejected by a recipient</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BouncedEmailDto GetBouncedEmail(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of the bounced email to fetch</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.BouncedEmailDto.html">BouncedEmailDto</a></td>
+        <td><p>BouncedEmailDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-1016">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetBouncedEmailAsync_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedEmailAsync*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetBouncedEmailAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedEmailAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetBouncedEmailAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get a bounced email. Bounced emails are email you have sent that were rejected by a recipient</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;BouncedEmailDto&gt; GetBouncedEmailAsync(Guid id, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of the bounced email to fetch</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Model.BouncedEmailDto.html">BouncedEmailDto</a>&gt;</td>
+        <td><p>Task of BouncedEmailDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-1092">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetBouncedEmails_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedEmails*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetBouncedEmails_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedEmails(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32)">GetBouncedEmails(int?, int?, string, DateTime?, DateTime?, int)</h4>
+  <div class="markdown level1 summary"><p>Get paginated list of bounced emails. Bounced emails are email you have sent that were rejected by a recipient</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PageBouncedEmail GetBouncedEmails(int? page = null, int? size = null, string sort = null, DateTime? since = null, DateTime? before = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size  (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.PageBouncedEmail.html">PageBouncedEmail</a></td>
+        <td><p>PageBouncedEmail</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-1189">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetBouncedEmailsAsync_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedEmailsAsync*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetBouncedEmailsAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedEmailsAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Threading.CancellationToken)">GetBouncedEmailsAsync(int?, int?, string, DateTime?, DateTime?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get paginated list of bounced emails. Bounced emails are email you have sent that were rejected by a recipient</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PageBouncedEmail&gt; GetBouncedEmailsAsync(int? page = null, int? size = null, string sort = null, DateTime? since = null, DateTime? before = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size  (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Model.PageBouncedEmail.html">PageBouncedEmail</a>&gt;</td>
+        <td><p>Task of PageBouncedEmail</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-1109">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetBouncedEmailsWithHttpInfo_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedEmailsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetBouncedEmailsWithHttpInfo_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedEmailsWithHttpInfo(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32)">GetBouncedEmailsWithHttpInfo(int?, int?, string, DateTime?, DateTime?, int)</h4>
+  <div class="markdown level1 summary"><p>Get paginated list of bounced emails. Bounced emails are email you have sent that were rejected by a recipient</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;PageBouncedEmail&gt; GetBouncedEmailsWithHttpInfo(int? page = null, int? size = null, string sort = null, DateTime? since = null, DateTime? before = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size  (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.PageBouncedEmail.html">PageBouncedEmail</a>&gt;</td>
+        <td><p>ApiResponse of PageBouncedEmail</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-1207">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetBouncedEmailsWithHttpInfoAsync_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedEmailsWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetBouncedEmailsWithHttpInfoAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedEmailsWithHttpInfoAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Threading.CancellationToken)">GetBouncedEmailsWithHttpInfoAsync(int?, int?, string, DateTime?, DateTime?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get paginated list of bounced emails. Bounced emails are email you have sent that were rejected by a recipient</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;PageBouncedEmail&gt;&gt; GetBouncedEmailsWithHttpInfoAsync(int? page = null, int? size = null, string sort = null, DateTime? since = null, DateTime? before = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size  (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.PageBouncedEmail.html">PageBouncedEmail</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (PageBouncedEmail)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-959">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetBouncedEmailWithHttpInfo_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedEmailWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetBouncedEmailWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedEmailWithHttpInfo(System.Guid,System.Int32)">GetBouncedEmailWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get a bounced email. Bounced emails are email you have sent that were rejected by a recipient</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;BouncedEmailDto&gt; GetBouncedEmailWithHttpInfo(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of the bounced email to fetch</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.BouncedEmailDto.html">BouncedEmailDto</a>&gt;</td>
+        <td><p>ApiResponse of BouncedEmailDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-1030">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetBouncedEmailWithHttpInfoAsync_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedEmailWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetBouncedEmailWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedEmailWithHttpInfoAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetBouncedEmailWithHttpInfoAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get a bounced email. Bounced emails are email you have sent that were rejected by a recipient</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;BouncedEmailDto&gt;&gt; GetBouncedEmailWithHttpInfoAsync(Guid id, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of the bounced email to fetch</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.BouncedEmailDto.html">BouncedEmailDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (BouncedEmailDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-1284">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetBouncedRecipient_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedRecipient*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetBouncedRecipient_System_Guid_System_Int32_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedRecipient(System.Guid,System.Int32)">GetBouncedRecipient(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get a bounced email. Bounced emails are email you have sent that were rejected by a recipient</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BouncedRecipientDto GetBouncedRecipient(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of the bounced recipient</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.BouncedRecipientDto.html">BouncedRecipientDto</a></td>
+        <td><p>BouncedRecipientDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-1354">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetBouncedRecipientAsync_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedRecipientAsync*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetBouncedRecipientAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedRecipientAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetBouncedRecipientAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get a bounced email. Bounced emails are email you have sent that were rejected by a recipient</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;BouncedRecipientDto&gt; GetBouncedRecipientAsync(Guid id, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of the bounced recipient</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Model.BouncedRecipientDto.html">BouncedRecipientDto</a>&gt;</td>
+        <td><p>Task of BouncedRecipientDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-1430">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetBouncedRecipients_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedRecipients*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetBouncedRecipients_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedRecipients(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32)">GetBouncedRecipients(int?, int?, string, DateTime?, DateTime?, int)</h4>
+  <div class="markdown level1 summary"><p>Get paginated list of bounced recipients. Bounced recipients are email addresses that you have sent emails to that did not accept the sent email. Once a recipient is bounced you cannot send emails to that address.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PageBouncedRecipients GetBouncedRecipients(int? page = null, int? size = null, string sort = null, DateTime? since = null, DateTime? before = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index  (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size  (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.PageBouncedRecipients.html">PageBouncedRecipients</a></td>
+        <td><p>PageBouncedRecipients</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-1527">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetBouncedRecipientsAsync_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedRecipientsAsync*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetBouncedRecipientsAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedRecipientsAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Threading.CancellationToken)">GetBouncedRecipientsAsync(int?, int?, string, DateTime?, DateTime?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get paginated list of bounced recipients. Bounced recipients are email addresses that you have sent emails to that did not accept the sent email. Once a recipient is bounced you cannot send emails to that address.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PageBouncedRecipients&gt; GetBouncedRecipientsAsync(int? page = null, int? size = null, string sort = null, DateTime? since = null, DateTime? before = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index  (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size  (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Model.PageBouncedRecipients.html">PageBouncedRecipients</a>&gt;</td>
+        <td><p>Task of PageBouncedRecipients</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-1447">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetBouncedRecipientsWithHttpInfo_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedRecipientsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetBouncedRecipientsWithHttpInfo_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedRecipientsWithHttpInfo(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32)">GetBouncedRecipientsWithHttpInfo(int?, int?, string, DateTime?, DateTime?, int)</h4>
+  <div class="markdown level1 summary"><p>Get paginated list of bounced recipients. Bounced recipients are email addresses that you have sent emails to that did not accept the sent email. Once a recipient is bounced you cannot send emails to that address.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;PageBouncedRecipients&gt; GetBouncedRecipientsWithHttpInfo(int? page = null, int? size = null, string sort = null, DateTime? since = null, DateTime? before = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index  (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size  (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.PageBouncedRecipients.html">PageBouncedRecipients</a>&gt;</td>
+        <td><p>ApiResponse of PageBouncedRecipients</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-1545">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetBouncedRecipientsWithHttpInfoAsync_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedRecipientsWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetBouncedRecipientsWithHttpInfoAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedRecipientsWithHttpInfoAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Threading.CancellationToken)">GetBouncedRecipientsWithHttpInfoAsync(int?, int?, string, DateTime?, DateTime?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get paginated list of bounced recipients. Bounced recipients are email addresses that you have sent emails to that did not accept the sent email. Once a recipient is bounced you cannot send emails to that address.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;PageBouncedRecipients&gt;&gt; GetBouncedRecipientsWithHttpInfoAsync(int? page = null, int? size = null, string sort = null, DateTime? since = null, DateTime? before = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index  (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size  (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.PageBouncedRecipients.html">PageBouncedRecipients</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (PageBouncedRecipients)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-1297">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetBouncedRecipientWithHttpInfo_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedRecipientWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetBouncedRecipientWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedRecipientWithHttpInfo(System.Guid,System.Int32)">GetBouncedRecipientWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get a bounced email. Bounced emails are email you have sent that were rejected by a recipient</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;BouncedRecipientDto&gt; GetBouncedRecipientWithHttpInfo(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of the bounced recipient</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.BouncedRecipientDto.html">BouncedRecipientDto</a>&gt;</td>
+        <td><p>ApiResponse of BouncedRecipientDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-1368">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetBouncedRecipientWithHttpInfoAsync_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedRecipientWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetBouncedRecipientWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.BounceControllerApi.GetBouncedRecipientWithHttpInfoAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetBouncedRecipientWithHttpInfoAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get a bounced email. Bounced emails are email you have sent that were rejected by a recipient</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;BouncedRecipientDto&gt;&gt; GetBouncedRecipientWithHttpInfoAsync(Guid id, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of the bounced recipient</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.BouncedRecipientDto.html">BouncedRecipientDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (BouncedRecipientDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-1622">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetComplaint_" data-uid="mailslurp.Api.BounceControllerApi.GetComplaint*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetComplaint_System_Guid_System_Int32_" data-uid="mailslurp.Api.BounceControllerApi.GetComplaint(System.Guid,System.Int32)">GetComplaint(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get complaint Get complaint</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Complaint GetComplaint(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of the complaint</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.Complaint.html">Complaint</a></td>
+        <td><p>Complaint</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-1692">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetComplaintAsync_" data-uid="mailslurp.Api.BounceControllerApi.GetComplaintAsync*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetComplaintAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.BounceControllerApi.GetComplaintAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetComplaintAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get complaint Get complaint</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Complaint&gt; GetComplaintAsync(Guid id, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of the complaint</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Model.Complaint.html">Complaint</a>&gt;</td>
+        <td><p>Task of Complaint</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-1768">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetComplaints_" data-uid="mailslurp.Api.BounceControllerApi.GetComplaints*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetComplaints_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_" data-uid="mailslurp.Api.BounceControllerApi.GetComplaints(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32)">GetComplaints(int?, int?, string, DateTime?, DateTime?, int)</h4>
+  <div class="markdown level1 summary"><p>Get paginated list of complaints. SMTP complaints made against your account</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PageComplaint GetComplaints(int? page = null, int? size = null, string sort = null, DateTime? since = null, DateTime? before = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index  (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size  (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.PageComplaint.html">PageComplaint</a></td>
+        <td><p>PageComplaint</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-1865">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetComplaintsAsync_" data-uid="mailslurp.Api.BounceControllerApi.GetComplaintsAsync*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetComplaintsAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.BounceControllerApi.GetComplaintsAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Threading.CancellationToken)">GetComplaintsAsync(int?, int?, string, DateTime?, DateTime?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get paginated list of complaints. SMTP complaints made against your account</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PageComplaint&gt; GetComplaintsAsync(int? page = null, int? size = null, string sort = null, DateTime? since = null, DateTime? before = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index  (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size  (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Model.PageComplaint.html">PageComplaint</a>&gt;</td>
+        <td><p>Task of PageComplaint</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-1785">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetComplaintsWithHttpInfo_" data-uid="mailslurp.Api.BounceControllerApi.GetComplaintsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetComplaintsWithHttpInfo_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_" data-uid="mailslurp.Api.BounceControllerApi.GetComplaintsWithHttpInfo(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32)">GetComplaintsWithHttpInfo(int?, int?, string, DateTime?, DateTime?, int)</h4>
+  <div class="markdown level1 summary"><p>Get paginated list of complaints. SMTP complaints made against your account</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;PageComplaint&gt; GetComplaintsWithHttpInfo(int? page = null, int? size = null, string sort = null, DateTime? since = null, DateTime? before = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index  (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size  (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.PageComplaint.html">PageComplaint</a>&gt;</td>
+        <td><p>ApiResponse of PageComplaint</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-1883">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetComplaintsWithHttpInfoAsync_" data-uid="mailslurp.Api.BounceControllerApi.GetComplaintsWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetComplaintsWithHttpInfoAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.BounceControllerApi.GetComplaintsWithHttpInfoAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Threading.CancellationToken)">GetComplaintsWithHttpInfoAsync(int?, int?, string, DateTime?, DateTime?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get paginated list of complaints. SMTP complaints made against your account</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;PageComplaint&gt;&gt; GetComplaintsWithHttpInfoAsync(int? page = null, int? size = null, string sort = null, DateTime? since = null, DateTime? before = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index  (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size  (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.PageComplaint.html">PageComplaint</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (PageComplaint)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-1635">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetComplaintWithHttpInfo_" data-uid="mailslurp.Api.BounceControllerApi.GetComplaintWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetComplaintWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.BounceControllerApi.GetComplaintWithHttpInfo(System.Guid,System.Int32)">GetComplaintWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get complaint Get complaint</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;Complaint&gt; GetComplaintWithHttpInfo(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of the complaint</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.Complaint.html">Complaint</a>&gt;</td>
+        <td><p>ApiResponse of Complaint</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-1706">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetComplaintWithHttpInfoAsync_" data-uid="mailslurp.Api.BounceControllerApi.GetComplaintWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetComplaintWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.BounceControllerApi.GetComplaintWithHttpInfoAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetComplaintWithHttpInfoAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get complaint Get complaint</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;Complaint&gt;&gt; GetComplaintWithHttpInfoAsync(Guid id, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of the complaint</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.Complaint.html">Complaint</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (Complaint)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-1963">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetListUnsubscribeRecipients_" data-uid="mailslurp.Api.BounceControllerApi.GetListUnsubscribeRecipients*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetListUnsubscribeRecipients_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Guid__System_Int32_" data-uid="mailslurp.Api.BounceControllerApi.GetListUnsubscribeRecipients(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Guid},System.Int32)">GetListUnsubscribeRecipients(int?, int?, string, Guid?, int)</h4>
+  <div class="markdown level1 summary"><p>Get paginated list of unsubscribed recipients. Unsubscribed recipient have unsubscribed from a mailing list for a user or domain and cannot be contacted again.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PageListUnsubscribeRecipients GetListUnsubscribeRecipients(int? page = null, int? size = null, string sort = null, Guid? domainId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size  (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">domainId</span></td>
+        <td><p>Filter by domainId (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.PageListUnsubscribeRecipients.html">PageListUnsubscribeRecipients</a></td>
+        <td><p>PageListUnsubscribeRecipients</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-2054">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetListUnsubscribeRecipientsAsync_" data-uid="mailslurp.Api.BounceControllerApi.GetListUnsubscribeRecipientsAsync*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetListUnsubscribeRecipientsAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Guid__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.BounceControllerApi.GetListUnsubscribeRecipientsAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Guid},System.Int32,System.Threading.CancellationToken)">GetListUnsubscribeRecipientsAsync(int?, int?, string, Guid?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get paginated list of unsubscribed recipients. Unsubscribed recipient have unsubscribed from a mailing list for a user or domain and cannot be contacted again.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PageListUnsubscribeRecipients&gt; GetListUnsubscribeRecipientsAsync(int? page = null, int? size = null, string sort = null, Guid? domainId = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size  (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">domainId</span></td>
+        <td><p>Filter by domainId (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Model.PageListUnsubscribeRecipients.html">PageListUnsubscribeRecipients</a>&gt;</td>
+        <td><p>Task of PageListUnsubscribeRecipients</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-1979">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetListUnsubscribeRecipientsWithHttpInfo_" data-uid="mailslurp.Api.BounceControllerApi.GetListUnsubscribeRecipientsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetListUnsubscribeRecipientsWithHttpInfo_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Guid__System_Int32_" data-uid="mailslurp.Api.BounceControllerApi.GetListUnsubscribeRecipientsWithHttpInfo(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Guid},System.Int32)">GetListUnsubscribeRecipientsWithHttpInfo(int?, int?, string, Guid?, int)</h4>
+  <div class="markdown level1 summary"><p>Get paginated list of unsubscribed recipients. Unsubscribed recipient have unsubscribed from a mailing list for a user or domain and cannot be contacted again.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;PageListUnsubscribeRecipients&gt; GetListUnsubscribeRecipientsWithHttpInfo(int? page = null, int? size = null, string sort = null, Guid? domainId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size  (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">domainId</span></td>
+        <td><p>Filter by domainId (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.PageListUnsubscribeRecipients.html">PageListUnsubscribeRecipients</a>&gt;</td>
+        <td><p>ApiResponse of PageListUnsubscribeRecipients</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-2071">View Source</a>
+  </span>
+  <a id="mailslurp_Api_BounceControllerApi_GetListUnsubscribeRecipientsWithHttpInfoAsync_" data-uid="mailslurp.Api.BounceControllerApi.GetListUnsubscribeRecipientsWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_BounceControllerApi_GetListUnsubscribeRecipientsWithHttpInfoAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Guid__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.BounceControllerApi.GetListUnsubscribeRecipientsWithHttpInfoAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Guid},System.Int32,System.Threading.CancellationToken)">GetListUnsubscribeRecipientsWithHttpInfoAsync(int?, int?, string, Guid?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get paginated list of unsubscribed recipients. Unsubscribed recipient have unsubscribed from a mailing list for a user or domain and cannot be contacted again.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;PageListUnsubscribeRecipients&gt;&gt; GetListUnsubscribeRecipientsWithHttpInfoAsync(int? page = null, int? size = null, string sort = null, Guid? domainId = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size  (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">domainId</span></td>
+        <td><p>Filter by domainId (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.PageListUnsubscribeRecipients.html">PageListUnsubscribeRecipients</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (PageListUnsubscribeRecipients)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="mailslurp.Api.IBounceControllerApi.html">IBounceControllerApi</a>
+  </div>
+  <div>
+      <a class="xref" href="mailslurp.Api.IBounceControllerApiSync.html">IBounceControllerApiSync</a>
+  </div>
+  <div>
+      <a class="xref" href="mailslurp.Api.IBounceControllerApiAsync.html">IBounceControllerApiAsync</a>
+  </div>
+  <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html">IApiAccessor</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/BounceControllerApi.cs#lines-541" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
