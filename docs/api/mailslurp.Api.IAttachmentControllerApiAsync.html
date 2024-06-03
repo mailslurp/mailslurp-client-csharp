@@ -1,0 +1,1825 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IAttachmentControllerApiAsync
+ | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IAttachmentControllerApiAsync
+ | MailSlurp ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Api.IAttachmentControllerApiAsync">
+
+
+  <h1 id="mailslurp_Api_IAttachmentControllerApiAsync" data-uid="mailslurp.Api.IAttachmentControllerApiAsync" class="text-break">Interface IAttachmentControllerApiAsync
+</h1>
+  <div class="markdown level0 summary"><p>Represents a collection of functions to interact with the API endpoints</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_Configuration">IApiAccessor.Configuration</a>
+    </div>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_GetBasePath">IApiAccessor.GetBasePath()</a>
+    </div>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_ExceptionFactory">IApiAccessor.ExceptionFactory</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">mailslurp</span>.<a class="xref" href="mailslurp.Api.html">Api</a></h6>
+  <h6><strong>Assembly</strong>: mailslurp.dll</h6>
+  <h5 id="mailslurp_Api_IAttachmentControllerApiAsync_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IAttachmentControllerApiAsync : IApiAccessor</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AttachmentControllerApi.cs#lines-287">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAttachmentControllerApiAsync_DeleteAllAttachmentsAsync_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.DeleteAllAttachmentsAsync*"></a>
+  <h4 id="mailslurp_Api_IAttachmentControllerApiAsync_DeleteAllAttachmentsAsync_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.DeleteAllAttachmentsAsync(System.Int32,System.Threading.CancellationToken)">DeleteAllAttachmentsAsync(int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Delete all attachments</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task DeleteAllAttachmentsAsync(int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>Task of void</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AttachmentControllerApi.cs#lines-299">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAttachmentControllerApiAsync_DeleteAllAttachmentsWithHttpInfoAsync_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.DeleteAllAttachmentsWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IAttachmentControllerApiAsync_DeleteAllAttachmentsWithHttpInfoAsync_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.DeleteAllAttachmentsWithHttpInfoAsync(System.Int32,System.Threading.CancellationToken)">DeleteAllAttachmentsWithHttpInfoAsync(int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Delete all attachments</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;object&gt;&gt; DeleteAllAttachmentsWithHttpInfoAsync(int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AttachmentControllerApi.cs#lines-311">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAttachmentControllerApiAsync_DeleteAttachmentAsync_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.DeleteAttachmentAsync*"></a>
+  <h4 id="mailslurp_Api_IAttachmentControllerApiAsync_DeleteAttachmentAsync_System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.DeleteAttachmentAsync(System.String,System.Int32,System.Threading.CancellationToken)">DeleteAttachmentAsync(string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Delete an attachment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task DeleteAttachmentAsync(string attachmentId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">attachmentId</span></td>
+        <td><p>ID of attachment</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>Task of void</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AttachmentControllerApi.cs#lines-324">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAttachmentControllerApiAsync_DeleteAttachmentWithHttpInfoAsync_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.DeleteAttachmentWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IAttachmentControllerApiAsync_DeleteAttachmentWithHttpInfoAsync_System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.DeleteAttachmentWithHttpInfoAsync(System.String,System.Int32,System.Threading.CancellationToken)">DeleteAttachmentWithHttpInfoAsync(string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Delete an attachment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;object&gt;&gt; DeleteAttachmentWithHttpInfoAsync(string attachmentId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">attachmentId</span></td>
+        <td><p>ID of attachment</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AttachmentControllerApi.cs#lines-336">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAttachmentControllerApiAsync_DownloadAttachmentAsBase64EncodedAsync_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.DownloadAttachmentAsBase64EncodedAsync*"></a>
+  <h4 id="mailslurp_Api_IAttachmentControllerApiAsync_DownloadAttachmentAsBase64EncodedAsync_System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.DownloadAttachmentAsBase64EncodedAsync(System.String,System.Int32,System.Threading.CancellationToken)">DownloadAttachmentAsBase64EncodedAsync(string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get email attachment as base64 encoded string as alternative to binary responses. To read the content decode the Base64 encoded contents.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DownloadAttachmentDto&gt; DownloadAttachmentAsBase64EncodedAsync(string attachmentId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">attachmentId</span></td>
+        <td><p>ID of attachment</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DownloadAttachmentDto.html">DownloadAttachmentDto</a>&gt;</td>
+        <td><p>Task of DownloadAttachmentDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAttachmentControllerApiAsync_DownloadAttachmentAsBase64EncodedAsync_System_String_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Returns the specified attachment for a given email as a base 64 encoded string. The response type is application/json. This method is similar to the <code>downloadAttachment</code> method but allows some clients to get around issues with binary responses.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AttachmentControllerApi.cs#lines-349">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAttachmentControllerApiAsync_DownloadAttachmentAsBase64EncodedWithHttpInfoAsync_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.DownloadAttachmentAsBase64EncodedWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IAttachmentControllerApiAsync_DownloadAttachmentAsBase64EncodedWithHttpInfoAsync_System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.DownloadAttachmentAsBase64EncodedWithHttpInfoAsync(System.String,System.Int32,System.Threading.CancellationToken)">DownloadAttachmentAsBase64EncodedWithHttpInfoAsync(string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get email attachment as base64 encoded string as alternative to binary responses. To read the content decode the Base64 encoded contents.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DownloadAttachmentDto&gt;&gt; DownloadAttachmentAsBase64EncodedWithHttpInfoAsync(string attachmentId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">attachmentId</span></td>
+        <td><p>ID of attachment</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DownloadAttachmentDto.html">DownloadAttachmentDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DownloadAttachmentDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAttachmentControllerApiAsync_DownloadAttachmentAsBase64EncodedWithHttpInfoAsync_System_String_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Returns the specified attachment for a given email as a base 64 encoded string. The response type is application/json. This method is similar to the <code>downloadAttachment</code> method but allows some clients to get around issues with binary responses.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AttachmentControllerApi.cs#lines-361">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAttachmentControllerApiAsync_DownloadAttachmentAsBytesAsync_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.DownloadAttachmentAsBytesAsync*"></a>
+  <h4 id="mailslurp_Api_IAttachmentControllerApiAsync_DownloadAttachmentAsBytesAsync_System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.DownloadAttachmentAsBytesAsync(System.String,System.Int32,System.Threading.CancellationToken)">DownloadAttachmentAsBytesAsync(string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Download attachments. Get email attachment bytes. If you have trouble with byte responses try the <code>downloadAttachmentBase64</code> response endpoints.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;byte[]&gt; DownloadAttachmentAsBytesAsync(string attachmentId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">attachmentId</span></td>
+        <td><p>ID of attachment</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]&gt;</td>
+        <td><p>Task of byte[]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAttachmentControllerApiAsync_DownloadAttachmentAsBytesAsync_System_String_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Returns the specified attachment for a given email as a stream / array of bytes. You can find attachment ids in email responses endpoint responses. The response type is application/octet-stream.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AttachmentControllerApi.cs#lines-374">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAttachmentControllerApiAsync_DownloadAttachmentAsBytesWithHttpInfoAsync_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.DownloadAttachmentAsBytesWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IAttachmentControllerApiAsync_DownloadAttachmentAsBytesWithHttpInfoAsync_System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.DownloadAttachmentAsBytesWithHttpInfoAsync(System.String,System.Int32,System.Threading.CancellationToken)">DownloadAttachmentAsBytesWithHttpInfoAsync(string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Download attachments. Get email attachment bytes. If you have trouble with byte responses try the <code>downloadAttachmentBase64</code> response endpoints.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;byte[]&gt;&gt; DownloadAttachmentAsBytesWithHttpInfoAsync(string attachmentId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">attachmentId</span></td>
+        <td><p>ID of attachment</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]&gt;&gt;</td>
+        <td><p>Task of ApiResponse (byte[])</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAttachmentControllerApiAsync_DownloadAttachmentAsBytesWithHttpInfoAsync_System_String_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Returns the specified attachment for a given email as a stream / array of bytes. You can find attachment ids in email responses endpoint responses. The response type is application/octet-stream.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AttachmentControllerApi.cs#lines-386">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAttachmentControllerApiAsync_GetAttachmentAsync_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.GetAttachmentAsync*"></a>
+  <h4 id="mailslurp_Api_IAttachmentControllerApiAsync_GetAttachmentAsync_System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.GetAttachmentAsync(System.String,System.Int32,System.Threading.CancellationToken)">GetAttachmentAsync(string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get an attachment entity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;AttachmentEntity&gt; GetAttachmentAsync(string attachmentId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">attachmentId</span></td>
+        <td><p>ID of attachment</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.AttachmentEntity.html">AttachmentEntity</a>&gt;</td>
+        <td><p>Task of AttachmentEntity</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AttachmentControllerApi.cs#lines-411">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAttachmentControllerApiAsync_GetAttachmentInfoAsync_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.GetAttachmentInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IAttachmentControllerApiAsync_GetAttachmentInfoAsync_System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.GetAttachmentInfoAsync(System.String,System.Int32,System.Threading.CancellationToken)">GetAttachmentInfoAsync(string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get email attachment metadata information</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;AttachmentMetaData&gt; GetAttachmentInfoAsync(string attachmentId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">attachmentId</span></td>
+        <td><p>ID of attachment</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.AttachmentMetaData.html">AttachmentMetaData</a>&gt;</td>
+        <td><p>Task of AttachmentMetaData</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAttachmentControllerApiAsync_GetAttachmentInfoAsync_System_String_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Returns the metadata for an attachment. It is saved separately to the content of the attachment. Contains properties <code>name</code> and <code>content-type</code> and <code>content-length</code> in bytes for a given attachment.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AttachmentControllerApi.cs#lines-424">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAttachmentControllerApiAsync_GetAttachmentInfoWithHttpInfoAsync_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.GetAttachmentInfoWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IAttachmentControllerApiAsync_GetAttachmentInfoWithHttpInfoAsync_System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.GetAttachmentInfoWithHttpInfoAsync(System.String,System.Int32,System.Threading.CancellationToken)">GetAttachmentInfoWithHttpInfoAsync(string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get email attachment metadata information</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;AttachmentMetaData&gt;&gt; GetAttachmentInfoWithHttpInfoAsync(string attachmentId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">attachmentId</span></td>
+        <td><p>ID of attachment</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.AttachmentMetaData.html">AttachmentMetaData</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (AttachmentMetaData)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAttachmentControllerApiAsync_GetAttachmentInfoWithHttpInfoAsync_System_String_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Returns the metadata for an attachment. It is saved separately to the content of the attachment. Contains properties <code>name</code> and <code>content-type</code> and <code>content-length</code> in bytes for a given attachment.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AttachmentControllerApi.cs#lines-442">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAttachmentControllerApiAsync_GetAttachmentsAsync_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.GetAttachmentsAsync*"></a>
+  <h4 id="mailslurp_Api_IAttachmentControllerApiAsync_GetAttachmentsAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Nullable_System_Guid__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.GetAttachmentsAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Guid},System.Int32,System.Threading.CancellationToken)">GetAttachmentsAsync(int?, int?, string, string, DateTime?, DateTime?, Guid?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get email attachments</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;PageAttachmentEntity&gt; GetAttachmentsAsync(int? page = null, int? size = null, string sort = null, string fileNameFilter = null, DateTime? since = null, DateTime? before = null, Guid? inboxId = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index for list pagination (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size for list pagination (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">fileNameFilter</span></td>
+        <td><p>Optional file name and content type search filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Guid</span>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inboxId to filter attachments by (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.PageAttachmentEntity.html">PageAttachmentEntity</a>&gt;</td>
+        <td><p>Task of PageAttachmentEntity</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAttachmentControllerApiAsync_GetAttachmentsAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Nullable_System_Guid__System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get all attachments in paginated response. Each entity contains meta data for the attachment such as <code>name</code> and <code>content-type</code>. Use the <code>attachmentId</code> and the download endpoints to get the file contents.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AttachmentControllerApi.cs#lines-461">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAttachmentControllerApiAsync_GetAttachmentsWithHttpInfoAsync_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.GetAttachmentsWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IAttachmentControllerApiAsync_GetAttachmentsWithHttpInfoAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Nullable_System_Guid__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.GetAttachmentsWithHttpInfoAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Guid},System.Int32,System.Threading.CancellationToken)">GetAttachmentsWithHttpInfoAsync(int?, int?, string, string, DateTime?, DateTime?, Guid?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get email attachments</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;PageAttachmentEntity&gt;&gt; GetAttachmentsWithHttpInfoAsync(int? page = null, int? size = null, string sort = null, string fileNameFilter = null, DateTime? since = null, DateTime? before = null, Guid? inboxId = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index for list pagination (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size for list pagination (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">fileNameFilter</span></td>
+        <td><p>Optional file name and content type search filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Guid</span>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inboxId to filter attachments by (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.PageAttachmentEntity.html">PageAttachmentEntity</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (PageAttachmentEntity)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAttachmentControllerApiAsync_GetAttachmentsWithHttpInfoAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Nullable_System_Guid__System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get all attachments in paginated response. Each entity contains meta data for the attachment such as <code>name</code> and <code>content-type</code>. Use the <code>attachmentId</code> and the download endpoints to get the file contents.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AttachmentControllerApi.cs#lines-399">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAttachmentControllerApiAsync_GetAttachmentWithHttpInfoAsync_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.GetAttachmentWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IAttachmentControllerApiAsync_GetAttachmentWithHttpInfoAsync_System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.GetAttachmentWithHttpInfoAsync(System.String,System.Int32,System.Threading.CancellationToken)">GetAttachmentWithHttpInfoAsync(string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get an attachment entity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;AttachmentEntity&gt;&gt; GetAttachmentWithHttpInfoAsync(string attachmentId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">attachmentId</span></td>
+        <td><p>ID of attachment</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.AttachmentEntity.html">AttachmentEntity</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (AttachmentEntity)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AttachmentControllerApi.cs#lines-473">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAttachmentControllerApiAsync_UploadAttachmentAsync_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.UploadAttachmentAsync*"></a>
+  <h4 id="mailslurp_Api_IAttachmentControllerApiAsync_UploadAttachmentAsync_mailslurp_Model_UploadAttachmentOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.UploadAttachmentAsync(mailslurp.Model.UploadAttachmentOptions,System.Int32,System.Threading.CancellationToken)">UploadAttachmentAsync(UploadAttachmentOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Upload an attachment for sending using base64 file encoding. Returns an array whose first element is the ID of the uploaded attachment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;string&gt;&gt; UploadAttachmentAsync(UploadAttachmentOptions uploadAttachmentOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.UploadAttachmentOptions.html">UploadAttachmentOptions</a></td>
+        <td><span class="parametername">uploadAttachmentOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<span class="xref">string</span>&gt;&gt;</td>
+        <td><p>Task of List&lt;string&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AttachmentControllerApi.cs#lines-502">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAttachmentControllerApiAsync_UploadAttachmentBytesAsync_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.UploadAttachmentBytesAsync*"></a>
+  <h4 id="mailslurp_Api_IAttachmentControllerApiAsync_UploadAttachmentBytesAsync_System_String_System_String_System_String_System_String_System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.UploadAttachmentBytesAsync(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Threading.CancellationToken)">UploadAttachmentBytesAsync(string, string, string, string, string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Upload an attachment for sending using file byte stream input octet stream. Returns an array whose first element is the ID of the uploaded attachment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;string&gt;&gt; UploadAttachmentBytesAsync(string contentType = null, string contentType2 = null, string contentId = null, string filename = null, string filename2 = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">contentType</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">contentType2</span></td>
+        <td><p>Optional contentType for file. For instance <code>application/pdf</code> (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">contentId</span></td>
+        <td><p>Optional content ID (CID) to save upload with (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>Optional filename to save upload with (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">filename2</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<span class="xref">string</span>&gt;&gt;</td>
+        <td><p>Task of List&lt;string&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AttachmentControllerApi.cs#lines-519">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAttachmentControllerApiAsync_UploadAttachmentBytesWithHttpInfoAsync_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.UploadAttachmentBytesWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IAttachmentControllerApiAsync_UploadAttachmentBytesWithHttpInfoAsync_System_String_System_String_System_String_System_String_System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.UploadAttachmentBytesWithHttpInfoAsync(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Threading.CancellationToken)">UploadAttachmentBytesWithHttpInfoAsync(string, string, string, string, string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Upload an attachment for sending using file byte stream input octet stream. Returns an array whose first element is the ID of the uploaded attachment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;List&lt;string&gt;&gt;&gt; UploadAttachmentBytesWithHttpInfoAsync(string contentType = null, string contentType2 = null, string contentId = null, string filename = null, string filename2 = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">contentType</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">contentType2</span></td>
+        <td><p>Optional contentType for file. For instance <code>application/pdf</code> (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">contentId</span></td>
+        <td><p>Optional content ID (CID) to save upload with (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>Optional filename to save upload with (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">filename2</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<span class="xref">string</span>&gt;&gt;&gt;</td>
+        <td><p>Task of ApiResponse (List&lt;string&gt;)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AttachmentControllerApi.cs#lines-486">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAttachmentControllerApiAsync_UploadAttachmentWithHttpInfoAsync_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.UploadAttachmentWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IAttachmentControllerApiAsync_UploadAttachmentWithHttpInfoAsync_mailslurp_Model_UploadAttachmentOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.UploadAttachmentWithHttpInfoAsync(mailslurp.Model.UploadAttachmentOptions,System.Int32,System.Threading.CancellationToken)">UploadAttachmentWithHttpInfoAsync(UploadAttachmentOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Upload an attachment for sending using base64 file encoding. Returns an array whose first element is the ID of the uploaded attachment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;List&lt;string&gt;&gt;&gt; UploadAttachmentWithHttpInfoAsync(UploadAttachmentOptions uploadAttachmentOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.UploadAttachmentOptions.html">UploadAttachmentOptions</a></td>
+        <td><span class="parametername">uploadAttachmentOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<span class="xref">string</span>&gt;&gt;&gt;</td>
+        <td><p>Task of ApiResponse (List&lt;string&gt;)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AttachmentControllerApi.cs#lines-535">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAttachmentControllerApiAsync_UploadMultipartFormAsync_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.UploadMultipartFormAsync*"></a>
+  <h4 id="mailslurp_Api_IAttachmentControllerApiAsync_UploadMultipartFormAsync_System_String_System_String_System_String_System_String_mailslurp_Model_UploadMultipartFormRequest_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.UploadMultipartFormAsync(System.String,System.String,System.String,System.String,mailslurp.Model.UploadMultipartFormRequest,System.Int32,System.Threading.CancellationToken)">UploadMultipartFormAsync(string, string, string, string, UploadMultipartFormRequest, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Upload an attachment for sending using a Multipart Form request. Returns an array whose first element is the ID of the uploaded attachment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;string&gt;&gt; UploadMultipartFormAsync(string contentId = null, string contentType = null, string filename = null, string xFilename = null, UploadMultipartFormRequest uploadMultipartFormRequest = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">contentId</span></td>
+        <td><p>Optional content ID of attachment (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">contentType</span></td>
+        <td><p>Optional content type of attachment (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>Optional name of file (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">xFilename</span></td>
+        <td><p>Optional content type header of attachment (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.UploadMultipartFormRequest.html">UploadMultipartFormRequest</a></td>
+        <td><span class="parametername">uploadMultipartFormRequest</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<span class="xref">string</span>&gt;&gt;</td>
+        <td><p>Task of List&lt;string&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AttachmentControllerApi.cs#lines-552">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAttachmentControllerApiAsync_UploadMultipartFormWithHttpInfoAsync_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.UploadMultipartFormWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IAttachmentControllerApiAsync_UploadMultipartFormWithHttpInfoAsync_System_String_System_String_System_String_System_String_mailslurp_Model_UploadMultipartFormRequest_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IAttachmentControllerApiAsync.UploadMultipartFormWithHttpInfoAsync(System.String,System.String,System.String,System.String,mailslurp.Model.UploadMultipartFormRequest,System.Int32,System.Threading.CancellationToken)">UploadMultipartFormWithHttpInfoAsync(string, string, string, string, UploadMultipartFormRequest, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Upload an attachment for sending using a Multipart Form request. Returns an array whose first element is the ID of the uploaded attachment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;List&lt;string&gt;&gt;&gt; UploadMultipartFormWithHttpInfoAsync(string contentId = null, string contentType = null, string filename = null, string xFilename = null, UploadMultipartFormRequest uploadMultipartFormRequest = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">contentId</span></td>
+        <td><p>Optional content ID of attachment (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">contentType</span></td>
+        <td><p>Optional content type of attachment (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>Optional name of file (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">xFilename</span></td>
+        <td><p>Optional content type header of attachment (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.UploadMultipartFormRequest.html">UploadMultipartFormRequest</a></td>
+        <td><span class="parametername">uploadMultipartFormRequest</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<span class="xref">string</span>&gt;&gt;&gt;</td>
+        <td><p>Task of ApiResponse (List&lt;string&gt;)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AttachmentControllerApi.cs#lines-274" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

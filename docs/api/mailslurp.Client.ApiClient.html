@@ -1,0 +1,1361 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ApiClient
+ | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ApiClient
+ | MailSlurp ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Client.ApiClient">
+
+
+  <h1 id="mailslurp_Client_ApiClient" data-uid="mailslurp.Client.ApiClient" class="text-break">Class ApiClient
+</h1>
+  <div class="markdown level0 summary"><p>Provides a default implementation of an Api client (both synchronous and asynchronous implementations),
+encapsulating general REST accessor use cases.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">ApiClient</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="mailslurp.Client.ISynchronousClient.html">ISynchronousClient</a></div>
+    <div><a class="xref" href="mailslurp.Client.IAsynchronousClient.html">IAsynchronousClient</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">object.GetType()</a>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">mailslurp</span>.<a class="xref" href="mailslurp.Client.html">Client</a></h6>
+  <h6><strong>Assembly</strong>: mailslurp.dll</h6>
+  <h5 id="mailslurp_Client_ApiClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ApiClient : ISynchronousClient, IAsynchronousClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiClient.cs#lines-210">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiClient__ctor_" data-uid="mailslurp.Client.ApiClient.#ctor*"></a>
+  <h4 id="mailslurp_Client_ApiClient__ctor" data-uid="mailslurp.Client.ApiClient.#ctor">ApiClient()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Client.ApiClient.html">ApiClient</a>, defaulting to the global configurations' base url.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiClient()</code></pre>
+  </div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiClient.cs#lines-220">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiClient__ctor_" data-uid="mailslurp.Client.ApiClient.#ctor*"></a>
+  <h4 id="mailslurp_Client_ApiClient__ctor_System_String_" data-uid="mailslurp.Client.ApiClient.#ctor(System.String)">ApiClient(string)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Client.ApiClient.html">ApiClient</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiClient(string basePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">basePath</span></td>
+        <td><p>The target service's base path in URL format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiClient.cs#lines-181">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiClient_SerializerSettings_" data-uid="mailslurp.Client.ApiClient.SerializerSettings*"></a>
+  <h4 id="mailslurp_Client_ApiClient_SerializerSettings" data-uid="mailslurp.Client.ApiClient.SerializerSettings">SerializerSettings</h4>
+  <div class="markdown level1 summary"><p>Specifies the settings on a <span class="xref">Newtonsoft.Json.JsonSerializer</span> object.
+These settings can be adjusted to accommodate custom serialization rules.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonSerializerSettings SerializerSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Newtonsoft.Json.JsonSerializerSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiClient.cs#lines-786">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiClient_Delete_" data-uid="mailslurp.Client.ApiClient.Delete*"></a>
+  <h4 id="mailslurp_Client_ApiClient_Delete__1_System_String_mailslurp_Client_RequestOptions_mailslurp_Client_IReadableConfiguration_" data-uid="mailslurp.Client.ApiClient.Delete``1(System.String,mailslurp.Client.RequestOptions,mailslurp.Client.IReadableConfiguration)">Delete&lt;T&gt;(string, RequestOptions, IReadableConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Make a HTTP DELETE request (synchronous).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;T&gt; Delete&lt;T&gt;(string path, RequestOptions options, IReadableConfiguration configuration = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The target path (or resource).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The additional request options.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>A per-request configuration object. It is assumed that any merge with
+GlobalConfiguration has been done before calling this method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;T&gt;</td>
+        <td><p>A Task containing ApiResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiClient.cs#lines-683">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiClient_DeleteAsync_" data-uid="mailslurp.Client.ApiClient.DeleteAsync*"></a>
+  <h4 id="mailslurp_Client_ApiClient_DeleteAsync__1_System_String_mailslurp_Client_RequestOptions_mailslurp_Client_IReadableConfiguration_System_Threading_CancellationToken_" data-uid="mailslurp.Client.ApiClient.DeleteAsync``1(System.String,mailslurp.Client.RequestOptions,mailslurp.Client.IReadableConfiguration,System.Threading.CancellationToken)">DeleteAsync&lt;T&gt;(string, RequestOptions, IReadableConfiguration, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Make a HTTP DELETE request (async).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;T&gt;&gt; DeleteAsync&lt;T&gt;(string path, RequestOptions options, IReadableConfiguration configuration = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The target path (or resource).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The additional request options.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>A per-request configuration object. It is assumed that any merge with
+GlobalConfiguration has been done before calling this method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Token that enables callers to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;T&gt;&gt;</td>
+        <td><p>A Task containing ApiResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiClient.cs#lines-744">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiClient_Get_" data-uid="mailslurp.Client.ApiClient.Get*"></a>
+  <h4 id="mailslurp_Client_ApiClient_Get__1_System_String_mailslurp_Client_RequestOptions_mailslurp_Client_IReadableConfiguration_" data-uid="mailslurp.Client.ApiClient.Get``1(System.String,mailslurp.Client.RequestOptions,mailslurp.Client.IReadableConfiguration)">Get&lt;T&gt;(string, RequestOptions, IReadableConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Make a HTTP GET request (synchronous).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;T&gt; Get&lt;T&gt;(string path, RequestOptions options, IReadableConfiguration configuration = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The target path (or resource).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The additional request options.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>A per-request configuration object. It is assumed that any merge with
+GlobalConfiguration has been done before calling this method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;T&gt;</td>
+        <td><p>A Task containing ApiResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiClient.cs#lines-638">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiClient_GetAsync_" data-uid="mailslurp.Client.ApiClient.GetAsync*"></a>
+  <h4 id="mailslurp_Client_ApiClient_GetAsync__1_System_String_mailslurp_Client_RequestOptions_mailslurp_Client_IReadableConfiguration_System_Threading_CancellationToken_" data-uid="mailslurp.Client.ApiClient.GetAsync``1(System.String,mailslurp.Client.RequestOptions,mailslurp.Client.IReadableConfiguration,System.Threading.CancellationToken)">GetAsync&lt;T&gt;(string, RequestOptions, IReadableConfiguration, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Make a HTTP GET request (async).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;T&gt;&gt; GetAsync&lt;T&gt;(string path, RequestOptions options, IReadableConfiguration configuration = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The target path (or resource).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The additional request options.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>A per-request configuration object. It is assumed that any merge with
+GlobalConfiguration has been done before calling this method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Token that enables callers to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;T&gt;&gt;</td>
+        <td><p>A Task containing ApiResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiClient.cs#lines-800">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiClient_Head_" data-uid="mailslurp.Client.ApiClient.Head*"></a>
+  <h4 id="mailslurp_Client_ApiClient_Head__1_System_String_mailslurp_Client_RequestOptions_mailslurp_Client_IReadableConfiguration_" data-uid="mailslurp.Client.ApiClient.Head``1(System.String,mailslurp.Client.RequestOptions,mailslurp.Client.IReadableConfiguration)">Head&lt;T&gt;(string, RequestOptions, IReadableConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Make a HTTP HEAD request (synchronous).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;T&gt; Head&lt;T&gt;(string path, RequestOptions options, IReadableConfiguration configuration = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The target path (or resource).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The additional request options.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>A per-request configuration object. It is assumed that any merge with
+GlobalConfiguration has been done before calling this method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;T&gt;</td>
+        <td><p>A Task containing ApiResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiClient.cs#lines-698">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiClient_HeadAsync_" data-uid="mailslurp.Client.ApiClient.HeadAsync*"></a>
+  <h4 id="mailslurp_Client_ApiClient_HeadAsync__1_System_String_mailslurp_Client_RequestOptions_mailslurp_Client_IReadableConfiguration_System_Threading_CancellationToken_" data-uid="mailslurp.Client.ApiClient.HeadAsync``1(System.String,mailslurp.Client.RequestOptions,mailslurp.Client.IReadableConfiguration,System.Threading.CancellationToken)">HeadAsync&lt;T&gt;(string, RequestOptions, IReadableConfiguration, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Make a HTTP HEAD request (async).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;T&gt;&gt; HeadAsync&lt;T&gt;(string path, RequestOptions options, IReadableConfiguration configuration = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The target path (or resource).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The additional request options.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>A per-request configuration object. It is assumed that any merge with
+GlobalConfiguration has been done before calling this method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Token that enables callers to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;T&gt;&gt;</td>
+        <td><p>A Task containing ApiResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiClient.cs#lines-814">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiClient_Options_" data-uid="mailslurp.Client.ApiClient.Options*"></a>
+  <h4 id="mailslurp_Client_ApiClient_Options__1_System_String_mailslurp_Client_RequestOptions_mailslurp_Client_IReadableConfiguration_" data-uid="mailslurp.Client.ApiClient.Options``1(System.String,mailslurp.Client.RequestOptions,mailslurp.Client.IReadableConfiguration)">Options&lt;T&gt;(string, RequestOptions, IReadableConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Make a HTTP OPTION request (synchronous).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;T&gt; Options&lt;T&gt;(string path, RequestOptions options, IReadableConfiguration configuration = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The target path (or resource).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The additional request options.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>A per-request configuration object. It is assumed that any merge with
+GlobalConfiguration has been done before calling this method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;T&gt;</td>
+        <td><p>A Task containing ApiResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiClient.cs#lines-713">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiClient_OptionsAsync_" data-uid="mailslurp.Client.ApiClient.OptionsAsync*"></a>
+  <h4 id="mailslurp_Client_ApiClient_OptionsAsync__1_System_String_mailslurp_Client_RequestOptions_mailslurp_Client_IReadableConfiguration_System_Threading_CancellationToken_" data-uid="mailslurp.Client.ApiClient.OptionsAsync``1(System.String,mailslurp.Client.RequestOptions,mailslurp.Client.IReadableConfiguration,System.Threading.CancellationToken)">OptionsAsync&lt;T&gt;(string, RequestOptions, IReadableConfiguration, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Make a HTTP OPTION request (async).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;T&gt;&gt; OptionsAsync&lt;T&gt;(string path, RequestOptions options, IReadableConfiguration configuration = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The target path (or resource).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The additional request options.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>A per-request configuration object. It is assumed that any merge with
+GlobalConfiguration has been done before calling this method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Token that enables callers to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;T&gt;&gt;</td>
+        <td><p>A Task containing ApiResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiClient.cs#lines-828">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiClient_Patch_" data-uid="mailslurp.Client.ApiClient.Patch*"></a>
+  <h4 id="mailslurp_Client_ApiClient_Patch__1_System_String_mailslurp_Client_RequestOptions_mailslurp_Client_IReadableConfiguration_" data-uid="mailslurp.Client.ApiClient.Patch``1(System.String,mailslurp.Client.RequestOptions,mailslurp.Client.IReadableConfiguration)">Patch&lt;T&gt;(string, RequestOptions, IReadableConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Make a HTTP PATCH request (synchronous).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;T&gt; Patch&lt;T&gt;(string path, RequestOptions options, IReadableConfiguration configuration = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The target path (or resource).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The additional request options.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>A per-request configuration object. It is assumed that any merge with
+GlobalConfiguration has been done before calling this method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;T&gt;</td>
+        <td><p>A Task containing ApiResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiClient.cs#lines-728">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiClient_PatchAsync_" data-uid="mailslurp.Client.ApiClient.PatchAsync*"></a>
+  <h4 id="mailslurp_Client_ApiClient_PatchAsync__1_System_String_mailslurp_Client_RequestOptions_mailslurp_Client_IReadableConfiguration_System_Threading_CancellationToken_" data-uid="mailslurp.Client.ApiClient.PatchAsync``1(System.String,mailslurp.Client.RequestOptions,mailslurp.Client.IReadableConfiguration,System.Threading.CancellationToken)">PatchAsync&lt;T&gt;(string, RequestOptions, IReadableConfiguration, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Make a HTTP PATCH request (async).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;T&gt;&gt; PatchAsync&lt;T&gt;(string path, RequestOptions options, IReadableConfiguration configuration = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The target path (or resource).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The additional request options.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>A per-request configuration object. It is assumed that any merge with
+GlobalConfiguration has been done before calling this method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Token that enables callers to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;T&gt;&gt;</td>
+        <td><p>A Task containing ApiResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiClient.cs#lines-758">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiClient_Post_" data-uid="mailslurp.Client.ApiClient.Post*"></a>
+  <h4 id="mailslurp_Client_ApiClient_Post__1_System_String_mailslurp_Client_RequestOptions_mailslurp_Client_IReadableConfiguration_" data-uid="mailslurp.Client.ApiClient.Post``1(System.String,mailslurp.Client.RequestOptions,mailslurp.Client.IReadableConfiguration)">Post&lt;T&gt;(string, RequestOptions, IReadableConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Make a HTTP POST request (synchronous).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;T&gt; Post&lt;T&gt;(string path, RequestOptions options, IReadableConfiguration configuration = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The target path (or resource).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The additional request options.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>A per-request configuration object. It is assumed that any merge with
+GlobalConfiguration has been done before calling this method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;T&gt;</td>
+        <td><p>A Task containing ApiResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiClient.cs#lines-653">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiClient_PostAsync_" data-uid="mailslurp.Client.ApiClient.PostAsync*"></a>
+  <h4 id="mailslurp_Client_ApiClient_PostAsync__1_System_String_mailslurp_Client_RequestOptions_mailslurp_Client_IReadableConfiguration_System_Threading_CancellationToken_" data-uid="mailslurp.Client.ApiClient.PostAsync``1(System.String,mailslurp.Client.RequestOptions,mailslurp.Client.IReadableConfiguration,System.Threading.CancellationToken)">PostAsync&lt;T&gt;(string, RequestOptions, IReadableConfiguration, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Make a HTTP POST request (async).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;T&gt;&gt; PostAsync&lt;T&gt;(string path, RequestOptions options, IReadableConfiguration configuration = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The target path (or resource).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The additional request options.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>A per-request configuration object. It is assumed that any merge with
+GlobalConfiguration has been done before calling this method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Token that enables callers to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;T&gt;&gt;</td>
+        <td><p>A Task containing ApiResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiClient.cs#lines-772">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiClient_Put_" data-uid="mailslurp.Client.ApiClient.Put*"></a>
+  <h4 id="mailslurp_Client_ApiClient_Put__1_System_String_mailslurp_Client_RequestOptions_mailslurp_Client_IReadableConfiguration_" data-uid="mailslurp.Client.ApiClient.Put``1(System.String,mailslurp.Client.RequestOptions,mailslurp.Client.IReadableConfiguration)">Put&lt;T&gt;(string, RequestOptions, IReadableConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Make a HTTP PUT request (synchronous).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;T&gt; Put&lt;T&gt;(string path, RequestOptions options, IReadableConfiguration configuration = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The target path (or resource).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The additional request options.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>A per-request configuration object. It is assumed that any merge with
+GlobalConfiguration has been done before calling this method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;T&gt;</td>
+        <td><p>A Task containing ApiResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiClient.cs#lines-668">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiClient_PutAsync_" data-uid="mailslurp.Client.ApiClient.PutAsync*"></a>
+  <h4 id="mailslurp_Client_ApiClient_PutAsync__1_System_String_mailslurp_Client_RequestOptions_mailslurp_Client_IReadableConfiguration_System_Threading_CancellationToken_" data-uid="mailslurp.Client.ApiClient.PutAsync``1(System.String,mailslurp.Client.RequestOptions,mailslurp.Client.IReadableConfiguration,System.Threading.CancellationToken)">PutAsync&lt;T&gt;(string, RequestOptions, IReadableConfiguration, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Make a HTTP PUT request (async).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;T&gt;&gt; PutAsync&lt;T&gt;(string path, RequestOptions options, IReadableConfiguration configuration = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The target path (or resource).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The additional request options.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>A per-request configuration object. It is assumed that any merge with
+GlobalConfiguration has been done before calling this method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Token that enables callers to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;T&gt;&gt;</td>
+        <td><p>A Task containing ApiResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="mailslurp.Client.ISynchronousClient.html">ISynchronousClient</a>
+  </div>
+  <div>
+      <a class="xref" href="mailslurp.Client.IAsynchronousClient.html">IAsynchronousClient</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiClient.cs#lines-173" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
