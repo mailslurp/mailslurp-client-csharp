@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ApiResponse | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ApiResponse | MailSlurp ">
+    
+    <meta name="description" content="API Response">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Client.ApiResponse">
+
+
+
+  <h1 id="mailslurp_Client_ApiResponse" data-uid="mailslurp.Client.ApiResponse" class="text-break">Class ApiResponse</h1>
+  <div class="markdown level0 summary"><p>API Response</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">ApiResponse</span></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.AIControllerApi.GenerateStructuredContentFromEmailApiResponse.html">AIControllerApi.GenerateStructuredContentFromEmailApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.AliasControllerApi.CreateAliasApiResponse.html">AliasControllerApi.CreateAliasApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.AliasControllerApi.DeleteAliasApiResponse.html">AliasControllerApi.DeleteAliasApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.AliasControllerApi.GetAliasApiResponse.html">AliasControllerApi.GetAliasApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.AliasControllerApi.GetAliasEmailsApiResponse.html">AliasControllerApi.GetAliasEmailsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.AliasControllerApi.GetAliasThreadsApiResponse.html">AliasControllerApi.GetAliasThreadsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.AliasControllerApi.GetAliasesApiResponse.html">AliasControllerApi.GetAliasesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.AliasControllerApi.GetThreadApiResponse.html">AliasControllerApi.GetThreadApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.AliasControllerApi.GetThreadsPaginatedApiResponse.html">AliasControllerApi.GetThreadsPaginatedApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.AliasControllerApi.ReplyToAliasEmailApiResponse.html">AliasControllerApi.ReplyToAliasEmailApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.AliasControllerApi.SendAliasEmailApiResponse.html">AliasControllerApi.SendAliasEmailApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.AliasControllerApi.UpdateAliasApiResponse.html">AliasControllerApi.UpdateAliasApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.AttachmentControllerApi.DeleteAllAttachmentsApiResponse.html">AttachmentControllerApi.DeleteAllAttachmentsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.AttachmentControllerApi.DeleteAttachmentApiResponse.html">AttachmentControllerApi.DeleteAttachmentApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.AttachmentControllerApi.DownloadAttachmentAsBase64EncodedApiResponse.html">AttachmentControllerApi.DownloadAttachmentAsBase64EncodedApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.AttachmentControllerApi.DownloadAttachmentAsBytesApiResponse.html">AttachmentControllerApi.DownloadAttachmentAsBytesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.AttachmentControllerApi.GetAttachmentApiResponse.html">AttachmentControllerApi.GetAttachmentApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.AttachmentControllerApi.GetAttachmentInfoApiResponse.html">AttachmentControllerApi.GetAttachmentInfoApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.AttachmentControllerApi.GetAttachmentsApiResponse.html">AttachmentControllerApi.GetAttachmentsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.AttachmentControllerApi.UploadAttachmentApiResponse.html">AttachmentControllerApi.UploadAttachmentApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.AttachmentControllerApi.UploadAttachmentBytesApiResponse.html">AttachmentControllerApi.UploadAttachmentBytesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.AttachmentControllerApi.UploadMultipartFormApiResponse.html">AttachmentControllerApi.UploadMultipartFormApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.BounceControllerApi.FilterBouncedRecipientApiResponse.html">BounceControllerApi.FilterBouncedRecipientApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.BounceControllerApi.GetAccountBounceBlockStatusApiResponse.html">BounceControllerApi.GetAccountBounceBlockStatusApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.BounceControllerApi.GetBouncedEmailApiResponse.html">BounceControllerApi.GetBouncedEmailApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.BounceControllerApi.GetBouncedEmailsApiResponse.html">BounceControllerApi.GetBouncedEmailsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.BounceControllerApi.GetBouncedRecipientApiResponse.html">BounceControllerApi.GetBouncedRecipientApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.BounceControllerApi.GetBouncedRecipientsApiResponse.html">BounceControllerApi.GetBouncedRecipientsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.BounceControllerApi.GetComplaintApiResponse.html">BounceControllerApi.GetComplaintApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.BounceControllerApi.GetComplaintsApiResponse.html">BounceControllerApi.GetComplaintsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.BounceControllerApi.GetListUnsubscribeRecipientsApiResponse.html">BounceControllerApi.GetListUnsubscribeRecipientsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.BounceControllerApi.GetReputationItemsApiResponse.html">BounceControllerApi.GetReputationItemsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.BulkActionsControllerApi.BulkCreateInboxesApiResponse.html">BulkActionsControllerApi.BulkCreateInboxesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.BulkActionsControllerApi.BulkDeleteInboxesApiResponse.html">BulkActionsControllerApi.BulkDeleteInboxesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.BulkActionsControllerApi.BulkSendEmailsApiResponse.html">BulkActionsControllerApi.BulkSendEmailsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.CommonActionsControllerApi.CreateNewEmailAddressApiResponse.html">CommonActionsControllerApi.CreateNewEmailAddressApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.CommonActionsControllerApi.CreateRandomInboxApiResponse.html">CommonActionsControllerApi.CreateRandomInboxApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.CommonActionsControllerApi.DeleteEmailAddressApiResponse.html">CommonActionsControllerApi.DeleteEmailAddressApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.CommonActionsControllerApi.EmptyInboxApiResponse.html">CommonActionsControllerApi.EmptyInboxApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.CommonActionsControllerApi.SendEmailQueryApiResponse.html">CommonActionsControllerApi.SendEmailQueryApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.CommonActionsControllerApi.SendEmailSimpleApiResponse.html">CommonActionsControllerApi.SendEmailSimpleApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.CreateConnectorApiResponse.html">ConnectorControllerApi.CreateConnectorApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.CreateConnectorImapConnectionApiResponse.html">ConnectorControllerApi.CreateConnectorImapConnectionApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.CreateConnectorSmtpConnectionApiResponse.html">ConnectorControllerApi.CreateConnectorSmtpConnectionApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.CreateConnectorSyncSettingsApiResponse.html">ConnectorControllerApi.CreateConnectorSyncSettingsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.CreateConnectorWithOptionsApiResponse.html">ConnectorControllerApi.CreateConnectorWithOptionsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.DeleteAllConnectorApiResponse.html">ConnectorControllerApi.DeleteAllConnectorApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.DeleteConnectorApiResponse.html">ConnectorControllerApi.DeleteConnectorApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.DeleteConnectorImapConnectionApiResponse.html">ConnectorControllerApi.DeleteConnectorImapConnectionApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.DeleteConnectorSmtpConnectionApiResponse.html">ConnectorControllerApi.DeleteConnectorSmtpConnectionApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.DeleteConnectorSyncSettingsApiResponse.html">ConnectorControllerApi.DeleteConnectorSyncSettingsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.GetAllConnectorEventsApiResponse.html">ConnectorControllerApi.GetAllConnectorEventsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.GetConnectorApiResponse.html">ConnectorControllerApi.GetConnectorApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.GetConnectorByEmailAddressApiResponse.html">ConnectorControllerApi.GetConnectorByEmailAddressApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.GetConnectorByInboxIdApiResponse.html">ConnectorControllerApi.GetConnectorByInboxIdApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.GetConnectorByNameApiResponse.html">ConnectorControllerApi.GetConnectorByNameApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.GetConnectorEventApiResponse.html">ConnectorControllerApi.GetConnectorEventApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.GetConnectorEventsApiResponse.html">ConnectorControllerApi.GetConnectorEventsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.GetConnectorImapConnectionApiResponse.html">ConnectorControllerApi.GetConnectorImapConnectionApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.GetConnectorProviderSettingsApiResponse.html">ConnectorControllerApi.GetConnectorProviderSettingsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.GetConnectorSmtpConnectionApiResponse.html">ConnectorControllerApi.GetConnectorSmtpConnectionApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.GetConnectorSyncSettingsApiResponse.html">ConnectorControllerApi.GetConnectorSyncSettingsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.GetConnectorsApiResponse.html">ConnectorControllerApi.GetConnectorsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.SendEmailFromConnectorApiResponse.html">ConnectorControllerApi.SendEmailFromConnectorApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.SyncConnectorApiResponse.html">ConnectorControllerApi.SyncConnectorApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.TestConnectorImapConnectionApiResponse.html">ConnectorControllerApi.TestConnectorImapConnectionApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.TestConnectorImapConnectionOptionsApiResponse.html">ConnectorControllerApi.TestConnectorImapConnectionOptionsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.TestConnectorSmtpConnectionApiResponse.html">ConnectorControllerApi.TestConnectorSmtpConnectionApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.TestConnectorSmtpConnectionOptionsApiResponse.html">ConnectorControllerApi.TestConnectorSmtpConnectionOptionsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.UpdateConnectorApiResponse.html">ConnectorControllerApi.UpdateConnectorApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.UpdateConnectorImapConnectionApiResponse.html">ConnectorControllerApi.UpdateConnectorImapConnectionApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConnectorControllerApi.UpdateConnectorSmtpConnectionApiResponse.html">ConnectorControllerApi.UpdateConnectorSmtpConnectionApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConsentControllerApi.CheckSendingConsentForEmailAddressApiResponse.html">ConsentControllerApi.CheckSendingConsentForEmailAddressApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConsentControllerApi.GetOptInIdentitiesApiResponse.html">ConsentControllerApi.GetOptInIdentitiesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConsentControllerApi.RevokeOptInConsentForEmailAddressApiResponse.html">ConsentControllerApi.RevokeOptInConsentForEmailAddressApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ConsentControllerApi.SendOptInConsentForEmailAddressApiResponse.html">ConsentControllerApi.SendOptInConsentForEmailAddressApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ContactControllerApi.CreateContactApiResponse.html">ContactControllerApi.CreateContactApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ContactControllerApi.DeleteContactApiResponse.html">ContactControllerApi.DeleteContactApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ContactControllerApi.GetAllContactsApiResponse.html">ContactControllerApi.GetAllContactsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ContactControllerApi.GetContactApiResponse.html">ContactControllerApi.GetContactApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ContactControllerApi.GetContactVCardApiResponse.html">ContactControllerApi.GetContactVCardApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ContactControllerApi.GetContactsApiResponse.html">ContactControllerApi.GetContactsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.DomainControllerApi.AddDomainWildcardCatchAllApiResponse.html">DomainControllerApi.AddDomainWildcardCatchAllApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.DomainControllerApi.CreateDomainApiResponse.html">DomainControllerApi.CreateDomainApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.DomainControllerApi.DeleteDomainApiResponse.html">DomainControllerApi.DeleteDomainApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.DomainControllerApi.GetAvailableDomainsApiResponse.html">DomainControllerApi.GetAvailableDomainsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.DomainControllerApi.GetDomainApiResponse.html">DomainControllerApi.GetDomainApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.DomainControllerApi.GetDomainIssuesApiResponse.html">DomainControllerApi.GetDomainIssuesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.DomainControllerApi.GetDomainWildcardCatchAllInboxApiResponse.html">DomainControllerApi.GetDomainWildcardCatchAllInboxApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.DomainControllerApi.GetDomainsApiResponse.html">DomainControllerApi.GetDomainsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.DomainControllerApi.GetMailSlurpDomainsApiResponse.html">DomainControllerApi.GetMailSlurpDomainsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.DomainControllerApi.UpdateDomainApiResponse.html">DomainControllerApi.UpdateDomainApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.ApplyImapFlagOperationApiResponse.html">EmailControllerApi.ApplyImapFlagOperationApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.CanSendApiResponse.html">EmailControllerApi.CanSendApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.CheckEmailBodyApiResponse.html">EmailControllerApi.CheckEmailBodyApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.CheckEmailBodyFeatureSupportApiResponse.html">EmailControllerApi.CheckEmailBodyFeatureSupportApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.CheckEmailClientSupportApiResponse.html">EmailControllerApi.CheckEmailClientSupportApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.DeleteAllEmailsApiResponse.html">EmailControllerApi.DeleteAllEmailsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.DeleteEmailApiResponse.html">EmailControllerApi.DeleteEmailApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.DownloadAttachmentApiResponse.html">EmailControllerApi.DownloadAttachmentApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.DownloadAttachmentBase64ApiResponse.html">EmailControllerApi.DownloadAttachmentBase64ApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.DownloadBodyApiResponse.html">EmailControllerApi.DownloadBodyApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.DownloadBodyBytesApiResponse.html">EmailControllerApi.DownloadBodyBytesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.ForwardEmailApiResponse.html">EmailControllerApi.ForwardEmailApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetAttachmentMetaDataApiResponse.html">EmailControllerApi.GetAttachmentMetaDataApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetEmailApiResponse.html">EmailControllerApi.GetEmailApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetEmailAttachmentsApiResponse.html">EmailControllerApi.GetEmailAttachmentsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetEmailContentMatchApiResponse.html">EmailControllerApi.GetEmailContentMatchApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetEmailContentPartApiResponse.html">EmailControllerApi.GetEmailContentPartApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetEmailContentPartContentApiResponse.html">EmailControllerApi.GetEmailContentPartContentApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetEmailCountApiResponse.html">EmailControllerApi.GetEmailCountApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetEmailHTMLApiResponse.html">EmailControllerApi.GetEmailHTMLApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetEmailHTMLJsonApiResponse.html">EmailControllerApi.GetEmailHTMLJsonApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetEmailHTMLQueryApiResponse.html">EmailControllerApi.GetEmailHTMLQueryApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetEmailLinksApiResponse.html">EmailControllerApi.GetEmailLinksApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetEmailPreviewURLsApiResponse.html">EmailControllerApi.GetEmailPreviewURLsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetEmailScreenshotAsBase64ApiResponse.html">EmailControllerApi.GetEmailScreenshotAsBase64ApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetEmailScreenshotAsBinaryApiResponse.html">EmailControllerApi.GetEmailScreenshotAsBinaryApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetEmailSummaryApiResponse.html">EmailControllerApi.GetEmailSummaryApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetEmailTextLinesApiResponse.html">EmailControllerApi.GetEmailTextLinesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetEmailThreadApiResponse.html">EmailControllerApi.GetEmailThreadApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetEmailThreadItemsApiResponse.html">EmailControllerApi.GetEmailThreadItemsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetEmailThreadsApiResponse.html">EmailControllerApi.GetEmailThreadsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetEmailsOffsetPaginatedApiResponse.html">EmailControllerApi.GetEmailsOffsetPaginatedApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetEmailsPaginatedApiResponse.html">EmailControllerApi.GetEmailsPaginatedApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetGravatarUrlForEmailAddressApiResponse.html">EmailControllerApi.GetGravatarUrlForEmailAddressApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetLatestEmailApiResponse.html">EmailControllerApi.GetLatestEmailApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetLatestEmailInInbox1ApiResponse.html">EmailControllerApi.GetLatestEmailInInbox1ApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetOrganizationEmailsPaginatedApiResponse.html">EmailControllerApi.GetOrganizationEmailsPaginatedApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetRawEmailContentsApiResponse.html">EmailControllerApi.GetRawEmailContentsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetRawEmailJsonApiResponse.html">EmailControllerApi.GetRawEmailJsonApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.GetUnreadEmailCountApiResponse.html">EmailControllerApi.GetUnreadEmailCountApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.MarkAllAsReadApiResponse.html">EmailControllerApi.MarkAllAsReadApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.MarkAsReadApiResponse.html">EmailControllerApi.MarkAsReadApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.ReplyToEmailApiResponse.html">EmailControllerApi.ReplyToEmailApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.SearchEmailsApiResponse.html">EmailControllerApi.SearchEmailsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.SendEmailSourceOptionalApiResponse.html">EmailControllerApi.SendEmailSourceOptionalApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.SetEmailFavouritedApiResponse.html">EmailControllerApi.SetEmailFavouritedApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailControllerApi.ValidateEmailApiResponse.html">EmailControllerApi.ValidateEmailApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailVerificationControllerApi.DeleteAllValidationRequestsApiResponse.html">EmailVerificationControllerApi.DeleteAllValidationRequestsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailVerificationControllerApi.DeleteValidationRequestApiResponse.html">EmailVerificationControllerApi.DeleteValidationRequestApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailVerificationControllerApi.GetValidationRequestsApiResponse.html">EmailVerificationControllerApi.GetValidationRequestsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.EmailVerificationControllerApi.ValidateEmailAddressListApiResponse.html">EmailVerificationControllerApi.ValidateEmailAddressListApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ExpiredControllerApi.GetExpirationDefaultsApiResponse.html">ExpiredControllerApi.GetExpirationDefaultsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ExpiredControllerApi.GetExpiredInboxByInboxIdApiResponse.html">ExpiredControllerApi.GetExpiredInboxByInboxIdApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ExpiredControllerApi.GetExpiredInboxRecordApiResponse.html">ExpiredControllerApi.GetExpiredInboxRecordApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ExpiredControllerApi.GetExpiredInboxesApiResponse.html">ExpiredControllerApi.GetExpiredInboxesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ExportControllerApi.ExportEntitiesApiResponse.html">ExportControllerApi.ExportEntitiesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ExportControllerApi.GetExportLinkApiResponse.html">ExportControllerApi.GetExportLinkApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.FormControllerApi.SubmitFormApiResponse.html">FormControllerApi.SubmitFormApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.GroupControllerApi.AddContactsToGroupApiResponse.html">GroupControllerApi.AddContactsToGroupApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.GroupControllerApi.CreateGroupApiResponse.html">GroupControllerApi.CreateGroupApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.GroupControllerApi.DeleteGroupApiResponse.html">GroupControllerApi.DeleteGroupApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.GroupControllerApi.GetAllGroupsApiResponse.html">GroupControllerApi.GetAllGroupsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.GroupControllerApi.GetGroupApiResponse.html">GroupControllerApi.GetGroupApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.GroupControllerApi.GetGroupWithContactsApiResponse.html">GroupControllerApi.GetGroupWithContactsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.GroupControllerApi.GetGroupWithContactsPaginatedApiResponse.html">GroupControllerApi.GetGroupWithContactsPaginatedApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.GroupControllerApi.GetGroupsApiResponse.html">GroupControllerApi.GetGroupsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.GroupControllerApi.RemoveContactsFromGroupApiResponse.html">GroupControllerApi.RemoveContactsFromGroupApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.GuestPortalControllerApi.CreateGuestPortalApiResponse.html">GuestPortalControllerApi.CreateGuestPortalApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.GuestPortalControllerApi.CreateGuestPortalUserApiResponse.html">GuestPortalControllerApi.CreateGuestPortalUserApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.GuestPortalControllerApi.GetAllGuestPortalUsersApiResponse.html">GuestPortalControllerApi.GetAllGuestPortalUsersApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.GuestPortalControllerApi.GetGuestPortalApiResponse.html">GuestPortalControllerApi.GetGuestPortalApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.GuestPortalControllerApi.GetGuestPortalUserApiResponse.html">GuestPortalControllerApi.GetGuestPortalUserApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.GuestPortalControllerApi.GetGuestPortalUserByIdApiResponse.html">GuestPortalControllerApi.GetGuestPortalUserByIdApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.GuestPortalControllerApi.GetGuestPortalUsersApiResponse.html">GuestPortalControllerApi.GetGuestPortalUsersApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.GuestPortalControllerApi.GetGuestPortalsApiResponse.html">GuestPortalControllerApi.GetGuestPortalsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ImapControllerApi.ImapServerFetchApiResponse.html">ImapControllerApi.ImapServerFetchApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ImapControllerApi.ImapServerGetApiResponse.html">ImapControllerApi.ImapServerGetApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ImapControllerApi.ImapServerListApiResponse.html">ImapControllerApi.ImapServerListApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ImapControllerApi.ImapServerMailboxApiResponse.html">ImapControllerApi.ImapServerMailboxApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ImapControllerApi.ImapServerSearchApiResponse.html">ImapControllerApi.ImapServerSearchApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ImapControllerApi.ImapServerStatusApiResponse.html">ImapControllerApi.ImapServerStatusApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ImapControllerApi.ImapServerUpdateFlagsApiResponse.html">ImapControllerApi.ImapServerUpdateFlagsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.CancelScheduledJobApiResponse.html">InboxControllerApi.CancelScheduledJobApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.CreateInboxApiResponse.html">InboxControllerApi.CreateInboxApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.CreateInboxRulesetApiResponse.html">InboxControllerApi.CreateInboxRulesetApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.CreateInboxWithDefaultsApiResponse.html">InboxControllerApi.CreateInboxWithDefaultsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.CreateInboxWithOptionsApiResponse.html">InboxControllerApi.CreateInboxWithOptionsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.DeleteAllInboxEmailsApiResponse.html">InboxControllerApi.DeleteAllInboxEmailsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.DeleteAllInboxesApiResponse.html">InboxControllerApi.DeleteAllInboxesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.DeleteAllInboxesByDescriptionApiResponse.html">InboxControllerApi.DeleteAllInboxesByDescriptionApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.DeleteAllInboxesByNameApiResponse.html">InboxControllerApi.DeleteAllInboxesByNameApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.DeleteAllInboxesByTagApiResponse.html">InboxControllerApi.DeleteAllInboxesByTagApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.DeleteInboxApiResponse.html">InboxControllerApi.DeleteInboxApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.DoesInboxExistApiResponse.html">InboxControllerApi.DoesInboxExistApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.DoesInboxHaveAutomationsApiResponse.html">InboxControllerApi.DoesInboxHaveAutomationsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.FlushExpiredApiResponse.html">InboxControllerApi.FlushExpiredApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetAllInboxesApiResponse.html">InboxControllerApi.GetAllInboxesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetAllInboxesOffsetPaginatedApiResponse.html">InboxControllerApi.GetAllInboxesOffsetPaginatedApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetAllPlusAddressesApiResponse.html">InboxControllerApi.GetAllPlusAddressesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetAllScheduledJobsApiResponse.html">InboxControllerApi.GetAllScheduledJobsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetDeliveryStatusesByInboxIdApiResponse.html">InboxControllerApi.GetDeliveryStatusesByInboxIdApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetEmailsApiResponse.html">InboxControllerApi.GetEmailsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetImapAccessApiResponse.html">InboxControllerApi.GetImapAccessApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetImapSmtpAccessApiResponse.html">InboxControllerApi.GetImapSmtpAccessApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetImapSmtpAccessEnvApiResponse.html">InboxControllerApi.GetImapSmtpAccessEnvApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetImapSmtpAccessServersApiResponse.html">InboxControllerApi.GetImapSmtpAccessServersApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetInboxApiResponse.html">InboxControllerApi.GetInboxApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetInboxByEmailAddressApiResponse.html">InboxControllerApi.GetInboxByEmailAddressApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetInboxByNameApiResponse.html">InboxControllerApi.GetInboxByNameApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetInboxCountApiResponse.html">InboxControllerApi.GetInboxCountApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetInboxEmailCountApiResponse.html">InboxControllerApi.GetInboxEmailCountApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetInboxEmailsPaginatedApiResponse.html">InboxControllerApi.GetInboxEmailsPaginatedApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetInboxIdsApiResponse.html">InboxControllerApi.GetInboxIdsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetInboxPlusAddressApiResponse.html">InboxControllerApi.GetInboxPlusAddressApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetInboxPlusAddressByIdApiResponse.html">InboxControllerApi.GetInboxPlusAddressByIdApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetInboxPlusAddressEmailsApiResponse.html">InboxControllerApi.GetInboxPlusAddressEmailsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetInboxPlusAddressEmailsForPlusAddressIdApiResponse.html">InboxControllerApi.GetInboxPlusAddressEmailsForPlusAddressIdApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetInboxPlusAddressesApiResponse.html">InboxControllerApi.GetInboxPlusAddressesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetInboxSentCountApiResponse.html">InboxControllerApi.GetInboxSentCountApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetInboxSentEmailsApiResponse.html">InboxControllerApi.GetInboxSentEmailsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetInboxTagsApiResponse.html">InboxControllerApi.GetInboxTagsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetInboxTagsPaginatedApiResponse.html">InboxControllerApi.GetInboxTagsPaginatedApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetInboxesApiResponse.html">InboxControllerApi.GetInboxesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetInboxesByTagApiResponse.html">InboxControllerApi.GetInboxesByTagApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetLatestEmailInInboxApiResponse.html">InboxControllerApi.GetLatestEmailInInboxApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetOrganizationInboxesApiResponse.html">InboxControllerApi.GetOrganizationInboxesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetOutboxesApiResponse.html">InboxControllerApi.GetOutboxesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetScheduledJobApiResponse.html">InboxControllerApi.GetScheduledJobApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetScheduledJobsByInboxIdApiResponse.html">InboxControllerApi.GetScheduledJobsByInboxIdApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.GetSmtpAccessApiResponse.html">InboxControllerApi.GetSmtpAccessApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.IsEmailAddressAvailableApiResponse.html">InboxControllerApi.IsEmailAddressAvailableApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.ListInboxRulesetsApiResponse.html">InboxControllerApi.ListInboxRulesetsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.ListInboxTrackingPixelsApiResponse.html">InboxControllerApi.ListInboxTrackingPixelsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.SearchInboxesApiResponse.html">InboxControllerApi.SearchInboxesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.SendEmailAndConfirmApiResponse.html">InboxControllerApi.SendEmailAndConfirmApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.SendEmailApiResponse.html">InboxControllerApi.SendEmailApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.SendEmailWithQueueApiResponse.html">InboxControllerApi.SendEmailWithQueueApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.SendSmtpEnvelopeApiResponse.html">InboxControllerApi.SendSmtpEnvelopeApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.SendTestEmailApiResponse.html">InboxControllerApi.SendTestEmailApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.SendWithScheduleApiResponse.html">InboxControllerApi.SendWithScheduleApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.SetInboxFavouritedApiResponse.html">InboxControllerApi.SetInboxFavouritedApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.UpdateImapAccessApiResponse.html">InboxControllerApi.UpdateImapAccessApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.UpdateInboxApiResponse.html">InboxControllerApi.UpdateInboxApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxControllerApi.UpdateSmtpAccessApiResponse.html">InboxControllerApi.UpdateSmtpAccessApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxForwarderControllerApi.CreateNewInboxForwarderApiResponse.html">InboxForwarderControllerApi.CreateNewInboxForwarderApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxForwarderControllerApi.DeleteInboxForwarderApiResponse.html">InboxForwarderControllerApi.DeleteInboxForwarderApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxForwarderControllerApi.DeleteInboxForwardersApiResponse.html">InboxForwarderControllerApi.DeleteInboxForwardersApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxForwarderControllerApi.GetAllInboxForwarderEventsApiResponse.html">InboxForwarderControllerApi.GetAllInboxForwarderEventsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxForwarderControllerApi.GetForwarderEventApiResponse.html">InboxForwarderControllerApi.GetForwarderEventApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxForwarderControllerApi.GetInboxForwarderApiResponse.html">InboxForwarderControllerApi.GetInboxForwarderApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxForwarderControllerApi.GetInboxForwarderEventApiResponse.html">InboxForwarderControllerApi.GetInboxForwarderEventApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxForwarderControllerApi.GetInboxForwarderEventsApiResponse.html">InboxForwarderControllerApi.GetInboxForwarderEventsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxForwarderControllerApi.GetInboxForwardersApiResponse.html">InboxForwarderControllerApi.GetInboxForwardersApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxForwarderControllerApi.TestInboxForwarderApiResponse.html">InboxForwarderControllerApi.TestInboxForwarderApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxForwarderControllerApi.TestInboxForwardersForInboxApiResponse.html">InboxForwarderControllerApi.TestInboxForwardersForInboxApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxForwarderControllerApi.TestNewInboxForwarderApiResponse.html">InboxForwarderControllerApi.TestNewInboxForwarderApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxForwarderControllerApi.UpdateInboxForwarderApiResponse.html">InboxForwarderControllerApi.UpdateInboxForwarderApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxReplierControllerApi.CreateNewInboxReplierApiResponse.html">InboxReplierControllerApi.CreateNewInboxReplierApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxReplierControllerApi.DeleteInboxReplierApiResponse.html">InboxReplierControllerApi.DeleteInboxReplierApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxReplierControllerApi.DeleteInboxRepliersApiResponse.html">InboxReplierControllerApi.DeleteInboxRepliersApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxReplierControllerApi.GetAllInboxReplierEventsApiResponse.html">InboxReplierControllerApi.GetAllInboxReplierEventsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxReplierControllerApi.GetInboxReplierApiResponse.html">InboxReplierControllerApi.GetInboxReplierApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxReplierControllerApi.GetInboxReplierEventsApiResponse.html">InboxReplierControllerApi.GetInboxReplierEventsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxReplierControllerApi.GetInboxRepliersApiResponse.html">InboxReplierControllerApi.GetInboxRepliersApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxReplierControllerApi.UpdateInboxReplierApiResponse.html">InboxReplierControllerApi.UpdateInboxReplierApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxRulesetControllerApi.CreateNewInboxRulesetApiResponse.html">InboxRulesetControllerApi.CreateNewInboxRulesetApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxRulesetControllerApi.DeleteInboxRulesetApiResponse.html">InboxRulesetControllerApi.DeleteInboxRulesetApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxRulesetControllerApi.DeleteInboxRulesetsApiResponse.html">InboxRulesetControllerApi.DeleteInboxRulesetsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxRulesetControllerApi.GetInboxRulesetApiResponse.html">InboxRulesetControllerApi.GetInboxRulesetApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxRulesetControllerApi.GetInboxRulesetsApiResponse.html">InboxRulesetControllerApi.GetInboxRulesetsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxRulesetControllerApi.TestInboxRulesetApiResponse.html">InboxRulesetControllerApi.TestInboxRulesetApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxRulesetControllerApi.TestInboxRulesetReceivingApiResponse.html">InboxRulesetControllerApi.TestInboxRulesetReceivingApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxRulesetControllerApi.TestInboxRulesetSendingApiResponse.html">InboxRulesetControllerApi.TestInboxRulesetSendingApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxRulesetControllerApi.TestInboxRulesetsForInboxApiResponse.html">InboxRulesetControllerApi.TestInboxRulesetsForInboxApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.InboxRulesetControllerApi.TestNewInboxRulesetApiResponse.html">InboxRulesetControllerApi.TestNewInboxRulesetApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.MailServerControllerApi.DescribeMailServerDomainApiResponse.html">MailServerControllerApi.DescribeMailServerDomainApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.MailServerControllerApi.GetDnsLookupApiResponse.html">MailServerControllerApi.GetDnsLookupApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.MailServerControllerApi.GetDnsLookupsApiResponse.html">MailServerControllerApi.GetDnsLookupsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.MailServerControllerApi.GetIpAddressApiResponse.html">MailServerControllerApi.GetIpAddressApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.MailServerControllerApi.VerifyEmailAddressApiResponse.html">MailServerControllerApi.VerifyEmailAddressApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.MissedEmailControllerApi.GetAllMissedEmailsApiResponse.html">MissedEmailControllerApi.GetAllMissedEmailsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.MissedEmailControllerApi.GetAllUnknownMissedEmailsApiResponse.html">MissedEmailControllerApi.GetAllUnknownMissedEmailsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.MissedEmailControllerApi.GetMissedEmailApiResponse.html">MissedEmailControllerApi.GetMissedEmailApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.MissedEmailControllerApi.RestoreMissedEmailsApiResponse.html">MissedEmailControllerApi.RestoreMissedEmailsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.MissedEmailControllerApi.WaitForNthMissedEmailApiResponse.html">MissedEmailControllerApi.WaitForNthMissedEmailApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.OAuthConnectionApi.CreateOAuthConnectionApiResponse.html">OAuthConnectionApi.CreateOAuthConnectionApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.OAuthConnectionApi.ExchangeAuthorizationTokenAndCreateOrUpdateInboxApiResponse.html">OAuthConnectionApi.ExchangeAuthorizationTokenAndCreateOrUpdateInboxApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.PhoneControllerApi.CreateEmergencyAddressApiResponse.html">PhoneControllerApi.CreateEmergencyAddressApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.PhoneControllerApi.CreatePhoneNumberApiResponse.html">PhoneControllerApi.CreatePhoneNumberApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.PhoneControllerApi.DeleteEmergencyAddressApiResponse.html">PhoneControllerApi.DeleteEmergencyAddressApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.PhoneControllerApi.DeletePhoneNumberApiResponse.html">PhoneControllerApi.DeletePhoneNumberApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.PhoneControllerApi.GetAllPhoneMessageThreadsApiResponse.html">PhoneControllerApi.GetAllPhoneMessageThreadsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.PhoneControllerApi.GetConsentStatusApiResponse.html">PhoneControllerApi.GetConsentStatusApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.PhoneControllerApi.GetEmergencyAddressApiResponse.html">PhoneControllerApi.GetEmergencyAddressApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.PhoneControllerApi.GetEmergencyAddressesApiResponse.html">PhoneControllerApi.GetEmergencyAddressesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.PhoneControllerApi.GetPhoneMessageThreadItemsApiResponse.html">PhoneControllerApi.GetPhoneMessageThreadItemsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.PhoneControllerApi.GetPhoneMessageThreadsApiResponse.html">PhoneControllerApi.GetPhoneMessageThreadsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.PhoneControllerApi.GetPhoneNumberApiResponse.html">PhoneControllerApi.GetPhoneNumberApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.PhoneControllerApi.GetPhoneNumberByNameApiResponse.html">PhoneControllerApi.GetPhoneNumberByNameApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.PhoneControllerApi.GetPhoneNumberByPhoneNumberApiResponse.html">PhoneControllerApi.GetPhoneNumberByPhoneNumberApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.PhoneControllerApi.GetPhoneNumbersApiResponse.html">PhoneControllerApi.GetPhoneNumbersApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.PhoneControllerApi.GetPhonePlansApiResponse.html">PhoneControllerApi.GetPhonePlansApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.PhoneControllerApi.GetPhonePlansAvailabilityApiResponse.html">PhoneControllerApi.GetPhonePlansAvailabilityApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.PhoneControllerApi.GetSentSmsByPhoneNumberApiResponse.html">PhoneControllerApi.GetSentSmsByPhoneNumberApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.PhoneControllerApi.GetSmsByPhoneNumberApiResponse.html">PhoneControllerApi.GetSmsByPhoneNumberApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.PhoneControllerApi.SendSmsFromPhoneNumberApiResponse.html">PhoneControllerApi.SendSmsFromPhoneNumberApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.PhoneControllerApi.SetConsentStatusApiResponse.html">PhoneControllerApi.SetConsentStatusApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.PhoneControllerApi.SetPhoneFavouritedApiResponse.html">PhoneControllerApi.SetPhoneFavouritedApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.PhoneControllerApi.TestPhoneNumberSendSmsApiResponse.html">PhoneControllerApi.TestPhoneNumberSendSmsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.PhoneControllerApi.UpdatePhoneNumberApiResponse.html">PhoneControllerApi.UpdatePhoneNumberApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.PhoneControllerApi.ValidatePhoneNumberApiResponse.html">PhoneControllerApi.ValidatePhoneNumberApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SentEmailsControllerApi.DeleteAllSentEmailsApiResponse.html">SentEmailsControllerApi.DeleteAllSentEmailsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SentEmailsControllerApi.DeleteSentEmailApiResponse.html">SentEmailsControllerApi.DeleteSentEmailApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SentEmailsControllerApi.GetAllSentTrackingPixelsApiResponse.html">SentEmailsControllerApi.GetAllSentTrackingPixelsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SentEmailsControllerApi.GetRawSentEmailContentsApiResponse.html">SentEmailsControllerApi.GetRawSentEmailContentsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SentEmailsControllerApi.GetRawSentEmailJsonApiResponse.html">SentEmailsControllerApi.GetRawSentEmailJsonApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SentEmailsControllerApi.GetSentDeliveryStatusApiResponse.html">SentEmailsControllerApi.GetSentDeliveryStatusApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SentEmailsControllerApi.GetSentDeliveryStatusesApiResponse.html">SentEmailsControllerApi.GetSentDeliveryStatusesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SentEmailsControllerApi.GetSentDeliveryStatusesBySentIdApiResponse.html">SentEmailsControllerApi.GetSentDeliveryStatusesBySentIdApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SentEmailsControllerApi.GetSentEmailApiResponse.html">SentEmailsControllerApi.GetSentEmailApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SentEmailsControllerApi.GetSentEmailHTMLContentApiResponse.html">SentEmailsControllerApi.GetSentEmailHTMLContentApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SentEmailsControllerApi.GetSentEmailPreviewURLsApiResponse.html">SentEmailsControllerApi.GetSentEmailPreviewURLsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SentEmailsControllerApi.GetSentEmailTrackingPixelsApiResponse.html">SentEmailsControllerApi.GetSentEmailTrackingPixelsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SentEmailsControllerApi.GetSentEmailsApiResponse.html">SentEmailsControllerApi.GetSentEmailsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SentEmailsControllerApi.GetSentEmailsWithQueueResultsApiResponse.html">SentEmailsControllerApi.GetSentEmailsWithQueueResultsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SentEmailsControllerApi.GetSentOrganizationEmailsApiResponse.html">SentEmailsControllerApi.GetSentOrganizationEmailsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SentEmailsControllerApi.WaitForDeliveryStatusesApiResponse.html">SentEmailsControllerApi.WaitForDeliveryStatusesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SmsControllerApi.DeleteSentSmsMessageApiResponse.html">SmsControllerApi.DeleteSentSmsMessageApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SmsControllerApi.DeleteSentSmsMessagesApiResponse.html">SmsControllerApi.DeleteSentSmsMessagesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SmsControllerApi.DeleteSmsMessageApiResponse.html">SmsControllerApi.DeleteSmsMessageApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SmsControllerApi.DeleteSmsMessagesApiResponse.html">SmsControllerApi.DeleteSmsMessagesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SmsControllerApi.GetAllSmsMessagesApiResponse.html">SmsControllerApi.GetAllSmsMessagesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SmsControllerApi.GetReplyForSmsMessageApiResponse.html">SmsControllerApi.GetReplyForSmsMessageApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SmsControllerApi.GetSentSmsCountApiResponse.html">SmsControllerApi.GetSentSmsCountApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SmsControllerApi.GetSentSmsMessageApiResponse.html">SmsControllerApi.GetSentSmsMessageApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SmsControllerApi.GetSentSmsMessagesPaginatedApiResponse.html">SmsControllerApi.GetSentSmsMessagesPaginatedApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SmsControllerApi.GetSmsCountApiResponse.html">SmsControllerApi.GetSmsCountApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SmsControllerApi.GetSmsMessageApiResponse.html">SmsControllerApi.GetSmsMessageApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SmsControllerApi.GetUnreadSmsCountApiResponse.html">SmsControllerApi.GetUnreadSmsCountApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SmsControllerApi.ReplyToSmsMessageApiResponse.html">SmsControllerApi.ReplyToSmsMessageApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SmsControllerApi.SendSmsApiResponse.html">SmsControllerApi.SendSmsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.SmsControllerApi.SetSmsFavouritedApiResponse.html">SmsControllerApi.SetSmsFavouritedApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.TemplateControllerApi.CreateTemplateApiResponse.html">TemplateControllerApi.CreateTemplateApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.TemplateControllerApi.DeleteTemplateApiResponse.html">TemplateControllerApi.DeleteTemplateApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.TemplateControllerApi.GetAllTemplatesApiResponse.html">TemplateControllerApi.GetAllTemplatesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.TemplateControllerApi.GetTemplateApiResponse.html">TemplateControllerApi.GetTemplateApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.TemplateControllerApi.GetTemplatePreviewHtmlApiResponse.html">TemplateControllerApi.GetTemplatePreviewHtmlApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.TemplateControllerApi.GetTemplatePreviewJsonApiResponse.html">TemplateControllerApi.GetTemplatePreviewJsonApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.TemplateControllerApi.GetTemplatesApiResponse.html">TemplateControllerApi.GetTemplatesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.TemplateControllerApi.UpdateTemplateApiResponse.html">TemplateControllerApi.UpdateTemplateApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ToolsControllerApi.CheckEmailFeaturesClientSupportApiResponse.html">ToolsControllerApi.CheckEmailFeaturesClientSupportApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ToolsControllerApi.CreateNewFakeEmailAddressApiResponse.html">ToolsControllerApi.CreateNewFakeEmailAddressApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ToolsControllerApi.DeleteNewFakeEmailAddressApiResponse.html">ToolsControllerApi.DeleteNewFakeEmailAddressApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ToolsControllerApi.GenerateBimiRecordApiResponse.html">ToolsControllerApi.GenerateBimiRecordApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ToolsControllerApi.GenerateDmarcRecordApiResponse.html">ToolsControllerApi.GenerateDmarcRecordApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ToolsControllerApi.GenerateMtaStsRecordApiResponse.html">ToolsControllerApi.GenerateMtaStsRecordApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ToolsControllerApi.GenerateTlsReportingRecordApiResponse.html">ToolsControllerApi.GenerateTlsReportingRecordApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ToolsControllerApi.GetFakeEmailByEmailAddressApiResponse.html">ToolsControllerApi.GetFakeEmailByEmailAddressApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ToolsControllerApi.GetFakeEmailByIdApiResponse.html">ToolsControllerApi.GetFakeEmailByIdApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ToolsControllerApi.GetFakeEmailRawApiResponse.html">ToolsControllerApi.GetFakeEmailRawApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ToolsControllerApi.GetFakeEmailsForAddressApiResponse.html">ToolsControllerApi.GetFakeEmailsForAddressApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ToolsControllerApi.LookupBimiDomainApiResponse.html">ToolsControllerApi.LookupBimiDomainApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ToolsControllerApi.LookupDmarcDomainApiResponse.html">ToolsControllerApi.LookupDmarcDomainApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ToolsControllerApi.LookupMtaStsDomainApiResponse.html">ToolsControllerApi.LookupMtaStsDomainApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.ToolsControllerApi.LookupTlsReportingDomainApiResponse.html">ToolsControllerApi.LookupTlsReportingDomainApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.TrackingControllerApi.CreateTrackingPixelApiResponse.html">TrackingControllerApi.CreateTrackingPixelApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.TrackingControllerApi.GetAllTrackingPixelsApiResponse.html">TrackingControllerApi.GetAllTrackingPixelsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.TrackingControllerApi.GetTrackingPixelApiResponse.html">TrackingControllerApi.GetTrackingPixelApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.UserControllerApi.GetEntityAutomationsApiResponse.html">UserControllerApi.GetEntityAutomationsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.UserControllerApi.GetEntityEventsApiResponse.html">UserControllerApi.GetEntityEventsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.UserControllerApi.GetEntityFavoritesApiResponse.html">UserControllerApi.GetEntityFavoritesApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.UserControllerApi.GetJsonPropertyAsStringApiResponse.html">UserControllerApi.GetJsonPropertyAsStringApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.UserControllerApi.GetUserInfoApiResponse.html">UserControllerApi.GetUserInfoApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WaitForControllerApi.WaitForApiResponse.html">WaitForControllerApi.WaitForApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WaitForControllerApi.WaitForEmailCountApiResponse.html">WaitForControllerApi.WaitForEmailCountApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WaitForControllerApi.WaitForLatestEmailApiResponse.html">WaitForControllerApi.WaitForLatestEmailApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WaitForControllerApi.WaitForLatestSmsApiResponse.html">WaitForControllerApi.WaitForLatestSmsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WaitForControllerApi.WaitForMatchingEmailsApiResponse.html">WaitForControllerApi.WaitForMatchingEmailsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WaitForControllerApi.WaitForMatchingFirstEmailApiResponse.html">WaitForControllerApi.WaitForMatchingFirstEmailApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WaitForControllerApi.WaitForNthEmailApiResponse.html">WaitForControllerApi.WaitForNthEmailApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WaitForControllerApi.WaitForSmsApiResponse.html">WaitForControllerApi.WaitForSmsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.CreateAccountWebhookApiResponse.html">WebhookControllerApi.CreateAccountWebhookApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.CreateWebhookApiResponse.html">WebhookControllerApi.CreateWebhookApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.CreateWebhookForPhoneNumberApiResponse.html">WebhookControllerApi.CreateWebhookForPhoneNumberApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.DeleteAllWebhooksApiResponse.html">WebhookControllerApi.DeleteAllWebhooksApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.DeleteWebhookApiResponse.html">WebhookControllerApi.DeleteWebhookApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.DeleteWebhookByIdApiResponse.html">WebhookControllerApi.DeleteWebhookByIdApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.GetAllAccountWebhooksApiResponse.html">WebhookControllerApi.GetAllAccountWebhooksApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.GetAllWebhookEndpointsApiResponse.html">WebhookControllerApi.GetAllWebhookEndpointsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.GetAllWebhookResultsApiResponse.html">WebhookControllerApi.GetAllWebhookResultsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.GetAllWebhooksApiResponse.html">WebhookControllerApi.GetAllWebhooksApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.GetInboxWebhooksPaginatedApiResponse.html">WebhookControllerApi.GetInboxWebhooksPaginatedApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.GetJsonSchemaForWebhookEventApiResponse.html">WebhookControllerApi.GetJsonSchemaForWebhookEventApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.GetJsonSchemaForWebhookPayloadApiResponse.html">WebhookControllerApi.GetJsonSchemaForWebhookPayloadApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.GetPhoneNumberWebhooksPaginatedApiResponse.html">WebhookControllerApi.GetPhoneNumberWebhooksPaginatedApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.GetTestWebhookPayloadApiResponse.html">WebhookControllerApi.GetTestWebhookPayloadApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.GetTestWebhookPayloadBounceApiResponse.html">WebhookControllerApi.GetTestWebhookPayloadBounceApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.GetTestWebhookPayloadBounceRecipientApiResponse.html">WebhookControllerApi.GetTestWebhookPayloadBounceRecipientApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.GetTestWebhookPayloadDeliveryStatusApiResponse.html">WebhookControllerApi.GetTestWebhookPayloadDeliveryStatusApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.GetTestWebhookPayloadEmailOpenedApiResponse.html">WebhookControllerApi.GetTestWebhookPayloadEmailOpenedApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.GetTestWebhookPayloadEmailReadApiResponse.html">WebhookControllerApi.GetTestWebhookPayloadEmailReadApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.GetTestWebhookPayloadForWebhookApiResponse.html">WebhookControllerApi.GetTestWebhookPayloadForWebhookApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.GetTestWebhookPayloadNewAttachmentApiResponse.html">WebhookControllerApi.GetTestWebhookPayloadNewAttachmentApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.GetTestWebhookPayloadNewContactApiResponse.html">WebhookControllerApi.GetTestWebhookPayloadNewContactApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.GetTestWebhookPayloadNewEmailApiResponse.html">WebhookControllerApi.GetTestWebhookPayloadNewEmailApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.GetTestWebhookPayloadNewSmsApiResponse.html">WebhookControllerApi.GetTestWebhookPayloadNewSmsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.GetWebhookApiResponse.html">WebhookControllerApi.GetWebhookApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.GetWebhookResultApiResponse.html">WebhookControllerApi.GetWebhookResultApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.GetWebhookResultsApiResponse.html">WebhookControllerApi.GetWebhookResultsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.GetWebhookResultsCountApiResponse.html">WebhookControllerApi.GetWebhookResultsCountApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.GetWebhookResultsUnseenErrorCountApiResponse.html">WebhookControllerApi.GetWebhookResultsUnseenErrorCountApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.GetWebhooksApiResponse.html">WebhookControllerApi.GetWebhooksApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.RedriveAllWebhookResultsApiResponse.html">WebhookControllerApi.RedriveAllWebhookResultsApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.RedriveWebhookResultApiResponse.html">WebhookControllerApi.RedriveWebhookResultApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.SendTestDataApiResponse.html">WebhookControllerApi.SendTestDataApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.UpdateWebhookApiResponse.html">WebhookControllerApi.UpdateWebhookApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.UpdateWebhookHeadersApiResponse.html">WebhookControllerApi.UpdateWebhookHeadersApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.VerifyWebhookSignatureApiResponse.html">WebhookControllerApi.VerifyWebhookSignatureApiResponse</a></div>
+      <div class="level2"><a class="xref" href="mailslurp.Api.WebhookControllerApi.WaitForWebhookResultsApiResponse.html">WebhookControllerApi.WaitForWebhookResultsApiResponse</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="mailslurp.Client.IApiResponse.html">IApiResponse</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="mailslurp.html">mailslurp</a>.<a class="xref" href="mailslurp.Client.html">Client</a></h6>
+  <h6><strong>Assembly</strong>: mailslurp.dll</h6>
+  <h5 id="mailslurp_Client_ApiResponse_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ApiResponse : IApiResponse</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiResponse`1.cs#lines-134">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiResponse__ctor_" data-uid="mailslurp.Client.ApiResponse.#ctor*"></a>
+  <h4 id="mailslurp_Client_ApiResponse__ctor_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpResponseMessage_System_String_System_String_System_DateTime_System_Text_Json_JsonSerializerOptions_" data-uid="mailslurp.Client.ApiResponse.#ctor(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpResponseMessage,System.String,System.String,System.DateTime,System.Text.Json.JsonSerializerOptions)">ApiResponse(HttpRequestMessage, HttpResponseMessage, string, string, DateTime, JsonSerializerOptions)</h4>
+  <div class="markdown level1 summary"><p>Construct the response using an HttpResponseMessage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse(HttpRequestMessage httpRequestMessage, HttpResponseMessage httpResponseMessage, string rawContent, string path, DateTime requestedAt, JsonSerializerOptions jsonSerializerOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage">HttpRequestMessage</a></td>
+        <td><span class="parametername">httpRequestMessage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpresponsemessage">HttpResponseMessage</a></td>
+        <td><span class="parametername">httpResponseMessage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">rawContent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td><span class="parametername">requestedAt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></td>
+        <td><span class="parametername">jsonSerializerOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiResponse`1.cs#lines-123">View Source</a>
+  </span>
+  <h4 id="mailslurp_Client_ApiResponse__jsonSerializerOptions" data-uid="mailslurp.Client.ApiResponse._jsonSerializerOptions">_jsonSerializerOptions</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected JsonSerializerOptions _jsonSerializerOptions</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiResponse`1.cs#lines-103">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiResponse_DownloadedAt_" data-uid="mailslurp.Client.ApiResponse.DownloadedAt*"></a>
+  <h4 id="mailslurp_Client_ApiResponse_DownloadedAt" data-uid="mailslurp.Client.ApiResponse.DownloadedAt">DownloadedAt</h4>
+  <div class="markdown level1 summary"><p>The DateTime when the request was retrieved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime DownloadedAt { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiResponse`1.cs#lines-98">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiResponse_Headers_" data-uid="mailslurp.Client.ApiResponse.Headers*"></a>
+  <h4 id="mailslurp_Client_ApiResponse_Headers" data-uid="mailslurp.Client.ApiResponse.Headers">Headers</h4>
+  <div class="markdown level1 summary"><p>The headers contained in the api response</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpResponseHeaders Headers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.headers.httpresponseheaders">HttpResponseHeaders</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiResponse`1.cs#lines-88">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiResponse_IsSuccessStatusCode_" data-uid="mailslurp.Client.ApiResponse.IsSuccessStatusCode*"></a>
+  <h4 id="mailslurp_Client_ApiResponse_IsSuccessStatusCode" data-uid="mailslurp.Client.ApiResponse.IsSuccessStatusCode">IsSuccessStatusCode</h4>
+  <div class="markdown level1 summary"><p>The IsSuccessStatusCode from the api response</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSuccessStatusCode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiResponse`1.cs#lines-113">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiResponse_Path_" data-uid="mailslurp.Client.ApiResponse.Path*"></a>
+  <h4 id="mailslurp_Client_ApiResponse_Path" data-uid="mailslurp.Client.ApiResponse.Path">Path</h4>
+  <div class="markdown level1 summary"><p>The path used when making the request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Path { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiResponse`1.cs#lines-83">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiResponse_RawContent_" data-uid="mailslurp.Client.ApiResponse.RawContent*"></a>
+  <h4 id="mailslurp_Client_ApiResponse_RawContent" data-uid="mailslurp.Client.ApiResponse.RawContent">RawContent</h4>
+  <div class="markdown level1 summary"><p>The raw data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RawContent { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiResponse`1.cs#lines-93">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiResponse_ReasonPhrase_" data-uid="mailslurp.Client.ApiResponse.ReasonPhrase*"></a>
+  <h4 id="mailslurp_Client_ApiResponse_ReasonPhrase" data-uid="mailslurp.Client.ApiResponse.ReasonPhrase">ReasonPhrase</h4>
+  <div class="markdown level1 summary"><p>The reason phrase contained in the api response</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ReasonPhrase { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiResponse`1.cs#lines-118">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiResponse_RequestUri_" data-uid="mailslurp.Client.ApiResponse.RequestUri*"></a>
+  <h4 id="mailslurp_Client_ApiResponse_RequestUri" data-uid="mailslurp.Client.ApiResponse.RequestUri">RequestUri</h4>
+  <div class="markdown level1 summary"><p>The Uri used when making the request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri RequestUri { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiResponse`1.cs#lines-108">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiResponse_RequestedAt_" data-uid="mailslurp.Client.ApiResponse.RequestedAt*"></a>
+  <h4 id="mailslurp_Client_ApiResponse_RequestedAt" data-uid="mailslurp.Client.ApiResponse.RequestedAt">RequestedAt</h4>
+  <div class="markdown level1 summary"><p>The DateTime when the request was sent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime RequestedAt { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiResponse`1.cs#lines-78">View Source</a>
+  </span>
+  <a id="mailslurp_Client_ApiResponse_StatusCode_" data-uid="mailslurp.Client.ApiResponse.StatusCode*"></a>
+  <h4 id="mailslurp_Client_ApiResponse_StatusCode" data-uid="mailslurp.Client.ApiResponse.StatusCode">StatusCode</h4>
+  <div class="markdown level1 summary"><p>Gets the status code (HTTP status code)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpStatusCode StatusCode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode">HttpStatusCode</a></td>
+        <td><p>The status code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="mailslurp.Client.IApiResponse.html">IApiResponse</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Client/ApiResponse`1.cs#lines-72" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

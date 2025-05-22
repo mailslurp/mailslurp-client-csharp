@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class InboxPreview | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class InboxPreview | MailSlurp ">
+    
+    <meta name="description" content="Inbox data preview element.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Model.InboxPreview">
+
+
+
+  <h1 id="mailslurp_Model_InboxPreview" data-uid="mailslurp.Model.InboxPreview" class="text-break">Class InboxPreview</h1>
+  <div class="markdown level0 summary"><p>Inbox data preview element.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">InboxPreview</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.ivalidatableobject">IValidatableObject</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="mailslurp.html">mailslurp</a>.<a class="xref" href="mailslurp.Model.html">Model</a></h6>
+  <h6><strong>Assembly</strong>: mailslurp.dll</h6>
+  <h5 id="mailslurp_Model_InboxPreview_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class InboxPreview : IValidatableObject</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-50">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview__ctor_" data-uid="mailslurp.Model.InboxPreview.#ctor*"></a>
+  <h4 id="mailslurp_Model_InboxPreview__ctor_System_Guid_System_DateTime_System_Boolean_System_Boolean_System_Boolean_mailslurp_Client_Option_System_Nullable_System_Guid___System_String_mailslurp_Client_Option_System_String__mailslurp_Client_Option_System_Collections_Generic_List_System_String___mailslurp_Client_Option_System_Nullable_mailslurp_Model_InboxPreview_InboxTypeEnum___mailslurp_Client_Option_System_Nullable_System_DateTime___mailslurp_Client_Option_System_Nullable_mailslurp_Model_InboxPreview_FunctionsAsEnum___System_Nullable_System_Guid__mailslurp_Client_Option_System_String__mailslurp_Client_Option_System_Nullable_mailslurp_Model_InboxPreview_AccountRegionEnum___" data-uid="mailslurp.Model.InboxPreview.#ctor(System.Guid,System.DateTime,System.Boolean,System.Boolean,System.Boolean,mailslurp.Client.Option{System.Nullable{System.Guid}},System.String,mailslurp.Client.Option{System.String},mailslurp.Client.Option{System.Collections.Generic.List{System.String}},mailslurp.Client.Option{System.Nullable{mailslurp.Model.InboxPreview.InboxTypeEnum}},mailslurp.Client.Option{System.Nullable{System.DateTime}},mailslurp.Client.Option{System.Nullable{mailslurp.Model.InboxPreview.FunctionsAsEnum}},System.Nullable{System.Guid},mailslurp.Client.Option{System.String},mailslurp.Client.Option{System.Nullable{mailslurp.Model.InboxPreview.AccountRegionEnum}})">InboxPreview(Guid, DateTime, bool, bool, bool, Option&lt;Guid?&gt;, string, Option&lt;string&gt;, Option&lt;List&lt;string&gt;&gt;, Option&lt;InboxTypeEnum?&gt;, Option&lt;DateTime?&gt;, Option&lt;FunctionsAsEnum?&gt;, Guid?, Option&lt;string&gt;, Option&lt;AccountRegionEnum?&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Model.InboxPreview.html">InboxPreview</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonConstructor]
+public InboxPreview(Guid id, DateTime createdAt, bool favourite, bool teamAccess, bool virtualInbox, Option&lt;Guid?&gt; domainId = default, string emailAddress = null, Option&lt;string&gt; name = default, Option&lt;List&lt;string&gt;&gt; tags = default, Option&lt;InboxPreview.InboxTypeEnum?&gt; inboxType = default, Option&lt;DateTime?&gt; expiresAt = default, Option&lt;InboxPreview.FunctionsAsEnum?&gt; functionsAs = default, Guid? userId = null, Option&lt;string&gt; description = default, Option&lt;InboxPreview.AccountRegionEnum?&gt; accountRegion = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of the inbox. The ID is a UUID-V4 format string. Use the inboxId for calls to Inbox and Email Controller endpoints. See the emailAddress property for the email address or the inbox. To get emails in an inbox use the WaitFor and Inbox Controller methods <code>waitForLatestEmail</code> and <code>getEmails</code> methods respectively. Inboxes can be used with aliases to forward emails automatically.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td><span class="parametername">createdAt</span></td>
+        <td><p>When the inbox was created. Time stamps are in ISO DateTime Format <code>yyyy-MM-dd'T'HH:mm:ss.SSSXXX</code> e.g. <code>2000-10-31T01:30:00.000-05:00</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">favourite</span></td>
+        <td><p>Is the inbox a favorite inbox. Make an inbox a favorite is typically done in the dashboard for quick access or filtering</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">teamAccess</span></td>
+        <td><p>Does inbox permit team access for organization team members. If so team users can use inbox and emails associated with it. See the team access guide at <a href="https://www.mailslurp.com/guides/team-email-account-sharing/">https://www.mailslurp.com/guides/team-email-account-sharing/</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">virtualInbox</span></td>
+        <td><p>Virtual inbox can receive email but will not send emails to real recipients. Will save sent email record but never send an actual email. Perfect for testing mail server actions.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?&gt;</td>
+        <td><span class="parametername">domainId</span></td>
+        <td><p>ID of custom domain used by the inbox if any</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">emailAddress</span></td>
+        <td><p>The inbox's email address. Inbox projections and previews may not include the email address. To view the email address fetch the inbox entity directly. Send an email to this address and the inbox will receive and store it for you. Note the email address in MailSlurp match characters exactly and are case sensitive so <code>+123</code> additions are considered different addresses. To retrieve the email use the Inbox and Email Controller endpoints with the inbox ID.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the inbox and used as the sender name when sending emails .Displayed in the dashboard for easier search</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</td>
+        <td><span class="parametername">tags</span></td>
+        <td><p>Tags that inbox has been tagged with. Tags can be added to inboxes to group different inboxes within an account. You can also search for inboxes by tag in the dashboard UI.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="mailslurp.Model.InboxPreview.html">InboxPreview</a>.<a class="xref" href="mailslurp.Model.InboxPreview.InboxTypeEnum.html">InboxTypeEnum</a>?&gt;</td>
+        <td><span class="parametername">inboxType</span></td>
+        <td><p>Type of inbox. HTTP inboxes are faster and better for most cases. SMTP inboxes are more suited for public facing inbound messages (but cannot send).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?&gt;</td>
+        <td><span class="parametername">expiresAt</span></td>
+        <td><p>Inbox expiration time. When, if ever, the inbox should expire and be deleted. If null then this inbox is permanent and the emails in it won't be deleted. This is the default behavior unless expiration date is set. If an expiration date is set and the time is reached MailSlurp will expire the inbox and move it to an expired inbox entity. You can still access the emails belonging to it but it can no longer send or receive email.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="mailslurp.Model.InboxPreview.html">InboxPreview</a>.<a class="xref" href="mailslurp.Model.InboxPreview.FunctionsAsEnum.html">FunctionsAsEnum</a>?&gt;</td>
+        <td><span class="parametername">functionsAs</span></td>
+        <td><p>Inbox function if used as a primitive for another system.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>ID of user that inbox belongs to</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">description</span></td>
+        <td><p>Description of an inbox for labelling and searching purposes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="mailslurp.Model.InboxPreview.html">InboxPreview</a>.<a class="xref" href="mailslurp.Model.InboxPreview.AccountRegionEnum.html">AccountRegionEnum</a>?&gt;</td>
+        <td><span class="parametername">accountRegion</span></td>
+        <td><p>Region of the inbox</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-378">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview_AccountRegion_" data-uid="mailslurp.Model.InboxPreview.AccountRegion*"></a>
+  <h4 id="mailslurp_Model_InboxPreview_AccountRegion" data-uid="mailslurp.Model.InboxPreview.AccountRegion">AccountRegion</h4>
+  <div class="markdown level1 summary"><p>Region of the inbox</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;accountRegion&quot;)]
+public InboxPreview.AccountRegionEnum? AccountRegion { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxPreview.html">InboxPreview</a>.<a class="xref" href="mailslurp.Model.InboxPreview.AccountRegionEnum.html">AccountRegionEnum</a>?</td>
+        <td><p>Region of the inbox</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-392">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview_CreatedAt_" data-uid="mailslurp.Model.InboxPreview.CreatedAt*"></a>
+  <h4 id="mailslurp_Model_InboxPreview_CreatedAt" data-uid="mailslurp.Model.InboxPreview.CreatedAt">CreatedAt</h4>
+  <div class="markdown level1 summary"><p>When the inbox was created. Time stamps are in ISO DateTime Format <code>yyyy-MM-dd'T'HH:mm:ss.SSSXXX</code> e.g. <code>2000-10-31T01:30:00.000-05:00</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;createdAt&quot;)]
+public DateTime CreatedAt { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td><p>When the inbox was created. Time stamps are in ISO DateTime Format <code>yyyy-MM-dd'T'HH:mm:ss.SSSXXX</code> e.g. <code>2000-10-31T01:30:00.000-05:00</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-497">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview_Description_" data-uid="mailslurp.Model.InboxPreview.Description*"></a>
+  <h4 id="mailslurp_Model_InboxPreview_Description" data-uid="mailslurp.Model.InboxPreview.Description">Description</h4>
+  <div class="markdown level1 summary"><p>Description of an inbox for labelling and searching purposes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;description&quot;)]
+public string Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Description of an inbox for labelling and searching purposes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-427">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview_DomainId_" data-uid="mailslurp.Model.InboxPreview.DomainId*"></a>
+  <h4 id="mailslurp_Model_InboxPreview_DomainId" data-uid="mailslurp.Model.InboxPreview.DomainId">DomainId</h4>
+  <div class="markdown level1 summary"><p>ID of custom domain used by the inbox if any</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;domainId&quot;)]
+public Guid? DomainId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><p>ID of custom domain used by the inbox if any</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-434">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview_EmailAddress_" data-uid="mailslurp.Model.InboxPreview.EmailAddress*"></a>
+  <h4 id="mailslurp_Model_InboxPreview_EmailAddress" data-uid="mailslurp.Model.InboxPreview.EmailAddress">EmailAddress</h4>
+  <div class="markdown level1 summary"><p>The inbox's email address. Inbox projections and previews may not include the email address. To view the email address fetch the inbox entity directly. Send an email to this address and the inbox will receive and store it for you. Note the email address in MailSlurp match characters exactly and are case sensitive so <code>+123</code> additions are considered different addresses. To retrieve the email use the Inbox and Email Controller endpoints with the inbox ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;emailAddress&quot;)]
+public string EmailAddress { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The inbox's email address. Inbox projections and previews may not include the email address. To view the email address fetch the inbox entity directly. Send an email to this address and the inbox will receive and store it for you. Note the email address in MailSlurp match characters exactly and are case sensitive so <code>+123</code> additions are considered different addresses. To retrieve the email use the Inbox and Email Controller endpoints with the inbox ID.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-476">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview_ExpiresAt_" data-uid="mailslurp.Model.InboxPreview.ExpiresAt*"></a>
+  <h4 id="mailslurp_Model_InboxPreview_ExpiresAt" data-uid="mailslurp.Model.InboxPreview.ExpiresAt">ExpiresAt</h4>
+  <div class="markdown level1 summary"><p>Inbox expiration time. When, if ever, the inbox should expire and be deleted. If null then this inbox is permanent and the emails in it won't be deleted. This is the default behavior unless expiration date is set. If an expiration date is set and the time is reached MailSlurp will expire the inbox and move it to an expired inbox entity. You can still access the emails belonging to it but it can no longer send or receive email.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;expiresAt&quot;)]
+public DateTime? ExpiresAt { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><p>Inbox expiration time. When, if ever, the inbox should expire and be deleted. If null then this inbox is permanent and the emails in it won't be deleted. This is the default behavior unless expiration date is set. If an expiration date is set and the time is reached MailSlurp will expire the inbox and move it to an expired inbox entity. You can still access the emails belonging to it but it can no longer send or receive email.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-399">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview_Favourite_" data-uid="mailslurp.Model.InboxPreview.Favourite*"></a>
+  <h4 id="mailslurp_Model_InboxPreview_Favourite" data-uid="mailslurp.Model.InboxPreview.Favourite">Favourite</h4>
+  <div class="markdown level1 summary"><p>Is the inbox a favorite inbox. Make an inbox a favorite is typically done in the dashboard for quick access or filtering</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;favourite&quot;)]
+public bool Favourite { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>Is the inbox a favorite inbox. Make an inbox a favorite is typically done in the dashboard for quick access or filtering</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-308">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview_FunctionsAs_" data-uid="mailslurp.Model.InboxPreview.FunctionsAs*"></a>
+  <h4 id="mailslurp_Model_InboxPreview_FunctionsAs" data-uid="mailslurp.Model.InboxPreview.FunctionsAs">FunctionsAs</h4>
+  <div class="markdown level1 summary"><p>Inbox function if used as a primitive for another system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;functionsAs&quot;)]
+public InboxPreview.FunctionsAsEnum? FunctionsAs { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxPreview.html">InboxPreview</a>.<a class="xref" href="mailslurp.Model.InboxPreview.FunctionsAsEnum.html">FunctionsAsEnum</a>?</td>
+        <td><p>Inbox function if used as a primitive for another system.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-385">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview_Id_" data-uid="mailslurp.Model.InboxPreview.Id*"></a>
+  <h4 id="mailslurp_Model_InboxPreview_Id" data-uid="mailslurp.Model.InboxPreview.Id">Id</h4>
+  <div class="markdown level1 summary"><p>ID of the inbox. The ID is a UUID-V4 format string. Use the inboxId for calls to Inbox and Email Controller endpoints. See the emailAddress property for the email address or the inbox. To get emails in an inbox use the WaitFor and Inbox Controller methods <code>waitForLatestEmail</code> and <code>getEmails</code> methods respectively. Inboxes can be used with aliases to forward emails automatically.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;id&quot;)]
+public Guid Id { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><p>ID of the inbox. The ID is a UUID-V4 format string. Use the inboxId for calls to Inbox and Email Controller endpoints. See the emailAddress property for the email address or the inbox. To get emails in an inbox use the WaitFor and Inbox Controller methods <code>waitForLatestEmail</code> and <code>getEmails</code> methods respectively. Inboxes can be used with aliases to forward emails automatically.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-154">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview_InboxType_" data-uid="mailslurp.Model.InboxPreview.InboxType*"></a>
+  <h4 id="mailslurp_Model_InboxPreview_InboxType" data-uid="mailslurp.Model.InboxPreview.InboxType">InboxType</h4>
+  <div class="markdown level1 summary"><p>Type of inbox. HTTP inboxes are faster and better for most cases. SMTP inboxes are more suited for public facing inbound messages (but cannot send).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;inboxType&quot;)]
+public InboxPreview.InboxTypeEnum? InboxType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxPreview.html">InboxPreview</a>.<a class="xref" href="mailslurp.Model.InboxPreview.InboxTypeEnum.html">InboxTypeEnum</a>?</td>
+        <td><p>Type of inbox. HTTP inboxes are faster and better for most cases. SMTP inboxes are more suited for public facing inbound messages (but cannot send).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-448">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview_Name_" data-uid="mailslurp.Model.InboxPreview.Name*"></a>
+  <h4 id="mailslurp_Model_InboxPreview_Name" data-uid="mailslurp.Model.InboxPreview.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Name of the inbox and used as the sender name when sending emails .Displayed in the dashboard for easier search</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;name&quot;)]
+public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Name of the inbox and used as the sender name when sending emails .Displayed in the dashboard for easier search</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-462">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview_Tags_" data-uid="mailslurp.Model.InboxPreview.Tags*"></a>
+  <h4 id="mailslurp_Model_InboxPreview_Tags" data-uid="mailslurp.Model.InboxPreview.Tags">Tags</h4>
+  <div class="markdown level1 summary"><p>Tags that inbox has been tagged with. Tags can be added to inboxes to group different inboxes within an account. You can also search for inboxes by tag in the dashboard UI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;tags&quot;)]
+public List&lt;string&gt; Tags { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><p>Tags that inbox has been tagged with. Tags can be added to inboxes to group different inboxes within an account. You can also search for inboxes by tag in the dashboard UI.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-406">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview_TeamAccess_" data-uid="mailslurp.Model.InboxPreview.TeamAccess*"></a>
+  <h4 id="mailslurp_Model_InboxPreview_TeamAccess" data-uid="mailslurp.Model.InboxPreview.TeamAccess">TeamAccess</h4>
+  <div class="markdown level1 summary"><p>Does inbox permit team access for organization team members. If so team users can use inbox and emails associated with it. See the team access guide at <a href="https://www.mailslurp.com/guides/team-email-account-sharing/">https://www.mailslurp.com/guides/team-email-account-sharing/</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;teamAccess&quot;)]
+public bool TeamAccess { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>Does inbox permit team access for organization team members. If so team users can use inbox and emails associated with it. See the team access guide at <a href="https://www.mailslurp.com/guides/team-email-account-sharing/">https://www.mailslurp.com/guides/team-email-account-sharing/</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-483">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview_UserId_" data-uid="mailslurp.Model.InboxPreview.UserId*"></a>
+  <h4 id="mailslurp_Model_InboxPreview_UserId" data-uid="mailslurp.Model.InboxPreview.UserId">UserId</h4>
+  <div class="markdown level1 summary"><p>ID of user that inbox belongs to</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;userId&quot;)]
+public Guid? UserId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><p>ID of user that inbox belongs to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-413">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview_VirtualInbox_" data-uid="mailslurp.Model.InboxPreview.VirtualInbox*"></a>
+  <h4 id="mailslurp_Model_InboxPreview_VirtualInbox" data-uid="mailslurp.Model.InboxPreview.VirtualInbox">VirtualInbox</h4>
+  <div class="markdown level1 summary"><p>Virtual inbox can receive email but will not send emails to real recipients. Will save sent email record but never send an actual email. Perfect for testing mail server actions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;virtualInbox&quot;)]
+public bool VirtualInbox { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>Virtual inbox can receive email but will not send emails to real recipients. Will save sent email record but never send an actual email. Perfect for testing mail server actions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-329">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview_AccountRegionEnumFromString_" data-uid="mailslurp.Model.InboxPreview.AccountRegionEnumFromString*"></a>
+  <h4 id="mailslurp_Model_InboxPreview_AccountRegionEnumFromString_System_String_" data-uid="mailslurp.Model.InboxPreview.AccountRegionEnumFromString(System.String)">AccountRegionEnumFromString(string)</h4>
+  <div class="markdown level1 summary"><p>Returns a <a class="xref" href="mailslurp.Model.InboxPreview.AccountRegionEnum.html">InboxPreview.AccountRegionEnum</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InboxPreview.AccountRegionEnum AccountRegionEnumFromString(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxPreview.html">InboxPreview</a>.<a class="xref" href="mailslurp.Model.InboxPreview.AccountRegionEnum.html">AccountRegionEnum</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notimplementedexception">NotImplementedException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-342">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview_AccountRegionEnumFromStringOrDefault_" data-uid="mailslurp.Model.InboxPreview.AccountRegionEnumFromStringOrDefault*"></a>
+  <h4 id="mailslurp_Model_InboxPreview_AccountRegionEnumFromStringOrDefault_System_String_" data-uid="mailslurp.Model.InboxPreview.AccountRegionEnumFromStringOrDefault(System.String)">AccountRegionEnumFromStringOrDefault(string)</h4>
+  <div class="markdown level1 summary"><p>Returns a <a class="xref" href="mailslurp.Model.InboxPreview.AccountRegionEnum.html">InboxPreview.AccountRegionEnum</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InboxPreview.AccountRegionEnum? AccountRegionEnumFromStringOrDefault(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxPreview.html">InboxPreview</a>.<a class="xref" href="mailslurp.Model.InboxPreview.AccountRegionEnum.html">AccountRegionEnum</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-356">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview_AccountRegionEnumToJsonValue_" data-uid="mailslurp.Model.InboxPreview.AccountRegionEnumToJsonValue*"></a>
+  <h4 id="mailslurp_Model_InboxPreview_AccountRegionEnumToJsonValue_System_Nullable_mailslurp_Model_InboxPreview_AccountRegionEnum__" data-uid="mailslurp.Model.InboxPreview.AccountRegionEnumToJsonValue(System.Nullable{mailslurp.Model.InboxPreview.AccountRegionEnum})">AccountRegionEnumToJsonValue(AccountRegionEnum?)</h4>
+  <div class="markdown level1 summary"><p>Converts the <a class="xref" href="mailslurp.Model.InboxPreview.AccountRegionEnum.html">InboxPreview.AccountRegionEnum</a> to the json value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string AccountRegionEnumToJsonValue(InboxPreview.AccountRegionEnum? value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxPreview.html">InboxPreview</a>.<a class="xref" href="mailslurp.Model.InboxPreview.AccountRegionEnum.html">AccountRegionEnum</a>?</td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notimplementedexception">NotImplementedException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-205">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview_FunctionsAsEnumFromString_" data-uid="mailslurp.Model.InboxPreview.FunctionsAsEnumFromString*"></a>
+  <h4 id="mailslurp_Model_InboxPreview_FunctionsAsEnumFromString_System_String_" data-uid="mailslurp.Model.InboxPreview.FunctionsAsEnumFromString(System.String)">FunctionsAsEnumFromString(string)</h4>
+  <div class="markdown level1 summary"><p>Returns a <a class="xref" href="mailslurp.Model.InboxPreview.FunctionsAsEnum.html">InboxPreview.FunctionsAsEnum</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InboxPreview.FunctionsAsEnum FunctionsAsEnumFromString(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxPreview.html">InboxPreview</a>.<a class="xref" href="mailslurp.Model.InboxPreview.FunctionsAsEnum.html">FunctionsAsEnum</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notimplementedexception">NotImplementedException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-236">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview_FunctionsAsEnumFromStringOrDefault_" data-uid="mailslurp.Model.InboxPreview.FunctionsAsEnumFromStringOrDefault*"></a>
+  <h4 id="mailslurp_Model_InboxPreview_FunctionsAsEnumFromStringOrDefault_System_String_" data-uid="mailslurp.Model.InboxPreview.FunctionsAsEnumFromStringOrDefault(System.String)">FunctionsAsEnumFromStringOrDefault(string)</h4>
+  <div class="markdown level1 summary"><p>Returns a <a class="xref" href="mailslurp.Model.InboxPreview.FunctionsAsEnum.html">InboxPreview.FunctionsAsEnum</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InboxPreview.FunctionsAsEnum? FunctionsAsEnumFromStringOrDefault(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxPreview.html">InboxPreview</a>.<a class="xref" href="mailslurp.Model.InboxPreview.FunctionsAsEnum.html">FunctionsAsEnum</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-268">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview_FunctionsAsEnumToJsonValue_" data-uid="mailslurp.Model.InboxPreview.FunctionsAsEnumToJsonValue*"></a>
+  <h4 id="mailslurp_Model_InboxPreview_FunctionsAsEnumToJsonValue_System_Nullable_mailslurp_Model_InboxPreview_FunctionsAsEnum__" data-uid="mailslurp.Model.InboxPreview.FunctionsAsEnumToJsonValue(System.Nullable{mailslurp.Model.InboxPreview.FunctionsAsEnum})">FunctionsAsEnumToJsonValue(FunctionsAsEnum?)</h4>
+  <div class="markdown level1 summary"><p>Converts the <a class="xref" href="mailslurp.Model.InboxPreview.FunctionsAsEnum.html">InboxPreview.FunctionsAsEnum</a> to the json value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string FunctionsAsEnumToJsonValue(InboxPreview.FunctionsAsEnum? value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxPreview.html">InboxPreview</a>.<a class="xref" href="mailslurp.Model.InboxPreview.FunctionsAsEnum.html">FunctionsAsEnum</a>?</td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notimplementedexception">NotImplementedException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-96">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview_InboxTypeEnumFromString_" data-uid="mailslurp.Model.InboxPreview.InboxTypeEnumFromString*"></a>
+  <h4 id="mailslurp_Model_InboxPreview_InboxTypeEnumFromString_System_String_" data-uid="mailslurp.Model.InboxPreview.InboxTypeEnumFromString(System.String)">InboxTypeEnumFromString(string)</h4>
+  <div class="markdown level1 summary"><p>Returns a <a class="xref" href="mailslurp.Model.InboxPreview.InboxTypeEnum.html">InboxPreview.InboxTypeEnum</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InboxPreview.InboxTypeEnum InboxTypeEnumFromString(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxPreview.html">InboxPreview</a>.<a class="xref" href="mailslurp.Model.InboxPreview.InboxTypeEnum.html">InboxTypeEnum</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notimplementedexception">NotImplementedException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-112">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview_InboxTypeEnumFromStringOrDefault_" data-uid="mailslurp.Model.InboxPreview.InboxTypeEnumFromStringOrDefault*"></a>
+  <h4 id="mailslurp_Model_InboxPreview_InboxTypeEnumFromStringOrDefault_System_String_" data-uid="mailslurp.Model.InboxPreview.InboxTypeEnumFromStringOrDefault(System.String)">InboxTypeEnumFromStringOrDefault(string)</h4>
+  <div class="markdown level1 summary"><p>Returns a <a class="xref" href="mailslurp.Model.InboxPreview.InboxTypeEnum.html">InboxPreview.InboxTypeEnum</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InboxPreview.InboxTypeEnum? InboxTypeEnumFromStringOrDefault(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxPreview.html">InboxPreview</a>.<a class="xref" href="mailslurp.Model.InboxPreview.InboxTypeEnum.html">InboxTypeEnum</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-129">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview_InboxTypeEnumToJsonValue_" data-uid="mailslurp.Model.InboxPreview.InboxTypeEnumToJsonValue*"></a>
+  <h4 id="mailslurp_Model_InboxPreview_InboxTypeEnumToJsonValue_System_Nullable_mailslurp_Model_InboxPreview_InboxTypeEnum__" data-uid="mailslurp.Model.InboxPreview.InboxTypeEnumToJsonValue(System.Nullable{mailslurp.Model.InboxPreview.InboxTypeEnum})">InboxTypeEnumToJsonValue(InboxTypeEnum?)</h4>
+  <div class="markdown level1 summary"><p>Converts the <a class="xref" href="mailslurp.Model.InboxPreview.InboxTypeEnum.html">InboxPreview.InboxTypeEnum</a> to the json value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string InboxTypeEnumToJsonValue(InboxPreview.InboxTypeEnum? value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxPreview.html">InboxPreview</a>.<a class="xref" href="mailslurp.Model.InboxPreview.InboxTypeEnum.html">InboxTypeEnum</a>?</td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notimplementedexception">NotImplementedException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-504">View Source</a>
+  </span>
+  <a id="mailslurp_Model_InboxPreview_ToString_" data-uid="mailslurp.Model.InboxPreview.ToString*"></a>
+  <h4 id="mailslurp_Model_InboxPreview_ToString" data-uid="mailslurp.Model.InboxPreview.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns the string presentation of the object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>String presentation of the object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.ivalidatableobject">IValidatableObject</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/InboxPreview.cs#lines-30" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

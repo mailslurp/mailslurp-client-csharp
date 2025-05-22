@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class FormControllerApi | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class FormControllerApi | MailSlurp ">
+    
+    <meta name="description" content="Represents a collection of functions to interact with the API endpoints">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Api.FormControllerApi">
+
+
+
+  <h1 id="mailslurp_Api_FormControllerApi" data-uid="mailslurp.Api.FormControllerApi" class="text-break">Class FormControllerApi</h1>
+  <div class="markdown level0 summary"><p>Represents a collection of functions to interact with the API endpoints</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">FormControllerApi</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="mailslurp.Api.IFormControllerApi.html">IFormControllerApi</a></div>
+    <div><a class="xref" href="mailslurp.Api.IApi.html">IApi</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="mailslurp.html">mailslurp</a>.<a class="xref" href="mailslurp.Api.html">Api</a></h6>
+  <h6><strong>Assembly</strong>: mailslurp.dll</h6>
+  <h5 id="mailslurp_Api_FormControllerApi_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class FormControllerApi : IFormControllerApi, IApi</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/FormControllerApi.cs#lines-145">View Source</a>
+  </span>
+  <a id="mailslurp_Api_FormControllerApi__ctor_" data-uid="mailslurp.Api.FormControllerApi.#ctor*"></a>
+  <h4 id="mailslurp_Api_FormControllerApi__ctor_Microsoft_Extensions_Logging_ILogger_mailslurp_Api_FormControllerApi__Microsoft_Extensions_Logging_ILoggerFactory_System_Net_Http_HttpClient_mailslurp_Client_JsonSerializerOptionsProvider_mailslurp_Api_FormControllerApiEvents_mailslurp_TokenProvider_mailslurp_Client_ApiKeyToken__" data-uid="mailslurp.Api.FormControllerApi.#ctor(Microsoft.Extensions.Logging.ILogger{mailslurp.Api.FormControllerApi},Microsoft.Extensions.Logging.ILoggerFactory,System.Net.Http.HttpClient,mailslurp.Client.JsonSerializerOptionsProvider,mailslurp.Api.FormControllerApiEvents,mailslurp.TokenProvider{mailslurp.Client.ApiKeyToken})">FormControllerApi(ILogger&lt;FormControllerApi&gt;, ILoggerFactory, HttpClient, JsonSerializerOptionsProvider, FormControllerApiEvents, TokenProvider&lt;ApiKeyToken&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Api.FormControllerApi.html">FormControllerApi</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FormControllerApi(ILogger&lt;FormControllerApi&gt; logger, ILoggerFactory loggerFactory, HttpClient httpClient, JsonSerializerOptionsProvider jsonSerializerOptionsProvider, FormControllerApiEvents formControllerApiEvents, TokenProvider&lt;ApiKeyToken&gt; apiKeyProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="mailslurp.Api.FormControllerApi.html">FormControllerApi</a>&gt;</td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.iloggerfactory">ILoggerFactory</a></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.JsonSerializerOptionsProvider.html">JsonSerializerOptionsProvider</a></td>
+        <td><span class="parametername">jsonSerializerOptionsProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Api.FormControllerApiEvents.html">FormControllerApiEvents</a></td>
+        <td><span class="parametername">formControllerApiEvents</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.TokenProvider-1.html">TokenProvider</a>&lt;<a class="xref" href="mailslurp.Client.ApiKeyToken.html">ApiKeyToken</a>&gt;</td>
+        <td><span class="parametername">apiKeyProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/FormControllerApi.cs#lines-139">View Source</a>
+  </span>
+  <a id="mailslurp_Api_FormControllerApi_ApiKeyProvider_" data-uid="mailslurp.Api.FormControllerApi.ApiKeyProvider*"></a>
+  <h4 id="mailslurp_Api_FormControllerApi_ApiKeyProvider" data-uid="mailslurp.Api.FormControllerApi.ApiKeyProvider">ApiKeyProvider</h4>
+  <div class="markdown level1 summary"><p>A token provider of type <a class="xref" href="mailslurp.Api.FormControllerApi.html#mailslurp_Api_FormControllerApi_ApiKeyProvider">ApiKeyProvider</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TokenProvider&lt;ApiKeyToken&gt; ApiKeyProvider { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.TokenProvider-1.html">TokenProvider</a>&lt;<a class="xref" href="mailslurp.Client.ApiKeyToken.html">ApiKeyToken</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/FormControllerApi.cs#lines-134">View Source</a>
+  </span>
+  <a id="mailslurp_Api_FormControllerApi_Events_" data-uid="mailslurp.Api.FormControllerApi.Events*"></a>
+  <h4 id="mailslurp_Api_FormControllerApi_Events" data-uid="mailslurp.Api.FormControllerApi.Events">Events</h4>
+  <div class="markdown level1 summary"><p>The class containing the events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FormControllerApiEvents Events { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Api.FormControllerApiEvents.html">FormControllerApiEvents</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/FormControllerApi.cs#lines-129">View Source</a>
+  </span>
+  <a id="mailslurp_Api_FormControllerApi_HttpClient_" data-uid="mailslurp.Api.FormControllerApi.HttpClient*"></a>
+  <h4 id="mailslurp_Api_FormControllerApi_HttpClient" data-uid="mailslurp.Api.FormControllerApi.HttpClient">HttpClient</h4>
+  <div class="markdown level1 summary"><p>The HttpClient</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpClient HttpClient { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/FormControllerApi.cs#lines-124">View Source</a>
+  </span>
+  <a id="mailslurp_Api_FormControllerApi_Logger_" data-uid="mailslurp.Api.FormControllerApi.Logger*"></a>
+  <h4 id="mailslurp_Api_FormControllerApi_Logger" data-uid="mailslurp.Api.FormControllerApi.Logger">Logger</h4>
+  <div class="markdown level1 summary"><p>The logger</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILogger&lt;FormControllerApi&gt; Logger { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="mailslurp.Api.FormControllerApi.html">FormControllerApi</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/FormControllerApi.cs#lines-119">View Source</a>
+  </span>
+  <a id="mailslurp_Api_FormControllerApi_LoggerFactory_" data-uid="mailslurp.Api.FormControllerApi.LoggerFactory*"></a>
+  <h4 id="mailslurp_Api_FormControllerApi_LoggerFactory" data-uid="mailslurp.Api.FormControllerApi.LoggerFactory">LoggerFactory</h4>
+  <div class="markdown level1 summary"><p>The logger factory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILoggerFactory LoggerFactory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.iloggerfactory">ILoggerFactory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/FormControllerApi.cs#lines-300">View Source</a>
+  </span>
+  <a id="mailslurp_Api_FormControllerApi_SubmitFormAsync_" data-uid="mailslurp.Api.FormControllerApi.SubmitFormAsync*"></a>
+  <h4 id="mailslurp_Api_FormControllerApi_SubmitFormAsync_mailslurp_Client_Option_System_String__mailslurp_Client_Option_System_String__mailslurp_Client_Option_System_String__mailslurp_Client_Option_System_String__mailslurp_Client_Option_System_String__mailslurp_Client_Option_System_String__mailslurp_Client_Option_System_String__System_Threading_CancellationToken_" data-uid="mailslurp.Api.FormControllerApi.SubmitFormAsync(mailslurp.Client.Option{System.String},mailslurp.Client.Option{System.String},mailslurp.Client.Option{System.String},mailslurp.Client.Option{System.String},mailslurp.Client.Option{System.String},mailslurp.Client.Option{System.String},mailslurp.Client.Option{System.String},System.Threading.CancellationToken)">SubmitFormAsync(Option&lt;string&gt;, Option&lt;string&gt;, Option&lt;string&gt;, Option&lt;string&gt;, Option&lt;string&gt;, Option&lt;string&gt;, Option&lt;string&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Submit a form to be parsed and sent as an email to an address determined by the form fields This endpoint allows you to submit HTML forms and receive the field values and files via email.   #### Parameters The endpoint looks for special meta parameters in the form fields OR in the URL request parameters. The meta parameters can be used to specify the behaviour of the email.   You must provide at-least a <code>_to</code> email address to tell the endpoint where the form should be emailed. These can be submitted as hidden HTML input fields with the corresponding <code>name</code> attributes or as URL query parameters such as <code>?_to=test@example.com</code>  The endpoint takes all other form fields that are named and includes them in the message body of the email. Files are sent as attachments.  #### Submitting This endpoint accepts form submission via POST method. It accepts <code>application/x-www-form-urlencoded</code>, and <code>multipart/form-data</code> content-types.  #### HTML Example <code>html &lt;form    action=\&quot;https://csharp.api.mailslurp.com/forms\&quot;   method=\&quot;post\&quot; &gt;   &lt;input name=\&quot;_to\&quot; type=\&quot;hidden\&quot; value=\&quot;test@example.com\&quot;/&gt;   &lt;textarea name=\&quot;feedback\&quot;&gt;&lt;/textarea&gt;   &lt;button type=\&quot;submit\&quot;&gt;Submit&lt;/button&gt; &lt;/form&gt; </code>  #### URL Example <code>html &lt;form    action=\&quot;https://csharp.api.mailslurp.com/forms?_to=test@example.com\&quot;   method=\&quot;post\&quot; &gt;   &lt;textarea name=\&quot;feedback\&quot;&gt;&lt;/textarea&gt;   &lt;button type=\&quot;submit\&quot;&gt;Submit&lt;/button&gt; &lt;/form&gt; </code>    The email address is specified by a <code>_to</code> field OR is extracted from an email alias specified by a <code>_toAlias</code> field (see the alias controller for more information).  Endpoint accepts .  You can specify a content type in HTML forms using the <code>enctype</code> attribute, for instance: <code>&lt;form enctype=\&quot;multipart/form-data\&quot;&gt;</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ISubmitFormApiResponse&gt; SubmitFormAsync(Option&lt;string&gt; to = default, Option&lt;string&gt; subject = default, Option&lt;string&gt; redirectTo = default, Option&lt;string&gt; emailAddress = default, Option&lt;string&gt; successMessage = default, Option&lt;string&gt; spamCheck = default, Option&lt;string&gt; otherParameters = default, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">to</span></td>
+        <td><p>The email address that submitted form should be sent to. (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">subject</span></td>
+        <td><p>Optional subject of the email that will be sent. (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">redirectTo</span></td>
+        <td><p>Optional URL to redirect form submitter to after submission. If not present user will see a success message. (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">emailAddress</span></td>
+        <td><p>Email address of the submitting user. Include this if you wish to record the submitters email address and reply to it later. (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">successMessage</span></td>
+        <td><p>Optional success message to display if no _redirectTo present. (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">spamCheck</span></td>
+        <td><p>Optional but recommended field that catches spammers out. Include as a hidden form field but LEAVE EMPTY. Spam-bots will usually fill every field. If the _spamCheck field is filled the form submission will be ignored. (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">otherParameters</span></td>
+        <td><p>All other parameters or fields will be accepted and attached to the sent email. This includes files and any HTML form field with a name. These fields will become the body of the email that is sent. (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Api.ISubmitFormApiResponse.html">ISubmitFormApiResponse</a>&gt;</td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&lt;<a class="xref" href="mailslurp.Api.ISubmitFormApiResponse.html">ISubmitFormApiResponse</a>&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/FormControllerApi.cs#lines-275">View Source</a>
+  </span>
+  <a id="mailslurp_Api_FormControllerApi_SubmitFormOrDefaultAsync_" data-uid="mailslurp.Api.FormControllerApi.SubmitFormOrDefaultAsync*"></a>
+  <h4 id="mailslurp_Api_FormControllerApi_SubmitFormOrDefaultAsync_mailslurp_Client_Option_System_String__mailslurp_Client_Option_System_String__mailslurp_Client_Option_System_String__mailslurp_Client_Option_System_String__mailslurp_Client_Option_System_String__mailslurp_Client_Option_System_String__mailslurp_Client_Option_System_String__System_Threading_CancellationToken_" data-uid="mailslurp.Api.FormControllerApi.SubmitFormOrDefaultAsync(mailslurp.Client.Option{System.String},mailslurp.Client.Option{System.String},mailslurp.Client.Option{System.String},mailslurp.Client.Option{System.String},mailslurp.Client.Option{System.String},mailslurp.Client.Option{System.String},mailslurp.Client.Option{System.String},System.Threading.CancellationToken)">SubmitFormOrDefaultAsync(Option&lt;string&gt;, Option&lt;string&gt;, Option&lt;string&gt;, Option&lt;string&gt;, Option&lt;string&gt;, Option&lt;string&gt;, Option&lt;string&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Submit a form to be parsed and sent as an email to an address determined by the form fields This endpoint allows you to submit HTML forms and receive the field values and files via email.   #### Parameters The endpoint looks for special meta parameters in the form fields OR in the URL request parameters. The meta parameters can be used to specify the behaviour of the email.   You must provide at-least a <code>_to</code> email address to tell the endpoint where the form should be emailed. These can be submitted as hidden HTML input fields with the corresponding <code>name</code> attributes or as URL query parameters such as <code>?_to=test@example.com</code>  The endpoint takes all other form fields that are named and includes them in the message body of the email. Files are sent as attachments.  #### Submitting This endpoint accepts form submission via POST method. It accepts <code>application/x-www-form-urlencoded</code>, and <code>multipart/form-data</code> content-types.  #### HTML Example <code>html &lt;form    action=\&quot;https://csharp.api.mailslurp.com/forms\&quot;   method=\&quot;post\&quot; &gt;   &lt;input name=\&quot;_to\&quot; type=\&quot;hidden\&quot; value=\&quot;test@example.com\&quot;/&gt;   &lt;textarea name=\&quot;feedback\&quot;&gt;&lt;/textarea&gt;   &lt;button type=\&quot;submit\&quot;&gt;Submit&lt;/button&gt; &lt;/form&gt; </code>  #### URL Example <code>html &lt;form    action=\&quot;https://csharp.api.mailslurp.com/forms?_to=test@example.com\&quot;   method=\&quot;post\&quot; &gt;   &lt;textarea name=\&quot;feedback\&quot;&gt;&lt;/textarea&gt;   &lt;button type=\&quot;submit\&quot;&gt;Submit&lt;/button&gt; &lt;/form&gt; </code>    The email address is specified by a <code>_to</code> field OR is extracted from an email alias specified by a <code>_toAlias</code> field (see the alias controller for more information).  Endpoint accepts .  You can specify a content type in HTML forms using the <code>enctype</code> attribute, for instance: <code>&lt;form enctype=\&quot;multipart/form-data\&quot;&gt;</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ISubmitFormApiResponse&gt; SubmitFormOrDefaultAsync(Option&lt;string&gt; to = default, Option&lt;string&gt; subject = default, Option&lt;string&gt; redirectTo = default, Option&lt;string&gt; emailAddress = default, Option&lt;string&gt; successMessage = default, Option&lt;string&gt; spamCheck = default, Option&lt;string&gt; otherParameters = default, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">to</span></td>
+        <td><p>The email address that submitted form should be sent to. (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">subject</span></td>
+        <td><p>Optional subject of the email that will be sent. (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">redirectTo</span></td>
+        <td><p>Optional URL to redirect form submitter to after submission. If not present user will see a success message. (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">emailAddress</span></td>
+        <td><p>Email address of the submitting user. Include this if you wish to record the submitters email address and reply to it later. (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">successMessage</span></td>
+        <td><p>Optional success message to display if no _redirectTo present. (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">spamCheck</span></td>
+        <td><p>Optional but recommended field that catches spammers out. Include as a hidden form field but LEAVE EMPTY. Spam-bots will usually fill every field. If the _spamCheck field is filled the form submission will be ignored. (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">otherParameters</span></td>
+        <td><p>All other parameters or fields will be accepted and attached to the sent email. This includes files and any HTML form field with a name. These fields will become the body of the email that is sent. (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Api.ISubmitFormApiResponse.html">ISubmitFormApiResponse</a>&gt;</td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&lt;<a class="xref" href="mailslurp.Api.ISubmitFormApiResponse.html">ISubmitFormApiResponse</a>&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="mailslurp.Api.IFormControllerApi.html">IFormControllerApi</a>
+  </div>
+  <div>
+      <a class="xref" href="mailslurp.Api.IApi.html">IApi</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/FormControllerApi.cs#lines-112" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

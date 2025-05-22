@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IImapControllerApi | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IImapControllerApi | MailSlurp ">
+    
+    <meta name="description" content="Represents a collection of functions to interact with the API endpoints This class is registered as transient.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Api.IImapControllerApi">
+
+
+
+  <h1 id="mailslurp_Api_IImapControllerApi" data-uid="mailslurp.Api.IImapControllerApi" class="text-break">Interface IImapControllerApi</h1>
+  <div class="markdown level0 summary"><p>Represents a collection of functions to interact with the API endpoints
+This class is registered as transient.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="mailslurp.Api.IApi.html#mailslurp_Api_IApi_HttpClient">IApi.HttpClient</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="mailslurp.html">mailslurp</a>.<a class="xref" href="mailslurp.Api.html">Api</a></h6>
+  <h6><strong>Assembly</strong>: mailslurp.dll</h6>
+  <h5 id="mailslurp_Api_IImapControllerApi_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IImapControllerApi : IApi</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-34">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApi_Events_" data-uid="mailslurp.Api.IImapControllerApi.Events*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApi_Events" data-uid="mailslurp.Api.IImapControllerApi.Events">Events</h4>
+  <div class="markdown level1 summary"><p>The class containing the events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ImapControllerApiEvents Events { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Api.ImapControllerApiEvents.html">ImapControllerApiEvents</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-47">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApi_ImapServerFetchAsync_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerFetchAsync*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApi_ImapServerFetchAsync_System_Int64_mailslurp_Client_Option_System_Guid__System_Threading_CancellationToken_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerFetchAsync(System.Int64,mailslurp.Client.Option{System.Guid},System.Threading.CancellationToken)">ImapServerFetchAsync(long, Option&lt;Guid&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Fetch message in an inbox</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IImapServerFetchApiResponse&gt; ImapServerFetchAsync(long seqNum, Option&lt;Guid&gt; inboxId = default, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">seqNum</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox ID to search (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerFetchApiResponse.html">IImapServerFetchApiResponse</a>&gt;</td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerFetchApiResponse.html">IImapServerFetchApiResponse</a>&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-59">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApi_ImapServerFetchOrDefaultAsync_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerFetchOrDefaultAsync*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApi_ImapServerFetchOrDefaultAsync_System_Int64_mailslurp_Client_Option_System_Guid__System_Threading_CancellationToken_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerFetchOrDefaultAsync(System.Int64,mailslurp.Client.Option{System.Guid},System.Threading.CancellationToken)">ImapServerFetchOrDefaultAsync(long, Option&lt;Guid&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Fetch message in an inbox</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IImapServerFetchApiResponse&gt; ImapServerFetchOrDefaultAsync(long seqNum, Option&lt;Guid&gt; inboxId = default, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">seqNum</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox ID to search (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerFetchApiResponse.html">IImapServerFetchApiResponse</a>&gt;</td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerFetchApiResponse.html">IImapServerFetchApiResponse</a>&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-72">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApi_ImapServerGetAsync_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerGetAsync*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApi_ImapServerGetAsync_System_Guid_mailslurp_Client_Option_System_Guid__System_Threading_CancellationToken_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerGetAsync(System.Guid,mailslurp.Client.Option{System.Guid},System.Threading.CancellationToken)">ImapServerGetAsync(Guid, Option&lt;Guid&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get a message by email ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IImapServerGetApiResponse&gt; ImapServerGetAsync(Guid emailId, Option&lt;Guid&gt; inboxId = default, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">emailId</span></td>
+        <td><p>Email ID to get</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox ID to search (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerGetApiResponse.html">IImapServerGetApiResponse</a>&gt;</td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerGetApiResponse.html">IImapServerGetApiResponse</a>&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-84">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApi_ImapServerGetOrDefaultAsync_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerGetOrDefaultAsync*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApi_ImapServerGetOrDefaultAsync_System_Guid_mailslurp_Client_Option_System_Guid__System_Threading_CancellationToken_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerGetOrDefaultAsync(System.Guid,mailslurp.Client.Option{System.Guid},System.Threading.CancellationToken)">ImapServerGetOrDefaultAsync(Guid, Option&lt;Guid&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get a message by email ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IImapServerGetApiResponse&gt; ImapServerGetOrDefaultAsync(Guid emailId, Option&lt;Guid&gt; inboxId = default, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">emailId</span></td>
+        <td><p>Email ID to get</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox ID to search (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerGetApiResponse.html">IImapServerGetApiResponse</a>&gt;</td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerGetApiResponse.html">IImapServerGetApiResponse</a>&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-97">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApi_ImapServerListAsync_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerListAsync*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApi_ImapServerListAsync_mailslurp_Model_ImapServerListOptions_mailslurp_Client_Option_System_Guid__System_Threading_CancellationToken_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerListAsync(mailslurp.Model.ImapServerListOptions,mailslurp.Client.Option{System.Guid},System.Threading.CancellationToken)">ImapServerListAsync(ImapServerListOptions, Option&lt;Guid&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>List messages in an inbox</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IImapServerListApiResponse&gt; ImapServerListAsync(ImapServerListOptions imapServerListOptions, Option&lt;Guid&gt; inboxId = default, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ImapServerListOptions.html">ImapServerListOptions</a></td>
+        <td><span class="parametername">imapServerListOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox ID to list (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerListApiResponse.html">IImapServerListApiResponse</a>&gt;</td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerListApiResponse.html">IImapServerListApiResponse</a>&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-109">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApi_ImapServerListOrDefaultAsync_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerListOrDefaultAsync*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApi_ImapServerListOrDefaultAsync_mailslurp_Model_ImapServerListOptions_mailslurp_Client_Option_System_Guid__System_Threading_CancellationToken_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerListOrDefaultAsync(mailslurp.Model.ImapServerListOptions,mailslurp.Client.Option{System.Guid},System.Threading.CancellationToken)">ImapServerListOrDefaultAsync(ImapServerListOptions, Option&lt;Guid&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>List messages in an inbox</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IImapServerListApiResponse&gt; ImapServerListOrDefaultAsync(ImapServerListOptions imapServerListOptions, Option&lt;Guid&gt; inboxId = default, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ImapServerListOptions.html">ImapServerListOptions</a></td>
+        <td><span class="parametername">imapServerListOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox ID to list (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerListApiResponse.html">IImapServerListApiResponse</a>&gt;</td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerListApiResponse.html">IImapServerListApiResponse</a>&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-121">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApi_ImapServerMailboxAsync_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerMailboxAsync*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApi_ImapServerMailboxAsync_System_String_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerMailboxAsync(System.String,System.Threading.CancellationToken)">ImapServerMailboxAsync(string, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create a new mailbox if possible</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IImapServerMailboxApiResponse&gt; ImapServerMailboxAsync(string name, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Inbox email address to create</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerMailboxApiResponse.html">IImapServerMailboxApiResponse</a>&gt;</td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerMailboxApiResponse.html">IImapServerMailboxApiResponse</a>&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-132">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApi_ImapServerMailboxOrDefaultAsync_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerMailboxOrDefaultAsync*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApi_ImapServerMailboxOrDefaultAsync_System_String_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerMailboxOrDefaultAsync(System.String,System.Threading.CancellationToken)">ImapServerMailboxOrDefaultAsync(string, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create a new mailbox if possible</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IImapServerMailboxApiResponse&gt; ImapServerMailboxOrDefaultAsync(string name, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Inbox email address to create</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerMailboxApiResponse.html">IImapServerMailboxApiResponse</a>&gt;</td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerMailboxApiResponse.html">IImapServerMailboxApiResponse</a>&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-145">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApi_ImapServerSearchAsync_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerSearchAsync*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApi_ImapServerSearchAsync_mailslurp_Model_ImapServerSearchOptions_mailslurp_Client_Option_System_Guid__System_Threading_CancellationToken_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerSearchAsync(mailslurp.Model.ImapServerSearchOptions,mailslurp.Client.Option{System.Guid},System.Threading.CancellationToken)">ImapServerSearchAsync(ImapServerSearchOptions, Option&lt;Guid&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Search messages in an inbox</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IImapServerSearchApiResponse&gt; ImapServerSearchAsync(ImapServerSearchOptions imapServerSearchOptions, Option&lt;Guid&gt; inboxId = default, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ImapServerSearchOptions.html">ImapServerSearchOptions</a></td>
+        <td><span class="parametername">imapServerSearchOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox ID to search (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerSearchApiResponse.html">IImapServerSearchApiResponse</a>&gt;</td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerSearchApiResponse.html">IImapServerSearchApiResponse</a>&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-157">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApi_ImapServerSearchOrDefaultAsync_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerSearchOrDefaultAsync*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApi_ImapServerSearchOrDefaultAsync_mailslurp_Model_ImapServerSearchOptions_mailslurp_Client_Option_System_Guid__System_Threading_CancellationToken_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerSearchOrDefaultAsync(mailslurp.Model.ImapServerSearchOptions,mailslurp.Client.Option{System.Guid},System.Threading.CancellationToken)">ImapServerSearchOrDefaultAsync(ImapServerSearchOptions, Option&lt;Guid&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Search messages in an inbox</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IImapServerSearchApiResponse&gt; ImapServerSearchOrDefaultAsync(ImapServerSearchOptions imapServerSearchOptions, Option&lt;Guid&gt; inboxId = default, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ImapServerSearchOptions.html">ImapServerSearchOptions</a></td>
+        <td><span class="parametername">imapServerSearchOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox ID to search (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerSearchApiResponse.html">IImapServerSearchApiResponse</a>&gt;</td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerSearchApiResponse.html">IImapServerSearchApiResponse</a>&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-170">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApi_ImapServerStatusAsync_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerStatusAsync*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApi_ImapServerStatusAsync_mailslurp_Model_ImapServerStatusOptions_mailslurp_Client_Option_System_Guid__System_Threading_CancellationToken_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerStatusAsync(mailslurp.Model.ImapServerStatusOptions,mailslurp.Client.Option{System.Guid},System.Threading.CancellationToken)">ImapServerStatusAsync(ImapServerStatusOptions, Option&lt;Guid&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get status for mailbox</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IImapServerStatusApiResponse&gt; ImapServerStatusAsync(ImapServerStatusOptions imapServerStatusOptions, Option&lt;Guid&gt; inboxId = default, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ImapServerStatusOptions.html">ImapServerStatusOptions</a></td>
+        <td><span class="parametername">imapServerStatusOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox ID to list (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerStatusApiResponse.html">IImapServerStatusApiResponse</a>&gt;</td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerStatusApiResponse.html">IImapServerStatusApiResponse</a>&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-182">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApi_ImapServerStatusOrDefaultAsync_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerStatusOrDefaultAsync*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApi_ImapServerStatusOrDefaultAsync_mailslurp_Model_ImapServerStatusOptions_mailslurp_Client_Option_System_Guid__System_Threading_CancellationToken_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerStatusOrDefaultAsync(mailslurp.Model.ImapServerStatusOptions,mailslurp.Client.Option{System.Guid},System.Threading.CancellationToken)">ImapServerStatusOrDefaultAsync(ImapServerStatusOptions, Option&lt;Guid&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get status for mailbox</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IImapServerStatusApiResponse&gt; ImapServerStatusOrDefaultAsync(ImapServerStatusOptions imapServerStatusOptions, Option&lt;Guid&gt; inboxId = default, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ImapServerStatusOptions.html">ImapServerStatusOptions</a></td>
+        <td><span class="parametername">imapServerStatusOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox ID to list (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerStatusApiResponse.html">IImapServerStatusApiResponse</a>&gt;</td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerStatusApiResponse.html">IImapServerStatusApiResponse</a>&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-195">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApi_ImapServerUpdateFlagsAsync_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerUpdateFlagsAsync*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApi_ImapServerUpdateFlagsAsync_mailslurp_Model_ImapUpdateFlagsOptions_mailslurp_Client_Option_System_Guid__System_Threading_CancellationToken_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerUpdateFlagsAsync(mailslurp.Model.ImapUpdateFlagsOptions,mailslurp.Client.Option{System.Guid},System.Threading.CancellationToken)">ImapServerUpdateFlagsAsync(ImapUpdateFlagsOptions, Option&lt;Guid&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IImapServerUpdateFlagsApiResponse&gt; ImapServerUpdateFlagsAsync(ImapUpdateFlagsOptions imapUpdateFlagsOptions, Option&lt;Guid&gt; inboxId = default, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ImapUpdateFlagsOptions.html">ImapUpdateFlagsOptions</a></td>
+        <td><span class="parametername">imapUpdateFlagsOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerUpdateFlagsApiResponse.html">IImapServerUpdateFlagsApiResponse</a>&gt;</td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerUpdateFlagsApiResponse.html">IImapServerUpdateFlagsApiResponse</a>&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IImapControllerApi_ImapServerUpdateFlagsAsync_mailslurp_Model_ImapUpdateFlagsOptions_mailslurp_Client_Option_System_Guid__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Update message flags</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-207">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IImapControllerApi_ImapServerUpdateFlagsOrDefaultAsync_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerUpdateFlagsOrDefaultAsync*"></a>
+  <h4 id="mailslurp_Api_IImapControllerApi_ImapServerUpdateFlagsOrDefaultAsync_mailslurp_Model_ImapUpdateFlagsOptions_mailslurp_Client_Option_System_Guid__System_Threading_CancellationToken_" data-uid="mailslurp.Api.IImapControllerApi.ImapServerUpdateFlagsOrDefaultAsync(mailslurp.Model.ImapUpdateFlagsOptions,mailslurp.Client.Option{System.Guid},System.Threading.CancellationToken)">ImapServerUpdateFlagsOrDefaultAsync(ImapUpdateFlagsOptions, Option&lt;Guid&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IImapServerUpdateFlagsApiResponse&gt; ImapServerUpdateFlagsOrDefaultAsync(ImapUpdateFlagsOptions imapUpdateFlagsOptions, Option&lt;Guid&gt; inboxId = default, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ImapUpdateFlagsOptions.html">ImapUpdateFlagsOptions</a></td>
+        <td><span class="parametername">imapUpdateFlagsOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerUpdateFlagsApiResponse.html">IImapServerUpdateFlagsApiResponse</a>&gt;</td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&lt;<a class="xref" href="mailslurp.Api.IImapServerUpdateFlagsApiResponse.html">IImapServerUpdateFlagsApiResponse</a>&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IImapControllerApi_ImapServerUpdateFlagsOrDefaultAsync_mailslurp_Model_ImapUpdateFlagsOptions_mailslurp_Client_Option_System_Guid__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Update message flags</p>
+</div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/ImapControllerApi.cs#lines-29" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

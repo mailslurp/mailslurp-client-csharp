@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class WebhookNewContactPayload | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class WebhookNewContactPayload | MailSlurp ">
+    
+    <meta name="description" content="NEW_CONTACT webhook payload. Sent to your webhook url endpoint via HTTP POST when an email is received by the inbox that your webhook is attached to that contains a recipient that has not been saved as a contact.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Model.WebhookNewContactPayload">
+
+
+
+  <h1 id="mailslurp_Model_WebhookNewContactPayload" data-uid="mailslurp.Model.WebhookNewContactPayload" class="text-break">Class WebhookNewContactPayload</h1>
+  <div class="markdown level0 summary"><p>NEW_CONTACT webhook payload. Sent to your webhook url endpoint via HTTP POST when an email is received by the inbox that your webhook is attached to that contains a recipient that has not been saved as a contact.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">WebhookNewContactPayload</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.ivalidatableobject">IValidatableObject</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="mailslurp.html">mailslurp</a>.<a class="xref" href="mailslurp.Model.html">Model</a></h6>
+  <h6><strong>Assembly</strong>: mailslurp.dll</h6>
+  <h5 id="mailslurp_Model_WebhookNewContactPayload_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class WebhookNewContactPayload : IValidatableObject</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookNewContactPayload.cs#lines-50">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookNewContactPayload__ctor_" data-uid="mailslurp.Model.WebhookNewContactPayload.#ctor*"></a>
+  <h4 id="mailslurp_Model_WebhookNewContactPayload__ctor_System_String_System_Guid_mailslurp_Model_WebhookNewContactPayload_EventNameEnum_System_Guid_System_Collections_Generic_List_System_String__System_Collections_Generic_List_System_String__System_Boolean_System_DateTime_mailslurp_Client_Option_System_String__mailslurp_Client_Option_System_Nullable_System_Guid___mailslurp_Client_Option_System_String__mailslurp_Client_Option_System_String__mailslurp_Client_Option_System_String__mailslurp_Client_Option_System_String__mailslurp_Client_Option_System_Object__" data-uid="mailslurp.Model.WebhookNewContactPayload.#ctor(System.String,System.Guid,mailslurp.Model.WebhookNewContactPayload.EventNameEnum,System.Guid,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},System.Boolean,System.DateTime,mailslurp.Client.Option{System.String},mailslurp.Client.Option{System.Nullable{System.Guid}},mailslurp.Client.Option{System.String},mailslurp.Client.Option{System.String},mailslurp.Client.Option{System.String},mailslurp.Client.Option{System.String},mailslurp.Client.Option{System.Object})">WebhookNewContactPayload(string, Guid, EventNameEnum, Guid, List&lt;string&gt;, List&lt;string&gt;, bool, DateTime, Option&lt;string&gt;, Option&lt;Guid?&gt;, Option&lt;string&gt;, Option&lt;string&gt;, Option&lt;string&gt;, Option&lt;string&gt;, Option&lt;object&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Model.WebhookNewContactPayload.html">WebhookNewContactPayload</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonConstructor]
+public WebhookNewContactPayload(string messageId, Guid webhookId, WebhookNewContactPayload.EventNameEnum eventName, Guid contactId, List&lt;string&gt; emailAddresses, List&lt;string&gt; tags, bool optOut, DateTime createdAt, Option&lt;string&gt; webhookName = default, Option&lt;Guid?&gt; groupId = default, Option&lt;string&gt; firstName = default, Option&lt;string&gt; lastName = default, Option&lt;string&gt; company = default, Option&lt;string&gt; primaryEmailAddress = default, Option&lt;object&gt; metaData = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">messageId</span></td>
+        <td><p>Idempotent message ID. Store this ID locally or in a database to prevent message duplication.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">webhookId</span></td>
+        <td><p>ID of webhook entity being triggered</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.WebhookNewContactPayload.html">WebhookNewContactPayload</a>.<a class="xref" href="mailslurp.Model.WebhookNewContactPayload.EventNameEnum.html">EventNameEnum</a></td>
+        <td><span class="parametername">eventName</span></td>
+        <td><p>Name of the event type webhook is being triggered for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">contactId</span></td>
+        <td><p>Contact ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">emailAddresses</span></td>
+        <td><p>Email addresses for contact</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">tags</span></td>
+        <td><p>Tags for contact</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">optOut</span></td>
+        <td><p>Has contact opted out of emails</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td><span class="parametername">createdAt</span></td>
+        <td><p>Date time of event creation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">webhookName</span></td>
+        <td><p>Name of the webhook being triggered</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?&gt;</td>
+        <td><span class="parametername">groupId</span></td>
+        <td><p>Contact group ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">firstName</span></td>
+        <td><p>Contact first name</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">lastName</span></td>
+        <td><p>Contact last name</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">company</span></td>
+        <td><p>Contact company name</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">primaryEmailAddress</span></td>
+        <td><p>Primary email address for contact</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Option-1.html">Option</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</td>
+        <td><span class="parametername">metaData</span></td>
+        <td><p>metaData</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookNewContactPayload.cs#lines-389">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookNewContactPayload_Company_" data-uid="mailslurp.Model.WebhookNewContactPayload.Company*"></a>
+  <h4 id="mailslurp_Model_WebhookNewContactPayload_Company" data-uid="mailslurp.Model.WebhookNewContactPayload.Company">Company</h4>
+  <div class="markdown level1 summary"><p>Contact company name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;company&quot;)]
+public string Company { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Contact company name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookNewContactPayload.cs#lines-291">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookNewContactPayload_ContactId_" data-uid="mailslurp.Model.WebhookNewContactPayload.ContactId*"></a>
+  <h4 id="mailslurp_Model_WebhookNewContactPayload_ContactId" data-uid="mailslurp.Model.WebhookNewContactPayload.ContactId">ContactId</h4>
+  <div class="markdown level1 summary"><p>Contact ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;contactId&quot;)]
+public Guid ContactId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><p>Contact ID</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookNewContactPayload.cs#lines-319">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookNewContactPayload_CreatedAt_" data-uid="mailslurp.Model.WebhookNewContactPayload.CreatedAt*"></a>
+  <h4 id="mailslurp_Model_WebhookNewContactPayload_CreatedAt" data-uid="mailslurp.Model.WebhookNewContactPayload.CreatedAt">CreatedAt</h4>
+  <div class="markdown level1 summary"><p>Date time of event creation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;createdAt&quot;)]
+public DateTime CreatedAt { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td><p>Date time of event creation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookNewContactPayload.cs#lines-298">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookNewContactPayload_EmailAddresses_" data-uid="mailslurp.Model.WebhookNewContactPayload.EmailAddresses*"></a>
+  <h4 id="mailslurp_Model_WebhookNewContactPayload_EmailAddresses" data-uid="mailslurp.Model.WebhookNewContactPayload.EmailAddresses">EmailAddresses</h4>
+  <div class="markdown level1 summary"><p>Email addresses for contact</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;emailAddresses&quot;)]
+public List&lt;string&gt; EmailAddresses { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><p>Email addresses for contact</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookNewContactPayload.cs#lines-270">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookNewContactPayload_EventName_" data-uid="mailslurp.Model.WebhookNewContactPayload.EventName*"></a>
+  <h4 id="mailslurp_Model_WebhookNewContactPayload_EventName" data-uid="mailslurp.Model.WebhookNewContactPayload.EventName">EventName</h4>
+  <div class="markdown level1 summary"><p>Name of the event type webhook is being triggered for.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;eventName&quot;)]
+public WebhookNewContactPayload.EventNameEnum EventName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.WebhookNewContactPayload.html">WebhookNewContactPayload</a>.<a class="xref" href="mailslurp.Model.WebhookNewContactPayload.EventNameEnum.html">EventNameEnum</a></td>
+        <td><p>Name of the event type webhook is being triggered for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookNewContactPayload.cs#lines-361">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookNewContactPayload_FirstName_" data-uid="mailslurp.Model.WebhookNewContactPayload.FirstName*"></a>
+  <h4 id="mailslurp_Model_WebhookNewContactPayload_FirstName" data-uid="mailslurp.Model.WebhookNewContactPayload.FirstName">FirstName</h4>
+  <div class="markdown level1 summary"><p>Contact first name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;firstName&quot;)]
+public string FirstName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Contact first name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookNewContactPayload.cs#lines-347">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookNewContactPayload_GroupId_" data-uid="mailslurp.Model.WebhookNewContactPayload.GroupId*"></a>
+  <h4 id="mailslurp_Model_WebhookNewContactPayload_GroupId" data-uid="mailslurp.Model.WebhookNewContactPayload.GroupId">GroupId</h4>
+  <div class="markdown level1 summary"><p>Contact group ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;groupId&quot;)]
+public Guid? GroupId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><p>Contact group ID</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookNewContactPayload.cs#lines-375">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookNewContactPayload_LastName_" data-uid="mailslurp.Model.WebhookNewContactPayload.LastName*"></a>
+  <h4 id="mailslurp_Model_WebhookNewContactPayload_LastName" data-uid="mailslurp.Model.WebhookNewContactPayload.LastName">LastName</h4>
+  <div class="markdown level1 summary"><p>Contact last name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;lastName&quot;)]
+public string LastName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Contact last name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookNewContactPayload.cs#lines-277">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookNewContactPayload_MessageId_" data-uid="mailslurp.Model.WebhookNewContactPayload.MessageId*"></a>
+  <h4 id="mailslurp_Model_WebhookNewContactPayload_MessageId" data-uid="mailslurp.Model.WebhookNewContactPayload.MessageId">MessageId</h4>
+  <div class="markdown level1 summary"><p>Idempotent message ID. Store this ID locally or in a database to prevent message duplication.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;messageId&quot;)]
+public string MessageId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Idempotent message ID. Store this ID locally or in a database to prevent message duplication.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookNewContactPayload.cs#lines-416">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookNewContactPayload_MetaData_" data-uid="mailslurp.Model.WebhookNewContactPayload.MetaData*"></a>
+  <h4 id="mailslurp_Model_WebhookNewContactPayload_MetaData" data-uid="mailslurp.Model.WebhookNewContactPayload.MetaData">MetaData</h4>
+  <div class="markdown level1 summary"><p>Gets or Sets MetaData</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;metaData&quot;)]
+public object MetaData { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookNewContactPayload.cs#lines-312">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookNewContactPayload_OptOut_" data-uid="mailslurp.Model.WebhookNewContactPayload.OptOut*"></a>
+  <h4 id="mailslurp_Model_WebhookNewContactPayload_OptOut" data-uid="mailslurp.Model.WebhookNewContactPayload.OptOut">OptOut</h4>
+  <div class="markdown level1 summary"><p>Has contact opted out of emails</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;optOut&quot;)]
+public bool OptOut { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>Has contact opted out of emails</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookNewContactPayload.cs#lines-403">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookNewContactPayload_PrimaryEmailAddress_" data-uid="mailslurp.Model.WebhookNewContactPayload.PrimaryEmailAddress*"></a>
+  <h4 id="mailslurp_Model_WebhookNewContactPayload_PrimaryEmailAddress" data-uid="mailslurp.Model.WebhookNewContactPayload.PrimaryEmailAddress">PrimaryEmailAddress</h4>
+  <div class="markdown level1 summary"><p>Primary email address for contact</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;primaryEmailAddress&quot;)]
+public string PrimaryEmailAddress { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Primary email address for contact</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookNewContactPayload.cs#lines-305">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookNewContactPayload_Tags_" data-uid="mailslurp.Model.WebhookNewContactPayload.Tags*"></a>
+  <h4 id="mailslurp_Model_WebhookNewContactPayload_Tags" data-uid="mailslurp.Model.WebhookNewContactPayload.Tags">Tags</h4>
+  <div class="markdown level1 summary"><p>Tags for contact</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;tags&quot;)]
+public List&lt;string&gt; Tags { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><p>Tags for contact</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookNewContactPayload.cs#lines-284">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookNewContactPayload_WebhookId_" data-uid="mailslurp.Model.WebhookNewContactPayload.WebhookId*"></a>
+  <h4 id="mailslurp_Model_WebhookNewContactPayload_WebhookId" data-uid="mailslurp.Model.WebhookNewContactPayload.WebhookId">WebhookId</h4>
+  <div class="markdown level1 summary"><p>ID of webhook entity being triggered</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;webhookId&quot;)]
+public Guid WebhookId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><p>ID of webhook entity being triggered</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookNewContactPayload.cs#lines-333">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookNewContactPayload_WebhookName_" data-uid="mailslurp.Model.WebhookNewContactPayload.WebhookName*"></a>
+  <h4 id="mailslurp_Model_WebhookNewContactPayload_WebhookName" data-uid="mailslurp.Model.WebhookNewContactPayload.WebhookName">WebhookName</h4>
+  <div class="markdown level1 summary"><p>Name of the webhook being triggered</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;webhookName&quot;)]
+public string WebhookName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Name of the webhook being triggered</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookNewContactPayload.cs#lines-141">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookNewContactPayload_EventNameEnumFromString_" data-uid="mailslurp.Model.WebhookNewContactPayload.EventNameEnumFromString*"></a>
+  <h4 id="mailslurp_Model_WebhookNewContactPayload_EventNameEnumFromString_System_String_" data-uid="mailslurp.Model.WebhookNewContactPayload.EventNameEnumFromString(System.String)">EventNameEnumFromString(string)</h4>
+  <div class="markdown level1 summary"><p>Returns a <a class="xref" href="mailslurp.Model.WebhookNewContactPayload.EventNameEnum.html">WebhookNewContactPayload.EventNameEnum</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WebhookNewContactPayload.EventNameEnum EventNameEnumFromString(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.WebhookNewContactPayload.html">WebhookNewContactPayload</a>.<a class="xref" href="mailslurp.Model.WebhookNewContactPayload.EventNameEnum.html">EventNameEnum</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notimplementedexception">NotImplementedException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookNewContactPayload.cs#lines-184">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookNewContactPayload_EventNameEnumFromStringOrDefault_" data-uid="mailslurp.Model.WebhookNewContactPayload.EventNameEnumFromStringOrDefault*"></a>
+  <h4 id="mailslurp_Model_WebhookNewContactPayload_EventNameEnumFromStringOrDefault_System_String_" data-uid="mailslurp.Model.WebhookNewContactPayload.EventNameEnumFromStringOrDefault(System.String)">EventNameEnumFromStringOrDefault(string)</h4>
+  <div class="markdown level1 summary"><p>Returns a <a class="xref" href="mailslurp.Model.WebhookNewContactPayload.EventNameEnum.html">WebhookNewContactPayload.EventNameEnum</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WebhookNewContactPayload.EventNameEnum? EventNameEnumFromStringOrDefault(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.WebhookNewContactPayload.html">WebhookNewContactPayload</a>.<a class="xref" href="mailslurp.Model.WebhookNewContactPayload.EventNameEnum.html">EventNameEnum</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookNewContactPayload.cs#lines-228">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookNewContactPayload_EventNameEnumToJsonValue_" data-uid="mailslurp.Model.WebhookNewContactPayload.EventNameEnumToJsonValue*"></a>
+  <h4 id="mailslurp_Model_WebhookNewContactPayload_EventNameEnumToJsonValue_mailslurp_Model_WebhookNewContactPayload_EventNameEnum_" data-uid="mailslurp.Model.WebhookNewContactPayload.EventNameEnumToJsonValue(mailslurp.Model.WebhookNewContactPayload.EventNameEnum)">EventNameEnumToJsonValue(EventNameEnum)</h4>
+  <div class="markdown level1 summary"><p>Converts the <a class="xref" href="mailslurp.Model.WebhookNewContactPayload.EventNameEnum.html">WebhookNewContactPayload.EventNameEnum</a> to the json value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string EventNameEnumToJsonValue(WebhookNewContactPayload.EventNameEnum value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.WebhookNewContactPayload.html">WebhookNewContactPayload</a>.<a class="xref" href="mailslurp.Model.WebhookNewContactPayload.EventNameEnum.html">EventNameEnum</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notimplementedexception">NotImplementedException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookNewContactPayload.cs#lines-423">View Source</a>
+  </span>
+  <a id="mailslurp_Model_WebhookNewContactPayload_ToString_" data-uid="mailslurp.Model.WebhookNewContactPayload.ToString*"></a>
+  <h4 id="mailslurp_Model_WebhookNewContactPayload_ToString" data-uid="mailslurp.Model.WebhookNewContactPayload.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns the string presentation of the object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>String presentation of the object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.ivalidatableobject">IValidatableObject</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Model/WebhookNewContactPayload.cs#lines-30" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

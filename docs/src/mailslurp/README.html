@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Created with Openapi Generator | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Created with Openapi Generator | MailSlurp ">
+    
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="created-with-openapi-generator">Created with Openapi Generator</h1>
+
+<p><a id="cli"></a></p>
+<h2 id="run-the-following-powershell-command-to-generate-the-library">Run the following powershell command to generate the library</h2>
+<pre><code class="lang-ps1">$properties = @(
+    'apiName=Api',
+    'targetFramework=netstandard2.0',
+    'validatable=true',
+    'nullableReferenceTypes=false',
+    'hideGenerationTimestamp=true',
+    'packageVersion=16.0.8',
+    'packageAuthors=OpenAPI',
+    'packageCompany=OpenAPI',
+    'packageCopyright=No Copyright',
+    'packageDescription=A library generated from a OpenAPI doc',
+    'packageName=mailslurp',
+    'packageTags=',
+    'packageTitle=OpenAPI Library'
+) -join &quot;,&quot;
+
+$global = @(
+    'apiDocs=true',
+    'modelDocs=true',
+    'apiTests=true',
+    'modelTests=true'
+) -join &quot;,&quot;
+
+java -jar &quot;&lt;path&gt;/openapi-generator/modules/openapi-generator-cli/target/openapi-generator-cli.jar&quot; generate `
+    -g csharp-netcore `
+    -i &lt;your-swagger-file&gt;.yaml `
+    -o &lt;your-output-folder&gt; `
+    --library generichost `
+    --additional-properties $properties `
+    --global-property $global `
+    --git-host &quot;github.com&quot; `
+    --git-repo-id &quot;GIT_REPO_ID&quot; `
+    --git-user-id &quot;GIT_USER_ID&quot; `
+    --release-note &quot;Minor update&quot;
+    # -t templates
+</code></pre>
+<p><a id="usage"></a></p>
+<h2 id="using-the-library-in-your-project">Using the library in your project</h2>
+<pre><code class="lang-cs">using System;
+using System.Threading.Tasks;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using mailslurp.Api;
+using mailslurp.Client;
+using mailslurp.Model;
+
+namespace YourProject
+{
+    public class Program
+    {
+        public static async Task Main(string[] args)
+        {
+            var host = CreateHostBuilder(args).Build();
+            var api = host.Services.GetRequiredService&lt;IAIControllerApi&gt;();
+            GenerateStructuredContentFromEmailApiResponse apiResponse = await api.GenerateStructuredContentFromEmailAsync(&quot;todo&quot;);
+            StructuredContentResult model = apiResponse.Ok();
+        }
+
+        public static IHostBuilder CreateHostBuilder(string[] args) =&gt; Host.CreateDefaultBuilder(args)
+          .ConfigureApi((context, options) =&gt;
+          {
+              // the type of token here depends on the api security specifications
+              ApiKeyToken token = new(&quot;&lt;your token&gt;&quot;, ClientUtils.ApiKeyHeader.Authorization);
+              options.AddTokens(token);
+
+              // optionally choose the method the tokens will be provided with, default is RateLimitProvider
+              options.UseProvider&lt;RateLimitProvider&lt;ApiKeyToken&gt;, ApiKeyToken&gt;();
+
+              options.ConfigureJsonOptions((jsonOptions) =&gt;
+              {
+                  // your custom converters if any
+              });
+
+              options.AddApiHttpClients(builder: builder =&gt; builder
+                .AddRetryPolicy(2)
+                .AddTimeoutPolicy(TimeSpan.FromSeconds(5))
+                .AddCircuitBreakerPolicy(10, TimeSpan.FromSeconds(30))
+                // add whatever middleware you prefer
+              );
+          });
+    }
+}
+</code></pre>
+<p><a id="questions"></a></p>
+<h2 id="questions">Questions</h2>
+<ul>
+<li>What about HttpRequest failures and retries?
+If supportsRetry is enabled, you can configure Polly in the ConfigureClients method.</li>
+<li>How are tokens used?
+Tokens are provided by a TokenProvider class. The default is RateLimitProvider which will perform client side rate limiting.
+Other providers can be used with the UseProvider method.</li>
+<li>Does an HttpRequest throw an error when the server response is not Ok?
+It depends how you made the request. If the return type is ApiResponse<t> no error will be thrown, though the Content property will be null.
+StatusCode and ReasonPhrase will contain information about the error.
+If the return type is T, then it will throw. If the return type is TOrDefault, it will return null.</t></li>
+<li>How do I validate requests and process responses?
+Use the provided On and After methods in the Api class from the namespace mailslurp.Rest.DefaultApi.
+Or provide your own class by using the generic ConfigureApi method.</li>
+</ul>
+<p><a id="dependencies"></a></p>
+<h2 id="dependencies">Dependencies</h2>
+<ul>
+<li><a href="https://www.nuget.org/packages/Microsoft.Extensions.Hosting/">Microsoft.Extensions.Hosting</a> - 5.0.0 or later</li>
+<li><a href="https://www.nuget.org/packages/Microsoft.Extensions.Http/">Microsoft.Extensions.Http</a> - 5.0.0 or later</li>
+<li><a href="https://www.nuget.org/packages/Microsoft.Extensions.Http.Polly/">Microsoft.Extensions.Http.Polly</a> - 5.0.1 or later</li>
+<li><a href="https://www.nuget.org/packages/System.ComponentModel.Annotations">System.ComponentModel.Annotations</a> - 4.7.0 or later</li>
+</ul>
+<p><a id="documentation-for-authorization"></a></p>
+<h2 id="documentation-for-authorization">Documentation for Authorization</h2>
+<p>Authentication schemes defined for the API:
+<a id="API_KEY"></a></p>
+<h3 id="api_key">API_KEY</h3>
+<ul>
+<li><strong>Type</strong>: API key</li>
+<li><strong>API key parameter name</strong>: x-api-key</li>
+<li><strong>Location</strong>: HTTP header</li>
+</ul>
+<h2 id="build">Build</h2>
+<ul>
+<li>SDK version: 16.0.8</li>
+<li>Generator version: 7.13.0</li>
+<li>Build package: org.openapitools.codegen.languages.CSharpClientCodegen</li>
+</ul>
+<h2 id="api-information">Api Information</h2>
+<ul>
+<li>appName: MailSlurp API</li>
+<li>appVersion: 6.5.2</li>
+<li>appDescription: MailSlurp is an API for sending and receiving emails and SMS from dynamically allocated email addresses and phone numbers. It's designed for developers and QA teams to test applications, process inbound emails, send templated notifications, attachments, and more.  ## Resources  - <a href="https://www.mailslurp.com">Homepage</a> - Get an <a href="https://app.mailslurp.com/sign-up/">API KEY</a> - Generated <a href="https://docs.mailslurp.com/">SDK Clients</a> - <a href="https://github.com/mailslurp/examples">Examples</a> repository</li>
+</ul>
+<h2 id="openapi-global-properties"><a href="https://openapi-generator.tech/docs/globals">OpenApi Global properties</a></h2>
+<ul>
+<li>generateAliasAsModel:</li>
+<li>supportingFiles:</li>
+<li>models: omitted for brevity</li>
+<li>apis: omitted for brevity</li>
+<li>apiDocs: true</li>
+<li>modelDocs: true</li>
+<li>apiTests: true</li>
+<li>modelTests: true</li>
+</ul>
+<h2 id="openapi-generator-parameters"><a href="https://openapi-generator.tech/docs/generators/csharp-netcore">OpenApi Generator Parameters</a></h2>
+<ul>
+<li>allowUnicodeIdentifiers:</li>
+<li>apiName: Api</li>
+<li>caseInsensitiveResponseHeaders:</li>
+<li>conditionalSerialization: false</li>
+<li>disallowAdditionalPropertiesIfNotPresent:</li>
+<li>gitHost: github.com</li>
+<li>gitRepoId: GIT_REPO_ID</li>
+<li>gitUserId: GIT_USER_ID</li>
+<li>hideGenerationTimestamp: true</li>
+<li>interfacePrefix: I</li>
+<li>library: generichost</li>
+<li>licenseId:</li>
+<li>modelPropertyNaming:</li>
+<li>netCoreProjectFile: true</li>
+<li>nonPublicApi: false</li>
+<li>nullableReferenceTypes: false</li>
+<li>optionalAssemblyInfo: true</li>
+<li>optionalEmitDefaultValues: false</li>
+<li>optionalMethodArgument: true</li>
+<li>optionalProjectFile: true</li>
+<li>packageAuthors: OpenAPI</li>
+<li>packageCompany: OpenAPI</li>
+<li>packageCopyright: No Copyright</li>
+<li>packageDescription: A library generated from a OpenAPI doc</li>
+<li>packageGuid: {D285B912-0E15-4359-92E1-49ADD29403F9}</li>
+<li>packageName: mailslurp</li>
+<li>packageTags:</li>
+<li>packageTitle: OpenAPI Library</li>
+<li>packageVersion: 16.0.8</li>
+<li>releaseNote: Minor update</li>
+<li>returnICollection: false</li>
+<li>sortParamsByRequiredFlag:</li>
+<li>sourceFolder: src</li>
+<li>targetFramework: netstandard2.0</li>
+<li>useCollection: false</li>
+<li>useDateTimeOffset: false</li>
+<li>useOneOfDiscriminatorLookup: false</li>
+<li>validatable: true
+For more information, please visit <a href="https://www.mailslurp.com/contact/">https://www.mailslurp.com/contact/</a></li>
+</ul>
+<p>This C# SDK is automatically generated by the <a href="https://openapi-generator.tech">OpenAPI Generator</a> project.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/README.md#lines-1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
