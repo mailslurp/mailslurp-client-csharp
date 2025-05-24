@@ -1,0 +1,2229 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class MissedEmailControllerApi | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class MissedEmailControllerApi | MailSlurp ">
+    
+    <meta name="description" content="Represents a collection of functions to interact with the API endpoints">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Api.MissedEmailControllerApi">
+
+
+
+  <h1 id="mailslurp_Api_MissedEmailControllerApi" data-uid="mailslurp.Api.MissedEmailControllerApi" class="text-break">Class MissedEmailControllerApi</h1>
+  <div class="markdown level0 summary"><p>Represents a collection of functions to interact with the API endpoints</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">MissedEmailControllerApi</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="mailslurp.Api.IMissedEmailControllerApi.html">IMissedEmailControllerApi</a></div>
+    <div><a class="xref" href="mailslurp.Api.IMissedEmailControllerApiSync.html">IMissedEmailControllerApiSync</a></div>
+    <div><a class="xref" href="mailslurp.Api.IMissedEmailControllerApiAsync.html">IMissedEmailControllerApiAsync</a></div>
+    <div><a class="xref" href="mailslurp.Client.IApiAccessor.html">IApiAccessor</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="mailslurp.html">mailslurp</a>.<a class="xref" href="mailslurp.Api.html">Api</a></h6>
+  <h6><strong>Assembly</strong>: mailslurp.dll</h6>
+  <h5 id="mailslurp_Api_MissedEmailControllerApi_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MissedEmailControllerApi : IMissedEmailControllerApi, IMissedEmailControllerApiSync, IMissedEmailControllerApiAsync, IApiAccessor</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-358">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi__ctor_" data-uid="mailslurp.Api.MissedEmailControllerApi.#ctor*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi__ctor" data-uid="mailslurp.Api.MissedEmailControllerApi.#ctor">MissedEmailControllerApi()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Api.MissedEmailControllerApi.html">MissedEmailControllerApi</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MissedEmailControllerApi()</code></pre>
+  </div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-366">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi__ctor_" data-uid="mailslurp.Api.MissedEmailControllerApi.#ctor*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi__ctor_System_String_" data-uid="mailslurp.Api.MissedEmailControllerApi.#ctor(System.String)">MissedEmailControllerApi(string)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Api.MissedEmailControllerApi.html">MissedEmailControllerApi</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MissedEmailControllerApi(string basePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">basePath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-383">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi__ctor_" data-uid="mailslurp.Api.MissedEmailControllerApi.#ctor*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi__ctor_mailslurp_Client_Configuration_" data-uid="mailslurp.Api.MissedEmailControllerApi.#ctor(mailslurp.Client.Configuration)">MissedEmailControllerApi(Configuration)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Api.MissedEmailControllerApi.html">MissedEmailControllerApi</a> class
+using Configuration object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MissedEmailControllerApi(Configuration configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Configuration.html">Configuration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>An instance of Configuration</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-403">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi__ctor_" data-uid="mailslurp.Api.MissedEmailControllerApi.#ctor*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi__ctor_mailslurp_Client_ISynchronousClient_mailslurp_Client_IAsynchronousClient_mailslurp_Client_IReadableConfiguration_" data-uid="mailslurp.Api.MissedEmailControllerApi.#ctor(mailslurp.Client.ISynchronousClient,mailslurp.Client.IAsynchronousClient,mailslurp.Client.IReadableConfiguration)">MissedEmailControllerApi(ISynchronousClient, IAsynchronousClient, IReadableConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Api.MissedEmailControllerApi.html">MissedEmailControllerApi</a> class
+using a Configuration object and client instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MissedEmailControllerApi(ISynchronousClient client, IAsynchronousClient asyncClient, IReadableConfiguration configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ISynchronousClient.html">ISynchronousClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>The client interface for synchronous API access.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IAsynchronousClient.html">IAsynchronousClient</a></td>
+        <td><span class="parametername">asyncClient</span></td>
+        <td><p>The client interface for asynchronous API access.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>The configuration object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-418">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi_AsynchronousClient_" data-uid="mailslurp.Api.MissedEmailControllerApi.AsynchronousClient*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi_AsynchronousClient" data-uid="mailslurp.Api.MissedEmailControllerApi.AsynchronousClient">AsynchronousClient</h4>
+  <div class="markdown level1 summary"><p>The client for accessing this underlying API asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsynchronousClient AsynchronousClient { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IAsynchronousClient.html">IAsynchronousClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-423">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi_Client_" data-uid="mailslurp.Api.MissedEmailControllerApi.Client*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi_Client" data-uid="mailslurp.Api.MissedEmailControllerApi.Client">Client</h4>
+  <div class="markdown level1 summary"><p>The client for accessing this underlying API synchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISynchronousClient Client { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ISynchronousClient.html">ISynchronousClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-438">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi_Configuration_" data-uid="mailslurp.Api.MissedEmailControllerApi.Configuration*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi_Configuration" data-uid="mailslurp.Api.MissedEmailControllerApi.Configuration">Configuration</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the configuration object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadableConfiguration Configuration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><p>An instance of the Configuration</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-443">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi_ExceptionFactory_" data-uid="mailslurp.Api.MissedEmailControllerApi.ExceptionFactory*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi_ExceptionFactory" data-uid="mailslurp.Api.MissedEmailControllerApi.ExceptionFactory">ExceptionFactory</h4>
+  <div class="markdown level1 summary"><p>Provides a factory method hook for the creation of exceptions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExceptionFactory ExceptionFactory { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ExceptionFactory.html">ExceptionFactory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-469">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi_GetAllMissedEmails_" data-uid="mailslurp.Api.MissedEmailControllerApi.GetAllMissedEmails*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi_GetAllMissedEmails_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Nullable_System_Guid__System_Int32_" data-uid="mailslurp.Api.MissedEmailControllerApi.GetAllMissedEmails(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Guid},System.Int32)">GetAllMissedEmails(int?, int?, string, string, DateTime?, DateTime?, Guid?, int)</h4>
+  <div class="markdown level1 summary"><p>Get all MissedEmails in paginated format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PageMissedEmailProjection GetAllMissedEmails(int? page = null, int? size = null, string sort = null, string searchFilter = null, DateTime? since = null, DateTime? before = null, Guid? inboxId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index in list pagination (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size in list pagination (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">searchFilter</span></td>
+        <td><p>Optional search filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inbox ID filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.PageMissedEmailProjection.html">PageMissedEmailProjection</a></td>
+        <td><p>PageMissedEmailProjection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-579">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi_GetAllMissedEmailsAsync_" data-uid="mailslurp.Api.MissedEmailControllerApi.GetAllMissedEmailsAsync*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi_GetAllMissedEmailsAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Nullable_System_Guid__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.MissedEmailControllerApi.GetAllMissedEmailsAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Guid},System.Int32,System.Threading.CancellationToken)">GetAllMissedEmailsAsync(int?, int?, string, string, DateTime?, DateTime?, Guid?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get all MissedEmails in paginated format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PageMissedEmailProjection&gt; GetAllMissedEmailsAsync(int? page = null, int? size = null, string sort = null, string searchFilter = null, DateTime? since = null, DateTime? before = null, Guid? inboxId = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index in list pagination (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size in list pagination (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">searchFilter</span></td>
+        <td><p>Optional search filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inbox ID filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.PageMissedEmailProjection.html">PageMissedEmailProjection</a>&gt;</td>
+        <td><p>Task of PageMissedEmailProjection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-488">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi_GetAllMissedEmailsWithHttpInfo_" data-uid="mailslurp.Api.MissedEmailControllerApi.GetAllMissedEmailsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi_GetAllMissedEmailsWithHttpInfo_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Nullable_System_Guid__System_Int32_" data-uid="mailslurp.Api.MissedEmailControllerApi.GetAllMissedEmailsWithHttpInfo(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Guid},System.Int32)">GetAllMissedEmailsWithHttpInfo(int?, int?, string, string, DateTime?, DateTime?, Guid?, int)</h4>
+  <div class="markdown level1 summary"><p>Get all MissedEmails in paginated format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;PageMissedEmailProjection&gt; GetAllMissedEmailsWithHttpInfo(int? page = null, int? size = null, string sort = null, string searchFilter = null, DateTime? since = null, DateTime? before = null, Guid? inboxId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index in list pagination (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size in list pagination (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">searchFilter</span></td>
+        <td><p>Optional search filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inbox ID filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.PageMissedEmailProjection.html">PageMissedEmailProjection</a>&gt;</td>
+        <td><p>ApiResponse of PageMissedEmailProjection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-599">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi_GetAllMissedEmailsWithHttpInfoAsync_" data-uid="mailslurp.Api.MissedEmailControllerApi.GetAllMissedEmailsWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi_GetAllMissedEmailsWithHttpInfoAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Nullable_System_Guid__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.MissedEmailControllerApi.GetAllMissedEmailsWithHttpInfoAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Guid},System.Int32,System.Threading.CancellationToken)">GetAllMissedEmailsWithHttpInfoAsync(int?, int?, string, string, DateTime?, DateTime?, Guid?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get all MissedEmails in paginated format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;PageMissedEmailProjection&gt;&gt; GetAllMissedEmailsWithHttpInfoAsync(int? page = null, int? size = null, string sort = null, string searchFilter = null, DateTime? since = null, DateTime? before = null, Guid? inboxId = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index in list pagination (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size in list pagination (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">searchFilter</span></td>
+        <td><p>Optional search filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inbox ID filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.PageMissedEmailProjection.html">PageMissedEmailProjection</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (PageMissedEmailProjection)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-690">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi_GetAllUnknownMissedEmails_" data-uid="mailslurp.Api.MissedEmailControllerApi.GetAllUnknownMissedEmails*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi_GetAllUnknownMissedEmails_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Nullable_System_Guid__System_Int32_" data-uid="mailslurp.Api.MissedEmailControllerApi.GetAllUnknownMissedEmails(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Guid},System.Int32)">GetAllUnknownMissedEmails(int?, int?, string, string, DateTime?, DateTime?, Guid?, int)</h4>
+  <div class="markdown level1 summary"><p>Get all unknown missed emails in paginated format Unknown missed emails are emails that were sent to MailSlurp but could not be assigned to an existing inbox.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PageUnknownMissedEmailProjection GetAllUnknownMissedEmails(int? page = null, int? size = null, string sort = null, string searchFilter = null, DateTime? since = null, DateTime? before = null, Guid? inboxId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index in list pagination (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size in list pagination (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">searchFilter</span></td>
+        <td><p>Optional search filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inbox ID filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.PageUnknownMissedEmailProjection.html">PageUnknownMissedEmailProjection</a></td>
+        <td><p>PageUnknownMissedEmailProjection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-800">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi_GetAllUnknownMissedEmailsAsync_" data-uid="mailslurp.Api.MissedEmailControllerApi.GetAllUnknownMissedEmailsAsync*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi_GetAllUnknownMissedEmailsAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Nullable_System_Guid__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.MissedEmailControllerApi.GetAllUnknownMissedEmailsAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Guid},System.Int32,System.Threading.CancellationToken)">GetAllUnknownMissedEmailsAsync(int?, int?, string, string, DateTime?, DateTime?, Guid?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get all unknown missed emails in paginated format Unknown missed emails are emails that were sent to MailSlurp but could not be assigned to an existing inbox.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PageUnknownMissedEmailProjection&gt; GetAllUnknownMissedEmailsAsync(int? page = null, int? size = null, string sort = null, string searchFilter = null, DateTime? since = null, DateTime? before = null, Guid? inboxId = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index in list pagination (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size in list pagination (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">searchFilter</span></td>
+        <td><p>Optional search filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inbox ID filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.PageUnknownMissedEmailProjection.html">PageUnknownMissedEmailProjection</a>&gt;</td>
+        <td><p>Task of PageUnknownMissedEmailProjection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-709">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi_GetAllUnknownMissedEmailsWithHttpInfo_" data-uid="mailslurp.Api.MissedEmailControllerApi.GetAllUnknownMissedEmailsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi_GetAllUnknownMissedEmailsWithHttpInfo_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Nullable_System_Guid__System_Int32_" data-uid="mailslurp.Api.MissedEmailControllerApi.GetAllUnknownMissedEmailsWithHttpInfo(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Guid},System.Int32)">GetAllUnknownMissedEmailsWithHttpInfo(int?, int?, string, string, DateTime?, DateTime?, Guid?, int)</h4>
+  <div class="markdown level1 summary"><p>Get all unknown missed emails in paginated format Unknown missed emails are emails that were sent to MailSlurp but could not be assigned to an existing inbox.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;PageUnknownMissedEmailProjection&gt; GetAllUnknownMissedEmailsWithHttpInfo(int? page = null, int? size = null, string sort = null, string searchFilter = null, DateTime? since = null, DateTime? before = null, Guid? inboxId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index in list pagination (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size in list pagination (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">searchFilter</span></td>
+        <td><p>Optional search filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inbox ID filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.PageUnknownMissedEmailProjection.html">PageUnknownMissedEmailProjection</a>&gt;</td>
+        <td><p>ApiResponse of PageUnknownMissedEmailProjection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-820">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi_GetAllUnknownMissedEmailsWithHttpInfoAsync_" data-uid="mailslurp.Api.MissedEmailControllerApi.GetAllUnknownMissedEmailsWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi_GetAllUnknownMissedEmailsWithHttpInfoAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Nullable_System_Guid__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.MissedEmailControllerApi.GetAllUnknownMissedEmailsWithHttpInfoAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Guid},System.Int32,System.Threading.CancellationToken)">GetAllUnknownMissedEmailsWithHttpInfoAsync(int?, int?, string, string, DateTime?, DateTime?, Guid?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get all unknown missed emails in paginated format Unknown missed emails are emails that were sent to MailSlurp but could not be assigned to an existing inbox.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;PageUnknownMissedEmailProjection&gt;&gt; GetAllUnknownMissedEmailsWithHttpInfoAsync(int? page = null, int? size = null, string sort = null, string searchFilter = null, DateTime? since = null, DateTime? before = null, Guid? inboxId = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index in list pagination (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size in list pagination (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">searchFilter</span></td>
+        <td><p>Optional search filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inbox ID filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.PageUnknownMissedEmailProjection.html">PageUnknownMissedEmailProjection</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (PageUnknownMissedEmailProjection)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-429">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi_GetBasePath_" data-uid="mailslurp.Api.MissedEmailControllerApi.GetBasePath*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi_GetBasePath" data-uid="mailslurp.Api.MissedEmailControllerApi.GetBasePath">GetBasePath()</h4>
+  <div class="markdown level1 summary"><p>Gets the base path of the API client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetBasePath()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The base path</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-905">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi_GetMissedEmail_" data-uid="mailslurp.Api.MissedEmailControllerApi.GetMissedEmail*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi_GetMissedEmail_System_Guid_System_Int32_" data-uid="mailslurp.Api.MissedEmailControllerApi.GetMissedEmail(System.Guid,System.Int32)">GetMissedEmail(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get MissedEmail List emails that were missed due to plan limits.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MissedEmailDto GetMissedEmail(Guid missedEmailId, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">missedEmailId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.MissedEmailDto.html">MissedEmailDto</a></td>
+        <td><p>MissedEmailDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-976">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi_GetMissedEmailAsync_" data-uid="mailslurp.Api.MissedEmailControllerApi.GetMissedEmailAsync*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi_GetMissedEmailAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.MissedEmailControllerApi.GetMissedEmailAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetMissedEmailAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get MissedEmail List emails that were missed due to plan limits.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;MissedEmailDto&gt; GetMissedEmailAsync(Guid missedEmailId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">missedEmailId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.MissedEmailDto.html">MissedEmailDto</a>&gt;</td>
+        <td><p>Task of MissedEmailDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-918">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi_GetMissedEmailWithHttpInfo_" data-uid="mailslurp.Api.MissedEmailControllerApi.GetMissedEmailWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi_GetMissedEmailWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.MissedEmailControllerApi.GetMissedEmailWithHttpInfo(System.Guid,System.Int32)">GetMissedEmailWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get MissedEmail List emails that were missed due to plan limits.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;MissedEmailDto&gt; GetMissedEmailWithHttpInfo(Guid missedEmailId, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">missedEmailId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.MissedEmailDto.html">MissedEmailDto</a>&gt;</td>
+        <td><p>ApiResponse of MissedEmailDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-990">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi_GetMissedEmailWithHttpInfoAsync_" data-uid="mailslurp.Api.MissedEmailControllerApi.GetMissedEmailWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi_GetMissedEmailWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.MissedEmailControllerApi.GetMissedEmailWithHttpInfoAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetMissedEmailWithHttpInfoAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get MissedEmail List emails that were missed due to plan limits.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;MissedEmailDto&gt;&gt; GetMissedEmailWithHttpInfoAsync(Guid missedEmailId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">missedEmailId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.MissedEmailDto.html">MissedEmailDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (MissedEmailDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-1047">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi_RestoreMissedEmails_" data-uid="mailslurp.Api.MissedEmailControllerApi.RestoreMissedEmails*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi_RestoreMissedEmails_System_Int32_" data-uid="mailslurp.Api.MissedEmailControllerApi.RestoreMissedEmails(System.Int32)">RestoreMissedEmails(int)</h4>
+  <div class="markdown level1 summary"><p>Restore missed emails If emails were missed due to a plan limit they are saved as missed emails. If support team enables the canRestore flag these emails can be reload into your account using this method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RestoreMissedEmails(int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-1113">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi_RestoreMissedEmailsAsync_" data-uid="mailslurp.Api.MissedEmailControllerApi.RestoreMissedEmailsAsync*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi_RestoreMissedEmailsAsync_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.MissedEmailControllerApi.RestoreMissedEmailsAsync(System.Int32,System.Threading.CancellationToken)">RestoreMissedEmailsAsync(int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Restore missed emails If emails were missed due to a plan limit they are saved as missed emails. If support team enables the canRestore flag these emails can be reload into your account using this method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RestoreMissedEmailsAsync(int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>Task of void</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-1058">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi_RestoreMissedEmailsWithHttpInfo_" data-uid="mailslurp.Api.MissedEmailControllerApi.RestoreMissedEmailsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi_RestoreMissedEmailsWithHttpInfo_System_Int32_" data-uid="mailslurp.Api.MissedEmailControllerApi.RestoreMissedEmailsWithHttpInfo(System.Int32)">RestoreMissedEmailsWithHttpInfo(int)</h4>
+  <div class="markdown level1 summary"><p>Restore missed emails If emails were missed due to a plan limit they are saved as missed emails. If support team enables the canRestore flag these emails can be reload into your account using this method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;object&gt; RestoreMissedEmailsWithHttpInfo(int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</td>
+        <td><p>ApiResponse of Object(void)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-1125">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi_RestoreMissedEmailsWithHttpInfoAsync_" data-uid="mailslurp.Api.MissedEmailControllerApi.RestoreMissedEmailsWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi_RestoreMissedEmailsWithHttpInfoAsync_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.MissedEmailControllerApi.RestoreMissedEmailsWithHttpInfoAsync(System.Int32,System.Threading.CancellationToken)">RestoreMissedEmailsWithHttpInfoAsync(int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Restore missed emails If emails were missed due to a plan limit they are saved as missed emails. If support team enables the canRestore flag these emails can be reload into your account using this method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;object&gt;&gt; RestoreMissedEmailsWithHttpInfoAsync(int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-1185">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi_WaitForNthMissedEmail_" data-uid="mailslurp.Api.MissedEmailControllerApi.WaitForNthMissedEmail*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi_WaitForNthMissedEmail_System_Int32_System_Nullable_System_Guid__System_Nullable_System_Int64__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_" data-uid="mailslurp.Api.MissedEmailControllerApi.WaitForNthMissedEmail(System.Int32,System.Nullable{System.Guid},System.Nullable{System.Int64},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32)">WaitForNthMissedEmail(int, Guid?, long?, DateTime?, DateTime?, int)</h4>
+  <div class="markdown level1 summary"><p>Wait for Nth missed email Wait for 0 based index missed email</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MissedEmailDto WaitForNthMissedEmail(int index, Guid? inboxId = null, long? timeout = null, DateTime? since = null, DateTime? before = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Zero based index of the email to wait for. If 1 missed email already and you want to wait for the 2nd email pass index=1</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inbox ID filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>Optional timeout milliseconds (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.MissedEmailDto.html">MissedEmailDto</a></td>
+        <td><p>MissedEmailDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-1280">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi_WaitForNthMissedEmailAsync_" data-uid="mailslurp.Api.MissedEmailControllerApi.WaitForNthMissedEmailAsync*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi_WaitForNthMissedEmailAsync_System_Int32_System_Nullable_System_Guid__System_Nullable_System_Int64__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.MissedEmailControllerApi.WaitForNthMissedEmailAsync(System.Int32,System.Nullable{System.Guid},System.Nullable{System.Int64},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Threading.CancellationToken)">WaitForNthMissedEmailAsync(int, Guid?, long?, DateTime?, DateTime?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Wait for Nth missed email Wait for 0 based index missed email</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;MissedEmailDto&gt; WaitForNthMissedEmailAsync(int index, Guid? inboxId = null, long? timeout = null, DateTime? since = null, DateTime? before = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Zero based index of the email to wait for. If 1 missed email already and you want to wait for the 2nd email pass index=1</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inbox ID filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>Optional timeout milliseconds (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.MissedEmailDto.html">MissedEmailDto</a>&gt;</td>
+        <td><p>Task of MissedEmailDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-1202">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi_WaitForNthMissedEmailWithHttpInfo_" data-uid="mailslurp.Api.MissedEmailControllerApi.WaitForNthMissedEmailWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi_WaitForNthMissedEmailWithHttpInfo_System_Int32_System_Nullable_System_Guid__System_Nullable_System_Int64__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_" data-uid="mailslurp.Api.MissedEmailControllerApi.WaitForNthMissedEmailWithHttpInfo(System.Int32,System.Nullable{System.Guid},System.Nullable{System.Int64},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32)">WaitForNthMissedEmailWithHttpInfo(int, Guid?, long?, DateTime?, DateTime?, int)</h4>
+  <div class="markdown level1 summary"><p>Wait for Nth missed email Wait for 0 based index missed email</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;MissedEmailDto&gt; WaitForNthMissedEmailWithHttpInfo(int index, Guid? inboxId = null, long? timeout = null, DateTime? since = null, DateTime? before = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Zero based index of the email to wait for. If 1 missed email already and you want to wait for the 2nd email pass index=1</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inbox ID filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>Optional timeout milliseconds (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.MissedEmailDto.html">MissedEmailDto</a>&gt;</td>
+        <td><p>ApiResponse of MissedEmailDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-1298">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MissedEmailControllerApi_WaitForNthMissedEmailWithHttpInfoAsync_" data-uid="mailslurp.Api.MissedEmailControllerApi.WaitForNthMissedEmailWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_MissedEmailControllerApi_WaitForNthMissedEmailWithHttpInfoAsync_System_Int32_System_Nullable_System_Guid__System_Nullable_System_Int64__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.MissedEmailControllerApi.WaitForNthMissedEmailWithHttpInfoAsync(System.Int32,System.Nullable{System.Guid},System.Nullable{System.Int64},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Threading.CancellationToken)">WaitForNthMissedEmailWithHttpInfoAsync(int, Guid?, long?, DateTime?, DateTime?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Wait for Nth missed email Wait for 0 based index missed email</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;MissedEmailDto&gt;&gt; WaitForNthMissedEmailWithHttpInfoAsync(int index, Guid? inboxId = null, long? timeout = null, DateTime? since = null, DateTime? before = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Zero based index of the email to wait for. If 1 missed email already and you want to wait for the 2nd email pass index=1</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inbox ID filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>Optional timeout milliseconds (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.MissedEmailDto.html">MissedEmailDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (MissedEmailDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="mailslurp.Api.IMissedEmailControllerApi.html">IMissedEmailControllerApi</a>
+  </div>
+  <div>
+      <a class="xref" href="mailslurp.Api.IMissedEmailControllerApiSync.html">IMissedEmailControllerApiSync</a>
+  </div>
+  <div>
+      <a class="xref" href="mailslurp.Api.IMissedEmailControllerApiAsync.html">IMissedEmailControllerApiAsync</a>
+  </div>
+  <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html">IApiAccessor</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MissedEmailControllerApi.cs#lines-350" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
