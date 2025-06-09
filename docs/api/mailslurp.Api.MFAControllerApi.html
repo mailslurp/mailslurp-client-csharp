@@ -1,0 +1,1973 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class MFAControllerApi | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class MFAControllerApi | MailSlurp ">
+    
+    <meta name="description" content="Represents a collection of functions to interact with the API endpoints">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Api.MFAControllerApi">
+
+
+
+  <h1 id="mailslurp_Api_MFAControllerApi" data-uid="mailslurp.Api.MFAControllerApi" class="text-break">Class MFAControllerApi</h1>
+  <div class="markdown level0 summary"><p>Represents a collection of functions to interact with the API endpoints</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">MFAControllerApi</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="mailslurp.Api.IMFAControllerApi.html">IMFAControllerApi</a></div>
+    <div><a class="xref" href="mailslurp.Api.IMFAControllerApiSync.html">IMFAControllerApiSync</a></div>
+    <div><a class="xref" href="mailslurp.Api.IMFAControllerApiAsync.html">IMFAControllerApiAsync</a></div>
+    <div><a class="xref" href="mailslurp.Client.IApiAccessor.html">IApiAccessor</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="mailslurp.html">mailslurp</a>.<a class="xref" href="mailslurp.Api.html">Api</a></h6>
+  <h6><strong>Assembly</strong>: mailslurp.dll</h6>
+  <h5 id="mailslurp_Api_MFAControllerApi_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MFAControllerApi : IMFAControllerApi, IMFAControllerApiSync, IMFAControllerApiAsync, IApiAccessor</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-317">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi__ctor_" data-uid="mailslurp.Api.MFAControllerApi.#ctor*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi__ctor" data-uid="mailslurp.Api.MFAControllerApi.#ctor">MFAControllerApi()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Api.MFAControllerApi.html">MFAControllerApi</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MFAControllerApi()</code></pre>
+  </div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-325">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi__ctor_" data-uid="mailslurp.Api.MFAControllerApi.#ctor*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi__ctor_System_String_" data-uid="mailslurp.Api.MFAControllerApi.#ctor(System.String)">MFAControllerApi(string)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Api.MFAControllerApi.html">MFAControllerApi</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MFAControllerApi(string basePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">basePath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-342">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi__ctor_" data-uid="mailslurp.Api.MFAControllerApi.#ctor*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi__ctor_mailslurp_Client_Configuration_" data-uid="mailslurp.Api.MFAControllerApi.#ctor(mailslurp.Client.Configuration)">MFAControllerApi(Configuration)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Api.MFAControllerApi.html">MFAControllerApi</a> class
+using Configuration object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MFAControllerApi(Configuration configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Configuration.html">Configuration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>An instance of Configuration</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-362">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi__ctor_" data-uid="mailslurp.Api.MFAControllerApi.#ctor*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi__ctor_mailslurp_Client_ISynchronousClient_mailslurp_Client_IAsynchronousClient_mailslurp_Client_IReadableConfiguration_" data-uid="mailslurp.Api.MFAControllerApi.#ctor(mailslurp.Client.ISynchronousClient,mailslurp.Client.IAsynchronousClient,mailslurp.Client.IReadableConfiguration)">MFAControllerApi(ISynchronousClient, IAsynchronousClient, IReadableConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Api.MFAControllerApi.html">MFAControllerApi</a> class
+using a Configuration object and client instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MFAControllerApi(ISynchronousClient client, IAsynchronousClient asyncClient, IReadableConfiguration configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ISynchronousClient.html">ISynchronousClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>The client interface for synchronous API access.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IAsynchronousClient.html">IAsynchronousClient</a></td>
+        <td><span class="parametername">asyncClient</span></td>
+        <td><p>The client interface for asynchronous API access.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>The configuration object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-377">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi_AsynchronousClient_" data-uid="mailslurp.Api.MFAControllerApi.AsynchronousClient*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi_AsynchronousClient" data-uid="mailslurp.Api.MFAControllerApi.AsynchronousClient">AsynchronousClient</h4>
+  <div class="markdown level1 summary"><p>The client for accessing this underlying API asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsynchronousClient AsynchronousClient { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IAsynchronousClient.html">IAsynchronousClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-382">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi_Client_" data-uid="mailslurp.Api.MFAControllerApi.Client*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi_Client" data-uid="mailslurp.Api.MFAControllerApi.Client">Client</h4>
+  <div class="markdown level1 summary"><p>The client for accessing this underlying API synchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISynchronousClient Client { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ISynchronousClient.html">ISynchronousClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-397">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi_Configuration_" data-uid="mailslurp.Api.MFAControllerApi.Configuration*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi_Configuration" data-uid="mailslurp.Api.MFAControllerApi.Configuration">Configuration</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the configuration object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadableConfiguration Configuration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><p>An instance of the Configuration</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-402">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi_ExceptionFactory_" data-uid="mailslurp.Api.MFAControllerApi.ExceptionFactory*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi_ExceptionFactory" data-uid="mailslurp.Api.MFAControllerApi.ExceptionFactory">ExceptionFactory</h4>
+  <div class="markdown level1 summary"><p>Provides a factory method hook for the creation of exceptions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExceptionFactory ExceptionFactory { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ExceptionFactory.html">ExceptionFactory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-422">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi_CreateTotpDeviceForCustom_" data-uid="mailslurp.Api.MFAControllerApi.CreateTotpDeviceForCustom*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi_CreateTotpDeviceForCustom_mailslurp_Model_CreateTotpDeviceOtpAuthUrlOptions_System_Int32_" data-uid="mailslurp.Api.MFAControllerApi.CreateTotpDeviceForCustom(mailslurp.Model.CreateTotpDeviceOtpAuthUrlOptions,System.Int32)">CreateTotpDeviceForCustom(CreateTotpDeviceOtpAuthUrlOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a TOTP device from custom options Create a virtual TOTP device for custom options specifying all parameters of the TOTP device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TotpDeviceDto CreateTotpDeviceForCustom(CreateTotpDeviceOtpAuthUrlOptions createTotpDeviceOtpAuthUrlOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateTotpDeviceOtpAuthUrlOptions.html">CreateTotpDeviceOtpAuthUrlOptions</a></td>
+        <td><span class="parametername">createTotpDeviceOtpAuthUrlOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.TotpDeviceDto.html">TotpDeviceDto</a></td>
+        <td><p>TotpDeviceDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-500">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi_CreateTotpDeviceForCustomAsync_" data-uid="mailslurp.Api.MFAControllerApi.CreateTotpDeviceForCustomAsync*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi_CreateTotpDeviceForCustomAsync_mailslurp_Model_CreateTotpDeviceOtpAuthUrlOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.MFAControllerApi.CreateTotpDeviceForCustomAsync(mailslurp.Model.CreateTotpDeviceOtpAuthUrlOptions,System.Int32,System.Threading.CancellationToken)">CreateTotpDeviceForCustomAsync(CreateTotpDeviceOtpAuthUrlOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create a TOTP device from custom options Create a virtual TOTP device for custom options specifying all parameters of the TOTP device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TotpDeviceDto&gt; CreateTotpDeviceForCustomAsync(CreateTotpDeviceOtpAuthUrlOptions createTotpDeviceOtpAuthUrlOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateTotpDeviceOtpAuthUrlOptions.html">CreateTotpDeviceOtpAuthUrlOptions</a></td>
+        <td><span class="parametername">createTotpDeviceOtpAuthUrlOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.TotpDeviceDto.html">TotpDeviceDto</a>&gt;</td>
+        <td><p>Task of TotpDeviceDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-435">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi_CreateTotpDeviceForCustomWithHttpInfo_" data-uid="mailslurp.Api.MFAControllerApi.CreateTotpDeviceForCustomWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi_CreateTotpDeviceForCustomWithHttpInfo_mailslurp_Model_CreateTotpDeviceOtpAuthUrlOptions_System_Int32_" data-uid="mailslurp.Api.MFAControllerApi.CreateTotpDeviceForCustomWithHttpInfo(mailslurp.Model.CreateTotpDeviceOtpAuthUrlOptions,System.Int32)">CreateTotpDeviceForCustomWithHttpInfo(CreateTotpDeviceOtpAuthUrlOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a TOTP device from custom options Create a virtual TOTP device for custom options specifying all parameters of the TOTP device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;TotpDeviceDto&gt; CreateTotpDeviceForCustomWithHttpInfo(CreateTotpDeviceOtpAuthUrlOptions createTotpDeviceOtpAuthUrlOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateTotpDeviceOtpAuthUrlOptions.html">CreateTotpDeviceOtpAuthUrlOptions</a></td>
+        <td><span class="parametername">createTotpDeviceOtpAuthUrlOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.TotpDeviceDto.html">TotpDeviceDto</a>&gt;</td>
+        <td><p>ApiResponse of TotpDeviceDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-514">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi_CreateTotpDeviceForCustomWithHttpInfoAsync_" data-uid="mailslurp.Api.MFAControllerApi.CreateTotpDeviceForCustomWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi_CreateTotpDeviceForCustomWithHttpInfoAsync_mailslurp_Model_CreateTotpDeviceOtpAuthUrlOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.MFAControllerApi.CreateTotpDeviceForCustomWithHttpInfoAsync(mailslurp.Model.CreateTotpDeviceOtpAuthUrlOptions,System.Int32,System.Threading.CancellationToken)">CreateTotpDeviceForCustomWithHttpInfoAsync(CreateTotpDeviceOtpAuthUrlOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create a TOTP device from custom options Create a virtual TOTP device for custom options specifying all parameters of the TOTP device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;TotpDeviceDto&gt;&gt; CreateTotpDeviceForCustomWithHttpInfoAsync(CreateTotpDeviceOtpAuthUrlOptions createTotpDeviceOtpAuthUrlOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateTotpDeviceOtpAuthUrlOptions.html">CreateTotpDeviceOtpAuthUrlOptions</a></td>
+        <td><span class="parametername">createTotpDeviceOtpAuthUrlOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.TotpDeviceDto.html">TotpDeviceDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (TotpDeviceDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-579">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi_CreateTotpDeviceForOtpAuthUrl_" data-uid="mailslurp.Api.MFAControllerApi.CreateTotpDeviceForOtpAuthUrl*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi_CreateTotpDeviceForOtpAuthUrl_mailslurp_Model_CreateTotpDeviceOtpAuthUrlOptions_System_Int32_" data-uid="mailslurp.Api.MFAControllerApi.CreateTotpDeviceForOtpAuthUrl(mailslurp.Model.CreateTotpDeviceOtpAuthUrlOptions,System.Int32)">CreateTotpDeviceForOtpAuthUrl(CreateTotpDeviceOtpAuthUrlOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a TOTP device from an OTP Auth URL Create a virtual TOTP device for a given OTP Auth URL such as otpauth://totp/MyApp:alice@example.com?secret=ABC123&amp;amp;issuer=MyApp&amp;amp;period=30&amp;amp;digits=6&amp;amp;algorithm=SHA1. You can provider overrides in the options for each component of the URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TotpDeviceDto CreateTotpDeviceForOtpAuthUrl(CreateTotpDeviceOtpAuthUrlOptions createTotpDeviceOtpAuthUrlOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateTotpDeviceOtpAuthUrlOptions.html">CreateTotpDeviceOtpAuthUrlOptions</a></td>
+        <td><span class="parametername">createTotpDeviceOtpAuthUrlOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.TotpDeviceDto.html">TotpDeviceDto</a></td>
+        <td><p>TotpDeviceDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-657">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi_CreateTotpDeviceForOtpAuthUrlAsync_" data-uid="mailslurp.Api.MFAControllerApi.CreateTotpDeviceForOtpAuthUrlAsync*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi_CreateTotpDeviceForOtpAuthUrlAsync_mailslurp_Model_CreateTotpDeviceOtpAuthUrlOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.MFAControllerApi.CreateTotpDeviceForOtpAuthUrlAsync(mailslurp.Model.CreateTotpDeviceOtpAuthUrlOptions,System.Int32,System.Threading.CancellationToken)">CreateTotpDeviceForOtpAuthUrlAsync(CreateTotpDeviceOtpAuthUrlOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create a TOTP device from an OTP Auth URL Create a virtual TOTP device for a given OTP Auth URL such as otpauth://totp/MyApp:alice@example.com?secret=ABC123&amp;amp;issuer=MyApp&amp;amp;period=30&amp;amp;digits=6&amp;amp;algorithm=SHA1. You can provider overrides in the options for each component of the URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TotpDeviceDto&gt; CreateTotpDeviceForOtpAuthUrlAsync(CreateTotpDeviceOtpAuthUrlOptions createTotpDeviceOtpAuthUrlOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateTotpDeviceOtpAuthUrlOptions.html">CreateTotpDeviceOtpAuthUrlOptions</a></td>
+        <td><span class="parametername">createTotpDeviceOtpAuthUrlOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.TotpDeviceDto.html">TotpDeviceDto</a>&gt;</td>
+        <td><p>Task of TotpDeviceDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-592">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi_CreateTotpDeviceForOtpAuthUrlWithHttpInfo_" data-uid="mailslurp.Api.MFAControllerApi.CreateTotpDeviceForOtpAuthUrlWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi_CreateTotpDeviceForOtpAuthUrlWithHttpInfo_mailslurp_Model_CreateTotpDeviceOtpAuthUrlOptions_System_Int32_" data-uid="mailslurp.Api.MFAControllerApi.CreateTotpDeviceForOtpAuthUrlWithHttpInfo(mailslurp.Model.CreateTotpDeviceOtpAuthUrlOptions,System.Int32)">CreateTotpDeviceForOtpAuthUrlWithHttpInfo(CreateTotpDeviceOtpAuthUrlOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a TOTP device from an OTP Auth URL Create a virtual TOTP device for a given OTP Auth URL such as otpauth://totp/MyApp:alice@example.com?secret=ABC123&amp;amp;issuer=MyApp&amp;amp;period=30&amp;amp;digits=6&amp;amp;algorithm=SHA1. You can provider overrides in the options for each component of the URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;TotpDeviceDto&gt; CreateTotpDeviceForOtpAuthUrlWithHttpInfo(CreateTotpDeviceOtpAuthUrlOptions createTotpDeviceOtpAuthUrlOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateTotpDeviceOtpAuthUrlOptions.html">CreateTotpDeviceOtpAuthUrlOptions</a></td>
+        <td><span class="parametername">createTotpDeviceOtpAuthUrlOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.TotpDeviceDto.html">TotpDeviceDto</a>&gt;</td>
+        <td><p>ApiResponse of TotpDeviceDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-671">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi_CreateTotpDeviceForOtpAuthUrlWithHttpInfoAsync_" data-uid="mailslurp.Api.MFAControllerApi.CreateTotpDeviceForOtpAuthUrlWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi_CreateTotpDeviceForOtpAuthUrlWithHttpInfoAsync_mailslurp_Model_CreateTotpDeviceOtpAuthUrlOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.MFAControllerApi.CreateTotpDeviceForOtpAuthUrlWithHttpInfoAsync(mailslurp.Model.CreateTotpDeviceOtpAuthUrlOptions,System.Int32,System.Threading.CancellationToken)">CreateTotpDeviceForOtpAuthUrlWithHttpInfoAsync(CreateTotpDeviceOtpAuthUrlOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create a TOTP device from an OTP Auth URL Create a virtual TOTP device for a given OTP Auth URL such as otpauth://totp/MyApp:alice@example.com?secret=ABC123&amp;amp;issuer=MyApp&amp;amp;period=30&amp;amp;digits=6&amp;amp;algorithm=SHA1. You can provider overrides in the options for each component of the URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;TotpDeviceDto&gt;&gt; CreateTotpDeviceForOtpAuthUrlWithHttpInfoAsync(CreateTotpDeviceOtpAuthUrlOptions createTotpDeviceOtpAuthUrlOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateTotpDeviceOtpAuthUrlOptions.html">CreateTotpDeviceOtpAuthUrlOptions</a></td>
+        <td><span class="parametername">createTotpDeviceOtpAuthUrlOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.TotpDeviceDto.html">TotpDeviceDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (TotpDeviceDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-388">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi_GetBasePath_" data-uid="mailslurp.Api.MFAControllerApi.GetBasePath*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi_GetBasePath" data-uid="mailslurp.Api.MFAControllerApi.GetBasePath">GetBasePath()</h4>
+  <div class="markdown level1 summary"><p>Gets the base path of the API client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetBasePath()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The base path</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-736">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi_GetTotpDevice_" data-uid="mailslurp.Api.MFAControllerApi.GetTotpDevice*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi_GetTotpDevice_System_Guid_System_Int32_" data-uid="mailslurp.Api.MFAControllerApi.GetTotpDevice(System.Guid,System.Int32)">GetTotpDevice(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get a TOTP device by ID Get Time-Based One-Time Password (TOTP) device by its ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TotpDeviceDto GetTotpDevice(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.TotpDeviceDto.html">TotpDeviceDto</a></td>
+        <td><p>TotpDeviceDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-807">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi_GetTotpDeviceAsync_" data-uid="mailslurp.Api.MFAControllerApi.GetTotpDeviceAsync*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi_GetTotpDeviceAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.MFAControllerApi.GetTotpDeviceAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetTotpDeviceAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get a TOTP device by ID Get Time-Based One-Time Password (TOTP) device by its ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TotpDeviceDto&gt; GetTotpDeviceAsync(Guid id, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.TotpDeviceDto.html">TotpDeviceDto</a>&gt;</td>
+        <td><p>Task of TotpDeviceDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-881">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi_GetTotpDeviceBy_" data-uid="mailslurp.Api.MFAControllerApi.GetTotpDeviceBy*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi_GetTotpDeviceBy_System_String_System_String_System_String_System_Int32_" data-uid="mailslurp.Api.MFAControllerApi.GetTotpDeviceBy(System.String,System.String,System.String,System.Int32)">GetTotpDeviceBy(string, string, string, int)</h4>
+  <div class="markdown level1 summary"><p>Get a TOTP device by username, issuer, or name. Returns empty if not found. Get Time-Based One-Time Password (TOTP) device by its username and issuer mapping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TotpDeviceOptionalDto GetTotpDeviceBy(string name = null, string issuer = null, string username = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Optional name filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">issuer</span></td>
+        <td><p>Optional issuer filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">username</span></td>
+        <td><p>Optional username filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.TotpDeviceOptionalDto.html">TotpDeviceOptionalDto</a></td>
+        <td><p>TotpDeviceOptionalDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-967">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi_GetTotpDeviceByAsync_" data-uid="mailslurp.Api.MFAControllerApi.GetTotpDeviceByAsync*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi_GetTotpDeviceByAsync_System_String_System_String_System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.MFAControllerApi.GetTotpDeviceByAsync(System.String,System.String,System.String,System.Int32,System.Threading.CancellationToken)">GetTotpDeviceByAsync(string, string, string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get a TOTP device by username, issuer, or name. Returns empty if not found. Get Time-Based One-Time Password (TOTP) device by its username and issuer mapping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TotpDeviceOptionalDto&gt; GetTotpDeviceByAsync(string name = null, string issuer = null, string username = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Optional name filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">issuer</span></td>
+        <td><p>Optional issuer filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">username</span></td>
+        <td><p>Optional username filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.TotpDeviceOptionalDto.html">TotpDeviceOptionalDto</a>&gt;</td>
+        <td><p>Task of TotpDeviceOptionalDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-896">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi_GetTotpDeviceByWithHttpInfo_" data-uid="mailslurp.Api.MFAControllerApi.GetTotpDeviceByWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi_GetTotpDeviceByWithHttpInfo_System_String_System_String_System_String_System_Int32_" data-uid="mailslurp.Api.MFAControllerApi.GetTotpDeviceByWithHttpInfo(System.String,System.String,System.String,System.Int32)">GetTotpDeviceByWithHttpInfo(string, string, string, int)</h4>
+  <div class="markdown level1 summary"><p>Get a TOTP device by username, issuer, or name. Returns empty if not found. Get Time-Based One-Time Password (TOTP) device by its username and issuer mapping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;TotpDeviceOptionalDto&gt; GetTotpDeviceByWithHttpInfo(string name = null, string issuer = null, string username = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Optional name filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">issuer</span></td>
+        <td><p>Optional issuer filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">username</span></td>
+        <td><p>Optional username filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.TotpDeviceOptionalDto.html">TotpDeviceOptionalDto</a>&gt;</td>
+        <td><p>ApiResponse of TotpDeviceOptionalDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-983">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi_GetTotpDeviceByWithHttpInfoAsync_" data-uid="mailslurp.Api.MFAControllerApi.GetTotpDeviceByWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi_GetTotpDeviceByWithHttpInfoAsync_System_String_System_String_System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.MFAControllerApi.GetTotpDeviceByWithHttpInfoAsync(System.String,System.String,System.String,System.Int32,System.Threading.CancellationToken)">GetTotpDeviceByWithHttpInfoAsync(string, string, string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get a TOTP device by username, issuer, or name. Returns empty if not found. Get Time-Based One-Time Password (TOTP) device by its username and issuer mapping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;TotpDeviceOptionalDto&gt;&gt; GetTotpDeviceByWithHttpInfoAsync(string name = null, string issuer = null, string username = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Optional name filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">issuer</span></td>
+        <td><p>Optional issuer filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">username</span></td>
+        <td><p>Optional username filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.TotpDeviceOptionalDto.html">TotpDeviceOptionalDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (TotpDeviceOptionalDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-1054">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi_GetTotpDeviceCode_" data-uid="mailslurp.Api.MFAControllerApi.GetTotpDeviceCode*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi_GetTotpDeviceCode_System_Guid_System_Nullable_System_DateTime__System_Nullable_System_Int32__System_Int32_" data-uid="mailslurp.Api.MFAControllerApi.GetTotpDeviceCode(System.Guid,System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Int32)">GetTotpDeviceCode(Guid, DateTime?, int?, int)</h4>
+  <div class="markdown level1 summary"><p>Get a TOTP device code by device ID Get Time-Based One-Time Password for a device by its ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TotpDeviceCodeDto GetTotpDeviceCode(Guid id, DateTime? at = null, int? minSecondsUntilExpire = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of the TOTP device to get the code for</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">at</span></td>
+        <td><p>Optional time to get code for. If not provided, current time is used. (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">minSecondsUntilExpire</span></td>
+        <td><p>Optional minimum time until code expires. Will hold thread open until period reached. (optional, default to 5)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.TotpDeviceCodeDto.html">TotpDeviceCodeDto</a></td>
+        <td><p>TotpDeviceCodeDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-1137">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi_GetTotpDeviceCodeAsync_" data-uid="mailslurp.Api.MFAControllerApi.GetTotpDeviceCodeAsync*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi_GetTotpDeviceCodeAsync_System_Guid_System_Nullable_System_DateTime__System_Nullable_System_Int32__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.MFAControllerApi.GetTotpDeviceCodeAsync(System.Guid,System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Int32,System.Threading.CancellationToken)">GetTotpDeviceCodeAsync(Guid, DateTime?, int?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get a TOTP device code by device ID Get Time-Based One-Time Password for a device by its ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TotpDeviceCodeDto&gt; GetTotpDeviceCodeAsync(Guid id, DateTime? at = null, int? minSecondsUntilExpire = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of the TOTP device to get the code for</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">at</span></td>
+        <td><p>Optional time to get code for. If not provided, current time is used. (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">minSecondsUntilExpire</span></td>
+        <td><p>Optional minimum time until code expires. Will hold thread open until period reached. (optional, default to 5)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.TotpDeviceCodeDto.html">TotpDeviceCodeDto</a>&gt;</td>
+        <td><p>Task of TotpDeviceCodeDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-1069">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi_GetTotpDeviceCodeWithHttpInfo_" data-uid="mailslurp.Api.MFAControllerApi.GetTotpDeviceCodeWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi_GetTotpDeviceCodeWithHttpInfo_System_Guid_System_Nullable_System_DateTime__System_Nullable_System_Int32__System_Int32_" data-uid="mailslurp.Api.MFAControllerApi.GetTotpDeviceCodeWithHttpInfo(System.Guid,System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Int32)">GetTotpDeviceCodeWithHttpInfo(Guid, DateTime?, int?, int)</h4>
+  <div class="markdown level1 summary"><p>Get a TOTP device code by device ID Get Time-Based One-Time Password for a device by its ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;TotpDeviceCodeDto&gt; GetTotpDeviceCodeWithHttpInfo(Guid id, DateTime? at = null, int? minSecondsUntilExpire = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of the TOTP device to get the code for</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">at</span></td>
+        <td><p>Optional time to get code for. If not provided, current time is used. (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">minSecondsUntilExpire</span></td>
+        <td><p>Optional minimum time until code expires. Will hold thread open until period reached. (optional, default to 5)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.TotpDeviceCodeDto.html">TotpDeviceCodeDto</a>&gt;</td>
+        <td><p>ApiResponse of TotpDeviceCodeDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-1153">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi_GetTotpDeviceCodeWithHttpInfoAsync_" data-uid="mailslurp.Api.MFAControllerApi.GetTotpDeviceCodeWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi_GetTotpDeviceCodeWithHttpInfoAsync_System_Guid_System_Nullable_System_DateTime__System_Nullable_System_Int32__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.MFAControllerApi.GetTotpDeviceCodeWithHttpInfoAsync(System.Guid,System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Int32,System.Threading.CancellationToken)">GetTotpDeviceCodeWithHttpInfoAsync(Guid, DateTime?, int?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get a TOTP device code by device ID Get Time-Based One-Time Password for a device by its ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;TotpDeviceCodeDto&gt;&gt; GetTotpDeviceCodeWithHttpInfoAsync(Guid id, DateTime? at = null, int? minSecondsUntilExpire = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of the TOTP device to get the code for</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">at</span></td>
+        <td><p>Optional time to get code for. If not provided, current time is used. (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">minSecondsUntilExpire</span></td>
+        <td><p>Optional minimum time until code expires. Will hold thread open until period reached. (optional, default to 5)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.TotpDeviceCodeDto.html">TotpDeviceCodeDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (TotpDeviceCodeDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-749">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi_GetTotpDeviceWithHttpInfo_" data-uid="mailslurp.Api.MFAControllerApi.GetTotpDeviceWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi_GetTotpDeviceWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.MFAControllerApi.GetTotpDeviceWithHttpInfo(System.Guid,System.Int32)">GetTotpDeviceWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get a TOTP device by ID Get Time-Based One-Time Password (TOTP) device by its ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;TotpDeviceDto&gt; GetTotpDeviceWithHttpInfo(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.TotpDeviceDto.html">TotpDeviceDto</a>&gt;</td>
+        <td><p>ApiResponse of TotpDeviceDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-821">View Source</a>
+  </span>
+  <a id="mailslurp_Api_MFAControllerApi_GetTotpDeviceWithHttpInfoAsync_" data-uid="mailslurp.Api.MFAControllerApi.GetTotpDeviceWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_MFAControllerApi_GetTotpDeviceWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.MFAControllerApi.GetTotpDeviceWithHttpInfoAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetTotpDeviceWithHttpInfoAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get a TOTP device by ID Get Time-Based One-Time Password (TOTP) device by its ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;TotpDeviceDto&gt;&gt; GetTotpDeviceWithHttpInfoAsync(Guid id, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.TotpDeviceDto.html">TotpDeviceDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (TotpDeviceDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="mailslurp.Api.IMFAControllerApi.html">IMFAControllerApi</a>
+  </div>
+  <div>
+      <a class="xref" href="mailslurp.Api.IMFAControllerApiSync.html">IMFAControllerApiSync</a>
+  </div>
+  <div>
+      <a class="xref" href="mailslurp.Api.IMFAControllerApiAsync.html">IMFAControllerApiAsync</a>
+  </div>
+  <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html">IApiAccessor</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/MFAControllerApi.cs#lines-309" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
