@@ -1,0 +1,3429 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IAIControllerApiSync | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IAIControllerApiSync | MailSlurp ">
+    
+    <meta name="description" content="Represents a collection of functions to interact with the API endpoints">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Api.IAIControllerApiSync">
+
+
+
+  <h1 id="mailslurp_Api_IAIControllerApiSync" data-uid="mailslurp.Api.IAIControllerApiSync" class="text-break">Interface IAIControllerApiSync</h1>
+  <div class="markdown level0 summary"><p>Represents a collection of functions to interact with the API endpoints</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_Configuration">IApiAccessor.Configuration</a>
+    </div>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_GetBasePath">IApiAccessor.GetBasePath()</a>
+    </div>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_ExceptionFactory">IApiAccessor.ExceptionFactory</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="mailslurp.html">mailslurp</a>.<a class="xref" href="mailslurp.Api.html">Api</a></h6>
+  <h6><strong>Assembly</strong>: mailslurp.dll</h6>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IAIControllerApiSync : IApiAccessor</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-40">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_CreateTransformer_" data-uid="mailslurp.Api.IAIControllerApiSync.CreateTransformer*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_CreateTransformer_mailslurp_Model_AITransformCreateOptions_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.CreateTransformer(mailslurp.Model.AITransformCreateOptions,System.Int32)">CreateTransformer(AITransformCreateOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a transformer for reuse in automations</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AITransformDto CreateTransformer(AITransformCreateOptions aITransformCreateOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.AITransformCreateOptions.html">AITransformCreateOptions</a></td>
+        <td><span class="parametername">aITransformCreateOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.AITransformDto.html">AITransformDto</a></td>
+        <td><p>AITransformDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_CreateTransformer_mailslurp_Model_AITransformCreateOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Save an AI transform instructions and schema for use with webhooks and automations</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-63">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_CreateTransformerMappings_" data-uid="mailslurp.Api.IAIControllerApiSync.CreateTransformerMappings*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_CreateTransformerMappings_mailslurp_Model_CreateAITransformerMappingOptions_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.CreateTransformerMappings(mailslurp.Model.CreateAITransformerMappingOptions,System.Int32)">CreateTransformerMappings(CreateAITransformerMappingOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create transformer mapping</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AITransformMappingDto CreateTransformerMappings(CreateAITransformerMappingOptions createAITransformerMappingOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateAITransformerMappingOptions.html">CreateAITransformerMappingOptions</a></td>
+        <td><span class="parametername">createAITransformerMappingOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.AITransformMappingDto.html">AITransformMappingDto</a></td>
+        <td><p>AITransformMappingDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_CreateTransformerMappings_mailslurp_Model_CreateAITransformerMappingOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Create AI transformer mappings to other entities</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-75">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_CreateTransformerMappingsWithHttpInfo_" data-uid="mailslurp.Api.IAIControllerApiSync.CreateTransformerMappingsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_CreateTransformerMappingsWithHttpInfo_mailslurp_Model_CreateAITransformerMappingOptions_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.CreateTransformerMappingsWithHttpInfo(mailslurp.Model.CreateAITransformerMappingOptions,System.Int32)">CreateTransformerMappingsWithHttpInfo(CreateAITransformerMappingOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create transformer mapping</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;AITransformMappingDto&gt; CreateTransformerMappingsWithHttpInfo(CreateAITransformerMappingOptions createAITransformerMappingOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateAITransformerMappingOptions.html">CreateAITransformerMappingOptions</a></td>
+        <td><span class="parametername">createAITransformerMappingOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.AITransformMappingDto.html">AITransformMappingDto</a>&gt;</td>
+        <td><p>ApiResponse of AITransformMappingDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_CreateTransformerMappingsWithHttpInfo_mailslurp_Model_CreateAITransformerMappingOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Create AI transformer mappings to other entities</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-52">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_CreateTransformerWithHttpInfo_" data-uid="mailslurp.Api.IAIControllerApiSync.CreateTransformerWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_CreateTransformerWithHttpInfo_mailslurp_Model_AITransformCreateOptions_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.CreateTransformerWithHttpInfo(mailslurp.Model.AITransformCreateOptions,System.Int32)">CreateTransformerWithHttpInfo(AITransformCreateOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a transformer for reuse in automations</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;AITransformDto&gt; CreateTransformerWithHttpInfo(AITransformCreateOptions aITransformCreateOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.AITransformCreateOptions.html">AITransformCreateOptions</a></td>
+        <td><span class="parametername">aITransformCreateOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.AITransformDto.html">AITransformDto</a>&gt;</td>
+        <td><p>ApiResponse of AITransformDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_CreateTransformerWithHttpInfo_mailslurp_Model_AITransformCreateOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Save an AI transform instructions and schema for use with webhooks and automations</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-85">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_DeleteAllTransformerMappings_" data-uid="mailslurp.Api.IAIControllerApiSync.DeleteAllTransformerMappings*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_DeleteAllTransformerMappings_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.DeleteAllTransformerMappings(System.Int32)">DeleteAllTransformerMappings(int)</h4>
+  <div class="markdown level1 summary"><p>Delete all transformer mapping</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteAllTransformerMappings(int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_DeleteAllTransformerMappings_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Delete all AI transformer mappings</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-96">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_DeleteAllTransformerMappingsWithHttpInfo_" data-uid="mailslurp.Api.IAIControllerApiSync.DeleteAllTransformerMappingsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_DeleteAllTransformerMappingsWithHttpInfo_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.DeleteAllTransformerMappingsWithHttpInfo(System.Int32)">DeleteAllTransformerMappingsWithHttpInfo(int)</h4>
+  <div class="markdown level1 summary"><p>Delete all transformer mapping</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;object&gt; DeleteAllTransformerMappingsWithHttpInfo(int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</td>
+        <td><p>ApiResponse of Object(void)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_DeleteAllTransformerMappingsWithHttpInfo_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Delete all AI transformer mappings</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-107">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_DeleteTransformer_" data-uid="mailslurp.Api.IAIControllerApiSync.DeleteTransformer*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_DeleteTransformer_System_Guid_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.DeleteTransformer(System.Guid,System.Int32)">DeleteTransformer(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Delete a transformer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteTransformer(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_DeleteTransformer_System_Guid_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Delete an AI transformer and schemas by ID</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-130">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_DeleteTransformerMapping_" data-uid="mailslurp.Api.IAIControllerApiSync.DeleteTransformerMapping*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_DeleteTransformerMapping_System_Guid_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.DeleteTransformerMapping(System.Guid,System.Int32)">DeleteTransformerMapping(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Delete transformer mapping</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteTransformerMapping(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of transform mapping</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_DeleteTransformerMapping_System_Guid_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Delete an AI transformer mapping</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-142">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_DeleteTransformerMappingWithHttpInfo_" data-uid="mailslurp.Api.IAIControllerApiSync.DeleteTransformerMappingWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_DeleteTransformerMappingWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.DeleteTransformerMappingWithHttpInfo(System.Guid,System.Int32)">DeleteTransformerMappingWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Delete transformer mapping</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;object&gt; DeleteTransformerMappingWithHttpInfo(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of transform mapping</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</td>
+        <td><p>ApiResponse of Object(void)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_DeleteTransformerMappingWithHttpInfo_System_Guid_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Delete an AI transformer mapping</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-119">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_DeleteTransformerWithHttpInfo_" data-uid="mailslurp.Api.IAIControllerApiSync.DeleteTransformerWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_DeleteTransformerWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.DeleteTransformerWithHttpInfo(System.Guid,System.Int32)">DeleteTransformerWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Delete a transformer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;object&gt; DeleteTransformerWithHttpInfo(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</td>
+        <td><p>ApiResponse of Object(void)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_DeleteTransformerWithHttpInfo_System_Guid_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Delete an AI transformer and schemas by ID</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-152">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_DeleteTransformers_" data-uid="mailslurp.Api.IAIControllerApiSync.DeleteTransformers*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_DeleteTransformers_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.DeleteTransformers(System.Int32)">DeleteTransformers(int)</h4>
+  <div class="markdown level1 summary"><p>Delete all transformers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteTransformers(int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_DeleteTransformers_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Delete all AI transformers and schemas</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-163">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_DeleteTransformersWithHttpInfo_" data-uid="mailslurp.Api.IAIControllerApiSync.DeleteTransformersWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_DeleteTransformersWithHttpInfo_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.DeleteTransformersWithHttpInfo(System.Int32)">DeleteTransformersWithHttpInfo(int)</h4>
+  <div class="markdown level1 summary"><p>Delete all transformers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;object&gt; DeleteTransformersWithHttpInfo(int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</td>
+        <td><p>ApiResponse of Object(void)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_DeleteTransformersWithHttpInfo_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Delete all AI transformers and schemas</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-174">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_ExportTransformerResults_" data-uid="mailslurp.Api.IAIControllerApiSync.ExportTransformerResults*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_ExportTransformerResults_mailslurp_Model_ExportTransformerOptions_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.ExportTransformerResults(mailslurp.Model.ExportTransformerOptions,System.Int32)">ExportTransformerResults(ExportTransformerOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Export transformer results</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ExportTransformerResponse ExportTransformerResults(ExportTransformerOptions exportTransformerOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ExportTransformerOptions.html">ExportTransformerOptions</a></td>
+        <td><span class="parametername">exportTransformerOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ExportTransformerResponse.html">ExportTransformerResponse</a></td>
+        <td><p>ExportTransformerResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_ExportTransformerResults_mailslurp_Model_ExportTransformerOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Export AI transformer results in formats such as Excel, CSV, XML etc.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-186">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_ExportTransformerResultsWithHttpInfo_" data-uid="mailslurp.Api.IAIControllerApiSync.ExportTransformerResultsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_ExportTransformerResultsWithHttpInfo_mailslurp_Model_ExportTransformerOptions_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.ExportTransformerResultsWithHttpInfo(mailslurp.Model.ExportTransformerOptions,System.Int32)">ExportTransformerResultsWithHttpInfo(ExportTransformerOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Export transformer results</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;ExportTransformerResponse&gt; ExportTransformerResultsWithHttpInfo(ExportTransformerOptions exportTransformerOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ExportTransformerOptions.html">ExportTransformerOptions</a></td>
+        <td><span class="parametername">exportTransformerOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.ExportTransformerResponse.html">ExportTransformerResponse</a>&gt;</td>
+        <td><p>ApiResponse of ExportTransformerResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_ExportTransformerResultsWithHttpInfo_mailslurp_Model_ExportTransformerOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Export AI transformer results in formats such as Excel, CSV, XML etc.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-197">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_GenerateStructuredContentFromAttachment_" data-uid="mailslurp.Api.IAIControllerApiSync.GenerateStructuredContentFromAttachment*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_GenerateStructuredContentFromAttachment_mailslurp_Model_GenerateStructuredContentAttachmentOptions_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.GenerateStructuredContentFromAttachment(mailslurp.Model.GenerateStructuredContentAttachmentOptions,System.Int32)">GenerateStructuredContentFromAttachment(GenerateStructuredContentAttachmentOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Generate structured content for an attachment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">StructuredContentResultDto GenerateStructuredContentFromAttachment(GenerateStructuredContentAttachmentOptions generateStructuredContentAttachmentOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateStructuredContentAttachmentOptions.html">GenerateStructuredContentAttachmentOptions</a></td>
+        <td><span class="parametername">generateStructuredContentAttachmentOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.StructuredContentResultDto.html">StructuredContentResultDto</a></td>
+        <td><p>StructuredContentResultDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_GenerateStructuredContentFromAttachment_mailslurp_Model_GenerateStructuredContentAttachmentOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use output schemas to extract data from an attachment using AI</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-209">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_GenerateStructuredContentFromAttachmentWithHttpInfo_" data-uid="mailslurp.Api.IAIControllerApiSync.GenerateStructuredContentFromAttachmentWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_GenerateStructuredContentFromAttachmentWithHttpInfo_mailslurp_Model_GenerateStructuredContentAttachmentOptions_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.GenerateStructuredContentFromAttachmentWithHttpInfo(mailslurp.Model.GenerateStructuredContentAttachmentOptions,System.Int32)">GenerateStructuredContentFromAttachmentWithHttpInfo(GenerateStructuredContentAttachmentOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Generate structured content for an attachment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;StructuredContentResultDto&gt; GenerateStructuredContentFromAttachmentWithHttpInfo(GenerateStructuredContentAttachmentOptions generateStructuredContentAttachmentOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateStructuredContentAttachmentOptions.html">GenerateStructuredContentAttachmentOptions</a></td>
+        <td><span class="parametername">generateStructuredContentAttachmentOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.StructuredContentResultDto.html">StructuredContentResultDto</a>&gt;</td>
+        <td><p>ApiResponse of StructuredContentResultDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_GenerateStructuredContentFromAttachmentWithHttpInfo_mailslurp_Model_GenerateStructuredContentAttachmentOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use output schemas to extract data from an attachment using AI</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-220">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_GenerateStructuredContentFromEmail_" data-uid="mailslurp.Api.IAIControllerApiSync.GenerateStructuredContentFromEmail*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_GenerateStructuredContentFromEmail_mailslurp_Model_GenerateStructuredContentEmailOptions_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.GenerateStructuredContentFromEmail(mailslurp.Model.GenerateStructuredContentEmailOptions,System.Int32)">GenerateStructuredContentFromEmail(GenerateStructuredContentEmailOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Generate structured content for an email</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">StructuredContentResultDto GenerateStructuredContentFromEmail(GenerateStructuredContentEmailOptions generateStructuredContentEmailOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateStructuredContentEmailOptions.html">GenerateStructuredContentEmailOptions</a></td>
+        <td><span class="parametername">generateStructuredContentEmailOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.StructuredContentResultDto.html">StructuredContentResultDto</a></td>
+        <td><p>StructuredContentResultDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_GenerateStructuredContentFromEmail_mailslurp_Model_GenerateStructuredContentEmailOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use output schemas to extract data from an email using AI</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-232">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_GenerateStructuredContentFromEmailWithHttpInfo_" data-uid="mailslurp.Api.IAIControllerApiSync.GenerateStructuredContentFromEmailWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_GenerateStructuredContentFromEmailWithHttpInfo_mailslurp_Model_GenerateStructuredContentEmailOptions_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.GenerateStructuredContentFromEmailWithHttpInfo(mailslurp.Model.GenerateStructuredContentEmailOptions,System.Int32)">GenerateStructuredContentFromEmailWithHttpInfo(GenerateStructuredContentEmailOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Generate structured content for an email</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;StructuredContentResultDto&gt; GenerateStructuredContentFromEmailWithHttpInfo(GenerateStructuredContentEmailOptions generateStructuredContentEmailOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateStructuredContentEmailOptions.html">GenerateStructuredContentEmailOptions</a></td>
+        <td><span class="parametername">generateStructuredContentEmailOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.StructuredContentResultDto.html">StructuredContentResultDto</a>&gt;</td>
+        <td><p>ApiResponse of StructuredContentResultDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_GenerateStructuredContentFromEmailWithHttpInfo_mailslurp_Model_GenerateStructuredContentEmailOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use output schemas to extract data from an email using AI</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-243">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_GenerateStructuredContentFromSms_" data-uid="mailslurp.Api.IAIControllerApiSync.GenerateStructuredContentFromSms*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_GenerateStructuredContentFromSms_mailslurp_Model_GenerateStructuredContentSmsOptions_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.GenerateStructuredContentFromSms(mailslurp.Model.GenerateStructuredContentSmsOptions,System.Int32)">GenerateStructuredContentFromSms(GenerateStructuredContentSmsOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Generate structured content for a TXT message</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">StructuredContentResultDto GenerateStructuredContentFromSms(GenerateStructuredContentSmsOptions generateStructuredContentSmsOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateStructuredContentSmsOptions.html">GenerateStructuredContentSmsOptions</a></td>
+        <td><span class="parametername">generateStructuredContentSmsOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.StructuredContentResultDto.html">StructuredContentResultDto</a></td>
+        <td><p>StructuredContentResultDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_GenerateStructuredContentFromSms_mailslurp_Model_GenerateStructuredContentSmsOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use output schemas to extract data from an SMS using AI</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-255">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_GenerateStructuredContentFromSmsWithHttpInfo_" data-uid="mailslurp.Api.IAIControllerApiSync.GenerateStructuredContentFromSmsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_GenerateStructuredContentFromSmsWithHttpInfo_mailslurp_Model_GenerateStructuredContentSmsOptions_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.GenerateStructuredContentFromSmsWithHttpInfo(mailslurp.Model.GenerateStructuredContentSmsOptions,System.Int32)">GenerateStructuredContentFromSmsWithHttpInfo(GenerateStructuredContentSmsOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Generate structured content for a TXT message</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;StructuredContentResultDto&gt; GenerateStructuredContentFromSmsWithHttpInfo(GenerateStructuredContentSmsOptions generateStructuredContentSmsOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.GenerateStructuredContentSmsOptions.html">GenerateStructuredContentSmsOptions</a></td>
+        <td><span class="parametername">generateStructuredContentSmsOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.StructuredContentResultDto.html">StructuredContentResultDto</a>&gt;</td>
+        <td><p>ApiResponse of StructuredContentResultDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_GenerateStructuredContentFromSmsWithHttpInfo_mailslurp_Model_GenerateStructuredContentSmsOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use output schemas to extract data from an SMS using AI</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-266">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_GetExportTransformerResultsJob_" data-uid="mailslurp.Api.IAIControllerApiSync.GetExportTransformerResultsJob*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_GetExportTransformerResultsJob_System_Guid_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.GetExportTransformerResultsJob(System.Guid,System.Int32)">GetExportTransformerResultsJob(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get export transformer results job</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ExportTransformerResultJobDto GetExportTransformerResultsJob(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ExportTransformerResultJobDto.html">ExportTransformerResultJobDto</a></td>
+        <td><p>ExportTransformerResultJobDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_GetExportTransformerResultsJob_System_Guid_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get the job status for an export</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-278">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_GetExportTransformerResultsJobWithHttpInfo_" data-uid="mailslurp.Api.IAIControllerApiSync.GetExportTransformerResultsJobWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_GetExportTransformerResultsJobWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.GetExportTransformerResultsJobWithHttpInfo(System.Guid,System.Int32)">GetExportTransformerResultsJobWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get export transformer results job</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;ExportTransformerResultJobDto&gt; GetExportTransformerResultsJobWithHttpInfo(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.ExportTransformerResultJobDto.html">ExportTransformerResultJobDto</a>&gt;</td>
+        <td><p>ApiResponse of ExportTransformerResultJobDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_GetExportTransformerResultsJobWithHttpInfo_System_Guid_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get the job status for an export</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-289">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_GetTransformer_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformer*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_GetTransformer_System_Guid_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformer(System.Guid,System.Int32)">GetTransformer(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get a transformer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AITransformDto GetTransformer(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.AITransformDto.html">AITransformDto</a></td>
+        <td><p>AITransformDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_GetTransformer_System_Guid_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get AI transformer and schemas by ID</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-312">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_GetTransformerMapping_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformerMapping*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_GetTransformerMapping_System_Guid_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformerMapping(System.Guid,System.Int32)">GetTransformerMapping(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get transformer mapping</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AITransformMappingDto GetTransformerMapping(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of transform mapping</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.AITransformMappingDto.html">AITransformMappingDto</a></td>
+        <td><p>AITransformMappingDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_GetTransformerMapping_System_Guid_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get an AI transformer mapping</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-324">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_GetTransformerMappingWithHttpInfo_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformerMappingWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_GetTransformerMappingWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformerMappingWithHttpInfo(System.Guid,System.Int32)">GetTransformerMappingWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get transformer mapping</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;AITransformMappingDto&gt; GetTransformerMappingWithHttpInfo(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of transform mapping</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.AITransformMappingDto.html">AITransformMappingDto</a>&gt;</td>
+        <td><p>ApiResponse of AITransformMappingDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_GetTransformerMappingWithHttpInfo_System_Guid_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get an AI transformer mapping</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-340">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_GetTransformerMappings_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformerMappings*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_GetTransformerMappings_System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformerMappings(System.Nullable{System.Guid},System.Nullable{System.Guid},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Int32)">GetTransformerMappings(Guid?, Guid?, string, int?, int?, string, int)</h4>
+  <div class="markdown level1 summary"><p>Get transformer mappings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PageAITransformMappingProjection GetTransformerMappings(Guid? aiTransformId = null, Guid? entityId = null, string entityType = null, int? page = null, int? size = null, string sort = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">aiTransformId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">entityId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">entityType</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>(optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size. Maximum size is 100. Use page index and sort to page through larger results (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.PageAITransformMappingProjection.html">PageAITransformMappingProjection</a></td>
+        <td><p>PageAITransformMappingProjection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_GetTransformerMappings_System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get AI transformer mappings to other entities</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-357">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_GetTransformerMappingsWithHttpInfo_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformerMappingsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_GetTransformerMappingsWithHttpInfo_System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformerMappingsWithHttpInfo(System.Nullable{System.Guid},System.Nullable{System.Guid},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Int32)">GetTransformerMappingsWithHttpInfo(Guid?, Guid?, string, int?, int?, string, int)</h4>
+  <div class="markdown level1 summary"><p>Get transformer mappings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;PageAITransformMappingProjection&gt; GetTransformerMappingsWithHttpInfo(Guid? aiTransformId = null, Guid? entityId = null, string entityType = null, int? page = null, int? size = null, string sort = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">aiTransformId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">entityId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">entityType</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>(optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size. Maximum size is 100. Use page index and sort to page through larger results (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.PageAITransformMappingProjection.html">PageAITransformMappingProjection</a>&gt;</td>
+        <td><p>ApiResponse of PageAITransformMappingProjection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_GetTransformerMappingsWithHttpInfo_System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get AI transformer mappings to other entities</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-368">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_GetTransformerResult_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformerResult*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_GetTransformerResult_System_Guid_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformerResult(System.Guid,System.Int32)">GetTransformerResult(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get transformer result</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AITransformResultDto GetTransformerResult(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of transform result</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.AITransformResultDto.html">AITransformResultDto</a></td>
+        <td><p>AITransformResultDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_GetTransformerResult_System_Guid_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get AI transformer result</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-380">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_GetTransformerResultWithHttpInfo_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformerResultWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_GetTransformerResultWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformerResultWithHttpInfo(System.Guid,System.Int32)">GetTransformerResultWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get transformer result</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;AITransformResultDto&gt; GetTransformerResultWithHttpInfo(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of transform result</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.AITransformResultDto.html">AITransformResultDto</a>&gt;</td>
+        <td><p>ApiResponse of AITransformResultDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_GetTransformerResultWithHttpInfo_System_Guid_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get AI transformer result</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-400">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_GetTransformerResults_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformerResults*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_GetTransformerResults_System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Nullable_System_Guid__System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformerResults(System.Nullable{System.Guid},System.Nullable{System.Guid},System.String,System.Nullable{System.Guid},System.Nullable{System.Guid},System.Nullable{System.Guid},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Int32)">GetTransformerResults(Guid?, Guid?, string, Guid?, Guid?, Guid?, string, int?, int?, string, int)</h4>
+  <div class="markdown level1 summary"><p>Get transformer results</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PageAITransformResultProjection GetTransformerResults(Guid? emailId = null, Guid? smsId = null, string attachmentId = null, Guid? aiTransformId = null, Guid? aiTransformMappingId = null, Guid? entityId = null, string entityType = null, int? page = null, int? size = null, string sort = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">emailId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">smsId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">attachmentId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">aiTransformId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">aiTransformMappingId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">entityId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">entityType</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>(optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size. Maximum size is 100. Use page index and sort to page through larger results (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.PageAITransformResultProjection.html">PageAITransformResultProjection</a></td>
+        <td><p>PageAITransformResultProjection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_GetTransformerResults_System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Nullable_System_Guid__System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get AI transformer results</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-443">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_GetTransformerResultsTable_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformerResultsTable*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_GetTransformerResultsTable_System_Boolean_System_Boolean_System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Nullable_System_Guid__System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformerResultsTable(System.Boolean,System.Boolean,System.Nullable{System.Guid},System.Nullable{System.Guid},System.String,System.Nullable{System.Guid},System.Nullable{System.Guid},System.Nullable{System.Guid},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Int32)">GetTransformerResultsTable(bool, bool, Guid?, Guid?, string, Guid?, Guid?, Guid?, string, int?, int?, string, int)</h4>
+  <div class="markdown level1 summary"><p>Get transformer results table</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PageTableData GetTransformerResultsTable(bool includeMetaData, bool flattenArraysToRows, Guid? emailId = null, Guid? smsId = null, string attachmentId = null, Guid? aiTransformId = null, Guid? aiTransformMappingId = null, Guid? entityId = null, string entityType = null, int? page = null, int? size = null, string sort = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">includeMetaData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">flattenArraysToRows</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">emailId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">smsId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">attachmentId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">aiTransformId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">aiTransformMappingId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">entityId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">entityType</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>(optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size. Maximum size is 100. Use page index and sort to page through larger results (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.PageTableData.html">PageTableData</a></td>
+        <td><p>PageTableData</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_GetTransformerResultsTable_System_Boolean_System_Boolean_System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Nullable_System_Guid__System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get AI transformer results in table format</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-466">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_GetTransformerResultsTableWithHttpInfo_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformerResultsTableWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_GetTransformerResultsTableWithHttpInfo_System_Boolean_System_Boolean_System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Nullable_System_Guid__System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformerResultsTableWithHttpInfo(System.Boolean,System.Boolean,System.Nullable{System.Guid},System.Nullable{System.Guid},System.String,System.Nullable{System.Guid},System.Nullable{System.Guid},System.Nullable{System.Guid},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Int32)">GetTransformerResultsTableWithHttpInfo(bool, bool, Guid?, Guid?, string, Guid?, Guid?, Guid?, string, int?, int?, string, int)</h4>
+  <div class="markdown level1 summary"><p>Get transformer results table</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;PageTableData&gt; GetTransformerResultsTableWithHttpInfo(bool includeMetaData, bool flattenArraysToRows, Guid? emailId = null, Guid? smsId = null, string attachmentId = null, Guid? aiTransformId = null, Guid? aiTransformMappingId = null, Guid? entityId = null, string entityType = null, int? page = null, int? size = null, string sort = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">includeMetaData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">flattenArraysToRows</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">emailId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">smsId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">attachmentId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">aiTransformId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">aiTransformMappingId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">entityId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">entityType</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>(optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size. Maximum size is 100. Use page index and sort to page through larger results (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.PageTableData.html">PageTableData</a>&gt;</td>
+        <td><p>ApiResponse of PageTableData</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_GetTransformerResultsTableWithHttpInfo_System_Boolean_System_Boolean_System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Nullable_System_Guid__System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get AI transformer results in table format</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-421">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_GetTransformerResultsWithHttpInfo_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformerResultsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_GetTransformerResultsWithHttpInfo_System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Nullable_System_Guid__System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformerResultsWithHttpInfo(System.Nullable{System.Guid},System.Nullable{System.Guid},System.String,System.Nullable{System.Guid},System.Nullable{System.Guid},System.Nullable{System.Guid},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Int32)">GetTransformerResultsWithHttpInfo(Guid?, Guid?, string, Guid?, Guid?, Guid?, string, int?, int?, string, int)</h4>
+  <div class="markdown level1 summary"><p>Get transformer results</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;PageAITransformResultProjection&gt; GetTransformerResultsWithHttpInfo(Guid? emailId = null, Guid? smsId = null, string attachmentId = null, Guid? aiTransformId = null, Guid? aiTransformMappingId = null, Guid? entityId = null, string entityType = null, int? page = null, int? size = null, string sort = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">emailId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">smsId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">attachmentId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">aiTransformId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">aiTransformMappingId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">entityId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">entityType</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>(optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size. Maximum size is 100. Use page index and sort to page through larger results (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.PageAITransformResultProjection.html">PageAITransformResultProjection</a>&gt;</td>
+        <td><p>ApiResponse of PageAITransformResultProjection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_GetTransformerResultsWithHttpInfo_System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Nullable_System_Guid__System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get AI transformer results</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-301">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_GetTransformerWithHttpInfo_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformerWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_GetTransformerWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformerWithHttpInfo(System.Guid,System.Int32)">GetTransformerWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get a transformer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;AITransformDto&gt; GetTransformerWithHttpInfo(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.AITransformDto.html">AITransformDto</a>&gt;</td>
+        <td><p>ApiResponse of AITransformDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_GetTransformerWithHttpInfo_System_Guid_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get AI transformer and schemas by ID</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-480">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_GetTransformers_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformers*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_GetTransformers_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Collections_Generic_List_System_Guid__System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformers(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Collections.Generic.List{System.Guid},System.Int32)">GetTransformers(int?, int?, string, List&lt;Guid&gt;, int)</h4>
+  <div class="markdown level1 summary"><p>List transformers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PageAITransformProjection GetTransformers(int? page = null, int? size = null, string sort = null, List&lt;Guid&gt; include = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>(optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size in SMS list pagination. Maximum size is 100. Use page index and sort to page through larger results (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</td>
+        <td><span class="parametername">include</span></td>
+        <td><p>Optional list of IDs to include in result (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.PageAITransformProjection.html">PageAITransformProjection</a></td>
+        <td><p>PageAITransformProjection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_GetTransformers_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Collections_Generic_List_System_Guid__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>List all AI transforms</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-495">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_GetTransformersWithHttpInfo_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformersWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_GetTransformersWithHttpInfo_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Collections_Generic_List_System_Guid__System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.GetTransformersWithHttpInfo(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Collections.Generic.List{System.Guid},System.Int32)">GetTransformersWithHttpInfo(int?, int?, string, List&lt;Guid&gt;, int)</h4>
+  <div class="markdown level1 summary"><p>List transformers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;PageAITransformProjection&gt; GetTransformersWithHttpInfo(int? page = null, int? size = null, string sort = null, List&lt;Guid&gt; include = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>(optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size in SMS list pagination. Maximum size is 100. Use page index and sort to page through larger results (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</td>
+        <td><span class="parametername">include</span></td>
+        <td><p>Optional list of IDs to include in result (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.PageAITransformProjection.html">PageAITransformProjection</a>&gt;</td>
+        <td><p>ApiResponse of PageAITransformProjection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_GetTransformersWithHttpInfo_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Collections_Generic_List_System_Guid__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>List all AI transforms</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-506">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_InvokeTransformer_" data-uid="mailslurp.Api.IAIControllerApiSync.InvokeTransformer*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_InvokeTransformer_mailslurp_Model_InvokeTransformerOptions_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.InvokeTransformer(mailslurp.Model.InvokeTransformerOptions,System.Int32)">InvokeTransformer(InvokeTransformerOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Invoke a transformer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ConditionalStructuredContentResult InvokeTransformer(InvokeTransformerOptions invokeTransformerOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InvokeTransformerOptions.html">InvokeTransformerOptions</a></td>
+        <td><span class="parametername">invokeTransformerOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.ConditionalStructuredContentResult.html">ConditionalStructuredContentResult</a></td>
+        <td><p>ConditionalStructuredContentResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_InvokeTransformer_mailslurp_Model_InvokeTransformerOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Execute an AI transformer to generate structured content</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-518">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_InvokeTransformerWithHttpInfo_" data-uid="mailslurp.Api.IAIControllerApiSync.InvokeTransformerWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_InvokeTransformerWithHttpInfo_mailslurp_Model_InvokeTransformerOptions_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.InvokeTransformerWithHttpInfo(mailslurp.Model.InvokeTransformerOptions,System.Int32)">InvokeTransformerWithHttpInfo(InvokeTransformerOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Invoke a transformer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;ConditionalStructuredContentResult&gt; InvokeTransformerWithHttpInfo(InvokeTransformerOptions invokeTransformerOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InvokeTransformerOptions.html">InvokeTransformerOptions</a></td>
+        <td><span class="parametername">invokeTransformerOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.ConditionalStructuredContentResult.html">ConditionalStructuredContentResult</a>&gt;</td>
+        <td><p>ApiResponse of ConditionalStructuredContentResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_InvokeTransformerWithHttpInfo_mailslurp_Model_InvokeTransformerOptions_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Execute an AI transformer to generate structured content</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-532">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_TestTransformerMappingMatch_" data-uid="mailslurp.Api.IAIControllerApiSync.TestTransformerMappingMatch*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_TestTransformerMappingMatch_System_Guid_System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.TestTransformerMappingMatch(System.Guid,System.Nullable{System.Guid},System.Nullable{System.Guid},System.String,System.Int32)">TestTransformerMappingMatch(Guid, Guid?, Guid?, string, int)</h4>
+  <div class="markdown level1 summary"><p>Test transformer mapping match result</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AITransformMappingMatchResult TestTransformerMappingMatch(Guid id, Guid? emailId = null, Guid? smsId = null, string attachmentId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of transform mapping</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">emailId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">smsId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">attachmentId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.AITransformMappingMatchResult.html">AITransformMappingMatchResult</a></td>
+        <td><p>AITransformMappingMatchResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_TestTransformerMappingMatch_System_Guid_System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Evaluate transform mapping match conditions for given email, sms, or attachment</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-547">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_TestTransformerMappingMatchWithHttpInfo_" data-uid="mailslurp.Api.IAIControllerApiSync.TestTransformerMappingMatchWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_TestTransformerMappingMatchWithHttpInfo_System_Guid_System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.TestTransformerMappingMatchWithHttpInfo(System.Guid,System.Nullable{System.Guid},System.Nullable{System.Guid},System.String,System.Int32)">TestTransformerMappingMatchWithHttpInfo(Guid, Guid?, Guid?, string, int)</h4>
+  <div class="markdown level1 summary"><p>Test transformer mapping match result</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;AITransformMappingMatchResult&gt; TestTransformerMappingMatchWithHttpInfo(Guid id, Guid? emailId = null, Guid? smsId = null, string attachmentId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of transform mapping</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">emailId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">smsId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">attachmentId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.AITransformMappingMatchResult.html">AITransformMappingMatchResult</a>&gt;</td>
+        <td><p>ApiResponse of AITransformMappingMatchResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_TestTransformerMappingMatchWithHttpInfo_System_Guid_System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Evaluate transform mapping match conditions for given email, sms, or attachment</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-558">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_ValidateStructuredOutputSchema_" data-uid="mailslurp.Api.IAIControllerApiSync.ValidateStructuredOutputSchema*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_ValidateStructuredOutputSchema_mailslurp_Model_StructuredOutputSchema_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.ValidateStructuredOutputSchema(mailslurp.Model.StructuredOutputSchema,System.Int32)">ValidateStructuredOutputSchema(StructuredOutputSchema, int)</h4>
+  <div class="markdown level1 summary"><p>Validate structured content schema</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">StructuredOutputSchemaValidation ValidateStructuredOutputSchema(StructuredOutputSchema structuredOutputSchema, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.StructuredOutputSchema.html">StructuredOutputSchema</a></td>
+        <td><span class="parametername">structuredOutputSchema</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.StructuredOutputSchemaValidation.html">StructuredOutputSchemaValidation</a></td>
+        <td><p>StructuredOutputSchemaValidation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_ValidateStructuredOutputSchema_mailslurp_Model_StructuredOutputSchema_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Check if a schema is valid and can be used to extract data using AI</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-570">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IAIControllerApiSync_ValidateStructuredOutputSchemaWithHttpInfo_" data-uid="mailslurp.Api.IAIControllerApiSync.ValidateStructuredOutputSchemaWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IAIControllerApiSync_ValidateStructuredOutputSchemaWithHttpInfo_mailslurp_Model_StructuredOutputSchema_System_Int32_" data-uid="mailslurp.Api.IAIControllerApiSync.ValidateStructuredOutputSchemaWithHttpInfo(mailslurp.Model.StructuredOutputSchema,System.Int32)">ValidateStructuredOutputSchemaWithHttpInfo(StructuredOutputSchema, int)</h4>
+  <div class="markdown level1 summary"><p>Validate structured content schema</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;StructuredOutputSchemaValidation&gt; ValidateStructuredOutputSchemaWithHttpInfo(StructuredOutputSchema structuredOutputSchema, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.StructuredOutputSchema.html">StructuredOutputSchema</a></td>
+        <td><span class="parametername">structuredOutputSchema</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.StructuredOutputSchemaValidation.html">StructuredOutputSchemaValidation</a>&gt;</td>
+        <td><p>ApiResponse of StructuredOutputSchemaValidation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IAIControllerApiSync_ValidateStructuredOutputSchemaWithHttpInfo_mailslurp_Model_StructuredOutputSchema_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Check if a schema is valid and can be used to extract data using AI</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/AIControllerApi.cs#lines-27" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
