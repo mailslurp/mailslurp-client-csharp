@@ -1,0 +1,2389 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IDevicePreviewsControllerApiSync | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IDevicePreviewsControllerApiSync | MailSlurp ">
+    
+    <meta name="description" content="Represents a collection of functions to interact with the API endpoints">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync">
+
+
+
+  <h1 id="mailslurp_Api_IDevicePreviewsControllerApiSync" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync" class="text-break">Interface IDevicePreviewsControllerApiSync</h1>
+  <div class="markdown level0 summary"><p>Represents a collection of functions to interact with the API endpoints</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_Configuration">IApiAccessor.Configuration</a>
+    </div>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_GetBasePath">IApiAccessor.GetBasePath()</a>
+    </div>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_ExceptionFactory">IApiAccessor.ExceptionFactory</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="mailslurp.html">mailslurp</a>.<a class="xref" href="mailslurp.Api.html">Api</a></h6>
+  <h6><strong>Assembly</strong>: mailslurp.dll</h6>
+  <h5 id="mailslurp_Api_IDevicePreviewsControllerApiSync_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDevicePreviewsControllerApiSync : IApiAccessor</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-38">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_CancelDevicePreviewRun_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.CancelDevicePreviewRun*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_CancelDevicePreviewRun_System_Guid_mailslurp_Model_CancelDevicePreviewRunOptions_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.CancelDevicePreviewRun(System.Guid,mailslurp.Model.CancelDevicePreviewRunOptions,System.Int32)">CancelDevicePreviewRun(Guid, CancelDevicePreviewRunOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Cancel a running device preview run</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CancelDevicePreviewRunResult CancelDevicePreviewRun(Guid runId, CancelDevicePreviewRunOptions cancelDevicePreviewRunOptions = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">runId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CancelDevicePreviewRunOptions.html">CancelDevicePreviewRunOptions</a></td>
+        <td><span class="parametername">cancelDevicePreviewRunOptions</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CancelDevicePreviewRunResult.html">CancelDevicePreviewRunResult</a></td>
+        <td><p>CancelDevicePreviewRunResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-51">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_CancelDevicePreviewRunWithHttpInfo_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.CancelDevicePreviewRunWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_CancelDevicePreviewRunWithHttpInfo_System_Guid_mailslurp_Model_CancelDevicePreviewRunOptions_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.CancelDevicePreviewRunWithHttpInfo(System.Guid,mailslurp.Model.CancelDevicePreviewRunOptions,System.Int32)">CancelDevicePreviewRunWithHttpInfo(Guid, CancelDevicePreviewRunOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Cancel a running device preview run</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;CancelDevicePreviewRunResult&gt; CancelDevicePreviewRunWithHttpInfo(Guid runId, CancelDevicePreviewRunOptions cancelDevicePreviewRunOptions = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">runId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CancelDevicePreviewRunOptions.html">CancelDevicePreviewRunOptions</a></td>
+        <td><span class="parametername">cancelDevicePreviewRunOptions</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.CancelDevicePreviewRunResult.html">CancelDevicePreviewRunResult</a>&gt;</td>
+        <td><p>ApiResponse of CancelDevicePreviewRunResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-59">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_CreateDevicePreviewFeedback_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.CreateDevicePreviewFeedback*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_CreateDevicePreviewFeedback_mailslurp_Model_CreateDevicePreviewFeedbackOptions_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.CreateDevicePreviewFeedback(mailslurp.Model.CreateDevicePreviewFeedbackOptions,System.Int32)">CreateDevicePreviewFeedback(CreateDevicePreviewFeedbackOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create device preview feedback</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DevicePreviewFeedbackDto CreateDevicePreviewFeedback(CreateDevicePreviewFeedbackOptions createDevicePreviewFeedbackOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateDevicePreviewFeedbackOptions.html">CreateDevicePreviewFeedbackOptions</a></td>
+        <td><span class="parametername">createDevicePreviewFeedbackOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.DevicePreviewFeedbackDto.html">DevicePreviewFeedbackDto</a></td>
+        <td><p>DevicePreviewFeedbackDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-71">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_CreateDevicePreviewFeedbackWithHttpInfo_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.CreateDevicePreviewFeedbackWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_CreateDevicePreviewFeedbackWithHttpInfo_mailslurp_Model_CreateDevicePreviewFeedbackOptions_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.CreateDevicePreviewFeedbackWithHttpInfo(mailslurp.Model.CreateDevicePreviewFeedbackOptions,System.Int32)">CreateDevicePreviewFeedbackWithHttpInfo(CreateDevicePreviewFeedbackOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create device preview feedback</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;DevicePreviewFeedbackDto&gt; CreateDevicePreviewFeedbackWithHttpInfo(CreateDevicePreviewFeedbackOptions createDevicePreviewFeedbackOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateDevicePreviewFeedbackOptions.html">CreateDevicePreviewFeedbackOptions</a></td>
+        <td><span class="parametername">createDevicePreviewFeedbackOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DevicePreviewFeedbackDto.html">DevicePreviewFeedbackDto</a>&gt;</td>
+        <td><p>ApiResponse of DevicePreviewFeedbackDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-80">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_CreateDevicePreviewRun_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.CreateDevicePreviewRun*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_CreateDevicePreviewRun_System_Guid_mailslurp_Model_CreateDevicePreviewOptions_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.CreateDevicePreviewRun(System.Guid,mailslurp.Model.CreateDevicePreviewOptions,System.Int32)">CreateDevicePreviewRun(Guid, CreateDevicePreviewOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a new device preview run for an email</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CreateDevicePreviewRunResult CreateDevicePreviewRun(Guid emailId, CreateDevicePreviewOptions createDevicePreviewOptions = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">emailId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateDevicePreviewOptions.html">CreateDevicePreviewOptions</a></td>
+        <td><span class="parametername">createDevicePreviewOptions</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateDevicePreviewRunResult.html">CreateDevicePreviewRunResult</a></td>
+        <td><p>CreateDevicePreviewRunResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-93">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_CreateDevicePreviewRunWithHttpInfo_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.CreateDevicePreviewRunWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_CreateDevicePreviewRunWithHttpInfo_System_Guid_mailslurp_Model_CreateDevicePreviewOptions_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.CreateDevicePreviewRunWithHttpInfo(System.Guid,mailslurp.Model.CreateDevicePreviewOptions,System.Int32)">CreateDevicePreviewRunWithHttpInfo(Guid, CreateDevicePreviewOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Create a new device preview run for an email</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;CreateDevicePreviewRunResult&gt; CreateDevicePreviewRunWithHttpInfo(Guid emailId, CreateDevicePreviewOptions createDevicePreviewOptions = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">emailId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateDevicePreviewOptions.html">CreateDevicePreviewOptions</a></td>
+        <td><span class="parametername">createDevicePreviewOptions</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.CreateDevicePreviewRunResult.html">CreateDevicePreviewRunResult</a>&gt;</td>
+        <td><p>ApiResponse of CreateDevicePreviewRunResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-101">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_DeleteDevicePreviewRun_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.DeleteDevicePreviewRun*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_DeleteDevicePreviewRun_System_Guid_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.DeleteDevicePreviewRun(System.Guid,System.Int32)">DeleteDevicePreviewRun(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Delete local device preview run data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DeleteDevicePreviewRunResult DeleteDevicePreviewRun(Guid runId, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">runId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.DeleteDevicePreviewRunResult.html">DeleteDevicePreviewRunResult</a></td>
+        <td><p>DeleteDevicePreviewRunResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-113">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_DeleteDevicePreviewRunWithHttpInfo_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.DeleteDevicePreviewRunWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_DeleteDevicePreviewRunWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.DeleteDevicePreviewRunWithHttpInfo(System.Guid,System.Int32)">DeleteDevicePreviewRunWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Delete local device preview run data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;DeleteDevicePreviewRunResult&gt; DeleteDevicePreviewRunWithHttpInfo(Guid runId, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">runId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DeleteDevicePreviewRunResult.html">DeleteDevicePreviewRunResult</a>&gt;</td>
+        <td><p>ApiResponse of DeleteDevicePreviewRunResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-122">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_EnsureDevicePreviewRun_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.EnsureDevicePreviewRun*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_EnsureDevicePreviewRun_System_Guid_mailslurp_Model_CreateDevicePreviewOptions_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.EnsureDevicePreviewRun(System.Guid,mailslurp.Model.CreateDevicePreviewOptions,System.Int32)">EnsureDevicePreviewRun(Guid, CreateDevicePreviewOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Return active run for email or create one when none exists</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CreateDevicePreviewRunResult EnsureDevicePreviewRun(Guid emailId, CreateDevicePreviewOptions createDevicePreviewOptions = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">emailId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateDevicePreviewOptions.html">CreateDevicePreviewOptions</a></td>
+        <td><span class="parametername">createDevicePreviewOptions</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateDevicePreviewRunResult.html">CreateDevicePreviewRunResult</a></td>
+        <td><p>CreateDevicePreviewRunResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-135">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_EnsureDevicePreviewRunWithHttpInfo_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.EnsureDevicePreviewRunWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_EnsureDevicePreviewRunWithHttpInfo_System_Guid_mailslurp_Model_CreateDevicePreviewOptions_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.EnsureDevicePreviewRunWithHttpInfo(System.Guid,mailslurp.Model.CreateDevicePreviewOptions,System.Int32)">EnsureDevicePreviewRunWithHttpInfo(Guid, CreateDevicePreviewOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Return active run for email or create one when none exists</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;CreateDevicePreviewRunResult&gt; EnsureDevicePreviewRunWithHttpInfo(Guid emailId, CreateDevicePreviewOptions createDevicePreviewOptions = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">emailId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateDevicePreviewOptions.html">CreateDevicePreviewOptions</a></td>
+        <td><span class="parametername">createDevicePreviewOptions</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.CreateDevicePreviewRunResult.html">CreateDevicePreviewRunResult</a>&gt;</td>
+        <td><p>ApiResponse of CreateDevicePreviewRunResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-143">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewFeedback_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewFeedback*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewFeedback_System_Guid_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewFeedback(System.Guid,System.Int32)">GetDevicePreviewFeedback(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get a single device preview feedback item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DevicePreviewFeedbackDto GetDevicePreviewFeedback(Guid feedbackId, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">feedbackId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.DevicePreviewFeedbackDto.html">DevicePreviewFeedbackDto</a></td>
+        <td><p>DevicePreviewFeedbackDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-170">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewFeedbackItems_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewFeedbackItems*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewFeedbackItems_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Guid__System_String_System_String_System_String_System_String_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewFeedbackItems(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Guid},System.String,System.String,System.String,System.String,System.Int32)">GetDevicePreviewFeedbackItems(int?, int?, string, Guid?, string, string, string, string, int)</h4>
+  <div class="markdown level1 summary"><p>List device preview feedback</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DevicePreviewFeedbackListDto GetDevicePreviewFeedbackItems(int? page = null, int? size = null, string source = null, Guid? runId = null, string status = null, string provider = null, string category = null, string search = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">runId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">status</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">provider</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">category</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">search</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.DevicePreviewFeedbackListDto.html">DevicePreviewFeedbackListDto</a></td>
+        <td><p>DevicePreviewFeedbackListDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-189">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewFeedbackItemsWithHttpInfo_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewFeedbackItemsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewFeedbackItemsWithHttpInfo_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Guid__System_String_System_String_System_String_System_String_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewFeedbackItemsWithHttpInfo(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Guid},System.String,System.String,System.String,System.String,System.Int32)">GetDevicePreviewFeedbackItemsWithHttpInfo(int?, int?, string, Guid?, string, string, string, string, int)</h4>
+  <div class="markdown level1 summary"><p>List device preview feedback</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;DevicePreviewFeedbackListDto&gt; GetDevicePreviewFeedbackItemsWithHttpInfo(int? page = null, int? size = null, string source = null, Guid? runId = null, string status = null, string provider = null, string category = null, string search = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">runId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">status</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">provider</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">category</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">search</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DevicePreviewFeedbackListDto.html">DevicePreviewFeedbackListDto</a>&gt;</td>
+        <td><p>ApiResponse of DevicePreviewFeedbackListDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-155">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewFeedbackWithHttpInfo_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewFeedbackWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewFeedbackWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewFeedbackWithHttpInfo(System.Guid,System.Int32)">GetDevicePreviewFeedbackWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get a single device preview feedback item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;DevicePreviewFeedbackDto&gt; GetDevicePreviewFeedbackWithHttpInfo(Guid feedbackId, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">feedbackId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DevicePreviewFeedbackDto.html">DevicePreviewFeedbackDto</a>&gt;</td>
+        <td><p>ApiResponse of DevicePreviewFeedbackDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-197">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRun_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRun*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRun_System_Guid_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRun(System.Guid,System.Int32)">GetDevicePreviewRun(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get device preview run status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DevicePreviewRunDto GetDevicePreviewRun(Guid runId, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">runId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.DevicePreviewRunDto.html">DevicePreviewRunDto</a></td>
+        <td><p>DevicePreviewRunDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-218">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRunProviderProgress_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRunProviderProgress*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRunProviderProgress_System_Guid_System_String_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRunProviderProgress(System.Guid,System.String,System.Int32)">GetDevicePreviewRunProviderProgress(Guid, string, int)</h4>
+  <div class="markdown level1 summary"><p>Get provider-level progress for a device preview run</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DevicePreviewProviderProgressDto GetDevicePreviewRunProviderProgress(Guid runId, string provider, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">runId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.DevicePreviewProviderProgressDto.html">DevicePreviewProviderProgressDto</a></td>
+        <td><p>DevicePreviewProviderProgressDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-231">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRunProviderProgressWithHttpInfo_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRunProviderProgressWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRunProviderProgressWithHttpInfo_System_Guid_System_String_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRunProviderProgressWithHttpInfo(System.Guid,System.String,System.Int32)">GetDevicePreviewRunProviderProgressWithHttpInfo(Guid, string, int)</h4>
+  <div class="markdown level1 summary"><p>Get provider-level progress for a device preview run</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;DevicePreviewProviderProgressDto&gt; GetDevicePreviewRunProviderProgressWithHttpInfo(Guid runId, string provider, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">runId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DevicePreviewProviderProgressDto.html">DevicePreviewProviderProgressDto</a>&gt;</td>
+        <td><p>ApiResponse of DevicePreviewProviderProgressDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-239">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRunResults_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRunResults*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRunResults_System_Guid_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRunResults(System.Guid,System.Int32)">GetDevicePreviewRunResults(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get device preview run results</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DevicePreviewRunResultsDto GetDevicePreviewRunResults(Guid runId, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">runId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.DevicePreviewRunResultsDto.html">DevicePreviewRunResultsDto</a></td>
+        <td><p>DevicePreviewRunResultsDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-251">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRunResultsWithHttpInfo_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRunResultsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRunResultsWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRunResultsWithHttpInfo(System.Guid,System.Int32)">GetDevicePreviewRunResultsWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get device preview run results</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;DevicePreviewRunResultsDto&gt; GetDevicePreviewRunResultsWithHttpInfo(Guid runId, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">runId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DevicePreviewRunResultsDto.html">DevicePreviewRunResultsDto</a>&gt;</td>
+        <td><p>ApiResponse of DevicePreviewRunResultsDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-260">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRunScreenshot_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRunScreenshot*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRunScreenshot_System_Guid_System_Guid_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRunScreenshot(System.Guid,System.Guid,System.Int32)">GetDevicePreviewRunScreenshot(Guid, Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get a seeded device preview screenshot image</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">byte[] GetDevicePreviewRunScreenshot(Guid runId, Guid screenshotId, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">runId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">screenshotId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><p>byte[]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-273">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRunScreenshotWithHttpInfo_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRunScreenshotWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRunScreenshotWithHttpInfo_System_Guid_System_Guid_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRunScreenshotWithHttpInfo(System.Guid,System.Guid,System.Int32)">GetDevicePreviewRunScreenshotWithHttpInfo(Guid, Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get a seeded device preview screenshot image</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;byte[]&gt; GetDevicePreviewRunScreenshotWithHttpInfo(Guid runId, Guid screenshotId, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">runId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">screenshotId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]&gt;</td>
+        <td><p>ApiResponse of byte[]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-209">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRunWithHttpInfo_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRunWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRunWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRunWithHttpInfo(System.Guid,System.Int32)">GetDevicePreviewRunWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get device preview run status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;DevicePreviewRunDto&gt; GetDevicePreviewRunWithHttpInfo(Guid runId, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">runId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DevicePreviewRunDto.html">DevicePreviewRunDto</a>&gt;</td>
+        <td><p>ApiResponse of DevicePreviewRunDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-282">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRuns_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRuns*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRuns_System_Guid_System_Nullable_System_Int32__System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRuns(System.Guid,System.Nullable{System.Int32},System.Int32)">GetDevicePreviewRuns(Guid, int?, int)</h4>
+  <div class="markdown level1 summary"><p>List previous device preview runs for an email</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;DevicePreviewRunDto&gt; GetDevicePreviewRuns(Guid emailId, int? limit = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">emailId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">limit</span></td>
+        <td><p>(optional, default to 50)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="mailslurp.Model.DevicePreviewRunDto.html">DevicePreviewRunDto</a>&gt;</td>
+        <td><p>List&lt;DevicePreviewRunDto&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-303">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRunsForAccount_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRunsForAccount*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRunsForAccount_System_Nullable_System_Int32__System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRunsForAccount(System.Nullable{System.Int32},System.Int32)">GetDevicePreviewRunsForAccount(int?, int)</h4>
+  <div class="markdown level1 summary"><p>List previous device preview runs for account</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;DevicePreviewRunDto&gt; GetDevicePreviewRunsForAccount(int? limit = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">limit</span></td>
+        <td><p>(optional, default to 50)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="mailslurp.Model.DevicePreviewRunDto.html">DevicePreviewRunDto</a>&gt;</td>
+        <td><p>List&lt;DevicePreviewRunDto&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-315">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRunsForAccountWithHttpInfo_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRunsForAccountWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRunsForAccountWithHttpInfo_System_Nullable_System_Int32__System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRunsForAccountWithHttpInfo(System.Nullable{System.Int32},System.Int32)">GetDevicePreviewRunsForAccountWithHttpInfo(int?, int)</h4>
+  <div class="markdown level1 summary"><p>List previous device preview runs for account</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;List&lt;DevicePreviewRunDto&gt;&gt; GetDevicePreviewRunsForAccountWithHttpInfo(int? limit = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">limit</span></td>
+        <td><p>(optional, default to 50)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="mailslurp.Model.DevicePreviewRunDto.html">DevicePreviewRunDto</a>&gt;&gt;</td>
+        <td><p>ApiResponse of List&lt;DevicePreviewRunDto&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-326">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRunsOffsetPaginated_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRunsOffsetPaginated*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRunsOffsetPaginated_System_Guid_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRunsOffsetPaginated(System.Guid,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Int32)">GetDevicePreviewRunsOffsetPaginated(Guid, int?, int?, string, int)</h4>
+  <div class="markdown level1 summary"><p>List previous device preview runs for an email in paginated form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PageDevicePreviewRunProjection GetDevicePreviewRunsOffsetPaginated(Guid emailId, int? page = null, int? size = null, string sort = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">emailId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index in list pagination (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size for paginated result list. (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to DESC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.PageDevicePreviewRunProjection.html">PageDevicePreviewRunProjection</a></td>
+        <td><p>PageDevicePreviewRunProjection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-341">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRunsOffsetPaginatedWithHttpInfo_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRunsOffsetPaginatedWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRunsOffsetPaginatedWithHttpInfo_System_Guid_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRunsOffsetPaginatedWithHttpInfo(System.Guid,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Int32)">GetDevicePreviewRunsOffsetPaginatedWithHttpInfo(Guid, int?, int?, string, int)</h4>
+  <div class="markdown level1 summary"><p>List previous device preview runs for an email in paginated form</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;PageDevicePreviewRunProjection&gt; GetDevicePreviewRunsOffsetPaginatedWithHttpInfo(Guid emailId, int? page = null, int? size = null, string sort = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">emailId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index in list pagination (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size for paginated result list. (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to DESC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.PageDevicePreviewRunProjection.html">PageDevicePreviewRunProjection</a>&gt;</td>
+        <td><p>ApiResponse of PageDevicePreviewRunProjection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-295">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRunsWithHttpInfo_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRunsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_GetDevicePreviewRunsWithHttpInfo_System_Guid_System_Nullable_System_Int32__System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.GetDevicePreviewRunsWithHttpInfo(System.Guid,System.Nullable{System.Int32},System.Int32)">GetDevicePreviewRunsWithHttpInfo(Guid, int?, int)</h4>
+  <div class="markdown level1 summary"><p>List previous device preview runs for an email</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;List&lt;DevicePreviewRunDto&gt;&gt; GetDevicePreviewRunsWithHttpInfo(Guid emailId, int? limit = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">emailId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">limit</span></td>
+        <td><p>(optional, default to 50)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="mailslurp.Model.DevicePreviewRunDto.html">DevicePreviewRunDto</a>&gt;&gt;</td>
+        <td><p>ApiResponse of List&lt;DevicePreviewRunDto&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-350">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_UpdateDevicePreviewFeedback_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.UpdateDevicePreviewFeedback*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_UpdateDevicePreviewFeedback_System_Guid_mailslurp_Model_UpdateDevicePreviewFeedbackOptions_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.UpdateDevicePreviewFeedback(System.Guid,mailslurp.Model.UpdateDevicePreviewFeedbackOptions,System.Int32)">UpdateDevicePreviewFeedback(Guid, UpdateDevicePreviewFeedbackOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Update device preview feedback</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DevicePreviewFeedbackDto UpdateDevicePreviewFeedback(Guid feedbackId, UpdateDevicePreviewFeedbackOptions updateDevicePreviewFeedbackOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">feedbackId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.UpdateDevicePreviewFeedbackOptions.html">UpdateDevicePreviewFeedbackOptions</a></td>
+        <td><span class="parametername">updateDevicePreviewFeedbackOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.DevicePreviewFeedbackDto.html">DevicePreviewFeedbackDto</a></td>
+        <td><p>DevicePreviewFeedbackDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-363">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDevicePreviewsControllerApiSync_UpdateDevicePreviewFeedbackWithHttpInfo_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.UpdateDevicePreviewFeedbackWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_IDevicePreviewsControllerApiSync_UpdateDevicePreviewFeedbackWithHttpInfo_System_Guid_mailslurp_Model_UpdateDevicePreviewFeedbackOptions_System_Int32_" data-uid="mailslurp.Api.IDevicePreviewsControllerApiSync.UpdateDevicePreviewFeedbackWithHttpInfo(System.Guid,mailslurp.Model.UpdateDevicePreviewFeedbackOptions,System.Int32)">UpdateDevicePreviewFeedbackWithHttpInfo(Guid, UpdateDevicePreviewFeedbackOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Update device preview feedback</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ApiResponse&lt;DevicePreviewFeedbackDto&gt; UpdateDevicePreviewFeedbackWithHttpInfo(Guid feedbackId, UpdateDevicePreviewFeedbackOptions updateDevicePreviewFeedbackOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">feedbackId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.UpdateDevicePreviewFeedbackOptions.html">UpdateDevicePreviewFeedbackOptions</a></td>
+        <td><span class="parametername">updateDevicePreviewFeedbackOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DevicePreviewFeedbackDto.html">DevicePreviewFeedbackDto</a>&gt;</td>
+        <td><p>ApiResponse of DevicePreviewFeedbackDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DevicePreviewsControllerApi.cs#lines-27" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
