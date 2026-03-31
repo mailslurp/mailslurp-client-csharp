@@ -1,0 +1,3561 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class RulesetControllerApi | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class RulesetControllerApi | MailSlurp ">
+    
+    <meta name="description" content="Represents a collection of functions to interact with the API endpoints">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Api.RulesetControllerApi">
+
+
+
+  <h1 id="mailslurp_Api_RulesetControllerApi" data-uid="mailslurp.Api.RulesetControllerApi" class="text-break">Class RulesetControllerApi</h1>
+  <div class="markdown level0 summary"><p>Represents a collection of functions to interact with the API endpoints</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">RulesetControllerApi</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="mailslurp.Api.IRulesetControllerApi.html">IRulesetControllerApi</a></div>
+    <div><a class="xref" href="mailslurp.Api.IRulesetControllerApiSync.html">IRulesetControllerApiSync</a></div>
+    <div><a class="xref" href="mailslurp.Api.IRulesetControllerApiAsync.html">IRulesetControllerApiAsync</a></div>
+    <div><a class="xref" href="mailslurp.Client.IApiAccessor.html">IApiAccessor</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="mailslurp.html">mailslurp</a>.<a class="xref" href="mailslurp.Api.html">Api</a></h6>
+  <h6><strong>Assembly</strong>: mailslurp.dll</h6>
+  <h5 id="mailslurp_Api_RulesetControllerApi_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RulesetControllerApi : IRulesetControllerApi, IRulesetControllerApiSync, IRulesetControllerApiAsync, IApiAccessor</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-589">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi__ctor_" data-uid="mailslurp.Api.RulesetControllerApi.#ctor*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi__ctor" data-uid="mailslurp.Api.RulesetControllerApi.#ctor">RulesetControllerApi()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Api.RulesetControllerApi.html">RulesetControllerApi</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RulesetControllerApi()</code></pre>
+  </div>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-597">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi__ctor_" data-uid="mailslurp.Api.RulesetControllerApi.#ctor*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi__ctor_System_String_" data-uid="mailslurp.Api.RulesetControllerApi.#ctor(System.String)">RulesetControllerApi(string)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Api.RulesetControllerApi.html">RulesetControllerApi</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RulesetControllerApi(string basePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">basePath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-614">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi__ctor_" data-uid="mailslurp.Api.RulesetControllerApi.#ctor*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi__ctor_mailslurp_Client_Configuration_" data-uid="mailslurp.Api.RulesetControllerApi.#ctor(mailslurp.Client.Configuration)">RulesetControllerApi(Configuration)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Api.RulesetControllerApi.html">RulesetControllerApi</a> class
+using Configuration object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RulesetControllerApi(Configuration configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.Configuration.html">Configuration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>An instance of Configuration</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-634">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi__ctor_" data-uid="mailslurp.Api.RulesetControllerApi.#ctor*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi__ctor_mailslurp_Client_ISynchronousClient_mailslurp_Client_IAsynchronousClient_mailslurp_Client_IReadableConfiguration_" data-uid="mailslurp.Api.RulesetControllerApi.#ctor(mailslurp.Client.ISynchronousClient,mailslurp.Client.IAsynchronousClient,mailslurp.Client.IReadableConfiguration)">RulesetControllerApi(ISynchronousClient, IAsynchronousClient, IReadableConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="mailslurp.Api.RulesetControllerApi.html">RulesetControllerApi</a> class
+using a Configuration object and client instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RulesetControllerApi(ISynchronousClient client, IAsynchronousClient asyncClient, IReadableConfiguration configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ISynchronousClient.html">ISynchronousClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>The client interface for synchronous API access.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IAsynchronousClient.html">IAsynchronousClient</a></td>
+        <td><span class="parametername">asyncClient</span></td>
+        <td><p>The client interface for asynchronous API access.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>The configuration object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-649">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_AsynchronousClient_" data-uid="mailslurp.Api.RulesetControllerApi.AsynchronousClient*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_AsynchronousClient" data-uid="mailslurp.Api.RulesetControllerApi.AsynchronousClient">AsynchronousClient</h4>
+  <div class="markdown level1 summary"><p>The client for accessing this underlying API asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsynchronousClient AsynchronousClient { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IAsynchronousClient.html">IAsynchronousClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-654">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_Client_" data-uid="mailslurp.Api.RulesetControllerApi.Client*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_Client" data-uid="mailslurp.Api.RulesetControllerApi.Client">Client</h4>
+  <div class="markdown level1 summary"><p>The client for accessing this underlying API synchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISynchronousClient Client { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ISynchronousClient.html">ISynchronousClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-669">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_Configuration_" data-uid="mailslurp.Api.RulesetControllerApi.Configuration*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_Configuration" data-uid="mailslurp.Api.RulesetControllerApi.Configuration">Configuration</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the configuration object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadableConfiguration Configuration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.IReadableConfiguration.html">IReadableConfiguration</a></td>
+        <td><p>An instance of the Configuration</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-674">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_ExceptionFactory_" data-uid="mailslurp.Api.RulesetControllerApi.ExceptionFactory*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_ExceptionFactory" data-uid="mailslurp.Api.RulesetControllerApi.ExceptionFactory">ExceptionFactory</h4>
+  <div class="markdown level1 summary"><p>Provides a factory method hook for the creation of exceptions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExceptionFactory ExceptionFactory { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ExceptionFactory.html">ExceptionFactory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-696">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_CreateNewRuleset_" data-uid="mailslurp.Api.RulesetControllerApi.CreateNewRuleset*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_CreateNewRuleset_mailslurp_Model_CreateRulesetOptions_System_Nullable_System_Guid__System_Nullable_System_Guid__System_Int32_" data-uid="mailslurp.Api.RulesetControllerApi.CreateNewRuleset(mailslurp.Model.CreateRulesetOptions,System.Nullable{System.Guid},System.Nullable{System.Guid},System.Int32)">CreateNewRuleset(CreateRulesetOptions, Guid?, Guid?, int)</h4>
+  <div class="markdown level1 summary"><p>Create a ruleset Create a new inbox or phone number rule for forwarding, blocking, and allowing emails or SMS when sending and receiving</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RulesetDto CreateNewRuleset(CreateRulesetOptions createRulesetOptions, Guid? inboxId = null, Guid? phoneId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateRulesetOptions.html">CreateRulesetOptions</a></td>
+        <td><span class="parametername">createRulesetOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox id to attach ruleset to (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">phoneId</span></td>
+        <td><p>Phone id to attach ruleset to (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.RulesetDto.html">RulesetDto</a></td>
+        <td><p>RulesetDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-786">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_CreateNewRulesetAsync_" data-uid="mailslurp.Api.RulesetControllerApi.CreateNewRulesetAsync*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_CreateNewRulesetAsync_mailslurp_Model_CreateRulesetOptions_System_Nullable_System_Guid__System_Nullable_System_Guid__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.RulesetControllerApi.CreateNewRulesetAsync(mailslurp.Model.CreateRulesetOptions,System.Nullable{System.Guid},System.Nullable{System.Guid},System.Int32,System.Threading.CancellationToken)">CreateNewRulesetAsync(CreateRulesetOptions, Guid?, Guid?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create a ruleset Create a new inbox or phone number rule for forwarding, blocking, and allowing emails or SMS when sending and receiving</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RulesetDto&gt; CreateNewRulesetAsync(CreateRulesetOptions createRulesetOptions, Guid? inboxId = null, Guid? phoneId = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateRulesetOptions.html">CreateRulesetOptions</a></td>
+        <td><span class="parametername">createRulesetOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox id to attach ruleset to (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">phoneId</span></td>
+        <td><p>Phone id to attach ruleset to (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.RulesetDto.html">RulesetDto</a>&gt;</td>
+        <td><p>Task of RulesetDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-711">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_CreateNewRulesetWithHttpInfo_" data-uid="mailslurp.Api.RulesetControllerApi.CreateNewRulesetWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_CreateNewRulesetWithHttpInfo_mailslurp_Model_CreateRulesetOptions_System_Nullable_System_Guid__System_Nullable_System_Guid__System_Int32_" data-uid="mailslurp.Api.RulesetControllerApi.CreateNewRulesetWithHttpInfo(mailslurp.Model.CreateRulesetOptions,System.Nullable{System.Guid},System.Nullable{System.Guid},System.Int32)">CreateNewRulesetWithHttpInfo(CreateRulesetOptions, Guid?, Guid?, int)</h4>
+  <div class="markdown level1 summary"><p>Create a ruleset Create a new inbox or phone number rule for forwarding, blocking, and allowing emails or SMS when sending and receiving</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;RulesetDto&gt; CreateNewRulesetWithHttpInfo(CreateRulesetOptions createRulesetOptions, Guid? inboxId = null, Guid? phoneId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateRulesetOptions.html">CreateRulesetOptions</a></td>
+        <td><span class="parametername">createRulesetOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox id to attach ruleset to (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">phoneId</span></td>
+        <td><p>Phone id to attach ruleset to (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.RulesetDto.html">RulesetDto</a>&gt;</td>
+        <td><p>ApiResponse of RulesetDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-802">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_CreateNewRulesetWithHttpInfoAsync_" data-uid="mailslurp.Api.RulesetControllerApi.CreateNewRulesetWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_CreateNewRulesetWithHttpInfoAsync_mailslurp_Model_CreateRulesetOptions_System_Nullable_System_Guid__System_Nullable_System_Guid__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.RulesetControllerApi.CreateNewRulesetWithHttpInfoAsync(mailslurp.Model.CreateRulesetOptions,System.Nullable{System.Guid},System.Nullable{System.Guid},System.Int32,System.Threading.CancellationToken)">CreateNewRulesetWithHttpInfoAsync(CreateRulesetOptions, Guid?, Guid?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create a ruleset Create a new inbox or phone number rule for forwarding, blocking, and allowing emails or SMS when sending and receiving</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;RulesetDto&gt;&gt; CreateNewRulesetWithHttpInfoAsync(CreateRulesetOptions createRulesetOptions, Guid? inboxId = null, Guid? phoneId = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateRulesetOptions.html">CreateRulesetOptions</a></td>
+        <td><span class="parametername">createRulesetOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Inbox id to attach ruleset to (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">phoneId</span></td>
+        <td><p>Phone id to attach ruleset to (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.RulesetDto.html">RulesetDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (RulesetDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-875">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_DeleteRuleset_" data-uid="mailslurp.Api.RulesetControllerApi.DeleteRuleset*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_DeleteRuleset_System_Guid_System_Int32_" data-uid="mailslurp.Api.RulesetControllerApi.DeleteRuleset(System.Guid,System.Int32)">DeleteRuleset(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Delete a ruleset Delete ruleset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteRuleset(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of ruleset</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-944">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_DeleteRulesetAsync_" data-uid="mailslurp.Api.RulesetControllerApi.DeleteRulesetAsync*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_DeleteRulesetAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.RulesetControllerApi.DeleteRulesetAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">DeleteRulesetAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Delete a ruleset Delete ruleset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteRulesetAsync(Guid id, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of ruleset</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>Task of void</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-887">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_DeleteRulesetWithHttpInfo_" data-uid="mailslurp.Api.RulesetControllerApi.DeleteRulesetWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_DeleteRulesetWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.RulesetControllerApi.DeleteRulesetWithHttpInfo(System.Guid,System.Int32)">DeleteRulesetWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Delete a ruleset Delete ruleset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;object&gt; DeleteRulesetWithHttpInfo(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of ruleset</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</td>
+        <td><p>ApiResponse of Object(void)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-957">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_DeleteRulesetWithHttpInfoAsync_" data-uid="mailslurp.Api.RulesetControllerApi.DeleteRulesetWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_DeleteRulesetWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.RulesetControllerApi.DeleteRulesetWithHttpInfoAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">DeleteRulesetWithHttpInfoAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Delete a ruleset Delete ruleset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;object&gt;&gt; DeleteRulesetWithHttpInfoAsync(Guid id, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of ruleset</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-1015">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_DeleteRulesets_" data-uid="mailslurp.Api.RulesetControllerApi.DeleteRulesets*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_DeleteRulesets_System_Nullable_System_Guid__System_Nullable_System_Guid__System_Int32_" data-uid="mailslurp.Api.RulesetControllerApi.DeleteRulesets(System.Nullable{System.Guid},System.Nullable{System.Guid},System.Int32)">DeleteRulesets(Guid?, Guid?, int)</h4>
+  <div class="markdown level1 summary"><p>Delete rulesets Delete rulesets. Accepts optional inboxId or phoneId filters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteRulesets(Guid? inboxId = null, Guid? phoneId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inbox id to attach ruleset to (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">phoneId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-1093">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_DeleteRulesetsAsync_" data-uid="mailslurp.Api.RulesetControllerApi.DeleteRulesetsAsync*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_DeleteRulesetsAsync_System_Nullable_System_Guid__System_Nullable_System_Guid__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.RulesetControllerApi.DeleteRulesetsAsync(System.Nullable{System.Guid},System.Nullable{System.Guid},System.Int32,System.Threading.CancellationToken)">DeleteRulesetsAsync(Guid?, Guid?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Delete rulesets Delete rulesets. Accepts optional inboxId or phoneId filters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteRulesetsAsync(Guid? inboxId = null, Guid? phoneId = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inbox id to attach ruleset to (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">phoneId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>Task of void</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-1028">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_DeleteRulesetsWithHttpInfo_" data-uid="mailslurp.Api.RulesetControllerApi.DeleteRulesetsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_DeleteRulesetsWithHttpInfo_System_Nullable_System_Guid__System_Nullable_System_Guid__System_Int32_" data-uid="mailslurp.Api.RulesetControllerApi.DeleteRulesetsWithHttpInfo(System.Nullable{System.Guid},System.Nullable{System.Guid},System.Int32)">DeleteRulesetsWithHttpInfo(Guid?, Guid?, int)</h4>
+  <div class="markdown level1 summary"><p>Delete rulesets Delete rulesets. Accepts optional inboxId or phoneId filters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;object&gt; DeleteRulesetsWithHttpInfo(Guid? inboxId = null, Guid? phoneId = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inbox id to attach ruleset to (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">phoneId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</td>
+        <td><p>ApiResponse of Object(void)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-1107">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_DeleteRulesetsWithHttpInfoAsync_" data-uid="mailslurp.Api.RulesetControllerApi.DeleteRulesetsWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_DeleteRulesetsWithHttpInfoAsync_System_Nullable_System_Guid__System_Nullable_System_Guid__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.RulesetControllerApi.DeleteRulesetsWithHttpInfoAsync(System.Nullable{System.Guid},System.Nullable{System.Guid},System.Int32,System.Threading.CancellationToken)">DeleteRulesetsWithHttpInfoAsync(Guid?, Guid?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Delete rulesets Delete rulesets. Accepts optional inboxId or phoneId filters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;object&gt;&gt; DeleteRulesetsWithHttpInfoAsync(Guid? inboxId = null, Guid? phoneId = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inbox id to attach ruleset to (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">phoneId</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-660">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_GetBasePath_" data-uid="mailslurp.Api.RulesetControllerApi.GetBasePath*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_GetBasePath" data-uid="mailslurp.Api.RulesetControllerApi.GetBasePath">GetBasePath()</h4>
+  <div class="markdown level1 summary"><p>Gets the base path of the API client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetBasePath()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The base path</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-1171">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_GetRuleset_" data-uid="mailslurp.Api.RulesetControllerApi.GetRuleset*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_GetRuleset_System_Guid_System_Int32_" data-uid="mailslurp.Api.RulesetControllerApi.GetRuleset(System.Guid,System.Int32)">GetRuleset(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get a ruleset Get ruleset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RulesetDto GetRuleset(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of ruleset</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.RulesetDto.html">RulesetDto</a></td>
+        <td><p>RulesetDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-1242">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_GetRulesetAsync_" data-uid="mailslurp.Api.RulesetControllerApi.GetRulesetAsync*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_GetRulesetAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.RulesetControllerApi.GetRulesetAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetRulesetAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get a ruleset Get ruleset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RulesetDto&gt; GetRulesetAsync(Guid id, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of ruleset</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.RulesetDto.html">RulesetDto</a>&gt;</td>
+        <td><p>Task of RulesetDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-1184">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_GetRulesetWithHttpInfo_" data-uid="mailslurp.Api.RulesetControllerApi.GetRulesetWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_GetRulesetWithHttpInfo_System_Guid_System_Int32_" data-uid="mailslurp.Api.RulesetControllerApi.GetRulesetWithHttpInfo(System.Guid,System.Int32)">GetRulesetWithHttpInfo(Guid, int)</h4>
+  <div class="markdown level1 summary"><p>Get a ruleset Get ruleset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;RulesetDto&gt; GetRulesetWithHttpInfo(Guid id, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of ruleset</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.RulesetDto.html">RulesetDto</a>&gt;</td>
+        <td><p>ApiResponse of RulesetDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-1256">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_GetRulesetWithHttpInfoAsync_" data-uid="mailslurp.Api.RulesetControllerApi.GetRulesetWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_GetRulesetWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.RulesetControllerApi.GetRulesetWithHttpInfoAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetRulesetWithHttpInfoAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get a ruleset Get ruleset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;RulesetDto&gt;&gt; GetRulesetWithHttpInfoAsync(Guid id, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of ruleset</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.RulesetDto.html">RulesetDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (RulesetDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-1321">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_GetRulesets_" data-uid="mailslurp.Api.RulesetControllerApi.GetRulesets*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_GetRulesets_System_Nullable_System_Guid__System_Nullable_System_Guid__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_" data-uid="mailslurp.Api.RulesetControllerApi.GetRulesets(System.Nullable{System.Guid},System.Nullable{System.Guid},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32)">GetRulesets(Guid?, Guid?, int?, int?, string, string, DateTime?, DateTime?, int)</h4>
+  <div class="markdown level1 summary"><p>List rulesets block and allow lists List all rulesets attached to an inbox or phone or account</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PageRulesetDto GetRulesets(Guid? inboxId = null, Guid? phoneId = null, int? page = null, int? size = null, string sort = null, string searchFilter = null, DateTime? since = null, DateTime? before = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inbox id to get rulesets from (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">phoneId</span></td>
+        <td><p>Optional phone id to get rulesets from (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index in inbox ruleset list pagination (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size in inbox ruleset list pagination (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">searchFilter</span></td>
+        <td><p>Optional search filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.PageRulesetDto.html">PageRulesetDto</a></td>
+        <td><p>PageRulesetDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-1437">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_GetRulesetsAsync_" data-uid="mailslurp.Api.RulesetControllerApi.GetRulesetsAsync*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_GetRulesetsAsync_System_Nullable_System_Guid__System_Nullable_System_Guid__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.RulesetControllerApi.GetRulesetsAsync(System.Nullable{System.Guid},System.Nullable{System.Guid},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Threading.CancellationToken)">GetRulesetsAsync(Guid?, Guid?, int?, int?, string, string, DateTime?, DateTime?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>List rulesets block and allow lists List all rulesets attached to an inbox or phone or account</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PageRulesetDto&gt; GetRulesetsAsync(Guid? inboxId = null, Guid? phoneId = null, int? page = null, int? size = null, string sort = null, string searchFilter = null, DateTime? since = null, DateTime? before = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inbox id to get rulesets from (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">phoneId</span></td>
+        <td><p>Optional phone id to get rulesets from (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index in inbox ruleset list pagination (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size in inbox ruleset list pagination (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">searchFilter</span></td>
+        <td><p>Optional search filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.PageRulesetDto.html">PageRulesetDto</a>&gt;</td>
+        <td><p>Task of PageRulesetDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-1341">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_GetRulesetsWithHttpInfo_" data-uid="mailslurp.Api.RulesetControllerApi.GetRulesetsWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_GetRulesetsWithHttpInfo_System_Nullable_System_Guid__System_Nullable_System_Guid__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_" data-uid="mailslurp.Api.RulesetControllerApi.GetRulesetsWithHttpInfo(System.Nullable{System.Guid},System.Nullable{System.Guid},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32)">GetRulesetsWithHttpInfo(Guid?, Guid?, int?, int?, string, string, DateTime?, DateTime?, int)</h4>
+  <div class="markdown level1 summary"><p>List rulesets block and allow lists List all rulesets attached to an inbox or phone or account</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;PageRulesetDto&gt; GetRulesetsWithHttpInfo(Guid? inboxId = null, Guid? phoneId = null, int? page = null, int? size = null, string sort = null, string searchFilter = null, DateTime? since = null, DateTime? before = null, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inbox id to get rulesets from (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">phoneId</span></td>
+        <td><p>Optional phone id to get rulesets from (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index in inbox ruleset list pagination (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size in inbox ruleset list pagination (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">searchFilter</span></td>
+        <td><p>Optional search filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.PageRulesetDto.html">PageRulesetDto</a>&gt;</td>
+        <td><p>ApiResponse of PageRulesetDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-1458">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_GetRulesetsWithHttpInfoAsync_" data-uid="mailslurp.Api.RulesetControllerApi.GetRulesetsWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_GetRulesetsWithHttpInfoAsync_System_Nullable_System_Guid__System_Nullable_System_Guid__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.RulesetControllerApi.GetRulesetsWithHttpInfoAsync(System.Nullable{System.Guid},System.Nullable{System.Guid},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Threading.CancellationToken)">GetRulesetsWithHttpInfoAsync(Guid?, Guid?, int?, int?, string, string, DateTime?, DateTime?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>List rulesets block and allow lists List all rulesets attached to an inbox or phone or account</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;PageRulesetDto&gt;&gt; GetRulesetsWithHttpInfoAsync(Guid? inboxId = null, Guid? phoneId = null, int? page = null, int? size = null, string sort = null, string searchFilter = null, DateTime? since = null, DateTime? before = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>Optional inbox id to get rulesets from (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</td>
+        <td><span class="parametername">phoneId</span></td>
+        <td><p>Optional phone id to get rulesets from (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Optional page index in inbox ruleset list pagination (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Optional page size in inbox ruleset list pagination (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Optional createdAt sort direction ASC or DESC (optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">searchFilter</span></td>
+        <td><p>Optional search filter (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Filter by created at after the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>Filter by created at before the given timestamp (optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.PageRulesetDto.html">PageRulesetDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (PageRulesetDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-1548">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_TestInboxRulesetsForInbox_" data-uid="mailslurp.Api.RulesetControllerApi.TestInboxRulesetsForInbox*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_TestInboxRulesetsForInbox_System_Guid_mailslurp_Model_RulesetTestOptions_System_Int32_" data-uid="mailslurp.Api.RulesetControllerApi.TestInboxRulesetsForInbox(System.Guid,mailslurp.Model.RulesetTestOptions,System.Int32)">TestInboxRulesetsForInbox(Guid, RulesetTestOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Test inbox rulesets for inbox Test inbox rulesets for inbox</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InboxRulesetTestResult TestInboxRulesetsForInbox(Guid inboxId, RulesetTestOptions rulesetTestOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>ID of inbox</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.RulesetTestOptions.html">RulesetTestOptions</a></td>
+        <td><span class="parametername">rulesetTestOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxRulesetTestResult.html">InboxRulesetTestResult</a></td>
+        <td><p>InboxRulesetTestResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-1629">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_TestInboxRulesetsForInboxAsync_" data-uid="mailslurp.Api.RulesetControllerApi.TestInboxRulesetsForInboxAsync*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_TestInboxRulesetsForInboxAsync_System_Guid_mailslurp_Model_RulesetTestOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.RulesetControllerApi.TestInboxRulesetsForInboxAsync(System.Guid,mailslurp.Model.RulesetTestOptions,System.Int32,System.Threading.CancellationToken)">TestInboxRulesetsForInboxAsync(Guid, RulesetTestOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Test inbox rulesets for inbox Test inbox rulesets for inbox</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;InboxRulesetTestResult&gt; TestInboxRulesetsForInboxAsync(Guid inboxId, RulesetTestOptions rulesetTestOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>ID of inbox</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.RulesetTestOptions.html">RulesetTestOptions</a></td>
+        <td><span class="parametername">rulesetTestOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.InboxRulesetTestResult.html">InboxRulesetTestResult</a>&gt;</td>
+        <td><p>Task of InboxRulesetTestResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-1562">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_TestInboxRulesetsForInboxWithHttpInfo_" data-uid="mailslurp.Api.RulesetControllerApi.TestInboxRulesetsForInboxWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_TestInboxRulesetsForInboxWithHttpInfo_System_Guid_mailslurp_Model_RulesetTestOptions_System_Int32_" data-uid="mailslurp.Api.RulesetControllerApi.TestInboxRulesetsForInboxWithHttpInfo(System.Guid,mailslurp.Model.RulesetTestOptions,System.Int32)">TestInboxRulesetsForInboxWithHttpInfo(Guid, RulesetTestOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Test inbox rulesets for inbox Test inbox rulesets for inbox</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;InboxRulesetTestResult&gt; TestInboxRulesetsForInboxWithHttpInfo(Guid inboxId, RulesetTestOptions rulesetTestOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>ID of inbox</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.RulesetTestOptions.html">RulesetTestOptions</a></td>
+        <td><span class="parametername">rulesetTestOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.InboxRulesetTestResult.html">InboxRulesetTestResult</a>&gt;</td>
+        <td><p>ApiResponse of InboxRulesetTestResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-1644">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_TestInboxRulesetsForInboxWithHttpInfoAsync_" data-uid="mailslurp.Api.RulesetControllerApi.TestInboxRulesetsForInboxWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_TestInboxRulesetsForInboxWithHttpInfoAsync_System_Guid_mailslurp_Model_RulesetTestOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.RulesetControllerApi.TestInboxRulesetsForInboxWithHttpInfoAsync(System.Guid,mailslurp.Model.RulesetTestOptions,System.Int32,System.Threading.CancellationToken)">TestInboxRulesetsForInboxWithHttpInfoAsync(Guid, RulesetTestOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Test inbox rulesets for inbox Test inbox rulesets for inbox</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;InboxRulesetTestResult&gt;&gt; TestInboxRulesetsForInboxWithHttpInfoAsync(Guid inboxId, RulesetTestOptions rulesetTestOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">inboxId</span></td>
+        <td><p>ID of inbox</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.RulesetTestOptions.html">RulesetTestOptions</a></td>
+        <td><span class="parametername">rulesetTestOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.InboxRulesetTestResult.html">InboxRulesetTestResult</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (InboxRulesetTestResult)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-1710">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_TestNewRuleset_" data-uid="mailslurp.Api.RulesetControllerApi.TestNewRuleset*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_TestNewRuleset_mailslurp_Model_TestNewInboxRulesetOptions_System_Int32_" data-uid="mailslurp.Api.RulesetControllerApi.TestNewRuleset(mailslurp.Model.TestNewInboxRulesetOptions,System.Int32)">TestNewRuleset(TestNewInboxRulesetOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Test new ruleset Test new ruleset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InboxRulesetTestResult TestNewRuleset(TestNewInboxRulesetOptions testNewInboxRulesetOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.TestNewInboxRulesetOptions.html">TestNewInboxRulesetOptions</a></td>
+        <td><span class="parametername">testNewInboxRulesetOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxRulesetTestResult.html">InboxRulesetTestResult</a></td>
+        <td><p>InboxRulesetTestResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-1788">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_TestNewRulesetAsync_" data-uid="mailslurp.Api.RulesetControllerApi.TestNewRulesetAsync*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_TestNewRulesetAsync_mailslurp_Model_TestNewInboxRulesetOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.RulesetControllerApi.TestNewRulesetAsync(mailslurp.Model.TestNewInboxRulesetOptions,System.Int32,System.Threading.CancellationToken)">TestNewRulesetAsync(TestNewInboxRulesetOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Test new ruleset Test new ruleset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;InboxRulesetTestResult&gt; TestNewRulesetAsync(TestNewInboxRulesetOptions testNewInboxRulesetOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.TestNewInboxRulesetOptions.html">TestNewInboxRulesetOptions</a></td>
+        <td><span class="parametername">testNewInboxRulesetOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.InboxRulesetTestResult.html">InboxRulesetTestResult</a>&gt;</td>
+        <td><p>Task of InboxRulesetTestResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-1723">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_TestNewRulesetWithHttpInfo_" data-uid="mailslurp.Api.RulesetControllerApi.TestNewRulesetWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_TestNewRulesetWithHttpInfo_mailslurp_Model_TestNewInboxRulesetOptions_System_Int32_" data-uid="mailslurp.Api.RulesetControllerApi.TestNewRulesetWithHttpInfo(mailslurp.Model.TestNewInboxRulesetOptions,System.Int32)">TestNewRulesetWithHttpInfo(TestNewInboxRulesetOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Test new ruleset Test new ruleset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;InboxRulesetTestResult&gt; TestNewRulesetWithHttpInfo(TestNewInboxRulesetOptions testNewInboxRulesetOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.TestNewInboxRulesetOptions.html">TestNewInboxRulesetOptions</a></td>
+        <td><span class="parametername">testNewInboxRulesetOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.InboxRulesetTestResult.html">InboxRulesetTestResult</a>&gt;</td>
+        <td><p>ApiResponse of InboxRulesetTestResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-1802">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_TestNewRulesetWithHttpInfoAsync_" data-uid="mailslurp.Api.RulesetControllerApi.TestNewRulesetWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_TestNewRulesetWithHttpInfoAsync_mailslurp_Model_TestNewInboxRulesetOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.RulesetControllerApi.TestNewRulesetWithHttpInfoAsync(mailslurp.Model.TestNewInboxRulesetOptions,System.Int32,System.Threading.CancellationToken)">TestNewRulesetWithHttpInfoAsync(TestNewInboxRulesetOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Test new ruleset Test new ruleset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;InboxRulesetTestResult&gt;&gt; TestNewRulesetWithHttpInfoAsync(TestNewInboxRulesetOptions testNewInboxRulesetOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.TestNewInboxRulesetOptions.html">TestNewInboxRulesetOptions</a></td>
+        <td><span class="parametername">testNewInboxRulesetOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.InboxRulesetTestResult.html">InboxRulesetTestResult</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (InboxRulesetTestResult)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-1868">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_TestRuleset_" data-uid="mailslurp.Api.RulesetControllerApi.TestRuleset*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_TestRuleset_System_Guid_mailslurp_Model_RulesetTestOptions_System_Int32_" data-uid="mailslurp.Api.RulesetControllerApi.TestRuleset(System.Guid,mailslurp.Model.RulesetTestOptions,System.Int32)">TestRuleset(Guid, RulesetTestOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Test a ruleset Test an inbox or phone ruleset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InboxRulesetTestResult TestRuleset(Guid id, RulesetTestOptions rulesetTestOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of ruleset</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.RulesetTestOptions.html">RulesetTestOptions</a></td>
+        <td><span class="parametername">rulesetTestOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.InboxRulesetTestResult.html">InboxRulesetTestResult</a></td>
+        <td><p>InboxRulesetTestResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-1949">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_TestRulesetAsync_" data-uid="mailslurp.Api.RulesetControllerApi.TestRulesetAsync*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_TestRulesetAsync_System_Guid_mailslurp_Model_RulesetTestOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.RulesetControllerApi.TestRulesetAsync(System.Guid,mailslurp.Model.RulesetTestOptions,System.Int32,System.Threading.CancellationToken)">TestRulesetAsync(Guid, RulesetTestOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Test a ruleset Test an inbox or phone ruleset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;InboxRulesetTestResult&gt; TestRulesetAsync(Guid id, RulesetTestOptions rulesetTestOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of ruleset</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.RulesetTestOptions.html">RulesetTestOptions</a></td>
+        <td><span class="parametername">rulesetTestOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.InboxRulesetTestResult.html">InboxRulesetTestResult</a>&gt;</td>
+        <td><p>Task of InboxRulesetTestResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-2030">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_TestRulesetReceiving_" data-uid="mailslurp.Api.RulesetControllerApi.TestRulesetReceiving*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_TestRulesetReceiving_mailslurp_Model_TestRulesetReceivingOptions_System_Int32_" data-uid="mailslurp.Api.RulesetControllerApi.TestRulesetReceiving(mailslurp.Model.TestRulesetReceivingOptions,System.Int32)">TestRulesetReceiving(TestRulesetReceivingOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Test receiving with rulesets Test whether inbound emails from an email address would be blocked or allowed by inbox rulesets or test if phone number can receive SMS</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TestRulesetReceivingResult TestRulesetReceiving(TestRulesetReceivingOptions testRulesetReceivingOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.TestRulesetReceivingOptions.html">TestRulesetReceivingOptions</a></td>
+        <td><span class="parametername">testRulesetReceivingOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.TestRulesetReceivingResult.html">TestRulesetReceivingResult</a></td>
+        <td><p>TestRulesetReceivingResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-2108">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_TestRulesetReceivingAsync_" data-uid="mailslurp.Api.RulesetControllerApi.TestRulesetReceivingAsync*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_TestRulesetReceivingAsync_mailslurp_Model_TestRulesetReceivingOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.RulesetControllerApi.TestRulesetReceivingAsync(mailslurp.Model.TestRulesetReceivingOptions,System.Int32,System.Threading.CancellationToken)">TestRulesetReceivingAsync(TestRulesetReceivingOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Test receiving with rulesets Test whether inbound emails from an email address would be blocked or allowed by inbox rulesets or test if phone number can receive SMS</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TestRulesetReceivingResult&gt; TestRulesetReceivingAsync(TestRulesetReceivingOptions testRulesetReceivingOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.TestRulesetReceivingOptions.html">TestRulesetReceivingOptions</a></td>
+        <td><span class="parametername">testRulesetReceivingOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.TestRulesetReceivingResult.html">TestRulesetReceivingResult</a>&gt;</td>
+        <td><p>Task of TestRulesetReceivingResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-2043">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_TestRulesetReceivingWithHttpInfo_" data-uid="mailslurp.Api.RulesetControllerApi.TestRulesetReceivingWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_TestRulesetReceivingWithHttpInfo_mailslurp_Model_TestRulesetReceivingOptions_System_Int32_" data-uid="mailslurp.Api.RulesetControllerApi.TestRulesetReceivingWithHttpInfo(mailslurp.Model.TestRulesetReceivingOptions,System.Int32)">TestRulesetReceivingWithHttpInfo(TestRulesetReceivingOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Test receiving with rulesets Test whether inbound emails from an email address would be blocked or allowed by inbox rulesets or test if phone number can receive SMS</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;TestRulesetReceivingResult&gt; TestRulesetReceivingWithHttpInfo(TestRulesetReceivingOptions testRulesetReceivingOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.TestRulesetReceivingOptions.html">TestRulesetReceivingOptions</a></td>
+        <td><span class="parametername">testRulesetReceivingOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.TestRulesetReceivingResult.html">TestRulesetReceivingResult</a>&gt;</td>
+        <td><p>ApiResponse of TestRulesetReceivingResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-2122">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_TestRulesetReceivingWithHttpInfoAsync_" data-uid="mailslurp.Api.RulesetControllerApi.TestRulesetReceivingWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_TestRulesetReceivingWithHttpInfoAsync_mailslurp_Model_TestRulesetReceivingOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.RulesetControllerApi.TestRulesetReceivingWithHttpInfoAsync(mailslurp.Model.TestRulesetReceivingOptions,System.Int32,System.Threading.CancellationToken)">TestRulesetReceivingWithHttpInfoAsync(TestRulesetReceivingOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Test receiving with rulesets Test whether inbound emails from an email address would be blocked or allowed by inbox rulesets or test if phone number can receive SMS</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;TestRulesetReceivingResult&gt;&gt; TestRulesetReceivingWithHttpInfoAsync(TestRulesetReceivingOptions testRulesetReceivingOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.TestRulesetReceivingOptions.html">TestRulesetReceivingOptions</a></td>
+        <td><span class="parametername">testRulesetReceivingOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.TestRulesetReceivingResult.html">TestRulesetReceivingResult</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (TestRulesetReceivingResult)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-2187">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_TestRulesetSending_" data-uid="mailslurp.Api.RulesetControllerApi.TestRulesetSending*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_TestRulesetSending_mailslurp_Model_TestInboxRulesetSendingOptions_System_Int32_" data-uid="mailslurp.Api.RulesetControllerApi.TestRulesetSending(mailslurp.Model.TestInboxRulesetSendingOptions,System.Int32)">TestRulesetSending(TestInboxRulesetSendingOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Test sending with rulesets Test whether outbound emails to an email address would be blocked or allowed by inbox rulesets or whether a phone number can send SMS</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TestRulesetSendingResult TestRulesetSending(TestInboxRulesetSendingOptions testInboxRulesetSendingOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.TestInboxRulesetSendingOptions.html">TestInboxRulesetSendingOptions</a></td>
+        <td><span class="parametername">testInboxRulesetSendingOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.TestRulesetSendingResult.html">TestRulesetSendingResult</a></td>
+        <td><p>TestRulesetSendingResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-2265">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_TestRulesetSendingAsync_" data-uid="mailslurp.Api.RulesetControllerApi.TestRulesetSendingAsync*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_TestRulesetSendingAsync_mailslurp_Model_TestInboxRulesetSendingOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.RulesetControllerApi.TestRulesetSendingAsync(mailslurp.Model.TestInboxRulesetSendingOptions,System.Int32,System.Threading.CancellationToken)">TestRulesetSendingAsync(TestInboxRulesetSendingOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Test sending with rulesets Test whether outbound emails to an email address would be blocked or allowed by inbox rulesets or whether a phone number can send SMS</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TestRulesetSendingResult&gt; TestRulesetSendingAsync(TestInboxRulesetSendingOptions testInboxRulesetSendingOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.TestInboxRulesetSendingOptions.html">TestInboxRulesetSendingOptions</a></td>
+        <td><span class="parametername">testInboxRulesetSendingOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.TestRulesetSendingResult.html">TestRulesetSendingResult</a>&gt;</td>
+        <td><p>Task of TestRulesetSendingResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-2200">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_TestRulesetSendingWithHttpInfo_" data-uid="mailslurp.Api.RulesetControllerApi.TestRulesetSendingWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_TestRulesetSendingWithHttpInfo_mailslurp_Model_TestInboxRulesetSendingOptions_System_Int32_" data-uid="mailslurp.Api.RulesetControllerApi.TestRulesetSendingWithHttpInfo(mailslurp.Model.TestInboxRulesetSendingOptions,System.Int32)">TestRulesetSendingWithHttpInfo(TestInboxRulesetSendingOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Test sending with rulesets Test whether outbound emails to an email address would be blocked or allowed by inbox rulesets or whether a phone number can send SMS</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;TestRulesetSendingResult&gt; TestRulesetSendingWithHttpInfo(TestInboxRulesetSendingOptions testInboxRulesetSendingOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.TestInboxRulesetSendingOptions.html">TestInboxRulesetSendingOptions</a></td>
+        <td><span class="parametername">testInboxRulesetSendingOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.TestRulesetSendingResult.html">TestRulesetSendingResult</a>&gt;</td>
+        <td><p>ApiResponse of TestRulesetSendingResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-2279">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_TestRulesetSendingWithHttpInfoAsync_" data-uid="mailslurp.Api.RulesetControllerApi.TestRulesetSendingWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_TestRulesetSendingWithHttpInfoAsync_mailslurp_Model_TestInboxRulesetSendingOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.RulesetControllerApi.TestRulesetSendingWithHttpInfoAsync(mailslurp.Model.TestInboxRulesetSendingOptions,System.Int32,System.Threading.CancellationToken)">TestRulesetSendingWithHttpInfoAsync(TestInboxRulesetSendingOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Test sending with rulesets Test whether outbound emails to an email address would be blocked or allowed by inbox rulesets or whether a phone number can send SMS</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;TestRulesetSendingResult&gt;&gt; TestRulesetSendingWithHttpInfoAsync(TestInboxRulesetSendingOptions testInboxRulesetSendingOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.TestInboxRulesetSendingOptions.html">TestInboxRulesetSendingOptions</a></td>
+        <td><span class="parametername">testInboxRulesetSendingOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.TestRulesetSendingResult.html">TestRulesetSendingResult</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (TestRulesetSendingResult)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-1882">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_TestRulesetWithHttpInfo_" data-uid="mailslurp.Api.RulesetControllerApi.TestRulesetWithHttpInfo*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_TestRulesetWithHttpInfo_System_Guid_mailslurp_Model_RulesetTestOptions_System_Int32_" data-uid="mailslurp.Api.RulesetControllerApi.TestRulesetWithHttpInfo(System.Guid,mailslurp.Model.RulesetTestOptions,System.Int32)">TestRulesetWithHttpInfo(Guid, RulesetTestOptions, int)</h4>
+  <div class="markdown level1 summary"><p>Test a ruleset Test an inbox or phone ruleset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResponse&lt;InboxRulesetTestResult&gt; TestRulesetWithHttpInfo(Guid id, RulesetTestOptions rulesetTestOptions, int operationIndex = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of ruleset</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.RulesetTestOptions.html">RulesetTestOptions</a></td>
+        <td><span class="parametername">rulesetTestOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.InboxRulesetTestResult.html">InboxRulesetTestResult</a>&gt;</td>
+        <td><p>ApiResponse of InboxRulesetTestResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-1964">View Source</a>
+  </span>
+  <a id="mailslurp_Api_RulesetControllerApi_TestRulesetWithHttpInfoAsync_" data-uid="mailslurp.Api.RulesetControllerApi.TestRulesetWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_RulesetControllerApi_TestRulesetWithHttpInfoAsync_System_Guid_mailslurp_Model_RulesetTestOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.RulesetControllerApi.TestRulesetWithHttpInfoAsync(System.Guid,mailslurp.Model.RulesetTestOptions,System.Int32,System.Threading.CancellationToken)">TestRulesetWithHttpInfoAsync(Guid, RulesetTestOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Test a ruleset Test an inbox or phone ruleset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiResponse&lt;InboxRulesetTestResult&gt;&gt; TestRulesetWithHttpInfoAsync(Guid id, RulesetTestOptions rulesetTestOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>ID of ruleset</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.RulesetTestOptions.html">RulesetTestOptions</a></td>
+        <td><span class="parametername">rulesetTestOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.InboxRulesetTestResult.html">InboxRulesetTestResult</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (InboxRulesetTestResult)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="mailslurp.Api.IRulesetControllerApi.html">IRulesetControllerApi</a>
+  </div>
+  <div>
+      <a class="xref" href="mailslurp.Api.IRulesetControllerApiSync.html">IRulesetControllerApiSync</a>
+  </div>
+  <div>
+      <a class="xref" href="mailslurp.Api.IRulesetControllerApiAsync.html">IRulesetControllerApiAsync</a>
+  </div>
+  <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html">IApiAccessor</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/RulesetControllerApi.cs#lines-581" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
