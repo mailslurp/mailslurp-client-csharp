@@ -1,0 +1,3815 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IDeliverabilityTestControllerApiAsync | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IDeliverabilityTestControllerApiAsync | MailSlurp ">
+    
+    <meta name="description" content="Represents a collection of functions to interact with the API endpoints">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync">
+
+
+
+  <h1 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync" class="text-break">Interface IDeliverabilityTestControllerApiAsync</h1>
+  <div class="markdown level0 summary"><p>Represents a collection of functions to interact with the API endpoints</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_Configuration">IApiAccessor.Configuration</a>
+    </div>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_GetBasePath">IApiAccessor.GetBasePath()</a>
+    </div>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_ExceptionFactory">IApiAccessor.ExceptionFactory</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="mailslurp.html">mailslurp</a>.<a class="xref" href="mailslurp.Api.html">Api</a></h6>
+  <h6><strong>Assembly</strong>: mailslurp.dll</h6>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDeliverabilityTestControllerApiAsync : IApiAccessor</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-605">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_CancelDeliverabilitySimulationJobAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.CancelDeliverabilitySimulationJobAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_CancelDeliverabilitySimulationJobAsync_System_Guid_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.CancelDeliverabilitySimulationJobAsync(System.Guid,System.Guid,System.Int32,System.Threading.CancellationToken)">CancelDeliverabilitySimulationJobAsync(Guid, Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Cancel deliverability simulation job</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DeliverabilitySimulationJobDto&gt; CancelDeliverabilitySimulationJobAsync(Guid testId, Guid jobId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">jobId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilitySimulationJobDto.html">DeliverabilitySimulationJobDto</a>&gt;</td>
+        <td><p>Task of DeliverabilitySimulationJobDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_CancelDeliverabilitySimulationJobAsync_System_Guid_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Cancel a running or paused simulation job.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-619">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_CancelDeliverabilitySimulationJobWithHttpInfoAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.CancelDeliverabilitySimulationJobWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_CancelDeliverabilitySimulationJobWithHttpInfoAsync_System_Guid_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.CancelDeliverabilitySimulationJobWithHttpInfoAsync(System.Guid,System.Guid,System.Int32,System.Threading.CancellationToken)">CancelDeliverabilitySimulationJobWithHttpInfoAsync(Guid, Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Cancel deliverability simulation job</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DeliverabilitySimulationJobDto&gt;&gt; CancelDeliverabilitySimulationJobWithHttpInfoAsync(Guid testId, Guid jobId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">jobId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilitySimulationJobDto.html">DeliverabilitySimulationJobDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DeliverabilitySimulationJobDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_CancelDeliverabilitySimulationJobWithHttpInfoAsync_System_Guid_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Cancel a running or paused simulation job.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-632">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_CreateDeliverabilitySimulationJobAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.CreateDeliverabilitySimulationJobAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_CreateDeliverabilitySimulationJobAsync_System_Guid_mailslurp_Model_CreateDeliverabilitySimulationJobOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.CreateDeliverabilitySimulationJobAsync(System.Guid,mailslurp.Model.CreateDeliverabilitySimulationJobOptions,System.Int32,System.Threading.CancellationToken)">CreateDeliverabilitySimulationJobAsync(Guid, CreateDeliverabilitySimulationJobOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create deliverability simulation job</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DeliverabilitySimulationJobDto&gt; CreateDeliverabilitySimulationJobAsync(Guid testId, CreateDeliverabilitySimulationJobOptions createDeliverabilitySimulationJobOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateDeliverabilitySimulationJobOptions.html">CreateDeliverabilitySimulationJobOptions</a></td>
+        <td><span class="parametername">createDeliverabilitySimulationJobOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilitySimulationJobDto.html">DeliverabilitySimulationJobDto</a>&gt;</td>
+        <td><p>Task of DeliverabilitySimulationJobDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_CreateDeliverabilitySimulationJobAsync_System_Guid_mailslurp_Model_CreateDeliverabilitySimulationJobOptions_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Create and start a simulation job for a running deliverability test. Only one active simulation job is allowed per user.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-646">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_CreateDeliverabilitySimulationJobWithHttpInfoAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.CreateDeliverabilitySimulationJobWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_CreateDeliverabilitySimulationJobWithHttpInfoAsync_System_Guid_mailslurp_Model_CreateDeliverabilitySimulationJobOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.CreateDeliverabilitySimulationJobWithHttpInfoAsync(System.Guid,mailslurp.Model.CreateDeliverabilitySimulationJobOptions,System.Int32,System.Threading.CancellationToken)">CreateDeliverabilitySimulationJobWithHttpInfoAsync(Guid, CreateDeliverabilitySimulationJobOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create deliverability simulation job</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DeliverabilitySimulationJobDto&gt;&gt; CreateDeliverabilitySimulationJobWithHttpInfoAsync(Guid testId, CreateDeliverabilitySimulationJobOptions createDeliverabilitySimulationJobOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateDeliverabilitySimulationJobOptions.html">CreateDeliverabilitySimulationJobOptions</a></td>
+        <td><span class="parametername">createDeliverabilitySimulationJobOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilitySimulationJobDto.html">DeliverabilitySimulationJobDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DeliverabilitySimulationJobDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_CreateDeliverabilitySimulationJobWithHttpInfoAsync_System_Guid_mailslurp_Model_CreateDeliverabilitySimulationJobOptions_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Create and start a simulation job for a running deliverability test. Only one active simulation job is allowed per user.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-658">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_CreateDeliverabilityTestAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.CreateDeliverabilityTestAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_CreateDeliverabilityTestAsync_mailslurp_Model_CreateDeliverabilityTestOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.CreateDeliverabilityTestAsync(mailslurp.Model.CreateDeliverabilityTestOptions,System.Int32,System.Threading.CancellationToken)">CreateDeliverabilityTestAsync(CreateDeliverabilityTestOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create deliverability/load test</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DeliverabilityTestDto&gt; CreateDeliverabilityTestAsync(CreateDeliverabilityTestOptions createDeliverabilityTestOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateDeliverabilityTestOptions.html">CreateDeliverabilityTestOptions</a></td>
+        <td><span class="parametername">createDeliverabilityTestOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilityTestDto.html">DeliverabilityTestDto</a>&gt;</td>
+        <td><p>Task of DeliverabilityTestDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_CreateDeliverabilityTestAsync_mailslurp_Model_CreateDeliverabilityTestOptions_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Create a deliverability test for inboxes or phone numbers using ALL, PATTERN, or EXPLICIT selector scope.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-671">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_CreateDeliverabilityTestWithHttpInfoAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.CreateDeliverabilityTestWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_CreateDeliverabilityTestWithHttpInfoAsync_mailslurp_Model_CreateDeliverabilityTestOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.CreateDeliverabilityTestWithHttpInfoAsync(mailslurp.Model.CreateDeliverabilityTestOptions,System.Int32,System.Threading.CancellationToken)">CreateDeliverabilityTestWithHttpInfoAsync(CreateDeliverabilityTestOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create deliverability/load test</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DeliverabilityTestDto&gt;&gt; CreateDeliverabilityTestWithHttpInfoAsync(CreateDeliverabilityTestOptions createDeliverabilityTestOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateDeliverabilityTestOptions.html">CreateDeliverabilityTestOptions</a></td>
+        <td><span class="parametername">createDeliverabilityTestOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilityTestDto.html">DeliverabilityTestDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DeliverabilityTestDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_CreateDeliverabilityTestWithHttpInfoAsync_mailslurp_Model_CreateDeliverabilityTestOptions_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Create a deliverability test for inboxes or phone numbers using ALL, PATTERN, or EXPLICIT selector scope.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-683">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_DeleteDeliverabilityTestAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.DeleteDeliverabilityTestAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_DeleteDeliverabilityTestAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.DeleteDeliverabilityTestAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">DeleteDeliverabilityTestAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Delete deliverability/load test</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DeleteResult&gt; DeleteDeliverabilityTestAsync(Guid testId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DeleteResult.html">DeleteResult</a>&gt;</td>
+        <td><p>Task of DeleteResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_DeleteDeliverabilityTestAsync_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Delete test and all persisted entity-level results.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-696">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_DeleteDeliverabilityTestWithHttpInfoAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.DeleteDeliverabilityTestWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_DeleteDeliverabilityTestWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.DeleteDeliverabilityTestWithHttpInfoAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">DeleteDeliverabilityTestWithHttpInfoAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Delete deliverability/load test</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DeleteResult&gt;&gt; DeleteDeliverabilityTestWithHttpInfoAsync(Guid testId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DeleteResult.html">DeleteResult</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DeleteResult)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_DeleteDeliverabilityTestWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Delete test and all persisted entity-level results.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-708">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_DuplicateDeliverabilityTestAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.DuplicateDeliverabilityTestAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_DuplicateDeliverabilityTestAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.DuplicateDeliverabilityTestAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">DuplicateDeliverabilityTestAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Duplicate deliverability/load test</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DeliverabilityTestDto&gt; DuplicateDeliverabilityTestAsync(Guid testId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilityTestDto.html">DeliverabilityTestDto</a>&gt;</td>
+        <td><p>Task of DeliverabilityTestDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_DuplicateDeliverabilityTestAsync_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Create a fresh deliverability test using an existing test configuration, including selector scope, exclusions, and expectations.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-721">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_DuplicateDeliverabilityTestWithHttpInfoAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.DuplicateDeliverabilityTestWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_DuplicateDeliverabilityTestWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.DuplicateDeliverabilityTestWithHttpInfoAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">DuplicateDeliverabilityTestWithHttpInfoAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Duplicate deliverability/load test</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DeliverabilityTestDto&gt;&gt; DuplicateDeliverabilityTestWithHttpInfoAsync(Guid testId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilityTestDto.html">DeliverabilityTestDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DeliverabilityTestDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_DuplicateDeliverabilityTestWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Create a fresh deliverability test using an existing test configuration, including selector scope, exclusions, and expectations.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-733">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_ExportDeliverabilityTestReportAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.ExportDeliverabilityTestReportAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_ExportDeliverabilityTestReportAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.ExportDeliverabilityTestReportAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">ExportDeliverabilityTestReportAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Export deliverability/load test report as PDF</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task ExportDeliverabilityTestReportAsync(Guid testId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>Task of void</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_ExportDeliverabilityTestReportAsync_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Export a PDF report for a terminal deliverability test (COMPLETE, FAILED, or STOPPED), including configuration, summary outcomes, and detailed entity-level results.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-746">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_ExportDeliverabilityTestReportWithHttpInfoAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.ExportDeliverabilityTestReportWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_ExportDeliverabilityTestReportWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.ExportDeliverabilityTestReportWithHttpInfoAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">ExportDeliverabilityTestReportWithHttpInfoAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Export deliverability/load test report as PDF</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;object&gt;&gt; ExportDeliverabilityTestReportWithHttpInfoAsync(Guid testId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_ExportDeliverabilityTestReportWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Export a PDF report for a terminal deliverability test (COMPLETE, FAILED, or STOPPED), including configuration, summary outcomes, and detailed entity-level results.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-759">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_ExportDeliverabilityTestResultsAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.ExportDeliverabilityTestResultsAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_ExportDeliverabilityTestResultsAsync_System_Guid_System_Nullable_System_Boolean__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.ExportDeliverabilityTestResultsAsync(System.Guid,System.Nullable{System.Boolean},System.Int32,System.Threading.CancellationToken)">ExportDeliverabilityTestResultsAsync(Guid, bool?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Export deliverability/load test entity results as CSV</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task ExportDeliverabilityTestResultsAsync(Guid testId, bool? matched = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">matched</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>Task of void</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_ExportDeliverabilityTestResultsAsync_System_Guid_System_Nullable_System_Boolean__System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Export per-entity deliverability results including expectation-level pass/fail counts. The latest status is evaluated with the same polling safeguards before export.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-773">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_ExportDeliverabilityTestResultsWithHttpInfoAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.ExportDeliverabilityTestResultsWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_ExportDeliverabilityTestResultsWithHttpInfoAsync_System_Guid_System_Nullable_System_Boolean__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.ExportDeliverabilityTestResultsWithHttpInfoAsync(System.Guid,System.Nullable{System.Boolean},System.Int32,System.Threading.CancellationToken)">ExportDeliverabilityTestResultsWithHttpInfoAsync(Guid, bool?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Export deliverability/load test entity results as CSV</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;object&gt;&gt; ExportDeliverabilityTestResultsWithHttpInfoAsync(Guid testId, bool? matched = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">matched</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_ExportDeliverabilityTestResultsWithHttpInfoAsync_System_Guid_System_Nullable_System_Boolean__System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Export per-entity deliverability results including expectation-level pass/fail counts. The latest status is evaluated with the same polling safeguards before export.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-789">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityAnalyticsSeriesAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilityAnalyticsSeriesAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityAnalyticsSeriesAsync_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_String_System_Nullable_System_Int32__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilityAnalyticsSeriesAsync(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String,System.Nullable{System.Int32},System.Int32,System.Threading.CancellationToken)">GetDeliverabilityAnalyticsSeriesAsync(DateTime?, DateTime?, string, string, int?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get deliverability analytics time series</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DeliverabilityAnalyticsSeriesDto&gt; GetDeliverabilityAnalyticsSeriesAsync(DateTime? since = null, DateTime? before = null, string scope = null, string bucket = null, int? runLimit = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">scope</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">bucket</span></td>
+        <td><p>(optional, default to DAY)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">runLimit</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilityAnalyticsSeriesDto.html">DeliverabilityAnalyticsSeriesDto</a>&gt;</td>
+        <td><p>Task of DeliverabilityAnalyticsSeriesDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityAnalyticsSeriesAsync_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_String_System_Nullable_System_Int32__System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Compare deliverability runs over a time range with bucketed chart metrics and run-level rows for table views.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-806">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityAnalyticsSeriesWithHttpInfoAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilityAnalyticsSeriesWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityAnalyticsSeriesWithHttpInfoAsync_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_String_System_Nullable_System_Int32__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilityAnalyticsSeriesWithHttpInfoAsync(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String,System.Nullable{System.Int32},System.Int32,System.Threading.CancellationToken)">GetDeliverabilityAnalyticsSeriesWithHttpInfoAsync(DateTime?, DateTime?, string, string, int?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get deliverability analytics time series</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DeliverabilityAnalyticsSeriesDto&gt;&gt; GetDeliverabilityAnalyticsSeriesWithHttpInfoAsync(DateTime? since = null, DateTime? before = null, string scope = null, string bucket = null, int? runLimit = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">scope</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">bucket</span></td>
+        <td><p>(optional, default to DAY)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">runLimit</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilityAnalyticsSeriesDto.html">DeliverabilityAnalyticsSeriesDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DeliverabilityAnalyticsSeriesDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityAnalyticsSeriesWithHttpInfoAsync_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_String_System_Nullable_System_Int32__System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Compare deliverability runs over a time range with bucketed chart metrics and run-level rows for table views.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-821">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityFailureHotspotsAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilityFailureHotspotsAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityFailureHotspotsAsync_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int32__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilityFailureHotspotsAsync(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Nullable{System.Int32},System.Int32,System.Threading.CancellationToken)">GetDeliverabilityFailureHotspotsAsync(DateTime?, DateTime?, string, int?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get deliverability failure hotspots</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DeliverabilityFailureHotspotsDto&gt; GetDeliverabilityFailureHotspotsAsync(DateTime? since = null, DateTime? before = null, string scope = null, int? limit = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">scope</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">limit</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilityFailureHotspotsDto.html">DeliverabilityFailureHotspotsDto</a>&gt;</td>
+        <td><p>Task of DeliverabilityFailureHotspotsDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityFailureHotspotsAsync_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int32__System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Find commonly failing entities and phone country/variant dimensions across deliverability runs in a time range.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-837">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityFailureHotspotsWithHttpInfoAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilityFailureHotspotsWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityFailureHotspotsWithHttpInfoAsync_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int32__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilityFailureHotspotsWithHttpInfoAsync(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Nullable{System.Int32},System.Int32,System.Threading.CancellationToken)">GetDeliverabilityFailureHotspotsWithHttpInfoAsync(DateTime?, DateTime?, string, int?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get deliverability failure hotspots</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DeliverabilityFailureHotspotsDto&gt;&gt; GetDeliverabilityFailureHotspotsWithHttpInfoAsync(DateTime? since = null, DateTime? before = null, string scope = null, int? limit = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">scope</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">limit</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilityFailureHotspotsDto.html">DeliverabilityFailureHotspotsDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DeliverabilityFailureHotspotsDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityFailureHotspotsWithHttpInfoAsync_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int32__System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Find commonly failing entities and phone country/variant dimensions across deliverability runs in a time range.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-850">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilitySimulationJobAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilitySimulationJobAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilitySimulationJobAsync_System_Guid_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilitySimulationJobAsync(System.Guid,System.Guid,System.Int32,System.Threading.CancellationToken)">GetDeliverabilitySimulationJobAsync(Guid, Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get deliverability simulation job</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DeliverabilitySimulationJobDto&gt; GetDeliverabilitySimulationJobAsync(Guid testId, Guid jobId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">jobId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilitySimulationJobDto.html">DeliverabilitySimulationJobDto</a>&gt;</td>
+        <td><p>Task of DeliverabilitySimulationJobDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilitySimulationJobAsync_System_Guid_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get simulation job status and progress counters.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-880">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilitySimulationJobEventsAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilitySimulationJobEventsAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilitySimulationJobEventsAsync_System_Guid_System_Guid_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilitySimulationJobEventsAsync(System.Guid,System.Guid,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Int32,System.Threading.CancellationToken)">GetDeliverabilitySimulationJobEventsAsync(Guid, Guid, int?, int?, string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get deliverability simulation job events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DeliverabilitySimulationJobEventPageDto&gt; GetDeliverabilitySimulationJobEventsAsync(Guid testId, Guid jobId, int? page = null, int? size = null, string sort = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">jobId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>(optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>(optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>(optional, default to DESC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilitySimulationJobEventPageDto.html">DeliverabilitySimulationJobEventPageDto</a>&gt;</td>
+        <td><p>Task of DeliverabilitySimulationJobEventPageDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilitySimulationJobEventsAsync_System_Guid_System_Guid_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get paged simulation events including send successes and failures.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-897">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilitySimulationJobEventsWithHttpInfoAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilitySimulationJobEventsWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilitySimulationJobEventsWithHttpInfoAsync_System_Guid_System_Guid_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilitySimulationJobEventsWithHttpInfoAsync(System.Guid,System.Guid,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Int32,System.Threading.CancellationToken)">GetDeliverabilitySimulationJobEventsWithHttpInfoAsync(Guid, Guid, int?, int?, string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get deliverability simulation job events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DeliverabilitySimulationJobEventPageDto&gt;&gt; GetDeliverabilitySimulationJobEventsWithHttpInfoAsync(Guid testId, Guid jobId, int? page = null, int? size = null, string sort = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">jobId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>(optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>(optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>(optional, default to DESC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilitySimulationJobEventPageDto.html">DeliverabilitySimulationJobEventPageDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DeliverabilitySimulationJobEventPageDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilitySimulationJobEventsWithHttpInfoAsync_System_Guid_System_Guid_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get paged simulation events including send successes and failures.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-864">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilitySimulationJobWithHttpInfoAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilitySimulationJobWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilitySimulationJobWithHttpInfoAsync_System_Guid_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilitySimulationJobWithHttpInfoAsync(System.Guid,System.Guid,System.Int32,System.Threading.CancellationToken)">GetDeliverabilitySimulationJobWithHttpInfoAsync(Guid, Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get deliverability simulation job</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DeliverabilitySimulationJobDto&gt;&gt; GetDeliverabilitySimulationJobWithHttpInfoAsync(Guid testId, Guid jobId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">jobId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilitySimulationJobDto.html">DeliverabilitySimulationJobDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DeliverabilitySimulationJobDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilitySimulationJobWithHttpInfoAsync_System_Guid_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get simulation job status and progress counters.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-909">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityTestAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilityTestAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityTestAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilityTestAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetDeliverabilityTestAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get deliverability/load test</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DeliverabilityTestDto&gt; GetDeliverabilityTestAsync(Guid testId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilityTestDto.html">DeliverabilityTestDto</a>&gt;</td>
+        <td><p>Task of DeliverabilityTestDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityTestAsync_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get deliverability test configuration and latest progress counters.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-938">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityTestResultsAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilityTestResultsAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityTestResultsAsync_System_Guid_System_Nullable_System_Boolean__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilityTestResultsAsync(System.Guid,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Int32,System.Threading.CancellationToken)">GetDeliverabilityTestResultsAsync(Guid, bool?, int?, int?, string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get deliverability/load test entity results</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DeliverabilityEntityResultPageDto&gt; GetDeliverabilityTestResultsAsync(Guid testId, bool? matched = null, int? page = null, int? size = null, string sort = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">matched</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>(optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>(optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>(optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilityEntityResultPageDto.html">DeliverabilityEntityResultPageDto</a>&gt;</td>
+        <td><p>Task of DeliverabilityEntityResultPageDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityTestResultsAsync_System_Guid_System_Nullable_System_Boolean__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get paged per-entity expectation results with optional matched/unmatched filtering.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-955">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityTestResultsWithHttpInfoAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilityTestResultsWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityTestResultsWithHttpInfoAsync_System_Guid_System_Nullable_System_Boolean__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilityTestResultsWithHttpInfoAsync(System.Guid,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Int32,System.Threading.CancellationToken)">GetDeliverabilityTestResultsWithHttpInfoAsync(Guid, bool?, int?, int?, string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get deliverability/load test entity results</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DeliverabilityEntityResultPageDto&gt;&gt; GetDeliverabilityTestResultsWithHttpInfoAsync(Guid testId, bool? matched = null, int? page = null, int? size = null, string sort = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">matched</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>(optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>(optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>(optional, default to ASC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilityEntityResultPageDto.html">DeliverabilityEntityResultPageDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DeliverabilityEntityResultPageDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityTestResultsWithHttpInfoAsync_System_Guid_System_Nullable_System_Boolean__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get paged per-entity expectation results with optional matched/unmatched filtering.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-922">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityTestWithHttpInfoAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilityTestWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityTestWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilityTestWithHttpInfoAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetDeliverabilityTestWithHttpInfoAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get deliverability/load test</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DeliverabilityTestDto&gt;&gt; GetDeliverabilityTestWithHttpInfoAsync(Guid testId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilityTestDto.html">DeliverabilityTestDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DeliverabilityTestDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityTestWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get deliverability test configuration and latest progress counters.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-969">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityTestsAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilityTestsAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityTestsAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilityTestsAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Int32,System.Threading.CancellationToken)">GetDeliverabilityTestsAsync(int?, int?, string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>List deliverability/load tests</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DeliverabilityTestPageDto&gt; GetDeliverabilityTestsAsync(int? page = null, int? size = null, string sort = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Page index (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Page size (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Sort direction (optional, default to DESC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilityTestPageDto.html">DeliverabilityTestPageDto</a>&gt;</td>
+        <td><p>Task of DeliverabilityTestPageDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityTestsAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>List deliverability tests for the authenticated account.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-984">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityTestsWithHttpInfoAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilityTestsWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityTestsWithHttpInfoAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetDeliverabilityTestsWithHttpInfoAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Int32,System.Threading.CancellationToken)">GetDeliverabilityTestsWithHttpInfoAsync(int?, int?, string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>List deliverability/load tests</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DeliverabilityTestPageDto&gt;&gt; GetDeliverabilityTestsWithHttpInfoAsync(int? page = null, int? size = null, string sort = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">page</span></td>
+        <td><p>Page index (optional, default to 0)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Page size (optional, default to 20)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sort</span></td>
+        <td><p>Sort direction (optional, default to DESC)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilityTestPageDto.html">DeliverabilityTestPageDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DeliverabilityTestPageDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetDeliverabilityTestsWithHttpInfoAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>List deliverability tests for the authenticated account.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-996">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetLatestDeliverabilitySimulationJobAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetLatestDeliverabilitySimulationJobAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetLatestDeliverabilitySimulationJobAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetLatestDeliverabilitySimulationJobAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetLatestDeliverabilitySimulationJobAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get latest deliverability simulation job</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DeliverabilitySimulationJobDto&gt; GetLatestDeliverabilitySimulationJobAsync(Guid testId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilitySimulationJobDto.html">DeliverabilitySimulationJobDto</a>&gt;</td>
+        <td><p>Task of DeliverabilitySimulationJobDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetLatestDeliverabilitySimulationJobAsync_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get the most recent simulation job for a deliverability test.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-1009">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetLatestDeliverabilitySimulationJobWithHttpInfoAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetLatestDeliverabilitySimulationJobWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetLatestDeliverabilitySimulationJobWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.GetLatestDeliverabilitySimulationJobWithHttpInfoAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetLatestDeliverabilitySimulationJobWithHttpInfoAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get latest deliverability simulation job</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DeliverabilitySimulationJobDto&gt;&gt; GetLatestDeliverabilitySimulationJobWithHttpInfoAsync(Guid testId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilitySimulationJobDto.html">DeliverabilitySimulationJobDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DeliverabilitySimulationJobDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_GetLatestDeliverabilitySimulationJobWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get the most recent simulation job for a deliverability test.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-1022">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_PauseDeliverabilitySimulationJobAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.PauseDeliverabilitySimulationJobAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_PauseDeliverabilitySimulationJobAsync_System_Guid_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.PauseDeliverabilitySimulationJobAsync(System.Guid,System.Guid,System.Int32,System.Threading.CancellationToken)">PauseDeliverabilitySimulationJobAsync(Guid, Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Pause deliverability simulation job</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DeliverabilitySimulationJobDto&gt; PauseDeliverabilitySimulationJobAsync(Guid testId, Guid jobId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">jobId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilitySimulationJobDto.html">DeliverabilitySimulationJobDto</a>&gt;</td>
+        <td><p>Task of DeliverabilitySimulationJobDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_PauseDeliverabilitySimulationJobAsync_System_Guid_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Pause a running simulation job.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-1036">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_PauseDeliverabilitySimulationJobWithHttpInfoAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.PauseDeliverabilitySimulationJobWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_PauseDeliverabilitySimulationJobWithHttpInfoAsync_System_Guid_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.PauseDeliverabilitySimulationJobWithHttpInfoAsync(System.Guid,System.Guid,System.Int32,System.Threading.CancellationToken)">PauseDeliverabilitySimulationJobWithHttpInfoAsync(Guid, Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Pause deliverability simulation job</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DeliverabilitySimulationJobDto&gt;&gt; PauseDeliverabilitySimulationJobWithHttpInfoAsync(Guid testId, Guid jobId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">jobId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilitySimulationJobDto.html">DeliverabilitySimulationJobDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DeliverabilitySimulationJobDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_PauseDeliverabilitySimulationJobWithHttpInfoAsync_System_Guid_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Pause a running simulation job.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-1048">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_PauseDeliverabilityTestAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.PauseDeliverabilityTestAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_PauseDeliverabilityTestAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.PauseDeliverabilityTestAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">PauseDeliverabilityTestAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Pause deliverability/load test</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DeliverabilityTestDto&gt; PauseDeliverabilityTestAsync(Guid testId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilityTestDto.html">DeliverabilityTestDto</a>&gt;</td>
+        <td><p>Task of DeliverabilityTestDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_PauseDeliverabilityTestAsync_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Pause a RUNNING or SCHEDULED deliverability test.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-1061">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_PauseDeliverabilityTestWithHttpInfoAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.PauseDeliverabilityTestWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_PauseDeliverabilityTestWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.PauseDeliverabilityTestWithHttpInfoAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">PauseDeliverabilityTestWithHttpInfoAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Pause deliverability/load test</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DeliverabilityTestDto&gt;&gt; PauseDeliverabilityTestWithHttpInfoAsync(Guid testId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilityTestDto.html">DeliverabilityTestDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DeliverabilityTestDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_PauseDeliverabilityTestWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Pause a RUNNING or SCHEDULED deliverability test.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-1073">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_PollDeliverabilityTestStatusAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.PollDeliverabilityTestStatusAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_PollDeliverabilityTestStatusAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.PollDeliverabilityTestStatusAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">PollDeliverabilityTestStatusAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Poll deliverability/load test status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DeliverabilityPollStatusResultDto&gt; PollDeliverabilityTestStatusAsync(Guid testId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilityPollStatusResultDto.html">DeliverabilityPollStatusResultDto</a>&gt;</td>
+        <td><p>Task of DeliverabilityPollStatusResultDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_PollDeliverabilityTestStatusAsync_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Poll test progress. Evaluation is throttled with a 5-second cache window to protect backing data stores.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-1086">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_PollDeliverabilityTestStatusWithHttpInfoAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.PollDeliverabilityTestStatusWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_PollDeliverabilityTestStatusWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.PollDeliverabilityTestStatusWithHttpInfoAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">PollDeliverabilityTestStatusWithHttpInfoAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Poll deliverability/load test status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DeliverabilityPollStatusResultDto&gt;&gt; PollDeliverabilityTestStatusWithHttpInfoAsync(Guid testId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilityPollStatusResultDto.html">DeliverabilityPollStatusResultDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DeliverabilityPollStatusResultDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_PollDeliverabilityTestStatusWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Poll test progress. Evaluation is throttled with a 5-second cache window to protect backing data stores.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-1099">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_ResumeDeliverabilitySimulationJobAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.ResumeDeliverabilitySimulationJobAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_ResumeDeliverabilitySimulationJobAsync_System_Guid_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.ResumeDeliverabilitySimulationJobAsync(System.Guid,System.Guid,System.Int32,System.Threading.CancellationToken)">ResumeDeliverabilitySimulationJobAsync(Guid, Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Resume deliverability simulation job</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DeliverabilitySimulationJobDto&gt; ResumeDeliverabilitySimulationJobAsync(Guid testId, Guid jobId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">jobId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilitySimulationJobDto.html">DeliverabilitySimulationJobDto</a>&gt;</td>
+        <td><p>Task of DeliverabilitySimulationJobDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_ResumeDeliverabilitySimulationJobAsync_System_Guid_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Resume a paused simulation job.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-1113">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_ResumeDeliverabilitySimulationJobWithHttpInfoAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.ResumeDeliverabilitySimulationJobWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_ResumeDeliverabilitySimulationJobWithHttpInfoAsync_System_Guid_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.ResumeDeliverabilitySimulationJobWithHttpInfoAsync(System.Guid,System.Guid,System.Int32,System.Threading.CancellationToken)">ResumeDeliverabilitySimulationJobWithHttpInfoAsync(Guid, Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Resume deliverability simulation job</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DeliverabilitySimulationJobDto&gt;&gt; ResumeDeliverabilitySimulationJobWithHttpInfoAsync(Guid testId, Guid jobId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">jobId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilitySimulationJobDto.html">DeliverabilitySimulationJobDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DeliverabilitySimulationJobDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_ResumeDeliverabilitySimulationJobWithHttpInfoAsync_System_Guid_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Resume a paused simulation job.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-1125">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_StartDeliverabilityTestAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.StartDeliverabilityTestAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_StartDeliverabilityTestAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.StartDeliverabilityTestAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">StartDeliverabilityTestAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Start or resume deliverability/load test</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DeliverabilityTestDto&gt; StartDeliverabilityTestAsync(Guid testId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilityTestDto.html">DeliverabilityTestDto</a>&gt;</td>
+        <td><p>Task of DeliverabilityTestDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_StartDeliverabilityTestAsync_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Start a CREATED test or resume a PAUSED/SCHEDULED test.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-1138">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_StartDeliverabilityTestWithHttpInfoAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.StartDeliverabilityTestWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_StartDeliverabilityTestWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.StartDeliverabilityTestWithHttpInfoAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">StartDeliverabilityTestWithHttpInfoAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Start or resume deliverability/load test</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DeliverabilityTestDto&gt;&gt; StartDeliverabilityTestWithHttpInfoAsync(Guid testId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilityTestDto.html">DeliverabilityTestDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DeliverabilityTestDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_StartDeliverabilityTestWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Start a CREATED test or resume a PAUSED/SCHEDULED test.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-1150">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_StopDeliverabilityTestAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.StopDeliverabilityTestAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_StopDeliverabilityTestAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.StopDeliverabilityTestAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">StopDeliverabilityTestAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Stop deliverability/load test</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DeliverabilityTestDto&gt; StopDeliverabilityTestAsync(Guid testId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilityTestDto.html">DeliverabilityTestDto</a>&gt;</td>
+        <td><p>Task of DeliverabilityTestDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_StopDeliverabilityTestAsync_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Stop a deliverability test and mark it terminal.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-1163">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_StopDeliverabilityTestWithHttpInfoAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.StopDeliverabilityTestWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_StopDeliverabilityTestWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.StopDeliverabilityTestWithHttpInfoAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">StopDeliverabilityTestWithHttpInfoAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Stop deliverability/load test</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DeliverabilityTestDto&gt;&gt; StopDeliverabilityTestWithHttpInfoAsync(Guid testId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilityTestDto.html">DeliverabilityTestDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DeliverabilityTestDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_StopDeliverabilityTestWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Stop a deliverability test and mark it terminal.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-1176">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_UpdateDeliverabilityTestAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.UpdateDeliverabilityTestAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_UpdateDeliverabilityTestAsync_System_Guid_mailslurp_Model_UpdateDeliverabilityTestOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.UpdateDeliverabilityTestAsync(System.Guid,mailslurp.Model.UpdateDeliverabilityTestOptions,System.Int32,System.Threading.CancellationToken)">UpdateDeliverabilityTestAsync(Guid, UpdateDeliverabilityTestOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Update deliverability/load test</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DeliverabilityTestDto&gt; UpdateDeliverabilityTestAsync(Guid testId, UpdateDeliverabilityTestOptions updateDeliverabilityTestOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.UpdateDeliverabilityTestOptions.html">UpdateDeliverabilityTestOptions</a></td>
+        <td><span class="parametername">updateDeliverabilityTestOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilityTestDto.html">DeliverabilityTestDto</a>&gt;</td>
+        <td><p>Task of DeliverabilityTestDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_UpdateDeliverabilityTestAsync_System_Guid_mailslurp_Model_UpdateDeliverabilityTestOptions_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Update metadata, timeout, and expectations for a non-running non-terminal test.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-1190">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_UpdateDeliverabilityTestWithHttpInfoAsync_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.UpdateDeliverabilityTestWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_UpdateDeliverabilityTestWithHttpInfoAsync_System_Guid_mailslurp_Model_UpdateDeliverabilityTestOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDeliverabilityTestControllerApiAsync.UpdateDeliverabilityTestWithHttpInfoAsync(System.Guid,mailslurp.Model.UpdateDeliverabilityTestOptions,System.Int32,System.Threading.CancellationToken)">UpdateDeliverabilityTestWithHttpInfoAsync(Guid, UpdateDeliverabilityTestOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Update deliverability/load test</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DeliverabilityTestDto&gt;&gt; UpdateDeliverabilityTestWithHttpInfoAsync(Guid testId, UpdateDeliverabilityTestOptions updateDeliverabilityTestOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">testId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.UpdateDeliverabilityTestOptions.html">UpdateDeliverabilityTestOptions</a></td>
+        <td><span class="parametername">updateDeliverabilityTestOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DeliverabilityTestDto.html">DeliverabilityTestDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DeliverabilityTestDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="mailslurp_Api_IDeliverabilityTestControllerApiAsync_UpdateDeliverabilityTestWithHttpInfoAsync_System_Guid_mailslurp_Model_UpdateDeliverabilityTestOptions_System_Int32_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Update metadata, timeout, and expectations for a non-running non-terminal test.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DeliverabilityTestControllerApi.cs#lines-590" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

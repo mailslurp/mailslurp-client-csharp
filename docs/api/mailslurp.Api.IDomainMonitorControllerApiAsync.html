@@ -1,0 +1,2847 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IDomainMonitorControllerApiAsync | MailSlurp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IDomainMonitorControllerApiAsync | MailSlurp ">
+    
+    <meta name="description" content="Represents a collection of functions to interact with the API endpoints">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync">
+
+
+
+  <h1 id="mailslurp_Api_IDomainMonitorControllerApiAsync" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync" class="text-break">Interface IDomainMonitorControllerApiAsync</h1>
+  <div class="markdown level0 summary"><p>Represents a collection of functions to interact with the API endpoints</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_Configuration">IApiAccessor.Configuration</a>
+    </div>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_GetBasePath">IApiAccessor.GetBasePath()</a>
+    </div>
+    <div>
+      <a class="xref" href="mailslurp.Client.IApiAccessor.html#mailslurp_Client_IApiAccessor_ExceptionFactory">IApiAccessor.ExceptionFactory</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="mailslurp.html">mailslurp</a>.<a class="xref" href="mailslurp.Api.html">Api</a></h6>
+  <h6><strong>Assembly</strong>: mailslurp.dll</h6>
+  <h5 id="mailslurp_Api_IDomainMonitorControllerApiAsync_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDomainMonitorControllerApiAsync : IApiAccessor</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-424">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_CompareDomainMonitorRunsAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.CompareDomainMonitorRunsAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_CompareDomainMonitorRunsAsync_System_Guid_System_Guid_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.CompareDomainMonitorRunsAsync(System.Guid,System.Guid,System.Guid,System.Int32,System.Threading.CancellationToken)">CompareDomainMonitorRunsAsync(Guid, Guid, Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Compare two monitor runs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DomainMonitorRunComparisonDto&gt; CompareDomainMonitorRunsAsync(Guid monitorId, Guid runId, Guid otherRunId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">runId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">otherRunId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorRunComparisonDto.html">DomainMonitorRunComparisonDto</a>&gt;</td>
+        <td><p>Task of DomainMonitorRunComparisonDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-439">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_CompareDomainMonitorRunsWithHttpInfoAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.CompareDomainMonitorRunsWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_CompareDomainMonitorRunsWithHttpInfoAsync_System_Guid_System_Guid_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.CompareDomainMonitorRunsWithHttpInfoAsync(System.Guid,System.Guid,System.Guid,System.Int32,System.Threading.CancellationToken)">CompareDomainMonitorRunsWithHttpInfoAsync(Guid, Guid, Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Compare two monitor runs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DomainMonitorRunComparisonDto&gt;&gt; CompareDomainMonitorRunsWithHttpInfoAsync(Guid monitorId, Guid runId, Guid otherRunId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">runId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">otherRunId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorRunComparisonDto.html">DomainMonitorRunComparisonDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DomainMonitorRunComparisonDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-477">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_CreateDomainMonitorAlertSinkAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.CreateDomainMonitorAlertSinkAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_CreateDomainMonitorAlertSinkAsync_System_Guid_mailslurp_Model_CreateDomainMonitorAlertSinkOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.CreateDomainMonitorAlertSinkAsync(System.Guid,mailslurp.Model.CreateDomainMonitorAlertSinkOptions,System.Int32,System.Threading.CancellationToken)">CreateDomainMonitorAlertSinkAsync(Guid, CreateDomainMonitorAlertSinkOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create alert sink for monitor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DomainMonitorAlertSinkDto&gt; CreateDomainMonitorAlertSinkAsync(Guid monitorId, CreateDomainMonitorAlertSinkOptions createDomainMonitorAlertSinkOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateDomainMonitorAlertSinkOptions.html">CreateDomainMonitorAlertSinkOptions</a></td>
+        <td><span class="parametername">createDomainMonitorAlertSinkOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorAlertSinkDto.html">DomainMonitorAlertSinkDto</a>&gt;</td>
+        <td><p>Task of DomainMonitorAlertSinkDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-491">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_CreateDomainMonitorAlertSinkWithHttpInfoAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.CreateDomainMonitorAlertSinkWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_CreateDomainMonitorAlertSinkWithHttpInfoAsync_System_Guid_mailslurp_Model_CreateDomainMonitorAlertSinkOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.CreateDomainMonitorAlertSinkWithHttpInfoAsync(System.Guid,mailslurp.Model.CreateDomainMonitorAlertSinkOptions,System.Int32,System.Threading.CancellationToken)">CreateDomainMonitorAlertSinkWithHttpInfoAsync(Guid, CreateDomainMonitorAlertSinkOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create alert sink for monitor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DomainMonitorAlertSinkDto&gt;&gt; CreateDomainMonitorAlertSinkWithHttpInfoAsync(Guid monitorId, CreateDomainMonitorAlertSinkOptions createDomainMonitorAlertSinkOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateDomainMonitorAlertSinkOptions.html">CreateDomainMonitorAlertSinkOptions</a></td>
+        <td><span class="parametername">createDomainMonitorAlertSinkOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorAlertSinkDto.html">DomainMonitorAlertSinkDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DomainMonitorAlertSinkDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-451">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_CreateDomainMonitorAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.CreateDomainMonitorAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_CreateDomainMonitorAsync_mailslurp_Model_CreateDomainMonitorOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.CreateDomainMonitorAsync(mailslurp.Model.CreateDomainMonitorOptions,System.Int32,System.Threading.CancellationToken)">CreateDomainMonitorAsync(CreateDomainMonitorOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create domain monitor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DomainMonitorDto&gt; CreateDomainMonitorAsync(CreateDomainMonitorOptions createDomainMonitorOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateDomainMonitorOptions.html">CreateDomainMonitorOptions</a></td>
+        <td><span class="parametername">createDomainMonitorOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorDto.html">DomainMonitorDto</a>&gt;</td>
+        <td><p>Task of DomainMonitorDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-464">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_CreateDomainMonitorWithHttpInfoAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.CreateDomainMonitorWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_CreateDomainMonitorWithHttpInfoAsync_mailslurp_Model_CreateDomainMonitorOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.CreateDomainMonitorWithHttpInfoAsync(mailslurp.Model.CreateDomainMonitorOptions,System.Int32,System.Threading.CancellationToken)">CreateDomainMonitorWithHttpInfoAsync(CreateDomainMonitorOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Create domain monitor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DomainMonitorDto&gt;&gt; CreateDomainMonitorWithHttpInfoAsync(CreateDomainMonitorOptions createDomainMonitorOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.CreateDomainMonitorOptions.html">CreateDomainMonitorOptions</a></td>
+        <td><span class="parametername">createDomainMonitorOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorDto.html">DomainMonitorDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DomainMonitorDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-529">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_DeleteDomainMonitorAlertSinkAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.DeleteDomainMonitorAlertSinkAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_DeleteDomainMonitorAlertSinkAsync_System_Guid_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.DeleteDomainMonitorAlertSinkAsync(System.Guid,System.Guid,System.Int32,System.Threading.CancellationToken)">DeleteDomainMonitorAlertSinkAsync(Guid, Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Delete monitor alert sink</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task DeleteDomainMonitorAlertSinkAsync(Guid monitorId, Guid sinkId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">sinkId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>Task of void</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-543">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_DeleteDomainMonitorAlertSinkWithHttpInfoAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.DeleteDomainMonitorAlertSinkWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_DeleteDomainMonitorAlertSinkWithHttpInfoAsync_System_Guid_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.DeleteDomainMonitorAlertSinkWithHttpInfoAsync(System.Guid,System.Guid,System.Int32,System.Threading.CancellationToken)">DeleteDomainMonitorAlertSinkWithHttpInfoAsync(Guid, Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Delete monitor alert sink</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;object&gt;&gt; DeleteDomainMonitorAlertSinkWithHttpInfoAsync(Guid monitorId, Guid sinkId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">sinkId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-503">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_DeleteDomainMonitorAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.DeleteDomainMonitorAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_DeleteDomainMonitorAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.DeleteDomainMonitorAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">DeleteDomainMonitorAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Delete domain monitor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task DeleteDomainMonitorAsync(Guid monitorId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>Task of void</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-516">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_DeleteDomainMonitorWithHttpInfoAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.DeleteDomainMonitorWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_DeleteDomainMonitorWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.DeleteDomainMonitorWithHttpInfoAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">DeleteDomainMonitorWithHttpInfoAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Delete domain monitor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;object&gt;&gt; DeleteDomainMonitorWithHttpInfoAsync(Guid monitorId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-580">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorAlertSinksAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorAlertSinksAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorAlertSinksAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorAlertSinksAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetDomainMonitorAlertSinksAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>List alert sinks for monitor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;DomainMonitorAlertSinkDto&gt;&gt; GetDomainMonitorAlertSinksAsync(Guid monitorId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorAlertSinkDto.html">DomainMonitorAlertSinkDto</a>&gt;&gt;</td>
+        <td><p>Task of List&lt;DomainMonitorAlertSinkDto&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-593">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorAlertSinksWithHttpInfoAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorAlertSinksWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorAlertSinksWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorAlertSinksWithHttpInfoAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetDomainMonitorAlertSinksWithHttpInfoAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>List alert sinks for monitor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;List&lt;DomainMonitorAlertSinkDto&gt;&gt;&gt; GetDomainMonitorAlertSinksWithHttpInfoAsync(Guid monitorId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorAlertSinkDto.html">DomainMonitorAlertSinkDto</a>&gt;&gt;&gt;</td>
+        <td><p>Task of ApiResponse (List&lt;DomainMonitorAlertSinkDto&gt;)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-555">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetDomainMonitorAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get domain monitor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DomainMonitorDto&gt; GetDomainMonitorAsync(Guid monitorId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorDto.html">DomainMonitorDto</a>&gt;</td>
+        <td><p>Task of DomainMonitorDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-606">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorAuthStackAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorAuthStackAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorAuthStackAsync_System_Guid_System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorAuthStackAsync(System.Guid,System.String,System.Int32,System.Threading.CancellationToken)">GetDomainMonitorAuthStackAsync(Guid, string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get current auth stack for monitor domain</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;CheckEmailAuthStackResults&gt; GetDomainMonitorAuthStackAsync(Guid monitorId, string dkimSelector = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">dkimSelector</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.CheckEmailAuthStackResults.html">CheckEmailAuthStackResults</a>&gt;</td>
+        <td><p>Task of CheckEmailAuthStackResults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-620">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorAuthStackWithHttpInfoAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorAuthStackWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorAuthStackWithHttpInfoAsync_System_Guid_System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorAuthStackWithHttpInfoAsync(System.Guid,System.String,System.Int32,System.Threading.CancellationToken)">GetDomainMonitorAuthStackWithHttpInfoAsync(Guid, string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get current auth stack for monitor domain</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;CheckEmailAuthStackResults&gt;&gt; GetDomainMonitorAuthStackWithHttpInfoAsync(Guid monitorId, string dkimSelector = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">dkimSelector</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.CheckEmailAuthStackResults.html">CheckEmailAuthStackResults</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (CheckEmailAuthStackResults)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-634">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorInsightsAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorInsightsAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorInsightsAsync_System_Guid_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorInsightsAsync(System.Guid,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Threading.CancellationToken)">GetDomainMonitorInsightsAsync(Guid, DateTime?, DateTime?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get monitor insights</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DomainMonitorInsightsDto&gt; GetDomainMonitorInsightsAsync(Guid monitorId, DateTime? since = null, DateTime? before = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorInsightsDto.html">DomainMonitorInsightsDto</a>&gt;</td>
+        <td><p>Task of DomainMonitorInsightsDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-649">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorInsightsWithHttpInfoAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorInsightsWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorInsightsWithHttpInfoAsync_System_Guid_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorInsightsWithHttpInfoAsync(System.Guid,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Threading.CancellationToken)">GetDomainMonitorInsightsWithHttpInfoAsync(Guid, DateTime?, DateTime?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get monitor insights</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DomainMonitorInsightsDto&gt;&gt; GetDomainMonitorInsightsWithHttpInfoAsync(Guid monitorId, DateTime? since = null, DateTime? before = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorInsightsDto.html">DomainMonitorInsightsDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DomainMonitorInsightsDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-662">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorRunAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorRunAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorRunAsync_System_Guid_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorRunAsync(System.Guid,System.Guid,System.Int32,System.Threading.CancellationToken)">GetDomainMonitorRunAsync(Guid, Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get monitor run</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DomainMonitorRunDto&gt; GetDomainMonitorRunAsync(Guid monitorId, Guid runId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">runId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorRunDto.html">DomainMonitorRunDto</a>&gt;</td>
+        <td><p>Task of DomainMonitorRunDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-676">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorRunWithHttpInfoAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorRunWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorRunWithHttpInfoAsync_System_Guid_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorRunWithHttpInfoAsync(System.Guid,System.Guid,System.Int32,System.Threading.CancellationToken)">GetDomainMonitorRunWithHttpInfoAsync(Guid, Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get monitor run</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DomainMonitorRunDto&gt;&gt; GetDomainMonitorRunWithHttpInfoAsync(Guid monitorId, Guid runId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">runId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorRunDto.html">DomainMonitorRunDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DomainMonitorRunDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-692">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorRunsAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorRunsAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorRunsAsync_System_Guid_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int32__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorRunsAsync(System.Guid,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Nullable{System.Int32},System.Int32,System.Threading.CancellationToken)">GetDomainMonitorRunsAsync(Guid, DateTime?, DateTime?, string, int?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>List monitor runs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;DomainMonitorRunDto&gt;&gt; GetDomainMonitorRunsAsync(Guid monitorId, DateTime? since = null, DateTime? before = null, string status = null, int? limit = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">status</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">limit</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorRunDto.html">DomainMonitorRunDto</a>&gt;&gt;</td>
+        <td><p>Task of List&lt;DomainMonitorRunDto&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-709">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorRunsWithHttpInfoAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorRunsWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorRunsWithHttpInfoAsync_System_Guid_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int32__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorRunsWithHttpInfoAsync(System.Guid,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Nullable{System.Int32},System.Int32,System.Threading.CancellationToken)">GetDomainMonitorRunsWithHttpInfoAsync(Guid, DateTime?, DateTime?, string, int?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>List monitor runs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;List&lt;DomainMonitorRunDto&gt;&gt;&gt; GetDomainMonitorRunsWithHttpInfoAsync(Guid monitorId, DateTime? since = null, DateTime? before = null, string status = null, int? limit = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">status</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">limit</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorRunDto.html">DomainMonitorRunDto</a>&gt;&gt;&gt;</td>
+        <td><p>Task of ApiResponse (List&lt;DomainMonitorRunDto&gt;)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-724">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorSeriesAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorSeriesAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorSeriesAsync_System_Guid_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorSeriesAsync(System.Guid,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Int32,System.Threading.CancellationToken)">GetDomainMonitorSeriesAsync(Guid, DateTime?, DateTime?, string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get monitor trend series</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DomainMonitorSeriesDto&gt; GetDomainMonitorSeriesAsync(Guid monitorId, DateTime? since = null, DateTime? before = null, string bucket = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">bucket</span></td>
+        <td><p>(optional, default to DAY)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorSeriesDto.html">DomainMonitorSeriesDto</a>&gt;</td>
+        <td><p>Task of DomainMonitorSeriesDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-740">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorSeriesWithHttpInfoAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorSeriesWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorSeriesWithHttpInfoAsync_System_Guid_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorSeriesWithHttpInfoAsync(System.Guid,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Int32,System.Threading.CancellationToken)">GetDomainMonitorSeriesWithHttpInfoAsync(Guid, DateTime?, DateTime?, string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get monitor trend series</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DomainMonitorSeriesDto&gt;&gt; GetDomainMonitorSeriesWithHttpInfoAsync(Guid monitorId, DateTime? since = null, DateTime? before = null, string bucket = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">since</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">before</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">bucket</span></td>
+        <td><p>(optional, default to DAY)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorSeriesDto.html">DomainMonitorSeriesDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DomainMonitorSeriesDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-753">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorSummaryAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorSummaryAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorSummaryAsync_System_Guid_System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorSummaryAsync(System.Guid,System.String,System.Int32,System.Threading.CancellationToken)">GetDomainMonitorSummaryAsync(Guid, string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get domain monitor summary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DomainMonitorSummaryDto&gt; GetDomainMonitorSummaryAsync(Guid monitorId, string dkimSelector = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">dkimSelector</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorSummaryDto.html">DomainMonitorSummaryDto</a>&gt;</td>
+        <td><p>Task of DomainMonitorSummaryDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-767">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorSummaryWithHttpInfoAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorSummaryWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorSummaryWithHttpInfoAsync_System_Guid_System_String_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorSummaryWithHttpInfoAsync(System.Guid,System.String,System.Int32,System.Threading.CancellationToken)">GetDomainMonitorSummaryWithHttpInfoAsync(Guid, string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get domain monitor summary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DomainMonitorSummaryDto&gt;&gt; GetDomainMonitorSummaryWithHttpInfoAsync(Guid monitorId, string dkimSelector = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">dkimSelector</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorSummaryDto.html">DomainMonitorSummaryDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DomainMonitorSummaryDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-568">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorWithHttpInfoAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorWithHttpInfoAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">GetDomainMonitorWithHttpInfoAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Get domain monitor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DomainMonitorDto&gt;&gt; GetDomainMonitorWithHttpInfoAsync(Guid monitorId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorDto.html">DomainMonitorDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DomainMonitorDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-778">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorsAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorsAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorsAsync_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorsAsync(System.Int32,System.Threading.CancellationToken)">GetDomainMonitorsAsync(int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>List domain monitors</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;DomainMonitorDto&gt;&gt; GetDomainMonitorsAsync(int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorDto.html">DomainMonitorDto</a>&gt;&gt;</td>
+        <td><p>Task of List&lt;DomainMonitorDto&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-790">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorsWithHttpInfoAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorsWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_GetDomainMonitorsWithHttpInfoAsync_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.GetDomainMonitorsWithHttpInfoAsync(System.Int32,System.Threading.CancellationToken)">GetDomainMonitorsWithHttpInfoAsync(int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>List domain monitors</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;List&lt;DomainMonitorDto&gt;&gt;&gt; GetDomainMonitorsWithHttpInfoAsync(int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorDto.html">DomainMonitorDto</a>&gt;&gt;&gt;</td>
+        <td><p>Task of ApiResponse (List&lt;DomainMonitorDto&gt;)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-802">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_RunDomainMonitorNowAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.RunDomainMonitorNowAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_RunDomainMonitorNowAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.RunDomainMonitorNowAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">RunDomainMonitorNowAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Run monitor now</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DomainMonitorRunNowResult&gt; RunDomainMonitorNowAsync(Guid monitorId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorRunNowResult.html">DomainMonitorRunNowResult</a>&gt;</td>
+        <td><p>Task of DomainMonitorRunNowResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-815">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_RunDomainMonitorNowWithHttpInfoAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.RunDomainMonitorNowWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_RunDomainMonitorNowWithHttpInfoAsync_System_Guid_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.RunDomainMonitorNowWithHttpInfoAsync(System.Guid,System.Int32,System.Threading.CancellationToken)">RunDomainMonitorNowWithHttpInfoAsync(Guid, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Run monitor now</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DomainMonitorRunNowResult&gt;&gt; RunDomainMonitorNowWithHttpInfoAsync(Guid monitorId, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorRunNowResult.html">DomainMonitorRunNowResult</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DomainMonitorRunNowResult)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-827">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_RunDueDomainMonitorsAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.RunDueDomainMonitorsAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_RunDueDomainMonitorsAsync_System_Nullable_System_Int32__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.RunDueDomainMonitorsAsync(System.Nullable{System.Int32},System.Int32,System.Threading.CancellationToken)">RunDueDomainMonitorsAsync(int?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Run due monitors for user</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DomainMonitorRunDueResult&gt; RunDueDomainMonitorsAsync(int? maxRuns = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">maxRuns</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorRunDueResult.html">DomainMonitorRunDueResult</a>&gt;</td>
+        <td><p>Task of DomainMonitorRunDueResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-840">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_RunDueDomainMonitorsWithHttpInfoAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.RunDueDomainMonitorsWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_RunDueDomainMonitorsWithHttpInfoAsync_System_Nullable_System_Int32__System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.RunDueDomainMonitorsWithHttpInfoAsync(System.Nullable{System.Int32},System.Int32,System.Threading.CancellationToken)">RunDueDomainMonitorsWithHttpInfoAsync(int?, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Run due monitors for user</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DomainMonitorRunDueResult&gt;&gt; RunDueDomainMonitorsWithHttpInfoAsync(int? maxRuns = null, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">maxRuns</span></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorRunDueResult.html">DomainMonitorRunDueResult</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DomainMonitorRunDueResult)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-853">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_UpdateDomainMonitorAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.UpdateDomainMonitorAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_UpdateDomainMonitorAsync_System_Guid_mailslurp_Model_UpdateDomainMonitorOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.UpdateDomainMonitorAsync(System.Guid,mailslurp.Model.UpdateDomainMonitorOptions,System.Int32,System.Threading.CancellationToken)">UpdateDomainMonitorAsync(Guid, UpdateDomainMonitorOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Update domain monitor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DomainMonitorDto&gt; UpdateDomainMonitorAsync(Guid monitorId, UpdateDomainMonitorOptions updateDomainMonitorOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.UpdateDomainMonitorOptions.html">UpdateDomainMonitorOptions</a></td>
+        <td><span class="parametername">updateDomainMonitorOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorDto.html">DomainMonitorDto</a>&gt;</td>
+        <td><p>Task of DomainMonitorDto</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-867">View Source</a>
+  </span>
+  <a id="mailslurp_Api_IDomainMonitorControllerApiAsync_UpdateDomainMonitorWithHttpInfoAsync_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.UpdateDomainMonitorWithHttpInfoAsync*"></a>
+  <h4 id="mailslurp_Api_IDomainMonitorControllerApiAsync_UpdateDomainMonitorWithHttpInfoAsync_System_Guid_mailslurp_Model_UpdateDomainMonitorOptions_System_Int32_System_Threading_CancellationToken_" data-uid="mailslurp.Api.IDomainMonitorControllerApiAsync.UpdateDomainMonitorWithHttpInfoAsync(System.Guid,mailslurp.Model.UpdateDomainMonitorOptions,System.Int32,System.Threading.CancellationToken)">UpdateDomainMonitorWithHttpInfoAsync(Guid, UpdateDomainMonitorOptions, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Update domain monitor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;DomainMonitorDto&gt;&gt; UpdateDomainMonitorWithHttpInfoAsync(Guid monitorId, UpdateDomainMonitorOptions updateDomainMonitorOptions, int operationIndex = 0, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">monitorId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="mailslurp.Model.UpdateDomainMonitorOptions.html">UpdateDomainMonitorOptions</a></td>
+        <td><span class="parametername">updateDomainMonitorOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">operationIndex</span></td>
+        <td><p>Index associated with the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation Token to cancel the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="mailslurp.Client.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="mailslurp.Model.DomainMonitorDto.html">DomainMonitorDto</a>&gt;&gt;</td>
+        <td><p>Task of ApiResponse (DomainMonitorDto)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="mailslurp.Client.ApiException.html">ApiException</a></td>
+        <td><p>Thrown when fails to make API call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/jackmahoney/sdk-builder/src/master/output/csharp/src/mailslurp/Api/DomainMonitorControllerApi.cs#lines-408" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      See <a href='https://www.mailslurp.com/'>MailSlurp website</a> for more information.
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
